@@ -1,9 +1,9 @@
 import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
-export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocus, onBlur, sel, onToggle, onClearFilters }: {
+export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocus, onBlur, onEscape, sel, onToggle, onClearFilters }: {
   game?: Game; count: number; query: string; onQuery: (q: string) => void;
-  filterOpen: boolean; onFocus: () => void; onBlur: () => void;
+  filterOpen: boolean; onFocus: () => void; onBlur: () => void; onEscape: () => void;
   sel: Set<string>; onToggle: (k: string) => void; onClearFilters: () => void;
 }) {
   const hasFilters = sel.size > 0;
@@ -18,7 +18,7 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
               onChange={(e) => onQuery(e.target.value)}
               onFocus={onFocus}
               onBlur={onBlur}
-              onKeyDown={(e) => { if (e.key === 'Escape') { onQuery(''); (e.target as HTMLInputElement).blur(); } }}
+              onKeyDown={(e) => { if (e.key === 'Escape') { (e.target as HTMLInputElement).blur(); onEscape(); } }}
               placeholder="Search title, designer, category…"
               aria-label="Search games"
               autoComplete="off"

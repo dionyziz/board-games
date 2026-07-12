@@ -72,6 +72,7 @@ function Shell() {
             filterOpen={filterOpen}
             onFocus={() => setFilterOpen(true)}
             onBlur={() => { if (!query.trim() && sel.size === 0) setFilterOpen(false); }}
+            onEscape={() => { setQuery(''); setSel(new Set()); setFilterOpen(false); }}
             sel={sel} onToggle={toggle}
             onClearFilters={() => { setSel(new Set()); setQuery(''); }}
           />}
