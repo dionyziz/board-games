@@ -3,11 +3,17 @@
 // and back if downloaded), procedural fallback for the faces photos never cover
 // cleanly (spine / top / bottom).
 //
-//   node scripts/10-gen-faces.js <gameId> [pathToBackPhoto]
+//   node scripts/10-gen-faces.js <gameId> [pathToBackPhoto] [--force]
 //
 // Writes:
 //   public/textures/<id>/back.webp   spine.webp   top.webp   bottom.webp
 //   and games.json  ->  box.face, box.orientation, textures{...} (+ per-face source)
+//
+// IDEMPOTENT: a face whose current textures.<face>.source is `photo` or
+// `cover-derived` (a real photo or an art-derived upgrade) is PRESERVED — its
+// .webp and data entry are left untouched — so batch re-runs never clobber
+// upgrades with the procedural fallback. Pass --force to regenerate everything.
+// (box.face / box.orientation are always recomputed; they're deterministic.)
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
@@ -16,8 +22,10 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'src/data/games.json');
 const TEX = path.join(ROOT, 'public', 'textures');
 
-const gameId = process.argv[2] || 'the-lord-of-the-rings-fate-of-the-fellowship-436217';
-const backPhoto = process.argv[3]; // optional flat back-of-box photo
+const argv = process.argv.slice(2).filter((a) => a !== '--force');
+const force = process.argv.includes('--force');
+const gameId = argv[0] || 'the-lord-of-the-rings-fate-of-the-fellowship-436217';
+const backPhoto = argv[1]; // optional flat back-of-box photo
 
 const games = JSON.parse(fs.readFileSync(DATA, 'utf8'));
 const list = Array.isArray(games) ? games : games.games;
@@ -102,10 +110,23 @@ function normalizeToward(data, ch, src, ref, strength = 0.8) {
   }
 }
 
+// ---- idempotency guard: never regenerate an upgraded face ------------------
+// A face already sourced from a real photo or an art-derived upgrade is kept
+// as-is; only procedural/absent faces are (re)generated. --force overrides.
+const prevTex = g.textures || {};
+const PROTECTED = new Set(['photo', 'cover-derived']);
+const kept = {};
+const keepFace = (name) => {
+  if (force) return false;
+  const e = prevTex[name];
+  return !!(e && PROTECTED.has(e.source) && fs.existsSync(path.join(dir, name + '.webp')));
+};
+
 // ---- 2. back: real photo (cropped + normalized) if provided, else procedural
 const sources = {};
 const normalized = {};
 async function makeBack(refStats) {
+  if (keepFace('back')) { kept.back = true; return; }
   const out = path.join(dir, 'back.webp');
   const faceAspect = face.w / face.h;
   if (backPhoto && fs.existsSync(backPhoto)) {
@@ -138,6 +159,7 @@ async function makeBack(refStats) {
 
 // ---- 3. spine (long side): title-on-a-band, the hero of the shelf view -------
 async function makeSpine(accent) {
+  if (keepFace('spine')) { kept.spine = true; return; }
   const out = path.join(dir, 'spine.webp');
   const W = Math.round(face.d * PX), H = Math.round(face.h * PX); // tall, narrow
   const title = esc(g.title);
@@ -166,6 +188,7 @@ async function makeSpine(accent) {
 
 // ---- 4. top (short side): same band, title horizontal -----------------------
 async function makeTop(accent) {
+  if (keepFace('top')) { kept.top = true; return; }
   const out = path.join(dir, 'top.webp');
   const W = Math.round(face.w * PX), H = Math.round(face.d * PX); // wide, short
   const title = esc(g.title);
@@ -186,6 +209,7 @@ async function makeTop(accent) {
 
 // ---- 5. bottom: edge color + faint barcode + legal-ish line ------------------
 async function makeBottom() {
+  if (keepFace('bottom')) { kept.bottom = true; return; }
   const out = path.join(dir, 'bottom.webp');
   const W = Math.round(face.w * PX), H = Math.round(face.d * PX);
   let bars = '';
@@ -214,23 +238,25 @@ async function makeBottom() {
   await Promise.all([makeBack(refStats), makeSpine(accent), makeTop(accent), makeBottom()]);
 
   // ---- 6. write data model back -------------------------------------------
-  const faceEntry = (name, source) => ({
-    src: `/textures/${g.id}/${name}.webp`, source,
-    ...(normalized[name] ? { normalized: true } : {}),
-  });
+  // kept faces keep their existing entry verbatim; regenerated faces get a fresh one
+  const buildFace = (name, source) => kept[name]
+    ? prevTex[name]
+    : { src: `/textures/${g.id}/${name}.webp`, source, ...(normalized[name] ? { normalized: true } : {}) };
   g.box.face = { w: face.w, h: face.h, d: face.d };
   g.box.orientation = orientation;
   g.textures = {
-    front: { src: `/textures/${g.id}/cover.webp`, source: g.textures?.front?.source || 'airtable' },
-    back: faceEntry('back', sources.back),
-    spine: faceEntry('spine', sources.spine),
-    top: faceEntry('top', sources.top),
-    bottom: faceEntry('bottom', sources.bottom),
+    front: { src: `/textures/${g.id}/cover.webp`, source: prevTex.front?.source || 'airtable' },
+    back: buildFace('back', sources.back),
+    spine: buildFace('spine', sources.spine),
+    top: buildFace('top', sources.top),
+    bottom: buildFace('bottom', sources.bottom),
     thumb: { src: `/textures/${g.id}/thumb.webp`, source: 'derived' },
   };
   fs.writeFileSync(DATA, JSON.stringify(games, null, 2) + '\n');
 
-  console.log('done:', g.id);
+  const summary = { back: sources.back, spine: sources.spine, top: sources.top, bottom: sources.bottom };
+  for (const k of Object.keys(kept)) summary[k] = prevTex[k].source + ' (kept)';
+  console.log('done:', g.id, force ? '[--force]' : '');
   console.log('  orientation:', orientation, '| face', JSON.stringify(g.box.face), '| accent', accent);
-  console.log('  sources:', JSON.stringify(sources));
+  console.log('  faces:', JSON.stringify(summary));
 })();

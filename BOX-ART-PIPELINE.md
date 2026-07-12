@@ -233,12 +233,12 @@ Per game the flow is:
 
 For a batch driver:
 - Iterate all 210 `games.json` entries.
-- **Re-run safety:** `10-gen-faces.js` regenerates spine/top/bottom as
-  fallbacks, which would clobber a photographic spine or the cover-derived
-  top/bottom. Before batch use, make it **skip any face whose current
-  `textures.<face>.source` is `photo` or `cover-derived`** (idempotent re-runs).
-  Until that guard exists, run order matters: gen faces first, then apply photos
-  and top/bottom last.
+- **Re-run safety (done):** `10-gen-faces.js` is **idempotent** — any face whose
+  current `textures.<face>.source` is `photo` or `cover-derived` is preserved
+  (its `.webp` and data entry untouched); only procedural/absent faces are
+  regenerated. So batch re-runs never clobber upgrades, and run order no longer
+  matters. Pass `--force` to regenerate everything. (`box.face` /
+  `box.orientation` are always recomputed — they're deterministic.)
 - **Caching:** keep downloaded gallery images + accepted picks under version
   control (or a cache dir) so re-runs are network-free and reproducible.
 - **Cover hi-res upgrade** (recommended, independent): re-fetch the BGG hi-res
@@ -286,7 +286,6 @@ font such as Georgia must be installed for titles, incl. Greek coverage).
 - Candidate **review page** — **not built**; picking is a manual eyeball.
 - De-projection **corner selection** is manual; automated quad detection is the
   upgrade for wide side-photo use.
-- Re-run **idempotency guard** in `10-gen-faces.js` (skip `photo`/`cover-derived`
-  faces) — **needed before** an unattended full-library batch.
+- ~~Re-run idempotency guard in `10-gen-faces.js`~~ — **done** (see §9).
 - Language mismatch: a de-projected spine from a foreign-edition render carries
   that language's text (accepted as "imperfect"); prefer our-edition sources.
