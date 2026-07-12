@@ -157,11 +157,13 @@
         "top": {
           "src": "/textures/sampoter-9220/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sampoter-9220/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sampoter-9220/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sampoter-9220/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -263,16 +265,19 @@
         },
         "spine": {
           "src": "/textures/risk-strike-394144/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/risk-strike-394144/spine-bump.webp"
         },
         "top": {
           "src": "/textures/risk-strike-394144/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/risk-strike-394144/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/risk-strike-394144/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/risk-strike-394144/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -389,16 +394,19 @@
         },
         "spine": {
           "src": "/textures/akropolis-357563/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/akropolis-357563/spine-bump.webp"
         },
         "top": {
           "src": "/textures/akropolis-357563/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/akropolis-357563/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/akropolis-357563/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/akropolis-357563/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -515,16 +523,19 @@
         },
         "spine": {
           "src": "/textures/azul-mini-230802/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/azul-mini-230802/spine-bump.webp"
         },
         "top": {
           "src": "/textures/azul-mini-230802/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/azul-mini-230802/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/azul-mini-230802/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/azul-mini-230802/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -646,16 +657,19 @@
         },
         "spine": {
           "src": "/textures/codenames-178900/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/codenames-178900/spine-bump.webp"
         },
         "top": {
           "src": "/textures/codenames-178900/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/codenames-178900/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/codenames-178900/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/codenames-178900/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -772,11 +786,13 @@
         },
         "spine": {
           "src": "/textures/codenames-eikones-198773/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/codenames-eikones-198773/spine-bump.webp"
         },
         "top": {
           "src": "/textures/codenames-eikones-198773/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/codenames-eikones-198773/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
@@ -893,11 +909,13 @@
         "top": {
           "src": "/textures/dixit-odyssey-92828/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dixit-odyssey-92828/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dixit-odyssey-92828/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dixit-odyssey-92828/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1007,16 +1025,19 @@
         },
         "spine": {
           "src": "/textures/wizard-1465/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/wizard-1465/spine-bump.webp"
         },
         "top": {
           "src": "/textures/wizard-1465/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/wizard-1465/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/wizard-1465/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/wizard-1465/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1130,16 +1151,19 @@
         },
         "spine": {
           "src": "/textures/love-letter-277085/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/love-letter-277085/spine-bump.webp"
         },
         "top": {
           "src": "/textures/love-letter-277085/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/love-letter-277085/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/love-letter-277085/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/love-letter-277085/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1243,16 +1267,19 @@
         },
         "spine": {
           "src": "/textures/katsikomachies-31506/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/katsikomachies-31506/spine-bump.webp"
         },
         "top": {
           "src": "/textures/katsikomachies-31506/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/katsikomachies-31506/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/katsikomachies-31506/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/katsikomachies-31506/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1364,11 +1391,13 @@
         "top": {
           "src": "/textures/keltes-40832/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/keltes-40832/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/keltes-40832/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/keltes-40832/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1476,11 +1505,13 @@
         "top": {
           "src": "/textures/katan-me-kartes-91534/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/katan-me-kartes-91534/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/katan-me-kartes-91534/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/katan-me-kartes-91534/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1539,16 +1570,19 @@
         },
         "spine": {
           "src": "/textures/sampoter-2/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sampoter-2/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sampoter-2/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sampoter-2/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sampoter-2/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sampoter-2/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1653,16 +1687,19 @@
         },
         "spine": {
           "src": "/textures/the-mind-244992/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-mind-244992/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-mind-244992/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-mind-244992/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-mind-244992/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-mind-244992/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1769,16 +1806,19 @@
         },
         "spine": {
           "src": "/textures/ohanami-270314/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ohanami-270314/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ohanami-270314/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ohanami-270314/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ohanami-270314/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ohanami-270314/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -1887,16 +1927,19 @@
         },
         "spine": {
           "src": "/textures/munchkin-zombies-86955/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/munchkin-zombies-86955/spine-bump.webp"
         },
         "top": {
           "src": "/textures/munchkin-zombies-86955/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/munchkin-zombies-86955/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/munchkin-zombies-86955/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/munchkin-zombies-86955/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2006,16 +2049,19 @@
         },
         "spine": {
           "src": "/textures/happy-salmon-194626/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/happy-salmon-194626/spine-bump.webp"
         },
         "top": {
           "src": "/textures/happy-salmon-194626/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/happy-salmon-194626/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/happy-salmon-194626/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/happy-salmon-194626/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2121,16 +2167,19 @@
         },
         "spine": {
           "src": "/textures/zombie-dice-horde-edition-224035/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/zombie-dice-horde-edition-224035/spine-bump.webp"
         },
         "top": {
           "src": "/textures/zombie-dice-horde-edition-224035/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/zombie-dice-horde-edition-224035/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/zombie-dice-horde-edition-224035/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/zombie-dice-horde-edition-224035/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2232,16 +2281,19 @@
         },
         "spine": {
           "src": "/textures/dose-ta-panta-141428/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dose-ta-panta-141428/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dose-ta-panta-141428/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dose-ta-panta-141428/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dose-ta-panta-141428/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dose-ta-panta-141428/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2363,11 +2415,13 @@
         },
         "spine": {
           "src": "/textures/dobble-63268/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dobble-63268/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dobble-63268/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dobble-63268/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
@@ -2483,16 +2537,19 @@
         },
         "spine": {
           "src": "/textures/dobble-connect-381429/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dobble-connect-381429/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dobble-connect-381429/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dobble-connect-381429/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dobble-connect-381429/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dobble-connect-381429/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2603,16 +2660,19 @@
         },
         "spine": {
           "src": "/textures/silver-gold-270673/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/silver-gold-270673/spine-bump.webp"
         },
         "top": {
           "src": "/textures/silver-gold-270673/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/silver-gold-270673/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/silver-gold-270673/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/silver-gold-270673/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2714,16 +2774,19 @@
         },
         "spine": {
           "src": "/textures/lost-cities-rivals-253398/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/lost-cities-rivals-253398/spine-bump.webp"
         },
         "top": {
           "src": "/textures/lost-cities-rivals-253398/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/lost-cities-rivals-253398/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/lost-cities-rivals-253398/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/lost-cities-rivals-253398/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2830,16 +2893,19 @@
         },
         "spine": {
           "src": "/textures/4x4-2719/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/4x4-2719/spine-bump.webp"
         },
         "top": {
           "src": "/textures/4x4-2719/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/4x4-2719/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/4x4-2719/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/4x4-2719/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -2937,16 +3003,19 @@
         },
         "spine": {
           "src": "/textures/who-am-i-33406/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/who-am-i-33406/spine-bump.webp"
         },
         "top": {
           "src": "/textures/who-am-i-33406/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/who-am-i-33406/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/who-am-i-33406/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/who-am-i-33406/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3045,16 +3114,19 @@
         },
         "spine": {
           "src": "/textures/pictionary-air-272889/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/pictionary-air-272889/spine-bump.webp"
         },
         "top": {
           "src": "/textures/pictionary-air-272889/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/pictionary-air-272889/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/pictionary-air-272889/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/pictionary-air-272889/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3175,16 +3247,19 @@
         },
         "spine": {
           "src": "/textures/uno-2223/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/uno-2223/spine-bump.webp"
         },
         "top": {
           "src": "/textures/uno-2223/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/uno-2223/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/uno-2223/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/uno-2223/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3304,11 +3379,13 @@
         "top": {
           "src": "/textures/sushi-go-133473/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sushi-go-133473/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sushi-go-133473/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sushi-go-133473/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3426,16 +3503,19 @@
         },
         "spine": {
           "src": "/textures/railroad-ink-challenge-lush-green-306881/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/railroad-ink-challenge-lush-green-306881/spine-bump.webp"
         },
         "top": {
           "src": "/textures/railroad-ink-challenge-lush-green-306881/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/railroad-ink-challenge-lush-green-306881/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/railroad-ink-challenge-lush-green-306881/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/railroad-ink-challenge-lush-green-306881/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3552,16 +3632,19 @@
         },
         "spine": {
           "src": "/textures/mia-fora-kai-enan-kairo-1234/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/mia-fora-kai-enan-kairo-1234/spine-bump.webp"
         },
         "top": {
           "src": "/textures/mia-fora-kai-enan-kairo-1234/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/mia-fora-kai-enan-kairo-1234/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/mia-fora-kai-enan-kairo-1234/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/mia-fora-kai-enan-kairo-1234/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3662,16 +3745,19 @@
         },
         "spine": {
           "src": "/textures/camel-up-me-kartes-378848/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/camel-up-me-kartes-378848/spine-bump.webp"
         },
         "top": {
           "src": "/textures/camel-up-me-kartes-378848/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/camel-up-me-kartes-378848/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/camel-up-me-kartes-378848/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/camel-up-me-kartes-378848/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3786,11 +3872,13 @@
         "top": {
           "src": "/textures/chali-gkali-2944/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/chali-gkali-2944/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/chali-gkali-2944/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/chali-gkali-2944/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -3907,16 +3995,19 @@
         },
         "spine": {
           "src": "/textures/canvas-290236/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/canvas-290236/spine-bump.webp"
         },
         "top": {
           "src": "/textures/canvas-290236/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/canvas-290236/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/canvas-290236/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/canvas-290236/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4025,16 +4116,19 @@
         },
         "spine": {
           "src": "/textures/ntama-2083/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ntama-2083/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ntama-2083/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ntama-2083/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ntama-2083/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ntama-2083/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4155,16 +4249,19 @@
         },
         "spine": {
           "src": "/textures/skaki-171/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/skaki-171/spine-bump.webp"
         },
         "top": {
           "src": "/textures/skaki-171/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/skaki-171/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/skaki-171/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/skaki-171/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4279,11 +4376,13 @@
         "top": {
           "src": "/textures/sequence-2375/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sequence-2375/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sequence-2375/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sequence-2375/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4391,16 +4490,19 @@
         },
         "spine": {
           "src": "/textures/carcassonne-20th-anniversary-edition-329954/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/carcassonne-20th-anniversary-edition-329954/spine-bump.webp"
         },
         "top": {
           "src": "/textures/carcassonne-20th-anniversary-edition-329954/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/carcassonne-20th-anniversary-edition-329954/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/carcassonne-20th-anniversary-edition-329954/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/carcassonne-20th-anniversary-edition-329954/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4513,16 +4615,19 @@
         },
         "spine": {
           "src": "/textures/cash-n-guns-second-edition-155362/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cash-n-guns-second-edition-155362/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cash-n-guns-second-edition-155362/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cash-n-guns-second-edition-155362/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cash-n-guns-second-edition-155362/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cash-n-guns-second-edition-155362/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4636,16 +4741,19 @@
         },
         "spine": {
           "src": "/textures/junkart-193042/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/junkart-193042/spine-bump.webp"
         },
         "top": {
           "src": "/textures/junkart-193042/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/junkart-193042/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/junkart-193042/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/junkart-193042/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4762,16 +4870,19 @@
         },
         "spine": {
           "src": "/textures/calico-283155/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/calico-283155/spine-bump.webp"
         },
         "top": {
           "src": "/textures/calico-283155/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/calico-283155/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/calico-283155/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/calico-283155/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -4885,11 +4996,13 @@
         "top": {
           "src": "/textures/scrabble-320/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/scrabble-320/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/scrabble-320/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/scrabble-320/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5004,16 +5117,19 @@
         },
         "spine": {
           "src": "/textures/talk-to-the-hand-50381/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/talk-to-the-hand-50381/spine-bump.webp"
         },
         "top": {
           "src": "/textures/talk-to-the-hand-50381/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/talk-to-the-hand-50381/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/talk-to-the-hand-50381/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/talk-to-the-hand-50381/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5122,16 +5238,19 @@
         },
         "spine": {
           "src": "/textures/virus-180020/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/virus-180020/spine-bump.webp"
         },
         "top": {
           "src": "/textures/virus-180020/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/virus-180020/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/virus-180020/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/virus-180020/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5252,11 +5371,13 @@
         "top": {
           "src": "/textures/mindbug-345584/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/mindbug-345584/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/mindbug-345584/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/mindbug-345584/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5381,11 +5502,13 @@
         "top": {
           "src": "/textures/exploding-kittens-172225/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/exploding-kittens-172225/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/exploding-kittens-172225/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/exploding-kittens-172225/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5443,16 +5566,19 @@
         },
         "spine": {
           "src": "/textures/nai-i-ochi/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/nai-i-ochi/spine-bump.webp"
         },
         "top": {
           "src": "/textures/nai-i-ochi/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/nai-i-ochi/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/nai-i-ochi/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/nai-i-ochi/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5571,16 +5697,19 @@
         },
         "spine": {
           "src": "/textures/ta-7-thaymata-toy-kosmoy-316377/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ta-7-thaymata-toy-kosmoy-316377/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ta-7-thaymata-toy-kosmoy-316377/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ta-7-thaymata-toy-kosmoy-316377/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ta-7-thaymata-toy-kosmoy-316377/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ta-7-thaymata-toy-kosmoy-316377/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5637,16 +5766,19 @@
         },
         "spine": {
           "src": "/textures/oi-apoikoi-toy-katan/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/oi-apoikoi-toy-katan/spine-bump.webp"
         },
         "top": {
           "src": "/textures/oi-apoikoi-toy-katan/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/oi-apoikoi-toy-katan/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/oi-apoikoi-toy-katan/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/oi-apoikoi-toy-katan/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5766,11 +5898,13 @@
         "top": {
           "src": "/textures/ubongo-16986/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ubongo-16986/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ubongo-16986/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ubongo-16986/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -5890,11 +6024,13 @@
         "top": {
           "src": "/textures/ticket-to-ride-eyropi-14996/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ticket-to-ride-eyropi-14996/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ticket-to-ride-eyropi-14996/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ticket-to-ride-eyropi-14996/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6027,11 +6163,13 @@
         "top": {
           "src": "/textures/o-vasilias-toy-tokyo-70323/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-vasilias-toy-tokyo-70323/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/o-vasilias-toy-tokyo-70323/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-vasilias-toy-tokyo-70323/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6125,16 +6263,19 @@
         },
         "spine": {
           "src": "/textures/city-blox-286141/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/city-blox-286141/spine-bump.webp"
         },
         "top": {
           "src": "/textures/city-blox-286141/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/city-blox-286141/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/city-blox-286141/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/city-blox-286141/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6255,11 +6396,13 @@
         "top": {
           "src": "/textures/bohnanza-11/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/bohnanza-11/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/bohnanza-11/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/bohnanza-11/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6383,11 +6526,13 @@
         "top": {
           "src": "/textures/kastores-pontikia-3837/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kastores-pontikia-3837/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kastores-pontikia-3837/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kastores-pontikia-3837/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6503,11 +6648,13 @@
         "top": {
           "src": "/textures/skoteines-ypotheseis-londino-1888-106/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/skoteines-ypotheseis-londino-1888-106/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/skoteines-ypotheseis-londino-1888-106/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/skoteines-ypotheseis-londino-1888-106/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6625,16 +6772,19 @@
         },
         "spine": {
           "src": "/textures/hero-realms-198994/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/hero-realms-198994/spine-bump.webp"
         },
         "top": {
           "src": "/textures/hero-realms-198994/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/hero-realms-198994/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/hero-realms-198994/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/hero-realms-198994/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6736,16 +6886,19 @@
         },
         "spine": {
           "src": "/textures/don-t-break-the-ice-4888/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/don-t-break-the-ice-4888/spine-bump.webp"
         },
         "top": {
           "src": "/textures/don-t-break-the-ice-4888/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/don-t-break-the-ice-4888/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/don-t-break-the-ice-4888/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/don-t-break-the-ice-4888/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6833,16 +6986,19 @@
         },
         "spine": {
           "src": "/textures/connect-4-shots-258818/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/connect-4-shots-258818/spine-bump.webp"
         },
         "top": {
           "src": "/textures/connect-4-shots-258818/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/connect-4-shots-258818/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/connect-4-shots-258818/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/connect-4-shots-258818/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -6943,16 +7099,19 @@
         },
         "spine": {
           "src": "/textures/goyroynakia-sti-laspi-118410/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/goyroynakia-sti-laspi-118410/spine-bump.webp"
         },
         "top": {
           "src": "/textures/goyroynakia-sti-laspi-118410/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/goyroynakia-sti-laspi-118410/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/goyroynakia-sti-laspi-118410/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/goyroynakia-sti-laspi-118410/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7060,16 +7219,19 @@
         },
         "spine": {
           "src": "/textures/bag-of-chips-344114/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/bag-of-chips-344114/spine-bump.webp"
         },
         "top": {
           "src": "/textures/bag-of-chips-344114/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/bag-of-chips-344114/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/bag-of-chips-344114/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/bag-of-chips-344114/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7175,16 +7337,19 @@
         },
         "spine": {
           "src": "/textures/fiesta-de-los-muertos-285253/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/fiesta-de-los-muertos-285253/spine-bump.webp"
         },
         "top": {
           "src": "/textures/fiesta-de-los-muertos-285253/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/fiesta-de-los-muertos-285253/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/fiesta-de-los-muertos-285253/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/fiesta-de-los-muertos-285253/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7309,16 +7474,19 @@
         },
         "spine": {
           "src": "/textures/anazitontas-to-el-ntoranto-217372/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/anazitontas-to-el-ntoranto-217372/spine-bump.webp"
         },
         "top": {
           "src": "/textures/anazitontas-to-el-ntoranto-217372/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/anazitontas-to-el-ntoranto-217372/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/anazitontas-to-el-ntoranto-217372/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/anazitontas-to-el-ntoranto-217372/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7420,16 +7588,19 @@
         },
         "spine": {
           "src": "/textures/kosmogonia-2086-oracle-394193/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kosmogonia-2086-oracle-394193/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kosmogonia-2086-oracle-394193/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kosmogonia-2086-oracle-394193/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kosmogonia-2086-oracle-394193/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kosmogonia-2086-oracle-394193/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7536,16 +7707,19 @@
         },
         "spine": {
           "src": "/textures/cloudage-316858/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cloudage-316858/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cloudage-316858/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cloudage-316858/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cloudage-316858/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cloudage-316858/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7664,16 +7838,19 @@
         },
         "spine": {
           "src": "/textures/pagan-fate-of-roanoke-319910/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/pagan-fate-of-roanoke-319910/spine-bump.webp"
         },
         "top": {
           "src": "/textures/pagan-fate-of-roanoke-319910/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/pagan-fate-of-roanoke-319910/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/pagan-fate-of-roanoke-319910/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/pagan-fate-of-roanoke-319910/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7790,16 +7967,19 @@
         },
         "spine": {
           "src": "/textures/epic-card-game-175621/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/epic-card-game-175621/spine-bump.webp"
         },
         "top": {
           "src": "/textures/epic-card-game-175621/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/epic-card-game-175621/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/epic-card-game-175621/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/epic-card-game-175621/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -7913,16 +8093,19 @@
         },
         "spine": {
           "src": "/textures/sky-team-373106/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sky-team-373106/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sky-team-373106/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sky-team-373106/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sky-team-373106/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sky-team-373106/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8020,16 +8203,19 @@
         },
         "spine": {
           "src": "/textures/dice-masters-386766/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dice-masters-386766/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dice-masters-386766/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dice-masters-386766/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dice-masters-386766/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dice-masters-386766/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8126,16 +8312,19 @@
         },
         "spine": {
           "src": "/textures/solforge-fusion-344341/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/solforge-fusion-344341/spine-bump.webp"
         },
         "top": {
           "src": "/textures/solforge-fusion-344341/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/solforge-fusion-344341/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/solforge-fusion-344341/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/solforge-fusion-344341/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8238,16 +8427,19 @@
         },
         "spine": {
           "src": "/textures/keyforge-257501/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/keyforge-257501/spine-bump.webp"
         },
         "top": {
           "src": "/textures/keyforge-257501/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/keyforge-257501/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/keyforge-257501/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/keyforge-257501/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8366,16 +8558,19 @@
         },
         "spine": {
           "src": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/spine-bump.webp"
         },
         "top": {
           "src": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/world-of-warcraft-wrath-of-the-lich-king-342848/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8483,16 +8678,19 @@
         },
         "spine": {
           "src": "/textures/yogi-224271/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/yogi-224271/spine-bump.webp"
         },
         "top": {
           "src": "/textures/yogi-224271/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/yogi-224271/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/yogi-224271/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/yogi-224271/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8615,16 +8813,19 @@
         },
         "spine": {
           "src": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/spine-bump.webp"
         },
         "top": {
           "src": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8739,16 +8940,19 @@
         },
         "spine": {
           "src": "/textures/the-binding-of-isaac-four-souls-255664/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-binding-of-isaac-four-souls-255664/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-binding-of-isaac-four-souls-255664/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-binding-of-isaac-four-souls-255664/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-binding-of-isaac-four-souls-255664/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-binding-of-isaac-four-souls-255664/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8855,16 +9059,19 @@
         },
         "spine": {
           "src": "/textures/joking-hazard-193621/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/joking-hazard-193621/spine-bump.webp"
         },
         "top": {
           "src": "/textures/joking-hazard-193621/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/joking-hazard-193621/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/joking-hazard-193621/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/joking-hazard-193621/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -8960,16 +9167,19 @@
         },
         "spine": {
           "src": "/textures/parachute-panda-420025/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/parachute-panda-420025/spine-bump.webp"
         },
         "top": {
           "src": "/textures/parachute-panda-420025/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/parachute-panda-420025/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/parachute-panda-420025/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/parachute-panda-420025/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9089,11 +9299,13 @@
         "top": {
           "src": "/textures/hive-carbon-2655/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/hive-carbon-2655/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/hive-carbon-2655/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/hive-carbon-2655/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9206,11 +9418,13 @@
         "top": {
           "src": "/textures/phase-10-1258/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/phase-10-1258/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/phase-10-1258/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/phase-10-1258/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9311,16 +9525,19 @@
         },
         "spine": {
           "src": "/textures/dungeon-mayhem-260300/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dungeon-mayhem-260300/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dungeon-mayhem-260300/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dungeon-mayhem-260300/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dungeon-mayhem-260300/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dungeon-mayhem-260300/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9428,16 +9645,19 @@
         },
         "spine": {
           "src": "/textures/cosmic-encounter-duel-298572/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cosmic-encounter-duel-298572/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cosmic-encounter-duel-298572/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cosmic-encounter-duel-298572/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cosmic-encounter-duel-298572/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cosmic-encounter-duel-298572/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9537,16 +9757,19 @@
         },
         "spine": {
           "src": "/textures/court-of-the-dead-dark-harvest-285105/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/court-of-the-dead-dark-harvest-285105/spine-bump.webp"
         },
         "top": {
           "src": "/textures/court-of-the-dead-dark-harvest-285105/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/court-of-the-dead-dark-harvest-285105/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/court-of-the-dead-dark-harvest-285105/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/court-of-the-dead-dark-harvest-285105/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9647,16 +9870,19 @@
         },
         "spine": {
           "src": "/textures/chupacabra-survive-the-night-120515/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/chupacabra-survive-the-night-120515/spine-bump.webp"
         },
         "top": {
           "src": "/textures/chupacabra-survive-the-night-120515/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/chupacabra-survive-the-night-120515/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/chupacabra-survive-the-night-120515/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/chupacabra-survive-the-night-120515/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9751,16 +9977,19 @@
         },
         "spine": {
           "src": "/textures/tentacle-town-273433/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/tentacle-town-273433/spine-bump.webp"
         },
         "top": {
           "src": "/textures/tentacle-town-273433/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/tentacle-town-273433/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/tentacle-town-273433/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/tentacle-town-273433/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9818,16 +10047,19 @@
         },
         "spine": {
           "src": "/textures/patchwork-halloween/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/patchwork-halloween/spine-bump.webp"
         },
         "top": {
           "src": "/textures/patchwork-halloween/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/patchwork-halloween/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/patchwork-halloween/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/patchwork-halloween/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -9888,16 +10120,19 @@
         },
         "spine": {
           "src": "/textures/skitsografies/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/skitsografies/spine-bump.webp"
         },
         "top": {
           "src": "/textures/skitsografies/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/skitsografies/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/skitsografies/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/skitsografies/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10001,16 +10236,19 @@
         },
         "spine": {
           "src": "/textures/ice-team-265031/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ice-team-265031/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ice-team-265031/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ice-team-265031/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ice-team-265031/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ice-team-265031/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10115,16 +10353,19 @@
         },
         "spine": {
           "src": "/textures/jurassic-snack-241164/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/jurassic-snack-241164/spine-bump.webp"
         },
         "top": {
           "src": "/textures/jurassic-snack-241164/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-snack-241164/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/jurassic-snack-241164/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-snack-241164/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10225,16 +10466,19 @@
         },
         "spine": {
           "src": "/textures/jurassic-brunch-297666/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/jurassic-brunch-297666/spine-bump.webp"
         },
         "top": {
           "src": "/textures/jurassic-brunch-297666/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-brunch-297666/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/jurassic-brunch-297666/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-brunch-297666/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10341,16 +10585,19 @@
         },
         "spine": {
           "src": "/textures/universus-ccg-258301/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/universus-ccg-258301/spine-bump.webp"
         },
         "top": {
           "src": "/textures/universus-ccg-258301/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/universus-ccg-258301/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/universus-ccg-258301/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/universus-ccg-258301/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10462,16 +10709,19 @@
         },
         "spine": {
           "src": "/textures/the-crew-mission-deep-sea-324856/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-crew-mission-deep-sea-324856/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-crew-mission-deep-sea-324856/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-crew-mission-deep-sea-324856/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-crew-mission-deep-sea-324856/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-crew-mission-deep-sea-324856/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10592,16 +10842,19 @@
         },
         "spine": {
           "src": "/textures/port-royagial-156009/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/port-royagial-156009/spine-bump.webp"
         },
         "top": {
           "src": "/textures/port-royagial-156009/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/port-royagial-156009/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/port-royagial-156009/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/port-royagial-156009/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10750,16 +11003,19 @@
         },
         "spine": {
           "src": "/textures/lords-of-waterdeep-110327/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/lords-of-waterdeep-110327/spine-bump.webp"
         },
         "top": {
           "src": "/textures/lords-of-waterdeep-110327/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/lords-of-waterdeep-110327/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/lords-of-waterdeep-110327/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/lords-of-waterdeep-110327/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -10870,16 +11126,19 @@
         },
         "spine": {
           "src": "/textures/dice-forge-194594/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dice-forge-194594/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dice-forge-194594/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dice-forge-194594/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dice-forge-194594/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dice-forge-194594/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11000,16 +11259,19 @@
         },
         "spine": {
           "src": "/textures/heat-pedal-to-the-metal-366013/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/heat-pedal-to-the-metal-366013/spine-bump.webp"
         },
         "top": {
           "src": "/textures/heat-pedal-to-the-metal-366013/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/heat-pedal-to-the-metal-366013/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/heat-pedal-to-the-metal-366013/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/heat-pedal-to-the-metal-366013/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11118,16 +11380,19 @@
         },
         "spine": {
           "src": "/textures/my-shelfie-the-dice-game-411543/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/my-shelfie-the-dice-game-411543/spine-bump.webp"
         },
         "top": {
           "src": "/textures/my-shelfie-the-dice-game-411543/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/my-shelfie-the-dice-game-411543/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/my-shelfie-the-dice-game-411543/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/my-shelfie-the-dice-game-411543/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11240,16 +11505,19 @@
         },
         "spine": {
           "src": "/textures/diced-veggies-381356/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/diced-veggies-381356/spine-bump.webp"
         },
         "top": {
           "src": "/textures/diced-veggies-381356/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/diced-veggies-381356/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/diced-veggies-381356/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/diced-veggies-381356/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11356,16 +11624,19 @@
         },
         "spine": {
           "src": "/textures/chomp-377449/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/chomp-377449/spine-bump.webp"
         },
         "top": {
           "src": "/textures/chomp-377449/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/chomp-377449/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/chomp-377449/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/chomp-377449/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11464,16 +11735,19 @@
         },
         "spine": {
           "src": "/textures/tactiki-266592/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/tactiki-266592/spine-bump.webp"
         },
         "top": {
           "src": "/textures/tactiki-266592/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/tactiki-266592/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/tactiki-266592/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/tactiki-266592/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11599,11 +11873,13 @@
         "top": {
           "src": "/textures/railroad-ink-deep-blue-edition-245654/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/railroad-ink-deep-blue-edition-245654/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/railroad-ink-deep-blue-edition-245654/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/railroad-ink-deep-blue-edition-245654/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11712,16 +11988,19 @@
         },
         "spine": {
           "src": "/textures/ticket-to-ride-berlin-388036/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ticket-to-ride-berlin-388036/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ticket-to-ride-berlin-388036/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ticket-to-ride-berlin-388036/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ticket-to-ride-berlin-388036/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ticket-to-ride-berlin-388036/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11832,16 +12111,19 @@
         },
         "spine": {
           "src": "/textures/wavelength-262543/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/wavelength-262543/spine-bump.webp"
         },
         "top": {
           "src": "/textures/wavelength-262543/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/wavelength-262543/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/wavelength-262543/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/wavelength-262543/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -11964,16 +12246,19 @@
         },
         "spine": {
           "src": "/textures/slay-the-spire-338960/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/slay-the-spire-338960/spine-bump.webp"
         },
         "top": {
           "src": "/textures/slay-the-spire-338960/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/slay-the-spire-338960/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/slay-the-spire-338960/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/slay-the-spire-338960/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12084,16 +12369,19 @@
         },
         "spine": {
           "src": "/textures/small-world-of-warcraft-309630/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/small-world-of-warcraft-309630/spine-bump.webp"
         },
         "top": {
           "src": "/textures/small-world-of-warcraft-309630/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/small-world-of-warcraft-309630/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/small-world-of-warcraft-309630/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/small-world-of-warcraft-309630/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12210,16 +12498,19 @@
         },
         "spine": {
           "src": "/textures/kingdomino-204583/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kingdomino-204583/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kingdomino-204583/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-204583/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kingdomino-204583/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-204583/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12333,16 +12624,19 @@
         },
         "spine": {
           "src": "/textures/triqueta-378200/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/triqueta-378200/spine-bump.webp"
         },
         "top": {
           "src": "/textures/triqueta-378200/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/triqueta-378200/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/triqueta-378200/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/triqueta-378200/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12438,16 +12732,19 @@
         },
         "spine": {
           "src": "/textures/5-wards-382182/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/5-wards-382182/spine-bump.webp"
         },
         "top": {
           "src": "/textures/5-wards-382182/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/5-wards-382182/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/5-wards-382182/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/5-wards-382182/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12566,16 +12863,19 @@
         },
         "spine": {
           "src": "/textures/to-nisi-ton-peiraton-117663/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/to-nisi-ton-peiraton-117663/spine-bump.webp"
         },
         "top": {
           "src": "/textures/to-nisi-ton-peiraton-117663/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/to-nisi-ton-peiraton-117663/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/to-nisi-ton-peiraton-117663/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/to-nisi-ton-peiraton-117663/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12702,11 +13002,13 @@
         "top": {
           "src": "/textures/apagoreymeni-nisos-65244/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/apagoreymeni-nisos-65244/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/apagoreymeni-nisos-65244/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/apagoreymeni-nisos-65244/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12831,16 +13133,19 @@
         },
         "spine": {
           "src": "/textures/o-chartografos-263918/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/o-chartografos-263918/spine-bump.webp"
         },
         "top": {
           "src": "/textures/o-chartografos-263918/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-chartografos-263918/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/o-chartografos-263918/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-chartografos-263918/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -12954,16 +13259,19 @@
         },
         "spine": {
           "src": "/textures/overboss-a-boss-monster-adventure-310192/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/overboss-a-boss-monster-adventure-310192/spine-bump.webp"
         },
         "top": {
           "src": "/textures/overboss-a-boss-monster-adventure-310192/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/overboss-a-boss-monster-adventure-310192/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/overboss-a-boss-monster-adventure-310192/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/overboss-a-boss-monster-adventure-310192/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13093,16 +13401,19 @@
         },
         "spine": {
           "src": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13214,16 +13525,19 @@
         },
         "spine": {
           "src": "/textures/reef-project-419199/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/reef-project-419199/spine-bump.webp"
         },
         "top": {
           "src": "/textures/reef-project-419199/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/reef-project-419199/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/reef-project-419199/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/reef-project-419199/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13325,16 +13639,19 @@
         },
         "spine": {
           "src": "/textures/confusing-lands-342200/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/confusing-lands-342200/spine-bump.webp"
         },
         "top": {
           "src": "/textures/confusing-lands-342200/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/confusing-lands-342200/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/confusing-lands-342200/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/confusing-lands-342200/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13431,16 +13748,19 @@
         },
         "spine": {
           "src": "/textures/sirens-375616/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sirens-375616/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sirens-375616/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sirens-375616/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sirens-375616/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sirens-375616/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13556,16 +13876,19 @@
         },
         "spine": {
           "src": "/textures/dorfromantik-370591/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dorfromantik-370591/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dorfromantik-370591/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dorfromantik-370591/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dorfromantik-370591/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dorfromantik-370591/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13668,16 +13991,19 @@
         },
         "spine": {
           "src": "/textures/trial-by-trolley-282171/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/trial-by-trolley-282171/spine-bump.webp"
         },
         "top": {
           "src": "/textures/trial-by-trolley-282171/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/trial-by-trolley-282171/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/trial-by-trolley-282171/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/trial-by-trolley-282171/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13790,16 +14116,19 @@
         },
         "spine": {
           "src": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-quest-for-el-dorado-the-golden-temples-271615/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -13903,16 +14232,19 @@
         },
         "spine": {
           "src": "/textures/prowl-clans-cunning-402353/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/prowl-clans-cunning-402353/spine-bump.webp"
         },
         "top": {
           "src": "/textures/prowl-clans-cunning-402353/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/prowl-clans-cunning-402353/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/prowl-clans-cunning-402353/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/prowl-clans-cunning-402353/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14022,16 +14354,19 @@
         },
         "spine": {
           "src": "/textures/o-katergaris-153065/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/o-katergaris-153065/spine-bump.webp"
         },
         "top": {
           "src": "/textures/o-katergaris-153065/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-katergaris-153065/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/o-katergaris-153065/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/o-katergaris-153065/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14134,16 +14469,19 @@
         },
         "spine": {
           "src": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/spine-bump.webp"
         },
         "top": {
           "src": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/autumn-harvest-a-tea-dragon-society-game-315138/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14250,16 +14588,19 @@
         },
         "spine": {
           "src": "/textures/beacon-patrol-362976/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/beacon-patrol-362976/spine-bump.webp"
         },
         "top": {
           "src": "/textures/beacon-patrol-362976/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/beacon-patrol-362976/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/beacon-patrol-362976/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/beacon-patrol-362976/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14377,16 +14718,19 @@
         },
         "spine": {
           "src": "/textures/minos-dawn-of-the-bronze-age-423401/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/minos-dawn-of-the-bronze-age-423401/spine-bump.webp"
         },
         "top": {
           "src": "/textures/minos-dawn-of-the-bronze-age-423401/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/minos-dawn-of-the-bronze-age-423401/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/minos-dawn-of-the-bronze-age-423401/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/minos-dawn-of-the-bronze-age-423401/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14489,16 +14833,19 @@
         },
         "spine": {
           "src": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/spine-bump.webp"
         },
         "top": {
           "src": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14616,16 +14963,19 @@
         },
         "spine": {
           "src": "/textures/long-shot-the-dice-game-295374/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/long-shot-the-dice-game-295374/spine-bump.webp"
         },
         "top": {
           "src": "/textures/long-shot-the-dice-game-295374/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/long-shot-the-dice-game-295374/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/long-shot-the-dice-game-295374/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/long-shot-the-dice-game-295374/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14753,11 +15103,13 @@
         "top": {
           "src": "/textures/survive-the-island-425428/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/survive-the-island-425428/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/survive-the-island-425428/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/survive-the-island-425428/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -14877,16 +15229,19 @@
         },
         "spine": {
           "src": "/textures/faraway-385761/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/faraway-385761/spine-bump.webp"
         },
         "top": {
           "src": "/textures/faraway-385761/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/faraway-385761/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/faraway-385761/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/faraway-385761/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15002,11 +15357,13 @@
         "top": {
           "src": "/textures/istories-mystirioy-18803/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/istories-mystirioy-18803/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/istories-mystirioy-18803/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/istories-mystirioy-18803/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15067,16 +15424,19 @@
         },
         "spine": {
           "src": "/textures/poios-poy-pote-giati-party-edition/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/poios-poy-pote-giati-party-edition/spine-bump.webp"
         },
         "top": {
           "src": "/textures/poios-poy-pote-giati-party-edition/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/poios-poy-pote-giati-party-edition/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/poios-poy-pote-giati-party-edition/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/poios-poy-pote-giati-party-edition/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15195,6 +15555,7 @@
         "top": {
           "src": "/textures/codenames-duet-224037/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/codenames-duet-224037/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
@@ -15312,16 +15673,19 @@
         },
         "spine": {
           "src": "/textures/the-isle-of-cats-duel-431718/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-isle-of-cats-duel-431718/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-isle-of-cats-duel-431718/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-isle-of-cats-duel-431718/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-isle-of-cats-duel-431718/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-isle-of-cats-duel-431718/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15443,11 +15807,13 @@
         "top": {
           "src": "/textures/one-night-ultimate-warewolf-147949/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/one-night-ultimate-warewolf-147949/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/one-night-ultimate-warewolf-147949/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/one-night-ultimate-warewolf-147949/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15567,11 +15933,13 @@
         "top": {
           "src": "/textures/one-night-ultimate-werewolf-daybreak-163166/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/one-night-ultimate-werewolf-daybreak-163166/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/one-night-ultimate-werewolf-daybreak-163166/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/one-night-ultimate-werewolf-daybreak-163166/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15680,16 +16048,19 @@
         },
         "spine": {
           "src": "/textures/snowcrest-385437/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/snowcrest-385437/spine-bump.webp"
         },
         "top": {
           "src": "/textures/snowcrest-385437/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/snowcrest-385437/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/snowcrest-385437/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/snowcrest-385437/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15802,16 +16173,19 @@
         },
         "spine": {
           "src": "/textures/kinfire-delve-scorn-s-stockade-404538/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kinfire-delve-scorn-s-stockade-404538/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kinfire-delve-scorn-s-stockade-404538/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-scorn-s-stockade-404538/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kinfire-delve-scorn-s-stockade-404538/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-scorn-s-stockade-404538/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -15920,16 +16294,19 @@
         },
         "spine": {
           "src": "/textures/chabyrinthe-33088/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/chabyrinthe-33088/spine-bump.webp"
         },
         "top": {
           "src": "/textures/chabyrinthe-33088/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/chabyrinthe-33088/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/chabyrinthe-33088/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/chabyrinthe-33088/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16050,16 +16427,19 @@
         },
         "spine": {
           "src": "/textures/arkham-horror-lovecraft-letter-424784/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/arkham-horror-lovecraft-letter-424784/spine-bump.webp"
         },
         "top": {
           "src": "/textures/arkham-horror-lovecraft-letter-424784/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/arkham-horror-lovecraft-letter-424784/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/arkham-horror-lovecraft-letter-424784/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/arkham-horror-lovecraft-letter-424784/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16174,11 +16554,13 @@
         "top": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16291,16 +16673,19 @@
         },
         "spine": {
           "src": "/textures/kinfire-delve-vainglory-s-grotto-391795/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kinfire-delve-vainglory-s-grotto-391795/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kinfire-delve-vainglory-s-grotto-391795/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-vainglory-s-grotto-391795/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kinfire-delve-vainglory-s-grotto-391795/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-vainglory-s-grotto-391795/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16420,16 +16805,19 @@
         },
         "spine": {
           "src": "/textures/marvel-champions-the-card-game-285774/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/marvel-champions-the-card-game-285774/spine-bump.webp"
         },
         "top": {
           "src": "/textures/marvel-champions-the-card-game-285774/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/marvel-champions-the-card-game-285774/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/marvel-champions-the-card-game-285774/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/marvel-champions-the-card-game-285774/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16542,16 +16930,19 @@
         },
         "spine": {
           "src": "/textures/kinfire-delve-callous-lab-406174/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kinfire-delve-callous-lab-406174/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kinfire-delve-callous-lab-406174/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-callous-lab-406174/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kinfire-delve-callous-lab-406174/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kinfire-delve-callous-lab-406174/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16670,16 +17061,19 @@
         },
         "spine": {
           "src": "/textures/cascadia-295947/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cascadia-295947/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cascadia-295947/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cascadia-295947/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cascadia-295947/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cascadia-295947/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16790,16 +17184,19 @@
         },
         "spine": {
           "src": "/textures/gia-to-vasileio-334590/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/gia-to-vasileio-334590/spine-bump.webp"
         },
         "top": {
           "src": "/textures/gia-to-vasileio-334590/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/gia-to-vasileio-334590/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/gia-to-vasileio-334590/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/gia-to-vasileio-334590/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -16919,16 +17316,19 @@
         },
         "spine": {
           "src": "/textures/thalassa-charti-alati-367220/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/thalassa-charti-alati-367220/spine-bump.webp"
         },
         "top": {
           "src": "/textures/thalassa-charti-alati-367220/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/thalassa-charti-alati-367220/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/thalassa-charti-alati-367220/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/thalassa-charti-alati-367220/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17038,16 +17438,19 @@
         },
         "spine": {
           "src": "/textures/spicy-299169/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/spicy-299169/spine-bump.webp"
         },
         "top": {
           "src": "/textures/spicy-299169/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/spicy-299169/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/spicy-299169/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/spicy-299169/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17159,16 +17562,19 @@
         },
         "spine": {
           "src": "/textures/kingdomino-origins-340041/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kingdomino-origins-340041/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kingdomino-origins-340041/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-origins-340041/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kingdomino-origins-340041/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-origins-340041/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17274,16 +17680,19 @@
         },
         "spine": {
           "src": "/textures/cyberion-376893/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cyberion-376893/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cyberion-376893/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cyberion-376893/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cyberion-376893/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cyberion-376893/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17395,16 +17804,19 @@
         },
         "spine": {
           "src": "/textures/kingdomino-origins-340041-147/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kingdomino-origins-340041-147/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kingdomino-origins-340041-147/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-origins-340041-147/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kingdomino-origins-340041-147/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kingdomino-origins-340041-147/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17507,16 +17919,19 @@
         },
         "spine": {
           "src": "/textures/ouch-352710/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/ouch-352710/spine-bump.webp"
         },
         "top": {
           "src": "/textures/ouch-352710/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/ouch-352710/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/ouch-352710/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/ouch-352710/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17633,16 +18048,19 @@
         },
         "spine": {
           "src": "/textures/king-of-tokyo-duel-422484/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/king-of-tokyo-duel-422484/spine-bump.webp"
         },
         "top": {
           "src": "/textures/king-of-tokyo-duel-422484/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/king-of-tokyo-duel-422484/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/king-of-tokyo-duel-422484/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/king-of-tokyo-duel-422484/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17761,16 +18179,19 @@
         },
         "spine": {
           "src": "/textures/finspan-436126/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/finspan-436126/spine-bump.webp"
         },
         "top": {
           "src": "/textures/finspan-436126/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/finspan-436126/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/finspan-436126/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/finspan-436126/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -17888,16 +18309,19 @@
         },
         "spine": {
           "src": "/textures/hanabi-98778/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/hanabi-98778/spine-bump.webp"
         },
         "top": {
           "src": "/textures/hanabi-98778/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/hanabi-98778/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/hanabi-98778/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/hanabi-98778/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18008,16 +18432,19 @@
         },
         "spine": {
           "src": "/textures/marvel-remix-359152/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/marvel-remix-359152/spine-bump.webp"
         },
         "top": {
           "src": "/textures/marvel-remix-359152/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/marvel-remix-359152/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/marvel-remix-359152/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/marvel-remix-359152/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18081,16 +18508,19 @@
         },
         "spine": {
           "src": "/textures/mythic-valley-greek-legends/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/mythic-valley-greek-legends/spine-bump.webp"
         },
         "top": {
           "src": "/textures/mythic-valley-greek-legends/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/mythic-valley-greek-legends/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/mythic-valley-greek-legends/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/mythic-valley-greek-legends/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18194,16 +18624,19 @@
         },
         "spine": {
           "src": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/spine-bump.webp"
         },
         "top": {
           "src": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-deckbuilding-game-clone-wars-edition-422332/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18319,16 +18752,19 @@
         },
         "spine": {
           "src": "/textures/sylvion-143405/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sylvion-143405/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sylvion-143405/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sylvion-143405/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sylvion-143405/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sylvion-143405/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18431,16 +18867,19 @@
         },
         "spine": {
           "src": "/textures/bon-voyage-voyager-433550/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/bon-voyage-voyager-433550/spine-bump.webp"
         },
         "top": {
           "src": "/textures/bon-voyage-voyager-433550/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/bon-voyage-voyager-433550/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/bon-voyage-voyager-433550/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/bon-voyage-voyager-433550/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18550,16 +18989,19 @@
         },
         "spine": {
           "src": "/textures/scout-291453/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/scout-291453/spine-bump.webp"
         },
         "top": {
           "src": "/textures/scout-291453/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/scout-291453/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/scout-291453/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/scout-291453/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18673,16 +19115,19 @@
         },
         "spine": {
           "src": "/textures/splendor-monomachia-364073/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/splendor-monomachia-364073/spine-bump.webp"
         },
         "top": {
           "src": "/textures/splendor-monomachia-364073/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/splendor-monomachia-364073/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/splendor-monomachia-364073/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/splendor-monomachia-364073/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18808,16 +19253,19 @@
         },
         "spine": {
           "src": "/textures/cyclades-legendary-edition-380619/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/cyclades-legendary-edition-380619/spine-bump.webp"
         },
         "top": {
           "src": "/textures/cyclades-legendary-edition-380619/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/cyclades-legendary-edition-380619/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/cyclades-legendary-edition-380619/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/cyclades-legendary-edition-380619/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -18944,11 +19392,13 @@
         "top": {
           "src": "/textures/jaipur-54043/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/jaipur-54043/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/jaipur-54043/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/jaipur-54043/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19073,11 +19523,13 @@
         "top": {
           "src": "/textures/oceans-deluxe-edition-232414/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/oceans-deluxe-edition-232414/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/oceans-deluxe-edition-232414/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/oceans-deluxe-edition-232414/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19179,16 +19631,19 @@
         },
         "spine": {
           "src": "/textures/skull-queen-423432/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/skull-queen-423432/spine-bump.webp"
         },
         "top": {
           "src": "/textures/skull-queen-423432/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/skull-queen-423432/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/skull-queen-423432/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/skull-queen-423432/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19330,16 +19785,19 @@
         },
         "spine": {
           "src": "/textures/star-wars-the-deckbuilding-game-374173/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/star-wars-the-deckbuilding-game-374173/spine-bump.webp"
         },
         "top": {
           "src": "/textures/star-wars-the-deckbuilding-game-374173/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-deckbuilding-game-374173/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/star-wars-the-deckbuilding-game-374173/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-deckbuilding-game-374173/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19451,16 +19909,19 @@
         },
         "spine": {
           "src": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/spine-bump.webp"
         },
         "top": {
           "src": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19579,16 +20040,19 @@
         },
         "spine": {
           "src": "/textures/parko-deinosayron-264055/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/parko-deinosayron-264055/spine-bump.webp"
         },
         "top": {
           "src": "/textures/parko-deinosayron-264055/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/parko-deinosayron-264055/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/parko-deinosayron-264055/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/parko-deinosayron-264055/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19694,16 +20158,19 @@
         },
         "spine": {
           "src": "/textures/kabuto-sumo-sakura-slam-410680/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/kabuto-sumo-sakura-slam-410680/spine-bump.webp"
         },
         "top": {
           "src": "/textures/kabuto-sumo-sakura-slam-410680/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/kabuto-sumo-sakura-slam-410680/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/kabuto-sumo-sakura-slam-410680/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/kabuto-sumo-sakura-slam-410680/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19808,16 +20275,19 @@
         },
         "spine": {
           "src": "/textures/fairy-ring-419074/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/fairy-ring-419074/spine-bump.webp"
         },
         "top": {
           "src": "/textures/fairy-ring-419074/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/fairy-ring-419074/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/fairy-ring-419074/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/fairy-ring-419074/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -19935,16 +20405,19 @@
         },
         "spine": {
           "src": "/textures/star-wars-the-clone-wars-370913/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/star-wars-the-clone-wars-370913/spine-bump.webp"
         },
         "top": {
           "src": "/textures/star-wars-the-clone-wars-370913/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-clone-wars-370913/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/star-wars-the-clone-wars-370913/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-the-clone-wars-370913/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20058,16 +20531,19 @@
         },
         "spine": {
           "src": "/textures/the-fox-in-the-forest-221965/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-fox-in-the-forest-221965/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-fox-in-the-forest-221965/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-fox-in-the-forest-221965/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-fox-in-the-forest-221965/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-fox-in-the-forest-221965/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20170,16 +20646,19 @@
         },
         "spine": {
           "src": "/textures/invincible-the-hero-building-game-396251/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/invincible-the-hero-building-game-396251/spine-bump.webp"
         },
         "top": {
           "src": "/textures/invincible-the-hero-building-game-396251/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/invincible-the-hero-building-game-396251/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/invincible-the-hero-building-game-396251/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/invincible-the-hero-building-game-396251/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20274,16 +20753,19 @@
         },
         "spine": {
           "src": "/textures/slayers-and-dragons-434500/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/slayers-and-dragons-434500/spine-bump.webp"
         },
         "top": {
           "src": "/textures/slayers-and-dragons-434500/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/slayers-and-dragons-434500/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/slayers-and-dragons-434500/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/slayers-and-dragons-434500/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20390,16 +20872,19 @@
         },
         "spine": {
           "src": "/textures/fort-296912/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/fort-296912/spine-bump.webp"
         },
         "top": {
           "src": "/textures/fort-296912/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/fort-296912/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/fort-296912/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/fort-296912/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20522,16 +21007,19 @@
         },
         "spine": {
           "src": "/textures/star-wars-battle-of-hoth-444481/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/star-wars-battle-of-hoth-444481/spine-bump.webp"
         },
         "top": {
           "src": "/textures/star-wars-battle-of-hoth-444481/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-battle-of-hoth-444481/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/star-wars-battle-of-hoth-444481/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/star-wars-battle-of-hoth-444481/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20626,16 +21114,19 @@
         },
         "spine": {
           "src": "/textures/jurassic-world-escape-the-island-366302/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/jurassic-world-escape-the-island-366302/spine-bump.webp"
         },
         "top": {
           "src": "/textures/jurassic-world-escape-the-island-366302/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-world-escape-the-island-366302/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/jurassic-world-escape-the-island-366302/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/jurassic-world-escape-the-island-366302/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20730,16 +21221,19 @@
         },
         "spine": {
           "src": "/textures/wiz-war-9th-edition-324937/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/wiz-war-9th-edition-324937/spine-bump.webp"
         },
         "top": {
           "src": "/textures/wiz-war-9th-edition-324937/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/wiz-war-9th-edition-324937/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/wiz-war-9th-edition-324937/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/wiz-war-9th-edition-324937/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20840,16 +21334,19 @@
         },
         "spine": {
           "src": "/textures/3-laws-of-robotics-271447/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/3-laws-of-robotics-271447/spine-bump.webp"
         },
         "top": {
           "src": "/textures/3-laws-of-robotics-271447/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/3-laws-of-robotics-271447/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/3-laws-of-robotics-271447/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/3-laws-of-robotics-271447/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -20959,16 +21456,19 @@
         },
         "spine": {
           "src": "/textures/into-the-dark-dungeon-silver-mine-429770/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/into-the-dark-dungeon-silver-mine-429770/spine-bump.webp"
         },
         "top": {
           "src": "/textures/into-the-dark-dungeon-silver-mine-429770/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/into-the-dark-dungeon-silver-mine-429770/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/into-the-dark-dungeon-silver-mine-429770/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/into-the-dark-dungeon-silver-mine-429770/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21094,16 +21594,19 @@
         },
         "spine": {
           "src": "/textures/sagrada-199561/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sagrada-199561/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sagrada-199561/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sagrada-199561/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sagrada-199561/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sagrada-199561/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21235,11 +21738,13 @@
         "top": {
           "src": "/textures/chamenes-politeies-50/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/chamenes-politeies-50/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/chamenes-politeies-50/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/chamenes-politeies-50/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21335,16 +21840,19 @@
         },
         "spine": {
           "src": "/textures/travelers-tokyo-405188/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/travelers-tokyo-405188/spine-bump.webp"
         },
         "top": {
           "src": "/textures/travelers-tokyo-405188/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/travelers-tokyo-405188/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/travelers-tokyo-405188/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/travelers-tokyo-405188/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21454,16 +21962,19 @@
         },
         "spine": {
           "src": "/textures/babylon-418354/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/babylon-418354/spine-bump.webp"
         },
         "top": {
           "src": "/textures/babylon-418354/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/babylon-418354/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/babylon-418354/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/babylon-418354/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21576,16 +22087,19 @@
         },
         "spine": {
           "src": "/textures/tag-team-434906/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/tag-team-434906/spine-bump.webp"
         },
         "top": {
           "src": "/textures/tag-team-434906/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/tag-team-434906/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/tag-team-434906/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/tag-team-434906/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21713,11 +22227,13 @@
         "top": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21834,16 +22350,19 @@
         },
         "spine": {
           "src": "/textures/agent-avenue-422732/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/agent-avenue-422732/spine-bump.webp"
         },
         "top": {
           "src": "/textures/agent-avenue-422732/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/agent-avenue-422732/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/agent-avenue-422732/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/agent-avenue-422732/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -21946,16 +22465,19 @@
         },
         "spine": {
           "src": "/textures/fantasy-realms-deluxe-edition-363289/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/fantasy-realms-deluxe-edition-363289/spine-bump.webp"
         },
         "top": {
           "src": "/textures/fantasy-realms-deluxe-edition-363289/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/fantasy-realms-deluxe-edition-363289/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/fantasy-realms-deluxe-edition-363289/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/fantasy-realms-deluxe-edition-363289/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22080,16 +22602,19 @@
         },
         "spine": {
           "src": "/textures/unmatched-the-witcher-realms-fall-411861/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/unmatched-the-witcher-realms-fall-411861/spine-bump.webp"
         },
         "top": {
           "src": "/textures/unmatched-the-witcher-realms-fall-411861/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-the-witcher-realms-fall-411861/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/unmatched-the-witcher-realms-fall-411861/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-the-witcher-realms-fall-411861/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22196,16 +22721,19 @@
         },
         "spine": {
           "src": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/spine-bump.webp"
         },
         "top": {
           "src": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/the-lord-of-the-rings-the-two-towers-trick-taking-game-448271/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22307,16 +22835,19 @@
         },
         "spine": {
           "src": "/textures/sosig-411015/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/sosig-411015/spine-bump.webp"
         },
         "top": {
           "src": "/textures/sosig-411015/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/sosig-411015/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/sosig-411015/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/sosig-411015/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22418,16 +22949,19 @@
         },
         "spine": {
           "src": "/textures/fantasy-realms-greek-legends-428664/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/fantasy-realms-greek-legends-428664/spine-bump.webp"
         },
         "top": {
           "src": "/textures/fantasy-realms-greek-legends-428664/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/fantasy-realms-greek-legends-428664/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/fantasy-realms-greek-legends-428664/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/fantasy-realms-greek-legends-428664/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22541,16 +23075,19 @@
         },
         "spine": {
           "src": "/textures/castle-combo-416851/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/castle-combo-416851/spine-bump.webp"
         },
         "top": {
           "src": "/textures/castle-combo-416851/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/castle-combo-416851/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/castle-combo-416851/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/castle-combo-416851/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22665,16 +23202,19 @@
         },
         "spine": {
           "src": "/textures/creature-caravan-385331/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/creature-caravan-385331/spine-bump.webp"
         },
         "top": {
           "src": "/textures/creature-caravan-385331/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/creature-caravan-385331/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/creature-caravan-385331/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/creature-caravan-385331/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22789,16 +23329,19 @@
         },
         "spine": {
           "src": "/textures/compile-main-1-406652/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/compile-main-1-406652/spine-bump.webp"
         },
         "top": {
           "src": "/textures/compile-main-1-406652/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/compile-main-1-406652/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/compile-main-1-406652/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/compile-main-1-406652/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -22911,16 +23454,19 @@
         },
         "spine": {
           "src": "/textures/compile-main-2-440606/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/compile-main-2-440606/spine-bump.webp"
         },
         "top": {
           "src": "/textures/compile-main-2-440606/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/compile-main-2-440606/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/compile-main-2-440606/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/compile-main-2-440606/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23030,16 +23576,19 @@
         },
         "spine": {
           "src": "/textures/flip-7-with-a-vengeance-463441/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/flip-7-with-a-vengeance-463441/spine-bump.webp"
         },
         "top": {
           "src": "/textures/flip-7-with-a-vengeance-463441/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/flip-7-with-a-vengeance-463441/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/flip-7-with-a-vengeance-463441/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/flip-7-with-a-vengeance-463441/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23154,16 +23703,19 @@
         },
         "spine": {
           "src": "/textures/duel-for-cardia-447243/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/duel-for-cardia-447243/spine-bump.webp"
         },
         "top": {
           "src": "/textures/duel-for-cardia-447243/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/duel-for-cardia-447243/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/duel-for-cardia-447243/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/duel-for-cardia-447243/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23285,16 +23837,19 @@
         },
         "spine": {
           "src": "/textures/unmatched-the-witcher-steel-and-silver-411860/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/unmatched-the-witcher-steel-and-silver-411860/spine-bump.webp"
         },
         "top": {
           "src": "/textures/unmatched-the-witcher-steel-and-silver-411860/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-the-witcher-steel-and-silver-411860/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/unmatched-the-witcher-steel-and-silver-411860/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-the-witcher-steel-and-silver-411860/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23402,16 +23957,19 @@
         },
         "spine": {
           "src": "/textures/pondscape-435330/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/pondscape-435330/spine-bump.webp"
         },
         "top": {
           "src": "/textures/pondscape-435330/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/pondscape-435330/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/pondscape-435330/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/pondscape-435330/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23511,16 +24069,19 @@
         },
         "spine": {
           "src": "/textures/3-witches-447707/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/3-witches-447707/spine-bump.webp"
         },
         "top": {
           "src": "/textures/3-witches-447707/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/3-witches-447707/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/3-witches-447707/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/3-witches-447707/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23634,16 +24195,19 @@
         },
         "spine": {
           "src": "/textures/my-city-295486/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/my-city-295486/spine-bump.webp"
         },
         "top": {
           "src": "/textures/my-city-295486/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/my-city-295486/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/my-city-295486/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/my-city-295486/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23773,16 +24337,19 @@
         },
         "spine": {
           "src": "/textures/unmatched-battle-of-legends-volume-three-439765/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/unmatched-battle-of-legends-volume-three-439765/spine-bump.webp"
         },
         "top": {
           "src": "/textures/unmatched-battle-of-legends-volume-three-439765/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-battle-of-legends-volume-three-439765/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/unmatched-battle-of-legends-volume-three-439765/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/unmatched-battle-of-legends-volume-three-439765/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23879,16 +24446,19 @@
         },
         "spine": {
           "src": "/textures/dungeons-dragons-edge-of-the-realms-431590/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dungeons-dragons-edge-of-the-realms-431590/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dungeons-dragons-edge-of-the-realms-431590/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dungeons-dragons-edge-of-the-realms-431590/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dungeons-dragons-edge-of-the-realms-431590/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dungeons-dragons-edge-of-the-realms-431590/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -23993,16 +24563,19 @@
         },
         "spine": {
           "src": "/textures/hot-streak-446497/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/hot-streak-446497/spine-bump.webp"
         },
         "top": {
           "src": "/textures/hot-streak-446497/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/hot-streak-446497/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/hot-streak-446497/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/hot-streak-446497/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24119,16 +24692,19 @@
         },
         "spine": {
           "src": "/textures/aneva-sti-sanida-367771/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/aneva-sti-sanida-367771/spine-bump.webp"
         },
         "top": {
           "src": "/textures/aneva-sti-sanida-367771/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/aneva-sti-sanida-367771/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/aneva-sti-sanida-367771/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/aneva-sti-sanida-367771/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24240,16 +24816,19 @@
         },
         "spine": {
           "src": "/textures/savernake-forest-369142/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/savernake-forest-369142/spine-bump.webp"
         },
         "top": {
           "src": "/textures/savernake-forest-369142/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/savernake-forest-369142/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/savernake-forest-369142/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/savernake-forest-369142/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24347,16 +24926,19 @@
         },
         "spine": {
           "src": "/textures/nada-137931/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/nada-137931/spine-bump.webp"
         },
         "top": {
           "src": "/textures/nada-137931/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/nada-137931/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/nada-137931/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/nada-137931/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24460,16 +25042,19 @@
         },
         "spine": {
           "src": "/textures/flamecraft-duals-439305/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/flamecraft-duals-439305/spine-bump.webp"
         },
         "top": {
           "src": "/textures/flamecraft-duals-439305/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/flamecraft-duals-439305/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/flamecraft-duals-439305/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/flamecraft-duals-439305/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24577,16 +25162,19 @@
         },
         "spine": {
           "src": "/textures/toy-battle-434654/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/toy-battle-434654/spine-bump.webp"
         },
         "top": {
           "src": "/textures/toy-battle-434654/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/toy-battle-434654/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/toy-battle-434654/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/toy-battle-434654/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24704,16 +25292,19 @@
         },
         "spine": {
           "src": "/textures/flamecraft-336986/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/flamecraft-336986/spine-bump.webp"
         },
         "top": {
           "src": "/textures/flamecraft-336986/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/flamecraft-336986/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/flamecraft-336986/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/flamecraft-336986/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24830,16 +25421,19 @@
         },
         "spine": {
           "src": "/textures/harmonies-414317/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/harmonies-414317/spine-bump.webp"
         },
         "top": {
           "src": "/textures/harmonies-414317/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/harmonies-414317/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/harmonies-414317/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/harmonies-414317/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
@@ -24967,16 +25561,19 @@
         },
         "spine": {
           "src": "/textures/dune-imperium-uprising-397598/spine.webp",
-          "source": "procedural"
+          "source": "procedural",
+          "bump": "/textures/dune-imperium-uprising-397598/spine-bump.webp"
         },
         "top": {
           "src": "/textures/dune-imperium-uprising-397598/top.webp",
           "source": "cover-derived",
+          "bump": "/textures/dune-imperium-uprising-397598/top-bump.webp",
           "note": "darkened cover-art band + title (no photo of top exists)"
         },
         "bottom": {
           "src": "/textures/dune-imperium-uprising-397598/bottom.webp",
           "source": "cover-derived",
+          "bump": "/textures/dune-imperium-uprising-397598/bottom-bump.webp",
           "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {

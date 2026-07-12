@@ -87,6 +87,15 @@ async function svgToWebp(svg, w, h, out) {
   await sharp(Buffer.from(svg)).resize(w, h).webp({ quality: 88, effort: 4 }).toFile(out);
 }
 
+// Render a dedicated TEXT/INK bump map: the printed elements in white on black
+// (height = ink), softly blurred for a bevel. Sampled per-face in the shader so
+// only the text/graphics emboss — never the artwork or JPEG noise.
+const bumps = {};
+async function writeBump(inner, w, h, out) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#000000"/>${inner}</svg>`;
+  await sharp(Buffer.from(svg)).resize(w, h).blur(1.3).webp({ quality: 78, effort: 4 }).toFile(out);
+}
+
 // ---- photometric normalization (see SIDES-PLAN.md §4) ----------------------
 // The FRONT cover is the reference and is never touched. Every other extracted
 // photo is Reinhard-transferred toward the cover's per-channel mean/std so the
@@ -204,7 +213,11 @@ async function makeSpine(accent) {
         text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${pub}</text>
     </g></svg>`;
   await svgToWebp(svg, W, H, out);
-  sources.spine = 'procedural';
+  const bumpInner = `
+    <g transform="translate(${cx}, ${H / 2}) rotate(-90)"><text x="0" y="0" fill="#ffffff" font-family="Georgia, serif" font-weight="500" font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${title}</text></g>
+    <g transform="translate(${W * 0.82}, ${H / 2}) rotate(-90)"><text x="0" y="0" fill="#8a8a8a" font-family="Georgia, serif" font-size="${Math.round(W * 0.16)}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${pub}</text></g>`;
+  await writeBump(bumpInner, W, H, path.join(dir, 'spine-bump.webp'));
+  sources.spine = 'procedural'; bumps.spine = true;
 }
 
 // ---- 4. top (short side): same band, title horizontal -----------------------
@@ -227,7 +240,8 @@ async function makeTop(accent) {
       font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${title}</text>
   </svg>`;
   await svgToWebp(svg, W, H, out);
-  sources.top = 'procedural';
+  await writeBump(`<text x="${W / 2}" y="${H * 0.58}" fill="#ffffff" font-family="Georgia, serif" font-weight="500" font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${title}</text>`, W, H, path.join(dir, 'top-bump.webp'));
+  sources.top = 'procedural'; bumps.top = true;
 }
 
 // ---- 5. bottom: edge color + faint barcode + legal-ish line ------------------
@@ -254,7 +268,9 @@ async function makeBottom() {
       font-size="${Math.round(H * 0.22)}" dominant-baseline="middle">${legal}</text>
   </svg>`;
   await svgToWebp(svg, W, H, out);
-  sources.bottom = 'procedural';
+  const barsW = bars.replace(/fill="#2b2620"/g, 'fill="#ffffff"');
+  await writeBump(`${barsW}<text x="${W * 0.4}" y="${H * 0.56}" fill="#dddddd" font-family="Georgia, serif" font-size="${Math.round(H * 0.22)}" dominant-baseline="middle">${legal}</text>`, W, H, path.join(dir, 'bottom-bump.webp'));
+  sources.bottom = 'procedural'; bumps.bottom = true;
 }
 
 (async () => {
@@ -268,7 +284,7 @@ async function makeBottom() {
   // kept faces keep their existing entry verbatim; regenerated faces get a fresh one
   const buildFace = (name, source) => kept[name]
     ? prevTex[name]
-    : { src: `/textures/${g.id}/${name}.webp`, source, ...(normalized[name] ? { normalized: true } : {}) };
+    : { src: `/textures/${g.id}/${name}.webp`, source, ...(normalized[name] ? { normalized: true } : {}), ...(bumps[name] ? { bump: `/textures/${g.id}/${name}-bump.webp` } : {}) };
   g.box.face = { w: face.w, h: face.h, d: face.d };
   g.box.orientation = orientation;
   g.textures = {

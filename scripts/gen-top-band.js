@@ -42,25 +42,34 @@ function ean13Modules(d) {
   bits += '101'; // end guard
   return bits; // 95 modules
 }
-// SVG barcode with taller guard bars + human-readable digits below
-function barcodeSVG(x, y, w, h, seed) {
+// SVG barcode with taller guard bars + human-readable digits below.
+// mode 'color' = printed barcode; mode 'bump' = white ink on nothing (height map).
+function barcodeSVG(x, y, w, h, seed, mode = 'color') {
+  const bump = mode === 'bump';
+  const ink = bump ? '#ffffff' : '#141414';
   const d = ean13Digits(seed);
   const bits = ean13Modules(d);
   const quiet = 9;
   const mod = w / (bits.length + quiet * 2);
-  const guard = new Set([0, 1, 2, 45, 46, 47, 48, 49, 92, 93, 94]); // guard/center module indices
+  const guard = new Set([0, 1, 2, 45, 46, 47, 48, 49, 92, 93, 94]);
   let bars = '';
   for (let i = 0; i < bits.length; i++) {
     if (bits[i] !== '1') continue;
     const bx = x + (quiet + i) * mod;
     const bh = guard.has(i) ? h : h - Math.max(6, h * 0.12);
-    bars += `<rect x="${bx.toFixed(2)}" y="${y.toFixed(2)}" width="${(mod * 0.92).toFixed(2)}" height="${bh.toFixed(2)}" fill="#141414"/>`;
+    bars += `<rect x="${bx.toFixed(2)}" y="${y.toFixed(2)}" width="${(mod * 0.92).toFixed(2)}" height="${bh.toFixed(2)}" fill="${ink}"/>`;
   }
   const digStr = d.join('');
   const fs2 = Math.min(mod * 6, h * 0.3);
   const dy = y + h + fs2 * 0.9;
-  const digits = `<text x="${(x + quiet * mod).toFixed(2)}" y="${dy.toFixed(2)}" fill="#141414" font-family="monospace" font-size="${fs2.toFixed(1)}" letter-spacing="${(mod * 0.7).toFixed(2)}">${digStr[0]}&#160;&#160;${digStr.slice(1, 7)}&#160;&#160;${digStr.slice(7)}</text>`;
-  return `<rect x="${(x - mod * quiet * 0.4).toFixed(2)}" y="${(y - h * 0.14).toFixed(2)}" width="${(w * 1.02).toFixed(2)}" height="${(h * 1.5).toFixed(2)}" rx="4" fill="#f3efe6"/>${bars}${digits}`;
+  const digits = `<text x="${(x + quiet * mod).toFixed(2)}" y="${dy.toFixed(2)}" fill="${bump ? '#cccccc' : '#141414'}" font-family="monospace" font-size="${fs2.toFixed(1)}" letter-spacing="${(mod * 0.7).toFixed(2)}">${digStr[0]}&#160;&#160;${digStr.slice(1, 7)}&#160;&#160;${digStr.slice(7)}</text>`;
+  const panel = bump ? '' : `<rect x="${(x - mod * quiet * 0.4).toFixed(2)}" y="${(y - h * 0.14).toFixed(2)}" width="${(w * 1.02).toFixed(2)}" height="${(h * 1.5).toFixed(2)}" rx="4" fill="#f3efe6"/>`;
+  return `${panel}${bars}${digits}`;
+}
+// TEXT/INK bump map: printed elements white on black, softly blurred for a bevel
+async function writeBump(inner, w, h, out) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#000000"/>${inner}</svg>`;
+  await sharp(Buffer.from(svg)).resize(w, h).blur(1.3).webp({ quality: 78, effort: 4 }).toFile(out);
 }
 
 async function accentFromCover() {
@@ -108,6 +117,7 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
         font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1"
         style="paint-order:stroke;stroke:#000;stroke-width:3;stroke-opacity:0.5">${title}</text></svg>`;
     await sharp(band).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).webp({ quality: 88, effort: 4 }).toFile(path.join(dir, 'top.webp'));
+    await writeBump(`<text x="${W / 2}" y="${H * 0.57}" fill="#ffffff" font-family="Georgia, serif" font-weight="500" font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${title}</text>`, W, H, path.join(dir, 'top-bump.webp'));
   }
 
   // ---- BOTTOM: darker cover-art band + real barcode + legal ---------------
@@ -128,13 +138,15 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
         font-size="${legalFont}" dominant-baseline="middle"
         style="paint-order:stroke;stroke:#000;stroke-width:2;stroke-opacity:0.5">${legal}</text></svg>`;
     await sharp(band).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).webp({ quality: 88, effort: 4 }).toFile(path.join(dir, 'bottom.webp'));
+    const barB = barcodeSVG(W * 0.05, H * 0.24, W * 0.26, H * 0.4, g.bggId || 1, 'bump');
+    await writeBump(`${barB}<text x="${legalX}" y="${H * 0.54}" fill="#dddddd" font-family="Georgia, serif" font-size="${legalFont}" dominant-baseline="middle">${legal}</text>`, W, H, path.join(dir, 'bottom-bump.webp'));
   }
 
   // update provenance so the faces are tagged cover-derived (and thus protected
   // by 10-gen-faces.js's idempotency guard on future re-runs)
   g.textures = g.textures || {};
-  if (!keepTB('top')) g.textures.top = { src: `/textures/${g.id}/top.webp`, source: 'cover-derived', note: 'darkened cover-art band + title (no photo of top exists)' };
-  if (!keepTB('bottom')) g.textures.bottom = { src: `/textures/${g.id}/bottom.webp`, source: 'cover-derived', note: 'darkened cover-art band + barcode + legal (no photo of bottom exists)' };
+  if (!keepTB('top')) g.textures.top = { src: `/textures/${g.id}/top.webp`, source: 'cover-derived', bump: `/textures/${g.id}/top-bump.webp`, note: 'darkened cover-art band + title (no photo of top exists)' };
+  if (!keepTB('bottom')) g.textures.bottom = { src: `/textures/${g.id}/bottom.webp`, source: 'cover-derived', bump: `/textures/${g.id}/bottom-bump.webp`, note: 'darkened cover-art band + barcode + legal (no photo of bottom exists)' };
   fs.writeFileSync(path.join(ROOT, 'src/data/games.json'), JSON.stringify(games, null, 2) + '\n');
 
   console.log('wrote top.webp + bottom.webp', W + 'x' + H, 'accent', accent);
