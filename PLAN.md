@@ -8,6 +8,81 @@ where the box rotates in 3D next to its description.
 
 ---
 
+## 0. Revisions (v2 — 2026-07-12, after building the box-art pipeline)
+
+Building the box renderer and the whole-library art pipeline changed several
+assumptions below. This section is authoritative where it conflicts with later
+sections (marked ⚠️ superseded). New companion docs: **`BOX-ART-PIPELINE.md`**
+(master playbook), `TEXTURE-PLAN.md`, `SIDES-PLAN.md`.
+
+**Data model — supersedes §4.2/4.3.** Each game now also carries:
+- `box.face {w,h,d}` + `box.orientation` — *render* dims oriented to the cover.
+- `textures { front, back, spine, top, bottom, thumb }`, each `{ src, source,
+  normalized? }` with per-face **provenance** (`airtable | photo | cover-derived
+  | procedural | derived`) so the UI can badge real-vs-generated.
+
+**Orientation is a first-class requirement (new).** The box must be oriented to
+the cover art (landscape cover → landscape face) or the cover-fit crop slices
+the middle out of the art. Deterministic rule in `10-gen-faces.js`.
+
+**Textures are a full 6-face pipeline — supersedes §4.5.** Not just cover+colors.
+Per face, photographic where a usable BGG photo exists, else generated; every
+non-front photographic face is **Reinhard-normalized to the front** (the front
+is the fixed reference, never renormalized) for one consistent tone:
+- front: cover (reference) · back: flat BGG photo (**167/210 ≈ 80%**) ·
+  spine: flat "side" photo (**~30/210**) or manual perspective-unwarp of a
+  3D-box render, else procedural title band · top: **0 photo** → cover-derived
+  band + title · bottom: rare photo (**~3/210**) → cover-derived band + barcode.
+- Scripts: `8-fetch-gallery.js` (discover/score/download), `10-gen-faces.js`
+  (orient + crop + normalize + fallbacks, idempotent + tier-aware guard),
+  `gen-top-band.js` (cover-derived top/bottom), `unwarp-face.js` (homography
+  de-projection), `run-all.js` (batch driver: parallel `--fetch`, sequential
+  `--build`).
+
+**3D material approach changed — supersedes §5.1.** A rounded box has **no clean
+6-group UVs**, so "six per-face materials" doesn't work with `RoundedBoxGeometry`.
+Instead: **one `MeshPhysicalMaterial`** for the whole box, with per-face artwork
+selected by a **box-projection sampler injected via `onBeforeCompile`** (picks
+the face by dominant object-space normal). This also fixed a real bug — mixing
+Physical (front) + Standard (sides) lit faces differently. Realism: uniform
+**clearcoat**, a procedural tiling **bump map** (paper grain, mipmapped),
+in-shader **roughness jitter**, and rounded bevels.
+
+**Lighting — refines §5.2.** `RoomEnvironment` PMREM reflections + a
+**camera-following highlight light** (a single static key left the back matte) +
+a soft under-fill so the bottom is legible from beneath.
+
+**Controls & AA — supersedes §5.4.** `OrbitControls` pins up-vector to world-Y
+and can't tumble the box over → use **`TrackballControls`** (free all-axis
+rotation). Add an AA pipeline: **MSAA** (multisampled HDR target) + **SMAA**
+post-pass — silhouette AA alone doesn't fix the shader/texture seams on the
+bevels — plus mipmapped bump to stop grain shimmer in motion.
+
+**A working vertical slice already exists.** `public/practice/index.html` is a
+**vanilla-Three.js** detail-view slice (oriented rounded box, 6 faces, realistic
+material, trackball, AA) — ahead of the Phase-1 R3F scaffold. **Decision needed:**
+port this shader/material/AA/controls work into React-Three-Fiber, or keep the
+detail view vanilla and build only the gallery in R3F. The `onBeforeCompile`
+shader + AA composer port is non-trivial; recommend porting so gallery and
+detail share one `<GameBox>`.
+
+**Coverage reality — updates §10.** Sides are mostly *generated*: the shelf/spine
+"hero" view will be procedural for most games unless we invest in manual
+de-projection or photography. Auto-picked photos are **imperfect** (some angled
+table shots; foreign-language spines) — a QA/review pass would raise quality.
+
+**Repo/hosting — updates §4.5.** We *did* commit `public/covers/` (108 MB) and
+`public/textures/` (210×~5 webp); repo ≈ 180 MB. §4.5's "git-ignore covers"
+advice was not taken. For a static deploy only `public/textures/` ships;
+**Git LFS** for image assets is worth adopting as the asset count grows.
+
+**New open questions (add to §9):** (a) R3F port vs keep-vanilla detail view;
+(b) invest in better sides (per-game de-projection / photography) or accept
+mostly-procedural spines; (c) QA the ~200 auto-picked photos via a review page
+(still unbuilt) before shipping; (d) hosting + LFS.
+
+---
+
 ## 1. Goals & Non-Goals
 
 **Goals**
@@ -192,7 +267,7 @@ genuinely vary) flagged in `scripts/enrich-report.json` for optional review.
 > cross-check here is **multi-edition within BGG** — which is stronger than a
 > single lookup, since it triangulates across up to ~45 editions per game.
 
-### 4.5 Textures — ✅ DONE
+### 4.5 Textures — ✅ DONE ⚠️ superseded by §0 (now a full 6-face pipeline)
 
 `scripts/6-prepare-textures.js` (`sharp`) processed all 210 covers:
 - `public/textures/<id>/cover.webp` — front face, long side ≤ 1024px, q82.
@@ -214,7 +289,7 @@ The originals in `public/covers/` are the source of truth; only
 
 ## 5. 3D Design
 
-### 5.1 The box component (`<GameBox>`)
+### 5.1 The box component (`<GameBox>`) ⚠️ material approach superseded by §0
 
 - A `BoxGeometry` scaled to `box.size` (normalized so the largest dimension =
   1 unit; keep real aspect ratios).
@@ -245,7 +320,7 @@ The originals in `public/covers/` are the source of truth; only
   cursor becomes a pointer.
 - **Snap** (optional): scroll snaps to center a box, like a coverflow.
 
-### 5.4 Detail view (`/game/:slug`)
+### 5.4 Detail view (`/game/:slug`) ⚠️ controls/AA superseded by §0 (Trackball, not Orbit)
 
 - Selected box animates from its gallery position to the left/center, enlarges,
   and enters a slow auto-rotate; **drag to orbit** (`OrbitControls`, damped,
@@ -322,8 +397,15 @@ board-games/
   for all 210 (196 real & cross-checked, 14 estimated).
 - ✅ Texture prep (`scripts/6`): 210 covers → webp cover+thumb (112→12 MB) +
   sampled `sideColor`/`edgeColor`.
-- ⬜ Optional: review the 28 low-`agreement` dimension cases and 14 estimates.
-  **Data layer is complete** — ready to build the 3D app.
+- ✅ **Box-art pipeline (v2, new):** orientation + 6-face textures for the whole
+  library (`scripts/8,10,gen-top-band,unwarp-face,run-all`); photographic
+  back (~80%) + spine (~14%), cover-derived top/bottom, all normalized to the
+  front. See §0 + `BOX-ART-PIPELINE.md`.
+- ✅ **Detail-view vertical slice** (`public/practice/index.html`): a convincing
+  realistic box (this is effectively Phase 2 done, in vanilla Three.js).
+- ⬜ Optional: review the 28 low-`agreement` dimension cases + 14 estimates, and
+  QA the ~200 auto-picked face photos.
+  **Data + art layers are complete** — remaining work is the React/gallery app.
 
 **Phase 1 — Scaffold (½ day)**
 - Vite + React + TS + R3F + drei + Tailwind. Router with `/` and `/game/:slug`.
@@ -362,7 +444,14 @@ board-games/
    scans, some Greek editions). Good enough, or re-shoot / upgrade the heroes?
 4. ~~Airtable access~~ ✅ solved — headless capture, no token needed.
 5. ~~Collection size~~ ✅ **210 games** (informs virtualization).
-6. **Domain / hosting** preference?
+6. **Domain / hosting** preference? (+ adopt **Git LFS** for image assets?)
+7. **R3F port:** port the vanilla practice-render box (custom shader / bump / AA /
+   trackball) into React-Three-Fiber, or keep the detail view vanilla and build
+   only the gallery in R3F? (Recommend porting → one shared `<GameBox>`.)
+8. **Sides quality:** invest in per-game de-projection / photography for spines &
+   tops, or ship mostly-procedural sides? (Shelf view is the eventual headline.)
+9. **Photo QA:** build the candidate **review page** and vet the ~200 auto-picked
+   photos (some are angled / foreign-language) before shipping?
 
 ---
 
