@@ -1,0 +1,60 @@
+{
+  "bggId": 270314,
+  "fetched": 83,
+  "done": true,
+  "frontAspect": 0.755,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5977629",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/px8iX24xWTGUn1O3hmtkTw__large/img/1uSAlBW4i5JEt03bcnrLYq9PXmw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5977629.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5635955",
+        "caption": "Ohanami box back",
+        "url": "https://cf.geekdo-images.com/JMaNMVZlApAjnGjDL3Vtdw__large/img/9en3Pd2BlBYGbE0vsaLJ2bARQhg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5635955.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8090760",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/GAR3Oa1bHXLW44WAjzlGPg__large/img/XbPYjY29dSuEM9ZHGGYW-_ltjYE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8090760.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5977622",
+        "caption": "Back of Pandasaurus box",
+        "url": "https://cf.geekdo-images.com/YjQaF-M5JY3OI5F_ewG0lg__large/img/aBXwuZjmZZAiUnz62yRzie5Tn0g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5977622.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6741511",
+        "caption": "Ohanami ‐ French edition - Oya - back",
+        "url": "https://cf.geekdo-images.com/vExOipQiUAnBEPLs4jWunQ__large/img/T-UVf2uf6hCzk6tZYKV52eZmGaY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6741511.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8090760",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/GAR3Oa1bHXLW44WAjzlGPg__large/img/XbPYjY29dSuEM9ZHGGYW-_ltjYE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8090760.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5977629",
+      "url": "https://cf.geekdo-images.com/px8iX24xWTGUn1O3hmtkTw__large/img/1uSAlBW4i5JEt03bcnrLYq9PXmw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5977629.jpg",
+      "caption": "Back of box",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ohanami-270314/back-src.jpg"
+    }
+  }
+}

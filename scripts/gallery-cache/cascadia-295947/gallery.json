@@ -1,0 +1,55 @@
+{
+  "bggId": 295947,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8924955",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/sw2Hlp-wB_NpSuLM7Ia5tA__large/img/gXj8eL-8Wa9xPyu_ng7pOaqtW5E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924955.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8502241",
+        "caption": "Ukrainian edition, 2022 Lord of Boards, Back of the box (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/Vm73fbXExnVd4rdw2KFeJg__large/img/9rvVyOQ3XA5g6tcYJ-cTgzpSDLk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8502241.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8924955",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/sw2Hlp-wB_NpSuLM7Ia5tA__large/img/gXj8eL-8Wa9xPyu_ng7pOaqtW5E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924955.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8924954",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/EQtXe2Lrdro2ladGiBV9qw__large/img/Yp3Bh8ep7T5uFjtgDbXeQgWRBWc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924954.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "6925575",
+        "caption": "End of a game with a 7-salmon run (pink circles on bottom grouping)",
+        "url": "https://cf.geekdo-images.com/x3kG6NzYojAcITb3r-NnBA__large/img/OBzldRfdMsT5Q-RDVZGwVAwPOSM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6925575.jpg",
+        "score": 1
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8924955",
+      "url": "https://cf.geekdo-images.com/sw2Hlp-wB_NpSuLM7Ia5tA__large/img/gXj8eL-8Wa9xPyu_ng7pOaqtW5E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924955.jpg",
+      "caption": "Russian edition (box back side)",
+      "score": 2,
+      "aspect": 1.003,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cascadia-295947/back-src.jpg"
+    }
+  }
+}

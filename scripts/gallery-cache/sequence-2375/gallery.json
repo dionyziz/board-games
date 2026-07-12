@@ -1,0 +1,91 @@
+{
+  "bggId": 2375,
+  "fetched": 192,
+  "done": true,
+  "frontAspect": 0.703,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8947956",
+        "caption": "BOX BACK Sequence Classic (English edition 2023)",
+        "url": "https://cf.geekdo-images.com/JKQqzSXWtgngX419CnImAw__large/img/-frDSR5nT9SvFxsQ1hobNwC5MfY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8947956.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1516989",
+        "caption": "Sequence: the back of the box from the 1986 Jax edition.",
+        "url": "https://cf.geekdo-images.com/SuarltnZf7DcKL_CN3paDQ__large/img/twwhP_ddjv0BrE5FQ8S2wJ_HQ5k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1516989.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4290718",
+        "caption": "Nordic Games 2015 Nordic edition: box back.",
+        "url": "https://cf.geekdo-images.com/Tmu9Dw1Igq8UfZq79CvO2g__large/img/mTPlT0t6btXwbSVf5zmRAPhbRzk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4290718.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2851687",
+        "caption": "Box Back, Multilingual Edition (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/gMfoK0vwTLX5i3OzDF800A__large/img/UwkRvDtPTfQ4LuruHn5LEeew8d8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2851687.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2003463",
+        "caption": "Spanish edition box back",
+        "url": "https://cf.geekdo-images.com/TL40H3ClqEwlrFUAFsRrRw__large/img/RHo3NqFEb6eiC_auCKNWep16VpQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2003463.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9188396",
+        "caption": "Nordic Games 2009 edition: box back.",
+        "url": "https://cf.geekdo-images.com/cW0RmryCtfR3qTpiIO3DKw__large/img/T2T4xbeFDH0mEhucczGMOIhx8U4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9188396.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8947955",
+        "caption": "BOX SIDE Sequence Classic (English edition 2023)",
+        "url": "https://cf.geekdo-images.com/zO1G9LYDJbrffB70sTOGeA__large/img/4InaEPN2mVkyP3qAEW_TvOHFxWU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8947955.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "838242",
+        "caption": "Side of Box. 1995 Metal Tin Edition.",
+        "url": "https://cf.geekdo-images.com/53PYLpZe9zhQlI9XcWf8Yw__large/img/nKgltzETuH2aFV7XAFewmq8gwVc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic838242.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8691943",
+        "caption": "Sequence (Parker Dutch Edition) - Box Side",
+        "url": "https://cf.geekdo-images.com/tkzXTsTgQXYAV1X7JBXpiw__large/img/Ea51ZN8p3_x7recApHGpuazIZIQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8691943.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "2986881",
+        "caption": "Parker English edition: Box lid",
+        "url": "https://cf.geekdo-images.com/oy7u7C1pzIYqPT74_VxxRg__large/img/1ZW-uYTVY5dLhrrSMCEuRgQUMJU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2986881.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8361786",
+        "caption": "I on U edition, top of tube",
+        "url": "https://cf.geekdo-images.com/6IeY767jzYp-U8DDJi2IdQ__large/img/jrxEXWgsvqmFsZGdIhoVksEFK7k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8361786.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8947956",
+      "url": "https://cf.geekdo-images.com/JKQqzSXWtgngX419CnImAw__large/img/-frDSR5nT9SvFxsQ1hobNwC5MfY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8947956.jpg",
+      "caption": "BOX BACK Sequence Classic (English edition 2023)",
+      "score": 3.5,
+      "aspect": 0.747,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sequence-2375/back-src.jpg"
+    }
+  }
+}

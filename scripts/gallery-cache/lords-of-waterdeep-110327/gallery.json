@@ -1,0 +1,60 @@
+{
+  "bggId": 110327,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.788,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1283191",
+        "caption": "Box Back",
+        "url": "https://cf.geekdo-images.com/drHMxGQ-1ASzKjQPXKNUHw__large/img/EV0Hhlo2vs6DYy-AvGRjjy5TRBY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1283191.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9230113",
+        "caption": "Lords of Waterdeep, Renegade Game Studios, 2026 — back cover",
+        "url": "https://cf.geekdo-images.com/spQnqFPz-_VpUBL7c0kRaQ__large/img/jE2uMgTEuzVLuJYTPLxjjBZv4IA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9230113.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "3871006",
+        "caption": "Our very first game of Lords of Waterdeep, back in 2014.",
+        "url": "https://cf.geekdo-images.com/--uahyd7zAKdhOewQfvRsA__large/img/SVPYPTFaW3CELFaQFZnsa4NXGk8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3871006.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5368942",
+        "caption": "Back to this classic!",
+        "url": "https://cf.geekdo-images.com/IGsNO5X7DJ3lwxMk5dXJBg__large/img/Hlit0OBp4JL-AxQ66ILwVQIN_aE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5368942.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "6179217",
+        "caption": "Lords of Waterdeep : Back",
+        "url": "https://cf.geekdo-images.com/vyDz91qK_xjp6AICZxjpIA__large/img/3qeiApx4qmUMAb1h6Lk9x5r0lKo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6179217.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "6348933",
+        "caption": "Still one of the top worker placement games",
+        "url": "https://cf.geekdo-images.com/q0r2RqLuNB0VT_mwKKJntA__large/img/2m6Y66Ocf4jIinFVDCqUc_CtXRg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6348933.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1283191",
+      "url": "https://cf.geekdo-images.com/drHMxGQ-1ASzKjQPXKNUHw__large/img/EV0Hhlo2vs6DYy-AvGRjjy5TRBY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1283191.jpg",
+      "caption": "Box Back",
+      "score": 2,
+      "aspect": 0.823,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/lords-of-waterdeep-110327/back-src.jpg"
+    }
+  }
+}

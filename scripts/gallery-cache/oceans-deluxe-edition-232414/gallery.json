@@ -1,0 +1,104 @@
+{
+  "bggId": 232414,
+  "fetched": 148,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5153597",
+        "caption": "Box Back (represents the unknown)",
+        "url": "https://cf.geekdo-images.com/M_Tyy1QLvwj5oV1zDnggmw__large/img/NaT88w0YDgbn_lUuIfOwPMwUTVw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5153597.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8852150",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/hvv71IIK4aDQfbe5kXq8eg__large/img/BiYoaXto0LSFtzIr2cJYsZNo2uQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8852150.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5634870",
+        "caption": "The back of the Oceans box.",
+        "url": "https://cf.geekdo-images.com/xVd26UksEfX-iNksoEhLYw__large/img/P82dJhQk3LafrDvUHTCiLS2edwE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5634870.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5153612",
+        "caption": "Box Back - represents the unknown",
+        "url": "https://cf.geekdo-images.com/TsDVd3VfC46TKtvFjc-3-w__large/img/eQEOkvmZP6_qsrk9mLwNTL6YuXA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5153612.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5580064",
+        "caption": "Oceans Players Sheet Reference - backside",
+        "url": "https://cf.geekdo-images.com/SH2nDoGAxQXDTelSpLpl5w__large/img/Uww4mmUSBEzes18ncrFaOqDOQUQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5580064.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5512253",
+        "caption": "Deep deck back",
+        "url": "https://cf.geekdo-images.com/k_rN2nB6OHBuvhSrf66GMQ__large/img/g_bQWDMurdpXz3bBgNKk018SMtM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5512253.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "6322831",
+        "caption": "English deluxe edition - Side box",
+        "url": "https://cf.geekdo-images.com/eHMNWPEIYMzC0nKPFcJQ2Q__large/img/ZKt_VnLRdaaCAL-FbFOSnpskeTk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6322831.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8852150",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/hvv71IIK4aDQfbe5kXq8eg__large/img/BiYoaXto0LSFtzIr2cJYsZNo2uQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8852150.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4650645",
+        "caption": "The Deep is mysterious and just on the edge of reality in Oceans! You'll find wild new traits there.",
+        "url": "https://cf.geekdo-images.com/13fnuyPhQhhu3KWRMHm4lw__large/img/gG_mS4rwgp9Ukb6D4-kCoDIp-W4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4650645.jpg",
+        "score": 1
+      }
+    ],
+    "top": [
+      {
+        "imageid": "5176863",
+        "caption": "Box top of German version of \"Oceans - Deluxe Edition\" by Schwerkraft-Verlag",
+        "url": "https://cf.geekdo-images.com/pWP8XoECzipcg9-0PX0QDg__large/img/byYlAdEURcBJvM9OsZHcjw8Jhrc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5176863.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5176862",
+        "caption": "Box top of German version of \"Oceans - Limited Edition\" by Schwerkraft-Verlag",
+        "url": "https://cf.geekdo-images.com/2X3kgH6HeOOXJ6RA2HSFDA__large/img/s-joziSkr10qLo0cyFDB72-ULJY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5176862.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "5382960",
+        "caption": "With the help of Prosperity and Bottom feeders, this got me 36 points in the final round",
+        "url": "https://cf.geekdo-images.com/4K7yVJvn9pvan8TERZZF-A__large/img/4PBw1T07n5Y3wscO8wDatuELZiw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5382960.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5830647",
+        "caption": "At the bottom - Oceans - photo by More Games Please",
+        "url": "https://cf.geekdo-images.com/-aW9-Ro131KCAxcQ6qi1HQ__large/img/wqkhnWAAX0li9n4b2BJvmygrF8c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5830647.jpg",
+        "score": 1
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5153597",
+      "url": "https://cf.geekdo-images.com/M_Tyy1QLvwj5oV1zDnggmw__large/img/NaT88w0YDgbn_lUuIfOwPMwUTVw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5153597.jpg",
+      "caption": "Box Back (represents the unknown)",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/oceans-deluxe-edition-232414/back-src.jpg"
+    }
+  }
+}

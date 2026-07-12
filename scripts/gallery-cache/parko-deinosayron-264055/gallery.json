@@ -1,0 +1,72 @@
+{
+  "bggId": 264055,
+  "fetched": 203,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6211564",
+        "caption": "Back of the ankama box",
+        "url": "https://cf.geekdo-images.com/qareTD-zpE39ogfPdEkNcQ__large/img/XLwjbJVftGTrb9C65_5ZC3KJjxQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6211564.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6691736",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/WLSNIh0EbHCvt0wGu_eykQ__large/img/iWA-HvxoBLyDmVqDFtyCI5dCx1Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6691736.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6730000",
+        "caption": "Draftosaurus Czech edition 2020 REXhry box back",
+        "url": "https://cf.geekdo-images.com/t_PqJtXDOGhUJDzQHUeb3g__large/img/GRX9-BT66uUQWrCd830zNs6uuxk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6730000.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4901000",
+        "caption": "Draftosauros; back of box, German Version",
+        "url": "https://cf.geekdo-images.com/tAXQT5_WNP0by6e1GgTVvg__large/img/a_GHxT58W55Efx1WnJRY47oDVqs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4901000.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "6616738",
+        "caption": "Other side",
+        "url": "https://cf.geekdo-images.com/dqoaZ8F3-DiJ5mo51kKcVg__large/img/ryNeWCHLiFcXt4l0YjcFzPe5--Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6616738.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5760938",
+        "caption": "The 5 player boards (side B)",
+        "url": "https://cf.geekdo-images.com/9Du4omMPJyZKmF0hmPcfzw__large/img/xEHYES6oAxddMxxciNnE0zQhcr4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5760938.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5760937",
+        "caption": "The 5 player boards (side A)",
+        "url": "https://cf.geekdo-images.com/5E2wbB7_utc_AboOdY_jrA__large/img/8WAAVoEGyz1mhddo-GjVkeerE78=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5760937.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5587051",
+        "caption": "Winter park side",
+        "url": "https://cf.geekdo-images.com/e7nYN68OswSNaP11LbVWig__large/img/x1BYstT4EVPcpcwLANhza9CdW4A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5587051.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6211564",
+      "url": "https://cf.geekdo-images.com/qareTD-zpE39ogfPdEkNcQ__large/img/XLwjbJVftGTrb9C65_5ZC3KJjxQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6211564.jpg",
+      "caption": "Back of the ankama box",
+      "score": 3.5,
+      "aspect": 1.023,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/parko-deinosayron-264055/back-src.jpg"
+    }
+  }
+}

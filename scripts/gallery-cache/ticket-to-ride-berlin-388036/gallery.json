@@ -1,0 +1,47 @@
+{
+  "bggId": 388036,
+  "fetched": 31,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7717159",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/wwgcrpa3YvQOfwxA3ydHMQ__large/img/DgN0BnetMsvpdrNbTP5XejhWcw4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7717159.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "7816186",
+        "caption": "Back of EN box",
+        "url": "https://cf.geekdo-images.com/QgHkwTBlB_tr5E2Kn_X02w__large/img/3tIX4vdrbmcjqnpl6KQQrC5RFu8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7816186.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8050267",
+        "caption": "German version - Back",
+        "url": "https://cf.geekdo-images.com/xsuNZr061v3YtuFANFuhrw__large/img/sAUh_3fZ8MMxzZvinrG0ZIpqK1s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8050267.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7687818",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/AtJst2fYt5513yg-lMJnlQ__large/img/VjWwZOKVGT0kwlu69-I4gnlyfxY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7687818.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7816186",
+      "url": "https://cf.geekdo-images.com/QgHkwTBlB_tr5E2Kn_X02w__large/img/3tIX4vdrbmcjqnpl6KQQrC5RFu8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7816186.jpg",
+      "caption": "Back of EN box",
+      "score": 2,
+      "aspect": 1.01,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ticket-to-ride-berlin-388036/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "bggId": 277085,
+  "fetched": 130,
+  "done": true,
+  "frontAspect": 0.637,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8828683",
+        "caption": "Love Letter (English \"eco box\" edition 2025), box back",
+        "url": "https://cf.geekdo-images.com/OM3V-gFwLXuywF5aD2pAew__large/img/zPJ_KmG0-pinqzPr139jNs_LNlw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8828683.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5838259",
+        "caption": "Back of bagged English edition",
+        "url": "https://cf.geekdo-images.com/GepakIFXFXGKv1Z-UoQ5Aw__large/img/P_GkG8boHaBHS8PF-HRolIqw4eE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5838259.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7928597",
+        "caption": "Love Letter Cookie Run - Popcorn Games Korean edition - Box back",
+        "url": "https://cf.geekdo-images.com/bqH5rjLWyKKOfXVzriBdaA__large/img/q-cAoO6VykDneE7_E0KiWIvzCvs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7928597.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5186564",
+        "caption": "Back of the box (french ver.)",
+        "url": "https://cf.geekdo-images.com/fR7AdUz9KRT0bswXeMlNAA__large/img/BSHcENEbEU8qo_L-1ErxCRlG9x0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5186564.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9255155",
+        "caption": "Ukrainian \"Eco Box\" edition, 2025 Lord of Boards, Back of the box",
+        "url": "https://cf.geekdo-images.com/HGDHaHLnSNxcukv1N90PgA__large/img/yzgfMfBjHq4m7uATbVvIoKpk7uw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9255155.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5001174",
+        "caption": "Spanish edition (back cover)",
+        "url": "https://cf.geekdo-images.com/nkIjikdIfxBJFeHaRhLilA__large/img/Jsihr1-m3jyqknxnVE3rRXnKlos=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5001174.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9073419",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/zt8Rei_VmNAuT1zYux6Rdg__large/img/LfCr2B2vBXh5BrAPFlZTc1UKtc0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9073419.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9073418",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/epmrU6t7F8Pi_ZZMnBRNMw__large/img/NMTXJ86DFKC36DUWsVcJ20vpjew=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9073418.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8828683",
+      "url": "https://cf.geekdo-images.com/OM3V-gFwLXuywF5aD2pAew__large/img/zPJ_KmG0-pinqzPr139jNs_LNlw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8828683.jpg",
+      "caption": "Love Letter (English \"eco box\" edition 2025), box back",
+      "score": 3.5,
+      "aspect": 0.712,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/love-letter-277085/back-src.jpg"
+    }
+  }
+}

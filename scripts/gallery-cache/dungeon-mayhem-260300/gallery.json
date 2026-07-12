@@ -1,0 +1,41 @@
+{
+  "bggId": 260300,
+  "fetched": 27,
+  "done": true,
+  "frontAspect": 0.79,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7402373",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/y6-S8EyPndfZrZMTLW3a-w__large/img/KnKsruGrUPkSixyxFQfWgQZ6Rwk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7402373.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5322688",
+        "caption": "Box Back",
+        "url": "https://cf.geekdo-images.com/EFClLfzX0pnvg6Ud6Iqm-A__large/img/GiK-y61OGQCMZ7OHyiwkuADQBVA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5322688.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7754207",
+        "caption": "Dungeon Mayhem Back cover french edition",
+        "url": "https://cf.geekdo-images.com/h5LED-qebdRBTJLki49NHA__large/img/VauuDhd3Z35KJiFFa5hYK0tjjEw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7754207.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7402373",
+      "url": "https://cf.geekdo-images.com/y6-S8EyPndfZrZMTLW3a-w__large/img/KnKsruGrUPkSixyxFQfWgQZ6Rwk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7402373.jpg",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.76,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dungeon-mayhem-260300/back-src.jpg"
+    }
+  }
+}

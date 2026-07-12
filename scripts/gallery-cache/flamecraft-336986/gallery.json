@@ -1,0 +1,72 @@
+{
+  "bggId": 336986,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7219029",
+        "caption": "English deluxe edition (2022) Box . Back",
+        "url": "https://cf.geekdo-images.com/ATFWfIA7wXnhpmOQfA6_qA__large/img/JjEZOUy_67iEYlhWNHkQ9b0oaT4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7219029.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7178374",
+        "caption": "English retail edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/MPQ8SmoIm5cl-Iac7hxxYQ__large/img/6yEJT1gByZhPgpOd0f-VfuS9RbI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7178374.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6878793",
+        "caption": "Flamecraft - edition standard - French edition (Lucky Duck Games) - back",
+        "url": "https://cf.geekdo-images.com/adhTPlvuw8cpvIcvgUExuw__large/img/0Ywcuwosfv2ltj9NNNxgnkGahQA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6878793.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7027345",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/yUUo9lkqdU3H8CvwlWpaQA__large/img/VGdzMuEcEzMAfFAGoTC593aAG5I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7027345.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7165441",
+        "caption": "Back of EN box",
+        "url": "https://cf.geekdo-images.com/FxeCArrCna6VsVJbX0sgxw__large/img/NMJSnsqhygKyKSggLR0NjaBpDqQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7165441.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7085890",
+        "caption": "Flamecraft rear box -TH edition",
+        "url": "https://cf.geekdo-images.com/P2dGBu8nRGrdKpZGnaI_8w__large/img/FLSNwoGjnFxP0OGYkp9LKT9wyLI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7085890.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8419180",
+        "caption": "Game Box - Side View",
+        "url": "https://cf.geekdo-images.com/XRYN099qWcm7k_7jU5I7Kw__large/img/mrkXQCIHgQqHVpAXHu1iOm4BCPA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8419180.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8413414",
+        "caption": "Space Craft promo from Andromeda's Edge!",
+        "url": "https://cf.geekdo-images.com/tCm_ObIamMCk6ll-rIWwVA__large/img/jhGGFf6QU9t28OuO6ZWb_E67oss=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8413414.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7219029",
+      "url": "https://cf.geekdo-images.com/ATFWfIA7wXnhpmOQfA6_qA__large/img/JjEZOUy_67iEYlhWNHkQ9b0oaT4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7219029.jpg",
+      "caption": "English deluxe edition (2022) Box . Back",
+      "score": 3.5,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/flamecraft-336986/back-src.jpg"
+    }
+  }
+}

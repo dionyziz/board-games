@@ -1,0 +1,66 @@
+{
+  "bggId": 1465,
+  "fetched": 214,
+  "done": true,
+  "frontAspect": 0.78,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1665889",
+        "caption": "Box back of US Game Systems English/Spanish slipcover edition.",
+        "url": "https://cf.geekdo-images.com/rdWJ-zKYM7td9YzvPgFx_A__large/img/LRVWpQszYsjzail0PzLoBcuqcNs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1665889.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1072217",
+        "caption": "Box back.",
+        "url": "https://cf.geekdo-images.com/XrIA72-uv_mA8liyWQB4Dg__large/img/wR4PjmXzHi8cTKdGw6qZMT9fDMY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1072217.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "225724",
+        "caption": "The back of the 2004 US Games edition - detailed.",
+        "url": "https://cf.geekdo-images.com/wQgh7uF7xx_6aW4Q44qpDQ__large/img/_-7U5NRFMpdHBY97l1qDdZbgoiQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic225724.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "197570",
+        "caption": "Wizard - Amigo - German box back (tin edition)",
+        "url": "https://cf.geekdo-images.com/vaxvtW0GKK_wYgFRziU_AQ__large/img/DKLjiXjeSLMxhsTsUiPcgVe6IPI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic197570.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1107810",
+        "caption": "Box Back - 1984 edition by K. Fisher Enterprises",
+        "url": "https://cf.geekdo-images.com/UTlzBN1g7cGg64Ez0n2BoQ__large/img/PeBDGqivfsLIAjR6LQbi5doXVMw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1107810.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "825732",
+        "caption": "2010 Amigo edition, back of box",
+        "url": "https://cf.geekdo-images.com/73QDjHscFUzT04BIr2h63A__large/img/8yLv67gjW_tSS9_o2xnNLweGAPY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic825732.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "96747",
+        "caption": "Reverse side of box of inexpensive department store edition of Wizard, introducing the game",
+        "url": "https://cf.geekdo-images.com/CYjOTJnzaTolM-KQ0QVVvw__large/img/RPFMAgIoE-LMbMv05ArP7tLOjro=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic96747.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1072217",
+      "url": "https://cf.geekdo-images.com/XrIA72-uv_mA8liyWQB4Dg__large/img/wR4PjmXzHi8cTKdGw6qZMT9fDMY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1072217.jpg",
+      "caption": "Box back.",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/wizard-1465/back-src.jpg"
+    }
+  }
+}

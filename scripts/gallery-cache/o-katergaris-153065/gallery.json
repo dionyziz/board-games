@@ -1,0 +1,53 @@
+{
+  "bggId": 153065,
+  "fetched": 131,
+  "done": true,
+  "frontAspect": 0.788,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6602534",
+        "caption": "Abluxxen, AMIGO, 2022 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/egyvNAjLwv5Kjr59IP-V_w__large/img/8s4CUegM0WP0jWCJXrlcIg7BW_E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6602534.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "2281896",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/UwdvtKu-RWWMCoXkNF8n4w__large/img/NzAIFAgaPsp8PPna7jxJgEacWYQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2281896.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4045913",
+        "caption": "2014 Box . Back",
+        "url": "https://cf.geekdo-images.com/Hjfy5KN059ujGLSDskyhgA__large/img/ZEZJ6fvALIk4XTikCXRqzrSWxEc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4045913.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8164836",
+        "caption": "Linko! (Multilingual edition 2016) box back",
+        "url": "https://cf.geekdo-images.com/3HZPE-mttkA4zMK9U4unhA__large/img/htUmMAusKxJYu4IrqctP8Had-ZU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8164836.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8564445",
+        "caption": "Linko, Rebel, 2024 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/qiSRntgXM1EFtfQ_OvLPNA__large/img/wb-xjXRz1IKQ2k7EfccrTyhd4qE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8564445.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6602534",
+      "url": "https://cf.geekdo-images.com/egyvNAjLwv5Kjr59IP-V_w__large/img/8s4CUegM0WP0jWCJXrlcIg7BW_E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6602534.jpg",
+      "caption": "Abluxxen, AMIGO, 2022 — back cover (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.777,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-katergaris-153065/back-src.jpg"
+    }
+  }
+}

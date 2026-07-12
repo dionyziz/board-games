@@ -1,0 +1,29 @@
+{
+  "bggId": 420025,
+  "fetched": 3,
+  "done": true,
+  "frontAspect": 0.743,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8169374",
+        "caption": "Parachute Panda, Redshift Games, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/tWvZG_9R4PU8SInQ_EXwwQ__large/img/sEFRkJBQ-pL0EJv077CFEwWK3-E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8169374.jpg",
+        "score": 2.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8169374",
+      "url": "https://cf.geekdo-images.com/tWvZG_9R4PU8SInQ_EXwwQ__large/img/sEFRkJBQ-pL0EJv077CFEwWK3-E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8169374.jpg",
+      "caption": "Parachute Panda, Redshift Games, 2024 — back cover",
+      "score": 2.5,
+      "aspect": 0.733,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/parachute-panda-420025/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "bggId": 344114,
+  "fetched": 50,
+  "done": true,
+  "frontAspect": 0.782,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6337720",
+        "caption": "Bag of Chips, Mixlore, 2021 — back, white background (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/gAsAaYZYbIrbuUX2b1Bb1Q__large/img/5jj2Kehv_4SO0CxHkHFSSp-r6Yc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6337720.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "9583632",
+        "caption": "Icelandic edition - backside of bag",
+        "url": "https://cf.geekdo-images.com/wZccYr_-vCRKoFfM23fvhQ__large/img/b7EC6tCUra3OTnMBRq-dO1SmjPU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9583632.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7687804",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/62JDJInrbVDBog1SqVLBNg__large/img/F9xLgVfVlWfN3k_boGlKR1Wmfcs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7687804.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6337720",
+      "url": "https://cf.geekdo-images.com/gAsAaYZYbIrbuUX2b1Bb1Q__large/img/5jj2Kehv_4SO0CxHkHFSSp-r6Yc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6337720.jpg",
+      "caption": "Bag of Chips, Mixlore, 2021 — back, white background (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.799,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/bag-of-chips-344114/back-src.jpg"
+    }
+  }
+}

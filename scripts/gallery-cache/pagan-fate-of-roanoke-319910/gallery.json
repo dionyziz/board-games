@@ -1,0 +1,54 @@
+{
+  "bggId": 319910,
+  "fetched": 99,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5697623",
+        "caption": "Box Mockup Back",
+        "url": "https://cf.geekdo-images.com/OXPLsYkENvi0pOwqzlhzLA__large/img/hCH1h1AiT4bxT9SzsEmN6vTsvkw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5697623.png",
+        "score": 2
+      },
+      {
+        "imageid": "8733488",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/iNBh8c0qriZntQgFsFqqbw__large/img/bLHnfMQ4mkxYJNdtwYf9oeQUiWk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8733488.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8733488",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/iNBh8c0qriZntQgFsFqqbw__large/img/bLHnfMQ4mkxYJNdtwYf9oeQUiWk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8733488.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8733487",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/Di-nyX-ME1Umgoo5exfIkg__large/img/tFQHwklK6IRPwvBb6oY4h7SbEWs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8733487.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9236616",
+        "caption": "2p game on same side",
+        "url": "https://cf.geekdo-images.com/nAJC7v-xrm9DPWGX1XwLIA__large/img/cnc2d1eNSY5vRYpOCczuWKigTSU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9236616.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5697623",
+      "url": "https://cf.geekdo-images.com/OXPLsYkENvi0pOwqzlhzLA__large/img/hCH1h1AiT4bxT9SzsEmN6vTsvkw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5697623.png",
+      "caption": "Box Mockup Back",
+      "score": 2,
+      "aspect": 0.931,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/pagan-fate-of-roanoke-319910/back-src.png"
+    }
+  }
+}

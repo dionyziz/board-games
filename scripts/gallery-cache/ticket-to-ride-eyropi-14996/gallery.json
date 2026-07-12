@@ -1,0 +1,78 @@
+{
+  "bggId": 14996,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.003,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "291745",
+        "caption": "Box back, Finnish edition",
+        "url": "https://cf.geekdo-images.com/HpS8wG2k3rkXA--n0aOB8A__large/img/P2GWfC6zm8NFc9G6Z2PG520VFoY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic291745.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "665095",
+        "caption": "Back of American Box",
+        "url": "https://cf.geekdo-images.com/vDsTdww2AI7MgmR0MhbGRQ__large/img/eQ9noVrmmwSoRJfmasrlwBxP3CQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665095.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "244832",
+        "caption": "Polish edition - box back.",
+        "url": "https://cf.geekdo-images.com/dmOes3tCedbdO5ymV-pyig__large/img/iJDh5fyZ87zKUXOMdBXgO0L0p54=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic244832.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2834493",
+        "caption": "The back cover of the Greek version",
+        "url": "https://cf.geekdo-images.com/y6wWiBjqY7DHbgf2QSYScw__large/img/Mu9N_z7KoAiSHvTpmTGBQwuc__g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2834493.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9490914",
+        "caption": "Rare 2021 Schippers Group Corporate Back",
+        "url": "https://cf.geekdo-images.com/DngXzAm8D076sUrHHCY6tQ__large/img/J4ytF15qQQtG6xqj6te1v8Q-u7Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9490914.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "665096",
+        "caption": "TTR Europe box side 1 of 4",
+        "url": "https://cf.geekdo-images.com/x6gbD-CdVgnFYIdf55WCRA__large/img/42EpQTNcI9YYA_jwTigZKxIK4FE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665096.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "665099",
+        "caption": "TTR Europe box side 4 of 4",
+        "url": "https://cf.geekdo-images.com/5q3i3GTy8Pyo9mxCePqHeQ__large/img/b3Fg5RxR_WJgmZzSfr9DcFxBXcU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665099.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "665098",
+        "caption": "TTR Europe box side 3 of 4",
+        "url": "https://cf.geekdo-images.com/RJP7RCCUCTHu4R9Qodp_Zg__large/img/Pz--htraa_fW1hgxURdUy3JVhJM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665098.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "665097",
+        "caption": "TTR Europe box side 2 of 4",
+        "url": "https://cf.geekdo-images.com/lLdit08CS3Q5nIgNWrm4YA__large/img/suP-DzIP4uzRq8aW7qvkc0MitLk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665097.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "291745",
+      "url": "https://cf.geekdo-images.com/HpS8wG2k3rkXA--n0aOB8A__large/img/P2GWfC6zm8NFc9G6Z2PG520VFoY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic291745.jpg",
+      "caption": "Box back, Finnish edition",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ticket-to-ride-eyropi-14996/back-src.jpg"
+    }
+  }
+}

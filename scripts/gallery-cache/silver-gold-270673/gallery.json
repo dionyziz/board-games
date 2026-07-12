@@ -1,0 +1,54 @@
+{
+  "bggId": 270673,
+  "fetched": 107,
+  "done": true,
+  "frontAspect": 0.652,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6839057",
+        "caption": "Multilingual edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Cjl73XX-SLPG1s2xS0ivKg__large/img/hcTxZ1FVKhDSDhG7ARn_QJCmrTs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6839057.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5596960",
+        "caption": "Silver & Gold Box Back - Pandasaurus Games",
+        "url": "https://cf.geekdo-images.com/Q93gBRnFIaZfMJlnOOwwYA__large/img/Qlho-aEJCEUpya4AlMmXGiSU19M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5596960.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8090734",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/8eQrOYpuA-Sj_hSL-IjQWA__large/img/LB6WliCDMWW0oVzlZJ1etx1OxC4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8090734.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7893272",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/pBWyTOjcSlB6Io4Ckn_wKg__large/img/WP6exWsGS3E3BHrPV32njdKbqmY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7893272.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8090734",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/8eQrOYpuA-Sj_hSL-IjQWA__large/img/LB6WliCDMWW0oVzlZJ1etx1OxC4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8090734.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6839057",
+      "url": "https://cf.geekdo-images.com/Cjl73XX-SLPG1s2xS0ivKg__large/img/hcTxZ1FVKhDSDhG7ARn_QJCmrTs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6839057.jpg",
+      "caption": "Multilingual edition - Back of the box",
+      "score": 2,
+      "aspect": 0.658,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/silver-gold-270673/back-src.jpg"
+    }
+  }
+}

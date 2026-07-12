@@ -1,0 +1,78 @@
+{
+  "bggId": 147949,
+  "fetched": 167,
+  "done": true,
+  "frontAspect": 1.4,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4552762",
+        "caption": "English fourth edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/mGmLUuB63yoFS3-yc8gVEg__large/img/p1fIEMbWHACYBwmv6P2BY99bHfs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4552762.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4552753",
+        "caption": "English third edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/2yo8n2wchJU6aOHZ2yq7MA__large/img/TAtdr68AAtizYqa1o1NyYAPhAgY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4552753.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8948137",
+        "caption": "BACK BOX English edition (2023)",
+        "url": "https://cf.geekdo-images.com/VC_PjgI1YsYe_bE8TqECFg__large/img/cWl_wQfzbLq3JJ8Rayf1ZL-toxs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8948137.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4886825",
+        "caption": "English second edition: box back.",
+        "url": "https://cf.geekdo-images.com/ORLsOpEAnbDfPgC0IhBcSQ__large/img/sJqWtTbcxfvPbVCalPjXOC_f7NE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4886825.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3459647",
+        "caption": "One Night Ultimate Werewolf English Edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/vBXMDiBcRermgCQFs1ZLPA__large/img/-vE7q7XDeFHM45-nZfvxjmyKHbw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3459647.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1828797",
+        "caption": "Box back (published game)",
+        "url": "https://cf.geekdo-images.com/cK7MDbKxbsWkAQkimRsKJg__large/img/Nmd3ItNTembvo77GM25t_pih5Qs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1828797.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1871558",
+        "caption": "Box spine",
+        "url": "https://cf.geekdo-images.com/HvA_3twybwkh0zy-4Wbwcg__large/img/UdgvqGRljWKQGk-DQ41vHM3iYxg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1871558.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8726034",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/caaDe6QVJBN7ElfQi3GVOg__large/img/LS_iz2F_Mthq5UJxizSB0-t30iQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8726034.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1829340",
+        "caption": "Box spine",
+        "url": "https://cf.geekdo-images.com/F8JBl8Kzdwm4SeePNHBRUQ__large/img/bv6mS4iElQB2ETkgU0GsSerRlg0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1829340.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4552762",
+      "url": "https://cf.geekdo-images.com/mGmLUuB63yoFS3-yc8gVEg__large/img/p1fIEMbWHACYBwmv6P2BY99bHfs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4552762.jpg",
+      "caption": "English fourth edition - Back of the box",
+      "score": 3.5,
+      "aspect": 1.332,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/one-night-ultimate-warewolf-147949/back-src.jpg"
+    }
+  }
+}

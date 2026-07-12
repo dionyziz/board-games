@@ -1,0 +1,42 @@
+{
+  "bggId": 411861,
+  "fetched": 44,
+  "done": true,
+  "frontAspect": 0.775,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8712586",
+        "caption": "Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/QSGdQv6fqLs2yqNf6FRQ8A__large/img/W5hBNpotOicrLbHzeCnyVhbrEqY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8712586.png",
+        "score": 2
+      },
+      {
+        "imageid": "8717961",
+        "caption": "Back, Polish edition",
+        "url": "https://cf.geekdo-images.com/mM26Eb3Hvl64i4ZeLzzTOQ__large/img/oUUkk8x-X3R9uoZyYU9ikhp8Q3I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8717961.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "8629905",
+        "caption": "IELLO Box Top",
+        "url": "https://cf.geekdo-images.com/BYqszLa65Qhmp0hLwynI-w__large/img/BM5ImQXDVo2a1YLuJIoEXH7Rs3U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8629905.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8712586",
+      "url": "https://cf.geekdo-images.com/QSGdQv6fqLs2yqNf6FRQ8A__large/img/W5hBNpotOicrLbHzeCnyVhbrEqY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8712586.png",
+      "caption": "Back, Ukrainian edition",
+      "score": 2,
+      "aspect": 0.772,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/unmatched-the-witcher-realms-fall-411861/back-src.png"
+    }
+  }
+}

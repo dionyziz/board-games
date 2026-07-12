@@ -1,7 +1,5 @@
 {
   "bggId": 394144,
-  "fetched": 19,
-  "done": true,
   "frontAspect": 0.683,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 2,
       "aspect": 0.623,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/risk-strike-394144/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

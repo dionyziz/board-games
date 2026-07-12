@@ -1,0 +1,41 @@
+{
+  "bggId": 340041,
+  "fetched": 110,
+  "done": true,
+  "frontAspect": 0.753,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6867374",
+        "caption": "Kingdomino Origins ‐ English edition (2021) Box . Back",
+        "url": "https://cf.geekdo-images.com/vqZA7CkZYUNQLsPuZGYwfg__large/img/dH5H0qZGjP79hGAedI8QIt6Mktw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6867374.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7492749",
+        "caption": "english/french version box back",
+        "url": "https://cf.geekdo-images.com/ttJGvDadzy5yuNiKiNj7xQ__large/img/l55hVUvWexWbGNxLYg2QqtHkcKQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7492749.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6421539",
+        "caption": "Kingdomino Origins - back",
+        "url": "https://cf.geekdo-images.com/FhedlIEf0Gdy96tXOry5aA__large/img/KcL0P9SOUf0pkujxnr2DJFLJdhc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6421539.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6867374",
+      "url": "https://cf.geekdo-images.com/vqZA7CkZYUNQLsPuZGYwfg__large/img/dH5H0qZGjP79hGAedI8QIt6Mktw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6867374.jpg",
+      "caption": "Kingdomino Origins ‐ English edition (2021) Box . Back",
+      "score": 3.5,
+      "aspect": 0.763,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/kingdomino-origins-340041/back-src.jpg"
+    }
+  }
+}

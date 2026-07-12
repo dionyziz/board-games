@@ -1,0 +1,29 @@
+{
+  "bggId": 396251,
+  "fetched": 40,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9330310",
+        "caption": "Invincible: The Hero-Building Game ‐ English edition (2024) Back Box",
+        "url": "https://cf.geekdo-images.com/ffgZ-bzRg-UgXWGBcKzgaA__large/img/KZn9fjsbodzw_GWLPpZmtxrAA8c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9330310.jpg",
+        "score": 3.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9330310",
+      "url": "https://cf.geekdo-images.com/ffgZ-bzRg-UgXWGBcKzgaA__large/img/KZn9fjsbodzw_GWLPpZmtxrAA8c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9330310.jpg",
+      "caption": "Invincible: The Hero-Building Game ‐ English edition (2024) Back Box",
+      "score": 3.5,
+      "aspect": 1.034,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/invincible-the-hero-building-game-396251/back-src.jpg"
+    }
+  }
+}

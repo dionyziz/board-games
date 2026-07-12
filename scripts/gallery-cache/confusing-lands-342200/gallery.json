@@ -1,0 +1,41 @@
+{
+  "bggId": 342200,
+  "fetched": 40,
+  "done": true,
+  "frontAspect": 1.002,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9585317",
+        "caption": "Czech edition TLAMA games – Back mockup (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/SF9-BfLQ8I74dZ9IkG9fuQ__large/img/EhEVLJI6MrnvWQD5W52I7Q2IrBo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9585317.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8655471",
+        "caption": "What do ya mean I gotta give you back ten points!?!",
+        "url": "https://cf.geekdo-images.com/EiirkPTi0HyEx6LlW2sMFg__large/img/-IfuTMPb_WkTwL7srW10Ul2mA8A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8655471.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8982259",
+        "caption": "Cofusing Lands German Cover Back",
+        "url": "https://cf.geekdo-images.com/LjyjayEHSjUBFTIiE-tQlw__large/img/mgXhNsq7wFJQUtlHDQUIsQeRFWM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8982259.png",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9585317",
+      "url": "https://cf.geekdo-images.com/SF9-BfLQ8I74dZ9IkG9fuQ__large/img/EhEVLJI6MrnvWQD5W52I7Q2IrBo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9585317.jpg",
+      "caption": "Czech edition TLAMA games – Back mockup (image provided by the publisher)",
+      "score": 2,
+      "aspect": 1.012,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/confusing-lands-342200/back-src.jpg"
+    }
+  }
+}

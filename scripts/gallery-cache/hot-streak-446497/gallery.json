@@ -1,0 +1,36 @@
+{
+  "bggId": 446497,
+  "fetched": 72,
+  "done": true,
+  "frontAspect": 2.239,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9516760",
+        "caption": "German Back",
+        "url": "https://cf.geekdo-images.com/ObfhtOPVfzlAdq8bw7WHiw__large/img/XPOCzuXiLir9HekQM3sQXPGzN8g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9516760.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "8901044",
+        "caption": "The box lid also acts as the podium",
+        "url": "https://cf.geekdo-images.com/kyhOTaBXhpIHfzIGYIrf8Q__large/img/PelfL7BbGrj_XEv7G2FPb37WjcY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8901044.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9516760",
+      "url": "https://cf.geekdo-images.com/ObfhtOPVfzlAdq8bw7WHiw__large/img/XPOCzuXiLir9HekQM3sQXPGzN8g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9516760.jpg",
+      "caption": "German Back",
+      "score": 1,
+      "aspect": 2.241,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hot-streak-446497/back-src.jpg"
+    }
+  }
+}

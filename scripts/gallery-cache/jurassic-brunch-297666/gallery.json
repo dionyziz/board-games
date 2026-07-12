@@ -1,0 +1,35 @@
+{
+  "bggId": 297666,
+  "fetched": 18,
+  "done": true,
+  "frontAspect": 0.718,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5597978",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/g7A17MrrlXa7Rj78d_qggA__large/img/W-Y5njk4oJm3MHqeq_v1Yz5NNyI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5597978.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "6402061",
+        "caption": "back spanish version",
+        "url": "https://cf.geekdo-images.com/1gFuiLbLk5c_gTlpWnK2cg__large/img/abGpyl3udaKb-74zcFdOkYroT8E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6402061.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5597978",
+      "url": "https://cf.geekdo-images.com/g7A17MrrlXa7Rj78d_qggA__large/img/W-Y5njk4oJm3MHqeq_v1Yz5NNyI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5597978.jpg",
+      "caption": "Back",
+      "score": 1,
+      "aspect": 0.716,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/jurassic-brunch-297666/back-src.jpg"
+    }
+  }
+}

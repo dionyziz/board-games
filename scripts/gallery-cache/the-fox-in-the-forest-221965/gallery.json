@@ -1,0 +1,49 @@
+{
+  "bggId": 221965,
+  "fetched": 106,
+  "done": true,
+  "frontAspect": 0.7,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8288413",
+        "caption": "Back of the box (Hungarian edition)",
+        "url": "https://cf.geekdo-images.com/d9fWH4CJr-LFho-m_mDdxA__large/img/fbWW32ybwg-5CyxA7TNGNqIaCz8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8288413.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6948709",
+        "caption": "Liška podšitá ‐ Czech edition, MINDOK 2020 - back cover",
+        "url": "https://cf.geekdo-images.com/ozYDQ_wzMmbNiMKlAJtZsw__large/img/eGc1YOLPTgDqSasLvZjwsctfnUY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6948709.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "4852721",
+        "caption": "Box top of German version (\"Der Fuchs im Wald\") by Schwerkraft-Verlag",
+        "url": "https://cf.geekdo-images.com/mN296RxmSZtq4gapnIVr6A__large/img/7StEQABpAKvcz0V8N0r28QtCy-I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4852721.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "4600287",
+        "caption": "Renegade Game Studios, Box Bottom",
+        "url": "https://cf.geekdo-images.com/595Wvp16igjfQdrnqjvXUg__large/img/18XEGTqeCQKxBVTN6SGhtWPXeyY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4600287.jpg",
+        "score": 3.5
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8288413",
+      "url": "https://cf.geekdo-images.com/d9fWH4CJr-LFho-m_mDdxA__large/img/fbWW32ybwg-5CyxA7TNGNqIaCz8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8288413.jpg",
+      "caption": "Back of the box (Hungarian edition)",
+      "score": 2,
+      "aspect": 0.689,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-fox-in-the-forest-221965/back-src.jpg"
+    }
+  }
+}

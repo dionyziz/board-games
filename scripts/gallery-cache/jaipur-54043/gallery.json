@@ -1,0 +1,96 @@
+{
+  "bggId": 54043,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.718,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "2757785",
+        "caption": "GameWorks SàRL English/French/German/Spanish seventh edition - Back",
+        "url": "https://cf.geekdo-images.com/kvoQZhW0fUHfwwYAnP7aOQ__large/img/XGyS0Y6WlZT9I-8CGUMoRq0YB-U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2757785.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "620429",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/eF_D3LpfK46ajdA_NbogZg__large/img/dC7ZHqIno8mVr-Ixk8WlisvJaAQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic620429.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1768284",
+        "caption": "back of 4th edition",
+        "url": "https://cf.geekdo-images.com/WFWf44Z5-SfjLU1N_MWnkA__large/img/zYdUhxgjROsYJBIds6FCq2-drqU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1768284.png",
+        "score": 2
+      },
+      {
+        "imageid": "6870274",
+        "caption": "Backside Box New Edition German",
+        "url": "https://cf.geekdo-images.com/ne19VYvtF8xuozgNu6F3yA__large/img/23-_gmjwX15qeJGUI7YWJVYyykQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6870274.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4105658",
+        "caption": "Jaipur - French fifth edition - Back box",
+        "url": "https://cf.geekdo-images.com/75Ndh3drzSmpjHQLBYT7aw__large/img/GOmKq5kpZR2auhivmfQW_QU8dwo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4105658.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2427175",
+        "caption": "The back side for the Jaipur box.",
+        "url": "https://cf.geekdo-images.com/TLzlpQbQVyfZvaqBzU9Z_Q__large/img/qITzvJ59GJPaAxcZkgmT66v48ys=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2427175.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "4867079",
+        "caption": "Jaipur side of metal coin included with new edition",
+        "url": "https://cf.geekdo-images.com/Qi0Ja3UoD4w7FAJHjWeH3g__large/img/r9nwzBB6GSbnrbET8Cd08iiXNWk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4867079.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "969314",
+        "caption": "Game information on side of box",
+        "url": "https://cf.geekdo-images.com/ppissj-XNplBWTknADc3-g__large/img/1EEX6553s-n1b3uBD8WrU-EqOZg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic969314.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "966365",
+        "caption": "Side of game box",
+        "url": "https://cf.geekdo-images.com/Kph2E5jJ7J69DnZoQGM4KA__large/img/EHWyv4D9pN8vzW7oEX4B2GLVzJE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic966365.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "991709",
+        "caption": "Side of the box 2/3 (high scan res.)",
+        "url": "https://cf.geekdo-images.com/i4Ab8Uzv1oWzUwaEDB9Jzw__large/img/2W6NbTZbk6zpSRJcKAy7GNdH_qs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic991709.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2427177",
+        "caption": "The front side of the Jaipur box.",
+        "url": "https://cf.geekdo-images.com/g18H8zjlBAD_WWu-YXaT1A__large/img/eG_1mX3PHCFVF9AUxznRuHW4oPo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2427177.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2427175",
+        "caption": "The back side for the Jaipur box.",
+        "url": "https://cf.geekdo-images.com/TLzlpQbQVyfZvaqBzU9Z_Q__large/img/qITzvJ59GJPaAxcZkgmT66v48ys=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2427175.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6870274",
+      "url": "https://cf.geekdo-images.com/ne19VYvtF8xuozgNu6F3yA__large/img/23-_gmjwX15qeJGUI7YWJVYyykQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6870274.jpg",
+      "caption": "Backside Box New Edition German",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/jaipur-54043/back-src.jpg"
+    }
+  }
+}

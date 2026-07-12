@@ -1,0 +1,53 @@
+{
+  "bggId": 285774,
+  "fetched": 220,
+  "done": true,
+  "frontAspect": 0.863,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7424337",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Etc3q0bpzv4KYuarY_q1_g__large/img/F5E-6B3T2RA0gMQzspqFXYth0oM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7424337.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8919072",
+        "caption": "Ukrainian edition, 2022 Kilogames, Back of the box",
+        "url": "https://cf.geekdo-images.com/gFM1gbZ2gsFkK4qR72zapA__large/img/ICA0YcUM2_G45OnbNWaDr--7mDw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8919072.png",
+        "score": 2
+      },
+      {
+        "imageid": "5091691",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/zQU2A7qIyLy3AiW_S-j2lQ__large/img/xJn-DWzENZX70IuMEgpTw1vklKQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5091691.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5060279",
+        "caption": "Launch day promos (back)",
+        "url": "https://cf.geekdo-images.com/PVytpUC8H0hhIjyBqwRGsw__large/img/Mp3QexACgHLJvFR8xK7dZSJjx1Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5060279.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5518006",
+        "caption": "Ironman narrowly escaped death and dealt back 24 DMG to finish up Rhino",
+        "url": "https://cf.geekdo-images.com/FNXQJeJc462aQ5ngil2mpw__large/img/zPTYT8vZNEJGunReHLcmwiMl-qg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5518006.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7424337",
+      "url": "https://cf.geekdo-images.com/Etc3q0bpzv4KYuarY_q1_g__large/img/F5E-6B3T2RA0gMQzspqFXYth0oM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7424337.jpg",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.688,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/marvel-champions-the-card-game-285774/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "bggId": 50381,
+  "fetched": 70,
+  "done": true,
+  "frontAspect": 0.615,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8548460",
+        "caption": "Cards Against Humanity (English UK 2.2 Edition) — Box back",
+        "url": "https://cf.geekdo-images.com/WMo2LI6wIYTUC64brSGGsA__large/img/KWQl1ceI9KvZRraJG0GzXUBKCs8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8548460.jpg",
+        "score": 1.5
+      },
+      {
+        "imageid": "7890098",
+        "caption": "v. 2.3 (back)",
+        "url": "https://cf.geekdo-images.com/oaMBtuof0oK0teOjtmlnOw__large/img/gK1SSLw6IiEmlly4-9IxTFzAbFM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7890098.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "4820532",
+        "caption": "CAH Theatre Pack - Understudy Version - Understudy Notice Back",
+        "url": "https://cf.geekdo-images.com/NdFCS-v00Yv_LniYEF6vHQ__large/img/9Zy7BSsBYF_5kS7Y-WMaqT8nFYc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4820532.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "4820531",
+        "caption": "CAH Theatre Pack - Understudy Version - Pack Back",
+        "url": "https://cf.geekdo-images.com/MVV4NAykcNyzVJb7EqXzWw__large/img/jQYuikD9Y86P-UGGDM7vLYBpmoQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4820531.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7890098",
+      "url": "https://cf.geekdo-images.com/oaMBtuof0oK0teOjtmlnOw__large/img/gK1SSLw6IiEmlly4-9IxTFzAbFM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7890098.jpg",
+      "caption": "v. 2.3 (back)",
+      "score": 1,
+      "aspect": 0.499,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/talk-to-the-hand-50381/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "bggId": 3837,
+  "fetched": 133,
+  "done": true,
+  "frontAspect": 0.795,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1429337",
+        "caption": "Rat-a-Tat Cat, Gamewright multi-lingual edition 2000 - box back",
+        "url": "https://cf.geekdo-images.com/Cb2lq0D_UhmiO0qNNfUj_Q__large/img/BJkPLtdJyTxQjIYt5YP6qWT79fY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1429337.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2970469",
+        "caption": "Box back (Gamewright ed.)",
+        "url": "https://cf.geekdo-images.com/8nRMuIn6fayerym4BafD1w__large/img/E4gyfCHEj3F7WVCpl8JIpdGP__A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2970469.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "800116",
+        "caption": "Greek edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/eJljiV9PKolctgkub_-6uQ__large/img/hzuCjY_QyBGmGAdhKwkCQWmAA4E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic800116.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "147436",
+        "caption": "Tenth Anniversary Edition Back",
+        "url": "https://cf.geekdo-images.com/emk3I9UD4WNz_kwCmJebhg__large/img/n7MQfJ_4l4-6-dvv1gEHm67Qb2o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic147436.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3664542",
+        "caption": "German second edition - Box back",
+        "url": "https://cf.geekdo-images.com/406n6oiJCjhq19oauiSFlQ__large/img/uko0rRVBEYYYfO1sq4UrBqk6Iyo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3664542.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8347597",
+        "caption": "Beaver Gang, Backside of the AMIGO multilingual (D/F/I) 2007 edition",
+        "url": "https://cf.geekdo-images.com/2tS9O9AXbYU5NeDbR_l5Pw__large/img/34FASiY7WCvhzNol-Bu3c4r_nNU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8347597.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "2970318",
+        "caption": "Box spine (Gamewright edition)",
+        "url": "https://cf.geekdo-images.com/5ILdmJGsmq_mTWIsbdfrDw__large/img/eifAg8fACIUJRzGasC0hhRdR6vg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2970318.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2970317",
+        "caption": "Box spine (Gamewright edition)",
+        "url": "https://cf.geekdo-images.com/vIDQ6NJU9Uk0ko1AZlNk2g__large/img/oi0sCQNksBhMqrYBaIRIt95OXLU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2970317.jpg",
+        "score": 3.5
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1429337",
+      "url": "https://cf.geekdo-images.com/Cb2lq0D_UhmiO0qNNfUj_Q__large/img/BJkPLtdJyTxQjIYt5YP6qWT79fY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1429337.jpg",
+      "caption": "Rat-a-Tat Cat, Gamewright multi-lingual edition 2000 - box back",
+      "score": 3.5,
+      "aspect": 0.845,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/kastores-pontikia-3837/back-src.jpg"
+    }
+  }
+}

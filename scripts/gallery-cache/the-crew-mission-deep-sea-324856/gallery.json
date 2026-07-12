@@ -1,0 +1,59 @@
+{
+  "bggId": 324856,
+  "fetched": 101,
+  "done": true,
+  "frontAspect": 0.722,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5937810",
+        "caption": "Die Crew: Mission Tiefsee - Kosmos German edition, back of the box",
+        "url": "https://cf.geekdo-images.com/JnqEKioQXVoY0P7V_u2Uiw__large/img/vCYzmBoD8OU4Fln-P0pXpTgjemc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5937810.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6793190",
+        "caption": "Back of box (english)",
+        "url": "https://cf.geekdo-images.com/VUpg22edTcGArTRcre8owA__large/img/NB4_HwraUvdi5g0ugZGQEMbij3I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6793190.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6390603",
+        "caption": "Box back (Dutch edition)",
+        "url": "https://cf.geekdo-images.com/B0lawlCkD4c81WNRYl0fpQ__large/img/Dl4LpB7kYa8W9gpYnQnUktsS3tg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6390603.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7765442",
+        "caption": "Czech edition – Back ( image provided by publisher )",
+        "url": "https://cf.geekdo-images.com/bLueTxTuTLKQlQWvAlosiA__large/img/kd3aWh1HlfzBEsm0OTbOuw31YEA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7765442.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7433134",
+        "caption": "The Crew: Mission Sous-Marine ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/5hnKoaMfO6nWUbT4uI7qfA__large/img/8FrLsGYBug5dULOglETs0r8-0dk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7433134.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6448710",
+        "caption": "\"Экипаж. Погружение в бездну\" - box back - Zvezda - Russian edition",
+        "url": "https://cf.geekdo-images.com/356WTdI5tArSdgmim7ARNg__large/img/Yg7zC3Yc-atwn4CDeH0iwKJjW4w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6448710.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5937810",
+      "url": "https://cf.geekdo-images.com/JnqEKioQXVoY0P7V_u2Uiw__large/img/vCYzmBoD8OU4Fln-P0pXpTgjemc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5937810.jpg",
+      "caption": "Die Crew: Mission Tiefsee - Kosmos German edition, back of the box",
+      "score": 3.5,
+      "aspect": 0.709,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-crew-mission-deep-sea-324856/back-src.jpg"
+    }
+  }
+}

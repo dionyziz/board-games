@@ -1,0 +1,84 @@
+{
+  "bggId": 11,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.735,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "197512",
+        "caption": "Bohnanza - Amigo - German box back",
+        "url": "https://cf.geekdo-images.com/kyTV5bmjsYmK82mrHTuaLw__large/img/OlACE2tOXnE5tYxaU2e3vTCdtRQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic197512.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "878765",
+        "caption": "Box Back (Amigo 2010 Edition)",
+        "url": "https://cf.geekdo-images.com/1U0b41mskegXZyf_EUaH8w__large/img/f0Y2bmWWJ3gchmdPXdcAOyjHbTY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic878765.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1287627",
+        "caption": "Box back. Russian edition of the game.",
+        "url": "https://cf.geekdo-images.com/A7WEvamYMwpmMqsCiJXWXg__large/img/eFFoPFJPhC1NB5INzFji_hacH0s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1287627.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "765978",
+        "caption": "Brain Games Latvian Edition - Back Cover",
+        "url": "https://cf.geekdo-images.com/7BBoLtI9F0UAIUZlX1k_Jg__large/img/4hn8pglrT2NwdKOP8S80-0DdlB8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic765978.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "395316",
+        "caption": "Spanish Edition (Back)",
+        "url": "https://cf.geekdo-images.com/zoUgsFJ9EJXRE-j6l8wxXg__large/img/NaZaWp00FyhGjwtP3zBijG2DWeo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic395316.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "271057",
+        "caption": "Spanish edition back of the box",
+        "url": "https://cf.geekdo-images.com/xDMIwng3EjVwEc30rSWOxw__large/img/yMKaHQVSdLWS3gucQ4-sqryyrrY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic271057.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1269154",
+        "caption": "Box side. Russian edition of the game.",
+        "url": "https://cf.geekdo-images.com/KD1EgEEct1xjfERUG07a0w__large/img/iSCtBgYXNQph8aLjjbSO1Buo5Xk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1269154.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "301121",
+        "caption": "Side of the box",
+        "url": "https://cf.geekdo-images.com/Zcd4jsqUWnaVXzkJJHXW5w__large/img/5lo4rz63nz0TDfyY7WbXnRobdCc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic301121.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1126904",
+        "caption": "Side of the box\n",
+        "url": "https://cf.geekdo-images.com/xdZlBTmOQJSgj0WhRAAoSg__large/img/Xvh_DF_3zwxoPaU93d4G_9aiBAQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1126904.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9364838",
+        "caption": "Bohnanza Nordic 2018 (left) and 2024 (right) comparison, side",
+        "url": "https://cf.geekdo-images.com/ubnzjH2IEiPOhsU0C0CMkQ__large/img/duto3OMJ5GIlSpe49fsuWrEnAtE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9364838.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "197512",
+      "url": "https://cf.geekdo-images.com/kyTV5bmjsYmK82mrHTuaLw__large/img/OlACE2tOXnE5tYxaU2e3vTCdtRQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic197512.jpg",
+      "caption": "Bohnanza - Amigo - German box back",
+      "score": 3.5,
+      "aspect": 0.759,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/bohnanza-11/back-src.jpg"
+    }
+  }
+}

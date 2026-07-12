@@ -1,0 +1,35 @@
+{
+  "bggId": 257501,
+  "fetched": 75,
+  "done": true,
+  "frontAspect": 1.003,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4410894",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/MvW1E9A3KmJxo9hNaJiw5A__large/img/N4FJDyS8BxRPB752Kx7y4yLsf1I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4410894.jpg",
+        "score": 3.5
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5472262",
+        "caption": "Game with my son, son’s side",
+        "url": "https://cf.geekdo-images.com/MKyGa6K_j94bp0Lbs7S4qQ__large/img/H2C18mBN0IlbSLwghQLgkC4mtWc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5472262.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5472261",
+        "caption": "Game with my son, my side",
+        "url": "https://cf.geekdo-images.com/aOy8Lpwiw8m22SaxxDNAiQ__large/img/UVUjtbn8ScCsMXuX-UsPYCqP9dQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5472261.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

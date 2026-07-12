@@ -1,0 +1,29 @@
+{
+  "bggId": 315138,
+  "fetched": 55,
+  "done": true,
+  "frontAspect": 0.752,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6229059",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/U41OnLSKQ1ldfksUHwaqBQ__large/img/PdJn8doQeeqxWT_L0dxdKQzqZjs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6229059.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6229059",
+      "url": "https://cf.geekdo-images.com/U41OnLSKQ1ldfksUHwaqBQ__large/img/PdJn8doQeeqxWT_L0dxdKQzqZjs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6229059.jpg",
+      "caption": "Back of box",
+      "score": 2,
+      "aspect": 0.702,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/autumn-harvest-a-tea-dragon-society-game-315138/back-src.jpg"
+    }
+  }
+}

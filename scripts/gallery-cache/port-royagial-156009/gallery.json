@@ -1,0 +1,66 @@
+{
+  "bggId": 156009,
+  "fetched": 187,
+  "done": true,
+  "frontAspect": 0.722,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3499217",
+        "caption": "Box back - Dutch edition - 999 Games",
+        "url": "https://cf.geekdo-images.com/9PGeuT9zQ6qqCiOkSgviig__large/img/xLZJFgYfpWUJ55D0uG75wBbiMcQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3499217.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8357055",
+        "caption": "Port Royal, Backside of the English/German Edition 2022",
+        "url": "https://cf.geekdo-images.com/c4o6CCkpd3u1MbRaeyM-0Q__large/img/eVpOXNyLnbrzpnFkCbm1hy_VfVM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8357055.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5607948",
+        "caption": "English/German edition back",
+        "url": "https://cf.geekdo-images.com/zj9J8Ejq3bO4GYse9_phFQ__large/img/LQLEx8irY36aRp33I2PNdEL38l4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5607948.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3280508",
+        "caption": "Box Back, Czech Edition (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/m1VbHe0bKwWzkdGC9-IPQg__large/img/KnF6ibJAweiY_iOY614-mCyrQso=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3280508.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2825929",
+        "caption": "Box Back, Polish First Edition (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/UsyZ87V9wnVkfgywE-3-Ng__large/img/VZ95GraJms1sLQrZrG6iYtRZfdg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2825929.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1980929",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/rLiDWMapWftbNo5KvaPvxg__large/img/aF81Nm6EaEDnmgYdcEgxxIsc0KQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1980929.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "2003450",
+        "caption": "The rules (English on top, German underneath), folded to be more booklet-like.",
+        "url": "https://cf.geekdo-images.com/4L-QqH05UjjKptLg7SBKQA__large/img/HLxNQYHh-1QXSn_Oybavivz8ksM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2003450.jpg",
+        "score": 2.5
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3499217",
+      "url": "https://cf.geekdo-images.com/9PGeuT9zQ6qqCiOkSgviig__large/img/xLZJFgYfpWUJ55D0uG75wBbiMcQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3499217.jpg",
+      "caption": "Box back - Dutch edition - 999 Games",
+      "score": 3.5,
+      "aspect": 0.711,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/port-royagial-156009/back-src.jpg"
+    }
+  }
+}

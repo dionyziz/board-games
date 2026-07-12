@@ -1,0 +1,41 @@
+{
+  "bggId": 447243,
+  "fetched": 100,
+  "done": true,
+  "frontAspect": 0.768,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9087391",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/UiwjV8oOUm8JUHJiAlPHOA__large/img/bBu_H8dbWnjYVv0SmvVClpoKlnU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9087391.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9047611",
+        "caption": "Ukrainian edition, 2025 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/Ka_4EILRgqV9fWgJXjScyQ__large/img/kDZzH5fLsLP2NjyH5yojuVuIncY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9047611.png",
+        "score": 2
+      },
+      {
+        "imageid": "9030444",
+        "caption": "Box Back - Devir Portuguese Edition",
+        "url": "https://cf.geekdo-images.com/u7cXZrmklebiH0dLW8hFew__large/img/FMcvWr3wIF1cHGXhGYGelFE0OMk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9030444.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9087391",
+      "url": "https://cf.geekdo-images.com/UiwjV8oOUm8JUHJiAlPHOA__large/img/bBu_H8dbWnjYVv0SmvVClpoKlnU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9087391.jpg",
+      "caption": "German edition, back cover",
+      "score": 2,
+      "aspect": 0.771,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/duel-for-cardia-447243/back-src.jpg"
+    }
+  }
+}

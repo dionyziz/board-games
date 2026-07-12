@@ -1,0 +1,66 @@
+{
+  "bggId": 373106,
+  "fetched": 239,
+  "done": true,
+  "frontAspect": 0.725,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8128939",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Xl6e3LX97bE7CFImc0h-dA__large/img/qC_NQpt8rtDhpoT1v4ZznI2LC4g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8128939.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "8887740",
+        "caption": "English edition, eleventh printing - Back cover",
+        "url": "https://cf.geekdo-images.com/40dT4oXSZ0I3wbGfsm48HQ__large/img/jSh12Jl4SJMe8yQdzHHIMGGoigk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8887740.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8640969",
+        "caption": "Back - English edition, sixth printing (2024)",
+        "url": "https://cf.geekdo-images.com/DfApWF3ym59bip7QkCb23A__large/img/rkMa0nOzsoG0jM41nOK2y-vCo8w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8640969.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8039208",
+        "caption": "Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/-NKxhb69JipXwsKMuRTupQ__large/img/GAcFPWq2H28VGPGgEdL9BixI1MQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8039208.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8762815",
+        "caption": "German edition with SdJ logo, back cover",
+        "url": "https://cf.geekdo-images.com/RvQqzPo1smvVifM1_oPQ3Q__large/img/2KNEVrV7Sz4ZNAk_ocrtOAFaLvo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8762815.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8548137",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/-3O1vES_qAuNSORkWZIUNA__large/img/TrC1osMSZY0xJoLSGmyOrReQSfs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8548137.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8548137",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/-3O1vES_qAuNSORkWZIUNA__large/img/TrC1osMSZY0xJoLSGmyOrReQSfs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8548137.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8128939",
+      "url": "https://cf.geekdo-images.com/Xl6e3LX97bE7CFImc0h-dA__large/img/qC_NQpt8rtDhpoT1v4ZznI2LC4g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8128939.png",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.599,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sky-team-373106/back-src.png"
+    }
+  }
+}

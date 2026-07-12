@@ -1,0 +1,41 @@
+{
+  "bggId": 378848,
+  "fetched": 42,
+  "done": true,
+  "frontAspect": 0.728,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7725041",
+        "caption": "Camel Up. El Juego de cartas. Spanish & Portuguese Edition. Back",
+        "url": "https://cf.geekdo-images.com/fv4tgS90tAh36nZZkLkgYA__large/img/HzFh8l2Xq_yLFT8dieYQkgRJzLQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7725041.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8001381",
+        "caption": "le jeux de carte french back",
+        "url": "https://cf.geekdo-images.com/Q-FCMhYkMNKib7Zz127kjg__large/img/60kDcOt14cGo4XMu6Hb7t5Q9lHY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8001381.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7288329",
+        "caption": " Camel Up: The Card Game, Pretzel Games, 2023 — back cover",
+        "url": "https://cf.geekdo-images.com/X-deTXUJEMNtbmd3QRhSDw__large/img/NmKjKXLPQTDyAYWy6cQmtN8AH4s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7288329.jpg",
+        "score": 0.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7725041",
+      "url": "https://cf.geekdo-images.com/fv4tgS90tAh36nZZkLkgYA__large/img/HzFh8l2Xq_yLFT8dieYQkgRJzLQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7725041.jpg",
+      "caption": "Camel Up. El Juego de cartas. Spanish & Portuguese Edition. Back",
+      "score": 2,
+      "aspect": 0.712,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/camel-up-me-kartes-378848/back-src.jpg"
+    }
+  }
+}

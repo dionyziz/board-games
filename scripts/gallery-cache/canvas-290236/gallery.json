@@ -1,0 +1,55 @@
+{
+  "bggId": 290236,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.799,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5957461",
+        "caption": "Canvas - box back",
+        "url": "https://cf.geekdo-images.com/fL546BkBSHVYvMmIUN5sIw__large/img/fOzc8lJq_W4OxWpS4u1_WvX1fWY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5957461.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8494408",
+        "caption": "2024 ed. - Box Back",
+        "url": "https://cf.geekdo-images.com/76bA8ZRaRsXbA2v1IjY-Rw__large/img/VjcojqMd0IYFQJb-ZOavtFPszuc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8494408.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8485859",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/pQhhVSp7k0iF5MKwsqAHVw__large/img/AZUHmJOAa28WK10_wYriPUnQUDI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8485859.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7512995",
+        "caption": "Base game and expansions side by side",
+        "url": "https://cf.geekdo-images.com/gRrYCekS5fAMB0Emha3S6Q__large/img/pm0vVGoCmqXieRwU7M1WQ5i5lBM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7512995.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "6801923",
+        "caption": "The bottom of the box",
+        "url": "https://cf.geekdo-images.com/i-WQiTBc-0rqe9UaH84aDw__large/img/J8oJ6l3WAZx-P5h1G0M9YFOoYpc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6801923.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5957461",
+      "url": "https://cf.geekdo-images.com/fL546BkBSHVYvMmIUN5sIw__large/img/fOzc8lJq_W4OxWpS4u1_WvX1fWY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5957461.jpg",
+      "caption": "Canvas - box back",
+      "score": 2,
+      "aspect": 0.817,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/canvas-290236/back-src.jpg"
+    }
+  }
+}

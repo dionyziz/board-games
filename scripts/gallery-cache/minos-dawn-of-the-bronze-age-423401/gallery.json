@@ -1,0 +1,47 @@
+{
+  "bggId": 423401,
+  "fetched": 145,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8265897",
+        "caption": "Back of the box, English edition",
+        "url": "https://cf.geekdo-images.com/Rw6OmhUB9XTghquaizL-eA__large/img/ZXRFzpU4mI-QYbkimMYM3mYxR4w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8265897.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8755266",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/RRlta-h6r2NmkYPn6AX8fw__large/img/3C8-FILoj56LlWTFWRNpZwD9IkQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8755266.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8702828",
+        "caption": "Minos: L'Aube de l'Âge de Bronze ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/m1evjQFN3iy8jIZlA-RG8w__large/img/emCC4mEp0JcN5EpFkwlyoWx5pI4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8702828.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8553781",
+        "caption": "Czech edition – Back mockup (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/nmAA60ZTuPWnJZ0zi-Chxw__large/img/zKIViGLeKmueYjoA3YwAslnq7CM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8553781.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8265897",
+      "url": "https://cf.geekdo-images.com/Rw6OmhUB9XTghquaizL-eA__large/img/ZXRFzpU4mI-QYbkimMYM3mYxR4w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8265897.jpg",
+      "caption": "Back of the box, English edition",
+      "score": 3.5,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/minos-dawn-of-the-bronze-age-423401/back-src.jpg"
+    }
+  }
+}

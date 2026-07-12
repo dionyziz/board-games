@@ -1,0 +1,66 @@
+{
+  "bggId": 385761,
+  "fetched": 223,
+  "done": true,
+  "frontAspect": 0.722,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8119089",
+        "caption": "English UK edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/pxZN_ipEuWqbafQi4Ikr7A__large/img/9WWF0UqFNmmoGc-fKkkojLETJCQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8119089.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "8065147",
+        "caption": "Faraway - French edition - back",
+        "url": "https://cf.geekdo-images.com/wEKE-vzAF7Ku3vyTSitxtg__large/img/rFQgq0dFyaz-EpO4vcVS3epAC_I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8065147.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8162432",
+        "caption": "Fr/Eng ed. (2023) Mushroom Forest Box . Back",
+        "url": "https://cf.geekdo-images.com/0AlQ18RARCzIKo8FWYN7iw__large/img/r8nQ8ruRKxDx5Nn34ftUAMgTZZU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8162432.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8593315",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/9W_0OIt4jnm59i-0x93bwA__large/img/pYZDItRnmUN8zS8tsDpvRsRrFWE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8593315.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8337711",
+        "caption": "Chinese edition back box",
+        "url": "https://cf.geekdo-images.com/tbqAnNY0vXF9sAfH0oxLuQ__large/img/L4jA_qwv4EfZl6E5nAz6-xpK2Ik=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8337711.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8762871",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/AvkEP1CxbZkLTb3a-oqVnQ__large/img/N0mI65_4mkO1uNg646da91dzWUs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8762871.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8593315",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/9W_0OIt4jnm59i-0x93bwA__large/img/pYZDItRnmUN8zS8tsDpvRsRrFWE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8593315.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8119089",
+      "url": "https://cf.geekdo-images.com/pxZN_ipEuWqbafQi4Ikr7A__large/img/9WWF0UqFNmmoGc-fKkkojLETJCQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8119089.png",
+      "caption": "English UK edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.641,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/faraway-385761/back-src.png"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "bggId": 344341,
+  "fetched": 17,
+  "done": true,
+  "frontAspect": 1.452,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6982275",
+        "caption": "SolForge: Fusion, Stone Blade Entertainment, 2022 — Booster Kit, back (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/Cb8_DrWmIZwfqaixHUV9sw__large/img/pp8d8IbuzMPx7gsK-uVJaL_cXi0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6982275.png",
+        "score": 2.5
+      },
+      {
+        "imageid": "6982273",
+        "caption": "SolForge: Fusion, Stone Blade Entertainment, 2022 — card back (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/y5cTaHTTYf5BHnQpKlyHrg__large/img/rrEekDG8iJRL4v1a6dvOMu2CUCQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6982273.png",
+        "score": 0.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6982275",
+      "url": "https://cf.geekdo-images.com/Cb8_DrWmIZwfqaixHUV9sw__large/img/pp8d8IbuzMPx7gsK-uVJaL_cXi0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6982275.png",
+      "caption": "SolForge: Fusion, Stone Blade Entertainment, 2022 — Booster Kit, back (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 1.182,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/solforge-fusion-344341/back-src.png"
+    }
+  }
+}

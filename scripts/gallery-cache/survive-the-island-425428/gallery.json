@@ -1,0 +1,36 @@
+{
+  "bggId": 425428,
+  "fetched": 125,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9664489",
+        "caption": "Survive the Island - Back (ZYGSTI01US 09/2025)",
+        "url": "https://cf.geekdo-images.com/-TglQ70ux5sGTSmk8i2EPw__large/img/BGIu-7gsV3BPz-k24R0CYSG38es=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9664489.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9664490",
+        "caption": "Survive the Island - Side (ZYGSTI01US 09/2025)",
+        "url": "https://cf.geekdo-images.com/MJSaTAZrvC5_tEI3PDBE0Q__large/img/FdsJjJ-vl6DlvXUUSC2JmL7gf9k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9664490.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9664489",
+      "url": "https://cf.geekdo-images.com/-TglQ70ux5sGTSmk8i2EPw__large/img/BGIu-7gsV3BPz-k24R0CYSG38es=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9664489.jpg",
+      "caption": "Survive the Island - Back (ZYGSTI01US 09/2025)",
+      "score": 1,
+      "aspect": 1.005,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/survive-the-island-425428/back-src.jpg"
+    }
+  }
+}

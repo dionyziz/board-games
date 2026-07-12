@@ -1,0 +1,42 @@
+{
+  "bggId": 33088,
+  "fetched": 27,
+  "done": true,
+  "frontAspect": 0.985,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "2798466",
+        "caption": "Chabyrinthe, Cocktail Games, 2014 — back cover",
+        "url": "https://cf.geekdo-images.com/G1zidyZQaSw2yDXWtzB8Uw__large/img/7OnotenHeDms33dGIyPWvufMm2s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2798466.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "1662373",
+        "caption": "Back cover Dutch edition",
+        "url": "https://cf.geekdo-images.com/MQM8N3Fa39ZX3l4xyZPxhg__large/img/WxPzML6C8dBbf7RNqDy5b7U7_e8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1662373.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8282563",
+        "caption": "Russian edition 2011 (3d-box front side)",
+        "url": "https://cf.geekdo-images.com/lbn4iDSfDliPyCrYixYP2Q__large/img/fuduyj2NqTMQ5upg-I6A9VFjTSs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8282563.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "2798466",
+      "url": "https://cf.geekdo-images.com/G1zidyZQaSw2yDXWtzB8Uw__large/img/7OnotenHeDms33dGIyPWvufMm2s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2798466.jpg",
+      "caption": "Chabyrinthe, Cocktail Games, 2014 — back cover",
+      "score": 2.5,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chabyrinthe-33088/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "bggId": 370591,
+  "fetched": 221,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8172088",
+        "caption": "English edition with SdJ award - Back Cover",
+        "url": "https://cf.geekdo-images.com/gI4EqwCQLvO3WnY8aesB7A__large/img/A9xsw5mLRaW2oyqDOC6o9EdRo_8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8172088.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7711352",
+        "caption": "Ukrainian Edition Back",
+        "url": "https://cf.geekdo-images.com/6WE_TnDtfAanskhIIP4kKA__large/img/So8wcVIxz-9tx3fk9eVQArzT3bU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7711352.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7552763",
+        "caption": "Dorfromantik - French edition - back",
+        "url": "https://cf.geekdo-images.com/SI03CyDVOc0IB3XwKz8fFQ__large/img/P6g-XYKjMtdt4dqYMsJ_3oW4OL0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7552763.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8292048",
+        "caption": "Dorfromantik: Desková hra – Czech Edition – Box back",
+        "url": "https://cf.geekdo-images.com/47-nYCvYjqxknRYtxQUZjg__large/img/XpjwWJaeqQTnifQ-9C_G7nLsSYA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8292048.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9372369",
+        "caption": "Icelandic edition, back of box",
+        "url": "https://cf.geekdo-images.com/_9St9AWn2yGt5TG1uUonEQ__large/img/C7rCuzN60jYTu_nUjI6vP-g6mGs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9372369.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9087503",
+        "caption": "German edition 2024 with SdJ logo, back cover",
+        "url": "https://cf.geekdo-images.com/p7aXLb0ocwrYA2Tvwv3QfA__large/img/JXegf6zDjGRqW0idMMiiybYoGOs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9087503.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8451977",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/Uw3IwPqsAeFJXthLN5QTnw__large/img/TaFlIdOM80gg04ADFKkXioYEdF8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8451977.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8451978",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/iZugEl-ibb6kR4JDnBuyhw__large/img/cCtDHcY2XcpwT9SuIbMzWJLynpA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8451978.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8172088",
+      "url": "https://cf.geekdo-images.com/gI4EqwCQLvO3WnY8aesB7A__large/img/A9xsw5mLRaW2oyqDOC6o9EdRo_8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8172088.jpg",
+      "caption": "English edition with SdJ award - Back Cover",
+      "score": 3.5,
+      "aspect": 1.001,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dorfromantik-370591/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "bggId": 411543,
+  "fetched": 36,
+  "done": true,
+  "frontAspect": 0.963,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8626453",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/SifxVBBCQVvimQdqJDxs1A__large/img/lvY-HRC4P8qFlab2ELq2awBPK_w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8626453.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8273963",
+        "caption": "My Shelfie - The Dice Game (Italian Edition back cover)",
+        "url": "https://cf.geekdo-images.com/nJeE02kcGIBhRPfCY5TNWA__large/img/G43YXySUFFmBRkimr0ZqyvgsPTY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8273963.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8965775",
+        "caption": "My Shelfie: The Dice Game Box Back 2D",
+        "url": "https://cf.geekdo-images.com/9S80UKmoKJrfyvFHNSQYrA__large/img/Gh2b8D-OL-qBvdhvSyouwN-Sw1c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8965775.png",
+        "score": 2
+      },
+      {
+        "imageid": "7971303",
+        "caption": "My Shelfie - The DIce Game - BACK COVER",
+        "url": "https://cf.geekdo-images.com/GT_I4BsqaLKgmv69_Mj2Rw__large/img/mYoKmj2tmHLw7NqSmD2efPwowEE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7971303.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8273963",
+      "url": "https://cf.geekdo-images.com/nJeE02kcGIBhRPfCY5TNWA__large/img/G43YXySUFFmBRkimr0ZqyvgsPTY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8273963.jpg",
+      "caption": "My Shelfie - The Dice Game (Italian Edition back cover)",
+      "score": 2,
+      "aspect": 0.955,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/my-shelfie-the-dice-game-411543/back-src.jpg"
+    }
+  }
+}

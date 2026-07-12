@@ -1,0 +1,28 @@
+{
+  "bggId": 230802,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.777,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3742307",
+        "caption": "Azul, Plan B Games, 2017 — back cover, German edition",
+        "url": "https://cf.geekdo-images.com/M8yiPGSmneFYiQnXCnEL2g__large/img/rrJLYyZSi6fu5mwWkesA2_ms1A4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3742307.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6185365",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/AnphD7-3gLxTkS4fC04ypQ__large/img/oebuDFA6sBMAkeOtty9noFonsFA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6185365.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "bggId": 193042,
+  "fetched": 105,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6478150",
+        "caption": "Junk Art, Pretzel Games, 2019 — back cover",
+        "url": "https://cf.geekdo-images.com/gSg2E6lQ-QycPNcbRf3VAw__large/img/ujoo-5V1umCOwuDn_i-kQ8XKTzc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6478150.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "3712792",
+        "caption": "Junk Art (Plastic Version) - Back of the box",
+        "url": "https://cf.geekdo-images.com/L0mUvangB64ycxPx86KMzA__large/img/BmIUnYIZ4CAnvSJzDMjQ5-ODN6w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3712792.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3862970",
+        "caption": "Boax back, Multilingual Edition (Wooden)",
+        "url": "https://cf.geekdo-images.com/BB4kHaFu_bF61mX1lLcbQw__large/img/YiFU4HB_RHdS_2bUDuNT3ai2mGY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3862970.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5730177",
+        "caption": "Czech edition (MINDOK) - Back of the box",
+        "url": "https://cf.geekdo-images.com/G4R903COgY-und8AGgsyTA__large/img/1zBW0vf7iufcaTW-4pFZYthIYKw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5730177.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5444905",
+        "caption": "german box back",
+        "url": "https://cf.geekdo-images.com/2v10kMb3fsx4gJPv1fEucg__large/img/1xhXluNOGVgBByaTkWJHioZ9n8Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5444905.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3813116",
+        "caption": "Junk Art - Multi (FR-EN) 2017 - back",
+        "url": "https://cf.geekdo-images.com/2608Y4m_ASr_yoJ94rTgRA__large/img/a7ob3-EToOpInwhbx_Eo0RXhGQI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3813116.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "4542026",
+        "caption": "One of our players placed a piece on top of the ball near the top.  Very unstable.  Surprised it stayed there for so long.",
+        "url": "https://cf.geekdo-images.com/q--3h_fQ2qo7OnXkXhwr3w__large/img/vKFoCzQ0udqNmVsIKsoezLVID7A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4542026.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6478150",
+      "url": "https://cf.geekdo-images.com/gSg2E6lQ-QycPNcbRf3VAw__large/img/ujoo-5V1umCOwuDn_i-kQ8XKTzc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6478150.jpg",
+      "caption": "Junk Art, Pretzel Games, 2019 — back cover",
+      "score": 2.5,
+      "aspect": 0.994,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/junkart-193042/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "bggId": 431718,
+  "fetched": 54,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9524662",
+        "caption": "Spanish Box - back",
+        "url": "https://cf.geekdo-images.com/OFZez4oId4tBCL71MHHeYA__large/img/wI7jAwJ8U58_NRcamgqGOSc5l-Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9524662.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8628828",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/KXAgRB3Vh67auhA0bO_85g__large/img/6OA7znfdFMzjeaci_jrspAuHmEc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8628828.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9524662",
+      "url": "https://cf.geekdo-images.com/OFZez4oId4tBCL71MHHeYA__large/img/wI7jAwJ8U58_NRcamgqGOSc5l-Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9524662.jpg",
+      "caption": "Spanish Box - back",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-isle-of-cats-duel-431718/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "bggId": 391795,
+  "fetched": 202,
+  "done": true,
+  "frontAspect": 0.702,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8788769",
+        "caption": "Rodozář – Marnivostina síň – box back (Czech edition)",
+        "url": "https://cf.geekdo-images.com/uGHOJCx5Y8DJbIQUJX9IQg__large/img/CNDGiTjQzxwcfLaeopPsYkwwktI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8788769.png",
+        "score": 2
+      },
+      {
+        "imageid": "8788768",
+        "caption": "Rodozář – Marnivostina síň – 3D box back (Czech edition)",
+        "url": "https://cf.geekdo-images.com/B-T9ro48ARQkvgw9tERJAA__large/img/wTXie1TdRzXJ0C96cJvHnl7qxro=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8788768.png",
+        "score": 2
+      },
+      {
+        "imageid": "9269864",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/XJg1UgXX7cnGn7w5vvd3rQ__large/img/gIqV2MQIWikspo3J5odNFimZgck=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9269864.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8788769",
+      "url": "https://cf.geekdo-images.com/uGHOJCx5Y8DJbIQUJX9IQg__large/img/CNDGiTjQzxwcfLaeopPsYkwwktI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8788769.png",
+      "caption": "Rodozář – Marnivostina síň – box back (Czech edition)",
+      "score": 2,
+      "aspect": 0.797,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/kinfire-delve-vainglory-s-grotto-391795/back-src.png"
+    }
+  }
+}

@@ -53,29 +53,22 @@ async function pool(items, concurrency, fn) {
   return results;
 }
 
-const backFileFor = (id) => {
-  const gf = path.join(CACHE, id, 'gallery.json');
-  if (!fs.existsSync(gf)) return null;
-  try { const j = JSON.parse(fs.readFileSync(gf, 'utf8')); return j.chosen && j.chosen.back && j.chosen.back.file && fs.existsSync(j.chosen.back.file) ? j.chosen.back.file : null; }
-  catch (e) { return null; }
-};
-
 (async () => {
   const total = work.length;
   let n = 0, backs = 0, errs = 0;
 
+  const FACES = ['BACK', 'SPINE', 'TOP', 'BOTTOM'];
   if (has('--fetch')) {
     const concurrency = Number(arg('--concurrency', '2'));
+    const tally = { BACK: 0, SPINE: 0, TOP: 0, BOTTOM: 0 };
     console.log(`[fetch] ${total} games, concurrency ${concurrency}${shard ? ', shard ' + shard : ''}`);
     await pool(work, concurrency, async ({ g }) => {
       const r = await run('8-fetch-gallery.js', [g.id]);
-      const back = /BACK=(.+)/.exec(r.stdout);
-      const hasBack = back && back[1].trim();
-      if (hasBack) backs++;
+      const hits = FACES.filter((f) => { const m = new RegExp(f + '=(\\S+)').exec(r.stdout); if (m) tally[f]++; return m; });
       if (!r.ok) errs++;
-      console.log(`[fetch ${++n}/${total}] ${g.id} ${hasBack ? 'back✓' : 'back—'}${r.ok ? '' : ' ERR:' + r.stderr.slice(0, 80)}`);
+      console.log(`[fetch ${++n}/${total}] ${g.id} ${hits.length ? hits.join('+').toLowerCase() : '—'}${r.ok ? '' : ' ERR:' + r.stderr.slice(0, 80)}`);
     });
-    console.log(`[fetch] done — ${backs} backs found, ${errs} errors`);
+    console.log(`[fetch] done — ${FACES.map((f) => f.toLowerCase() + ':' + tally[f]).join(' ')}, ${errs} errors`);
     return;
   }
 
@@ -83,15 +76,13 @@ const backFileFor = (id) => {
     const force = has('--force') ? ['--force'] : [];
     console.log(`[build] ${total} games (sequential)`);
     for (const { g } of work) {
-      const back = backFileFor(g.id);
-      const a = await run('10-gen-faces.js', back ? [g.id, back, ...force] : [g.id, ...force]);
-      const b = await run('gen-top-band.js', [g.id]);
-      if (back) backs++;
-      if (!a.ok || !b.ok) { errs++; }
+      const a = await run('10-gen-faces.js', [g.id, ...force]);       // self-reads gallery for photos
+      const b = await run('gen-top-band.js', [g.id]);                  // cover-derived top/bottom fallback
+      if (!a.ok || !b.ok) errs++;
       const err = !a.ok ? ' ERR(faces):' + a.stderr.slice(0, 80) : !b.ok ? ' ERR(top):' + b.stderr.slice(0, 80) : '';
-      console.log(`[build ${++n}/${total}] ${g.id} ${back ? 'back✓' : 'back—'}${err}`);
+      console.log(`[build ${++n}/${total}] ${g.id}${err}`);
     }
-    console.log(`[build] done — ${backs} photographic backs, ${errs} errors`);
+    console.log(`[build] done — ${errs} errors`);
     return;
   }
 

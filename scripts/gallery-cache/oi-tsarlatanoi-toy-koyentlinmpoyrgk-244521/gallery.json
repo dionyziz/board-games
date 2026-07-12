@@ -1,0 +1,41 @@
+{
+  "bggId": 244521,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4717495",
+        "caption": "North Star English edition (2018) Box . Back",
+        "url": "https://cf.geekdo-images.com/HD48qLRq-ny6PriRcJDdHg__large/img/7qKHAg5Die6p_rG8ELBhq5fY-hw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4717495.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4745593",
+        "caption": "English Schmidt edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/j7459oYGFCByvmoKSAPGmQ__large/img/avB-NWxa-3BRdEkC7NW0eDnpZuQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4745593.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4882364",
+        "caption": "Quacks box back North Star games 2nd Edition",
+        "url": "https://cf.geekdo-images.com/zGTd9_OUbJM3uvDdlVrZUA__large/img/uxgYqvoB7d0vlPlcxeTzWssf9wQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4882364.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4717495",
+      "url": "https://cf.geekdo-images.com/HD48qLRq-ny6PriRcJDdHg__large/img/7qKHAg5Die6p_rG8ELBhq5fY-hw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4717495.jpg",
+      "caption": "North Star English edition (2018) Box . Back",
+      "score": 3.5,
+      "aspect": 0.994,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/back-src.jpg"
+    }
+  }
+}

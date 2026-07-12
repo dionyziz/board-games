@@ -1,0 +1,47 @@
+{
+  "bggId": 193621,
+  "fetched": 54,
+  "done": true,
+  "frontAspect": 2.138,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3218811",
+        "caption": "Box Back, English First Edtion",
+        "url": "https://cf.geekdo-images.com/RuDipffOLvU1MsoX4FNq3A__large/img/DVHmlteS5swjbvd6v_hIu2dJMV4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3218811.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3333136",
+        "caption": "Joking Hazard Kickstarter Shiny Red Box Edition and stretch goal reward foils packs - back",
+        "url": "https://cf.geekdo-images.com/mQsu8Gz5OXEG00Q84SliNA__large/img/5q92SmQIfjzZzWE15rQXBR-Z-FI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3333136.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8755616",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/qySjdDAsN072mpDXmudE2g__large/img/c2ptSn8rwODSAbO0rxwuZlXDC3s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8755616.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7858781",
+        "caption": "Romanian edition, box back",
+        "url": "https://cf.geekdo-images.com/a8203j7Pcc0sf7EeJMSKTg__large/img/gx4h651X-ojCsAiYwGz2Qq-RNBc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7858781.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3218811",
+      "url": "https://cf.geekdo-images.com/RuDipffOLvU1MsoX4FNq3A__large/img/DVHmlteS5swjbvd6v_hIu2dJMV4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3218811.jpg",
+      "caption": "Box Back, English First Edtion",
+      "score": 3.5,
+      "aspect": 2.09,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/joking-hazard-193621/back-src.jpg"
+    }
+  }
+}

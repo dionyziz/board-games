@@ -1,0 +1,72 @@
+{
+  "bggId": 92828,
+  "fetched": 175,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5272245",
+        "caption": "English Libellud second edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/2TV7bGI_llXuCRH8SUhl3g__large/img/7h9pzGMfrCgK2jJ8tAmwNxGROkA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5272245.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1298780",
+        "caption": "Box back.",
+        "url": "https://cf.geekdo-images.com/TpkxkXhK-v5y7By5x8GrrA__large/img/9k1tSCtU-0VVkqXjt7wvxDCxrXY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1298780.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2268639",
+        "caption": "Hungarian edition (Publisher: Gém Klub Kft.) - box back.",
+        "url": "https://cf.geekdo-images.com/XOgN7lY11NZ8vVYTsvBXhg__large/img/eX7w5-EL80LcLlae25LGxQIPUE0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2268639.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1029889",
+        "caption": "Box Back",
+        "url": "https://cf.geekdo-images.com/F4x2uJg4hpVR_AHJJ53LAA__large/img/fp6d7mBRAfYMpUGCXzoPl8neDyQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1029889.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7568780",
+        "caption": "Dixit Odyssey 2016 - box back",
+        "url": "https://cf.geekdo-images.com/bPYDNAkUzrF7PjSOIwh6Vw__large/img/-SDS2-1wiqBjlztSc-Z0VZkpvSk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7568780.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5263058",
+        "caption": "Back of the original box of Dixit Odyssey ‐ Multilingual edition",
+        "url": "https://cf.geekdo-images.com/U2cQAv2HMxi-3rvrJhrVHg__large/img/c8GgRYXAxgowCZaBf08l_Q88ZaQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5263058.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1003719",
+        "caption": "Side box",
+        "url": "https://cf.geekdo-images.com/k99ff-yPIK8bqKGU9GJI5A__large/img/TVo3LNSQnMWQ1c3BLmhBLqSUGHE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1003719.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1003718",
+        "caption": "Side box",
+        "url": "https://cf.geekdo-images.com/l6PeCZmF_mC0SytxQ_S1zA__large/img/sLAy8V4Ev7xaZ40VGXVDqmQs5Vc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1003718.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1298780",
+      "url": "https://cf.geekdo-images.com/TpkxkXhK-v5y7By5x8GrrA__large/img/9k1tSCtU-0VVkqXjt7wvxDCxrXY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1298780.jpg",
+      "caption": "Box back.",
+      "score": 2,
+      "aspect": 0.996,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dixit-odyssey-92828/back-src.jpg"
+    }
+  }
+}

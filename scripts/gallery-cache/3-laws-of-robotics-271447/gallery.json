@@ -1,0 +1,29 @@
+{
+  "bggId": 271447,
+  "fetched": 5,
+  "done": true,
+  "frontAspect": 0.667,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4560488",
+        "caption": "3 Laws of Robotics Back of Box",
+        "url": "https://cf.geekdo-images.com/l-yZEtqOKoqBoy4UCRkWjg__large/img/k-RyDVJTxKvKnIrSgIbT701rJUI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4560488.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4560488",
+      "url": "https://cf.geekdo-images.com/l-yZEtqOKoqBoy4UCRkWjg__large/img/k-RyDVJTxKvKnIrSgIbT701rJUI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4560488.png",
+      "caption": "3 Laws of Robotics Back of Box",
+      "score": 2,
+      "aspect": 0.651,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/3-laws-of-robotics-271447/back-src.png"
+    }
+  }
+}

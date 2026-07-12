@@ -1,0 +1,59 @@
+{
+  "bggId": 429293,
+  "fetched": 154,
+  "done": true,
+  "frontAspect": 0.475,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8437789",
+        "caption": "The Fellowship of the Ring: Trick-Taking Game, Office Dog, 2025 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/2yfYYojEjQh76HxTlRmMuQ__large/img/UgcJe5DAOGWPybD4h4serYoEYpc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8437789.png",
+        "score": 2.5
+      },
+      {
+        "imageid": "8638964",
+        "caption": "Władca Pierścieni: Drużyna Pierścienia, Office Dog, 2025 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/hBgtZpIcpNWxgB190iJEjw__large/img/A9MNeNozDkuas5dOyqwrscjpXgA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8638964.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "8616892",
+        "caption": "Back cover (French edition)",
+        "url": "https://cf.geekdo-images.com/QUQNpdXPzkaRqS1kg8TSog__large/img/AK-Flzq2NeVV9OltZoyvatvc4Nk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8616892.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8746076",
+        "caption": "Ukrainian edition, 2025 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/G_LCsMyWzAgrUC15IX5VRg__large/img/3SBLk5a9HgjAaBD5PIGAlcfCKiY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8746076.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8651350",
+        "caption": "Back box Spanish",
+        "url": "https://cf.geekdo-images.com/AoBn7LZvXGss9UgdW9PSVQ__large/img/XBik_q28_ase7lWUu3DR2UUuXL4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8651350.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8845509",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/8_Df7d3JXIG9cZYZGrkiog__large/img/saeHUfarOWSX_9Z3YkTWFvU8SNU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8845509.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9334084",
+        "caption": "Le Seigneur des Anneaux: La Communauté de l'Anneau, Le jeu de plis coopératif ‐ French edition (2025) Side Box",
+        "url": "https://cf.geekdo-images.com/SHeQbCZAtEE9OXgVWbAqaQ__large/img/82EP_g0qFsPovt3xfUYcQH3yEo0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9334084.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

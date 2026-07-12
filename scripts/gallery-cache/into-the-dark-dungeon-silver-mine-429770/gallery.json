@@ -1,0 +1,29 @@
+{
+  "bggId": 429770,
+  "fetched": 20,
+  "done": true,
+  "frontAspect": 0.75,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8923950",
+        "caption": "Back cover",
+        "url": "https://cf.geekdo-images.com/8dL8Rzpg-eBVlb99d-8IeA__large/img/OqLeBSfgrKPUpDi0dPvDWQkDbPg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8923950.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8923950",
+      "url": "https://cf.geekdo-images.com/8dL8Rzpg-eBVlb99d-8IeA__large/img/OqLeBSfgrKPUpDi0dPvDWQkDbPg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8923950.jpg",
+      "caption": "Back cover",
+      "score": 1,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/into-the-dark-dungeon-silver-mine-429770/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "bggId": 18803,
+  "fetched": 95,
+  "done": true,
+  "frontAspect": 0.712,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "697447",
+        "caption": "Black Stories english edition Back",
+        "url": "https://cf.geekdo-images.com/Tx9gB7JBbdlsHqD7hB2ZLQ__large/img/bOEP1rU5FFKHqpKFP623yH6YFuA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic697447.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "697444",
+        "caption": "Black Stories english edition Back",
+        "url": "https://cf.geekdo-images.com/TtXEvzaowB_mam12_aUtkQ__large/img/IG5MFwlHty9QVGlfGElZo40nsgw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic697444.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9421268",
+        "caption": "Dark Stories - English edition 2015 - box back",
+        "url": "https://cf.geekdo-images.com/g4zGXfw7pPlDOSeN0jSkBw__large/img/F5MKfq1qgqBQOnGXcWmJo63Rqgg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9421268.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "396149",
+        "caption": "French Edition - Box Back",
+        "url": "https://cf.geekdo-images.com/Xpfk6Sa-laDrszWbbX2snQ__large/img/HyLkOa8XJC8aB64WsQeBSHbm9Jc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic396149.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1080441",
+        "caption": "Spanish edition back",
+        "url": "https://cf.geekdo-images.com/o64rG-hEXwYA2GLyAISCrg__large/img/23vc6F5aNPGwVSQMLiR1qqIDFsg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1080441.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8264301",
+        "caption": "Das Spiel Box Back",
+        "url": "https://cf.geekdo-images.com/MhSf9q3HLJPuCZSDhdxNnQ__large/img/9ULL9_WcOuyt5ENZmXuhSiwMOa0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8264301.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9421270",
+        "caption": "Dark Stories - English edition 2015 - rulebook side 2",
+        "url": "https://cf.geekdo-images.com/cqz76cQpc7ByP2ZP6tk5Dg__large/img/ZcqOnYsG1VHfVyly5y1zu6DXAnU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9421270.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9421269",
+        "caption": "Dark Stories - English edition 2015 - rulebook side 1",
+        "url": "https://cf.geekdo-images.com/A8orrW2xROMXgaWmPLguPw__large/img/SwzbPQYynlh39vGxiIZBWF0ljOw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9421269.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "396150",
+        "caption": "French Edition - Box Side",
+        "url": "https://cf.geekdo-images.com/FyieTegrVcWRav81BHQ4MQ__large/img/l65A0DoZerJl96QjrlzdCAwelw0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic396150.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9421268",
+      "url": "https://cf.geekdo-images.com/g4zGXfw7pPlDOSeN0jSkBw__large/img/F5MKfq1qgqBQOnGXcWmJo63Rqgg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9421268.jpg",
+      "caption": "Dark Stories - English edition 2015 - box back",
+      "score": 3.5,
+      "aspect": 0.743,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/istories-mystirioy-18803/back-src.jpg"
+    }
+  }
+}

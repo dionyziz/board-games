@@ -1,0 +1,29 @@
+{
+  "bggId": 385437,
+  "fetched": 66,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8650561",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/lSC-a4E_TNA53DOokvqqbg__large/img/hENAlDrEnv5Nk4XHHrCGzdDBBmU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8650561.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8650561",
+      "url": "https://cf.geekdo-images.com/lSC-a4E_TNA53DOokvqqbg__large/img/hENAlDrEnv5Nk4XHHrCGzdDBBmU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8650561.jpg",
+      "caption": "German Back Cover",
+      "score": 1,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/snowcrest-385437/back-src.jpg"
+    }
+  }
+}

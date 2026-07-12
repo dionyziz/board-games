@@ -1,0 +1,54 @@
+{
+  "bggId": 2083,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.69,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "909574",
+        "caption": "Back of box to fridgecheckers.",
+        "url": "https://cf.geekdo-images.com/-IiBF_fpfLw6VQaqGKeUVA__large/img/G-q52uA29JWWHii1ZtY01Q0U1yE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic909574.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7552905",
+        "caption": "Mickey and Friends – Checkers: Game Blanket (box back)",
+        "url": "https://cf.geekdo-images.com/lqBaZhSbQR4NP0v5sJDn6A__large/img/CAFCE0Z-F84YGsn7-N99xHOjtmM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7552905.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "483167",
+        "caption": "NHL Western Conference Checkers Box Back",
+        "url": "https://cf.geekdo-images.com/C--Zu-AjU5o1jb3FMD7YWg__large/img/sL-VbKvQiLX0esBXJ27J0IDZ06k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic483167.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3989885",
+        "caption": "Draughts - Peri Jewel Case (Back)",
+        "url": "https://cf.geekdo-images.com/55cNmdPUX0Z0E-EPtGG75g__large/img/_hUcBQ2cNxofmd73OmFfQY_gbko=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3989885.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "1501227",
+        "caption": "Selchow & Righter ACF edition, top of box.",
+        "url": "https://cf.geekdo-images.com/nwr4cJfW66cy8tHtta4QuA__large/img/OWToarwrXNNBpsROzNJHFoo_c94=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1501227.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7552905",
+      "url": "https://cf.geekdo-images.com/lqBaZhSbQR4NP0v5sJDn6A__large/img/CAFCE0Z-F84YGsn7-N99xHOjtmM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7552905.jpg",
+      "caption": "Mickey and Friends – Checkers: Game Blanket (box back)",
+      "score": 2,
+      "aspect": 1.333,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ntama-2083/back-src.jpg"
+    }
+  }
+}

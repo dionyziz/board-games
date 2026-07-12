@@ -1,0 +1,60 @@
+{
+  "bggId": 436217,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.181,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8662842",
+        "caption": "Lord of the Rings: Fate of the Fellowship, English edition, box back",
+        "url": "https://cf.geekdo-images.com/qQpucbyVDuyd9vr8CiF-8A__large/img/_euOW2uXkL1yh_4GnLpuJSb1djM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8662842.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8914586",
+        "caption": "Fits nicely back in the box! Galadriel: “In this box there is earth from my orchard, and a Barad-dûr dice tower”",
+        "url": "https://cf.geekdo-images.com/0AtdCMASmpujMK-DGNal6A__large/img/alcpp1KzQuFpICE4a4FsCJsqsds=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8914586.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8763914",
+        "caption": "Ukrainian edition, 2025 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/M7b0whSxIHsy2jmEFLkbyA__large/img/CshsKXXfSJIwBqJlfJRxhem0M_U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8763914.png",
+        "score": 2
+      },
+      {
+        "imageid": "8667026",
+        "caption": "Spanish Edition Rear",
+        "url": "https://cf.geekdo-images.com/qKcmgSXn2UDF1juU2T_gIw__large/img/NK2y0IrsPtehZogI6z5u-LEdTWU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8667026.png",
+        "score": 2
+      },
+      {
+        "imageid": "9506010",
+        "caption": "The Lord of the Rings: Fate of the Fellowship - Back",
+        "url": "https://cf.geekdo-images.com/3aF-IOy52VwjxaVq8qsYXA__large/img/8MdQCOSu2IW-Jx-2FcqnPwyA2M0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9506010.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9455659",
+        "caption": "Did anyone else notice the drawing mistake?The string is on the wrong side of his arm...it is physically impossible to shoot in this way.I know it's a little mistake but as an archery lover it hurts my eyes xD",
+        "url": "https://cf.geekdo-images.com/BMC-gD4ZLvxs_ZM65rD7Vw__large/img/R379gSrHlnPG1cKMUvYiF5jPeBE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9455659.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8662842",
+      "url": "https://cf.geekdo-images.com/qQpucbyVDuyd9vr8CiF-8A__large/img/_euOW2uXkL1yh_4GnLpuJSb1djM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8662842.jpg",
+      "caption": "Lord of the Rings: Fate of the Fellowship, English edition, box back",
+      "score": 3.5,
+      "aspect": 1.164,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-lord-of-the-rings-fate-of-the-fellowship-436217/back-src.jpg"
+    }
+  }
+}

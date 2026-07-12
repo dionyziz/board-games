@@ -1,0 +1,49 @@
+{
+  "bggId": 411015,
+  "fetched": 19,
+  "done": true,
+  "frontAspect": 0.988,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7984436",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/hZ217_fwCCOVxzonVn9qnw__large/img/A0pYkha0Sq4Oy0LzQ8KR0guFA6c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7984436.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "8471764",
+        "caption": "Top of sosig box",
+        "url": "https://cf.geekdo-images.com/1uJ5Yb0AxpodvXKiXKuY-Q__large/img/f2hWusHMOiQooHuhBzaRabWCYtE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8471764.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7984439",
+        "caption": "Top of box",
+        "url": "https://cf.geekdo-images.com/nUqbZVErXXHzqCTMWsMonA__large/img/vMXx6CHbfLM2tEEJbMz5ZhVxSFY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7984439.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "8471763",
+        "caption": "Bottom of sosig box",
+        "url": "https://cf.geekdo-images.com/MOrTFVCySAMp0X9iUaXsIw__large/img/Ho5Eb6yXVciAJd1of8dAtLPdRc8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8471763.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7984436",
+      "url": "https://cf.geekdo-images.com/hZ217_fwCCOVxzonVn9qnw__large/img/A0pYkha0Sq4Oy0LzQ8KR0guFA6c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7984436.jpg",
+      "caption": "Back of box",
+      "score": 2,
+      "aspect": 0.961,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sosig-411015/back-src.jpg"
+    }
+  }
+}

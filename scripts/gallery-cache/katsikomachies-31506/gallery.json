@@ -1,0 +1,61 @@
+{
+  "bggId": 31506,
+  "fetched": 49,
+  "done": true,
+  "frontAspect": 0.777,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "800302",
+        "caption": "Greek edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/bNd1HLOcT__HtbMOvz0G-A__large/img/EQ0oRH6_yu5eUeBBrSsYlp3gF54=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic800302.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "352861",
+        "caption": "spanish back of box",
+        "url": "https://cf.geekdo-images.com/CmrTlUbeLG5u1kM0ZUKASg__large/img/y65P6QgYG0y6rSMhC56nOhcxqAs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic352861.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4933805",
+        "caption": "Bode of War - Box Back (Brazilian Edition 2019)",
+        "url": "https://cf.geekdo-images.com/WeWbWKHSmhwqZIa0PvW4Rw__large/img/f9cBE68pFM4eoIeN8PQCtduwhdo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4933805.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2485976",
+        "caption": "Back-side",
+        "url": "https://cf.geekdo-images.com/XUPqTMmHGfMPm_I3fmCiKA__large/img/CG9K4Su9cHDhH0NH0tKeEI9PRhA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2485976.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "2485976",
+        "caption": "Back-side",
+        "url": "https://cf.geekdo-images.com/XUPqTMmHGfMPm_I3fmCiKA__large/img/CG9K4Su9cHDhH0NH0tKeEI9PRhA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2485976.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "245294",
+        "caption": "German Cover (bottom)",
+        "url": "https://cf.geekdo-images.com/gA_zPAw7LOlQwQhom4a4MQ__large/img/Q73JkcLkH3PgGY0n4N0u2u9eNBI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic245294.jpg",
+        "score": 1
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "352861",
+      "url": "https://cf.geekdo-images.com/CmrTlUbeLG5u1kM0ZUKASg__large/img/y65P6QgYG0y6rSMhC56nOhcxqAs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic352861.jpg",
+      "caption": "spanish back of box",
+      "score": 2,
+      "aspect": 0.771,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/katsikomachies-31506/back-src.jpg"
+    }
+  }
+}

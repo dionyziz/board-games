@@ -1,0 +1,66 @@
+{
+  "bggId": 422732,
+  "fetched": 213,
+  "done": true,
+  "frontAspect": 0.715,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8352493",
+        "caption": "Backside of Box",
+        "url": "https://cf.geekdo-images.com/eYtV3LDCSBkZjzms-h5OLw__large/img/2aBkEswR9xncULwrYYqojNGxPNw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8352493.png",
+        "score": 2
+      },
+      {
+        "imageid": "8934604",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/quZkrnyHJ-cMICqw-Ikrjg__large/img/e9u5FdzCU52kLlIxKDKXaDfwZ8E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8934604.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9491181",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/MIyxHt88lW5ZS4wrHh8jrg__large/img/qphOWOdsZPgQJ2kdINU5Qvpsusk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491181.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8622577",
+        "caption": "Back cover (French edition)",
+        "url": "https://cf.geekdo-images.com/m0B-7osjWqWsUouzwq84wA__large/img/y32ZlUXBcbIyx-5SvBr_7bw8skQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8622577.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8930988",
+        "caption": "Agent Avenue spanish rear",
+        "url": "https://cf.geekdo-images.com/TTB8QHKEnDBzc9C-QK6iIg__large/img/pIbaZw5J2lA7wqBGZ3240G9X2Ho=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8930988.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9491181",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/MIyxHt88lW5ZS4wrHh8jrg__large/img/qphOWOdsZPgQJ2kdINU5Qvpsusk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491181.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9491179",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/tthoLPKP_ad3QXtlhSzTHw__large/img/9kJW6iMirOw_2G-dQePZWin6VZw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491179.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8352493",
+      "url": "https://cf.geekdo-images.com/eYtV3LDCSBkZjzms-h5OLw__large/img/2aBkEswR9xncULwrYYqojNGxPNw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8352493.png",
+      "caption": "Backside of Box",
+      "score": 2,
+      "aspect": 0.701,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/agent-avenue-422732/back-src.png"
+    }
+  }
+}

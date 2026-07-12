@@ -1,0 +1,66 @@
+{
+  "bggId": 436126,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9160487",
+        "caption": "Ukrainian edition, 2025 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/TvqLtEHqanSkPRu8lZXIYQ__large/img/q38d_vJITW2Yku9lo8IUg-q8lrw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9160487.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8801647",
+        "caption": "Box Back",
+        "url": "https://cf.geekdo-images.com/Q5qs59rG9b5X3hBLyVA2kg__large/img/edZWFucYUiR8PB35BtcXOPkPloQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8801647.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8787335",
+        "caption": "Finspan ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/zSotTPO5GDwh2fwg8hFV3Q__large/img/58YyeW8WrfnQux3GtUjX9FenRzM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8787335.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8683412",
+        "caption": "The back of all the Dive Boards.",
+        "url": "https://cf.geekdo-images.com/f5E7xOlfXLWm-fN8Cb22-w__large/img/OytVOU1i34czQ5aosHk5PFC5WeU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8683412.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8700094",
+        "caption": "The back of all the player boards make a map",
+        "url": "https://cf.geekdo-images.com/MquH7dg6oEI4W-Tzf_SOqg__large/img/k14Re97cOathDwQQUKxA_ToSmbQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8700094.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8793734",
+        "caption": "Finspan - Back",
+        "url": "https://cf.geekdo-images.com/oU8j9uWC_44Re95Q4cnt9Q__large/img/5eKQpcu8H949ak-aN6_VzYI-_Fk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8793734.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8771245",
+        "caption": "A view from the side.",
+        "url": "https://cf.geekdo-images.com/kU-y5NsRbsv5VAtILrpFkg__large/img/lEQhaK5ptw5eF8LBtg_q7VctQMY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8771245.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9160487",
+      "url": "https://cf.geekdo-images.com/TvqLtEHqanSkPRu8lZXIYQ__large/img/q38d_vJITW2Yku9lo8IUg-q8lrw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9160487.jpg",
+      "caption": "Ukrainian edition, 2025 Igromag, Back of the box",
+      "score": 2,
+      "aspect": 0.998,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/finspan-436126/back-src.jpg"
+    }
+  }
+}

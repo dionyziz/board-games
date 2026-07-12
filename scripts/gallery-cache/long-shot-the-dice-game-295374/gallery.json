@@ -1,0 +1,72 @@
+{
+  "bggId": 295374,
+  "fetched": 134,
+  "done": true,
+  "frontAspect": 0.588,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6744041",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/e-Elt2IgIZJo0giRzzEtyQ__large/img/1t8_6LxCaQFgu9CUZzEXMzIghvI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6744041.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8255784",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/cLX3kC8Eh8rGBYETtoxYyA__large/img/joWW-DhEUDP20Jl2KODJokULzn0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8255784.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8092104",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/BxoWw2zibBZsJUMC4O142w__large/img/oKncSRu8TIxAV4Lwz1zzc3OGf1k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8092104.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7652365",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/1deaapEUSxhdMq0dBQ421A__large/img/G3akBe_PY-vhLGB4VzFGHppDjbo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7652365.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7197113",
+        "caption": "Long Shot: The Dice Game rear",
+        "url": "https://cf.geekdo-images.com/IhQ0pnwJ8_SNO8-EyRaDPg__large/img/H0lWrqkEkkqXLLN-BpdK4pL4uYQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7197113.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "6877081",
+        "caption": "Horses get pushed back!",
+        "url": "https://cf.geekdo-images.com/JM1Sc-M-_Ha4afFOoCbNew__large/img/dUxu0tU3sX9F2JPFu4ym-FUNic8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6877081.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8255784",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/cLX3kC8Eh8rGBYETtoxYyA__large/img/joWW-DhEUDP20Jl2KODJokULzn0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8255784.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8255783",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/OGL0fw-u6mcfuov0vmHyTA__large/img/Npu7BCQd98Qr3gyZDivo_8OLCiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8255783.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6744041",
+      "url": "https://cf.geekdo-images.com/e-Elt2IgIZJo0giRzzEtyQ__large/img/1t8_6LxCaQFgu9CUZzEXMzIghvI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6744041.jpg",
+      "caption": "Back of box",
+      "score": 2,
+      "aspect": 0.592,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/long-shot-the-dice-game-295374/back-src.jpg"
+    }
+  }
+}

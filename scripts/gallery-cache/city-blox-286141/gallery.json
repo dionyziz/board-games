@@ -1,0 +1,22 @@
+{
+  "bggId": 286141,
+  "fetched": 39,
+  "done": true,
+  "frontAspect": 0.912,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6072001",
+        "caption": "City Blox rear",
+        "url": "https://cf.geekdo-images.com/SwWjn710FL1xN-bdiaDAJA__large/img/J4YrtI_yo_eJPbXaPWTmqRd0_MQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6072001.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

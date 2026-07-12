@@ -1,0 +1,67 @@
+{
+  "bggId": 352710,
+  "fetched": 46,
+  "done": true,
+  "frontAspect": 0.76,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7882945",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/z3pfFa15O9Kf5Mra7NXQYg__large/img/6xROnjrEwHrzkuol7uaMRnzTIow=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7882945.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7853193",
+        "caption": "Ой, колючки! Russian Edition. Back",
+        "url": "https://cf.geekdo-images.com/1_RiyrfvQqH97y1nofpcVQ__large/img/ak7N46GuM8YFA9vN4OyLsVllAQ4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7853193.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7679879",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/Un2SToDlaqedZgNd0zKTwA__large/img/AP7d8Oa892-1gzXqr5bGTGhdlkM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7679879.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9148996",
+        "caption": "animals on the backside",
+        "url": "https://cf.geekdo-images.com/1P-HYXJEyQj1ioXlmu_YhA__large/img/wnnRX8LzMV0DMX0AG8tPSiFg6yo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9148996.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7882945",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/z3pfFa15O9Kf5Mra7NXQYg__large/img/6xROnjrEwHrzkuol7uaMRnzTIow=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7882945.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7882944",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/t5Sf-l0kLPNMDgA1THaO9w__large/img/oP_WjMIhWDvAgL20seZKfSmYbQA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7882944.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "7586233",
+        "caption": "Box bottom",
+        "url": "https://cf.geekdo-images.com/Ose_J2K5xWlD9gdBkJmreA__large/img/Vy_yuTYSO5T8yrPEA_WoU1ZpMnk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7586233.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7882945",
+      "url": "https://cf.geekdo-images.com/z3pfFa15O9Kf5Mra7NXQYg__large/img/6xROnjrEwHrzkuol7uaMRnzTIow=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7882945.jpg",
+      "caption": "Russian edition (box back side)",
+      "score": 2,
+      "aspect": 0.66,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ouch-352710/back-src.jpg"
+    }
+  }
+}

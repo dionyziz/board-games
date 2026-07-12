@@ -1,0 +1,84 @@
+{
+  "bggId": 245654,
+  "fetched": 173,
+  "done": true,
+  "frontAspect": 1.013,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6685585",
+        "caption": "English 2020 edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/zFKCj3Be-djb87nezn5yaw__large/img/Fwbu469by9Qu8cyfu3LrqEdBSDg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6685585.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4465758",
+        "caption": "Box back, German edition",
+        "url": "https://cf.geekdo-images.com/djaCoWcvsp5c7xuh9Ouh-Q__large/img/YdSjxj9X1hCJhCxdEvpDNapXmOE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4465758.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5694391",
+        "caption": "Portuguese European edition - back box",
+        "url": "https://cf.geekdo-images.com/4tvtGUEknoe2oj1gUj4e-g__large/img/J16Recm1gwEi5TxE_Kti8RLOJXY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5694391.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9600869",
+        "caption": "InterHit Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/yLdg2bzIWWOnwj1cDzN1lg__large/img/ulFb2q-RYPmd1eSlN7wbWSZ81T4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9600869.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9650929",
+        "caption": "Gaga Russian edition (3d box front side)",
+        "url": "https://cf.geekdo-images.com/nfoeIvweBG3awnhFCd-FOQ__large/img/v2dIDyr8htri3oHywXuwPU111iQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9650929.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9600869",
+        "caption": "InterHit Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/yLdg2bzIWWOnwj1cDzN1lg__large/img/ulFb2q-RYPmd1eSlN7wbWSZ81T4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9600869.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9600868",
+        "caption": "InterHit Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/7aTs6OgfgVsBRRkU6ui4eQ__large/img/PoFdpPCx2noyop-7u5_jy2O9hhc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9600868.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7299561",
+        "caption": "Box side 3",
+        "url": "https://cf.geekdo-images.com/XVVEL3qEqR1eAqluOPTOAA__large/img/f6qZPWjMb2m4vraNsgs1GWILz_o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7299561.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7299560",
+        "caption": "Box side 2",
+        "url": "https://cf.geekdo-images.com/Qk4ps6b2TmIPfaHd4Xc3PQ__large/img/zvXng3KXVDl_v8A7fYYxfU4Dsuo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7299560.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7299559",
+        "caption": "Box side 1",
+        "url": "https://cf.geekdo-images.com/DOUAc2DUB_NfpGghQ4X3Tg__large/img/54AovwesJLHRCT9s4dHgV0aU-po=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7299559.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6685585",
+      "url": "https://cf.geekdo-images.com/zFKCj3Be-djb87nezn5yaw__large/img/Fwbu469by9Qu8cyfu3LrqEdBSDg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6685585.jpg",
+      "caption": "English 2020 edition - Back of the box",
+      "score": 3.5,
+      "aspect": 1.012,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/railroad-ink-deep-blue-edition-245654/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "bggId": 422332,
+  "fetched": 34,
+  "done": true,
+  "frontAspect": 0.777,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8237583",
+        "caption": "Star Wars: The Deckbuilding Game – Clone Wars Edition, Fantasy Flight Games, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/WULl9PJ8ZaqjvoVzsMwYWQ__large/img/Mv2K4Y0mKFle2MOgbuvLmLBAGfw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8237583.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9200780",
+        "caption": "Star Wars: The Deckbuilding Game – Clone Wars Edition (Spanish back cover)",
+        "url": "https://cf.geekdo-images.com/ylfeOoLSFNCU_iLfbmW9Yw__large/img/Stn3QtuHacLv4fAKqUG5n8yH_Ag=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9200780.png",
+        "score": 2
+      },
+      {
+        "imageid": "8273097",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/GDCSJBPZfz3Kg-qrQ408nw__large/img/tVSgxyBqMPf15St2804NE662bcE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8273097.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8237583",
+      "url": "https://cf.geekdo-images.com/WULl9PJ8ZaqjvoVzsMwYWQ__large/img/Mv2K4Y0mKFle2MOgbuvLmLBAGfw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8237583.jpg",
+      "caption": "Star Wars: The Deckbuilding Game – Clone Wars Edition, Fantasy Flight Games, 2024 — back cover",
+      "score": 3.5,
+      "aspect": 0.775,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/star-wars-the-deckbuilding-game-clone-wars-edition-422332/back-src.jpg"
+    }
+  }
+}

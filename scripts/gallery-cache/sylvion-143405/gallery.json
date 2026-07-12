@@ -1,0 +1,54 @@
+{
+  "bggId": 143405,
+  "fetched": 119,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4413391",
+        "caption": "Back of Box (English edition)",
+        "url": "https://cf.geekdo-images.com/rtT6yuFPrs2cv8FF3hS7Cw__large/img/lhqHJQ8y425fBnoOn_IdETdevIg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4413391.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7174505",
+        "caption": "Sylvion, Z-Man Games, 2015 — back cover",
+        "url": "https://cf.geekdo-images.com/bpF_t9y40S7mJdiBcTN1Gw__large/img/JgYjpPWzpqvYpJq8jNlcFNJ2xoQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7174505.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "8364135",
+        "caption": "Sylvion, HUCH! / inPatience, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/bFyU9jVdYGbkRDzdhFRiww__large/img/OEWV_wVeNs7jj9EIazP0B_CIe7g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8364135.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "3317119",
+        "caption": "Sylvion Japanese box cover back",
+        "url": "https://cf.geekdo-images.com/1uo_WAiYNldTDEah1B3-aA__large/img/az3Wtlm6VR6KdPDk2A20Cve5Isw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3317119.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5302448",
+        "caption": "Dark side",
+        "url": "https://cf.geekdo-images.com/bRqX5akjtoowwtzDORR6vg__large/img/ok5esjlS-yHAsKZMQTfocoqjMFw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5302448.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7174505",
+      "url": "https://cf.geekdo-images.com/bpF_t9y40S7mJdiBcTN1Gw__large/img/JgYjpPWzpqvYpJq8jNlcFNJ2xoQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7174505.jpg",
+      "caption": "Sylvion, Z-Man Games, 2015 — back cover",
+      "score": 2.5,
+      "aspect": 0.995,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sylvion-143405/back-src.jpg"
+    }
+  }
+}

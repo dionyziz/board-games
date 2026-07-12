@@ -1,0 +1,60 @@
+{
+  "bggId": 416851,
+  "fetched": 214,
+  "done": true,
+  "frontAspect": 0.723,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8269475",
+        "caption": "Château Combo ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/ydcGCgJaZfwybOWNvl5HLQ__large/img/0F-KmNzy51Uv4sc14KWXp-7u9WM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8269475.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8956345",
+        "caption": "Ukrainian edition, 2025 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/4csR3eP7nBWdIUnEsg74aw__large/img/QVIdFx3dav9tvl_7a_Xqc8HSSiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8956345.png",
+        "score": 2
+      },
+      {
+        "imageid": "9391069",
+        "caption": "Turkish edition back cover",
+        "url": "https://cf.geekdo-images.com/phmJKsMccn58szjtr46R8w__large/img/rsBvJN9J7zReVp-oTJmP_FmVqiY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9391069.png",
+        "score": 2
+      },
+      {
+        "imageid": "9166533",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/rIjUEN4UKiA0rCnC3fi3AA__large/img/Bh7_TOr8YBEzmye8KGbkOitDzXY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9166533.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9166533",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/rIjUEN4UKiA0rCnC3fi3AA__large/img/Bh7_TOr8YBEzmye8KGbkOitDzXY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9166533.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9166532",
+        "caption": "Russian edition (3d box front side)",
+        "url": "https://cf.geekdo-images.com/7LKxDkxP5oKCYdDLBd9aaw__large/img/FTqf8OzjN9uARAfoQKPMOtBE7E4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9166532.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8269475",
+      "url": "https://cf.geekdo-images.com/ydcGCgJaZfwybOWNvl5HLQ__large/img/0F-KmNzy51Uv4sc14KWXp-7u9WM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8269475.jpg",
+      "caption": "Château Combo ‐ French edition - back",
+      "score": 2,
+      "aspect": 0.716,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/castle-combo-416851/back-src.jpg"
+    }
+  }
+}

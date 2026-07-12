@@ -1,0 +1,47 @@
+{
+  "bggId": 285253,
+  "fetched": 59,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6541373",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Z34R7XurZc4rjPriUEBgng__large/img/zyWt5PnyhKjm6NqISvhPIyx8BaY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6541373.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5932632",
+        "caption": "Fiesta de los Muertos Back of Box, German Edition, Game Factory",
+        "url": "https://cf.geekdo-images.com/pU7UHLgq3e7bNr3QuKxA0A__large/img/aYxjopG4F4msJEk4iTnJITMVcI0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5932632.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5936662",
+        "caption": "Fiesta de los Muertos, back of the box Italian edition, Playagame Edizioni",
+        "url": "https://cf.geekdo-images.com/ysQVF-olEriKO3sEQO-2Qw__large/img/uPPDv74Q7iCpwtxBe61UEZwgbps=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5936662.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6299796",
+        "caption": "Fiesta de los Muertos Spanish rear",
+        "url": "https://cf.geekdo-images.com/eS6RqUuV_LrCScrERmwk4A__large/img/2b4NWG998T5QMop1DenpMd4ql7s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6299796.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6541373",
+      "url": "https://cf.geekdo-images.com/Z34R7XurZc4rjPriUEBgng__large/img/zyWt5PnyhKjm6NqISvhPIyx8BaY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6541373.jpg",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.854,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/fiesta-de-los-muertos-285253/back-src.jpg"
+    }
+  }
+}

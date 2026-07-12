@@ -1,0 +1,29 @@
+{
+  "bggId": 324937,
+  "fetched": 8,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "8643153",
+        "caption": "Box top",
+        "url": "https://cf.geekdo-images.com/NcgQPuxrGytU7bJQC27DgQ__large/img/pXTvbBnZo_a4XYzY4cdZ3kv5cwQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8643153.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "8643154",
+        "caption": "Box bottom",
+        "url": "https://cf.geekdo-images.com/-XhMUvQSnzCrFuMjaDO54g__large/img/1jHge9Hom6ILx2Nuil2ga-QNTl8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8643154.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": null
+  }
+}

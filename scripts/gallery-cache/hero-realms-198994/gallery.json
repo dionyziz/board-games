@@ -1,0 +1,72 @@
+{
+  "bggId": 198994,
+  "fetched": 113,
+  "done": true,
+  "frontAspect": 1.19,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4172903",
+        "caption": "English first edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/vyJbsqohTjAcvHiVcWzRFA__large/img/awNhEw8sn-cH68dSraueaICMzYc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4172903.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9331052",
+        "caption": "Hero Realms - English first edition - box back",
+        "url": "https://cf.geekdo-images.com/dkWn-y4J_mmhczkj0i5D1g__large/img/NgBWlz-C1WGrX4xZNZKjt6FIFoQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9331052.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4833396",
+        "caption": "Back of the box of reprint of Polish edition with sticker of new publisher IUVI Games",
+        "url": "https://cf.geekdo-images.com/l2HaaHIAtVYKm5vMGwchnw__large/img/Dp2SgrEE3EHhxiPNwrxKggPNlPY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4833396.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9594100",
+        "caption": "Ukrainian edition, 2026 Lord of Boards, Back of the box",
+        "url": "https://cf.geekdo-images.com/iCbw0uuabCGKgEkn7MOFNg__large/img/dPu3BW8qG3krk2dWg8NldcnX7S0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9594100.png",
+        "score": 2
+      },
+      {
+        "imageid": "7712086",
+        "caption": "Russian second edition (box back side)",
+        "url": "https://cf.geekdo-images.com/YqLCII_XqN5razDPXQcq6w__large/img/PKcPC2MJnm6k4n6yI0zAE58HIEQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7712086.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8327947",
+        "caption": "Hero Realms Serbian Back cover",
+        "url": "https://cf.geekdo-images.com/klUdTfGUribNaeuXsIbPcA__large/img/ERDObygBx6iyARvKfsNn5nwypLY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8327947.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7712086",
+        "caption": "Russian second edition (box back side)",
+        "url": "https://cf.geekdo-images.com/YqLCII_XqN5razDPXQcq6w__large/img/PKcPC2MJnm6k4n6yI0zAE58HIEQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7712086.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7712085",
+        "caption": "Russian second edition (box front side)",
+        "url": "https://cf.geekdo-images.com/QHXh0ZH7ob3TK_WHyc9uQQ__large/img/AmdhZwYkQUog6sldh9RgeUcZ-WI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7712085.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9331052",
+      "url": "https://cf.geekdo-images.com/dkWn-y4J_mmhczkj0i5D1g__large/img/NgBWlz-C1WGrX4xZNZKjt6FIFoQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9331052.jpg",
+      "caption": "Hero Realms - English first edition - box back",
+      "score": 3.5,
+      "aspect": 1.459,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hero-realms-198994/back-src.jpg"
+    }
+  }
+}

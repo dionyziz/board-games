@@ -1,0 +1,61 @@
+{
+  "bggId": 171,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.536,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "605337",
+        "caption": "Example pieces of the chess set from 18th century. Some of 'em used to be white back then...",
+        "url": "https://cf.geekdo-images.com/XwsHv7Tw2jSp_1cNzzxMcg__large/img/EZIU_fZaFEb62rCv3Czl-YRl-GI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic605337.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8647866",
+        "caption": "PlayMonster Magnetic Travel Chess (Back)",
+        "url": "https://cf.geekdo-images.com/xEv0C_y2PCBlNqHA0qe0_w__large/img/jkups-XsieoWdN9-LBO7y6tfJtY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8647866.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "296247",
+        "caption": "White side from a 19C chess set found in a Greymouth, ANZ backpackers",
+        "url": "https://cf.geekdo-images.com/yr3qRgryvwaJ9CLv9Dd25A__large/img/hsXwuWAGPWc7B1wAR_p-2mFyLbg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic296247.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "892201",
+        "caption": "Universal Monster Chess Egyptian side facing the enemy",
+        "url": "https://cf.geekdo-images.com/nYAwlvq604BOvo_BhXbftw__large/img/B8c9L5CE7LU-M6IzXZE2VsM0mcU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic892201.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "892206",
+        "caption": "Side view of the Universal Monster Chess set",
+        "url": "https://cf.geekdo-images.com/MLFzSmaAiGr6XePx5KPTAg__large/img/HhFMT22dlwyPzrlhyDgWUbHfiXk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic892206.jpg",
+        "score": 1
+      }
+    ],
+    "top": [
+      {
+        "imageid": "1707055",
+        "caption": "One crazily designed chess set. Perhaps it is over the top.",
+        "url": "https://cf.geekdo-images.com/7dsrl5zb9luZ9R5iF1ikUQ__large/img/NDBzZt-8drfbmZGaBx6ecvEfWqs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1707055.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "605337",
+      "url": "https://cf.geekdo-images.com/XwsHv7Tw2jSp_1cNzzxMcg__large/img/EZIU_fZaFEb62rCv3Czl-YRl-GI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic605337.jpg",
+      "caption": "Example pieces of the chess set from 18th century. Some of 'em used to be white back then...",
+      "score": 1,
+      "aspect": 1.333,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skaki-171/back-src.jpg"
+    }
+  }
+}

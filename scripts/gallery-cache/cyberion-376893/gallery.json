@@ -1,0 +1,59 @@
+{
+  "bggId": 376893,
+  "fetched": 74,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7781636",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/u0RfF3aN0RxYahAYZrz6bQ__large/img/CRnAhtCQJuYgInByLfDJ6Z7WKrs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7781636.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8238915",
+        "caption": "Cyberion, inPatience, 2023 — back cover",
+        "url": "https://cf.geekdo-images.com/XvvdwM4vZYYbaYZ4XFRpVQ__large/img/nlNiZS2ipoEF7pPvEUkFc16WAqs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8238915.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "8364106",
+        "caption": "Cyberion, HUCH! / inPatience, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/OqDBFmbXV9a-Y-RqGtns3Q__large/img/XQmML4X20YhIjINcaT_B3cVvR0k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8364106.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "7770080",
+        "caption": "Cyberion - French edition - back",
+        "url": "https://cf.geekdo-images.com/ujDPb789a0d7EmJR1Bd92Q__large/img/rS3W9eu7MDC_SNypgqUILOc5HTs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7770080.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8684995",
+        "caption": "Spanish Edition Box Back Cover",
+        "url": "https://cf.geekdo-images.com/7Yb8mJ62u6Ut9nxs7EoxkA__large/img/wrNm4vIr1i1XIMlHzYMPaQ6EBWY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8684995.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7974838",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/a7TtVAt7Cf_Wz77uMHC7hQ__large/img/0LiIZTwjvhvLU57ZhIqWoArIM58=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7974838.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7781636",
+      "url": "https://cf.geekdo-images.com/u0RfF3aN0RxYahAYZrz6bQ__large/img/CRnAhtCQJuYgInByLfDJ6Z7WKrs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7781636.jpg",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.863,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cyberion-376893/back-src.jpg"
+    }
+  }
+}

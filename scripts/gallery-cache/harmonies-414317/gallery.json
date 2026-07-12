@@ -1,0 +1,66 @@
+{
+  "bggId": 414317,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9327753",
+        "caption": "Turkish Edition back cover",
+        "url": "https://cf.geekdo-images.com/pkc4uighkVmJKDJdNS8r9A__large/img/wBHNpEGeclJV6LVPVTw_5WeJ7VY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9327753.png",
+        "score": 2
+      },
+      {
+        "imageid": "9232779",
+        "caption": "Harmonies Icelandic Edition (Back)",
+        "url": "https://cf.geekdo-images.com/gPY4lIphl3kVRc0rrkeoBQ__large/img/Ppaqrz3kPptoqVzpwxfi6b6cMXQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9232779.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8741808",
+        "caption": "Ukrainian edition, 2025 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/R-VCEua2JRJD50YsLkHBzg__large/img/98t8lvSyvTFR8z9jDSgydIwskBg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8741808.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8162754",
+        "caption": "Ostoja, Rebel, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/-yqSRDlnI-EPtx_4iep9qA__large/img/VUQq_dmKDAtcKomVJBC3EwIWqmI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8162754.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8625996",
+        "caption": "Природа - Serbian/Bulgarian version - back cover",
+        "url": "https://cf.geekdo-images.com/zpyDlX9GzNRis63sifmgTg__large/img/blYzOkwcyd0b_ANQNbSkc32jbsA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8625996.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9432519",
+        "caption": "Solo mode with Spirit Animal & B side. Scored 122.",
+        "url": "https://cf.geekdo-images.com/di1KsmQV9kfWrgN_Qb_L0A__large/img/M7CMPuUuGkan9hD8UbyUZw3qz7Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9432519.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9325497",
+        "caption": "Trying out the blue side for the first time with this particular group",
+        "url": "https://cf.geekdo-images.com/DbnItF6rrz_Anm8tvvgSsw__large/img/FhTH79FjFY4WbAHcgDwNQdMFzM4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9325497.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9327753",
+      "url": "https://cf.geekdo-images.com/pkc4uighkVmJKDJdNS8r9A__large/img/wBHNpEGeclJV6LVPVTw_5WeJ7VY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9327753.png",
+      "caption": "Turkish Edition back cover",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/harmonies-414317/back-src.png"
+    }
+  }
+}

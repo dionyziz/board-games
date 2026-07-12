@@ -1,0 +1,42 @@
+{
+  "bggId": 418354,
+  "fetched": 83,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9633883",
+        "caption": "Babylon English Edition (BAB01EN) back",
+        "url": "https://cf.geekdo-images.com/PvFoJ53wGHUrKBoHKQeDKg__large/img/g2SjpDZvh4M0JVBGKrNjCTN06kk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9633883.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9421785",
+        "caption": "Cover back",
+        "url": "https://cf.geekdo-images.com/gT4-23AZp6jxQRRpd91lXg__large/img/7P4C7tNZzd7_6CePSqgiXgnR_uQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9421785.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9633884",
+        "caption": "Babylon English Edition (BAB01EN) side",
+        "url": "https://cf.geekdo-images.com/_hvVWQ89HYAnD17vmcyFtQ__large/img/sBWcPESbyVBjyiFvPuywyOamhBc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9633884.jpg",
+        "score": 3.5
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9633883",
+      "url": "https://cf.geekdo-images.com/PvFoJ53wGHUrKBoHKQeDKg__large/img/g2SjpDZvh4M0JVBGKrNjCTN06kk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9633883.jpg",
+      "caption": "Babylon English Edition (BAB01EN) back",
+      "score": 3.5,
+      "aspect": 0.995,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/babylon-418354/back-src.jpg"
+    }
+  }
+}

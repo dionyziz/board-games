@@ -1,0 +1,66 @@
+{
+  "bggId": 65244,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.746,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6730778",
+        "caption": "English edition 18359-M: Back of box",
+        "url": "https://cf.geekdo-images.com/rStql02TXOGZABQt2A5bqQ__large/img/fV9SWRppLsex7kaQBDyulmn5n90=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6730778.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2644075",
+        "caption": "Box Back (English 2014 printing)",
+        "url": "https://cf.geekdo-images.com/MF9lmi82CQrw_ubOKl1GIA__large/img/v6nUvM5okXasUwxVM2gPNlwuJkM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2644075.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1167553",
+        "caption": "Box back (German edition)",
+        "url": "https://cf.geekdo-images.com/zvnhPTsA0nthfCtV2eS8cw__large/img/xJispBQXB7XseodFNCL9xyh7Tv4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1167553.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1381847",
+        "caption": "Box back, Catalan edition",
+        "url": "https://cf.geekdo-images.com/vuUrt76f47YzuYCX9ESOxA__large/img/AZzdvABFsGnNk-0EiRC8zoTwnCI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1381847.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "857106",
+        "caption": "Island Tiles (Front and back) 5of5",
+        "url": "https://cf.geekdo-images.com/GG9dGIYEmxEWWETWccHOQQ__large/img/RuR0zgIKBECE_7fNucOG076g2nw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic857106.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "856657",
+        "caption": "The Crystal of  Fire island tiles (Front and back)",
+        "url": "https://cf.geekdo-images.com/doeHWUAYPPsjw7YVfBbOfA__large/img/cFL3B3ClrffKrNtkysDHhXVZyKc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic856657.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1167554",
+        "caption": "Box shorter side (German edition)",
+        "url": "https://cf.geekdo-images.com/5qWsbhOu_NBvSUPioWCNHg__large/img/CNAGaIuHOFjB91Mc0APKfT8zggA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1167554.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6730778",
+      "url": "https://cf.geekdo-images.com/rStql02TXOGZABQt2A5bqQ__large/img/fV9SWRppLsex7kaQBDyulmn5n90=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6730778.jpg",
+      "caption": "English edition 18359-M: Back of box",
+      "score": 3.5,
+      "aspect": 0.738,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/apagoreymeni-nisos-65244/back-src.jpg"
+    }
+  }
+}

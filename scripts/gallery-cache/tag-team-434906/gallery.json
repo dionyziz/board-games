@@ -1,0 +1,42 @@
+{
+  "bggId": 434906,
+  "fetched": 133,
+  "done": true,
+  "frontAspect": 0.695,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9534363",
+        "caption": "Italian Edition by Asmodee,  Box Front and Rear ",
+        "url": "https://cf.geekdo-images.com/nrBYe6Mxz5oDX2dv7Tslmg__large/img/r_frwFfEhQ1uAWzxRkdPuaw0cpc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9534363.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9416811",
+        "caption": "Ukrainian edition, 2026 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/cwANirqH8TAb4zNVPS2qPg__large/img/FKdHdcaViEn1iYdu1uHPWMpUfnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9416811.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "9562705",
+        "caption": "2026 top 2 players Game!!!!",
+        "url": "https://cf.geekdo-images.com/E6sudmlBkq4eXhmbLmunVQ__large/img/7jCIM2p-lNDOY4cRTpqYdv6z9Cw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9562705.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9416811",
+      "url": "https://cf.geekdo-images.com/cwANirqH8TAb4zNVPS2qPg__large/img/FKdHdcaViEn1iYdu1uHPWMpUfnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9416811.png",
+      "caption": "Ukrainian edition, 2026 Geekach, Back of the box",
+      "score": 2,
+      "aspect": 0.7,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/tag-team-434906/back-src.png"
+    }
+  }
+}

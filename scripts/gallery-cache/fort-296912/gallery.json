@@ -1,0 +1,79 @@
+{
+  "bggId": 296912,
+  "fetched": 228,
+  "done": true,
+  "frontAspect": 1.56,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5884564",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/gBcanAd96sbsXdVTTJXI3Q__large/img/BauVaAcNkk3fKe7_i9_F-5zlpsI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5884564.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "6655788",
+        "caption": "Back spanish edition",
+        "url": "https://cf.geekdo-images.com/LNO1V80Z1O5Nbsz9xb-OAw__large/img/XnlkzyamBGOQXWA6FDKbWb9Cie8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6655788.png",
+        "score": 2
+      },
+      {
+        "imageid": "8150894",
+        "caption": "Czech edition – back",
+        "url": "https://cf.geekdo-images.com/IjGOxrg7ICrGsrKSAiKscg__large/img/kj6jo_Yy-_cg3a-nt1amQZH6h2k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8150894.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7148303",
+        "caption": "Back cover of German edition",
+        "url": "https://cf.geekdo-images.com/F8oOIAjMuS8Mj5E3jx3gxw__large/img/ghQkTcXNttukIdj6pvddbxQ2vBk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7148303.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8953581",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/Eq3Smg74avVdoaZ73sHkFA__large/img/wBFD-aV0xgeUyl21AiOxdw1oE_M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8953581.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6614872",
+        "caption": "French back",
+        "url": "https://cf.geekdo-images.com/qJL2nYOFRfipTPOZ0idx8w__large/img/9REppV4CLJEP4mgvtB6SNYC_88o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6614872.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8953581",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/Eq3Smg74avVdoaZ73sHkFA__large/img/wBFD-aV0xgeUyl21AiOxdw1oE_M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8953581.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8953580",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/kqSjcNsOhYKY-jNupqPK9g__large/img/C8FvSxc_jzSqBPuSuQWKKulUbsQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8953580.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "7982652",
+        "caption": "Box top down",
+        "url": "https://cf.geekdo-images.com/bfxAVDO_8ds8C4Z1g0WnFA__large/img/HFv5XRUkQ2jTJWvTp3xBb8L8bng=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7982652.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5884564",
+      "url": "https://cf.geekdo-images.com/gBcanAd96sbsXdVTTJXI3Q__large/img/BauVaAcNkk3fKe7_i9_F-5zlpsI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5884564.png",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 1.526,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/fort-296912/back-src.png"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "bggId": 362976,
+  "fetched": 138,
+  "done": true,
+  "frontAspect": 0.533,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9261281",
+        "caption": "Back of the Box",
+        "url": "https://cf.geekdo-images.com/C-05q7jZit3eBO0umRdDcA__large/img/g4heMf2I2MuOp2gzDgvUvr2phfM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9261281.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8450723",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/cR_ZpyZaXdJBEwQrDofo-g__large/img/tfEg6JQd6RcBnnfJV_LeN4iVeCA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8450723.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9253072",
+        "caption": "Ukrainian edition, 2024 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/86l5WO1j6VpCoh9X6kCkig__large/img/TScdRUoCIEOg1UssshRpv_S2fIQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9253072.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7715247",
+        "caption": "Beacon Patrol box back",
+        "url": "https://cf.geekdo-images.com/eq_NjV2Cb3Mwc1bWJ80bUg__large/img/7nc_pMCwjWX43DnRl3XUVwowwiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7715247.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8924995",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/0vBAz_lg4Fpz8qRuaYZoBQ__large/img/i8-YJ3NCns6zMi9oFnQfIVemI6k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924995.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8235867",
+        "caption": "Back cover (French edition)",
+        "url": "https://cf.geekdo-images.com/T6JLBF6azIY--DE-UUIczg__large/img/o5P-5f1w98my0kqzuwECtn80vJg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8235867.png",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8924995",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/0vBAz_lg4Fpz8qRuaYZoBQ__large/img/i8-YJ3NCns6zMi9oFnQfIVemI6k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8924995.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9261281",
+      "url": "https://cf.geekdo-images.com/C-05q7jZit3eBO0umRdDcA__large/img/g4heMf2I2MuOp2gzDgvUvr2phfM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9261281.jpg",
+      "caption": "Back of the Box",
+      "score": 2,
+      "aspect": 0.49,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/beacon-patrol-362976/back-src.jpg"
+    }
+  }
+}

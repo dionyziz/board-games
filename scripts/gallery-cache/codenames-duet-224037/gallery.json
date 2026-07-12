@@ -1,0 +1,80 @@
+{
+  "bggId": 224037,
+  "fetched": 198,
+  "done": true,
+  "frontAspect": 0.697,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3740149",
+        "caption": "Back box English first edition",
+        "url": "https://cf.geekdo-images.com/Ami_OC2R3Bo4FXkhQ0_mUA__large/img/3O0W53et2blGZ7mQp03slsnUSQY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3740149.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4825694",
+        "caption": "English second edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/mFkw1pCu_4CxCM7eoTQP0w__large/img/w5tRlR_yXrovv56ANXG44WDuzEk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4825694.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5899672",
+        "caption": "English XXL edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/XjxHJ7h5lxswLHPIE8vvvw__large/img/KfqH_HbMR0C-ofyon1J8LpRR8YY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5899672.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8496615",
+        "caption": "Ukrainian edition, 2023 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/E6R93WbqGePDY09hWOGUUA__large/img/iGPCMl5dBUduGNSVkhv40iJSadA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8496615.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9329556",
+        "caption": "Turkish Edition (2025) back cover",
+        "url": "https://cf.geekdo-images.com/HfOTai2TzMWswyB1X2zFjg__large/img/IZ2tu2B0yHNpcJkJczyZeUuGXns=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9329556.png",
+        "score": 2
+      },
+      {
+        "imageid": "9311669",
+        "caption": "Ukrainian edition, 2025 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/N5sbrBkuNRIx27QeGErmgw__large/img/bAvMvGtdZXvqQVDmIuFp3TNNXkw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9311669.png",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5899673",
+        "caption": "English XXL edition - Bottom side of the box",
+        "url": "https://cf.geekdo-images.com/Has4P6MAYFxUvBw044NU4w__large/img/5DY4veXdLo_pkxbSFuM5xNgbUnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5899673.png",
+        "score": 3.5
+      }
+    ],
+    "top": [
+      {
+        "imageid": "3852392",
+        "caption": "Japanese Box Top",
+        "url": "https://cf.geekdo-images.com/6U0WJK0owHX1vH1EYciqEA__large/img/z5sHCfoI3kONEbiUpD4q_KrFDtY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3852392.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "5899673",
+        "caption": "English XXL edition - Bottom side of the box",
+        "url": "https://cf.geekdo-images.com/Has4P6MAYFxUvBw044NU4w__large/img/5DY4veXdLo_pkxbSFuM5xNgbUnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5899673.png",
+        "score": 3.5
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3740149",
+      "url": "https://cf.geekdo-images.com/Ami_OC2R3Bo4FXkhQ0_mUA__large/img/3O0W53et2blGZ7mQp03slsnUSQY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3740149.jpg",
+      "caption": "Back box English first edition",
+      "score": 3.5,
+      "aspect": 0.692,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-duet-224037/back-src.jpg"
+    }
+  }
+}

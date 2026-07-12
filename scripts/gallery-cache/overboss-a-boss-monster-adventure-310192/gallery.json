@@ -1,0 +1,35 @@
+{
+  "bggId": 310192,
+  "fetched": 71,
+  "done": true,
+  "frontAspect": 0.997,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6006199",
+        "caption": "Overboss: A Boss Monster Adventure - box back",
+        "url": "https://cf.geekdo-images.com/V4W_uG7Fx-CgpjDs58edTg__large/img/dLzpCsQ4zIKQun9tdq7OQ0wHlNI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6006199.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7162658",
+        "caption": "Overboss ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/lqUe7YWuWs4eWBf4QcUIaA__large/img/nZYATV3uYhJVvWHF337xLfd6JJw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7162658.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6006199",
+      "url": "https://cf.geekdo-images.com/V4W_uG7Fx-CgpjDs58edTg__large/img/dLzpCsQ4zIKQun9tdq7OQ0wHlNI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6006199.jpg",
+      "caption": "Overboss: A Boss Monster Adventure - box back",
+      "score": 2,
+      "aspect": 0.995,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/overboss-a-boss-monster-adventure-310192/back-src.jpg"
+    }
+  }
+}

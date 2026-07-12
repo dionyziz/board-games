@@ -1,0 +1,60 @@
+{
+  "bggId": 106,
+  "fetched": 109,
+  "done": true,
+  "frontAspect": 0.752,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "592083",
+        "caption": "Box back - U.S. Games 2009 version",
+        "url": "https://cf.geekdo-images.com/Buxsj2g8YJGd-Xyv3fDIjQ__large/img/FN7caAkaxzEY33YpPnF0JAULMso=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic592083.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8021517",
+        "caption": "Back Box.",
+        "url": "https://cf.geekdo-images.com/iJAYIN7YoVWBxCWol0bJ3A__large/img/pOGyB9ROnl7IY1ijQm4VUVBiJ4g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8021517.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2495900",
+        "caption": "Box back (2nd edition, 2014)",
+        "url": "https://cf.geekdo-images.com/lQebwwuEyHFWMA6xLTdnQw__large/img/EdDiqk662uIxvfbpgx4kmFXWAws=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2495900.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "55217",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/a_d5qz6hd-QaIi50o5Ec-Q__large/img/1HoNMJDedIawCu7YE3Y5wKXBnz8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic55217.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "296428",
+        "caption": "Side of the box",
+        "url": "https://cf.geekdo-images.com/kcznipqR0Toq4cB6hQygNw__large/img/FdT5QcJmwx8q77P_z2ywiLO4j58=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic296428.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2495898",
+        "caption": "Box spine (2nd edition, 2014)",
+        "url": "https://cf.geekdo-images.com/cJdwZU-OvOZjBbYkVMfWVA__large/img/QiV8StXBrRje_dwAlhHtMh3CzdQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2495898.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "592083",
+      "url": "https://cf.geekdo-images.com/Buxsj2g8YJGd-Xyv3fDIjQ__large/img/FN7caAkaxzEY33YpPnF0JAULMso=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic592083.jpg",
+      "caption": "Box back - U.S. Games 2009 version",
+      "score": 2,
+      "aspect": 0.765,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skoteines-ypotheseis-londino-1888-106/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "bggId": 306881,
+  "fetched": 125,
+  "done": true,
+  "frontAspect": 1.013,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6142156",
+        "caption": "Railroad Ink Challenge: Lush Green Edition - box back",
+        "url": "https://cf.geekdo-images.com/KPpOiHtRJw3OT88UG1JX_g__large/img/8iybfQYfuhT9wkxQFG5bcODAGI4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6142156.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9645575",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/ptZ0vWvBi8x84dJ_W_VO7A__large/img/aHE31hmWckaOb5FCTdb-5wt3WVY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9645575.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9645575",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/ptZ0vWvBi8x84dJ_W_VO7A__large/img/aHE31hmWckaOb5FCTdb-5wt3WVY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9645575.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9645574",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/im_HIsw1OB45PI0xTyJnDg__large/img/CHcuHjE6CORD0FWrQujbu_vNTek=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9645574.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6975218",
+        "caption": "A chaotic network with some confusion from my side but managed to tie off plenty of dead ends",
+        "url": "https://cf.geekdo-images.com/pRDBj3zBoshfIBpB3ZIjfw__large/img/1clUVxXocQIIo5B1DV0tFO139co=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6975218.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6142156",
+      "url": "https://cf.geekdo-images.com/KPpOiHtRJw3OT88UG1JX_g__large/img/8iybfQYfuhT9wkxQFG5bcODAGI4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6142156.jpg",
+      "caption": "Railroad Ink Challenge: Lush Green Edition - box back",
+      "score": 2,
+      "aspect": 1.014,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/railroad-ink-challenge-lush-green-306881/back-src.jpg"
+    }
+  }
+}

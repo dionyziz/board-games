@@ -1,0 +1,59 @@
+{
+  "bggId": 180020,
+  "fetched": 118,
+  "done": true,
+  "frontAspect": 0.695,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "2575757",
+        "caption": "back of game box (second print - first bilingual edition)\n",
+        "url": "https://cf.geekdo-images.com/40e16ILclSXPbnpj9UJhmw__large/img/rXsRIUbtTsjAIwxa6wWtn-Fl0W4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2575757.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6600794",
+        "caption": "Nordic edition box back",
+        "url": "https://cf.geekdo-images.com/NExYh7ayf6dMQ1fZqksvBg__large/img/9vMyGKGR6QY0y2p0rCwlsxyLXog=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6600794.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7858802",
+        "caption": "Romanian edition, box back",
+        "url": "https://cf.geekdo-images.com/X8k5xBcKDD2FBKKARM0d8Q__large/img/-0opZygPbOweBwJdk887awMNS8s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7858802.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4398782",
+        "caption": "Box Back | Argentina/Spanish Edition (El Dragón Azul)",
+        "url": "https://cf.geekdo-images.com/wQSjrXg8GlHhRrqVdSc-rw__large/img/3BrbazP2ZQ3hRZmLtPDV-CXkX08=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4398782.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5804375",
+        "caption": "Virus by Fotorama México (back)",
+        "url": "https://cf.geekdo-images.com/25qRUdQSTojtwCAcn3Q2-A__large/img/GqtrC-42mwht9N2nCgX1tHV0N2U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5804375.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8786514",
+        "caption": "Wirus!, Muduko, 2024 — back cover",
+        "url": "https://cf.geekdo-images.com/ez4j2MuGzfZxqDiysimuUQ__large/img/534k8sUcS4tAVNGyFHmzgvBiB9k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8786514.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4398782",
+      "url": "https://cf.geekdo-images.com/wQSjrXg8GlHhRrqVdSc-rw__large/img/3BrbazP2ZQ3hRZmLtPDV-CXkX08=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4398782.jpg",
+      "caption": "Box Back | Argentina/Spanish Edition (El Dragón Azul)",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/virus-180020/back-src.jpg"
+    }
+  }
+}

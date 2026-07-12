@@ -1,0 +1,72 @@
+{
+  "bggId": 178900,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.698,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8980844",
+        "caption": "Codenames - English First Edition - box back",
+        "url": "https://cf.geekdo-images.com/CwNGgkLqYInN-ENZ-3ToBg__large/img/DDFFceOaMBc_3IBUSN9Nnb6TZ5o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8980844.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8907679",
+        "caption": "Codenames, Czech Games Edition, 2025 — back cover, English second edition (image provided by the publisher) ",
+        "url": "https://cf.geekdo-images.com/BldVZ57nfhX_LRq4LILxKw__large/img/i6RcyVvAROGKwcqDPeHR6DcWEmM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8907679.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2957701",
+        "caption": "Catalan edition (Devir, 2016). Box back",
+        "url": "https://cf.geekdo-images.com/V3l-9Z4pg5o5YAGdMZ3--Q__large/img/sl88BtN7PYFGChV7f7fPEEoN5Pg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2957701.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8638613",
+        "caption": "Finnish edition: Box back.",
+        "url": "https://cf.geekdo-images.com/bf_o77wV8kHR7cDgSaiVCA__large/img/V1lQ32BIUoM6HYEQB0pgsDlmLvA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8638613.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3910948",
+        "caption": "Back of the box of Lithuanian second (3 awards) edition / Antrosios lietuviškos (3 apdovanojimų) versijos dėžutės galas",
+        "url": "https://cf.geekdo-images.com/uMk9zDiHh8gNcVyzYTzooA__large/img/oMUQ2X-JdK_yVQj3mTVCc7uE5r4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3910948.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9311688",
+        "caption": "Ukrainian edition, 2025 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/QlcOiPWfdSDNY1d1RxUbnQ__large/img/sUz2aXwoQnDyabSDVQ1uTNa67dY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9311688.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "2598927",
+        "caption": "Codenames – bottom of the box",
+        "url": "https://cf.geekdo-images.com/jqIthLSs_eKfqvZI84Lx4A__large/img/hrmgiTYlFKDRc_adTbU6J-tPDs8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2598927.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3089803",
+        "caption": "Now halfway through the game, the answer grid at the bottom of the photo dictates the correct words to the spymasters.",
+        "url": "https://cf.geekdo-images.com/oMDDb5Qpov4CjEChXys-cw__large/img/yrvC38yIPaSBGdug_hKrhlEowMk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3089803.jpg",
+        "score": 1
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8980844",
+      "url": "https://cf.geekdo-images.com/CwNGgkLqYInN-ENZ-3ToBg__large/img/DDFFceOaMBc_3IBUSN9Nnb6TZ5o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8980844.jpg",
+      "caption": "Codenames - English First Edition - box back",
+      "score": 3.5,
+      "aspect": 0.716,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-178900/back-src.jpg"
+    }
+  }
+}

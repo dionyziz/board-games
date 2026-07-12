@@ -1,0 +1,22 @@
+{
+  "bggId": 241164,
+  "fetched": 28,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4276680",
+        "caption": "Italian Edition - 3D Box Back - Playagame Edizioni",
+        "url": "https://cf.geekdo-images.com/bPjTYv1DEvEt4w7P21MwOw__large/img/gTprZ34etVVxxN9vyf4Ji7YKtmA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4276680.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

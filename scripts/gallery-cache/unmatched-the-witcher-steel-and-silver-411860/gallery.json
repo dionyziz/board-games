@@ -1,0 +1,41 @@
+{
+  "bggId": 411860,
+  "fetched": 61,
+  "done": true,
+  "frontAspect": 0.777,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8712575",
+        "caption": "Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/u2ND0oyJLRrYxbwdggJPBw__large/img/FG8XKm_btiYLFvOaj8Sz7w3i2-E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8712575.png",
+        "score": 2
+      },
+      {
+        "imageid": "8717950",
+        "caption": "Back, Polish edition",
+        "url": "https://cf.geekdo-images.com/twNXiuGG9fQDm0hAIGAocw__large/img/udLY9bbNyVJ4W0KCRSxLCD2S_qs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8717950.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9243003",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/OZ6-SB1_CSjlHqEO89oNnA__large/img/K1F2vZljwzZ7xuaHNBLqae2ruJo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9243003.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8712575",
+      "url": "https://cf.geekdo-images.com/u2ND0oyJLRrYxbwdggJPBw__large/img/FG8XKm_btiYLFvOaj8Sz7w3i2-E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8712575.png",
+      "caption": "Back, Ukrainian edition",
+      "score": 2,
+      "aspect": 0.772,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/unmatched-the-witcher-steel-and-silver-411860/back-src.png"
+    }
+  }
+}

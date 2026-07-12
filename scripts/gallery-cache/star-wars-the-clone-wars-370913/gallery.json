@@ -1,0 +1,41 @@
+{
+  "bggId": 370913,
+  "fetched": 101,
+  "done": true,
+  "frontAspect": 0.698,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7134617",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Yg-G0Nb34bF1XnGCR2fTuQ__large/img/jrPbJEJkUyn4GEXSIe6UBKVG-Gw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7134617.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7169257",
+        "caption": "Star Wars: The Clone Wars ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/9cqvjiKQH9FX3px_N0zlyg__large/img/IfFtupO5YOBBR8cMLxAJTqjCbVo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7169257.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7078825",
+        "caption": "German back cover",
+        "url": "https://cf.geekdo-images.com/ZhXCrkf3f53HUmP_ptaH-w__large/img/XoT-xlnr0_eeAdTX1hje0HTDvYo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7078825.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7134617",
+      "url": "https://cf.geekdo-images.com/Yg-G0Nb34bF1XnGCR2fTuQ__large/img/jrPbJEJkUyn4GEXSIe6UBKVG-Gw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7134617.jpg",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.554,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/star-wars-the-clone-wars-370913/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "bggId": 359152,
+  "fetched": 71,
+  "done": true,
+  "frontAspect": 0.75,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7659306",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/yN3oDTR0cQI_k3E206iHCQ__large/img/SBwlrmF0f8fj8Kz36UL54SdSOkY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7659306.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8417903",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/RmhBEHfyblud0F3wjFPMPA__large/img/IDc_veOd5R0XtoUTMXMBj7bNrIc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8417903.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7644999",
+        "caption": "Marvel: Remix - Front and back side of the box ( Serbian edition )",
+        "url": "https://cf.geekdo-images.com/YrQF7VMLujjaU7g7D7VNMQ__large/img/7IA3H8T_IUDBgZLx_mlwtsa70wc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7644999.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7516363",
+        "caption": "Box - Back",
+        "url": "https://cf.geekdo-images.com/JftLiLmrhma5COG96I1O0A__large/img/PYvDPbrHNNY0UhWBVdH4ifdCLx4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7516363.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7644999",
+        "caption": "Marvel: Remix - Front and back side of the box ( Serbian edition )",
+        "url": "https://cf.geekdo-images.com/YrQF7VMLujjaU7g7D7VNMQ__large/img/7IA3H8T_IUDBgZLx_mlwtsa70wc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7644999.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7659306",
+      "url": "https://cf.geekdo-images.com/yN3oDTR0cQI_k3E206iHCQ__large/img/SBwlrmF0f8fj8Kz36UL54SdSOkY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7659306.jpg",
+      "caption": "Spanish back box",
+      "score": 2,
+      "aspect": 0.725,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/marvel-remix-359152/back-src.jpg"
+    }
+  }
+}

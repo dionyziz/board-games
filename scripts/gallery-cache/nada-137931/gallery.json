@@ -1,0 +1,22 @@
+{
+  "bggId": 137931,
+  "fetched": 18,
+  "done": true,
+  "frontAspect": 0.593,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1602430",
+        "caption": "BOX BACK",
+        "url": "https://cf.geekdo-images.com/GpfyIrvy9P9lZosg2VMzcQ__large/img/5kMs4FkL_1IjC_snSw-qYYzoo88=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1602430.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

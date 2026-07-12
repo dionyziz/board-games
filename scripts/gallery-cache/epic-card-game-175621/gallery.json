@@ -1,0 +1,22 @@
+{
+  "bggId": 175621,
+  "fetched": 63,
+  "done": true,
+  "frontAspect": 0.745,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "2670644",
+        "caption": "Epic Kickstarter Demi-God Cardset All (BACK)",
+        "url": "https://cf.geekdo-images.com/hBLsS0F5wU_RbITYhmBPkg__large/img/zyOe4EJXIhc1IUyv4ZE3fWQTlbs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2670644.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

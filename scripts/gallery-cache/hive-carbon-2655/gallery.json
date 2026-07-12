@@ -1,0 +1,86 @@
+{
+  "bggId": 2655,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.932,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "465239",
+        "caption": "Back of the box (Gen42 edition)",
+        "url": "https://cf.geekdo-images.com/3ysHXpBYbwY2EpMXKXv7yw__large/img/1A03YkRxt3GEOblDxLqU02y8wEw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic465239.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "303327",
+        "caption": "Back of the box of spanish and portuguese edition by Cromola",
+        "url": "https://cf.geekdo-images.com/suY4fEScoEhoabwzYjR18Q__large/img/vSpLOF-0bPn8A2hYjUPo40brb_4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic303327.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "271976",
+        "caption": "Third eddition- hi res back of box",
+        "url": "https://cf.geekdo-images.com/Yb2SkGCNLiuaTqpABeTtPA__large/img/il2Ca7TMoeQXb4NYOoBAnOsN3Kc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic271976.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1210463",
+        "caption": "First Edition Box Back",
+        "url": "https://cf.geekdo-images.com/QqXzBrOsR3pHmdy780pG8A__large/img/xxNhbQLTs0_5hz9zOqx3SgVa6IY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1210463.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "310588",
+        "caption": "Box back - Hebrew version",
+        "url": "https://cf.geekdo-images.com/gAmjXGdUryzTEPHZGhjt4g__large/img/6z4gs1RTNrwi2XjxC86p62p4hOo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic310588.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2778176",
+        "caption": "Box Back, Polish Second edition (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/UNkwqMw-lPKfdjABhbToyg__large/img/yB0EEL8yeNhVSP6JzJvahFnxA9c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2778176.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "303384",
+        "caption": "Side of the box (spanish edition)",
+        "url": "https://cf.geekdo-images.com/nFXthxVuXpfgWbFCWII4EA__large/img/_pkor_ahNvYkCW7F4Y-x7XMlILg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic303384.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "1951499",
+        "caption": "Hive, Relaunch 2013, top of the box",
+        "url": "https://cf.geekdo-images.com/K-y9Tfix0yixR3wVoh00WA__large/img/ECMuiiDUTwyWSBBQX2dODh_5umw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1951499.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "1951500",
+        "caption": "Hive, Relaunch 2013, bottom of the box",
+        "url": "https://cf.geekdo-images.com/kcZYcRqMyuJgC9fH-zKInA__large/img/9DFG6JEuIdIhBvEOHXS8BA6ybKM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1951500.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4160840",
+        "caption": "hinese version box bottom",
+        "url": "https://cf.geekdo-images.com/B8TaC1v_19bhCC17M4S3yA__large/img/VH-5iaZieWvGfTQNEapBVxoH-F0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4160840.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "303327",
+      "url": "https://cf.geekdo-images.com/suY4fEScoEhoabwzYjR18Q__large/img/vSpLOF-0bPn8A2hYjUPo40brb_4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic303327.jpg",
+      "caption": "Back of the box of spanish and portuguese edition by Cromola",
+      "score": 2,
+      "aspect": 0.996,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hive-carbon-2655/back-src.jpg"
+    }
+  }
+}

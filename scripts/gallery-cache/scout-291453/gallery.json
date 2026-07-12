@@ -1,0 +1,73 @@
+{
+  "bggId": 291453,
+  "fetched": 151,
+  "done": true,
+  "frontAspect": 0.568,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7806730",
+        "caption": "Japanese/English Edition Back",
+        "url": "https://cf.geekdo-images.com/4hPP2h9vedWDgFUXw0-eCQ__large/img/JRm_D48rBBLtL9p2CdvSYa6MHNQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7806730.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9508070",
+        "caption": "SCOUT - German/English edition. Back of the box. Product Code: 2350820256",
+        "url": "https://cf.geekdo-images.com/NRTr1J2ZZ28KdlehMWzW9Q__large/img/jVELyz6G6vRqnM4gRxpGyDxlPNU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9508070.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9032905",
+        "caption": "SCOUT _ (Oink Games) _ English/German edition (rules) in German packaging _ (Code 2350720246) _ backside ",
+        "url": "https://cf.geekdo-images.com/HpkGHwHtKRHZ-6Dwn0twsw__large/img/tDRtFLkLOFxIEfe8Y60TO5vaQo0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9032905.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7127108",
+        "caption": "Oink Games: SCOUT — German edition 2022 — back cover",
+        "url": "https://cf.geekdo-images.com/FZ9fZL9LddXExdEx36_cyA__large/img/WK2XmzdKePAGkMdrMdT_R42Owic=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7127108.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8050870",
+        "caption": "Scout - Target Edition (Front & back)",
+        "url": "https://cf.geekdo-images.com/2KZpjHGN2ObOD7kHWO8_-Q__large/img/Vv-l8u3wp84OOf_fjhtlO0qu3mc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8050870.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9219894",
+        "caption": "Box - Front and Back View (Czech Edition)",
+        "url": "https://cf.geekdo-images.com/G-KmzN6eADTkTw_jtTc-xQ__large/img/GcJDpTFFUkXwzx1UBNoDuDPzR4o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9219894.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9032903",
+        "caption": "SCOUT _ (Oink Games) _ English/German edition (rules) in German packaging _ (Code 2350720246) _ sideview small side",
+        "url": "https://cf.geekdo-images.com/edqGBxetIgcWLAtJ4gD2-A__large/img/9aYa6YOq-HanDjY1jeRU8o4-z4I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9032903.jpg",
+        "score": 3.5
+      }
+    ],
+    "top": [
+      {
+        "imageid": "7541089",
+        "caption": "Sleeved cards: English instructions to top off",
+        "url": "https://cf.geekdo-images.com/GZEG2MDFP31FkejKcqdDMg__large/img/SpG8NKzcuhsBUz9nUonnKDyvJJI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7541089.jpg",
+        "score": 0.5
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9508070",
+      "url": "https://cf.geekdo-images.com/NRTr1J2ZZ28KdlehMWzW9Q__large/img/jVELyz6G6vRqnM4gRxpGyDxlPNU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9508070.jpg",
+      "caption": "SCOUT - German/English edition. Back of the box. Product Code: 2350820256",
+      "score": 3.5,
+      "aspect": 0.573,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/scout-291453/back-src.jpg"
+    }
+  }
+}

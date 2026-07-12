@@ -1,0 +1,60 @@
+{
+  "bggId": 424784,
+  "fetched": 37,
+  "done": true,
+  "frontAspect": 0.773,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8544846",
+        "caption": "Arkham Horror: Lovecraft Letter, Z-Man Games, 2025 — back (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/3RJ6FkN7BiCJA3HjCEU8vw__large/img/jCKA_ClRfry2nW_63BGGMZZQvwo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8544846.png",
+        "score": 2.5
+      },
+      {
+        "imageid": "8990310",
+        "caption": "Arkham Horror: Lovecraft Letter, Box Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/wglaqI8lGJbsMKL7cNvoDg__large/img/Ye_GAUCNuhtz2_IFUg9Emd8jumA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8990310.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9139927",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/cWeJkX4HRnFInGJXJPugeg__large/img/4nCIjhEbWQ0tIq6NpEsUNVB8mXg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9139927.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8654047",
+        "caption": "Back cover (French edition)",
+        "url": "https://cf.geekdo-images.com/ikR5wEZO6HvbetH9sQhMbA__large/img/O-AgJIGZ9kj2wA-zN6ZyRCelBwI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8654047.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9139927",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/cWeJkX4HRnFInGJXJPugeg__large/img/4nCIjhEbWQ0tIq6NpEsUNVB8mXg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9139927.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9139926",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/qcRsojIqvbJemXZmqwgbLA__large/img/eeNGNturV-Ir4UIYb39hLwFp6Co=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9139926.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8544846",
+      "url": "https://cf.geekdo-images.com/3RJ6FkN7BiCJA3HjCEU8vw__large/img/jCKA_ClRfry2nW_63BGGMZZQvwo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8544846.png",
+      "caption": "Arkham Horror: Lovecraft Letter, Z-Man Games, 2025 — back (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.716,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/arkham-horror-lovecraft-letter-424784/back-src.png"
+    }
+  }
+}

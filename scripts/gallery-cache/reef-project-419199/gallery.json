@@ -1,0 +1,47 @@
+{
+  "bggId": 419199,
+  "fetched": 75,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8527653",
+        "caption": "English edition (2024) Box . Back",
+        "url": "https://cf.geekdo-images.com/-oZMPwTdEqe2g4ACuWZTUQ__large/img/zgvwoKbDCsCx4FnV6iW6rivG0Ss=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8527653.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8434680",
+        "caption": "Czech edition – Zachraňte korály – Back  (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/t0maTF8-qdJj93CTvvZM2Q__large/img/X40uaynUIrAez5XsqgYP8-LOzRI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8434680.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8412043",
+        "caption": "The ocean’s coming back to life in Reef Project!",
+        "url": "https://cf.geekdo-images.com/zckxSIiiPZoiRA0yadCQpQ__large/img/JNe43WF-abBWQiiasUUan5API1A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8412043.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8376809",
+        "caption": "German Version - Back",
+        "url": "https://cf.geekdo-images.com/ZUQH8WGySt965Q4X3D4s0A__large/img/UQZs9uScGRIyRlrKjSCViimfIF0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8376809.png",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8527653",
+      "url": "https://cf.geekdo-images.com/-oZMPwTdEqe2g4ACuWZTUQ__large/img/zgvwoKbDCsCx4FnV6iW6rivG0Ss=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8527653.jpg",
+      "caption": "English edition (2024) Box . Back",
+      "score": 3.5,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/reef-project-419199/back-src.jpg"
+    }
+  }
+}

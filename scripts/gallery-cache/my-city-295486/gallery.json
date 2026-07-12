@@ -1,0 +1,67 @@
+{
+  "bggId": 295486,
+  "fetched": 143,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5646971",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/BDkJ29sRD5tWpKkkI4sQbg__large/img/wfOADlKnyo9RXyxfb0HdV3pZFyI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5646971.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8434355",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/87xXMm0d5NBTnAp7gkN2Zg__large/img/Wk1Pw8wO5YKcWuzq2a8xZUi9giA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8434355.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5199328",
+        "caption": "My City Back Cover",
+        "url": "https://cf.geekdo-images.com/lek_5ygotmZVk-siF00a0g__large/img/5vEj5RiJKxnevqUjw06ENlQfiK4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5199328.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5788532",
+        "caption": "Back of the tiles have corresponding symbols.",
+        "url": "https://cf.geekdo-images.com/SSESBlyx3JZogBZN1O8RmQ__large/img/z0tvLmq8IkOOSk1EQ4xN21l8b_I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5788532.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8434355",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/87xXMm0d5NBTnAp7gkN2Zg__large/img/Wk1Pw8wO5YKcWuzq2a8xZUi9giA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8434355.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8434354",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/F5FasupozpIMnx0VssLrlw__large/img/gzc99AQ9GgZ1gnCNqelqyvx3We4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8434354.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "5928595",
+        "caption": "My City, FR, IELLO 2021 - Box Bottom",
+        "url": "https://cf.geekdo-images.com/1i21Bjz2xKN2oKHK1ZdTpg__large/img/i0Nj7m43TV1Zc34v2VFh5uPFoYQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5928595.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8434355",
+      "url": "https://cf.geekdo-images.com/87xXMm0d5NBTnAp7gkN2Zg__large/img/Wk1Pw8wO5YKcWuzq2a8xZUi9giA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8434355.jpg",
+      "caption": "Russian edition (box back side)",
+      "score": 2,
+      "aspect": 1.003,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/my-city-295486/back-src.jpg"
+    }
+  }
+}

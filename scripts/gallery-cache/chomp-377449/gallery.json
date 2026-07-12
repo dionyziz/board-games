@@ -1,0 +1,29 @@
+{
+  "bggId": 377449,
+  "fetched": 46,
+  "done": true,
+  "frontAspect": 0.995,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8825359",
+        "caption": "German Edition Box Back",
+        "url": "https://cf.geekdo-images.com/llTRYF3pwozD4r_ZDtHhlg__large/img/imv_7RVQnr-Q6JdJ6T37g_KF0Jw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8825359.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8825359",
+      "url": "https://cf.geekdo-images.com/llTRYF3pwozD4r_ZDtHhlg__large/img/imv_7RVQnr-Q6JdJ6T37g_KF0Jw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8825359.png",
+      "caption": "German Edition Box Back",
+      "score": 2,
+      "aspect": 1.003,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chomp-377449/back-src.png"
+    }
+  }
+}

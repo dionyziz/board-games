@@ -1,0 +1,42 @@
+{
+  "bggId": 266592,
+  "fetched": 39,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8620321",
+        "caption": "TacTiki, Drawlab Entertainment, 2022 — back cover",
+        "url": "https://cf.geekdo-images.com/9pod9WHmAmnX0KuaHMqH3A__large/img/DstqUqwcGwir5YZpUJ_yFvFjcsE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8620321.jpg",
+        "score": 2.5
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8725614",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/z1FuvD4QiXq05WqOUCc-gw__large/img/bhoIx-qJzk1ixlDEz6ByDAMoRVE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8725614.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7719144",
+        "caption": "Russian edition (box front side, prototype)",
+        "url": "https://cf.geekdo-images.com/UFX8c_StKJoshGzMkvmq2w__large/img/D55pRIFfW_03IM2LYxoeFTdP9AU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7719144.png",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8620321",
+      "url": "https://cf.geekdo-images.com/9pod9WHmAmnX0KuaHMqH3A__large/img/DstqUqwcGwir5YZpUJ_yFvFjcsE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8620321.jpg",
+      "caption": "TacTiki, Drawlab Entertainment, 2022 — back cover",
+      "score": 2.5,
+      "aspect": 0.998,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/tactiki-266592/back-src.jpg"
+    }
+  }
+}

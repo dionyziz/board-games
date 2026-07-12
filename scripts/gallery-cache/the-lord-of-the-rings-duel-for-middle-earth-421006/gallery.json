@@ -1,0 +1,41 @@
+{
+  "bggId": 421006,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.762,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8361253",
+        "caption": "The Lord of the Rings: Duel for Middle-earth - NL - Box Back",
+        "url": "https://cf.geekdo-images.com/h7_macnYnyyqhmittuhmTw__large/img/tklVjqpHKd2ZGMiHXtC69CBHpVo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8361253.png",
+        "score": 2
+      },
+      {
+        "imageid": "8737807",
+        "caption": "Ukrainian edition, 2024 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/vQ3RLsShFkS2w1x8xf_y4w__large/img/SoT0BRk8hW1R_lzgV-_GuiHL35Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8737807.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8265903",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/mCD1ZCfRCvR_WSLs5veuYA__large/img/nPi1WbmrRmi8Uozl8ox8VJH1_7U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8265903.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8737807",
+      "url": "https://cf.geekdo-images.com/vQ3RLsShFkS2w1x8xf_y4w__large/img/SoT0BRk8hW1R_lzgV-_GuiHL35Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8737807.jpg",
+      "caption": "Ukrainian edition, 2024 Igromag, Back of the box",
+      "score": 2,
+      "aspect": 0.936,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-lord-of-the-rings-duel-for-middle-earth-421006/back-src.jpg"
+    }
+  }
+}

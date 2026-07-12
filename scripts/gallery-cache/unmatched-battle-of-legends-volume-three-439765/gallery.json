@@ -1,0 +1,42 @@
+{
+  "bggId": 439765,
+  "fetched": 56,
+  "done": true,
+  "frontAspect": 0.777,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9324705",
+        "caption": "Ukrainian edition, 2026 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/Im9aXO35iqEV24quhH9yaw__large/img/ZHuaXcwuQZeNrIOszyRYAc-MZKU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9324705.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9133274",
+        "caption": "French edition box art (back)",
+        "url": "https://cf.geekdo-images.com/fhm4iqCBJj_sGcERbBrRzg__large/img/KyReFUTfV6KHxFaYKO1cweF-9IM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9133274.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "8722857",
+        "caption": "Unmatched BoL Vol. 3 - IELLO Box Top",
+        "url": "https://cf.geekdo-images.com/mef5UkZvZTIraaVy2PXxIQ__large/img/wo5iWPmFhKEm9uPp1XFD3swZlKw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8722857.png",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9324705",
+      "url": "https://cf.geekdo-images.com/Im9aXO35iqEV24quhH9yaw__large/img/ZHuaXcwuQZeNrIOszyRYAc-MZKU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9324705.jpg",
+      "caption": "Ukrainian edition, 2026 Geekach, Back of the box",
+      "score": 2,
+      "aspect": 0.757,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/unmatched-battle-of-legends-volume-three-439765/back-src.jpg"
+    }
+  }
+}

@@ -109,39 +109,56 @@ function normalizeToward(data, ch, src, ref, strength = 0.8) {
     data[i + c] = Math.max(0, Math.min(255, data[i + c] + (matched - data[i + c]) * strength));
   }
 }
+let REF = null; // front-cover stats (reference), set in the runner
 
-// ---- idempotency guard: never regenerate an upgraded face ------------------
-// A face already sourced from a real photo or an art-derived upgrade is kept
-// as-is; only procedural/absent faces are (re)generated. --force overrides.
+// crop a photo to a face rectangle (rotating 90° if the strip runs the other
+// way) and normalize it to the front. Used for every photographic face.
+async function makePhotoFace(src, targetW, targetH, out) {
+  const oriented = await sharp(src, { failOn: 'none' }).rotate().toBuffer(); // honor EXIF
+  const m = await sharp(oriented).metadata();
+  let pipe = sharp(oriented);
+  if ((targetW >= targetH) !== ((m.width || 1) >= (m.height || 1))) pipe = pipe.rotate(90);
+  const { data, info } = await pipe.resize(targetW, targetH, { fit: 'cover', position: 'centre' })
+    .removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  if (REF) normalizeToward(data, info.channels, statsFromRaw(data, info.channels), REF, 0.82);
+  await sharp(data, { raw: { width: info.width, height: info.height, channels: info.channels } })
+    .webp({ quality: 86, effort: 4 }).toFile(out);
+}
+
+// ---- photographic candidates chosen by 8-fetch-gallery.js (per face) -------
+let galleryChosen = {};
+const galleryFile = path.join(__dirname, 'gallery-cache', g.id, 'gallery.json');
+if (fs.existsSync(galleryFile)) { try { galleryChosen = JSON.parse(fs.readFileSync(galleryFile, 'utf8')).chosen || {}; } catch (e) {} }
+const photoFor = (face) => {
+  if (face === 'back' && backPhoto) return fs.existsSync(backPhoto) ? backPhoto : null;
+  const c = galleryChosen[face];
+  return c && c.file && fs.existsSync(c.file) ? c.file : null;
+};
+
+// ---- tier-aware idempotency guard (photo > cover-derived > procedural) ------
+// Never touch a real photo; keep a cover-derived face UNLESS we now have a photo
+// to upgrade it to; always regenerate procedural. Never downgrades. --force
+// overrides everything. (Protects e.g. a hand-crafted de-projected spine.)
 const prevTex = g.textures || {};
-const PROTECTED = new Set(['photo', 'cover-derived']);
 const kept = {};
 const keepFace = (name) => {
   if (force) return false;
   const e = prevTex[name];
-  return !!(e && PROTECTED.has(e.source) && fs.existsSync(path.join(dir, name + '.webp')));
+  if (!e || !fs.existsSync(path.join(dir, name + '.webp'))) return false;
+  if (e.source === 'photo') return true;
+  if (e.source === 'cover-derived') return !photoFor(name);
+  return false;
 };
 
 // ---- 2. back: real photo (cropped + normalized) if provided, else procedural
 const sources = {};
 const normalized = {};
-async function makeBack(refStats) {
+async function makeBack() {
   if (keepFace('back')) { kept.back = true; return; }
   const out = path.join(dir, 'back.webp');
-  const faceAspect = face.w / face.h;
-  if (backPhoto && fs.existsSync(backPhoto)) {
-    const meta = await sharp(backPhoto).metadata();
-    const long = Math.max(meta.width, meta.height);
-    const scale = long > 1024 ? 1024 / long : 1;
-    const w = Math.round(meta.width * scale);
-    const { data, info } = await sharp(backPhoto)
-      .resize(w, Math.round(meta.height * scale))
-      // center-crop to the exact back-face aspect (front == back dims)
-      .resize({ width: w, height: Math.round(w / faceAspect), fit: 'cover', position: 'centre' })
-      .removeAlpha().raw().toBuffer({ resolveWithObject: true });
-    normalizeToward(data, info.channels, statsFromRaw(data, info.channels), refStats, 0.82);
-    await sharp(data, { raw: { width: info.width, height: info.height, channels: info.channels } })
-      .webp({ quality: 84, effort: 4 }).toFile(out);
+  const src = photoFor('back');
+  if (src) {
+    await makePhotoFace(src, Math.round(face.w * PX), Math.round(face.h * PX), out);
     sources.back = 'photo';
     normalized.back = true;
     return;
@@ -162,6 +179,8 @@ async function makeSpine(accent) {
   if (keepFace('spine')) { kept.spine = true; return; }
   const out = path.join(dir, 'spine.webp');
   const W = Math.round(face.d * PX), H = Math.round(face.h * PX); // tall, narrow
+  const photo = photoFor('spine');
+  if (photo) { await makePhotoFace(photo, W, H, out); sources.spine = 'photo'; normalized.spine = true; return; }
   const title = esc(g.title);
   const pub = esc((g.publishers && g.publishers[0]) || '');
   const font = fitFont(g.title, H * 0.8, W * 0.5);
@@ -191,6 +210,8 @@ async function makeTop(accent) {
   if (keepFace('top')) { kept.top = true; return; }
   const out = path.join(dir, 'top.webp');
   const W = Math.round(face.w * PX), H = Math.round(face.d * PX); // wide, short
+  const photo = photoFor('top');
+  if (photo) { await makePhotoFace(photo, W, H, out); sources.top = 'photo'; normalized.top = true; return; }
   const title = esc(g.title);
   const font = fitFont(g.title, W * 0.82, H * 0.5);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
@@ -212,6 +233,8 @@ async function makeBottom() {
   if (keepFace('bottom')) { kept.bottom = true; return; }
   const out = path.join(dir, 'bottom.webp');
   const W = Math.round(face.w * PX), H = Math.round(face.d * PX);
+  const photo = photoFor('bottom');
+  if (photo) { await makePhotoFace(photo, W, H, out); sources.bottom = 'photo'; normalized.bottom = true; return; }
   let bars = '';
   let x = W * 0.06;
   const seed = g.bggId || 1;
@@ -233,9 +256,10 @@ async function makeBottom() {
 
 (async () => {
   // front cover = the reference; compute its stats and never modify it
-  const refStats = await channelStats(path.join(dir, 'cover.webp'));
+  const coverPath = path.join(dir, 'cover.webp');
+  REF = fs.existsSync(coverPath) ? await channelStats(coverPath) : null;
   const accent = await accentFromCover();
-  await Promise.all([makeBack(refStats), makeSpine(accent), makeTop(accent), makeBottom()]);
+  await Promise.all([makeBack(), makeSpine(accent), makeTop(accent), makeBottom()]);
 
   // ---- 6. write data model back -------------------------------------------
   // kept faces keep their existing entry verbatim; regenerated faces get a fresh one

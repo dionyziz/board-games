@@ -1,0 +1,52 @@
+{
+  "bggId": 448271,
+  "fetched": 70,
+  "done": true,
+  "frontAspect": 0.48,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9243536",
+        "caption": "Box Back (English edition)",
+        "url": "https://cf.geekdo-images.com/lvveF__tGS_JeHKPx96yQg__large/img/ORBqUZgKl4Kg693ahblguKapHBk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9243536.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9274633",
+        "caption": "Ukrainian edition, 2026 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/E9KYz73eLH8o64GlLrfnng__large/img/gyaR2udCPO63EHWOinmX6A6KT6I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9274633.png",
+        "score": 2
+      },
+      {
+        "imageid": "9243531",
+        "caption": "Back cover (French edition)",
+        "url": "https://cf.geekdo-images.com/0_hhqZgN7kOO6T8V6ixvhg__large/img/iTk_NaA_zQXDQRfwSIUno-WgeA8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9243531.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9546127",
+        "caption": "Italian Edition, Game Box Rear",
+        "url": "https://cf.geekdo-images.com/VmtHxCC5X7YRrzKwA1NN4Q__large/img/cxTa8PuOBhD2pC9wVft5-4CFWqk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9546127.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9545974",
+        "caption": "Italian Edition Box Front and Rear",
+        "url": "https://cf.geekdo-images.com/ubdONuSXYxeFbjCFmEIYIQ__large/img/SpJZjfNKF41Rdv2h9vkjZceE8dI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9545974.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9148242",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/mQ7PEZF72d1VXvrCfrB0nQ__large/img/RrFKmbg37y9y6_dn8SZLf4hAaNs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9148242.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

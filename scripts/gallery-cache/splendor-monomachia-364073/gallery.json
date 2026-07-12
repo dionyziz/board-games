@@ -1,0 +1,72 @@
+{
+  "bggId": 364073,
+  "fetched": 194,
+  "done": true,
+  "frontAspect": 0.73,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7728582",
+        "caption": "English ed (2022) Box . Back",
+        "url": "https://cf.geekdo-images.com/Z-RCqHlu8AVIvqTC1E8tZg__large/img/3n8zRq7JVGUNAJtFE0Hxx1AoCoM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7728582.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7156197",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/OzwU-x76dg011eCW5e7Rmg__large/img/nVon2qSbTd9FOXPYJGTi_iB5sGk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7156197.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "7029606",
+        "caption": "Splendor Duel ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/kRvetpn1RK2JP-4ER-mQnA__large/img/7gIhqKAphlDLtm2ylSv4v7hq0OI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7029606.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7170308",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/kcAWONlvm43ChrxDoLnH-A__large/img/FL9UunPB4fS8he4LcfI8vSpy1Ak=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7170308.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7120530",
+        "caption": "German edition - back",
+        "url": "https://cf.geekdo-images.com/Iz8ybiwnx24jt88GsHxVHQ__large/img/KcMu-YdX5WzSB4RvB6j8rtSj2wk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7120530.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7714846",
+        "caption": "Spanish Back box",
+        "url": "https://cf.geekdo-images.com/B6cHVvjdG8jIZ_tF-cBFvA__large/img/ux80ef0KcX46X1ZX6wgXTLE1hNw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7714846.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9644022",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/QC5qaLbIgp0aWmyzWHxP7g__large/img/ByiisW-6gYX-SoeQgMTovGlF75Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9644022.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9644021",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/dRgXXh8Cx496z7ynQB4dQw__large/img/A4JXoFrgX_OYMHUk3WN_7Rca68c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9644021.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7728582",
+      "url": "https://cf.geekdo-images.com/Z-RCqHlu8AVIvqTC1E8tZg__large/img/3n8zRq7JVGUNAJtFE0Hxx1AoCoM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7728582.jpg",
+      "caption": "English ed (2022) Box . Back",
+      "score": 3.5,
+      "aspect": 0.716,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/splendor-monomachia-364073/back-src.jpg"
+    }
+  }
+}

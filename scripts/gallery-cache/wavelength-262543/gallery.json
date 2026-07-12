@@ -1,0 +1,48 @@
+{
+  "bggId": 262543,
+  "fetched": 107,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6069746",
+        "caption": "Wavelength Greek edition back",
+        "url": "https://cf.geekdo-images.com/a1RUX946ZGT7aS28REqR-A__large/img/RnLAYOfKQI25kY5wCIFNDVnHuwU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6069746.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8502832",
+        "caption": "Ukrainian edition, 2023 Lord of Boards, Back of the box (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/4lL-Aeby7_V2Jdo6nSVjHQ__large/img/enJeEtICAglLf2bAd0sxkXe5lJ4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8502832.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9088514",
+        "caption": "Back cover RO",
+        "url": "https://cf.geekdo-images.com/KNJpCraPL4oCXw5xCFz0bQ__large/img/H4dpqBTNa3BJF79KHg3exBVRyf4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9088514.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8580867",
+        "caption": "\"RIght side of the brains\" score track",
+        "url": "https://cf.geekdo-images.com/M2VOqvjSAjhifw7wgwUxqg__large/img/tSe43AvJTqKP1F84IdPXZTs_sts=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8580867.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6069746",
+      "url": "https://cf.geekdo-images.com/a1RUX946ZGT7aS28REqR-A__large/img/RnLAYOfKQI25kY5wCIFNDVnHuwU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6069746.jpg",
+      "caption": "Wavelength Greek edition back",
+      "score": 2,
+      "aspect": 1.02,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/wavelength-262543/back-src.jpg"
+    }
+  }
+}

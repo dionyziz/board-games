@@ -1,0 +1,66 @@
+{
+  "bggId": 380619,
+  "fetched": 190,
+  "done": true,
+  "frontAspect": 1.002,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8912965",
+        "caption": "English retail edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/9WbeoGBT9yrlJEaQmk_z7A__large/img/ickUL_I34jrVbxbSh7PEWgopYN8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8912965.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "8338717",
+        "caption": "Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/jaahKqoJLL-FiwgSoWwaSA__large/img/i3mLq8QmPTt9NQbpzq4M2mCXyHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8338717.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8690160",
+        "caption": "Russian editon (box back)",
+        "url": "https://cf.geekdo-images.com/ExIa-AAvWojJ8fKEMijvPQ__large/img/9f9QJ_zM4oFPVIvgu0tTYGMkJU0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8690160.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8699323",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/7OHhmKu00nUpZ5zmZaE2Cg__large/img/6j4scaxoqVPF2sBdNAtDg4nIPn4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8699323.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8671021",
+        "caption": "Cyclades: Legendární edice – Czech Edition Back",
+        "url": "https://cf.geekdo-images.com/0vNNOdQTLHBzkUiugGCxgQ__large/img/EqY3Urmd3sws0nTjeba2Dmvr-wI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8671021.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8699322",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/rNcLFlj9VaXdt_VXUs1LaA__large/img/ySiVgi9SATvt9qXfGl9NnYbXQdE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8699322.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8699323",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/7OHhmKu00nUpZ5zmZaE2Cg__large/img/6j4scaxoqVPF2sBdNAtDg4nIPn4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8699323.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8338717",
+      "url": "https://cf.geekdo-images.com/jaahKqoJLL-FiwgSoWwaSA__large/img/i3mLq8QmPTt9NQbpzq4M2mCXyHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8338717.jpg",
+      "caption": "Back, Ukrainian edition",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cyclades-legendary-edition-380619/back-src.jpg"
+    }
+  }
+}

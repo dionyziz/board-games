@@ -1,0 +1,54 @@
+{
+  "bggId": 329954,
+  "fetched": 133,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6519448",
+        "caption": "English edition - Back of the box new",
+        "url": "https://cf.geekdo-images.com/S4y39RxdnR9cV1gmFBZ8jA__large/img/vL1hCW5ZRfBqcwq5pUJR2bSSwas=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6519448.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6220374",
+        "caption": "Edition Anniversaire Box Back",
+        "url": "https://cf.geekdo-images.com/KCin5eer1-E9Lh2ogGUaWQ__large/img/Lo6g7zUzwRMInhwsitKtphHMXgo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6220374.png",
+        "score": 2
+      },
+      {
+        "imageid": "8637355",
+        "caption": "Russian edition (box back side with box label)",
+        "url": "https://cf.geekdo-images.com/lSAnWlzJ1Qwr7Cnz0-PdvA__large/img/xHxTKvLg9r4A4vLehDhRbOY2W0g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8637355.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8637355",
+        "caption": "Russian edition (box back side with box label)",
+        "url": "https://cf.geekdo-images.com/lSAnWlzJ1Qwr7Cnz0-PdvA__large/img/xHxTKvLg9r4A4vLehDhRbOY2W0g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8637355.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6276118",
+        "caption": "Carcassonne 20th Anniversary - Map [side view]",
+        "url": "https://cf.geekdo-images.com/NxbAVMzJAzAxTaqS0d-PUQ__large/img/p7g4RRSedisjzWp5-8RAHvaf9u8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6276118.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "6524905",
+        "caption": "RU Box Bottom",
+        "url": "https://cf.geekdo-images.com/sZnpnGpnGUs4-cIFYKokHg__large/img/A0WW9eGb2auLqeCS1THVH7Hh73k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6524905.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": null
+  }
+}

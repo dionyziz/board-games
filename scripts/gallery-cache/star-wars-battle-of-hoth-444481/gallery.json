@@ -1,0 +1,59 @@
+{
+  "bggId": 444481,
+  "fetched": 249,
+  "done": true,
+  "frontAspect": 1.37,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8875228",
+        "caption": "Ukrainian edition, 2025 Geekach, Back of the box",
+        "url": "https://cf.geekdo-images.com/fbBb4IxwvTbkhwZdO0FRZQ__large/img/CWFzhR3nfgApX7QIAT_wZWE-8r8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8875228.png",
+        "score": 2
+      },
+      {
+        "imageid": "8963466",
+        "caption": "Box back, Romanian edition",
+        "url": "https://cf.geekdo-images.com/z-OZNqlhkqFpcEAnmAamOg__large/img/uPBiwSpaDV2bEKKXgO0CDUyQX4s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8963466.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9078682",
+        "caption": "The Empire striking back...",
+        "url": "https://cf.geekdo-images.com/wGTHVdawGmF4vQn8pgTIcg__large/img/wLz8_2vYNuixjfnvLdvaes3HV8k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9078682.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9535117",
+        "caption": "The Empire Strikes Back.",
+        "url": "https://cf.geekdo-images.com/4d1y6JQcfHuLeQt3E62zmQ__large/img/oe0FTe_dLztTfamepD6EUTXrRx4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9535117.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9535118",
+        "caption": "The Empire Strikes Back.",
+        "url": "https://cf.geekdo-images.com/xx2m1ow5YQPbH_rE0HzbJQ__large/img/pqKjy-8y5Pu_uHnr4IDacNmHS4I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9535118.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9128948",
+        "caption": "The Empire Strikes Back!",
+        "url": "https://cf.geekdo-images.com/SggRmkp8JLcF5GjPv42MTw__large/img/rWLRm37-VItZyMq-J11xZ83nxa0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9128948.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8875228",
+      "url": "https://cf.geekdo-images.com/fbBb4IxwvTbkhwZdO0FRZQ__large/img/CWFzhR3nfgApX7QIAT_wZWE-8r8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8875228.png",
+      "caption": "Ukrainian edition, 2025 Geekach, Back of the box",
+      "score": 2,
+      "aspect": 1.369,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/star-wars-battle-of-hoth-444481/back-src.png"
+    }
+  }
+}

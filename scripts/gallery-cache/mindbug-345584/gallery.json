@@ -1,0 +1,84 @@
+{
+  "bggId": 345584,
+  "fetched": 160,
+  "done": true,
+  "frontAspect": 0.708,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7590402",
+        "caption": "Box Back Nerdlab Games",
+        "url": "https://cf.geekdo-images.com/Q027W5u1BxOyDLT2Sxqv8g__large/img/Q2LjbokJcHAntr1_ul_QKp9VFaA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7590402.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8853382",
+        "caption": "English 3rd edition (2023) Box . Back",
+        "url": "https://cf.geekdo-images.com/JsJBRA9O6-mu30_JMFxiHA__large/img/Jp68QwlZjqViizf4CJ3px3RufXs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8853382.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7398430",
+        "caption": "Mindbug ‐ IELLO French edition - back",
+        "url": "https://cf.geekdo-images.com/tWRgLnew4uqIyl5bcsYZcA__large/img/v47G7kBnndwmh90fqfIryCsgfjU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7398430.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6561530",
+        "caption": "Box (back)",
+        "url": "https://cf.geekdo-images.com/tEiZzc5TJvLrAz0GtRqgwQ__large/img/ysDsxxR-I7H9J3nUUqC5mWQ7CpM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6561530.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9491207",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/97UT7C0rYebXX3XmGzj-BA__large/img/kRcv0igdR-2rfRg3pNFk-Mw4eSA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491207.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8190600",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/NjZCeRRBJ-ipW3OD7Xh_wA__large/img/yJiHq_2WSoMt0izxvV9MEhKmX64=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8190600.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9491207",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/97UT7C0rYebXX3XmGzj-BA__large/img/kRcv0igdR-2rfRg3pNFk-Mw4eSA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491207.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9491206",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/KDdr5m_ChBwFRassFvrSgQ__large/img/s_g3J8gJQpmg28IJ60VCGchAm9U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9491206.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9370530",
+        "caption": "Russian edition (3d box front side)",
+        "url": "https://cf.geekdo-images.com/DvIPGtfSXT4KL_Y4A2fkrA__large/img/puBu129or8c3xZy1yNGxbYPYGzI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9370530.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8689451",
+        "caption": "Deluxe-BigBox (German) - Side",
+        "url": "https://cf.geekdo-images.com/vxfJtER4W95Ab1sRy-Ha8w__large/img/kQbdNdVsm_yjdhDGfG4uO9wOj-Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8689451.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6561530",
+      "url": "https://cf.geekdo-images.com/tEiZzc5TJvLrAz0GtRqgwQ__large/img/ysDsxxR-I7H9J3nUUqC5mWQ7CpM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6561530.jpg",
+      "caption": "Box (back)",
+      "score": 2,
+      "aspect": 0.563,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/mindbug-345584/back-src.jpg"
+    }
+  }
+}

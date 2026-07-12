@@ -1,0 +1,73 @@
+{
+  "bggId": 367220,
+  "fetched": 225,
+  "done": true,
+  "frontAspect": 0.73,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7102892",
+        "caption": "Sea Salt & Paper ‐ English/French edition - back",
+        "url": "https://cf.geekdo-images.com/V6KnWKvUZ0Yyc-6SrhUb_A__large/img/s3DPK0LcuNKvtRATR9M30M3wBCY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7102892.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8492828",
+        "caption": "Sea Salt & Paper, English 3rd printing May 2024, box back",
+        "url": "https://cf.geekdo-images.com/MQgz4F35zNMnDtrwDH1IkQ__large/img/B44XvAx0Bn4xddJ7g3F39Evy4oE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8492828.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8513699",
+        "caption": "Back Box (English/Filipino Edition)",
+        "url": "https://cf.geekdo-images.com/vzo8OmE4Toqv83uzBv1SQQ__large/img/JqJenbcEc-c6jP_zse9nKpJBd3Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8513699.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7582576",
+        "caption": "Back Cover (Czech Edition)",
+        "url": "https://cf.geekdo-images.com/ugrxFbpYRnsoxsMZFYREog__large/img/z_4D6LVNqUARbwgEgwc2Qd_eCMg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7582576.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7246667",
+        "caption": "Back of box",
+        "url": "https://cf.geekdo-images.com/Q7n9pS_xPtzkzTXi_7BXsw__large/img/k14CQBXTB2NSD6vEwsuwvQvjUCU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7246667.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7559111",
+        "caption": "Russian edition (box back cover)",
+        "url": "https://cf.geekdo-images.com/dlHLc0MpXPJ0_sF5_-2zIw__large/img/6BUB9Lw9pU0kv_NU4mNfZhA4URc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7559111.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7246682",
+        "caption": "Side of box and game details",
+        "url": "https://cf.geekdo-images.com/bW4O7158mL_JBy00_6Ctdg__large/img/NIXUKm2ePjLFKQR148xkfJntSlA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7246682.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "7747688",
+        "caption": "box top",
+        "url": "https://cf.geekdo-images.com/gWb2T9jGfl_jrJQpWj-OOw__large/img/EHdDcpIhSrsBDOC4n182uI1YUdM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7747688.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8492828",
+      "url": "https://cf.geekdo-images.com/MQgz4F35zNMnDtrwDH1IkQ__large/img/B44XvAx0Bn4xddJ7g3F39Evy4oE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8492828.jpg",
+      "caption": "Sea Salt & Paper, English 3rd printing May 2024, box back",
+      "score": 3.5,
+      "aspect": 0.736,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/thalassa-charti-alati-367220/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "bggId": 120515,
+  "fetched": 32,
+  "done": true,
+  "frontAspect": 0.592,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4221063",
+        "caption": "English second edition 2nd printing - Back of the box",
+        "url": "https://cf.geekdo-images.com/r4Cx923fdGh_C2n5wpv90Q__large/img/E10jFPd8earSJjUMHwcVWxk_w50=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4221063.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1363811",
+        "caption": "Box Back (closeup)",
+        "url": "https://cf.geekdo-images.com/GFpJK0u0Vn6YkW7eLXN_BA__large/img/XViZZRdps0Vmc6QwzNV5bWun3Sg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1363811.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1890324",
+        "caption": "edge first edition cover (french/spanish)",
+        "url": "https://cf.geekdo-images.com/JQTEz_WVr-kkJ7_IYmMsbQ__large/img/Ra1dRo-8sTspmIoLvnNF8aadM9s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1890324.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4221063",
+      "url": "https://cf.geekdo-images.com/r4Cx923fdGh_C2n5wpv90Q__large/img/E10jFPd8earSJjUMHwcVWxk_w50=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4221063.jpg",
+      "caption": "English second edition 2nd printing - Back of the box",
+      "score": 3.5,
+      "aspect": 0.56,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chupacabra-survive-the-night-120515/back-src.jpg"
+    }
+  }
+}

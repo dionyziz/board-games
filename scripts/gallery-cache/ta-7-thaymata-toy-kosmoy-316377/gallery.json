@@ -1,0 +1,60 @@
+{
+  "bggId": 316377,
+  "fetched": 100,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5619001",
+        "caption": "7 Wonders, Repos Production, 2020 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/yZ4bBIE9tLMpTzB14cVjyg__large/img/X_A7PXoREJsGdyp4_LIZub5h4_s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5619001.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "5667667",
+        "caption": "Back of the Dutch edition",
+        "url": "https://cf.geekdo-images.com/zcSYBtT1iP_SP1tQ9ibang__large/img/1wmYDcdVaCX48T8NWOKRsectGtQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5667667.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6042703",
+        "caption": "Italian Edition - Back (Second Edition)",
+        "url": "https://cf.geekdo-images.com/rdgUukZia9RIOrpixefuqg__large/img/5HL0VUbli9o73MlLxxFxHiCEHCM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6042703.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9094186",
+        "caption": "Ukrainian edition, 2021 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/8qRt2sVLUGT-LQAHpJktww__large/img/zivgTmxQqO9ayxSq19G0kr5H51w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9094186.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5846212",
+        "caption": "Nordic box, back",
+        "url": "https://cf.geekdo-images.com/8G2wQJeQq-v3yFSlHhGpiQ__large/img/f-wSpCY4LlQxjhpAPcdNg2d63kA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5846212.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8197552",
+        "caption": "54 points for second place in a 6-Wonder game by myself on my floor.  Babylon won by just 2 points.  I managed to make a higher score for Olympia than for Giza, Rhodes, Ephesos, and Alexandria.  Night side for all Wonders.",
+        "url": "https://cf.geekdo-images.com/u8_Y2WMnLiDNMIdBkh-sGw__large/img/CMZrqUypTo3xe1tGthH_0BKYXVE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8197552.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5619001",
+      "url": "https://cf.geekdo-images.com/yZ4bBIE9tLMpTzB14cVjyg__large/img/X_A7PXoREJsGdyp4_LIZub5h4_s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5619001.jpg",
+      "caption": "7 Wonders, Repos Production, 2020 — back cover (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.999,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ta-7-thaymata-toy-kosmoy-316377/back-src.jpg"
+    }
+  }
+}

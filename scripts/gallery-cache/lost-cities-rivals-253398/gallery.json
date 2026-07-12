@@ -1,0 +1,49 @@
+{
+  "bggId": 253398,
+  "fetched": 57,
+  "done": true,
+  "frontAspect": 0.723,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4137631",
+        "caption": "Lost Cities: Rivals, KOSMOS, 2018 — back cover",
+        "url": "https://cf.geekdo-images.com/PqR08RNY7apQNrXclu1SLw__large/img/oArz2I_Nfj92LU1Irq7UzekeIRY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4137631.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "5796376",
+        "caption": "Romanian edition (back)",
+        "url": "https://cf.geekdo-images.com/PudLymrJ29V18ApECdsdoA__large/img/KxrdK-Jhzi4o98lpt_z8p-xobWA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5796376.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "5482627",
+        "caption": "Lost Cities : les rivaux, box top, FR, IELLO, 2019",
+        "url": "https://cf.geekdo-images.com/cdXOWjwPobzjhCkEyZ7qIw__large/img/d1RosminEAF1WOEhHHi70QJvBPc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5482627.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "5482626",
+        "caption": "Lost Cities : les rivaux, box bottom, FR, IELLO, 2019",
+        "url": "https://cf.geekdo-images.com/pBHSJL9msmCPsdZDmCgvLw__large/img/zG_XHtOsipTVL_Kfs58_NXhniIs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5482626.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5796376",
+      "url": "https://cf.geekdo-images.com/PudLymrJ29V18ApECdsdoA__large/img/KxrdK-Jhzi4o98lpt_z8p-xobWA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5796376.jpg",
+      "caption": "Romanian edition (back)",
+      "score": 2,
+      "aspect": 0.732,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/lost-cities-rivals-253398/back-src.jpg"
+    }
+  }
+}

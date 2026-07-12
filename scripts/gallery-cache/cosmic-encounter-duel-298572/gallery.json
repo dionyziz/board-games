@@ -1,0 +1,35 @@
+{
+  "bggId": 298572,
+  "fetched": 54,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8734353",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/LIMwaQ_0nQje6gsepzlIBg__large/img/0QCTlS72jsN9Oh3Sxf7fluDhciU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8734353.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9509252",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/x4l1qJnjvIcqYbULzQQnNg__large/img/7mYYw_LbTu8hyHradx_m0MHPAVw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9509252.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8734353",
+      "url": "https://cf.geekdo-images.com/LIMwaQ_0nQje6gsepzlIBg__large/img/0QCTlS72jsN9Oh3Sxf7fluDhciU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8734353.jpg",
+      "caption": "German edition, back cover",
+      "score": 2,
+      "aspect": 0.997,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cosmic-encounter-duel-298572/back-src.jpg"
+    }
+  }
+}

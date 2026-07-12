@@ -1,0 +1,66 @@
+{
+  "bggId": 172225,
+  "fetched": 132,
+  "done": true,
+  "frontAspect": 1.46,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9149599",
+        "caption": "Exploding Kittens: 10 Years of Chaos (10th Anniversary Collectible Tin  Edition), tin back",
+        "url": "https://cf.geekdo-images.com/Re4szM6p0dkwZEvGbreKEg__large/img/oMHUCXv3zyNB6RzqYXXcmjL7srk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9149599.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4684090",
+        "caption": "English original edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/gGxG-IH8Ed_gnCgDO6sWVg__large/img/ALlSoZgR4DCGhA1-pxVCuqZPOkQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4684090.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9251012",
+        "caption": "English edition (2021) box back",
+        "url": "https://cf.geekdo-images.com/zbiwzpgEwpufap2oyXC7tg__large/img/-OMkb5URzoYNkGAsM3DBaHOLlIA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9251012.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6753122",
+        "caption": "Eksplozivni mačići (Exploding Kittens) - Serbian first edition - back",
+        "url": "https://cf.geekdo-images.com/FC8Or96RHF1ElzUgse8isA__large/img/X_49-MgArdzErVH9MNWRCD1hsWA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6753122.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6336273",
+        "caption": "Exploding Kittens \"Original Edition\" Back",
+        "url": "https://cf.geekdo-images.com/zu92zYHsTdL9XZMh2T4YYA__large/img/N3yUUybMFF2dtMLUk41UZnvuEO4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6336273.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5074321",
+        "caption": "Back cover (English original version with Kickstarter badge)",
+        "url": "https://cf.geekdo-images.com/rSy3QFnOpTVezcb0mFTzrQ__large/img/LcjTnjbegLrKe_pLcpc3AGwaKlM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5074321.jpg",
+        "score": 2.5
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "6753124",
+        "caption": "Eksplozivni mačići (Exploding Kittens) - Serbian first edition - side",
+        "url": "https://cf.geekdo-images.com/6vwNVzK00mheKq-ps2xyYw__large/img/biYTniFsy8T1m2QfhC6Hlf420Es=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6753124.jpg",
+        "score": 3.5
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9149599",
+      "url": "https://cf.geekdo-images.com/Re4szM6p0dkwZEvGbreKEg__large/img/oMHUCXv3zyNB6RzqYXXcmjL7srk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9149599.jpg",
+      "caption": "Exploding Kittens: 10 Years of Chaos (10th Anniversary Collectible Tin  Edition), tin back",
+      "score": 3.5,
+      "aspect": 1.52,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/exploding-kittens-172225/back-src.jpg"
+    }
+  }
+}

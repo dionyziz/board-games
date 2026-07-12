@@ -1,0 +1,72 @@
+{
+  "bggId": 133473,
+  "fetched": 216,
+  "done": true,
+  "frontAspect": 0.71,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "2647739",
+        "caption": "Back (Game Wright's English tin box edition)",
+        "url": "https://cf.geekdo-images.com/Gs2mTr3t3odssK7wgBN1CQ__large/img/HIcUNQT1pVUPOgmADqphq8zmz9o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2647739.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4448072",
+        "caption": "Gamewright czech/slovak edition (back)",
+        "url": "https://cf.geekdo-images.com/wSZtyYOtkrqFglU0_N5FxA__large/img/cvpvrctSDJ1XEQ3QnrwOiseH0fU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4448072.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1950457",
+        "caption": "Sushi Go!, Gamewright, 2014 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/ID1rgkFE_ZYvOnJYqTwH5Q__large/img/DgnbVMvNNsVgZ87OhiKnqxPrXiE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1950457.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "2396395",
+        "caption": "Italian metal box (rear)",
+        "url": "https://cf.geekdo-images.com/4-Pk2RznmhvhD7MAdd1S3A__large/img/IfSPY6YpTL8hkIXyf0kwl4123dY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2396395.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3376237",
+        "caption": "Back of the box of the multilingual edition",
+        "url": "https://cf.geekdo-images.com/oMCqpug8ckMZjYpQt9FVhA__large/img/aqEat_zMLJXw8leITn8MQqz6XV8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3376237.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8496791",
+        "caption": "Ukrainian edition, 2021 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/MFcoih73IJhwjIzmDbx7jQ__large/img/83D-TsJDaeibteRmurZyn0iQQ5g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8496791.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1741457",
+        "caption": "Sushi Go!: box spine",
+        "url": "https://cf.geekdo-images.com/0x-eXxJHd90fqvpx1cP9oQ__large/img/Je95TPfJbXRUr65aMI2Zn8_Nm6Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1741457.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2617276",
+        "caption": "Box side",
+        "url": "https://cf.geekdo-images.com/5Tq6pLDuexdyD7HS5mSMtQ__large/img/KGUccvh-bCDR8HIo-HSrRmtcW54=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2617276.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "2647739",
+      "url": "https://cf.geekdo-images.com/Gs2mTr3t3odssK7wgBN1CQ__large/img/HIcUNQT1pVUPOgmADqphq8zmz9o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2647739.jpg",
+      "caption": "Back (Game Wright's English tin box edition)",
+      "score": 3.5,
+      "aspect": 0.831,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sushi-go-133473/back-src.jpg"
+    }
+  }
+}

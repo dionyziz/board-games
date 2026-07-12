@@ -1,0 +1,48 @@
+{
+  "bggId": 406652,
+  "fetched": 97,
+  "done": true,
+  "frontAspect": 0.76,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9272641",
+        "caption": "Compile Back German",
+        "url": "https://cf.geekdo-images.com/2B4aGDGPIhry8QqQbaSEaA__large/img/bT1EQR-5NYFpZyic-Btndt3RPtY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9272641.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9410380",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/pSkeJloqlhdUIoLSzGQcew__large/img/DgwHFVVcrcRqEeVuzoH97fNooiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9410380.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "9410374",
+        "caption": "Box - Top",
+        "url": "https://cf.geekdo-images.com/dxS73q2t_duACFcuJ534Tw__large/img/978aixBz3PN51V-XJu3jF0KJBGg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9410374.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9215424",
+        "caption": "The Box Top",
+        "url": "https://cf.geekdo-images.com/Kv0KjHZlW801c11Su_8XPA__large/img/uth9KUCAbpgCgY1ZAL4H-VixYdc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9215424.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "9272641",
+      "url": "https://cf.geekdo-images.com/2B4aGDGPIhry8QqQbaSEaA__large/img/bT1EQR-5NYFpZyic-Btndt3RPtY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9272641.jpg",
+      "caption": "Compile Back German",
+      "score": 1,
+      "aspect": 0.834,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/compile-main-1-406652/back-src.jpg"
+    }
+  }
+}

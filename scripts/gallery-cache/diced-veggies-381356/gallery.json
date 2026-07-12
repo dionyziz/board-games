@@ -1,0 +1,35 @@
+{
+  "bggId": 381356,
+  "fetched": 75,
+  "done": true,
+  "frontAspect": 0.667,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8330579",
+        "caption": "French edition - back",
+        "url": "https://cf.geekdo-images.com/9JiM6R9sBY55wDNMrQlxAA__large/img/VadhtKtVzc_uC6fymhiZirXwGHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8330579.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8192454",
+        "caption": "Back of the Box (Dutch Version by Happy Meeple Games)",
+        "url": "https://cf.geekdo-images.com/ktqzGad2IMwaiQ_DD7efSA__large/img/IOl-qnox1P6invChXVfdWyUGr7o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8192454.jpg",
+        "score": 1.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8330579",
+      "url": "https://cf.geekdo-images.com/9JiM6R9sBY55wDNMrQlxAA__large/img/VadhtKtVzc_uC6fymhiZirXwGHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8330579.jpg",
+      "caption": "French edition - back",
+      "score": 2,
+      "aspect": 0.648,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/diced-veggies-381356/back-src.jpg"
+    }
+  }
+}

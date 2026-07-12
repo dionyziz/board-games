@@ -1,0 +1,66 @@
+{
+  "bggId": 367771,
+  "fetched": 57,
+  "done": true,
+  "frontAspect": 0.69,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6980856",
+        "caption": "English Box Backside",
+        "url": "https://cf.geekdo-images.com/hlsaKuoELrWPPS1GWu7FYA__large/img/zJCMcP3f2utIF3lZ5Lp9z6oxFAA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6980856.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8929530",
+        "caption": "English/French XXL edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/u0CFylIkogq_tiIKLzqk5Q__large/img/CX3pYghYtgvyZ3Ped_kTwBxu2Ro=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8929530.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8929376",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/lMWmBIxNNoECRygEu-B1zw__large/img/tl6mrZMc1Xk0LZ4wAtYRGkynBwg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8929376.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "8881535",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/Zl9gRGD6CYzn_n9C98GaZg__large/img/Q3TONfMLPGBcVk_Njg4sWyDlKjM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8881535.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8699367",
+        "caption": "Italian edition, back cover",
+        "url": "https://cf.geekdo-images.com/23An-mJdZSeaim8Xr0oSNQ__large/img/RoHhlbBZBsy9h-Hq-E2O7eO1Ixk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8699367.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8881535",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/Zl9gRGD6CYzn_n9C98GaZg__large/img/Q3TONfMLPGBcVk_Njg4sWyDlKjM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8881535.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8881534",
+        "caption": "Russian edition (3d box front side)",
+        "url": "https://cf.geekdo-images.com/VW_MWRGvlFhw0sy5d6kvPg__large/img/885s-bZDPzT9NR1XhyHZDmExj98=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8881534.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6980856",
+      "url": "https://cf.geekdo-images.com/hlsaKuoELrWPPS1GWu7FYA__large/img/zJCMcP3f2utIF3lZ5Lp9z6oxFAA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6980856.jpg",
+      "caption": "English Box Backside",
+      "score": 3.5,
+      "aspect": 0.69,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/aneva-sti-sanida-367771/back-src.jpg"
+    }
+  }
+}

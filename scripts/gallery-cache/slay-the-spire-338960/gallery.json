@@ -1,0 +1,35 @@
+{
+  "bggId": 338960,
+  "fetched": 204,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8187110",
+        "caption": "Kickstarter Spanish edition: Front box and back of the Kickstarter Exclusives (there is a typo in there!)",
+        "url": "https://cf.geekdo-images.com/U-IH2yc7_ZfNXhaTUCerpg__large/img/EZvzJ7kA0OE6uJpaiGpqX33aAAg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8187110.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9371571",
+        "caption": "Japanese edition (box front side)",
+        "url": "https://cf.geekdo-images.com/vzB0U2PSqtWRAordxeT3qg__large/img/vpm3SqsqJjDsoHsrHfV5ygwO6yQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9371571.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8689634",
+        "caption": "Hoping mate will give us an edge",
+        "url": "https://cf.geekdo-images.com/Gyin_KjQHpD0rny-4_mAtw__large/img/Y80GdgT65N_8fJxoweJbs9NiRDI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8689634.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

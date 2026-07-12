@@ -1,0 +1,35 @@
+{
+  "bggId": 440606,
+  "fetched": 30,
+  "done": true,
+  "frontAspect": 0.788,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9410389",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/75SrCQKWAdPCFPqFwpBeGw__large/img/kGHsJ4FWuWZjWiNUqsUuO4OgReg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9410389.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [
+      {
+        "imageid": "9410387",
+        "caption": "Box - Top",
+        "url": "https://cf.geekdo-images.com/7aQuyBdWXOYfMz6vi049rQ__large/img/K5d7Nnf9y6Maort23d0LoVOgQI8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9410387.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9215425",
+        "caption": "The Box Top",
+        "url": "https://cf.geekdo-images.com/F_1D_um1F-VPc7qlIICvRw__large/img/xcw9jSmYPC6xN8wZ4ZvgcoKhvx8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9215425.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

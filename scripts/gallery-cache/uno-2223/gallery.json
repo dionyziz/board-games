@@ -1,0 +1,66 @@
+{
+  "bggId": 2223,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.672,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6640855",
+        "caption": "UNO - 1979 Canada Games English/French Edition - box back",
+        "url": "https://cf.geekdo-images.com/Zidacgl_xKKIMim8hnbn4Q__large/img/sWZCA-UHAil93jVAS7u1UnWa3DE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6640855.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2015917",
+        "caption": "Box Back of the English/Spanish/Portuguese/Greek (2003) Edition",
+        "url": "https://cf.geekdo-images.com/U72RmEMqdBmjVX43z7Nb7g__large/img/pTgaVo07q7NpDIVGocvDb98g0oQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2015917.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7938449",
+        "caption": "UNO: English/Spanish/French/Portuguese edition (2020) Back",
+        "url": "https://cf.geekdo-images.com/uYnJOI9rX28nNJEfm57mWw__large/img/mgLtZysksc2rZRchDZA5I_Yo4l8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7938449.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6332151",
+        "caption": "Back of the 2020 English/French edition.",
+        "url": "https://cf.geekdo-images.com/0HDY4kmO7ilwO2zyWEdY9Q__large/img/rOXZL39Nf_hm0LnWZFiZHEr-6eo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6332151.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "2404425",
+        "caption": "Mattel English edition 2012 Back of Box\n",
+        "url": "https://cf.geekdo-images.com/9uMPjcEWsRnhEaBU4VgA-g__large/img/Z9aLkkxhpKSfmMkKKjRjVF6tBn0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2404425.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9102368",
+        "caption": "Uno - Mattel English Edition 2025 - back of box",
+        "url": "https://cf.geekdo-images.com/mNQZyf409vtWk-Qyudj4WA__large/img/bz7PYmP3OvRCWnTmPP17ZbF_zhM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9102368.jpg",
+        "score": 3.5
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "98546",
+        "caption": "Reverse side of Uno game-box, introducing the game",
+        "url": "https://cf.geekdo-images.com/t6b4PEocKE3mx2rzKXWiew__large/img/o-xdTPkdWY3kBi8D9ERyAHUDRtQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic98546.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6640855",
+      "url": "https://cf.geekdo-images.com/Zidacgl_xKKIMim8hnbn4Q__large/img/sWZCA-UHAil93jVAS7u1UnWa3DE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6640855.jpg",
+      "caption": "UNO - 1979 Canada Games English/French Edition - box back",
+      "score": 3.5,
+      "aspect": 0.643,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/uno-2223/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "bggId": 244992,
+  "fetched": 202,
+  "done": true,
+  "frontAspect": 0.757,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4653749",
+        "caption": "English Coiledspring edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/pwa916b2giRNrwb0-F8rDg__large/img/yBpBO1qKS_TfhI5r5CemXlQpHF0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4653749.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7689739",
+        "caption": "\"Nature Line\" edition 2021 back",
+        "url": "https://cf.geekdo-images.com/h7aaE2ou5Xu_eO4vctn0OQ__large/img/Bhh1A4EfUGeT4MQ-TlDFm5OPO7w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7689739.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7224798",
+        "caption": "German/French/Italian edition - back",
+        "url": "https://cf.geekdo-images.com/nHkSG8rNA5ALqHuZFB_UHw__large/img/uCXt7ZB5WPLRxISplYepliWs6Dg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7224798.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5915116",
+        "caption": "pandasaurus games 2018 edition back",
+        "url": "https://cf.geekdo-images.com/LN-tlZ1h_vtJRlbudpLLGw__large/img/Fafnri06NFD43io_QmVZgmAxaSo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5915116.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8755858",
+        "caption": "German third edition with QR code on back cover, back side",
+        "url": "https://cf.geekdo-images.com/-fgAhXYnaRPlcTCBjZTrxQ__large/img/YlsKLZ6dHgZCOZEVvmxFWCu-GJM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8755858.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7217487",
+        "caption": "Czech/Slovak edition 2021 - back",
+        "url": "https://cf.geekdo-images.com/sAG05mkH9pg8wCi3WyPCtA__large/img/4Xndjh6j-t0ZZ5k463gkKnSpCCY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7217487.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5626592",
+        "caption": "The Mind Side of Box",
+        "url": "https://cf.geekdo-images.com/iFrRJVyYUap2dN51t4JjUg__large/img/1hDhhFCZqsHZRE3oonbGvv_RQ3o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5626592.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8755858",
+        "caption": "German third edition with QR code on back cover, back side",
+        "url": "https://cf.geekdo-images.com/-fgAhXYnaRPlcTCBjZTrxQ__large/img/YlsKLZ6dHgZCOZEVvmxFWCu-GJM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8755858.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4653749",
+      "url": "https://cf.geekdo-images.com/pwa916b2giRNrwb0-F8rDg__large/img/yBpBO1qKS_TfhI5r5CemXlQpHF0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4653749.jpg",
+      "caption": "English Coiledspring edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.737,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-mind-244992/back-src.jpg"
+    }
+  }
+}

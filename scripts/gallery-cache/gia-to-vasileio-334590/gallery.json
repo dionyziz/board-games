@@ -1,0 +1,98 @@
+{
+  "bggId": 334590,
+  "fetched": 158,
+  "done": true,
+  "frontAspect": 1.03,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7052745",
+        "caption": "Ukrainian box (back)",
+        "url": "https://cf.geekdo-images.com/EqW5PW3eba2YM1_4I1f7dw__large/img/ta3fN3AIGOmMVkRWMQZVGvmUFPo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7052745.png",
+        "score": 2
+      },
+      {
+        "imageid": "7655354",
+        "caption": "Dereserdő dicsősége | Hungarian edition back",
+        "url": "https://cf.geekdo-images.com/pwd4K3ShALz871y_6c8XNA__large/img/biaG-ASKG53PMhlY2u2ccErkFzA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7655354.png",
+        "score": 2
+      },
+      {
+        "imageid": "9105283",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/RqcfLZXv0OAxqSTFUbxxkw__large/img/vL6W8LT2de6YgpL3vJpRIAjMoac=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9105283.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7681222",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/2M-ZqJW2PXpkvRHvB5fzAg__large/img/a3HqeyWcHyKMFEPhKH4nEil0mYk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7681222.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6311585",
+        "caption": "Box back from Gamecrafter tuckbox",
+        "url": "https://cf.geekdo-images.com/VsnPKqw9Xd8RCM_YoeCAIw__large/img/aWtmKQ0YOF4AxxxHfygk1P-Vbjw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6311585.png",
+        "score": 2
+      },
+      {
+        "imageid": "8257042",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/1SpZrPAPir5isrbudqGQYA__large/img/kqiBB3NkEMCu09saTd1z0usfodU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8257042.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9096649",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/Iha-zYVWPKEFw0P48WYiPA__large/img/quQc31ygMsCjjzxuc8UUKHaW0vA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9096649.png",
+        "score": 2
+      },
+      {
+        "imageid": "9105283",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/RqcfLZXv0OAxqSTFUbxxkw__large/img/vL6W8LT2de6YgpL3vJpRIAjMoac=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9105283.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7577994",
+        "caption": "Side IG AmassGames",
+        "url": "https://cf.geekdo-images.com/I6BE4LcMomUDghbwwGWLaw__large/img/UbKqN_M-hvBv65kGK7ywW9mAey8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7577994.jpg",
+        "score": 1
+      }
+    ],
+    "top": [
+      {
+        "imageid": "8560436",
+        "caption": "German box top of \"For Northwood! A Solo Trick-Taking Game\" (Für Northwood!) by Schwerkraft-Verlag",
+        "url": "https://cf.geekdo-images.com/MIpJwQpyQIb0Pyd_tUML2w__large/img/8rKLXtGZUX0cbeFOLoUhdEGs1i4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8560436.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7577996",
+        "caption": "Top IG AmassGames",
+        "url": "https://cf.geekdo-images.com/yG3b-lN_J3psOE4mQCnABQ__large/img/aGXfcZYfA9u3wMbKik5Gn0TVrzU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7577996.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": [
+      {
+        "imageid": "7577995",
+        "caption": "Bottom IG AmassGames",
+        "url": "https://cf.geekdo-images.com/vFLSSiGcZUeT9vuJoEV4yA__large/img/jLaadVfCVQmzOmahRYGwWG20qlw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7577995.jpg",
+        "score": 1
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7655354",
+      "url": "https://cf.geekdo-images.com/pwd4K3ShALz871y_6c8XNA__large/img/biaG-ASKG53PMhlY2u2ccErkFzA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7655354.png",
+      "caption": "Dereserdő dicsősége | Hungarian edition back",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/gia-to-vasileio-334590/back-src.png"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "bggId": 217372,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.96,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5103514",
+        "caption": "English edition with SDY logo - Back of the box",
+        "url": "https://cf.geekdo-images.com/bJn3s3hYp6zEuGY5d8XAJQ__large/img/ZdWzDsUOQCq0eAIg_BqyY_GW1hE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5103514.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3632937",
+        "caption": "Box back German first edition",
+        "url": "https://cf.geekdo-images.com/Y_DeCmCqF_8UPhY7HJkhZw__large/img/lRzn3RsiDIOWI0enHKXIiprqW_Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3632937.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7088179",
+        "caption": "Spanish back box",
+        "url": "https://cf.geekdo-images.com/GNAcx_fm0doXsT1xOAzzBg__large/img/GKRQODAUqzm60f5inwK1C3bSlRQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7088179.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7010697",
+        "caption": "Wyprawa do El Dorado, Nasza Księgarnia, 2019 — back cover",
+        "url": "https://cf.geekdo-images.com/U9ynVoX7avkiQWhMJ5wJnw__large/img/W6R5cH0l3oHvdOFHb-nlcqb1LNk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7010697.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5103514",
+      "url": "https://cf.geekdo-images.com/bJn3s3hYp6zEuGY5d8XAJQ__large/img/ZdWzDsUOQCq0eAIg_BqyY_GW1hE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5103514.jpg",
+      "caption": "English edition with SDY logo - Back of the box",
+      "score": 3.5,
+      "aspect": 0.742,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/anazitontas-to-el-ntoranto-217372/back-src.jpg"
+    }
+  }
+}

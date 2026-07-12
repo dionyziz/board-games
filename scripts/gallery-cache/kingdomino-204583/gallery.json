@@ -1,0 +1,66 @@
+{
+  "bggId": 204583,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.987,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5763523",
+        "caption": "English Coiledspring edition 2018 - Back of the box",
+        "url": "https://cf.geekdo-images.com/9iU-9fjSHghy1kMS1l_mRg__large/img/BaEdG5-6zVwhM4z5Juw-3M5uHZQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5763523.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8050691",
+        "caption": "Kingdomino - Multilingual LP050917 edition - box back",
+        "url": "https://cf.geekdo-images.com/w5Mo7k4-xa7JCr6ErcpsrQ__large/img/dKYaMeZZRIhISfXyV9a6_YAQ2_k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8050691.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "4289488",
+        "caption": "Multilingual Tile Dispenser Edition Back Cover",
+        "url": "https://cf.geekdo-images.com/0dH9zK4Fh3YIMjBXcsHn7w__large/img/-qnkt-I47uxbQSpAzJ6nFVLUUVM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4289488.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "3902993",
+        "caption": "Kingdomino XXL box back",
+        "url": "https://cf.geekdo-images.com/YxClnO6mhfKe3AXCayilbw__large/img/NGAjETvg0UfO23Jr5GHibtI-mZ4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3902993.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8402663",
+        "caption": "Box Back LP10917 Stock #03600 version",
+        "url": "https://cf.geekdo-images.com/jqIb9lvfLJfzYHk1ymaHLA__large/img/YMAqQrMb1wli6QcDLIJTCDxBPj8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8402663.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6467437",
+        "caption": "Kingdomino - box back",
+        "url": "https://cf.geekdo-images.com/i01PVV81mImYkunKSvImLA__large/img/n4KQESGFBzzEbldH5mUxdKj7G3o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6467437.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "3740477",
+        "caption": "Front and Back side of unpunched parts.  Each Castle is not strictly identical to other colors, as most clearly shown by the windows in  the 2nd row.",
+        "url": "https://cf.geekdo-images.com/nFw3PIIOuRAVQ_N3j1yVdQ__large/img/Gpb-106WmVmVAf2F8mqWegl47Ac=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3740477.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5763523",
+      "url": "https://cf.geekdo-images.com/9iU-9fjSHghy1kMS1l_mRg__large/img/BaEdG5-6zVwhM4z5Juw-3M5uHZQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5763523.jpg",
+      "caption": "English Coiledspring edition 2018 - Back of the box",
+      "score": 3.5,
+      "aspect": 0.87,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/kingdomino-204583/back-src.jpg"
+    }
+  }
+}

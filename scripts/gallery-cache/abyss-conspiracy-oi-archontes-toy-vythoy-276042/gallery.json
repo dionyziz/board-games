@@ -1,0 +1,41 @@
+{
+  "bggId": 276042,
+  "fetched": 81,
+  "done": true,
+  "frontAspect": 0.743,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7307671",
+        "caption": "Conspiracy: Abyss Universe ‐ English only edition - back",
+        "url": "https://cf.geekdo-images.com/IteaCk0xe7NEXGHIVlTK7A__large/img/LG-pbF0O6ohsmFG7c7h4gVDcl5w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7307671.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6070028",
+        "caption": "Back of the box",
+        "url": "https://cf.geekdo-images.com/viEoaxb4Fa-VoeINrbHrCw__large/img/HfTzpDv12rv-0a8yN_g6jImib0s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6070028.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6070144",
+        "caption": "Greek version back",
+        "url": "https://cf.geekdo-images.com/vy6hw3IMGoReQKDWWkkVNg__large/img/ldNGeBwx60EVMHkir1SlPLDqjng=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6070144.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6070144",
+      "url": "https://cf.geekdo-images.com/vy6hw3IMGoReQKDWWkkVNg__large/img/ldNGeBwx60EVMHkir1SlPLDqjng=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6070144.jpg",
+      "caption": "Greek version back",
+      "score": 1,
+      "aspect": 0.73,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/abyss-conspiracy-oi-archontes-toy-vythoy-276042/back-src.jpg"
+    }
+  }
+}

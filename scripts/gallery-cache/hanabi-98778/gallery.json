@@ -1,0 +1,79 @@
+{
+  "bggId": 98778,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.25,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1435573",
+        "caption": "2012 AbacusSpiele Edition (German Language) - Back of the Box",
+        "url": "https://cf.geekdo-images.com/B65XyriYmApxt02N8zWJaw__large/img/UwsiySnZKPIapW7GuCu4iZc9Sjg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1435573.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3485280",
+        "caption": "English edition 2016 box back",
+        "url": "https://cf.geekdo-images.com/uJfNx7sh-iZR1i2CxtAMlg__large/img/K1M4ZIUWYosZADQ2OYkbTpEb3oo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3485280.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4568851",
+        "caption": "Spin Master English edition (Target exclusive) (2015) - back",
+        "url": "https://cf.geekdo-images.com/kiYLkRFBdO31eK-oVZmVcg__large/img/TN-h9_AyDtHDyBXb9yHAOEyX94g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4568851.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1794443",
+        "caption": "ABACUSSPIELE Edition Box back",
+        "url": "https://cf.geekdo-images.com/aw-oSBsYNb8hVCNYQKvNbw__large/img/960LUgnNsuK-0SIkk5IagksazOs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1794443.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1855232",
+        "caption": "Hanabi Extra, ABACUSSPIELE, 2013 - back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/RSKQYYISZFiRuKCkPZcBgw__large/img/bNcCXL9qI4xljSdeMT7VLjH2UW0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1855232.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "2714389",
+        "caption": "Hanabi Fun & Easy - Box back",
+        "url": "https://cf.geekdo-images.com/0OABdP0lg1-jySZHC0QQ6g__large/img/iBwJrJ5MgyUEKJlDn0DJh7aQvkw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2714389.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1684905",
+        "caption": "Storm and Note tokens - showing reverse side (ABACUSSPIELE edition) ",
+        "url": "https://cf.geekdo-images.com/rTtjIB2zNk1ZmpCmmlcdJg__large/img/VM4B2B1_rw2U3LF8YwMjOvMxdYA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1684905.jpg",
+        "score": 1.5
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "2884444",
+        "caption": "Cocktail games at the bottom of the box",
+        "url": "https://cf.geekdo-images.com/zoncCbDeOTkHLUiy1rvG_A__large/img/GNd669QllIJAcAqLZcwqEZAdQ-8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2884444.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1727361",
+        "caption": "Hanabi, English third edition, R&R Games, box bottom",
+        "url": "https://cf.geekdo-images.com/j7ExyrucwzqeOoV35NnCzg__large/img/1HjXE1goUPngyimvtWcwc9e5gAk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1727361.jpg",
+        "score": 3.5
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3485280",
+      "url": "https://cf.geekdo-images.com/uJfNx7sh-iZR1i2CxtAMlg__large/img/K1M4ZIUWYosZADQ2OYkbTpEb3oo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3485280.jpg",
+      "caption": "English edition 2016 box back",
+      "score": 3.5,
+      "aspect": 1.293,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hanabi-98778/back-src.jpg"
+    }
+  }
+}

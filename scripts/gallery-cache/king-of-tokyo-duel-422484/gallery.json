@@ -1,0 +1,79 @@
+{
+  "bggId": 422484,
+  "fetched": 163,
+  "done": true,
+  "frontAspect": 0.78,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8497447",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/Te0jDheUGmzbWIPl3nqTgg__large/img/Qh6ceht0XYonPrFhP98yUiHgt7I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8497447.png",
+        "score": 3.5
+      },
+      {
+        "imageid": "8498486",
+        "caption": "French edition - back",
+        "url": "https://cf.geekdo-images.com/iVzlyRYVsHk0ToXjjdvQ6g__large/img/REriHNhPWCCD3OHzFycsD2Ig3rU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8498486.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9402987",
+        "caption": "Ukrainian edition, 2026 Igromag, Back of the box",
+        "url": "https://cf.geekdo-images.com/LC8H6lJzedE40OEbAfYOJg__large/img/4Q8c53_N_Cd8ftcyWN8Ygg5r9s4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9402987.png",
+        "score": 2
+      },
+      {
+        "imageid": "8510289",
+        "caption": "KoTD the back side of the box",
+        "url": "https://cf.geekdo-images.com/d31NtIYsqQlgi5JAHXyCrw__large/img/-rl7bzUTGQuyxSQOhWIFT9burKM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8510289.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8510305",
+        "caption": "One side of box cover",
+        "url": "https://cf.geekdo-images.com/G0gFTZ_XwPNmSeTNZbCk5A__large/img/aTUjgcAvIhHz9foiqO7Ro_VO1nQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8510305.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8510291",
+        "caption": "Side of the box",
+        "url": "https://cf.geekdo-images.com/oaeLf5AAQEvznDEW8FFfDA__large/img/0yBuUsscjwV16Tp3ALp9s88iEVA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8510291.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8510289",
+        "caption": "KoTD the back side of the box",
+        "url": "https://cf.geekdo-images.com/d31NtIYsqQlgi5JAHXyCrw__large/img/-rl7bzUTGQuyxSQOhWIFT9burKM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8510289.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8510302",
+        "caption": "Side of the cover",
+        "url": "https://cf.geekdo-images.com/uGhu0n8PwhCyaQDHdA2DFA__large/img/UsAv_H2aFAF_EYtorVysTaDdLnU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8510302.jpg",
+        "score": 1
+      }
+    ],
+    "top": [
+      {
+        "imageid": "8243567",
+        "caption": "King of Tokyo Duel - Box Top",
+        "url": "https://cf.geekdo-images.com/Mv8h6f50NWlxqKSmyxIOIw__large/img/aQK6V_qrP9tjnBDmZA7pjnQHkho=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8243567.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8497447",
+      "url": "https://cf.geekdo-images.com/Te0jDheUGmzbWIPl3nqTgg__large/img/Qh6ceht0XYonPrFhP98yUiHgt7I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8497447.png",
+      "caption": "English edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.644,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/king-of-tokyo-duel-422484/back-src.png"
+    }
+  }
+}

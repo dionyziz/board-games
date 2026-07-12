@@ -1,0 +1,29 @@
+{
+  "bggId": 371,
+  "fetched": 19,
+  "done": true,
+  "frontAspect": 0.759,
+  "candidates": {
+    "back": [],
+    "spine": [
+      {
+        "imageid": "590560",
+        "caption": "Mystery Rummy: Murders in the Rue Morgue (Side of box)",
+        "url": "https://cf.geekdo-images.com/YtEoAqxzkXRHdOwiOplbDg__large/img/ozaYZDZD4tmR2-m6blUbFNMtN7o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic590560.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "590561",
+        "caption": "Mystery Rummy: Murders in the Rue Morgue (Top of box)",
+        "url": "https://cf.geekdo-images.com/U1JLdKWATpz7pfwNtcmzIg__large/img/_cPfg5_Ig0dCMuWK2ropd9uO8VY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic590561.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

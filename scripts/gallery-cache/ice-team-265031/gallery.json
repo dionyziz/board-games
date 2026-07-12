@@ -1,0 +1,29 @@
+{
+  "bggId": 265031,
+  "fetched": 37,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "4539451",
+        "caption": "Back box",
+        "url": "https://cf.geekdo-images.com/zo_Mcfkg6te4oQ4g7wXwXA__large/img/vvwgo0QlltCw70q39v12_ppvfTM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4539451.png",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4539451",
+      "url": "https://cf.geekdo-images.com/zo_Mcfkg6te4oQ4g7wXwXA__large/img/vvwgo0QlltCw70q39v12_ppvfTM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4539451.png",
+      "caption": "Back box",
+      "score": 2,
+      "aspect": 0.991,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ice-team-265031/back-src.png"
+    }
+  }
+}

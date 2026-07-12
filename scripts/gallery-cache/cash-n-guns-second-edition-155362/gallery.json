@@ -1,0 +1,66 @@
+{
+  "bggId": 155362,
+  "fetched": 106,
+  "done": true,
+  "frontAspect": 0.88,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3610800",
+        "caption": "English Edition with Awards - Back",
+        "url": "https://cf.geekdo-images.com/4QSpDQP2pDqcLPBAOrXNwg__large/img/TznOHmogf5CXbDT57kOgHC62Su0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3610800.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6330001",
+        "caption": "Back of the French and Hungarian edition",
+        "url": "https://cf.geekdo-images.com/wi9_nH-wgG_NdOcuYZM83Q__large/img/RafOmA_mmX64wAm6KzMNaeQZgyA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6330001.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7364514",
+        "caption": "Box back (Dutch/French edition with geek logo, 2014 edition, 2016 print run)",
+        "url": "https://cf.geekdo-images.com/w2jvdMtobW3ffScSL3ujzg__large/img/ccQI92yIZ84m8iXyKpzLIHG59tY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7364514.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2367329",
+        "caption": "Box back, 2014 Second edition.",
+        "url": "https://cf.geekdo-images.com/5970VJFYOACdTGRFUcAR-w__large/img/BSajzERaHTb1q5Ichq5vchgRYTY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2367329.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2474024",
+        "caption": "Cash'n Guns - sheet 1 - back, 200dpi scan.\n",
+        "url": "https://cf.geekdo-images.com/cNy0Twe4JXihVA3AMv-5JQ__large/img/a7pCNd-pVNeNRozx0WDeViGdBC4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2474024.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "2474026",
+        "caption": "Cash'n Guns - sheet 2 - back, 200dpi scan.",
+        "url": "https://cf.geekdo-images.com/hIwYQ6wWvYvCxoLexXUIzA__large/img/YAP_hT-L9YvWg2cWpKjLjhvGi68=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2474026.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "2319354",
+        "caption": "Rules book and box bottom, showing the box interior artwork",
+        "url": "https://cf.geekdo-images.com/DRbg9TJgBPVgQf9jEJ3oKQ__large/img/YwRxVWiOz9-aphQF5wDMcTesq3c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2319354.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3610800",
+      "url": "https://cf.geekdo-images.com/4QSpDQP2pDqcLPBAOrXNwg__large/img/TznOHmogf5CXbDT57kOgHC62Su0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3610800.jpg",
+      "caption": "English Edition with Awards - Back",
+      "score": 3.5,
+      "aspect": 0.87,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cash-n-guns-second-edition-155362/back-src.jpg"
+    }
+  }
+}

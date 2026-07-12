@@ -1,0 +1,54 @@
+{
+  "bggId": 283155,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.105,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6331478",
+        "caption": "Back of English box",
+        "url": "https://cf.geekdo-images.com/kUFJZyd61KAS6lWMX8XmtQ__large/img/sJKt5Ejz14s0qe4ptVa--xukaHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6331478.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7248292",
+        "caption": "Russian edition cats back",
+        "url": "https://cf.geekdo-images.com/GrMRJUekZxS0EcZXvk2aew__large/img/SNyXJq4DJml0Pu8FV0py5FZ8HGk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7248292.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9209803",
+        "caption": "Ukrainian edition, 2021 Lord of Boards, Back of the box",
+        "url": "https://cf.geekdo-images.com/KvOp2cV37x_4p1Z-JE5IIA__large/img/KYqCIi9EB_NURdyD6y9wB9Wt6kY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9209803.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5753555",
+        "caption": "Calico cats side A",
+        "url": "https://cf.geekdo-images.com/y3iTcUvflfHSYA9ORx34dw__large/img/HVVBjb0pYB2jLGG4UHaZFeZv7bM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5753555.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "5753556",
+        "caption": "Calico cats side B",
+        "url": "https://cf.geekdo-images.com/XJCsa_YVyLFwiifHsfeUHA__large/img/3NAQsGgeaeG-Eujie7wugfhIVo8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5753556.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6331478",
+      "url": "https://cf.geekdo-images.com/kUFJZyd61KAS6lWMX8XmtQ__large/img/sJKt5Ejz14s0qe4ptVa--xukaHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6331478.jpg",
+      "caption": "Back of English box",
+      "score": 3.5,
+      "aspect": 1.011,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/calico-283155/back-src.jpg"
+    }
+  }
+}

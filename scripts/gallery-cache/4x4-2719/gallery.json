@@ -1,0 +1,79 @@
+{
+  "bggId": 2719,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.084,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "5718089",
+        "caption": "English Hasbro 2017 edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/eBwn-et7Y-jAOvgzVa9NUQ__large/img/0qSeNNIP9gfSgJgT0Ez2Tp7MTFw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5718089.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2747857",
+        "caption": "Connect 4 Grab & Go Hasbro Gaming 2014 edition Back of the box",
+        "url": "https://cf.geekdo-images.com/rmAYiIuqBeJo9Ire9PWseQ__large/img/xoOlHcI2fFFq7MA4Z32ijv8Hp7I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2747857.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1344906",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/nv-I8dyHSH9Jb3IPgk5-xQ__large/img/yZE2OC1JlcCP16efYewvbiYfYU0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1344906.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "538623",
+        "caption": "Conecta 4 Portable - Spanish Edition - Back",
+        "url": "https://cf.geekdo-images.com/2r3Ujo_JyBwgHI8DjwuuYA__large/img/Fg4DuUq1qApX9-DRnqCcgnai1jo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic538623.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1585691",
+        "caption": "Dutch Travel Edition - Box Back",
+        "url": "https://cf.geekdo-images.com/5pteRD-Xqe8QppPKdUYFeQ__large/img/aMX1c0BqLuxwoyW57crFN4o7hWE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1585691.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "412455",
+        "caption": "Puissance4 version - box back",
+        "url": "https://cf.geekdo-images.com/cmkQ2PrNOWfJTT_G3cSkjA__large/img/ly587jQNSuCc-gPlBUACRXwQx1s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic412455.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "9015040",
+        "caption": "Rules (in German) on the inner side of the lid",
+        "url": "https://cf.geekdo-images.com/F5gUT8XUDTp0m5ceh6TRcw__large/img/WlCkAn6Oo7noJQEXQ9Skhi7kalk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9015040.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7552894",
+        "caption": "Connect 4: Game Blanket (side view)",
+        "url": "https://cf.geekdo-images.com/Bedhg5awqPODRuwkfl_79A__large/img/vPOs3bcuoBvTNJ6SvG3hkB40N6s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7552894.jpg",
+        "score": 1
+      }
+    ],
+    "top": [
+      {
+        "imageid": "9015040",
+        "caption": "Rules (in German) on the inner side of the lid",
+        "url": "https://cf.geekdo-images.com/F5gUT8XUDTp0m5ceh6TRcw__large/img/WlCkAn6Oo7noJQEXQ9Skhi7kalk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9015040.jpg",
+        "score": 1
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1344906",
+      "url": "https://cf.geekdo-images.com/nv-I8dyHSH9Jb3IPgk5-xQ__large/img/yZE2OC1JlcCP16efYewvbiYfYU0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1344906.jpg",
+      "caption": "Box back",
+      "score": 2,
+      "aspect": 1.035,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/4x4-2719/back-src.jpg"
+    }
+  }
+}

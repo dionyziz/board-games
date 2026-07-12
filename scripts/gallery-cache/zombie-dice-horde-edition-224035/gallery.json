@@ -1,0 +1,35 @@
+{
+  "bggId": 224035,
+  "fetched": 6,
+  "done": true,
+  "frontAspect": 0.632,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9460096",
+        "caption": "Zombie Dice Horde Edition: English box back",
+        "url": "https://cf.geekdo-images.com/MfEYiG6xM5rT4DtqJgEiDA__large/img/2pxRnropQGFCDlHPNpgbutgPlEw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9460096.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "4907110",
+        "caption": "Zombie Würfel: Die Horde, Pegasus Spiele, 2019 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/nQMslytoNKa7aH4fGq1p2A__large/img/G6tgfAOAzcMlN2kV-FsSDGFo1BQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4907110.jpg",
+        "score": 2.5
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "4907110",
+      "url": "https://cf.geekdo-images.com/nQMslytoNKa7aH4fGq1p2A__large/img/G6tgfAOAzcMlN2kV-FsSDGFo1BQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4907110.jpg",
+      "caption": "Zombie Würfel: Die Horde, Pegasus Spiele, 2019 — back cover (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.711,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/zombie-dice-horde-edition-224035/back-src.jpg"
+    }
+  }
+}

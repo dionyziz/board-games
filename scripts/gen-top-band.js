@@ -49,8 +49,11 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
       <stop offset="0.5" stop-color="#000" stop-opacity="0.5"/>
       <stop offset="1" stop-color="#000" stop-opacity="0.15"/></linearGradient></defs>`;
 
+  // don't overwrite a face that already has a real photo (set by 10-gen-faces)
+  const keepTB = (f) => g.textures && g.textures[f] && g.textures[f].source === 'photo' && fs.existsSync(path.join(dir, f + '.webp'));
+
   // ---- TOP: cover-art band + title ----------------------------------------
-  {
+  if (!keepTB('top')) {
     const band = await coverBand(W, H, 0.5, 0.5, 3);
     const font = Math.min(64, Math.floor(W * 0.82 / (0.5 * title.length)));
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${darkGrad}
@@ -63,7 +66,7 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
   }
 
   // ---- BOTTOM: darker cover-art band + barcode + legal --------------------
-  {
+  if (!keepTB('bottom')) {
     const band = await coverBand(W, H, 0.72, 0.3, 5); // dimmer + softer -> reads as underside
     const seed = g.bggId || 1;
     let bars = '', x = W * 0.06;
@@ -89,8 +92,8 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
   // update provenance so the faces are tagged cover-derived (and thus protected
   // by 10-gen-faces.js's idempotency guard on future re-runs)
   g.textures = g.textures || {};
-  g.textures.top = { src: `/textures/${g.id}/top.webp`, source: 'cover-derived', note: 'darkened cover-art band + title (no photo of top exists)' };
-  g.textures.bottom = { src: `/textures/${g.id}/bottom.webp`, source: 'cover-derived', note: 'darkened cover-art band + barcode + legal (no photo of bottom exists)' };
+  if (!keepTB('top')) g.textures.top = { src: `/textures/${g.id}/top.webp`, source: 'cover-derived', note: 'darkened cover-art band + title (no photo of top exists)' };
+  if (!keepTB('bottom')) g.textures.bottom = { src: `/textures/${g.id}/bottom.webp`, source: 'cover-derived', note: 'darkened cover-art band + barcode + legal (no photo of bottom exists)' };
   fs.writeFileSync(path.join(ROOT, 'src/data/games.json'), JSON.stringify(games, null, 2) + '\n');
 
   console.log('wrote top.webp + bottom.webp', W + 'x' + H, 'accent', accent);

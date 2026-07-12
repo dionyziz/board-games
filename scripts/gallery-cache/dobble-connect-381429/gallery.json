@@ -1,0 +1,47 @@
+{
+  "bggId": 381429,
+  "fetched": 27,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8294067",
+        "caption": "Box’s back of the ENG/FRA/SPA version",
+        "url": "https://cf.geekdo-images.com/UoqwXx4UGJQHrywqxYMmkA__large/img/18B7zx6BmJJ8TLXVckf8_8XqfQ4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8294067.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8306874",
+        "caption": "Box rear",
+        "url": "https://cf.geekdo-images.com/qCO64bREhsQ1_iMgdNmHPQ__large/img/Mg2tpj_LR2JKU5Nxr3HI5WPJilc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8306874.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7375369",
+        "caption": "2023 UK box back (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/5YBnNrknTm6ZNadnrl8UPw__large/img/Mj2GtwTRB1TaRn6yJYUWWTnU7MA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7375369.png",
+        "score": 2
+      },
+      {
+        "imageid": "7463080",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/dGt7zz1waXP72uOsJ3lRPg__large/img/5OJWuGPki0WKq-gsOcMBpJja6vo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7463080.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8294067",
+      "url": "https://cf.geekdo-images.com/UoqwXx4UGJQHrywqxYMmkA__large/img/18B7zx6BmJJ8TLXVckf8_8XqfQ4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8294067.jpg",
+      "caption": "Box’s back of the ENG/FRA/SPA version",
+      "score": 2,
+      "aspect": 1.013,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dobble-connect-381429/back-src.jpg"
+    }
+  }
+}

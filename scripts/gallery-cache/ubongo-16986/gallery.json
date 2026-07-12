@@ -1,0 +1,79 @@
+{
+  "bggId": 16986,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1.105,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "1668589",
+        "caption": "rear of box - Kosmos German edition",
+        "url": "https://cf.geekdo-images.com/5S7WV8bMBILtzzZryPK6ig__large/img/VtBBWBI26D9HWFJXNhu1LgjVpmQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1668589.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6249727",
+        "caption": "Italian edition 2020 back side box cover 3D",
+        "url": "https://cf.geekdo-images.com/wKwtCAo5-Cg7nSL0xGZDrg__large/img/6o9CXUXbWrRmyz72MtMFt13V13E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6249727.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "1429601",
+        "caption": "back of the box",
+        "url": "https://cf.geekdo-images.com/g_5wdDb_-uXmpMM8hBuicQ__large/img/eLTr-7aYlWWq3ERiJqBAcq5pKho=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1429601.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5763400",
+        "caption": "Devir Portuguese 2nd edition back box",
+        "url": "https://cf.geekdo-images.com/adEKVwx7q77cXVbbMwcW-A__large/img/PX2qw13b7PdbCWXOdMyhB53NhcM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5763400.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "212172",
+        "caption": "The Swedish edition game box back.",
+        "url": "https://cf.geekdo-images.com/Z_WnUZrDh_h3khIF-gYh4Q__large/img/A9Gd10Y4Emofb1g8K0Qq1ZKqBqo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic212172.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8878337",
+        "caption": "German classic edition, back cover",
+        "url": "https://cf.geekdo-images.com/zoKHIPWFQNykSOQ76sQxtA__large/img/wObJS1Rg1azLZxh702wvUC-aV8M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8878337.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "6249727",
+        "caption": "Italian edition 2020 back side box cover 3D",
+        "url": "https://cf.geekdo-images.com/wKwtCAo5-Cg7nSL0xGZDrg__large/img/6o9CXUXbWrRmyz72MtMFt13V13E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6249727.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "670127",
+        "caption": "ZMan edition: box side",
+        "url": "https://cf.geekdo-images.com/Xke2tdA8uYUFj_-gIl29Mw__large/img/IKowFccdGy5u8vxAuKlsrf3SimM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic670127.jpg",
+        "score": 2
+      }
+    ],
+    "top": [
+      {
+        "imageid": "755708",
+        "caption": "Italian Edition - Box lid",
+        "url": "https://cf.geekdo-images.com/gR6DJJ1ddT-vhNHBMr-Y_Q__large/img/aFkq3XWBMjsYz_pZcTu1zMVYiwc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic755708.jpg",
+        "score": 2
+      }
+    ],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "1668589",
+      "url": "https://cf.geekdo-images.com/5S7WV8bMBILtzzZryPK6ig__large/img/VtBBWBI26D9HWFJXNhu1LgjVpmQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1668589.jpg",
+      "caption": "rear of box - Kosmos German edition",
+      "score": 3.5,
+      "aspect": 1.333,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ubongo-16986/back-src.jpg"
+    }
+  }
+}

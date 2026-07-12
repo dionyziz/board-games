@@ -1,7 +1,5 @@
 {
   "bggId": 357563,
-  "fetched": 132,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 3.5,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/akropolis-357563/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

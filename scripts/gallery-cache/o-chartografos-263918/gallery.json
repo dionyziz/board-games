@@ -1,0 +1,78 @@
+{
+  "bggId": 263918,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.719,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7579465",
+        "caption": "Box - Back",
+        "url": "https://cf.geekdo-images.com/DI8sVUvykpcy5fzka44s2g__large/img/eY8sIHSimAXBYUU6mUicYohlqRY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7579465.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6947395",
+        "caption": "Kartografove Czech edition 1st printing (made in EU) back cover",
+        "url": "https://cf.geekdo-images.com/Qka5AlpxOK-8qJrhCH6IHA__large/img/1BOtt5YfpKPzXT_aVmnCLfRcX9U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6947395.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "5046169",
+        "caption": "Cartographers Italian Edition - Rear box",
+        "url": "https://cf.geekdo-images.com/nsvjFOlR_r1wtMJhwOukrg__large/img/saA2RZU9KmB5jOfEybZ_iaHLlDc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5046169.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8337865",
+        "caption": "Der Kartograph, Backside of the German edition (2019, without KdJ award logo)",
+        "url": "https://cf.geekdo-images.com/ae08WLn-RFvcaNyKwK1WRQ__large/img/xAlRauEFSDoc7Zb6J5Ic8Wkh2tY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8337865.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6436100",
+        "caption": "UKR Box Back",
+        "url": "https://cf.geekdo-images.com/0GY7bfHM49sziImRCHNhsA__large/img/Adip_LJXYSOl4IbQg6F4cbJYtxc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6436100.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7579469",
+        "caption": "Map - Back",
+        "url": "https://cf.geekdo-images.com/_iNxxZtI2SxRSE6Aq3f7qQ__large/img/cMMVVUnHom3pU7zir3FJxgw8Fiw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7579469.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "5412832",
+        "caption": "Principality of Davaarnia, 1st solo game on side B with Master Mapsmith ranking.",
+        "url": "https://cf.geekdo-images.com/oKQ8QmzgYFiLIC-7oMo90A__large/img/0MrjkXM2tJkVi8MAYyOIjHinbr0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5412832.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7051232",
+        "caption": "Score Sheet Side-A 1st Game Solo Cartographers",
+        "url": "https://cf.geekdo-images.com/2cCXvEUmYeuh89plV_40Kg__large/img/BWUgMbjkUN0Ry03KR-Sx25FBO5g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7051232.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "7051231",
+        "caption": "Score Sheet Side-B 1st Official Solo game Cartographers",
+        "url": "https://cf.geekdo-images.com/lIrf7wZJLjo3wFTGvQzp8A__large/img/pwBONTkWG1NCFm0TGN4m7tG3vk0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7051231.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6947395",
+      "url": "https://cf.geekdo-images.com/Qka5AlpxOK-8qJrhCH6IHA__large/img/1BOtt5YfpKPzXT_aVmnCLfRcX9U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6947395.jpg",
+      "caption": "Kartografove Czech edition 1st printing (made in EU) back cover",
+      "score": 2,
+      "aspect": 0.657,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-chartografos-263918/back-src.jpg"
+    }
+  }
+}

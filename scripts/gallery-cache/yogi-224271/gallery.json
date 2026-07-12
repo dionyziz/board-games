@@ -1,0 +1,35 @@
+{
+  "bggId": 224271,
+  "fetched": 37,
+  "done": true,
+  "frontAspect": 0.75,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6952418",
+        "caption": "Yogi Czech edition 4th printing & Yogi Guru Czech edition 2nd printing - back",
+        "url": "https://cf.geekdo-images.com/PHPp38E4DNsRDRHGBNA6Gw__large/img/4xYd62chjRvwdKgSvZlimNatDjc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6952418.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8610554",
+        "caption": "YOGI_BOX-BACK",
+        "url": "https://cf.geekdo-images.com/xYC4XXK_glLXKkNJcSbyuw__large/img/1eraq3KRd3MGIxo_--SHf-ZN_SA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8610554.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8610554",
+      "url": "https://cf.geekdo-images.com/xYC4XXK_glLXKkNJcSbyuw__large/img/1eraq3KRd3MGIxo_--SHf-ZN_SA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8610554.jpg",
+      "caption": "YOGI_BOX-BACK",
+      "score": 1,
+      "aspect": 0.708,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/yogi-224271/back-src.jpg"
+    }
+  }
+}

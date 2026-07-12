@@ -1,0 +1,54 @@
+{
+  "bggId": 316858,
+  "fetched": 124,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "6835611",
+        "caption": "English dlp edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/W0laVBoBLxiAyqNXVqiT1w__large/img/_XcGmHg79effgAeoN2Z3Myz8exo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6835611.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5715000",
+        "caption": "Box back",
+        "url": "https://cf.geekdo-images.com/NThuAW_GCLDGh6tJz2_6Qg__large/img/VKj9gAbj2GaqD8qgvpYj8fm6hrE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5715000.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "6728579",
+        "caption": "CloudAge ‐ back - French edition - Matagot",
+        "url": "https://cf.geekdo-images.com/iXPjdhAn3KkPhfqR2H1GSA__large/img/_nej4w9Nv5BvpFg3-HMyhMHGmT0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6728579.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8639505",
+        "caption": "German second edition, back cover",
+        "url": "https://cf.geekdo-images.com/V6qyJk2f4qwhAADaBQgOLQ__large/img/OsMLF3mA8JU2KfVx13dq_p13Aoc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8639505.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "6494647",
+        "caption": "making our way to the other side",
+        "url": "https://cf.geekdo-images.com/3w-e4ywJ-tbX9gkOGiZBvQ__large/img/2rFXsQSRtLnVqTtVtx3_sTjdEBA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6494647.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "5715000",
+      "url": "https://cf.geekdo-images.com/NThuAW_GCLDGh6tJz2_6Qg__large/img/VKj9gAbj2GaqD8qgvpYj8fm6hrE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5715000.jpg",
+      "caption": "Box back",
+      "score": 2,
+      "aspect": 1.001,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cloudage-316858/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "bggId": 369142,
+  "fetched": 102,
+  "done": true,
+  "frontAspect": 0.715,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7676238",
+        "caption": "Back box",
+        "url": "https://cf.geekdo-images.com/u27xUGYwAxF4EE7n8oY6Gg__large/img/QVlmzos82STnd8zPZGCvoAn50L4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7676238.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8116170",
+        "caption": "French edition - back",
+        "url": "https://cf.geekdo-images.com/0K_KXUYMkniVM4OlKpnwqQ__large/img/92T4vsAQCK5XJdnCLtyCYsqfgA8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8116170.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8034838",
+        "caption": "Czech edition Back by TLAMA games",
+        "url": "https://cf.geekdo-images.com/IY1dokNzkzx7QzCYcDxlQg__large/img/2KyDCj7cN3_cY08F6OqjJB4R87g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8034838.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7933886",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/ZBW1J230FJNqkxCoLsnZXw__large/img/dp6CLE71JtnYV-DP4C0O23QqCBs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7933886.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7933885",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/VUrzLkjmlZAKbnwO_8b04Q__large/img/QbEtmRZq2d2fnU0osRDUc4ktNjI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7933885.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7933886",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/ZBW1J230FJNqkxCoLsnZXw__large/img/dp6CLE71JtnYV-DP4C0O23QqCBs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7933886.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7676238",
+      "url": "https://cf.geekdo-images.com/u27xUGYwAxF4EE7n8oY6Gg__large/img/QVlmzos82STnd8zPZGCvoAn50L4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7676238.jpg",
+      "caption": "Back box",
+      "score": 2,
+      "aspect": 0.71,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/savernake-forest-369142/back-src.jpg"
+    }
+  }
+}

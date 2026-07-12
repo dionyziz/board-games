@@ -1,0 +1,41 @@
+{
+  "bggId": 419074,
+  "fetched": 105,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8182805",
+        "caption": "Fairy Ring, Box Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/oYBqVjqV7Y83GC1jySECVA__large/img/NoBluanoistIKyWhsrcQNIZ6Z5c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8182805.png",
+        "score": 2
+      },
+      {
+        "imageid": "8332940",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/qAYamkPvW4yKFeUsBuVebw__large/img/buJhw-7V7lWRTveOZ5JRG_Tq-n4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8332940.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8423937",
+        "caption": "Fairy Ring - French editon - back",
+        "url": "https://cf.geekdo-images.com/vCcGASL9GE0msR70gtnRjw__large/img/n7cbJxn5SdEFMJh2sD228eFH170=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8423937.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8182805",
+      "url": "https://cf.geekdo-images.com/oYBqVjqV7Y83GC1jySECVA__large/img/NoBluanoistIKyWhsrcQNIZ6Z5c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8182805.png",
+      "caption": "Fairy Ring, Box Back, Ukrainian edition",
+      "score": 2,
+      "aspect": 1.001,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/fairy-ring-419074/back-src.png"
+    }
+  }
+}

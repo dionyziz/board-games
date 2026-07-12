@@ -1,0 +1,78 @@
+{
+  "bggId": 299169,
+  "fetched": 133,
+  "done": true,
+  "frontAspect": 0.71,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8848817",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/kZVnzac75tpxdEkzr931rg__large/img/9wICSgTR0M1YbG00_LN_2mSbh0Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8848817.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8831046",
+        "caption": "Thai edition back",
+        "url": "https://cf.geekdo-images.com/ZNbCXfJY_BFPoMUa6b0FfA__large/img/u_LvQj-msbWyAUemK53LhiROz6c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8831046.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9286113",
+        "caption": "Box Back Arabic Version",
+        "url": "https://cf.geekdo-images.com/eRzciXwYxzg0btSmTFQ9TA__large/img/kX-B1Z6I_26RbaSWyNjDQoiKLl0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9286113.png",
+        "score": 2
+      },
+      {
+        "imageid": "8467537",
+        "caption": "French edition (back)",
+        "url": "https://cf.geekdo-images.com/CLm-gBvSEXfQ_DdAMIpVog__large/img/PvEIrMTeJ_tOegr5JQ_4Sif827M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8467537.png",
+        "score": 2
+      },
+      {
+        "imageid": "7858795",
+        "caption": "Romanian edition, box back",
+        "url": "https://cf.geekdo-images.com/VXejhMNhUdoIAAJVyhrWrg__large/img/ppMYSxVuv7YEgvK9KnTjPwDhmcI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7858795.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7275984",
+        "caption": "Czech edition – Back",
+        "url": "https://cf.geekdo-images.com/beXCjnnsC5wOZiYG7wQrJA__large/img/G-rvVsc1IjO0JtDTZMo88bQz_bw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7275984.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8848817",
+        "caption": "Russian edition (box back side)",
+        "url": "https://cf.geekdo-images.com/kZVnzac75tpxdEkzr931rg__large/img/9wICSgTR0M1YbG00_LN_2mSbh0Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8848817.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8848816",
+        "caption": "Russian edition (box front side)",
+        "url": "https://cf.geekdo-images.com/vuyhFRKwufkbqmeg74zT1A__large/img/4VFtegYXF-wxvOxehLOyEz98SUU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8848816.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8831048",
+        "caption": "Thai edition short side",
+        "url": "https://cf.geekdo-images.com/_FuTs5PrN4LT7llVjQD-UQ__large/img/gbHkAYFuvWyNi8MsNzUJstpWafY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8831048.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8831046",
+      "url": "https://cf.geekdo-images.com/ZNbCXfJY_BFPoMUa6b0FfA__large/img/u_LvQj-msbWyAUemK53LhiROz6c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8831046.jpg",
+      "caption": "Thai edition back",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/spicy-299169/back-src.jpg"
+    }
+  }
+}

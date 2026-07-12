@@ -1,0 +1,35 @@
+{
+  "bggId": 4888,
+  "fetched": 47,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7991776",
+        "caption": "Canadian English / French Edition Box Back",
+        "url": "https://cf.geekdo-images.com/IRmK6j5GVy4VOCQHegqorw__large/img/TjpoGRTwuLEsUDTnzSlO12bm8-A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7991776.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6557829",
+        "caption": "2016 Hasbro box back",
+        "url": "https://cf.geekdo-images.com/bf4wZBKbFLNQee1Z1nX9tw__large/img/M6OMdLuamCr9-PxiKEm2GuKW4-M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6557829.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "6557829",
+      "url": "https://cf.geekdo-images.com/bf4wZBKbFLNQee1Z1nX9tw__large/img/M6OMdLuamCr9-PxiKEm2GuKW4-M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6557829.jpg",
+      "caption": "2016 Hasbro box back",
+      "score": 2,
+      "aspect": 1.001,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/don-t-break-the-ice-4888/back-src.jpg"
+    }
+  }
+}

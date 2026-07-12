@@ -1,0 +1,53 @@
+{
+  "bggId": 366013,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7466403",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/hvg9vl7GWBK4fco2Yr0lGw__large/img/QHbrDBes43JS8ANwcDtHVt0Wcx4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7466403.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7377113",
+        "caption": "Heat (German edition) - Back Cover",
+        "url": "https://cf.geekdo-images.com/uTRFfXbn5m9hwT7l31bJ4g__large/img/OptQyU0h5wXfrhtfATo1anlMbxs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7377113.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7901169",
+        "caption": "Heat (back cover of romanian edition)",
+        "url": "https://cf.geekdo-images.com/H6pCsMKlDvV_TNf_EthuCQ__large/img/pZy4Lem81FnoFAqWXHM2xMuCl88=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7901169.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7198365",
+        "caption": "HEAT - Czech edition 2022 - Back cover - ADC Blackfire Ent., Made in Germany (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/81o9M8qya-foOo-oQoTa1g__large/img/yW1Bc321MHN6RMVK-6Bn3eUjqsw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7198365.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8315879",
+        "caption": "Will yellow pull back from behind???",
+        "url": "https://cf.geekdo-images.com/Kjj-k6morJbvSrmV2lGbmg__large/img/88SQpSH05RmTuPS3mn3eH8SRjww=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8315879.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7377113",
+      "url": "https://cf.geekdo-images.com/uTRFfXbn5m9hwT7l31bJ4g__large/img/OptQyU0h5wXfrhtfATo1anlMbxs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7377113.jpg",
+      "caption": "Heat (German edition) - Back Cover",
+      "score": 2,
+      "aspect": 1,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/heat-pedal-to-the-metal-366013/back-src.jpg"
+    }
+  }
+}

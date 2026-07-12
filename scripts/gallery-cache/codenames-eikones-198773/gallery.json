@@ -1,0 +1,73 @@
+{
+  "bggId": 198773,
+  "fetched": 176,
+  "done": true,
+  "frontAspect": 0.698,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "3132058",
+        "caption": "Box back English First Edition",
+        "url": "https://cf.geekdo-images.com/f-kZ96XwiISgtEIEtsSFEA__large/img/XUCcu-H1xrtAgEKYmbW5BqWtS_U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3132058.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9137729",
+        "caption": "Back of the Codenames: Picture box (English)",
+        "url": "https://cf.geekdo-images.com/g8H9dKeujJZYq5Cyr-4UkA__large/img/w6n8WlhELDjIcNSTnvenFKgGfRY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9137729.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8911679",
+        "caption": "Codenames: Pictures ‐ English First Edition - box back",
+        "url": "https://cf.geekdo-images.com/Mh4_Mn1OHG-bGwAF-d4o1A__large/img/T-6FGv9w_US3356bgDAy0l3dFd0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8911679.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9329558",
+        "caption": "Turkish Edition (2025) back cover",
+        "url": "https://cf.geekdo-images.com/QbrEGVggOAx9zzTsqNLH7Q__large/img/sO6qzdwwj1ryyANTrhbyti-tdns=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9329558.png",
+        "score": 2
+      },
+      {
+        "imageid": "9311675",
+        "caption": "Ukrainian edition, 2025 Feelindigo, Back of the box",
+        "url": "https://cf.geekdo-images.com/DF-tjgk93FNMyoT6w-l_1w__large/img/DFy_ZOWQjWBVTQa6EQILqXmmmMo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9311675.png",
+        "score": 2
+      },
+      {
+        "imageid": "4007124",
+        "caption": "Back of the box of the Baltic first edition / Pirmosios Baltijos šalių versijos dėžutės galas",
+        "url": "https://cf.geekdo-images.com/Y-AQis2ygaXTyyYjpPlFug__large/img/KQRgFiLU85LMpH6JoY95QquqLGY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4007124.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "3646908",
+        "caption": "A typical game of Codenames: Pictures - started as 6-a-side but ended up as 6 vs 10 as more people arrived! (The 6 won!)",
+        "url": "https://cf.geekdo-images.com/cL2h9hdZBhtV491DFfPPQg__large/img/J1Nq4vJL2X6uvwD8blAlrp19sAs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3646908.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "8911680",
+        "caption": "Codenames: Pictures ‐ English First Edition - box bottom",
+        "url": "https://cf.geekdo-images.com/eRPnFzEF5TC6qqidHqDlHg__large/img/DfmO8J4ERCiYHn4Kj5SvdC3Kl-4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8911680.jpg",
+        "score": 3.5
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "3132058",
+      "url": "https://cf.geekdo-images.com/f-kZ96XwiISgtEIEtsSFEA__large/img/XUCcu-H1xrtAgEKYmbW5BqWtS_U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3132058.jpg",
+      "caption": "Box back English First Edition",
+      "score": 3.5,
+      "aspect": 0.683,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-eikones-198773/back-src.jpg"
+    }
+  }
+}

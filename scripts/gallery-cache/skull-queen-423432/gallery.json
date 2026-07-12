@@ -1,0 +1,28 @@
+{
+  "bggId": 423432,
+  "fetched": 31,
+  "done": true,
+  "frontAspect": 0.725,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8397351",
+        "caption": "Back cover (DE/EN/FR/IT edition)",
+        "url": "https://cf.geekdo-images.com/9VEPtJCM13hBkQS4nzvnmg__large/img/NpTihxJG1PqqJJkOVokE7S6Yojo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8397351.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8530804",
+        "caption": "Skull Queen rear",
+        "url": "https://cf.geekdo-images.com/pc0CvrPL0OomYnNmCBZ2Rg__large/img/QrsOg608NDaIitqTFvNsqvcmZME=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8530804.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": null
+  }
+}

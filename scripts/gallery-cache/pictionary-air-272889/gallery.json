@@ -1,0 +1,53 @@
+{
+  "bggId": 272889,
+  "fetched": 34,
+  "done": true,
+  "frontAspect": 0.748,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8886711",
+        "caption": "box front and back",
+        "url": "https://cf.geekdo-images.com/L5ceMpNS_tSRMLu8dQa8_Q__large/img/bPEKRHa1r5IFv749WzLoRgyzeMo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8886711.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8886708",
+        "caption": "back of box norwegian",
+        "url": "https://cf.geekdo-images.com/VqaeSzHB1YGXbFGQdS4Uzg__large/img/0bcRpWY8F_bK5kq3BNFQqtxs8Hk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8886708.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "8886700",
+        "caption": "back of game box",
+        "url": "https://cf.geekdo-images.com/rRhWGhCpiFhynfRfO-rT2A__large/img/K0BmcmWCOIbPuq8TjQn5Y8_Va1k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8886700.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7540880",
+        "caption": "Pictionary air: Star wars back of the box",
+        "url": "https://cf.geekdo-images.com/MefeEPDlfmSEA7JHWqXHOg__large/img/GOADl0yX3vgsUFjzIA5_sWHmi-k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7540880.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9317725",
+        "caption": "Pictionary Air Harry Potter back",
+        "url": "https://cf.geekdo-images.com/E1Vxpq312Et1g8FUERKHyw__large/img/QmZ9qsNUpSNzqdYvRujKVwMEe8k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9317725.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7540880",
+      "url": "https://cf.geekdo-images.com/MefeEPDlfmSEA7JHWqXHOg__large/img/GOADl0yX3vgsUFjzIA5_sWHmi-k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7540880.jpg",
+      "caption": "Pictionary air: Star wars back of the box",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/pictionary-air-272889/back-src.jpg"
+    }
+  }
+}

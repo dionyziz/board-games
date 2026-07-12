@@ -1,0 +1,29 @@
+{
+  "bggId": 434500,
+  "fetched": 3,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8606295",
+        "caption": "Slayers and Dragons back of box",
+        "url": "https://cf.geekdo-images.com/MkRphAkOkEEphk8MWlGrgg__large/img/Om_IvPJdKrWvLS099Cc0PPJE0yc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8606295.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8606295",
+      "url": "https://cf.geekdo-images.com/MkRphAkOkEEphk8MWlGrgg__large/img/Om_IvPJdKrWvLS099Cc0PPJE0yc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8606295.jpg",
+      "caption": "Slayers and Dragons back of box",
+      "score": 2,
+      "aspect": 1.001,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/slayers-and-dragons-434500/back-src.jpg"
+    }
+  }
+}

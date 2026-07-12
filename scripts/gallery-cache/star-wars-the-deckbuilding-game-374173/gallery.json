@@ -1,0 +1,66 @@
+{
+  "bggId": 374173,
+  "fetched": 125,
+  "done": true,
+  "frontAspect": 0.763,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7360881",
+        "caption": "Star Wars: The Deckbuilding Game, Fantasy Flight Games, 2023 — back cover (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/Glv5xHnaW6VjeMUg5ZGERg__large/img/YNg4knCuSjmQwqgWJGc6MaRapVI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7360881.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "7684603",
+        "caption": "Ukrainian box (back)",
+        "url": "https://cf.geekdo-images.com/tNl0fMkBc2VJJhfaI380bg__large/img/pf7Kw2JdnfZ1QqiRVAfAXVW9bpU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7684603.png",
+        "score": 2
+      },
+      {
+        "imageid": "7380811",
+        "caption": "French edition - back",
+        "url": "https://cf.geekdo-images.com/fbabKwgrZewrL4SZuFGUBg__large/img/Nt6wdKJ-Aeq62Q_a2Qix5_tF3q4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7380811.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "9333160",
+        "caption": "Star Wars: The Deckbuilding Game ‐ French edition (2023) Back Box",
+        "url": "https://cf.geekdo-images.com/KyXmgkfxuhUo8zRI-ecJxg__large/img/PxCzsa6unxCw7X1sD_9943XJXFY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9333160.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7367614",
+        "caption": "German Back Cover",
+        "url": "https://cf.geekdo-images.com/YXtz_6If2r3Wyb8x5u68ag__large/img/ga7CYnmxOa0X6gesgxX-UeyQOaI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7367614.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "8725845",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/PeiNmgJZucrz4Rk2hAkGdg__large/img/D2BBUnk2Em-yxlixyuRd8R8SwZc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8725845.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "7404359",
+        "caption": "\"You don't know the power of the Dark side.\"",
+        "url": "https://cf.geekdo-images.com/Yr5-g2AOCfOesHXWZiREGw__large/img/JyP7lqyjatIYnRq_fr8SedYaGGA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7404359.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7360881",
+      "url": "https://cf.geekdo-images.com/Glv5xHnaW6VjeMUg5ZGERg__large/img/YNg4knCuSjmQwqgWJGc6MaRapVI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7360881.jpg",
+      "caption": "Star Wars: The Deckbuilding Game, Fantasy Flight Games, 2023 — back cover (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.753,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/star-wars-the-deckbuilding-game-374173/back-src.jpg"
+    }
+  }
+}
