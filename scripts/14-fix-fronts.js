@@ -70,16 +70,20 @@ function orient(size, aspect) {
         if (apply) await sharp(src).trim({ threshold: 14 }).resize(cw, ch).webp({ quality: 82, effort: 4 }).toFile(cover);
         removed > 0.02 ? trimmed++ : plain++;
       }
-      // crop the retail hang-tab flap off the top of the produced cover
+      // split the retail hang-tab flap off the top of the produced cover: the
+      // strip becomes a 3D flap texture (box.flap), the remainder is the front.
       const flap = flaps[g.id];
       if (flap > 0.01) {
         const cut = Math.min(ch - 1, Math.round(flap * ch));
         if (apply) {
+          const flapBuf = await sharp(cover).extract({ left: 0, top: 0, width: cw, height: cut }).webp({ quality: 84, effort: 4 }).toBuffer();
+          fs.writeFileSync(path.join(dir, 'flap.webp'), flapBuf);
           const buf = await sharp(cover).extract({ left: 0, top: cut, width: cw, height: ch - cut }).webp({ quality: 82, effort: 4 }).toBuffer();
           fs.writeFileSync(cover, buf);
         }
+        g.box.flap = { src: `/textures/${g.id}/flap.webp`, hFrac: +(flap / (1 - flap)).toFixed(3) };
         ch -= cut; flapped++;
-      }
+      } else if (g.box.flap) { delete g.box.flap; }
       if (apply) { const long = Math.max(cw, ch), ts = 320 / long; await sharp(cover).resize(Math.round(cw * ts), Math.round(ch * ts)).webp({ quality: 78, effort: 4 }).toFile(thumb); }
       const o = orient(g.box.size, cw / ch);
       g.box.face = o.face; g.box.orientation = o.orientation;

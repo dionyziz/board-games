@@ -5,6 +5,7 @@ import { asset, type Game } from '../data';
 import { makePaperBump } from './paperBump';
 import { attachBoxShader, type FaceMap } from './boxShader';
 import { acquire, release } from './textures';
+import Flap from './Flap';
 
 // 1×1 black "no bump" texture for faces without a text bump map (photos).
 const BLACK = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1, THREE.RGBAFormat);
@@ -74,14 +75,16 @@ export default function GameBox({ game, onClick, onPointerOver, onPointerOut, ..
   const material = (
     <meshPhysicalMaterial ref={matRef} color="#ffffff" roughness={0.6} metalness={0} clearcoat={0.45} clearcoatRoughness={0.34} envMapIntensity={1.0} />
   );
-  const handlers = { onClick, onPointerOver, onPointerOut, ...rest };
-  if (geom) {
-    return <mesh geometry={geom} castShadow {...handlers}>{material}</mesh>;
-  }
   const radius = Math.min(W, H, D) * 0.06;
+  const boxMesh = geom
+    ? <mesh geometry={geom} castShadow>{material}</mesh>
+    : <RoundedBox args={[W, H, D]} radius={radius} smoothness={6} castShadow>{material}</RoundedBox>;
+
+  // group so events cover the box + any hang-tab flap, and the flap rides along
   return (
-    <RoundedBox args={[W, H, D]} radius={radius} smoothness={6} castShadow {...handlers}>
-      {material}
-    </RoundedBox>
+    <group onClick={onClick} onPointerOver={onPointerOver} onPointerOut={onPointerOut} {...rest}>
+      {boxMesh}
+      {game.box.flap ? <Flap game={game} /> : null}
+    </group>
   );
 }

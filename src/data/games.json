@@ -1147,7 +1147,11 @@
           "d": 3
         },
         "orientation": "portrait",
-        "shape": "blister"
+        "shape": "blister",
+        "flap": {
+          "src": "/textures/love-letter-277085/flap.webp",
+          "hFrac": 0.163
+        }
       },
       "textures": {
         "front": {
@@ -3344,7 +3348,11 @@
           "h": 12.7,
           "d": 2
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "flap": {
+          "src": "/textures/uno-2223/flap.webp",
+          "hFrac": 0.176
+        }
       },
       "textures": {
         "front": {
@@ -5700,7 +5708,11 @@
           "h": 26.5,
           "d": 5.5
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "flap": {
+          "src": "/textures/nai-i-ochi/flap.webp",
+          "hFrac": 0.163
+        }
       },
       "textures": {
         "front": {

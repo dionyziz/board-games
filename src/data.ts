@@ -14,6 +14,7 @@ export type Box = {
   capCrop?: { cx: number; cy: number; r: number };  // isolate round lid art from the cover
   cylTex?: string;                                   // dedicated flat cap/wrap art (preferred over cover)
   cornerR?: number;                                  // tin-rect corner radius, fraction of min(w,h)
+  flap?: { src: string; hFrac: number };             // retail hang-tab, rendered as a 3D flap on top
 };
 export type Game = {
   id: string;
