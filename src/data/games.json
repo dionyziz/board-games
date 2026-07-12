@@ -16079,7 +16079,8 @@
         },
         "bottom": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/bottom.webp",
-          "source": "procedural"
+          "source": "cover-derived",
+          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
         },
         "thumb": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/thumb.webp",
