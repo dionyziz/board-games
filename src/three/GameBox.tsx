@@ -42,6 +42,9 @@ export default function GameBox({ game, onClick, onPointerOver, onPointerOut, ..
     m.bumpMap = paper; m.bumpScale = 0.9;
     m.customProgramCacheKey = () => 'gamebox'; // all boxes share one compiled program
     attachBoxShader(m, tex, bump, new THREE.Vector3(W / 2, H / 2, D / 2));
+    // rectangular metal tins (Forbidden Island, Sushi Go!): a glossier, smoother
+    // sheen than coated cardboard — kept non-metallic so the printed art survives.
+    if (game.box.shape === 'tin-rect') { m.roughness = 0.34; m.clearcoat = 0.6; m.clearcoatRoughness = 0.2; m.envMapIntensity = 1.25; m.bumpScale = 0.4; }
     return () => release(urls); // dispose-eligible once this box unmounts
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urls, paper, W, H, D]);

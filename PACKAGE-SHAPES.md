@@ -32,7 +32,21 @@ packaging is known (lower confidence — verify before acting).
 | Sushi Go! | `sushi-go-133473` | **rectangular tin** | Small metal tin. |
 | Zombie Dice: Horde Edition | `zombie-dice-horde-edition-224035` | **tube** | Cardboard tube. |
 
-## Suggested rendering adjustments (for later)
+## Implementation status
+
+- **DONE — cylinders** (`round-tin`, `tube`): rendered by `src/three/Cylinder.tsx`
+  (a `CylinderGeometry` with a [side, topCap, bottomCap] material array). Dobble =
+  glossy metal tin with the lid art on the cap (cropped from its angled product
+  shot via `box.capCrop`); Chupacabra & Zombie Dice = matte cardboard tubes with
+  the cover wrapped around the side. Dispatched in `src/three/Package.tsx`.
+- **DONE — `tin-rect`** (Forbidden Island, Sushi Go!): still a box, but a glossier
+  metal-tin material (in `GameBox.tsx`, kept non-metallic so the print survives).
+- **PENDING** — `blister`, `bag`, `other` still render as the default box.
+
+Shapes/dims live in `scripts/package-shapes.json`; `scripts/16-apply-shapes.js`
+bakes them into `games.json` (`box.shape` / `box.cyl` / `box.capCrop`).
+
+## Suggested rendering adjustments (remaining: blister / bag / other)
 
 - **round tin / tube** → swap the `RoundedBox` for a `CylinderGeometry`
   (tin: short, radius ≈ face.w/2, height ≈ depth; tube: tall). Cover art on the

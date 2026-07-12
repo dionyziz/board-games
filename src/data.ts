@@ -8,6 +8,10 @@ export type Box = {
   orientation?: string;
   sideColor: string;
   edgeColor: string;
+  // bespoke packaging (absent ⇒ a normal rectangular box). See package-shapes.json.
+  shape?: 'round-tin' | 'tube' | 'tin-rect' | 'blister' | 'bag' | 'other';
+  cyl?: { diameter: number; height: number };       // cm, for round-tin / tube
+  capCrop?: { cx: number; cy: number; r: number };  // isolate round lid art from the cover
 };
 export type Game = {
   id: string;

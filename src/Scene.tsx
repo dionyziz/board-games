@@ -4,7 +4,7 @@ import { TrackballControls, ContactShadows } from '@react-three/drei';
 import { EffectComposer, SMAA } from '@react-three/postprocessing';
 import * as THREE from 'three';
 import type { Game } from './data';
-import GameBox from './three/GameBox';
+import Package from './three/Package';
 import { Env, Lights } from './three/Lights';
 import { onLoaded, setMaxAniso } from './three/textures';
 
@@ -36,7 +36,7 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
   });
   return (
     <group ref={ref} position={[0, -index * SPACING, 0]} rotation-y={-0.6}>
-      <GameBox
+      <Package
         game={game}
         onClick={(e: any) => { e.stopPropagation(); onOpen(game.id); }}
         onPointerOver={(e: any) => { e.stopPropagation(); setHover(true); document.body.style.cursor = 'pointer'; invalidate(); }}

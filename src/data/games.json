@@ -1137,7 +1137,8 @@
           "h": 17.6,
           "d": 3
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "blister"
       },
       "textures": {
         "front": {
@@ -2092,7 +2093,8 @@
           "h": 14.5,
           "d": 4.9
         },
-        "orientation": "landscape"
+        "orientation": "landscape",
+        "shape": "bag"
       },
       "textures": {
         "front": {
@@ -2210,7 +2212,12 @@
           "h": 21.2,
           "d": 5.6
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "tube",
+        "cyl": {
+          "diameter": 9,
+          "height": 15
+        }
       },
       "textures": {
         "front": {
@@ -2458,7 +2465,17 @@
           "h": 13,
           "d": 5
         },
-        "orientation": "square"
+        "orientation": "square",
+        "shape": "round-tin",
+        "cyl": {
+          "diameter": 13,
+          "height": 4.5
+        },
+        "capCrop": {
+          "cx": 0.5,
+          "cy": 0.32,
+          "r": 0.3
+        }
       },
       "textures": {
         "front": {
@@ -3046,7 +3063,8 @@
           "h": 29.7,
           "d": 7.1
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "blister"
       },
       "textures": {
         "front": {
@@ -3417,7 +3435,8 @@
           "h": 14.3,
           "d": 3.8
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "tin-rect"
       },
       "textures": {
         "front": {
@@ -4160,7 +4179,8 @@
           "h": 21.5,
           "d": 3.4
         },
-        "orientation": "landscape"
+        "orientation": "landscape",
+        "shape": "other"
       },
       "textures": {
         "front": {
@@ -7133,7 +7153,8 @@
           "h": 28.5,
           "d": 5.5
         },
-        "orientation": "landscape"
+        "orientation": "landscape",
+        "shape": "other"
       },
       "textures": {
         "front": {
@@ -7365,7 +7386,8 @@
           "h": 20,
           "d": 3
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "bag"
       },
       "textures": {
         "front": {
@@ -10022,7 +10044,12 @@
           "h": 22.9,
           "d": 5.1
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "tube",
+        "cyl": {
+          "diameter": 6.5,
+          "height": 12
+        }
       },
       "textures": {
         "front": {
@@ -13238,7 +13265,8 @@
           "h": 31.5,
           "d": 5.6
         },
-        "orientation": "portrait"
+        "orientation": "portrait",
+        "shape": "tin-rect"
       },
       "textures": {
         "front": {
