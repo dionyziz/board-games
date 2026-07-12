@@ -30,9 +30,8 @@ export default function Model({ game, onClick, onPointerOver, onPointerOut, ...r
       m.needsUpdate = true;
       o.material = m; disposables.push(m);
     });
-    // stand up (the model lies flat with its front on +y → rotate front to +z),
-    // then centre + uniformly scale to the box slot
-    root.rotation.set(Math.PI / 2, 0, 0);
+    // the model's own node transforms already stand it upright with the front
+    // facing +z, so no extra rotation — just centre + uniformly scale to the slot
     root.updateMatrixWorld(true);
     const box = new THREE.Box3().setFromObject(root), size = new THREE.Vector3(), ctr = new THREE.Vector3();
     box.getSize(size); box.getCenter(ctr);
