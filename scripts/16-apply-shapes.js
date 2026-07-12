@@ -13,7 +13,7 @@ const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/games.json'), 
 
 let n = 0, miss = 0;
 // clear any stale shapes first so removing an entry reverts a game to a box
-for (const g of data.games) { if (g.box) { delete g.box.shape; delete g.box.cyl; delete g.box.capCrop; delete g.box.cornerR; } }
+for (const g of data.games) { if (g.box) { delete g.box.shape; delete g.box.cyl; delete g.box.capCrop; delete g.box.cornerR; delete g.box.bag; } }
 
 for (const [id, s] of Object.entries(shapes)) {
   const g = data.games.find((x) => x.id === id);
@@ -22,6 +22,7 @@ for (const [id, s] of Object.entries(shapes)) {
   if (s.dims) g.box.cyl = { diameter: s.dims.diameter, height: s.dims.height };
   if (s.capCrop) g.box.capCrop = s.capCrop;
   if (s.cornerR) g.box.cornerR = s.cornerR;
+  if (s.bag) g.box.bag = s.bag;
   n++;
   console.log(`  ${s.shape.padEnd(10)} ${id}${s.dims ? '  cyl ⌀' + s.dims.diameter + '×' + s.dims.height : ''}`);
 }

@@ -2,7 +2,7 @@ import { useLayoutEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import { asset, type Game } from '../data';
 import { acquire, release } from './textures';
-import { attachTinSeam } from './tinSeam';
+import { attachSeams } from './tinSeam';
 
 // Round tins (Dobble) and cardboard tubes (Chupacabra, Zombie Dice). A
 // CylinderGeometry hands us three material groups — [side, topCap, bottomCap] —
@@ -43,13 +43,14 @@ export default function Cylinder({ game, onClick, onPointerOver, onPointerOut, .
     if (isTube) {
       side.map = cover; side.color.set('#ffffff');
       side.metalness = 0; side.roughness = 0.62; side.clearcoat = 0.22; side.clearcoatRoughness = 0.4;
+      attachSeams(side, Hc / 2, [0.86, 0.06]); // lid seam near the top + base seam
       top.map = null; top.color.set(edge); top.metalness = 0; top.roughness = 0.72;
       bottom.map = null; bottom.color.set(edge); bottom.metalness = 0; bottom.roughness = 0.72;
     } else {
       top.map = cover; top.color.set('#ffffff');
       top.metalness = 0.12; top.roughness = 0.42; top.clearcoat = 0.5; top.clearcoatRoughness = 0.28; top.envMapIntensity = 1.1;
       side.map = null; side.color.set(band); side.metalness = 0.85; side.roughness = 0.3; side.clearcoat = 0.2;
-      attachTinSeam(side, Hc / 2); // lift-off lid seam around the rim
+      attachSeams(side, Hc / 2, [0.60]); // lift-off lid seam around the rim
       bottom.map = null; bottom.color.set(edge); bottom.metalness = 0.85; bottom.roughness = 0.35;
       // cap orientation: rotating the tin's +Y lid to face +Z maps the cap's
       // texture up-axis to world-down, so flip v (negative repeat.y) to stay upright.

@@ -2,8 +2,8 @@
   "_comment": "Games whose real packaging is NOT a standard rectangular cardboard box. From a vision audit of every cover (scripts/gallery-cache/_shapes) plus product-knowledge additions where the flat cover art hid the true shape. `source`: 'image' = visible in the cover, 'product-knowledge' = known real packaging not visible in art. Consumed by future rendering work — see PACKAGE-SHAPES.md. Absence of an entry ⇒ treated as a box.",
   "shapes": {
     "dobble-63268":                     { "shape": "round-tin", "confidence": 0.98, "source": "image", "dims": { "diameter": 13, "height": 4.5 }, "capCrop": { "cx": 0.5, "cy": 0.32, "r": 0.3 }, "note": "Circular metal tin, visible cylindrical body + lid rim. capCrop isolates the round lid art from the angled product shot." },
-    "happy-salmon-194626":              { "shape": "bag",       "confidence": 0.97, "source": "image", "note": "Soft fish-shaped fabric zippered pouch." },
-    "bag-of-chips-344114":              { "shape": "bag",       "confidence": 0.97, "source": "image", "note": "Foil resealable snack-style pouch (says 'RESEALABLE BAG')." },
+    "happy-salmon-194626":              { "shape": "bag", "bag": "fish", "confidence": 0.97, "source": "image", "note": "Soft fish-shaped fabric zippered pouch." },
+    "bag-of-chips-344114":              { "shape": "bag", "bag": "foil", "confidence": 0.97, "source": "image", "note": "Foil resealable snack-style pouch (says 'RESEALABLE BAG')." },
     "chupacabra-survive-the-night-120515": { "shape": "tube",  "confidence": 0.85, "source": "image", "dims": { "diameter": 6.5, "height": 12 }, "note": "Cylindrical canister/dice-cup tube, curved body + rounded top. Cover art wraps the side." },
     "love-letter-277085":               { "shape": "blister",   "confidence": 0.85, "source": "image", "note": "Plastic clamshell holding a red velvet drawstring bag of cards." },
     "who-am-i-33406":                   { "shape": "blister",   "confidence": 0.7,  "source": "image", "note": "Retail hang-card backer with a wipe-clean pen attached." },

@@ -1,13 +1,19 @@
 import * as THREE from 'three';
 
-// Cookie-tin lid: cut a couple of horizontal groove rings around the tin's side,
-// near the front (the lid end), so it reads as a lift-off metal lid. `av` is the
-// position along the cylinder axis, 0 = back/base .. 1 = front/lid. A dark groove
-// + a bright rim just above it fakes the recessed step without extra geometry.
-export function attachTinSeam(mat: THREE.MeshPhysicalMaterial, halfH: number) {
-  // distinct program key: this material's onBeforeCompile differs from the plain
-  // cylinder caps, which share the 'cyl' key — without this they'd collide.
-  mat.customProgramCacheKey = () => 'cyl-tinseam';
+// Cut horizontal groove rings around a cylinder's side (lid/base parting lines):
+// a lift-off tin lid, a tube's cap seam, etc. `seams` are positions along the
+// axis (0 = base .. 1 = lid). Each is a dark groove + a bright rim just above it,
+// faked tonally so no extra geometry is needed. `av` is the axial coordinate.
+export function attachSeams(mat: THREE.MeshPhysicalMaterial, halfH: number, seams: number[]) {
+  // distinct program key per seam layout (must differ from the plain caps)
+  mat.customProgramCacheKey = () => 'cyl-seam:' + seams.join(',');
+  const rings = seams.map((at) => `{
+    float seam = smoothstep(0.014, 0.0, abs(av - ${at.toFixed(4)}));
+    float ridge = smoothstep(0.012, 0.0, abs(av - ${Math.min(at + 0.06, 0.99).toFixed(4)}));
+    gGroove = max(gGroove, seam);
+    diffuseColor.rgb *= 1.0 - 0.5 * seam;
+    diffuseColor.rgb += 0.12 * ridge * diffuseColor.rgb;
+  }`).join('\n');
   mat.onBeforeCompile = (sh) => {
     sh.uniforms.uHalfH = { value: halfH };
     sh.vertexShader = sh.vertexShader
@@ -16,13 +22,8 @@ export function attachTinSeam(mat: THREE.MeshPhysicalMaterial, halfH: number) {
     sh.fragmentShader = sh.fragmentShader
       .replace('#include <common>', '#include <common>\nvarying float vAxis; uniform float uHalfH;\nfloat gGroove = 0.0;')
       .replace('#include <map_fragment>', `#include <map_fragment>
-        float av = vAxis / uHalfH * 0.5 + 0.5;                 // 0 base .. 1 lid
-        // main lid parting seam + a shallow companion ridge (the lid's rolled edge)
-        float seam = smoothstep(0.014, 0.0, abs(av - 0.60));
-        float ridge = smoothstep(0.012, 0.0, abs(av - 0.68));
-        gGroove = seam;
-        diffuseColor.rgb *= 1.0 - 0.5 * seam;                  // recessed shadow line
-        diffuseColor.rgb += 0.12 * ridge * diffuseColor.rgb;   // catch-light on the rim
+        float av = vAxis / uHalfH * 0.5 + 0.5; // 0 base .. 1 lid
+        ${rings}
       `)
       .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
         roughnessFactor = clamp(roughnessFactor + 0.28 * gGroove, 0.05, 1.0);`);

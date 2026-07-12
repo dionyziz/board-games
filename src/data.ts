@@ -14,7 +14,9 @@ export type Box = {
   capCrop?: { cx: number; cy: number; r: number };  // isolate round lid art from the cover
   cylTex?: string;                                   // dedicated flat cap/wrap art (preferred over cover)
   cornerR?: number;                                  // tin-rect corner radius, fraction of min(w,h)
-  flap?: { src: string; hFrac: number };             // retail hang-tab, rendered as a 3D flap on top
+  flap?: { src: string; hFrac: number; cornerR?: number; hole?: { cx: number; cy: number; rx: number; ry: number } };
+  bag?: 'foil' | 'fish';                             // pouch kind (bag shape)
+  bagOutline?: { aspect: number; poly: number[][] }; // fish silhouette (measured), for a closed pouch
 };
 export type Game = {
   id: string;
@@ -39,7 +41,26 @@ export type Game = {
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const asset = (p: string) => BASE + (p.startsWith('/') ? p : '/' + p);
 
-export const games: Game[] = ((raw as any).games || raw) as Game[];
+// ---- title sort key -------------------------------------------------------
+// Interleave Greek + Latin titles alphabetically by POSITION (α↔a, β↔b, …),
+// ignoring leading articles. Positional (not phonetic) so "β" sorts with "b".
+const GREEK = 'αβγδεζηθικλμνξοπρστυφχψω'; // 24 letters → a..x
+const ARTICLE = /^(the|a|an|ο|η|το|οι|τα|της|του|των|στο|στη|ενα|enas|ενας|μια|μιας)\s+/i;
+function sortKey(title?: string): string {
+  let s = (title || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); // drop accents/tonos
+  s = s.replace(/ς/g, 'σ').replace(ARTICLE, '').trim();
+  let out = '';
+  for (const ch of s) {
+    const gi = GREEK.indexOf(ch);
+    if (gi >= 0) out += String.fromCharCode(97 + gi);       // greek → positional latin
+    else if (/[a-z0-9 ]/.test(ch)) out += ch;               // keep latin/digits/space
+  }
+  return out.trim();
+}
+
+export const games: Game[] = (((raw as any).games || raw) as Game[])
+  .slice()
+  .sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)) || (a.title || '').localeCompare(b.title || ''));
 export const bySlug = (slug: string) => games.find((g) => g.id === slug);
 
 // ---- forgiving search normalization ----------------------------------------
