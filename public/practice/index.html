@@ -85,7 +85,7 @@
 
 <script type="module">
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
@@ -338,27 +338,30 @@ loadFace(T.spine,  faceUniforms.tSpine);
 loadFace(T.top,    faceUniforms.tTop);
 loadFace(T.bottom, faceUniforms.tBottom);
 
-// ---- controls ----
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.06;
-controls.enablePan = false;
+// ---- controls: TrackballControls for unrestricted rotation around ALL axes.
+// OrbitControls pins the camera's up-vector to world-Y, so you can only spin
+// around vertical and can never tumble the box over onto its top/bottom. A
+// trackball is a true arcball: free rotation about any axis (plus roll), no
+// gimbal lock, no "you've hit the pole" limit — spin it however much you like.
+const controls = new TrackballControls(camera, renderer.domElement);
+controls.rotateSpeed = 3.0;
+controls.zoomSpeed = 1.2;
+controls.noPan = true;
+controls.staticMoving = false;
+controls.dynamicDampingFactor = 0.12;
 controls.minDistance = 3.5;
 controls.maxDistance = 11;
-// full vertical freedom: orbit over the top and under the bottom. Tiny epsilon
-// off the exact poles avoids the up-vector degenerating at 0 / π.
-controls.minPolarAngle = 0.0001;
-controls.maxPolarAngle = Math.PI - 0.0001;
-controls.autoRotate = true;
-controls.autoRotateSpeed = 0.9;
 controls.target.set(0, 0, 0);
-controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+// gentle idle spin until the user first grabs the box
+let idle = true;
+controls.addEventListener('start', () => { idle = false; });
 
 // dev: ?yaw=<radians> freezes the box angle; ?cam=x,y,z moves the camera —
 // both just for screenshotting from a fixed viewpoint.
 const _q = new URLSearchParams(location.search);
-if (_q.get('yaw') !== null) { box.rotation.y = parseFloat(_q.get('yaw')); controls.autoRotate = false; }
-if (_q.get('cam')) { const [x, y, z] = _q.get('cam').split(',').map(Number); camera.position.set(x, y, z); controls.autoRotate = false; controls.update(); }
+if (_q.get('yaw') !== null) { box.rotation.y = parseFloat(_q.get('yaw')); idle = false; }
+if (_q.get('cam')) { const [x, y, z] = _q.get('cam').split(',').map(Number); camera.position.set(x, y, z); idle = false; }
 
 // ---- antialiasing pipeline ----
 // MSAA (multisampled HDR target) smooths the geometry silhouette; SMAA on top
@@ -381,12 +384,14 @@ function resize() {
   composer.setSize(w, h);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
+  controls.handleResize();
 }
 window.addEventListener('resize', resize);
 resize();
 
 const _right = new THREE.Vector3(), _camDir = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
 renderer.setAnimationLoop(() => {
+  if (idle) box.rotation.y += 0.0025;
   controls.update();
   // hide the shadow floor once the camera drops below the box, so the bottom
   // face isn't occluded by the (dark) shadow patch when you orbit underneath.

@@ -77,22 +77,52 @@ async function svgToWebp(svg, w, h, out) {
   await sharp(Buffer.from(svg)).resize(w, h).webp({ quality: 88, effort: 4 }).toFile(out);
 }
 
-// ---- 2. back: real photo if provided, else procedural -----------------------
+// ---- photometric normalization (see SIDES-PLAN.md §4) ----------------------
+// The FRONT cover is the reference and is never touched. Every other extracted
+// photo is Reinhard-transferred toward the cover's per-channel mean/std so the
+// whole box reads with one consistent tone/contrast/temperature.
+function statsFromRaw(data, ch) {
+  const n = data.length / ch, mean = [0, 0, 0], m2 = [0, 0, 0];
+  for (let i = 0; i < data.length; i += ch) for (let c = 0; c < 3; c++) mean[c] += data[i + c];
+  for (let c = 0; c < 3; c++) mean[c] /= n;
+  for (let i = 0; i < data.length; i += ch) for (let c = 0; c < 3; c++) { const d = data[i + c] - mean[c]; m2[c] += d * d; }
+  return { mean, std: m2.map((v) => Math.sqrt(v / n)) };
+}
+async function channelStats(input) {
+  const { data, info } = await sharp(input).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  return statsFromRaw(data, info.channels);
+}
+// transfer `data` (raw RGB) toward ref stats; strength<1 keeps some of the
+// original so genuine content differences (e.g. a white panel) aren't crushed.
+function normalizeToward(data, ch, src, ref, strength = 0.8) {
+  for (let i = 0; i < data.length; i += ch) for (let c = 0; c < 3; c++) {
+    const s = src.std[c] > 1e-3 ? src.std[c] : 1;
+    const matched = (data[i + c] - src.mean[c]) * (ref.std[c] / s) + ref.mean[c];
+    data[i + c] = Math.max(0, Math.min(255, data[i + c] + (matched - data[i + c]) * strength));
+  }
+}
+
+// ---- 2. back: real photo (cropped + normalized) if provided, else procedural
 const sources = {};
-async function makeBack() {
+const normalized = {};
+async function makeBack(refStats) {
   const out = path.join(dir, 'back.webp');
   const faceAspect = face.w / face.h;
   if (backPhoto && fs.existsSync(backPhoto)) {
     const meta = await sharp(backPhoto).metadata();
     const long = Math.max(meta.width, meta.height);
     const scale = long > 1024 ? 1024 / long : 1;
-    await sharp(backPhoto)
-      .resize(Math.round(meta.width * scale), Math.round(meta.height * scale))
+    const w = Math.round(meta.width * scale);
+    const { data, info } = await sharp(backPhoto)
+      .resize(w, Math.round(meta.height * scale))
       // center-crop to the exact back-face aspect (front == back dims)
-      .resize({ width: Math.round(meta.width * scale), height: Math.round(meta.width * scale / faceAspect), fit: 'cover', position: 'centre' })
-      .webp({ quality: 84, effort: 4 })
-      .toFile(out);
+      .resize({ width: w, height: Math.round(w / faceAspect), fit: 'cover', position: 'centre' })
+      .removeAlpha().raw().toBuffer({ resolveWithObject: true });
+    normalizeToward(data, info.channels, statsFromRaw(data, info.channels), refStats, 0.82);
+    await sharp(data, { raw: { width: info.width, height: info.height, channels: info.channels } })
+      .webp({ quality: 84, effort: 4 }).toFile(out);
     sources.back = 'photo';
+    normalized.back = true;
     return;
   }
   // procedural: darkened cover backdrop + description
@@ -178,18 +208,24 @@ async function makeBottom() {
 }
 
 (async () => {
+  // front cover = the reference; compute its stats and never modify it
+  const refStats = await channelStats(path.join(dir, 'cover.webp'));
   const accent = await accentFromCover();
-  await Promise.all([makeBack(), makeSpine(accent), makeTop(accent), makeBottom()]);
+  await Promise.all([makeBack(refStats), makeSpine(accent), makeTop(accent), makeBottom()]);
 
   // ---- 6. write data model back -------------------------------------------
+  const faceEntry = (name, source) => ({
+    src: `/textures/${g.id}/${name}.webp`, source,
+    ...(normalized[name] ? { normalized: true } : {}),
+  });
   g.box.face = { w: face.w, h: face.h, d: face.d };
   g.box.orientation = orientation;
   g.textures = {
     front: { src: `/textures/${g.id}/cover.webp`, source: g.textures?.front?.source || 'airtable' },
-    back: { src: `/textures/${g.id}/back.webp`, source: sources.back },
-    spine: { src: `/textures/${g.id}/spine.webp`, source: sources.spine },
-    top: { src: `/textures/${g.id}/top.webp`, source: sources.top },
-    bottom: { src: `/textures/${g.id}/bottom.webp`, source: sources.bottom },
+    back: faceEntry('back', sources.back),
+    spine: faceEntry('spine', sources.spine),
+    top: faceEntry('top', sources.top),
+    bottom: faceEntry('bottom', sources.bottom),
     thumb: { src: `/textures/${g.id}/thumb.webp`, source: 'derived' },
   };
   fs.writeFileSync(DATA, JSON.stringify(games, null, 2) + '\n');

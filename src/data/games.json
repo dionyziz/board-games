@@ -16063,7 +16063,8 @@
         },
         "back": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/back.webp",
-          "source": "photo"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/spine.webp",
