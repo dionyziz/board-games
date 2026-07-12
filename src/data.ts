@@ -60,13 +60,22 @@ export function searchBlob(g: Game): string {
 // ---- facet filters ---------------------------------------------------------
 export type Facet = { id: 'players' | 'age' | 'type'; label: string; values: { key: string; label: string }[] };
 
+// Age buckets (condensed from the many distinct minAge values) → [lo,hi] on minAge.
+const AGE_BUCKETS = [
+  { key: 'age:0-7', label: '≤7', lo: 0, hi: 7 },
+  { key: 'age:8-9', label: '8–9', lo: 8, hi: 9 },
+  { key: 'age:10-11', label: '10–11', lo: 10, hi: 11 },
+  { key: 'age:12-13', label: '12–13', lo: 12, hi: 13 },
+  { key: 'age:14-99', label: '14+', lo: 14, hi: 99 },
+];
+
 export const facets: Facet[] = (() => {
   const players = [1, 2, 3, 4, 5, 6].map((n) => ({ key: 'players:' + n, label: n === 6 ? '6+' : String(n) }));
-  const ages = [...new Set(games.map((g) => g.minAge).filter((a): a is number => !!a))].sort((a, b) => a - b)
-    .map((a) => ({ key: 'age:' + a, label: a + '+' }));
+  const ages = AGE_BUCKETS.filter((b) => games.some((g) => g.minAge && g.minAge >= b.lo && g.minAge <= b.hi))
+    .map((b) => ({ key: b.key, label: b.label }));
   const freq: Record<string, number> = {};
   for (const g of games) for (const c of g.categories || []) freq[c] = (freq[c] || 0) + 1;
-  const types = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([c]) => ({ key: 'type:' + c, label: c }));
+  const types = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 12).map(([c]) => ({ key: 'type:' + c, label: c }));
   return [
     { id: 'players', label: 'Players', values: players },
     { id: 'age', label: 'Age', values: ages },
@@ -80,7 +89,7 @@ export function matchesFilters(g: Game, sel: Set<string>): boolean {
   const by: Record<string, string[]> = { players: [], age: [], type: [] };
   for (const k of sel) { const i = k.indexOf(':'); (by[k.slice(0, i)] ||= []).push(k.slice(i + 1)); }
   if (by.players.length && !by.players.some((v) => g.players && (v === '6' ? g.players.max >= 6 : g.players.min <= +v && +v <= g.players.max))) return false;
-  if (by.age.length && !by.age.some((v) => g.minAge === +v)) return false;
+  if (by.age.length && !by.age.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.minAge != null && g.minAge >= lo && g.minAge <= hi; })) return false;
   if (by.type.length && !by.type.some((v) => (g.categories || []).includes(v))) return false;
   return true;
 }

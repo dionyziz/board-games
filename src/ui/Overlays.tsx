@@ -30,20 +30,21 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
       </div>
 
       {filterOpen ? (
-        <div className="filters" onMouseDown={(e) => e.preventDefault()}>
+        <div className="sidebar" onMouseDown={(e) => e.preventDefault()}>
+          <div className="sidebar-head">
+            <span>Filters</span>
+            {hasFilters ? <button className="clear-pills" onClick={onClearFilters}>Clear ×</button> : null}
+          </div>
           {facets.map((f) => (
             <div className="facet" key={f.id}>
               <span className="facet-label">{f.label}</span>
-              {f.values.map((v) => (
-                <button
-                  key={v.key}
-                  className={'pill' + (sel.has(v.key) ? ' on' : '')}
-                  onClick={() => onToggle(v.key)}
-                >{v.label}</button>
-              ))}
+              <div className="pills">
+                {f.values.map((v) => (
+                  <button key={v.key} className={'pill' + (sel.has(v.key) ? ' on' : '')} onClick={() => onToggle(v.key)}>{v.label}</button>
+                ))}
+              </div>
             </div>
           ))}
-          {hasFilters ? <button className="pill clear-pills" onClick={onClearFilters}>Clear filters ×</button> : null}
         </div>
       ) : null}
 
