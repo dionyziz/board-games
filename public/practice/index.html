@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>3D box — practice</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #0b0b0c;
+    color: #e9e6df;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+  }
+  #app { display: flex; height: 100vh; width: 100vw; }
+  #stage { position: relative; flex: 1 1 auto; min-width: 0; }
+  #stage canvas { display: block; width: 100%; height: 100%; }
+
+  #loading {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    color: #6b6862; font-size: 14px; letter-spacing: .04em; pointer-events: none;
+    transition: opacity .6s ease;
+  }
+
+  #dims {
+    position: absolute; left: 24px; bottom: 22px;
+    font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: .12em;
+    color: #7d7a73; text-transform: uppercase;
+  }
+  #hint {
+    position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%);
+    font-size: 11px; letter-spacing: .16em; color: #55524c; text-transform: uppercase;
+  }
+
+  /* Info panel — Stripe Press detail-view feel */
+  #panel {
+    flex: 0 0 400px; max-width: 42vw;
+    padding: 64px 56px; overflow-y: auto;
+    border-left: 1px solid #1c1c1e;
+    background: linear-gradient(180deg, #101011, #0b0b0c);
+  }
+  .eyebrow { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: #7a7770; margin-bottom: 22px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500; font-size: 34px; line-height: 1.12; letter-spacing: -.01em;
+    margin-bottom: 10px; color: #f4f1ea;
+  }
+  .byline { font-family: Georgia, serif; font-style: italic; font-size: 18px; color: #b7b2a8; margin-bottom: 30px; }
+  .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; margin-bottom: 30px; }
+  .meta .k { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #6f6c65; margin-bottom: 4px; }
+  .meta .v { font-size: 15px; color: #e4e0d8; font-variant-numeric: tabular-nums; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+  .chip { font-size: 12px; padding: 5px 11px; border: 1px solid #2a2a2c; border-radius: 999px; color: #b7b2a8; }
+  .desc { font-size: 15px; line-height: 1.62; color: #a9a49a; }
+  .desc p { margin-bottom: 14px; }
+  .footnote { margin-top: 30px; font-size: 11px; line-height: 1.6; color: #55524c; }
+
+  @media (max-width: 820px) {
+    #app { flex-direction: column; }
+    #stage { flex: 1 1 55%; }
+    #panel { flex: 1 1 45%; max-width: none; border-left: none; border-top: 1px solid #1c1c1e; padding: 32px 28px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="loading">Loading…</div>
+    <div id="dims"></div>
+    <div id="hint">drag to rotate · scroll to zoom</div>
+  </div>
+  <aside id="panel"></aside>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+// ---- game data (single record from src/data/games.json) ----
+const GAME = {
+  title: "The Lord of the Rings: Fate of the Fellowship",
+  designers: ["Matt Leacock"],
+  year: 2025,
+  players: { min: 1, max: 5 },
+  playtime: { min: 60, max: 150 },
+  complexity: 3.1,
+  categories: ["Fantasy", "Novel-based", "Cooperative"],
+  box: { size: { w: 27, h: 31, d: 9 }, unit: "cm", sideColor: "#182828", edgeColor: "#0e1818" },
+  id: "the-lord-of-the-rings-fate-of-the-fellowship-436217",
+  cover: "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/cover.webp",
+  coverAspect: 1417 / 1200,
+  textures: {
+    front:  "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/cover.webp",
+    back:   "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/back.webp",
+    spine:  "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/spine.webp",
+    top:    "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/top.webp",
+    bottom: "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/bottom.webp",
+  },
+  description: "As members of The Fellowship and the allies who rise to aid them, you must embark on a journey that may either save or doom Middle-earth. Navigate a world beset by shadow, where every choice forges a new path. The threads of destiny weave together, and the fate of The Free Peoples lies in your valor. Work together to overcome the trials ahead — for only through unity can the One Ring be unmade and darkness driven from the land."
+};
+
+// ---------------- info panel ----------------
+(function renderPanel() {
+  const b = GAME.box.size;
+  const players = GAME.players.min === GAME.players.max ? `${GAME.players.max}` : `${GAME.players.min}–${GAME.players.max}`;
+  const time = GAME.playtime.min === GAME.playtime.max ? `${GAME.playtime.max}` : `${GAME.playtime.min}–${GAME.playtime.max}`;
+  document.getElementById('panel').innerHTML = `
+    <div class="eyebrow">Jason’s board games</div>
+    <h1>${GAME.title}</h1>
+    <div class="byline">${GAME.designers.join(', ')}</div>
+    <div class="meta">
+      <div><div class="k">Players</div><div class="v">${players}</div></div>
+      <div><div class="k">Play time</div><div class="v">${time} min</div></div>
+      <div><div class="k">Complexity</div><div class="v">${GAME.complexity.toFixed(1)} / 5</div></div>
+      <div><div class="k">Published</div><div class="v">${GAME.year}</div></div>
+    </div>
+    <div class="chips">${GAME.categories.map(c => `<span class="chip">${c}</span>`).join('')}</div>
+    <div class="desc"><p>${GAME.description}</p></div>
+    <div class="footnote">Practice render · box shown at true proportions
+      (${b.w} × ${b.h} × ${b.d} cm), oriented to the cover art. Front &amp; back are
+      photographic; spine, top &amp; bottom are generated from the cover’s palette.</div>`;
+})();
+document.getElementById('dims').textContent = `${GAME.box.size.w} × ${GAME.box.size.h} × ${GAME.box.size.d} cm`;
+
+// ---------------- three.js scene ----------------
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+stage.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#0b0b0c');
+
+const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+camera.position.set(3.0, 2.1, 6.2);
+
+// environment for subtle reflections on the glossy cover
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+// lights: soft studio key + cool rim, matching the dark Stripe look
+scene.add(new THREE.HemisphereLight('#cfd6e6', '#0a0a0b', 0.35));
+const key = new THREE.DirectionalLight('#fff6ec', 2.4);
+key.position.set(4, 7, 5);
+key.castShadow = true;
+key.shadow.mapSize.set(2048, 2048);
+key.shadow.camera.near = 1; key.shadow.camera.far = 30;
+key.shadow.camera.left = -6; key.shadow.camera.right = 6;
+key.shadow.camera.top = 6; key.shadow.camera.bottom = -6;
+key.shadow.bias = -0.0004; key.shadow.radius = 6;
+scene.add(key);
+const rim = new THREE.DirectionalLight('#8fb4ff', 1.0);
+rim.position.set(-5, 3, -4);
+scene.add(rim);
+
+// ---- the box, at true proportions (cm / 10 = world units) ----
+// Orientation follows the COVER ART, not the raw dims: a landscape cover must
+// sit on a landscape face or the "cover-fit" crop slices the middle out of the
+// art. Sort the three dims descending [a >= b >= c] (c = thickness/depth), then
+// assign the long edge to whichever axis the cover's aspect calls for.
+const s = GAME.box.size;
+const [a, b, c] = [s.w, s.h, s.d].sort((x, y) => y - x);
+const landscape = GAME.coverAspect >= 1;
+const face = landscape ? { w: a, h: b, d: c } : { w: b, h: a, d: c };
+const W = face.w / 10, H = face.h / 10, D = face.d / 10;
+
+// six textured faces. The printed cover gets a glossy clearcoat; the printed
+// cardboard sides/back are matte. Fallback color per face if its texture 404s.
+const mkMat = (gloss, fallback) => gloss
+  ? new THREE.MeshPhysicalMaterial({ color: fallback, roughness: 0.5, metalness: 0.0,
+      clearcoat: 0.55, clearcoatRoughness: 0.35, envMapIntensity: 0.9 })
+  : new THREE.MeshStandardMaterial({ color: fallback, roughness: 0.82, metalness: 0.0 });
+
+const frontMat  = mkMat(true,  GAME.box.sideColor);
+const backMat   = mkMat(false, GAME.box.edgeColor);
+const spineMat  = mkMat(false, GAME.box.sideColor);
+const topMat    = mkMat(false, GAME.box.sideColor);
+const bottomMat = mkMat(false, GAME.box.edgeColor);
+
+// BoxGeometry material order: +X, -X, +Y(top), -Y(bottom), +Z(front), -Z(back).
+// spine (long side) faces ±X; top/bottom face ±Y.
+const materials = [spineMat, spineMat, topMat, bottomMat, frontMat, backMat];
+const geo = new THREE.BoxGeometry(W, H, D, 1, 1, 1);
+const box = new THREE.Mesh(geo, materials);
+box.castShadow = true;
+box.rotation.y = -0.5;
+scene.add(box);
+
+// contact shadow catcher
+const ground = new THREE.Mesh(
+  new THREE.PlaneGeometry(40, 40),
+  new THREE.ShadowMaterial({ opacity: 0.42 })
+);
+ground.rotation.x = -Math.PI / 2;
+ground.position.y = -H / 2;
+ground.receiveShadow = true;
+scene.add(ground);
+
+// load a texture and center-crop it to a face's aspect (fill, no distortion)
+const loader = new THREE.TextureLoader();
+const anis = renderer.capabilities.getMaxAnisotropy();
+let pending = 0, failed = 0;
+function loadFace(url, mat, faceAspect) {
+  if (!url) return;
+  pending++;
+  loader.load(url, (tex) => {
+    tex.colorSpace = THREE.SRGBColorSpace;
+    tex.anisotropy = anis;
+    tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+    const imgAspect = (tex.image.width || 1) / (tex.image.height || 1);
+    if (imgAspect > faceAspect) {          // image wider -> crop sides
+      tex.repeat.set(faceAspect / imgAspect, 1);
+      tex.offset.set((1 - tex.repeat.x) / 2, 0);
+    } else {                               // image taller -> crop top/bottom
+      tex.repeat.set(1, imgAspect / faceAspect);
+      tex.offset.set(0, (1 - tex.repeat.y) / 2);
+    }
+    mat.map = tex;
+    mat.color.set('#ffffff');
+    mat.needsUpdate = true;
+    if (--pending === 0) settle();
+  }, undefined, () => { failed++; if (--pending === 0) settle(); });
+}
+function settle() {
+  const l = document.getElementById('loading');
+  l.textContent = failed ? `${failed} texture(s) unavailable` : '';
+  l.style.opacity = '0';
+  window.__coverLoaded = true;
+}
+
+const T = GAME.textures || { front: GAME.cover };
+loadFace(T.front,  frontMat,  W / H);   // +Z
+loadFace(T.back,   backMat,   W / H);   // -Z (same face dims as front)
+loadFace(T.spine,  spineMat,  D / H);   // ±X : depth wide, height tall
+loadFace(T.top,    topMat,    W / D);   // +Y : width wide, depth tall
+loadFace(T.bottom, bottomMat, W / D);   // -Y
+
+// ---- controls ----
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+controls.enablePan = false;
+controls.minDistance = 3.5;
+controls.maxDistance = 11;
+controls.minPolarAngle = 0.5;
+controls.maxPolarAngle = 1.85;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 0.9;
+controls.target.set(0, 0, 0);
+controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+// ---- resize + loop ----
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize);
+resize();
+
+renderer.setAnimationLoop(() => {
+  controls.update();
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

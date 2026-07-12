@@ -1,0 +1,9 @@
+# dependencies
+node_modules/
+
+# local Claude Code settings (per-machine permissions)
+.claude/settings.local.json
+
+# OS / editor cruft
+.DS_Store
+*.log

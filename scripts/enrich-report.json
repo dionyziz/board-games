@@ -1,0 +1,2522 @@
+[
+  {
+    "title": "Σαμποτέρ",
+    "bggId": 9220,
+    "size": {
+      "w": 9.5,
+      "h": 12.2,
+      "d": 2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 44
+  },
+  {
+    "title": "Risk Strike",
+    "bggId": 394144,
+    "size": {
+      "w": 11.7,
+      "h": 18.6,
+      "d": 4.4
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 3
+  },
+  {
+    "title": "Akropolis",
+    "bggId": 357563,
+    "size": {
+      "w": 26,
+      "h": 26,
+      "d": 6
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 13
+  },
+  {
+    "title": "Azul Mini",
+    "bggId": 230802,
+    "size": {
+      "w": 15,
+      "h": 20,
+      "d": 5
+    },
+    "source": "bgg-variant:mini",
+    "agree": 0.99,
+    "nver": 35
+  },
+  {
+    "title": "Codenames",
+    "bggId": 178900,
+    "size": {
+      "w": 16.2,
+      "h": 23.2,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 33
+  },
+  {
+    "title": "Codenames: Εικόνες",
+    "bggId": 198773,
+    "size": {
+      "w": 16,
+      "h": 23,
+      "d": 5
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 19
+  },
+  {
+    "title": "Dixit: Odyssey",
+    "bggId": 92828,
+    "size": {
+      "w": 27.6,
+      "h": 27.6,
+      "d": 5.7
+    },
+    "source": "bgg-median",
+    "agree": 0.9,
+    "nver": 27
+  },
+  {
+    "title": "Wizard",
+    "bggId": 1465,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.84,
+    "nver": 37
+  },
+  {
+    "title": "Love Letter",
+    "bggId": 277085,
+    "size": {
+      "w": 11.4,
+      "h": 17.6,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.7,
+    "nver": 16
+  },
+  {
+    "title": "Κατσικομαχίες",
+    "bggId": 31506,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 11
+  },
+  {
+    "title": "Κέλτες",
+    "bggId": 40832,
+    "size": {
+      "w": 9.3,
+      "h": 12,
+      "d": 1.8
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "Κατάν με κάρτες",
+    "bggId": 91534,
+    "size": {
+      "w": 9.5,
+      "h": 12.2,
+      "d": 2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 17
+  },
+  {
+    "title": "Σαμποτέρ 2",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "The Mind",
+    "bggId": 244992,
+    "size": {
+      "w": 10,
+      "h": 13,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.76,
+    "nver": 24
+  },
+  {
+    "title": "Ohanami",
+    "bggId": 270314,
+    "size": {
+      "w": 10,
+      "h": 13.1,
+      "d": 2.3
+    },
+    "source": "bgg-median",
+    "agree": 0.91,
+    "nver": 9
+  },
+  {
+    "title": "Munchkin Zombies",
+    "bggId": 86955,
+    "size": {
+      "w": 15.7,
+      "h": 23.3,
+      "d": 4.6
+    },
+    "source": "bgg-median",
+    "agree": 0.67,
+    "nver": 19
+  },
+  {
+    "title": "Happy Salmon",
+    "bggId": 194626,
+    "size": {
+      "w": 14.5,
+      "h": 21.5,
+      "d": 4.9
+    },
+    "source": "bgg-median",
+    "agree": 0.67,
+    "nver": 9
+  },
+  {
+    "title": "Zombie Dice Horde Edition",
+    "bggId": 224035,
+    "size": {
+      "w": 14.8,
+      "h": 21.2,
+      "d": 5.6
+    },
+    "source": "bgg-median",
+    "agree": 0.78,
+    "nver": 2
+  },
+  {
+    "title": "Δώσε τα Πάντα",
+    "bggId": 141428,
+    "size": {
+      "w": 12.7,
+      "h": 17.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Dobble",
+    "bggId": 63268,
+    "size": {
+      "w": 13,
+      "h": 13,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.68,
+    "nver": 34
+  },
+  {
+    "title": "Dobble Connect",
+    "bggId": 381429,
+    "size": {
+      "w": 13,
+      "h": 13,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "Silver & Gold",
+    "bggId": 270673,
+    "size": {
+      "w": 11.5,
+      "h": 17.5,
+      "d": 2.3
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 6
+  },
+  {
+    "title": "Lost Cities Rivals",
+    "bggId": 253398,
+    "size": {
+      "w": 13.1,
+      "h": 18,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 4
+  },
+  {
+    "title": "4x4",
+    "bggId": 2719,
+    "size": {
+      "w": 25.4,
+      "h": 27,
+      "d": 5.1
+    },
+    "source": "bgg-median",
+    "agree": 0.7,
+    "nver": 30
+  },
+  {
+    "title": "Who am I?",
+    "bggId": 33406,
+    "size": {
+      "w": 25,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.8,
+    "nver": 7
+  },
+  {
+    "title": "Pictionary Air",
+    "bggId": 272889,
+    "size": {
+      "w": 20,
+      "h": 26.7,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Uno",
+    "bggId": 2223,
+    "size": {
+      "w": 9.4,
+      "h": 12.7,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.72,
+    "nver": 40
+  },
+  {
+    "title": "Sushi Go!",
+    "bggId": 133473,
+    "size": {
+      "w": 10.2,
+      "h": 14.3,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.77,
+    "nver": 26
+  },
+  {
+    "title": "Railroad Ink Challenge: Lush Green",
+    "bggId": 306881,
+    "size": {
+      "w": 15,
+      "h": 15,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 7
+  },
+  {
+    "title": "Μια Φορά και Έναν Καιρό",
+    "bggId": 1234,
+    "size": {
+      "w": 12.8,
+      "h": 17.8,
+      "d": 4.9
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 23
+  },
+  {
+    "title": "Camel Up με Κάρτες",
+    "bggId": 378848,
+    "size": {
+      "w": 13,
+      "h": 18,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Χάλι Γκάλι",
+    "bggId": 2944,
+    "size": {
+      "w": 12.7,
+      "h": 17,
+      "d": 5.5
+    },
+    "source": "bgg-median",
+    "agree": 0.74,
+    "nver": 33
+  },
+  {
+    "title": "Canvas",
+    "bggId": 290236,
+    "size": {
+      "w": 20.5,
+      "h": 25.5,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 12
+  },
+  {
+    "title": "Ντάμα",
+    "bggId": 2083,
+    "size": {
+      "w": 21.5,
+      "h": 26.7,
+      "d": 3.4
+    },
+    "source": "bgg-median",
+    "agree": 0.64,
+    "nver": 33
+  },
+  {
+    "title": "Σκάκι",
+    "bggId": 171,
+    "size": {
+      "w": 26.7,
+      "h": 26.8,
+      "d": 6.5
+    },
+    "source": "bgg-median",
+    "agree": 0.67,
+    "nver": 38
+  },
+  {
+    "title": "Sequence",
+    "bggId": 2375,
+    "size": {
+      "w": 20.5,
+      "h": 26.5,
+      "d": 5.8
+    },
+    "source": "bgg-median",
+    "agree": 0.79,
+    "nver": 43
+  },
+  {
+    "title": " Carcassonne: 20th Anniversary Edition",
+    "bggId": 329954,
+    "size": {
+      "w": 19,
+      "h": 27.5,
+      "d": 6.6
+    },
+    "source": "bgg-variant:anniversary",
+    "agree": 0.99,
+    "nver": 12
+  },
+  {
+    "title": "Cash n' Guns Second Edition",
+    "bggId": 155362,
+    "size": {
+      "w": 27.7,
+      "h": 27.7,
+      "d": 5.7
+    },
+    "source": "bgg-median",
+    "agree": 0.9,
+    "nver": 12
+  },
+  {
+    "title": "JunkArt",
+    "bggId": 193042,
+    "size": {
+      "w": 26,
+      "h": 26,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 10
+  },
+  {
+    "title": "Calico",
+    "bggId": 283155,
+    "size": {
+      "w": 24.1,
+      "h": 24.1,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.89,
+    "nver": 10
+  },
+  {
+    "title": "Scrabble",
+    "bggId": 320,
+    "size": {
+      "w": 26.8,
+      "h": 36.8,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 0.77,
+    "nver": 40
+  },
+  {
+    "title": "Talk to the Hand",
+    "bggId": 50381,
+    "size": {
+      "w": 10.6,
+      "h": 19,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.87,
+    "nver": 22
+  },
+  {
+    "title": "Virus!",
+    "bggId": 180020,
+    "size": {
+      "w": 10.5,
+      "h": 15,
+      "d": 2.9
+    },
+    "source": "bgg-median",
+    "agree": 0.8,
+    "nver": 17
+  },
+  {
+    "title": "Mindbug",
+    "bggId": 345584,
+    "size": {
+      "w": 12.8,
+      "h": 17.8,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 12
+  },
+  {
+    "title": "Exploding Kittens",
+    "bggId": 172225,
+    "size": {
+      "w": 11.2,
+      "h": 16.2,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.94,
+    "nver": 23
+  },
+  {
+    "title": "Ναι ή Όχι",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Τα 7 Θαύματα του Κόσμου",
+    "bggId": 316377,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.6
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 18
+  },
+  {
+    "title": "Οι Άποικοι του Κατάν",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Ubongo",
+    "bggId": 16986,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.8,
+    "nver": 26
+  },
+  {
+    "title": "Ticket to Ride Ευρώπη",
+    "bggId": 14996,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 47
+  },
+  {
+    "title": "Ο Βασιλιάς του Τόκυο",
+    "bggId": 70323,
+    "size": {
+      "w": 27.4,
+      "h": 27.4,
+      "d": 6.8
+    },
+    "source": "bgg-greek-edition",
+    "agree": 0.83,
+    "nver": 36
+  },
+  {
+    "title": "City Blox",
+    "bggId": 286141,
+    "size": {
+      "w": 25,
+      "h": 25,
+      "d": 6
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "Bohnanza",
+    "bggId": 11,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.79,
+    "nver": 43
+  },
+  {
+    "title": "Κάστορες & Ποντίκια",
+    "bggId": 3837,
+    "size": {
+      "w": 9.4,
+      "h": 12.1,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.78,
+    "nver": 18
+  },
+  {
+    "title": "Σκοτεινές Υποθέσεις: Λονδίνο 1888",
+    "bggId": 106,
+    "size": {
+      "w": 13,
+      "h": 17.1,
+      "d": 3.2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 9
+  },
+  {
+    "title": "Hero Realms",
+    "bggId": 198994,
+    "size": {
+      "w": 10.5,
+      "h": 16.4,
+      "d": 4.3
+    },
+    "source": "bgg-median",
+    "agree": 0.75,
+    "nver": 11
+  },
+  {
+    "title": "Don't Break the Ice",
+    "bggId": 4888,
+    "size": {
+      "w": 23.6,
+      "h": 26.7,
+      "d": 10.2
+    },
+    "source": "bgg-median",
+    "agree": 0.71,
+    "nver": 11
+  },
+  {
+    "title": "Connect 4 Shots",
+    "bggId": 258818,
+    "size": {
+      "w": 28.5,
+      "h": 31.7,
+      "d": 5.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Γουρουνάκια στη Λάσπη",
+    "bggId": 118410,
+    "size": {
+      "w": 9.6,
+      "h": 12.3,
+      "d": 2.1
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 3
+  },
+  {
+    "title": "Bag of Chips",
+    "bggId": 344114,
+    "size": {
+      "w": 14,
+      "h": 20,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.84,
+    "nver": 8
+  },
+  {
+    "title": "Fiesta de los Muertos",
+    "bggId": 285253,
+    "size": {
+      "w": 20.5,
+      "h": 20.5,
+      "d": 6.2
+    },
+    "source": "bgg-median",
+    "agree": 0.95,
+    "nver": 10
+  },
+  {
+    "title": "Αναζητώντας το Ελ Ντοράντο",
+    "bggId": 217372,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 24
+  },
+  {
+    "title": "Kosmogonia 2086 / Oracle",
+    "bggId": 394193,
+    "size": {
+      "w": 22.6,
+      "h": 31.5,
+      "d": 5.6
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "CloudAge",
+    "bggId": 316858,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 8
+  },
+  {
+    "title": "Pagan: Fate of Roanoke",
+    "bggId": 319910,
+    "size": {
+      "w": 25,
+      "h": 25,
+      "d": 5.9
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 6
+  },
+  {
+    "title": "Epic Card Game",
+    "bggId": 175621,
+    "size": {
+      "w": 6.9,
+      "h": 9.5,
+      "d": 4.4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "Sky Team",
+    "bggId": 373106,
+    "size": {
+      "w": 18.5,
+      "h": 25.5,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 24
+  },
+  {
+    "title": "Dice Masters",
+    "bggId": 386766,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Solforge Fusion",
+    "bggId": 344341,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Keyforge",
+    "bggId": 257501,
+    "size": {
+      "w": 22.7,
+      "h": 22.7,
+      "d": 4.3
+    },
+    "source": "bgg-median",
+    "agree": 0.75,
+    "nver": 2
+  },
+  {
+    "title": "World of Warcraft: Wrath of the Lich King",
+    "bggId": 342848,
+    "size": {
+      "w": 25,
+      "h": 30.5,
+      "d": 5.8
+    },
+    "source": "bgg-median",
+    "agree": 0.9,
+    "nver": 7
+  },
+  {
+    "title": "Yogi",
+    "bggId": 224271,
+    "size": {
+      "w": 11,
+      "h": 14.7,
+      "d": 3.2
+    },
+    "source": "bgg-median",
+    "agree": 0.9,
+    "nver": 11
+  },
+  {
+    "title": "Οι Τσαρλατάνοι Του Κουέντλινμπουργκ",
+    "bggId": 244521,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 24
+  },
+  {
+    "title": "The Binding of Isaac: Four Souls",
+    "bggId": 255664,
+    "size": {
+      "w": 10.9,
+      "h": 34.8,
+      "d": 8
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 7
+  },
+  {
+    "title": "Joking Hazard",
+    "bggId": 193621,
+    "size": {
+      "w": 10.1,
+      "h": 20.3,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 8
+  },
+  {
+    "title": "Parachute Panda",
+    "bggId": 420025,
+    "size": {
+      "w": 14.6,
+      "h": 19.7,
+      "d": 2.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Hive Carbon",
+    "bggId": 2655,
+    "size": {
+      "w": 21,
+      "h": 21,
+      "d": 6
+    },
+    "source": "bgg-median",
+    "agree": 0.79,
+    "nver": 26
+  },
+  {
+    "title": "Phase 10",
+    "bggId": 1258,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.84,
+    "nver": 45
+  },
+  {
+    "title": "Dungeon Mayhem",
+    "bggId": 260300,
+    "size": {
+      "w": 10,
+      "h": 12.5,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 3
+  },
+  {
+    "title": "Cosmic Encounter Duel",
+    "bggId": 298572,
+    "size": {
+      "w": 25.4,
+      "h": 25.4,
+      "d": 5.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Court of the Dead: Dark Harvest",
+    "bggId": 285105,
+    "size": {
+      "w": 10,
+      "h": 13,
+      "d": 3.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Chupacabra: Survive the Night",
+    "bggId": 120515,
+    "size": {
+      "w": 17.8,
+      "h": 22.9,
+      "d": 5.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Tentacle Town",
+    "bggId": 273433,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Patchwork: Halloween",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Skitsografies",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Ice Team",
+    "bggId": 265031,
+    "size": {
+      "w": 18,
+      "h": 18,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Jurassic Snack",
+    "bggId": 241164,
+    "size": {
+      "w": 18,
+      "h": 18,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "Jurassic Brunch",
+    "bggId": 297666,
+    "size": {
+      "w": 27,
+      "h": 27,
+      "d": 6.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Universus CCG",
+    "bggId": 258301,
+    "size": {
+      "w": 30,
+      "h": 30,
+      "d": 7.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "The Crew: Mission Deep Sea",
+    "bggId": 324856,
+    "size": {
+      "w": 12.9,
+      "h": 17.9,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 10
+  },
+  {
+    "title": "Πορτ Ρουαγιάλ",
+    "bggId": 156009,
+    "size": {
+      "w": 12.7,
+      "h": 17.7,
+      "d": 3.7
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 26
+  },
+  {
+    "title": "Lords of Waterdeep",
+    "bggId": 110327,
+    "size": {
+      "w": 28,
+      "h": 35.5,
+      "d": 7.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Dice Forge",
+    "bggId": 194594,
+    "size": {
+      "w": 28.6,
+      "h": 28.6,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.94,
+    "nver": 10
+  },
+  {
+    "title": "Heat: Pedal to the Metal",
+    "bggId": 366013,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 10.4
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 17
+  },
+  {
+    "title": "My Shelfie: The Dice Game",
+    "bggId": 411543,
+    "size": {
+      "w": 15,
+      "h": 15,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 3
+  },
+  {
+    "title": "Diced Veggies",
+    "bggId": 381356,
+    "size": {
+      "w": 15.2,
+      "h": 22.8,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "Chomp",
+    "bggId": 377449,
+    "size": {
+      "w": 12,
+      "h": 12,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 4
+  },
+  {
+    "title": "TacTiki",
+    "bggId": 266592,
+    "size": {
+      "w": 30,
+      "h": 30,
+      "d": 6.3
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Railroad Ink: Deep Blue Edition",
+    "bggId": 245654,
+    "size": {
+      "w": 15,
+      "h": 15,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 17
+  },
+  {
+    "title": "Ticket to Ride: Berlin",
+    "bggId": 388036,
+    "size": {
+      "w": 23,
+      "h": 23,
+      "d": 4.6
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 5
+  },
+  {
+    "title": "Wavelength",
+    "bggId": 262543,
+    "size": {
+      "w": 27,
+      "h": 27,
+      "d": 7.5
+    },
+    "source": "bgg-median",
+    "agree": 0.84,
+    "nver": 9
+  },
+  {
+    "title": "Slay the Spire",
+    "bggId": 338960,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 9
+  },
+  {
+    "title": "Small World of Warcraft",
+    "bggId": 309630,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 13
+  },
+  {
+    "title": "Kingdomino",
+    "bggId": 204583,
+    "size": {
+      "w": 20,
+      "h": 20,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.87,
+    "nver": 43
+  },
+  {
+    "title": "Triqueta",
+    "bggId": 378200,
+    "size": {
+      "w": 20,
+      "h": 20,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 7
+  },
+  {
+    "title": "5 Wards",
+    "bggId": 382182,
+    "size": {
+      "w": 27.9,
+      "h": 27.9,
+      "d": 5.8
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Το Νησί Των Πειρατών",
+    "bggId": 117663,
+    "size": {
+      "w": 9.6,
+      "h": 12.3,
+      "d": 3.2
+    },
+    "source": "bgg-median",
+    "agree": 0.93,
+    "nver": 13
+  },
+  {
+    "title": "Απαγορευμένη Νήσος",
+    "bggId": 65244,
+    "size": {
+      "w": 22.6,
+      "h": 31.5,
+      "d": 5.6
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 45
+  },
+  {
+    "title": "Ο Χαρτογράφος",
+    "bggId": 263918,
+    "size": {
+      "w": 14.5,
+      "h": 20,
+      "d": 4.5
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 22
+  },
+  {
+    "title": "Overboss: A Boss Monster Adventure",
+    "bggId": 310192,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 3
+  },
+  {
+    "title": "The Lord of the Rings Duel for Middle Earth",
+    "bggId": 421006,
+    "size": {
+      "w": 20.6,
+      "h": 27,
+      "d": 5.3
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 6
+  },
+  {
+    "title": "Reef Project",
+    "bggId": 419199,
+    "size": {
+      "w": 29.5,
+      "h": 29.6,
+      "d": 7.8
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Confusing Lands",
+    "bggId": 342200,
+    "size": {
+      "w": 10.9,
+      "h": 11,
+      "d": 2.6
+    },
+    "source": "bgg-median",
+    "agree": 0.9,
+    "nver": 3
+  },
+  {
+    "title": "Sirens",
+    "bggId": 375616,
+    "size": {
+      "w": 10,
+      "h": 13,
+      "d": 3.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Dorfromantik",
+    "bggId": 370591,
+    "size": {
+      "w": 29.5,
+      "h": 29.5,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 20
+  },
+  {
+    "title": "Trial by Trolley",
+    "bggId": 282171,
+    "size": {
+      "w": 16,
+      "h": 21.2,
+      "d": 6.6
+    },
+    "source": "bgg-median",
+    "agree": 0.91,
+    "nver": 4
+  },
+  {
+    "title": "The Quest for El Dorado: The Golden Temples",
+    "bggId": 271615,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 7
+  },
+  {
+    "title": "Prowl: Clans & Cunning",
+    "bggId": 402353,
+    "size": {
+      "w": 9,
+      "h": 14,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Ο Κατεργάρης",
+    "bggId": 153065,
+    "size": {
+      "w": 9.6,
+      "h": 12.3,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.84,
+    "nver": 16
+  },
+  {
+    "title": "Autumn Harvest: A Tea Dragon Society Game",
+    "bggId": 315138,
+    "size": {
+      "w": 12.7,
+      "h": 17.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Beacon Patrol",
+    "bggId": 362976,
+    "size": {
+      "w": 12.4,
+      "h": 24.1,
+      "d": 5.6
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 7
+  },
+  {
+    "title": "Minos: Dawn of the Bronze Age",
+    "bggId": 423401,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 5
+  },
+  {
+    "title": "Σκοτεινές Υποθέσεις: Οι Φόνοι της Οδού Μοργκ",
+    "bggId": 371,
+    "size": {
+      "w": 13,
+      "h": 17,
+      "d": 3
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 5
+  },
+  {
+    "title": "Long Shot: The Dice Game",
+    "bggId": 295374,
+    "size": {
+      "w": 13.4,
+      "h": 22.6,
+      "d": 4.8
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 5
+  },
+  {
+    "title": "Survive the Island",
+    "bggId": 425428,
+    "size": {
+      "w": 26,
+      "h": 26,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.85,
+    "nver": 16
+  },
+  {
+    "title": "Faraway",
+    "bggId": 385761,
+    "size": {
+      "w": 13.4,
+      "h": 18.3,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 0.73,
+    "nver": 25
+  },
+  {
+    "title": "Ιστορίες Μυστηρίου",
+    "bggId": 18803,
+    "size": {
+      "w": 9.4,
+      "h": 11.9,
+      "d": 2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 30
+  },
+  {
+    "title": "Ποιος Που Πότε Γιατί Party Edition",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Codenames Duet",
+    "bggId": 224037,
+    "size": {
+      "w": 16,
+      "h": 23,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.94,
+    "nver": 28
+  },
+  {
+    "title": "The Isle of Cats Duel",
+    "bggId": 431718,
+    "size": {
+      "w": 20,
+      "h": 20,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "One Night Ultimate Warewolf",
+    "bggId": 147949,
+    "size": {
+      "w": 13.2,
+      "h": 17.5,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.8,
+    "nver": 23
+  },
+  {
+    "title": "One Night Ultimate Werewolf: Daybreak",
+    "bggId": 163166,
+    "size": {
+      "w": 13.2,
+      "h": 17.5,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.97,
+    "nver": 10
+  },
+  {
+    "title": "Snowcrest",
+    "bggId": 385437,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "Kinfire Delve: Scorn's Stockade",
+    "bggId": 404538,
+    "size": {
+      "w": 14.5,
+      "h": 17.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 6
+  },
+  {
+    "title": "Chabyrinthe",
+    "bggId": 33088,
+    "size": {
+      "w": 9,
+      "h": 9,
+      "d": 2.8
+    },
+    "source": "bgg-median",
+    "agree": 0.94,
+    "nver": 7
+  },
+  {
+    "title": "Arkham Horror: Lovecraft Letter",
+    "bggId": 424784,
+    "size": {
+      "w": 12.3,
+      "h": 16.3,
+      "d": 3.1
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 9
+  },
+  {
+    "title": "The Fellowship of the Ring: Trick-Taking Game",
+    "bggId": 429293,
+    "size": {
+      "w": 10.4,
+      "h": 21.9,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 17
+  },
+  {
+    "title": "Kinfire Delve: Vainglory's Grotto",
+    "bggId": 391795,
+    "size": {
+      "w": 14.5,
+      "h": 17.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 5
+  },
+  {
+    "title": "Marvel Champions: The Card Game",
+    "bggId": 285774,
+    "size": {
+      "w": 25.5,
+      "h": 29.5,
+      "d": 8
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 6
+  },
+  {
+    "title": "Kinfire Delve: Callous' Lab",
+    "bggId": 406174,
+    "size": {
+      "w": 14.5,
+      "h": 17.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 5
+  },
+  {
+    "title": "Cascadia",
+    "bggId": 295947,
+    "size": {
+      "w": 24,
+      "h": 24,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 16
+  },
+  {
+    "title": "Για το Βασίλειο!",
+    "bggId": 334590,
+    "size": {
+      "w": 7.5,
+      "h": 10,
+      "d": 3
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 11
+  },
+  {
+    "title": "Θάλασσα, Χαρτί & Αλάτι",
+    "bggId": 367220,
+    "size": {
+      "w": 7,
+      "h": 10,
+      "d": 3
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 24
+  },
+  {
+    "title": "Spicy",
+    "bggId": 299169,
+    "size": {
+      "w": 9.5,
+      "h": 12.1,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.79,
+    "nver": 17
+  },
+  {
+    "title": "Kingdomino Origins",
+    "bggId": 340041,
+    "size": {
+      "w": 20,
+      "h": 26.5,
+      "d": 6
+    },
+    "source": "bgg-median",
+    "agree": 0.88,
+    "nver": 8
+  },
+  {
+    "title": "Cyberion",
+    "bggId": 376893,
+    "size": {
+      "w": 16,
+      "h": 16,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 5
+  },
+  {
+    "title": "Kingdomino Origins",
+    "bggId": 340041,
+    "size": {
+      "w": 20,
+      "h": 26.5,
+      "d": 6
+    },
+    "source": "bgg-median",
+    "agree": 0.88,
+    "nver": 8
+  },
+  {
+    "title": "Ouch!",
+    "bggId": 352710,
+    "size": {
+      "w": 9.6,
+      "h": 12.4,
+      "d": 2.1
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 4
+  },
+  {
+    "title": "King of Tokyo: Duel",
+    "bggId": 422484,
+    "size": {
+      "w": 16,
+      "h": 20.5,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Finspan",
+    "bggId": 436126,
+    "size": {
+      "w": 30,
+      "h": 30,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 9
+  },
+  {
+    "title": "Hanabi",
+    "bggId": 98778,
+    "size": {
+      "w": 9.5,
+      "h": 12,
+      "d": 2
+    },
+    "source": "bgg-median",
+    "agree": 0.67,
+    "nver": 44
+  },
+  {
+    "title": "Marvel: Remix",
+    "bggId": 359152,
+    "size": {
+      "w": 12.5,
+      "h": 16.8,
+      "d": 3.8
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 4
+  },
+  {
+    "title": "Mythic Valley: Greek Legends",
+    "bggId": null,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Star Wars: The Deckbuilding Game – Clone Wars Edition",
+    "bggId": 422332,
+    "size": {
+      "w": 16.6,
+      "h": 21.3,
+      "d": 7.6
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "Sylvion",
+    "bggId": 143405,
+    "size": {
+      "w": 16,
+      "h": 16,
+      "d": 4.7
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 8
+  },
+  {
+    "title": "Bon Voyage, Voyager!",
+    "bggId": 433550,
+    "size": {
+      "w": 10,
+      "h": 13,
+      "d": 3.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "Scout",
+    "bggId": 291453,
+    "size": {
+      "w": 6.5,
+      "h": 11.1,
+      "d": 3.7
+    },
+    "source": "bgg-median",
+    "agree": 0.83,
+    "nver": 23
+  },
+  {
+    "title": "Splendor Μονομαχία",
+    "bggId": 364073,
+    "size": {
+      "w": 13,
+      "h": 18,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 12
+  },
+  {
+    "title": "Cyclades: Legendary Edition",
+    "bggId": 380619,
+    "size": {
+      "w": 32,
+      "h": 32,
+      "d": 12
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 16
+  },
+  {
+    "title": "Jaipur",
+    "bggId": 54043,
+    "size": {
+      "w": 12.9,
+      "h": 18,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.89,
+    "nver": 50
+  },
+  {
+    "title": "Oceans: Deluxe Edition",
+    "bggId": 232414,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-variant:deluxe",
+    "agree": 1,
+    "nver": 8
+  },
+  {
+    "title": "Skull Queen",
+    "bggId": 423432,
+    "size": {
+      "w": 11,
+      "h": 16,
+      "d": 4.3
+    },
+    "source": "bgg-median",
+    "agree": 0.75,
+    "nver": 2
+  },
+  {
+    "title": "Star Wars: The Deckbuilding Game",
+    "bggId": 374173,
+    "size": {
+      "w": 16.8,
+      "h": 21.3,
+      "d": 7.6
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 9
+  },
+  {
+    "title": "Abyss Conspiracy: Οι Άρχοντες του Βυθού",
+    "bggId": 276042,
+    "size": {
+      "w": 13,
+      "h": 13,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.81,
+    "nver": 12
+  },
+  {
+    "title": "Πάρκο Δεινοσαύρων",
+    "bggId": 264055,
+    "size": {
+      "w": 20,
+      "h": 20,
+      "d": 5.8
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 12
+  },
+  {
+    "title": "Kabuto Sumo: Sakura Slam",
+    "bggId": 410680,
+    "size": {
+      "w": 17.3,
+      "h": 27.4,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Fairy Ring",
+    "bggId": 419074,
+    "size": {
+      "w": 26,
+      "h": 26,
+      "d": 4.4
+    },
+    "source": "bgg-median",
+    "agree": 0.85,
+    "nver": 7
+  },
+  {
+    "title": "Star Wars: The Clone Wars",
+    "bggId": 370913,
+    "size": {
+      "w": 22.6,
+      "h": 31.5,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 0.94,
+    "nver": 4
+  },
+  {
+    "title": "The Fox in the Forest",
+    "bggId": 221965,
+    "size": {
+      "w": 11.1,
+      "h": 16,
+      "d": 3
+    },
+    "source": "bgg-median",
+    "agree": 0.89,
+    "nver": 12
+  },
+  {
+    "title": "Invincible: The Hero-Building Game",
+    "bggId": 396251,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Slayers and Dragons",
+    "bggId": 434500,
+    "size": {
+      "w": 10.2,
+      "h": 15.2,
+      "d": 2.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Fort",
+    "bggId": 296912,
+    "size": {
+      "w": 14.5,
+      "h": 22.5,
+      "d": 5.5
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 5
+  },
+  {
+    "title": "Star Wars: Battle of Hoth",
+    "bggId": 444481,
+    "size": {
+      "w": 27,
+      "h": 37,
+      "d": 5.6
+    },
+    "source": "bgg-median",
+    "agree": 0.85,
+    "nver": 5
+  },
+  {
+    "title": "Jurassic World: Escape the Island",
+    "bggId": 366302,
+    "size": {
+      "w": 11.5,
+      "h": 12.5,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Wiz-War (9th Edition)",
+    "bggId": 324937,
+    "size": {
+      "w": 26.5,
+      "h": 26.5,
+      "d": 5.5
+    },
+    "source": "estimated",
+    "agree": 0,
+    "nver": 0
+  },
+  {
+    "title": "3 Laws of Robotics",
+    "bggId": 271447,
+    "size": {
+      "w": 10,
+      "h": 15,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Into The Dark Dungeon: Silver Mine",
+    "bggId": 429770,
+    "size": {
+      "w": 12,
+      "h": 18,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Sagrada",
+    "bggId": 199561,
+    "size": {
+      "w": 22.5,
+      "h": 29.5,
+      "d": 7.6
+    },
+    "source": "bgg-median",
+    "agree": 0.87,
+    "nver": 29
+  },
+  {
+    "title": "Χαμένες Πολιτείες",
+    "bggId": 50,
+    "size": {
+      "w": 19.8,
+      "h": 19.8,
+      "d": 3.2
+    },
+    "source": "bgg-greek-edition",
+    "agree": 1,
+    "nver": 40
+  },
+  {
+    "title": "Travelers Tokyo",
+    "bggId": 405188,
+    "size": {
+      "w": 20,
+      "h": 28,
+      "d": 7
+    },
+    "source": "bgg-variant:travel",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Babylon",
+    "bggId": 418354,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 7
+  },
+  {
+    "title": "Tag Team",
+    "bggId": 434906,
+    "size": {
+      "w": 16,
+      "h": 23,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "The Lord of the Rings: Fate of the Fellowship",
+    "bggId": 436217,
+    "size": {
+      "w": 27,
+      "h": 31,
+      "d": 9
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 10
+  },
+  {
+    "title": "Agent Avenue",
+    "bggId": 422732,
+    "size": {
+      "w": 12.7,
+      "h": 17.8,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 7
+  },
+  {
+    "title": "Fantasy Realms: Deluxe Edition",
+    "bggId": 363289,
+    "size": {
+      "w": 9.4,
+      "h": 19.3,
+      "d": 13.4
+    },
+    "source": "bgg-variant:deluxe",
+    "agree": 0.71,
+    "nver": 2
+  },
+  {
+    "title": "Unmatched: The Witcher – Realms Fall",
+    "bggId": 411861,
+    "size": {
+      "w": 12.6,
+      "h": 29.6,
+      "d": 2.6
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 2
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers – Trick-Taking Game",
+    "bggId": 448271,
+    "size": {
+      "w": 10.4,
+      "h": 22,
+      "d": 4.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 6
+  },
+  {
+    "title": "Sosig",
+    "bggId": 411015,
+    "size": {
+      "w": 6.4,
+      "h": 6.4,
+      "d": 4.4
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 2
+  },
+  {
+    "title": "Fantasy Realms: Greek Legends",
+    "bggId": 428664,
+    "size": {
+      "w": 14.8,
+      "h": 23.5,
+      "d": 6.4
+    },
+    "source": "bgg-median",
+    "agree": 0.3,
+    "nver": 2
+  },
+  {
+    "title": "Castle Combo",
+    "bggId": 416851,
+    "size": {
+      "w": 13,
+      "h": 18,
+      "d": 4.2
+    },
+    "source": "bgg-median",
+    "agree": 0.66,
+    "nver": 10
+  },
+  {
+    "title": "Creature Caravan",
+    "bggId": 385331,
+    "size": {
+      "w": 29.7,
+      "h": 29.7,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Compile: Main 1",
+    "bggId": 406652,
+    "size": {
+      "w": 8.3,
+      "h": 10,
+      "d": 8.3
+    },
+    "source": "bgg-median",
+    "agree": 0.79,
+    "nver": 7
+  },
+  {
+    "title": "Compile: Main 2",
+    "bggId": 440606,
+    "size": {
+      "w": 8.3,
+      "h": 10.4,
+      "d": 8.3
+    },
+    "source": "bgg-median",
+    "agree": 0.96,
+    "nver": 3
+  },
+  {
+    "title": "Flip 7: With A Vengeance",
+    "bggId": 463441,
+    "size": {
+      "w": 10.5,
+      "h": 15,
+      "d": 3.9
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 2
+  },
+  {
+    "title": "Duel for Cardia",
+    "bggId": 447243,
+    "size": {
+      "w": 9.5,
+      "h": 12.1,
+      "d": 3.2
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 3
+  },
+  {
+    "title": "Unmatched: The Witcher – Steel and Silver",
+    "bggId": 411860,
+    "size": {
+      "w": 15.1,
+      "h": 29.6,
+      "d": 2.6
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 2
+  },
+  {
+    "title": "Pondscape",
+    "bggId": 435330,
+    "size": {
+      "w": 12,
+      "h": 18,
+      "d": 3.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 4
+  },
+  {
+    "title": "3 Witches",
+    "bggId": 447707,
+    "size": {
+      "w": 6.6,
+      "h": 10.9,
+      "d": 2.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "My City",
+    "bggId": 295486,
+    "size": {
+      "w": 29.5,
+      "h": 29.5,
+      "d": 7.1
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 9
+  },
+  {
+    "title": "Unmatched: Battle of Legends, Volume Three",
+    "bggId": 439765,
+    "size": {
+      "w": 23,
+      "h": 29,
+      "d": 7
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Dungeons & Dragons: Edge of the Realms",
+    "bggId": 431590,
+    "size": {
+      "w": 18.8,
+      "h": 25.4,
+      "d": 6.3
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Hot Streak",
+    "bggId": 446497,
+    "size": {
+      "w": 13.5,
+      "h": 30,
+      "d": 13.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 6
+  },
+  {
+    "title": "Ανέβα στη Σανίδα",
+    "bggId": 367771,
+    "size": {
+      "w": 18,
+      "h": 29,
+      "d": 5.3
+    },
+    "source": "bgg-median",
+    "agree": 0.97,
+    "nver": 8
+  },
+  {
+    "title": "Savernake Forest",
+    "bggId": 369142,
+    "size": {
+      "w": 12.7,
+      "h": 17.9,
+      "d": 4
+    },
+    "source": "bgg-median",
+    "agree": 0.93,
+    "nver": 4
+  },
+  {
+    "title": "Nada!",
+    "bggId": 137931,
+    "size": {
+      "w": 7,
+      "h": 14.6,
+      "d": 6.5
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 3
+  },
+  {
+    "title": "Flamecraft Duals",
+    "bggId": 439305,
+    "size": {
+      "w": 19,
+      "h": 23,
+      "d": 12
+    },
+    "source": "bgg-median",
+    "agree": 1,
+    "nver": 1
+  },
+  {
+    "title": "Toy Battle",
+    "bggId": 434654,
+    "size": {
+      "w": 21,
+      "h": 25,
+      "d": 5
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 8
+  },
+  {
+    "title": "Flamecraft",
+    "bggId": 336986,
+    "size": {
+      "w": 15.2,
+      "h": 25.4,
+      "d": 7.6
+    },
+    "source": "bgg-median",
+    "agree": 0.82,
+    "nver": 29
+  },
+  {
+    "title": "Harmonies",
+    "bggId": 414317,
+    "size": {
+      "w": 21.3,
+      "h": 21.3,
+      "d": 6.7
+    },
+    "source": "bgg-median",
+    "agree": 0.99,
+    "nver": 14
+  },
+  {
+    "title": "Dune Imperium: Uprising",
+    "bggId": 397598,
+    "size": {
+      "w": 30,
+      "h": 30,
+      "d": 8.2
+    },
+    "source": "bgg-median",
+    "agree": 0.98,
+    "nver": 10
+  }
+]

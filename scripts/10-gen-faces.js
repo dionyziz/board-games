@@ -1,0 +1,200 @@
+// Build a complete, correctly-oriented 6-face texture set for a single game
+// (see TEXTURE-PLAN.md). Photographic where we have a clean photo (front cover,
+// and back if downloaded), procedural fallback for the faces photos never cover
+// cleanly (spine / top / bottom).
+//
+//   node scripts/10-gen-faces.js <gameId> [pathToBackPhoto]
+//
+// Writes:
+//   public/textures/<id>/back.webp   spine.webp   top.webp   bottom.webp
+//   and games.json  ->  box.face, box.orientation, textures{...} (+ per-face source)
+const fs = require('fs');
+const path = require('path');
+const sharp = require('sharp');
+
+const ROOT = path.join(__dirname, '..');
+const DATA = path.join(ROOT, 'src/data/games.json');
+const TEX = path.join(ROOT, 'public', 'textures');
+
+const gameId = process.argv[2] || 'the-lord-of-the-rings-fate-of-the-fellowship-436217';
+const backPhoto = process.argv[3]; // optional flat back-of-box photo
+
+const games = JSON.parse(fs.readFileSync(DATA, 'utf8'));
+const list = Array.isArray(games) ? games : games.games;
+const g = list.find((x) => x.id === gameId);
+if (!g) throw new Error('game not found: ' + gameId);
+
+const dir = path.join(TEX, g.id);
+fs.mkdirSync(dir, { recursive: true });
+
+const esc = (s) => String(s).replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
+
+// ---- 1. orientation: the front face must follow the cover art aspect --------
+const size = g.box.size;
+const [a, b, c] = [size.w, size.h, size.d].sort((x, y) => y - x); // a>=b>=c ; c = thickness
+const coverAspect = (g.imageWidth || 1) / (g.imageHeight || 1);
+const nearSquare = Math.abs(coverAspect - 1) < 0.05;
+// near-square covers give no reliable signal -> keep raw dims (w,h) as-is
+const landscape = coverAspect >= 1;
+const face = nearSquare
+  ? { w: size.w, h: size.h, d: size.d }
+  : landscape
+    ? { w: a, h: b, d: c }
+    : { w: b, h: a, d: c };
+const orientation = nearSquare ? 'square' : landscape ? 'landscape' : 'portrait';
+
+// ---- helpers ----------------------------------------------------------------
+const PX = 40; // px per cm for procedural canvases
+const clampHex = (n) => Math.max(0, Math.min(255, Math.round(n)));
+const toHex = ({ r, g, b }) => '#' + [r, g, b].map((v) => clampHex(v).toString(16).padStart(2, '0')).join('');
+const mix = (h1, h2, t) => {
+  const p = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const [r1, g1, b1] = p(h1), [r2, g2, b2] = p(h2);
+  return toHex({ r: r1 + (r2 - r1) * t, g: g1 + (g2 - g1) * t, b: b1 + (b2 - b1) * t });
+};
+
+// pull a vivid accent from the cover (dominant is often the dark background)
+async function accentFromCover() {
+  const cover = path.join(dir, 'cover.webp');
+  if (!fs.existsSync(cover)) return '#b98a3c';
+  const { data, info } = await sharp(cover).resize(48, 48, { fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
+  let best = null, bestScore = -1;
+  for (let i = 0; i < data.length; i += info.channels) {
+    const r = data[i], g = data[i + 1], bl = data[i + 2];
+    const max = Math.max(r, g, bl), min = Math.min(r, g, bl);
+    const sat = max === 0 ? 0 : (max - min) / max;
+    const score = sat * (max / 255); // saturated AND bright
+    if (score > bestScore) { bestScore = score; best = { r, g, b: bl }; }
+  }
+  return best ? toHex(best) : '#b98a3c';
+}
+
+// fit a single line of text into a length budget (Georgia ~0.5em/char)
+const fitFont = (text, lengthBudget, maxFont) =>
+  Math.max(14, Math.min(maxFont, Math.floor(lengthBudget / (0.52 * Math.max(text.length, 1)))));
+
+async function svgToWebp(svg, w, h, out) {
+  await sharp(Buffer.from(svg)).resize(w, h).webp({ quality: 88, effort: 4 }).toFile(out);
+}
+
+// ---- 2. back: real photo if provided, else procedural -----------------------
+const sources = {};
+async function makeBack() {
+  const out = path.join(dir, 'back.webp');
+  const faceAspect = face.w / face.h;
+  if (backPhoto && fs.existsSync(backPhoto)) {
+    const meta = await sharp(backPhoto).metadata();
+    const long = Math.max(meta.width, meta.height);
+    const scale = long > 1024 ? 1024 / long : 1;
+    await sharp(backPhoto)
+      .resize(Math.round(meta.width * scale), Math.round(meta.height * scale))
+      // center-crop to the exact back-face aspect (front == back dims)
+      .resize({ width: Math.round(meta.width * scale), height: Math.round(meta.width * scale / faceAspect), fit: 'cover', position: 'centre' })
+      .webp({ quality: 84, effort: 4 })
+      .toFile(out);
+    sources.back = 'photo';
+    return;
+  }
+  // procedural: darkened cover backdrop + description
+  const W = Math.round(face.w * PX), H = Math.round(face.h * PX);
+  const words = esc((g.shortDescription || g.title));
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+    <rect width="${W}" height="${H}" fill="${g.box.edgeColor}"/>
+    <text x="${W / 2}" y="${H / 2}" fill="#cfc9bd" font-family="Georgia, serif" font-size="${fitFont(words, W * 0.9, 34)}"
+      text-anchor="middle">${words}</text></svg>`;
+  await svgToWebp(svg, W, H, out);
+  sources.back = 'procedural';
+}
+
+// ---- 3. spine (long side): title-on-a-band, the hero of the shelf view -------
+async function makeSpine(accent) {
+  const out = path.join(dir, 'spine.webp');
+  const W = Math.round(face.d * PX), H = Math.round(face.h * PX); // tall, narrow
+  const title = esc(g.title);
+  const pub = esc((g.publishers && g.publishers[0]) || '');
+  const font = fitFont(g.title, H * 0.8, W * 0.5);
+  const cx = W / 2;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${g.box.sideColor}"/>
+      <stop offset="1" stop-color="${mix(g.box.sideColor, g.box.edgeColor, 0.9)}"/>
+    </linearGradient></defs>
+    <rect width="${W}" height="${H}" fill="url(#g)"/>
+    <rect x="0" y="${H * 0.06}" width="${W * 0.09}" height="${H * 0.88}" fill="${accent}"/>
+    <g transform="translate(${cx}, ${H / 2}) rotate(-90)">
+      <text x="0" y="0" fill="#efeadf" font-family="Georgia, serif" font-weight="500"
+        font-size="${font}" text-anchor="middle" dominant-baseline="middle"
+        letter-spacing="1">${title}</text>
+    </g>
+    <g transform="translate(${W * 0.82}, ${H / 2}) rotate(-90)">
+      <text x="0" y="0" fill="#9c968a" font-family="Georgia, serif" font-size="${Math.round(W * 0.16)}"
+        text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${pub}</text>
+    </g></svg>`;
+  await svgToWebp(svg, W, H, out);
+  sources.spine = 'procedural';
+}
+
+// ---- 4. top (short side): same band, title horizontal -----------------------
+async function makeTop(accent) {
+  const out = path.join(dir, 'top.webp');
+  const W = Math.round(face.w * PX), H = Math.round(face.d * PX); // wide, short
+  const title = esc(g.title);
+  const font = fitFont(g.title, W * 0.82, H * 0.5);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${g.box.sideColor}"/>
+      <stop offset="1" stop-color="${mix(g.box.sideColor, g.box.edgeColor, 0.9)}"/>
+    </linearGradient></defs>
+    <rect width="${W}" height="${H}" fill="url(#g)"/>
+    <rect x="${W * 0.04}" y="0" width="${W * 0.92}" height="${H * 0.08}" fill="${accent}"/>
+    <text x="${W / 2}" y="${H * 0.58}" fill="#efeadf" font-family="Georgia, serif" font-weight="500"
+      font-size="${font}" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${title}</text>
+  </svg>`;
+  await svgToWebp(svg, W, H, out);
+  sources.top = 'procedural';
+}
+
+// ---- 5. bottom: edge color + faint barcode + legal-ish line ------------------
+async function makeBottom() {
+  const out = path.join(dir, 'bottom.webp');
+  const W = Math.round(face.w * PX), H = Math.round(face.d * PX);
+  let bars = '';
+  let x = W * 0.06;
+  const seed = g.bggId || 1;
+  for (let i = 0; x < W * 0.34; i++) {
+    const w = 2 + ((seed >> (i % 12)) & 3);
+    if (i % 2 === 0) bars += `<rect x="${x.toFixed(1)}" y="${H * 0.3}" width="${w}" height="${H * 0.4}" fill="#2b2620"/>`;
+    x += w + 2;
+  }
+  const legal = esc(`© ${g.year || ''} ${(g.publishers && g.publishers[0]) || ''} · ${g.title}`);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+    <rect width="${W}" height="${H}" fill="${g.box.edgeColor}"/>
+    ${bars}
+    <text x="${W * 0.4}" y="${H * 0.56}" fill="#6f685c" font-family="Georgia, serif"
+      font-size="${Math.round(H * 0.22)}" dominant-baseline="middle">${legal}</text>
+  </svg>`;
+  await svgToWebp(svg, W, H, out);
+  sources.bottom = 'procedural';
+}
+
+(async () => {
+  const accent = await accentFromCover();
+  await Promise.all([makeBack(), makeSpine(accent), makeTop(accent), makeBottom()]);
+
+  // ---- 6. write data model back -------------------------------------------
+  g.box.face = { w: face.w, h: face.h, d: face.d };
+  g.box.orientation = orientation;
+  g.textures = {
+    front: { src: `/textures/${g.id}/cover.webp`, source: g.textures?.front?.source || 'airtable' },
+    back: { src: `/textures/${g.id}/back.webp`, source: sources.back },
+    spine: { src: `/textures/${g.id}/spine.webp`, source: sources.spine },
+    top: { src: `/textures/${g.id}/top.webp`, source: sources.top },
+    bottom: { src: `/textures/${g.id}/bottom.webp`, source: sources.bottom },
+    thumb: { src: `/textures/${g.id}/thumb.webp`, source: 'derived' },
+  };
+  fs.writeFileSync(DATA, JSON.stringify(games, null, 2) + '\n');
+
+  console.log('done:', g.id);
+  console.log('  orientation:', orientation, '| face', JSON.stringify(g.box.face), '| accent', accent);
+  console.log('  sources:', JSON.stringify(sources));
+})();
