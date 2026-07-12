@@ -48,7 +48,10 @@ export default function Bag({ game, onClick, onPointerOver, onPointerOut, ...res
   return (
     <group onClick={onClick} onPointerOver={onPointerOver} onPointerOut={onPointerOut} {...rest}>
       <mesh geometry={geo} material={mats.front} castShadow />
-      <mesh geometry={geo} material={mats.back} rotation={[0, Math.PI, 0]} castShadow />
+      {/* back shares the SAME geometry mirrored in z (not rotated), so the two
+          bulged faces have the identical silhouette and meet at the seam; the
+          z-flip also mirrors the texture, so the fish reads correctly from behind */}
+      <mesh geometry={geo} material={mats.back} scale={[1, 1, -1]} castShadow />
     </group>
   );
 }

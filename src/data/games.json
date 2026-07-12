@@ -1150,7 +1150,13 @@
         "flap": {
           "src": "/textures/love-letter-277085/flap.webp",
           "hFrac": 0.163,
-          "cornerR": 0.28
+          "cornerR": 0.28,
+          "hole": {
+            "cx": 0.52,
+            "cy": 0.45,
+            "rx": 0.1,
+            "ry": 0.16
+          }
         },
         "shape": "blister"
       },
@@ -4063,7 +4069,13 @@
         "flap": {
           "src": "/textures/uno-2223/flap.webp",
           "hFrac": 0.176,
-          "cornerR": 0.28
+          "cornerR": 0.42,
+          "hole": {
+            "cx": 0.46,
+            "cy": 0.55,
+            "rx": 0.13,
+            "ry": 0.14
+          }
         }
       },
       "textures": {
@@ -6426,7 +6438,13 @@
         "flap": {
           "src": "/textures/nai-i-ochi/flap.webp",
           "hFrac": 0.163,
-          "cornerR": 0.28
+          "cornerR": 0.46,
+          "hole": {
+            "cx": 0.48,
+            "cy": 0.42,
+            "rx": 0.12,
+            "ry": 0.2
+          }
         }
       },
       "textures": {
@@ -18910,130 +18928,6 @@
         },
         "thumb": {
           "src": "/textures/cyberion-376893/thumb.webp",
-          "source": "derived"
-        }
-      }
-    },
-    {
-      "id": "kingdomino-origins-340041-147",
-      "recordId": "recRwjrc2InTqUA3v",
-      "title": "Kingdomino Origins",
-      "bggId": 340041,
-      "bggUrl": "https://boardgamegeek.com/boardgame/340041/kingdomino-origins",
-      "optimalPlayers": [
-        "2",
-        "3",
-        "4"
-      ],
-      "weight": 3,
-      "notes": "",
-      "expansions": "",
-      "sleeves": [],
-      "tags": [
-        "With Vasiliki"
-      ],
-      "imageWidth": 452,
-      "imageHeight": 600,
-      "cover": "/covers/kingdomino-origins-340041-147.jpg",
-      "year": 2021,
-      "players": {
-        "min": 2,
-        "max": 4
-      },
-      "playtime": {
-        "min": 20,
-        "max": 40
-      },
-      "minAge": 8,
-      "designers": [
-        "Bruno Cathala"
-      ],
-      "artists": [
-        "Cyril Bouquet"
-      ],
-      "publishers": [
-        "Blue Orange Games",
-        "Blue Orange (EU)",
-        "FoxGames",
-        "Gémklub",
-        "Happy Baobab",
-        "Lautapelit.fi"
-      ],
-      "categories": [
-        "Prehistoric",
-        "Puzzle",
-        "Territory Building"
-      ],
-      "mechanics": [
-        "Enclosure",
-        "Open Drafting",
-        "Tile Placement",
-        "Turn Order: Claim Action"
-      ],
-      "families": [
-        "Animals: Mammoths",
-        "Animals: Prehistoric Non-Dinosaurs",
-        "Components: Meeples (Animal) / Animeeples",
-        "Components: Non-Traditional Dominoes",
-        "Game: Kingdomino",
-        "Misc: LongPack Games",
-        "Theme: Volcanoes"
-      ],
-      "shortDescription": "Go back in time to the prehistoric era of  Kingdomino!",
-      "description": "Go back in time to the prehistoric era of Kingdomino!\n\nKingdomino Origins plays similarly to the original game, but introduces new components for additional actions and new ways to score points. Regions in your territory will earn you points if they contain fire. Fire is either part of your terrains or earned by adding dominoes with volcanoes. There are three game modes to play:\n\n    The first one introduces fire and volcanoes;\n    The second mode uses wooden resources;\n    And the third one features cavemen tokens.\n\nYou earn points by collecting resources, with additional points when you have the majority of a type of resources. These resources allow you to bring cavemen to your territory, and each type of caveman has its own way to give you points based on their position.\n\n—description from the publisher",
-      "complexity": 1.91,
-      "bggRating": 7.45,
-      "bggRank": 1136,
-      "box": {
-        "size": {
-          "w": 20,
-          "h": 26.5,
-          "d": 6
-        },
-        "unit": "cm",
-        "source": "bgg-median",
-        "versionsUsed": 8,
-        "versionsWithDims": 8,
-        "agreement": 0.88,
-        "estimatedSize": false,
-        "sideColor": "#745e2e",
-        "edgeColor": "#46381c",
-        "face": {
-          "w": 20,
-          "h": 26.5,
-          "d": 6
-        },
-        "orientation": "portrait"
-      },
-      "textures": {
-        "front": {
-          "src": "/textures/kingdomino-origins-340041-147/cover.webp",
-          "source": "airtable"
-        },
-        "back": {
-          "src": "/textures/kingdomino-origins-340041-147/back.webp",
-          "source": "photo",
-          "normalized": true
-        },
-        "spine": {
-          "src": "/textures/kingdomino-origins-340041-147/spine.webp",
-          "source": "procedural",
-          "bump": "/textures/kingdomino-origins-340041-147/spine-bump.webp"
-        },
-        "top": {
-          "src": "/textures/kingdomino-origins-340041-147/top.webp",
-          "source": "cover-derived",
-          "bump": "/textures/kingdomino-origins-340041-147/top-bump.webp",
-          "note": "darkened cover-art band + title (no photo of top exists)"
-        },
-        "bottom": {
-          "src": "/textures/kingdomino-origins-340041-147/bottom.webp",
-          "source": "cover-derived",
-          "bump": "/textures/kingdomino-origins-340041-147/bottom-bump.webp",
-          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
-        },
-        "thumb": {
-          "src": "/textures/kingdomino-origins-340041-147/thumb.webp",
           "source": "derived"
         }
       }

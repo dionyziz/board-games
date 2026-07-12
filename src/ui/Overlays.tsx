@@ -1,8 +1,8 @@
 import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
-export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocus, onBlur, onEscape, sel, onToggle, onClearFilters }: {
-  game?: Game; count: number; query: string; onQuery: (q: string) => void;
+export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen, onFocus, onBlur, onEscape, sel, onToggle, onClearFilters }: {
+  game?: Game; count: number; atEnd: boolean; query: string; onQuery: (q: string) => void;
   filterOpen: boolean; onFocus: () => void; onBlur: () => void; onEscape: () => void;
   sel: Set<string>; onToggle: (k: string) => void; onClearFilters: () => void;
 }) {
@@ -53,7 +53,7 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
         {game ? <h2>{game.title}</h2> : <h2 className="none">No matches</h2>}
         {game?.designers?.length ? <div className="by">{game.designers.join(', ')}</div> : null}
       </div>
-      {count > 1 ? <div className="scrollhint">scroll ↓ · click a box to open</div> : null}
+      {count > 1 ? <div className="scrollhint">scroll {atEnd ? '↑' : '↓'} · click a box to open</div> : null}
     </div>
   );
 }

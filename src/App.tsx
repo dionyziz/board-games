@@ -68,6 +68,7 @@ function Shell() {
         ? <DetailOverlay key={slug} game={bySlug(slug)} onBack={() => navigate('/')} />
         : <GalleryOverlay
             game={filtered[center]} count={filtered.length}
+            atEnd={filtered.length > 0 && center >= filtered.length - 1}
             query={query} onQuery={setQuery}
             filterOpen={filterOpen}
             onFocus={() => setFilterOpen(true)}

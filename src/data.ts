@@ -87,7 +87,15 @@ export function searchBlob(g: Game): string {
 }
 
 // ---- facet filters ---------------------------------------------------------
-export type Facet = { id: 'players' | 'age' | 'type'; label: string; values: { key: string; label: string }[] };
+export type Facet = { id: 'players' | 'age' | 'type' | 'time'; label: string; values: { key: string; label: string }[] };
+
+// Play-time buckets (on playtime.max, minutes) → [lo,hi].
+const TIME_BUCKETS = [
+  { key: 'time:0-30', label: '≤30 min', lo: 0, hi: 30 },
+  { key: 'time:31-60', label: '30–60', lo: 31, hi: 60 },
+  { key: 'time:61-120', label: '1–2 hr', lo: 61, hi: 120 },
+  { key: 'time:121-999', label: '2 hr+', lo: 121, hi: 999 },
+];
 
 // Age buckets (condensed from the many distinct minAge values) → [lo,hi] on minAge.
 const AGE_BUCKETS = [
@@ -105,8 +113,11 @@ export const facets: Facet[] = (() => {
   const freq: Record<string, number> = {};
   for (const g of games) for (const c of g.categories || []) freq[c] = (freq[c] || 0) + 1;
   const types = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 12).map(([c]) => ({ key: 'type:' + c, label: c }));
+  const times = TIME_BUCKETS.filter((t) => games.some((g) => g.playtime && g.playtime.max && g.playtime.max >= t.lo && g.playtime.max <= t.hi))
+    .map((t) => ({ key: t.key, label: t.label }));
   return [
     { id: 'players', label: 'Players', values: players },
+    { id: 'time', label: 'Play time', values: times },
     { id: 'age', label: 'Age', values: ages },
     { id: 'type', label: 'Type', values: types },
   ];
@@ -115,10 +126,11 @@ export const facets: Facet[] = (() => {
 // AND across facets, OR within a facet. Empty selection = no constraint.
 export function matchesFilters(g: Game, sel: Set<string>): boolean {
   if (sel.size === 0) return true;
-  const by: Record<string, string[]> = { players: [], age: [], type: [] };
+  const by: Record<string, string[]> = { players: [], age: [], type: [], time: [] };
   for (const k of sel) { const i = k.indexOf(':'); (by[k.slice(0, i)] ||= []).push(k.slice(i + 1)); }
   if (by.players.length && !by.players.some((v) => g.players && (v === '6' ? g.players.max >= 6 : g.players.min <= +v && +v <= g.players.max))) return false;
   if (by.age.length && !by.age.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.minAge != null && g.minAge >= lo && g.minAge <= hi; })) return false;
+  if (by.time.length && !by.time.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.playtime && g.playtime.max != null && g.playtime.max >= lo && g.playtime.max <= hi; })) return false;
   if (by.type.length && !by.type.some((v) => (g.categories || []).includes(v))) return false;
   return true;
 }
