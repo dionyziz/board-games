@@ -14,21 +14,35 @@ const GAL_POS = new THREE.Vector3(0, 0, 7);
 const DET_POS = new THREE.Vector3(3.0, 2.1, 6.2);
 const WORLD_UP = new THREE.Vector3(0, 1, 0);
 const smooth = (t: number) => t * t * (3 - 2 * t);
-type Tr = { p: number; selected: number; focus: number };
+type Tr = { p: number; selected: number; focus: number; reveal: number };
 
 function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: React.MutableRefObject<Tr>; onOpen: (id: string) => void }) {
   const ref = useRef<THREE.Group>(null!);
   const [hover, setHover] = useState(false);
   const v = useMemo(() => new THREE.Vector3(), []);
   const invalidate = useThree((s) => s.invalidate);
-  useFrame((_, dt) => {
+  const opac = useRef(1);
+  useFrame((_, rawDt) => {
+    const dt = Math.min(rawDt, 0.05); // clamp: after demand-mode idle rawDt is huge → would snap animations
     const grp = ref.current;
     if (!grp) return;
-    const { p, selected } = tr.current;
+    const t = tr.current;
+    const { p, selected } = t;
     const isSel = selected === index;
+    const focal = index === t.focus;
     // during the open/close arc (and in detail) only the focal box is shown, so
     // neighbours don't swing weirdly around the screen edges as the camera resets
-    grp.visible = p < 0.05 || index === tr.current.focus;
+    grp.visible = p < 0.05 || focal;
+    // …then fade the neighbours back in once the gallery has settled (reveal ramps
+    // in SceneInner; snaps to 1 the instant the user scrolls/uses j-k)
+    const targetO = focal ? 1 : t.reveal;
+    if (Math.abs(targetO - opac.current) > 0.002) {
+      opac.current = targetO;
+      grp.traverse((c: any) => {
+        const m = c.material; if (!m) return;
+        (Array.isArray(m) ? m : [m]).forEach((mm: any) => { mm.transparent = targetO < 0.999; mm.opacity = targetO; });
+      });
+    }
     let target = hover ? 1.06 : 1;
     if (selected >= 0) target = isSel ? 1 : 1 - p;
     grp.scale.lerp(v.set(target, target, target), 1 - Math.pow(0.0015, dt));
@@ -56,7 +70,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
   // demand rendering: repaint when a pooled texture finishes loading
   useEffect(() => { setMaxAniso(gl.capabilities.getMaxAnisotropy()); onLoaded(invalidate); }, [gl, invalidate]);
-  const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex, focus: Math.max(0, selectedIndex) });
+  const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex, focus: Math.max(0, selectedIndex), reveal: selectedIndex >= 0 ? 0 : 1 });
   const column = useRef<THREE.Group>(null!);
   const ground = useRef<any>(null!);
   const scroll = useRef(selectedIndex >= 0 ? selectedIndex : 0);
@@ -81,6 +95,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     const onWheel = (e: WheelEvent) => {
       if (tr.current.selected >= 0) return;
       scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + e.deltaY * 0.0022, 0, N() - 1);
+      tr.current.reveal = 1; // user is navigating → show neighbours immediately, no fade wait
       invalidate();
     };
     let lastY = 0;
@@ -89,6 +104,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       if (tr.current.selected >= 0) return;
       const y = e.touches[0].clientY;
       scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + (lastY - y) * 0.01, 0, N() - 1);
+      tr.current.reveal = 1;
       lastY = y; invalidate();
     };
     // in detail, the first pointerdown/wheel means "I'm driving now" → rig yields
@@ -119,11 +135,11 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       if (key === 'j' || key === 'ArrowDown') {
         e.preventDefault();
         scrollTarget.current = THREE.MathUtils.clamp(Math.floor(scrollTarget.current + 1e-3) + 1, 0, N - 1);
-        invalidate();
+        tr.current.reveal = 1; invalidate();
       } else if (key === 'k' || key === 'ArrowUp') {
         e.preventDefault();
         scrollTarget.current = THREE.MathUtils.clamp(Math.ceil(scrollTarget.current - 1e-3) - 1, 0, N - 1);
-        invalidate();
+        tr.current.reveal = 1; invalidate();
       } else if (key === 'ArrowRight' || key === 'Enter') {
         e.preventDefault();
         const idx = THREE.MathUtils.clamp(Math.round(scroll.current), 0, N - 1);
@@ -152,12 +168,15 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     tr.current.selected = selectedIndex;
   }, [selectedIndex, camera, invalidate]);
 
-  useFrame((state, dt) => {
+  useFrame((state, rawDt) => {
+    const dt = Math.min(rawDt, 0.05); // clamp: demand-mode idle makes rawDt huge, snapping every lerp
     const t = tr.current;
     const goal = t.selected >= 0 ? 1 : 0;
     t.p += (goal - t.p) * Math.min(1, dt * 3.2);
     if (Math.abs(t.p - goal) < 0.002) t.p = goal;
     const p = smooth(t.p);
+    // neighbours fade back in (0→1 over ~0.28s) once the gallery has settled
+    t.reveal = t.p < 0.05 ? Math.min(1, t.reveal + dt / 0.28) : 0;
 
     scroll.current += (scrollTarget.current - scroll.current) * Math.min(1, dt * 6);
     if (column.current) column.current.position.y = scroll.current * SPACING;
@@ -182,14 +201,22 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       else camera.setViewOffset(width, height, (Math.min(width * 0.42, 400) / 2) * p, 0, width, height);
     } else camera.clearViewOffset();
 
-    if (ground.current) ground.current.visible = t.selected >= 0 && camera.position.y > -0.2;
+    // contact shadow: show it only from near-eye-level views. From straight above
+    // it reads as a floating dark "ground" plane (and from below you'd see its
+    // underside), so hide it there — keeps the box feeling like it's just floating.
+    if (ground.current) {
+      const camN = camera.position.y / (camera.position.length() || 1); // sin(elevation)
+      ground.current.visible = t.selected >= 0 && camN > -0.12 && camN < 0.5;
+    }
 
     const idx = Math.round(scroll.current);
     t.focus = t.selected >= 0 ? t.selected : idx; // focal box (kept visible through the arc)
     if (idx !== lastCenter.current) { lastCenter.current = idx; setCenter(idx); onCenter(idx); }
 
     // demand rendering: keep requesting frames only while something is moving
-    const moving = Math.abs(scroll.current - scrollTarget.current) > 0.0005 || (t.selected >= 0 && !userControl.current && Math.abs(t.p - goal) > 0.0005);
+    const moving = Math.abs(scroll.current - scrollTarget.current) > 0.0005
+      || (!userControl.current && Math.abs(t.p - goal) > 0.0005) // keep the open/close arc alive in both directions
+      || t.reveal < 0.999;                                       // …and while neighbours are fading in
     if (moving) invalidate();
   });
 
