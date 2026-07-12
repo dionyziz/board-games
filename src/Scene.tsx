@@ -53,7 +53,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
   const scrollTarget = useRef(scroll.current);
   const anchor = useRef(DET_POS.clone());
   const lastSel = useRef(selectedIndex);
-  const [settled, setSettled] = useState(selectedIndex >= 0);
+  const userControl = useRef(false); // user grabbed/zoomed → the rig yields to TrackballControls
   const lastCenter = useRef(-1);
   const camPos = useMemo(() => new THREE.Vector3(), []);
   const [center, setCenter] = useState(selectedIndex >= 0 ? selectedIndex : 0);
@@ -80,10 +80,18 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + (lastY - y) * 0.01, 0, N() - 1);
       lastY = y;
     };
+    // in detail, the first pointerdown/wheel means "I'm driving now" → rig yields
+    const takeover = () => { if (tr.current.selected >= 0) userControl.current = true; };
     el.addEventListener('wheel', onWheel, { passive: true });
+    el.addEventListener('wheel', takeover, { passive: true });
+    el.addEventListener('pointerdown', takeover);
     el.addEventListener('touchstart', onTouchStart, { passive: true });
     el.addEventListener('touchmove', onTouchMove, { passive: true });
-    return () => { el.removeEventListener('wheel', onWheel); el.removeEventListener('touchstart', onTouchStart); el.removeEventListener('touchmove', onTouchMove); };
+    return () => {
+      el.removeEventListener('wheel', onWheel); el.removeEventListener('wheel', takeover);
+      el.removeEventListener('pointerdown', takeover);
+      el.removeEventListener('touchstart', onTouchStart); el.removeEventListener('touchmove', onTouchMove);
+    };
   }, [gl, list]);
 
   // clamp scroll when the filtered list shrinks
@@ -94,9 +102,9 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
   useEffect(() => {
     if (selectedIndex !== lastSel.current) {
       if (selectedIndex >= 0) { anchor.current.copy(DET_POS); scrollTarget.current = selectedIndex; }
-      else { anchor.current.copy(camera.position); }
+      else { anchor.current.copy(camera.position); }        // freeze current pose so back doesn't jump
       lastSel.current = selectedIndex;
-      setSettled(false);
+      userControl.current = false;                          // new view state: rig drives again
     }
     tr.current.selected = selectedIndex;
   }, [selectedIndex, camera]);
@@ -111,9 +119,10 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     scroll.current += (scrollTarget.current - scroll.current) * Math.min(1, dt * 6);
     if (column.current) column.current.position.y = scroll.current * SPACING;
 
-    const trackballOn = t.selected >= 0 && t.p > 0.995;
-    if (trackballOn !== settled) setSettled(trackballOn);
-    if (!trackballOn) {
+    // the rig owns the camera in the gallery and during the (un-grabbed) arc;
+    // once the user grabs/zooms in detail, TrackballControls takes over entirely.
+    const rigActive = t.selected < 0 || (!userControl.current && t.p < 0.999);
+    if (rigActive) {
       camPos.lerpVectors(GAL_POS, anchor.current, p);
       camera.position.copy(camPos);
       // TrackballControls tumbles the up-vector for free rotation; restore it so
@@ -156,7 +165,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
         ))}
       </group>
       <ContactShadows ref={ground} position={[0, -1.4, 0]} scale={12} blur={2.6} opacity={0.4} far={9} visible={false} />
-      <TrackballControls enabled={settled} rotateSpeed={3} zoomSpeed={1.2} noPan minDistance={3.5} maxDistance={11} dynamicDampingFactor={0.12} />
+      <TrackballControls enabled={selectedIndex >= 0} makeDefault rotateSpeed={3} zoomSpeed={1.4} noPan staticMoving minDistance={2.5} maxDistance={16} />
     </>
   );
 }

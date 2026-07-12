@@ -1,17 +1,8 @@
 import { useMemo, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
-import { games, bySlug } from './data';
+import { games, bySlug, norm, searchBlob } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
-
-function matches(g: any, q: string) {
-  return (
-    g.title.toLowerCase().includes(q) ||
-    (g.designers || []).some((d: string) => d.toLowerCase().includes(q)) ||
-    (g.categories || []).some((c: string) => c.toLowerCase().includes(q)) ||
-    String(g.year || '').includes(q)
-  );
-}
 
 // One persistent Canvas across both views; the route only drives which box is
 // selected and which DOM overlay shows. Search + scroll live above the router,
@@ -23,8 +14,12 @@ function Shell() {
   const slug = m ? decodeURIComponent(m[1]) : null;
 
   const [query, setQuery] = useState('');
-  const q = query.trim().toLowerCase();
-  const filtered = useMemo(() => (q ? games.filter((g) => matches(g, q)) : games), [q]);
+  // forgiving match: every normalized token must appear in the game's blob
+  const filtered = useMemo(() => {
+    const tokens = query.trim().split(/\s+/).map(norm).filter(Boolean);
+    if (!tokens.length) return games;
+    return games.filter((g) => { const b = searchBlob(g); return tokens.every((t) => b.includes(t)); });
+  }, [query]);
   const [center, setCenterIdx] = useState(0);
 
   const selectedIndex = slug ? filtered.findIndex((g) => g.id === slug) : -1;

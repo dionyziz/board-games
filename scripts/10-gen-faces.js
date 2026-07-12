@@ -93,7 +93,8 @@ async function svgToWebp(svg, w, h, out) {
 const bumps = {};
 async function writeBump(inner, w, h, out) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#000000"/>${inner}</svg>`;
-  await sharp(Buffer.from(svg)).resize(w, h).blur(1.3).webp({ quality: 78, effort: 4 }).toFile(out);
+  // LOSSLESS (no compression ringing around the high-contrast text edges) + soft bevel
+  await sharp(Buffer.from(svg)).resize(w, h).blur(1.8).webp({ lossless: true, effort: 4 }).toFile(out);
 }
 
 // ---- photometric normalization (see SIDES-PLAN.md §4) ----------------------
