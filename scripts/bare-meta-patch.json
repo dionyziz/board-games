@@ -1,0 +1,349 @@
+{
+  "oi-apoikoi-toy-katan": {
+    "onBgg": true,
+    "bggId": "13",
+    "bggUrl": "https://boardgamegeek.com/boardgame/13/catan",
+    "canonicalName": "Catan",
+    "year": 1995,
+    "players": {
+      "min": 3,
+      "max": 4
+    },
+    "playtime": {
+      "min": 60,
+      "max": 120
+    },
+    "minAge": 10,
+    "designers": [
+      "Klaus Teuber"
+    ],
+    "artists": [
+      "Volkan Baga",
+      "Tanja Donner",
+      "Pete Fenlon",
+      "Jason Hawkins",
+      "Eric Hibbeler",
+      "Michaela Kienle",
+      "Andreas Klober",
+      "Harald Lieske",
+      "Michael Menzel",
+      "Marion Pott",
+      "Quentin Regnes",
+      "Andreas Resch",
+      "Matt Schwabel",
+      "Franz Vohwinkel",
+      "Stephen Graham Walsh"
+    ],
+    "publishers": [
+      "KOSMOS",
+      "64 Ounce Games",
+      "999 Games",
+      "Albi",
+      "Astrel Games",
+      "BGA Plus"
+    ],
+    "categories": [
+      "Economic",
+      "Negotiation"
+    ],
+    "mechanics": [
+      "Chaining",
+      "Dice Rolling",
+      "Hand Management",
+      "Hexagon Grid",
+      "Hidden Victory Points",
+      "Income",
+      "Market",
+      "Modular Board",
+      "Network and Route Building",
+      "Race",
+      "Random Production",
+      "Take That",
+      "Trading",
+      "Variable Set-up"
+    ],
+    "families": [
+      "Animals: Sheep",
+      "Components: Hexagonal Tiles",
+      "Components: HexHex3 Grids",
+      "Components: Wooden pieces & boards",
+      "Digital Implementations: Apple App Store",
+      "Digital Implementations: Board Game Arena",
+      "Digital Implementations: BrettspielWelt",
+      "Digital Implementations: Screentop.gg"
+    ],
+    "complexity": 2.28,
+    "bggRating": 7.09,
+    "bggRank": 623,
+    "shortDescription": "Collect and trade resources to build up the island of Catan in this modern classic.",
+    "description": "In CATAN (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities and roads. On each turn dice are rolled to determine which resources the island produces. Players build structures by 'spending' resources (sheep, wheat, wood, brick and ore) which are represented by the relevant resource cards; each land type, with the exception of the unproductive desert, produces a specific resource: hills produce brick, forests produce wood, mountains produce ore, fields produce wheat, and pastures produce sheep.\n\nSet-up includes randomly placing large hexagonal tiles (each depicting one of the five resource-producing terrain types--or the desert) in a honeycomb shape and surrounding them with water tiles, some of which contain ports of exchange. A number disk, the value of which will correspond to the roll of two 6-sided dice, are placed on each terrain tile. Each player is given two settlements (think: houses) and roads (sticks) which are placed on intersections and borders of the terrain tiles. Players collect a hand of resource cards based on which terrain tiles their last-placed settlement is adjacent to. A robber pawn is placed on the desert tile.\n\nA turn consists of rolling the dice, collecting resource cards based on this dice roll and the position of settlements (or upgraded cities—think: hotels), turning in resource cards (if possible and desired) for improvements, trading cards at a port, possibly playing a development card, or trading resource cards with other players. If the dice roll is a 7, the active player moves the robber to a new terrain tile and steals a resource card from another player who has a settlement adjacent to that tile.\n\nPoints are accumulated by building settlements and cities, having the longest road or the largest army (from some of the development cards), and gathering certain development cards that simply award victory points. When a player has gathered 10 points (some of which may be held in secret), s/he announces this and claims the win."
+  },
+  "sampoter-2": {
+    "onBgg": true,
+    "bggId": "91072",
+    "bggUrl": "https://boardgamegeek.com/boardgame/91072/saboteur-2-expansion-only-editions",
+    "canonicalName": "Saboteur 2 (expansion-only editions)",
+    "year": 2011,
+    "players": {
+      "min": 2,
+      "max": 12
+    },
+    "playtime": {
+      "min": 45,
+      "max": 45
+    },
+    "minAge": 8,
+    "designers": [
+      "Fréderic Moyersoen"
+    ],
+    "artists": [
+      "Andrea Boekhoff",
+      "Alexander Jung",
+      "Fréderic Moyersoen"
+    ],
+    "publishers": [
+      "AMIGO",
+      "999 Games",
+      "Albi",
+      "asmodee",
+      "Brain Games",
+      "Corfix"
+    ],
+    "categories": [
+      "Expansion for Base-game",
+      "Bluffing",
+      "Card Game",
+      "Exploration",
+      "Fantasy",
+      "Party Game"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Hidden Roles",
+      "Map Addition",
+      "Network and Route Building",
+      "Take That",
+      "Team-Based Game",
+      "Traitor Game"
+    ],
+    "families": [
+      "Creatures: Dwarves & Gnomes",
+      "Digital Implementations: Board Game Arena",
+      "Game: Saboteur",
+      "Players: Expansions Changing Player Count",
+      "Theme: Mining"
+    ],
+    "complexity": 1.54,
+    "bggRating": 6.93,
+    "bggRank": null,
+    "shortDescription": "Expands the base game with partnerships, new roles, actions and map obstacles.",
+    "description": "(Note: This listing covers only the expansion-only versions of Saboteur 2; for the Saboteur 2 listing that includes both the base game and the expansion, go to Saboteur Gold.)\n\nIn Saboteur, each player takes on the role of a gold-digging dwarf or a saboteur who wants to hinder exploration of the gold mines — but each player knows only his own role, so the digging may or may not go as planned!\n\nEach turn, a player either lays down a tunnel card to dig from the start card toward one of the goal cards (or potentially away, if a saboteur) or plays an action card to help or hinder someone. If the diggers manage to find the gold hidden under one of the goal cards, then the diggers share the loot found there; if the gold can't be reached before the deck runs out, the saboteurs profit instead. After three rounds, the player with the most gold wins.\n\nThe Saboteur 2 expansion adds new role cards (the boss, profiteers, geologists) to the base game, new action cards (steal gold, change your role), and new tunnel cards featuring doors, ladders and bridges. What's more, the gold seekers can now be divided into teams — blue vs. green — and only those on the team that finds the gold score anything — assuming that anyone finds the gold at all, of course..."
+  },
+  "patchwork-halloween": {
+    "onBgg": true,
+    "bggId": "163412",
+    "bggUrl": "https://boardgamegeek.com/boardgame/163412/patchwork",
+    "canonicalName": "Patchwork",
+    "year": 2014,
+    "players": {
+      "min": 2,
+      "max": 2
+    },
+    "playtime": {
+      "min": 15,
+      "max": 30
+    },
+    "minAge": 8,
+    "designers": [
+      "Uwe Rosenberg"
+    ],
+    "artists": [
+      "Carrie Cantwell",
+      "Klemens Franz",
+      "Maya Hanisch",
+      "Rex Lee",
+      "Jolanta Lendzioszek",
+      "Cecilia Mok",
+      "Gru Tsow"
+    ],
+    "publishers": [
+      "Lookout Games",
+      "999 Games",
+      "asmodee",
+      "Brain Games",
+      "Compaya.hu: Gamer Café Kft.",
+      "CrowD Games"
+    ],
+    "categories": [
+      "Abstract Strategy",
+      "Economic",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Grid Coverage",
+      "Income",
+      "Open Drafting",
+      "Rondel",
+      "Square Grid",
+      "Tile Placement",
+      "Turn Order: Stat-Based",
+      "Turn Order: Time Track",
+      "Victory Points as a Resource"
+    ],
+    "families": [
+      "Theme: Sewing / Knitting / Cloth-Making",
+      "Category: Combinatorial",
+      "Components: 9 x 9 Grids",
+      "Components: Polyominoes",
+      "Digital Implementations: Apple App Store",
+      "Digital Implementations: Board Game Arena",
+      "Digital Implementations: Google Play",
+      "Digital Implementations: Steam"
+    ],
+    "complexity": 1.6,
+    "bggRating": 7.58,
+    "bggRank": 148,
+    "shortDescription": "Piece together a quilt and leave no holes to become the button master.",
+    "description": "In Patchwork, two players compete to build the most aesthetic (and high-scoring) patchwork quilt on a personal 9x9 game board. To start play, lay out all of the patches at random in a circle and place a marker directly clockwise of the 2-1 patch. Each player takes five buttons — the currency/points in the game — and someone is chosen as the start player.\n\nOn a turn, a player either purchases one of the three patches standing clockwise of the spool or passes. To purchase a patch, you pay the cost in buttons shown on the patch, move the spool to that patch's location in the circle, add the patch to your game board, then advance your time token on the time track a number of spaces equal to the time shown on the patch. You're free to place the patch anywhere on your board that doesn't overlap other patches, but you probably want to fit things together as tightly as possible. If your time token is behind or on top of the other player's time token, then you take another turn; otherwise the opponent now goes. Instead of purchasing a patch, you can choose to pass; to do this, you move your time token to the space immediately in front of the opponent's time token, then take one button from the bank for each space you moved.\n\nIn addition to a button cost and time cost, each patch also features 0-3 buttons, and when you move your time token past a button on the time track, you earn \"button income\": sum the number of buttons depicted on your personal game board, then take this many buttons from the bank.\n\nWhat's more, the time track depicts five 1x1 patches on it, and during set-up you place five actual 1x1 patches on these spaces. Whoever first passes a patch on the time track claims this patch and immediately places it on his game board.\n\nAdditionally, the first player to completely fill in a 7x7 square on his game board earns a bonus tile worth 7 extra points at the end of the game. (Of course, this doesn't happen in every game.)\n\nWhen a player takes an action that moves his time token to the central square of the time track, he takes one final button income from the bank. Once both players are in the center, the game ends and scoring takes place. Each player scores one point per button in his possession, then loses two points for each empty square on his game board. Scores can be negative. The player with the most points wins.",
+    "note": "Patchwork: Halloween Edition is not a separate BGG thing; it is a re-themed/rebalanced version (Lookout Games) of the base game Patchwork (thing 163412). Metadata reflects the base game."
+  },
+  "mythic-valley-greek-legends": {
+    "onBgg": true,
+    "bggId": "469720",
+    "bggUrl": "https://boardgamegeek.com/boardgame/469720/mythic-valley-greek-legends",
+    "canonicalName": "Mythic Valley: Greek Legends",
+    "year": 2024,
+    "players": {
+      "min": 1,
+      "max": 5
+    },
+    "playtime": {
+      "min": 35,
+      "max": 45
+    },
+    "minAge": 8,
+    "designers": [
+      "Chris Pitsios",
+      "Marilena Zekyria"
+    ],
+    "artists": [],
+    "publishers": [
+      "Pichgames"
+    ],
+    "categories": [
+      "Ancient",
+      "Card Game",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Action / Event",
+      "Simultaneous Action Selection",
+      "Take That"
+    ],
+    "families": [
+      "Mythology: Greek"
+    ],
+    "complexity": 1.5,
+    "bggRating": 8.0,
+    "bggRank": null,
+    "shortDescription": "A fun tactical game where everything can change from one round to another!",
+    "description": "Get ready to experience the magic of Greek mythology through a unique board game of strategy and fantasy!\n\nIn this game, you will encounter legendary Gods , brave Heroes , and powerful Mythical Creatures . From Zeus and Poseidon to Hercules and Achilles , each card holds power and strategy that can change the course of the game.\n\n✨ What you will find in the game:\n\nGods and Goddesses with incredible abilities.\n\nHeroes with courage and strength for every battle.\n\nMonsters and Mythical Creatures that test your endurance.\n\nAction Cards that will determine your strategy.\n\nA useful scorepad where you can write down your points.\n\nA special dice that will determine the destiny of each round.\n\nThe Mythical Knowledge Manual to learn the myth hidden behind each card, signed by the distinguished Historian-Archaeologist Konstantinos Loukopoulos and No. 1 youtuber of Greek Mythology with over 200,000 loyal followers, also known as \"The Mythologist\".\n\n⚔️ Purpose of the Game:\n\nCombine your cards wisely, unlock powerful powers, and defeat your opponents in the fight for ultimate dominance!\n\n—description from the publisher"
+  },
+  "nai-i-ochi": {
+    "onBgg": false,
+    "bggId": null,
+    "bggUrl": null,
+    "canonicalName": "Ναι ή Όχι",
+    "year": null,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "playtime": {
+      "min": null,
+      "max": null
+    },
+    "minAge": 7,
+    "designers": [],
+    "artists": [],
+    "publishers": [
+      "AS Games (AS Company)"
+    ],
+    "categories": [
+      "Party Game"
+    ],
+    "mechanics": [],
+    "families": [],
+    "complexity": null,
+    "bggRating": null,
+    "bggRank": null,
+    "shortDescription": "Greek party game by AS Games in which players answer rapid-fire questions without ever saying the words \"yes\" or \"no\".",
+    "description": "\"Ναι ή Όχι\" (Yes or No) is a Greek party game published by AS Games (AS Company). Players must answer a stream of tricky questions without ever using the words \"yes\" or \"no\"; slipping up costs you. The family edition is for 2-6 players aged 7 and up and includes hundreds of questions across two difficulty levels and a bell. An 18+ \"inappropriate\" edition also exists.",
+    "note": "Not found on BoardGameGeek. Sources: ascompany.gr / asgames.gr product pages, public.gr, playspot.gr."
+  },
+  "skitsografies": {
+    "onBgg": false,
+    "bggId": null,
+    "bggUrl": null,
+    "canonicalName": "Σκιτσογρίφοι (Skitsografies)",
+    "year": null,
+    "players": {
+      "min": null,
+      "max": null
+    },
+    "playtime": {
+      "min": null,
+      "max": null
+    },
+    "minAge": null,
+    "designers": [],
+    "artists": [],
+    "publishers": [
+      "AS Company"
+    ],
+    "categories": [
+      "Party Game"
+    ],
+    "mechanics": [],
+    "families": [],
+    "complexity": null,
+    "bggRating": null,
+    "bggRank": null,
+    "shortDescription": "Vintage 1990s Greek Pictionary-style drawing party game published by AS Company, where players sketch clues for teammates to guess.",
+    "description": "\"Σκιτσογρίφοι\" (Skitsografies) is a vintage 1990s Greek drawing party game published by AS Company. It follows the classic Pictionary format: players draw clues on a pad while their team races to guess the word or phrase before time runs out. It is a team-based party/drawing game.",
+    "note": "Not found on BoardGameGeek. Sources: eBay listing (AS Company vintage 90s Pictionary Skitsografies), general product references."
+  },
+  "poios-poy-pote-giati-party-edition": {
+    "onBgg": false,
+    "bggId": null,
+    "bggUrl": null,
+    "canonicalName": "Ποιος Πού Πότε Γιατί Party Edition",
+    "year": null,
+    "players": {
+      "min": 2,
+      "max": 8
+    },
+    "playtime": {
+      "min": null,
+      "max": null
+    },
+    "minAge": 15,
+    "designers": [],
+    "artists": [],
+    "publishers": [
+      "Desyllas Games"
+    ],
+    "categories": [
+      "Party Game",
+      "Trivia"
+    ],
+    "mechanics": [],
+    "families": [],
+    "complexity": null,
+    "bggRating": null,
+    "bggRank": null,
+    "shortDescription": "Greek trivia party game by Desyllas Games, released in themed editions (90s Memories, 80s, 00s, Television, Cinema) with hundreds of nostalgia and pop-culture questions.",
+    "description": "\"Ποιος Πού Πότε Γιατί Party Edition\" is a Greek trivia party game published by Desyllas Games. It comes in several themed editions such as 90s Memories, 80s Memories, 00s Memories, Television and Cinema, each packed with questions about pop culture, history, music, film and TV. Designed for large groups and easy to start, it plays with up to 8 players (age varies by edition, roughly 5+ to 15+).",
+    "note": "Not found on BoardGameGeek. Sources: desyllas.gr product pages, skroutz.gr, bestprice.gr. Player count/age vary by edition; used the party (15+, up to 8 players) figures."
+  }
+}
