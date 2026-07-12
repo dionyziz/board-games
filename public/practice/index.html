@@ -87,6 +87,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 // ---- game data (single record from src/data/games.json) ----
 const GAME = {
@@ -181,24 +182,101 @@ const landscape = GAME.coverAspect >= 1;
 const face = landscape ? { w: a, h: b, d: c } : { w: b, h: a, d: c };
 const W = face.w / 10, H = face.h / 10, D = face.d / 10;
 
-// six textured faces. The printed cover gets a glossy clearcoat; the printed
-// cardboard sides/back are matte. Fallback color per face if its texture 404s.
-const mkMat = (gloss, fallback) => gloss
-  ? new THREE.MeshPhysicalMaterial({ color: fallback, roughness: 0.5, metalness: 0.0,
-      clearcoat: 0.55, clearcoatRoughness: 0.35, envMapIntensity: 0.9 })
-  : new THREE.MeshStandardMaterial({ color: fallback, roughness: 0.82, metalness: 0.0 });
+// ---- a tiling paper-grain bump map, generated procedurally -----------------
+// Fine fractal noise -> the surface catches light unevenly like coated card.
+function makePaperBump(size = 256) {
+  const rng = (() => { let s = 0x2f6e2b1; return () => (s = (s * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff; })();
+  const base = new Float32Array(size * size);
+  for (let i = 0; i < base.length; i++) base[i] = rng();
+  const sample = (x, y) => base[((y % size) + size) % size * size + (((x % size) + size) % size)];
+  const smooth = (fx, fy) => {
+    const x0 = Math.floor(fx), y0 = Math.floor(fy), tx = fx - x0, ty = fy - y0;
+    const l = (a, b, t) => a + (b - a) * (t * t * (3 - 2 * t));
+    return l(l(sample(x0, y0), sample(x0 + 1, y0), tx), l(sample(x0, y0 + 1), sample(x0 + 1, y0 + 1), tx), ty);
+  };
+  const data = new Uint8Array(size * size * 4);
+  for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+    let v = 0, amp = 0.5, freq = size / 8;
+    for (let o = 0; o < 4; o++) { v += smooth(x / size * freq, y / size * freq) * amp; freq *= 2; amp *= 0.5; }
+    const c = Math.max(0, Math.min(255, Math.round(v * 255)));
+    const i = (y * size + x) * 4; data[i] = data[i + 1] = data[i + 2] = c; data[i + 3] = 255;
+  }
+  const tex = new THREE.DataTexture(data, size, size, THREE.RGBAFormat);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(7, 7);
+  tex.needsUpdate = true;
+  return tex;
+}
 
-const frontMat  = mkMat(true,  GAME.box.sideColor);
-const backMat   = mkMat(false, GAME.box.edgeColor);
-const spineMat  = mkMat(false, GAME.box.sideColor);
-const topMat    = mkMat(false, GAME.box.sideColor);
-const bottomMat = mkMat(false, GAME.box.edgeColor);
+// ---- one unified material for ALL faces (identical lighting everywhere) -----
+// Coated-cardboard look: matte-ish base roughness + a light clearcoat sheen.
+// Per-face artwork is injected by box-projection in onBeforeCompile below; the
+// bump map + a shader roughness jitter give the surface its imperfections.
+const fallbackTex = (hex) => {
+  const t = new THREE.DataTexture(new Uint8Array([...hex, 255]), 1, 1, THREE.RGBAFormat);
+  t.colorSpace = THREE.SRGBColorSpace; t.needsUpdate = true; return t;
+};
+const hexToRGB = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+const faceUniforms = {
+  tFront:  { value: fallbackTex(hexToRGB(GAME.box.sideColor)) },
+  tBack:   { value: fallbackTex(hexToRGB(GAME.box.edgeColor)) },
+  tSpine:  { value: fallbackTex(hexToRGB(GAME.box.sideColor)) },
+  tTop:    { value: fallbackTex(hexToRGB(GAME.box.sideColor)) },
+  tBottom: { value: fallbackTex(hexToRGB(GAME.box.edgeColor)) },
+  uHalf:   { value: new THREE.Vector3(W / 2, H / 2, D / 2) },
+};
 
-// BoxGeometry material order: +X, -X, +Y(top), -Y(bottom), +Z(front), -Z(back).
-// spine (long side) faces ±X; top/bottom face ±Y.
-const materials = [spineMat, spineMat, topMat, bottomMat, frontMat, backMat];
-const geo = new THREE.BoxGeometry(W, H, D, 1, 1, 1);
-const box = new THREE.Mesh(geo, materials);
+const boxMat = new THREE.MeshPhysicalMaterial({
+  color: '#ffffff', roughness: 0.6, metalness: 0.0,
+  clearcoat: 0.45, clearcoatRoughness: 0.34, envMapIntensity: 0.7,
+  bumpMap: makePaperBump(), bumpScale: 0.9,
+});
+
+boxMat.onBeforeCompile = (shader) => {
+  Object.assign(shader.uniforms, faceUniforms);
+  // pass object-space position + normal through to the fragment stage
+  shader.vertexShader = shader.vertexShader
+    .replace('#include <common>', '#include <common>\nvarying vec3 vObjPos;\nvarying vec3 vObjNormal;')
+    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvObjPos = transformed;')
+    .replace('#include <beginnormal_vertex>', '#include <beginnormal_vertex>\nvObjNormal = objectNormal;');
+
+  shader.fragmentShader = shader.fragmentShader
+    .replace('#include <common>', `#include <common>
+      uniform sampler2D tFront, tBack, tSpine, tTop, tBottom;
+      uniform vec3 uHalf;
+      varying vec3 vObjPos; varying vec3 vObjNormal;
+      float hash(vec3 p){ p = fract(p*0.3183099+0.1); p *= 17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
+      float vnoise(vec3 x){ vec3 i=floor(x), f=fract(x); f=f*f*(3.0-2.0*f);
+        return mix(mix(mix(hash(i+vec3(0,0,0)),hash(i+vec3(1,0,0)),f.x),
+                       mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),
+                   mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),
+                       mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z); }
+      // pick the face texture by dominant normal axis; project object pos to UV
+      vec4 boxAlbedo(){
+        vec3 n = normalize(vObjNormal); vec3 an = abs(n); vec3 p = vObjPos; vec2 uv;
+        if (an.z >= an.x && an.z >= an.y){          // front / back  (x,y plane)
+          uv = vec2(p.x/uHalf.x, p.y/uHalf.y)*0.5+0.5;
+          return n.z >= 0.0 ? texture2D(tFront, uv) : texture2D(tBack, vec2(1.0-uv.x, uv.y));
+        } else if (an.x >= an.y){                    // spine (z,y plane)
+          uv = vec2(p.z/uHalf.z, p.y/uHalf.y)*0.5+0.5;
+          return n.x >= 0.0 ? texture2D(tSpine, vec2(1.0-uv.x, uv.y)) : texture2D(tSpine, uv);
+        } else {                                     // top / bottom (x,z plane)
+          uv = vec2(p.x/uHalf.x, p.z/uHalf.z)*0.5+0.5;
+          return n.y >= 0.0 ? texture2D(tTop, vec2(uv.x, 1.0-uv.y)) : texture2D(tBottom, uv);
+        }
+      }`)
+    .replace('#include <map_fragment>', `
+      vec4 faceCol = boxAlbedo();
+      diffuseColor.rgb *= faceCol.rgb;`)
+    // uneven sheen: nudge roughness with low-frequency noise
+    .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
+      roughnessFactor = clamp(roughnessFactor + (vnoise(vObjPos*22.0)-0.5)*0.16, 0.05, 1.0);`);
+};
+
+// ---- rounded box: real bevel on every corner + edge -------------------------
+const radius = Math.min(W, H, D) * 0.06;               // subtle, ~real cardboard
+const geo = new RoundedBoxGeometry(W, H, D, 6, radius);
+const box = new THREE.Mesh(geo, boxMat);
 box.castShadow = true;
 box.rotation.y = -0.5;
 scene.add(box);
@@ -213,28 +291,18 @@ ground.position.y = -H / 2;
 ground.receiveShadow = true;
 scene.add(ground);
 
-// load a texture and center-crop it to a face's aspect (fill, no distortion)
+// ---- load the six face textures into the shader uniforms --------------------
 const loader = new THREE.TextureLoader();
 const anis = renderer.capabilities.getMaxAnisotropy();
 let pending = 0, failed = 0;
-function loadFace(url, mat, faceAspect) {
+function loadFace(url, uniform) {
   if (!url) return;
   pending++;
   loader.load(url, (tex) => {
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.anisotropy = anis;
     tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
-    const imgAspect = (tex.image.width || 1) / (tex.image.height || 1);
-    if (imgAspect > faceAspect) {          // image wider -> crop sides
-      tex.repeat.set(faceAspect / imgAspect, 1);
-      tex.offset.set((1 - tex.repeat.x) / 2, 0);
-    } else {                               // image taller -> crop top/bottom
-      tex.repeat.set(1, imgAspect / faceAspect);
-      tex.offset.set(0, (1 - tex.repeat.y) / 2);
-    }
-    mat.map = tex;
-    mat.color.set('#ffffff');
-    mat.needsUpdate = true;
+    uniform.value = tex;
     if (--pending === 0) settle();
   }, undefined, () => { failed++; if (--pending === 0) settle(); });
 }
@@ -246,11 +314,11 @@ function settle() {
 }
 
 const T = GAME.textures || { front: GAME.cover };
-loadFace(T.front,  frontMat,  W / H);   // +Z
-loadFace(T.back,   backMat,   W / H);   // -Z (same face dims as front)
-loadFace(T.spine,  spineMat,  D / H);   // ±X : depth wide, height tall
-loadFace(T.top,    topMat,    W / D);   // +Y : width wide, depth tall
-loadFace(T.bottom, bottomMat, W / D);   // -Y
+loadFace(T.front,  faceUniforms.tFront);
+loadFace(T.back,   faceUniforms.tBack);
+loadFace(T.spine,  faceUniforms.tSpine);
+loadFace(T.top,    faceUniforms.tTop);
+loadFace(T.bottom, faceUniforms.tBottom);
 
 // ---- controls ----
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -265,6 +333,10 @@ controls.autoRotate = true;
 controls.autoRotateSpeed = 0.9;
 controls.target.set(0, 0, 0);
 controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+// dev: ?yaw=<radians> freezes the box at a fixed angle for screenshotting
+const _yaw = new URLSearchParams(location.search).get('yaw');
+if (_yaw !== null) { box.rotation.y = parseFloat(_yaw); controls.autoRotate = false; }
 
 // ---- resize + loop ----
 function resize() {
