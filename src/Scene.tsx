@@ -35,7 +35,7 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
     grp.visible = p < 0.05 || focal;
     // …then fade the neighbours back in once the gallery has settled (reveal ramps
     // in SceneInner; snaps to 1 the instant the user scrolls/uses j-k)
-    const targetO = focal ? 1 : t.reveal;
+    const targetO = focal ? 1 : smooth(t.reveal); // eased for a gentle spawn-in
     if (Math.abs(targetO - opac.current) > 0.002) {
       opac.current = targetO;
       grp.traverse((c: any) => {
@@ -175,8 +175,8 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     t.p += (goal - t.p) * Math.min(1, dt * 3.2);
     if (Math.abs(t.p - goal) < 0.002) t.p = goal;
     const p = smooth(t.p);
-    // neighbours fade back in (0→1 over ~0.28s) once the gallery has settled
-    t.reveal = t.p < 0.05 ? Math.min(1, t.reveal + dt / 0.28) : 0;
+    // neighbours slowly fade/"spawn" back in (0→1 over ~0.9s) once the gallery settles
+    t.reveal = t.p < 0.05 ? Math.min(1, t.reveal + dt / 0.9) : 0;
 
     scroll.current += (scrollTarget.current - scroll.current) * Math.min(1, dt * 6);
     if (column.current) column.current.position.y = scroll.current * SPACING;

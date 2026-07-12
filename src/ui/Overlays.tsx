@@ -18,6 +18,7 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
               onChange={(e) => onQuery(e.target.value)}
               onFocus={onFocus}
               onBlur={onBlur}
+              onKeyDown={(e) => { if (e.key === 'Escape') { onQuery(''); (e.target as HTMLInputElement).blur(); } }}
               placeholder="Search title, designer, category…"
               aria-label="Search games"
               autoComplete="off"
@@ -52,7 +53,7 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
         {game ? <h2>{game.title}</h2> : <h2 className="none">No matches</h2>}
         {game?.designers?.length ? <div className="by">{game.designers.join(', ')}</div> : null}
       </div>
-      <div className="scrollhint">scroll ↓ · click a box to open</div>
+      {count > 1 ? <div className="scrollhint">scroll ↓ · click a box to open</div> : null}
     </div>
   );
 }

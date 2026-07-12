@@ -15,8 +15,8 @@ const FACES = ['front', 'back', 'spine', 'top', 'bottom'] as const;
 // profile extruded along the depth — rounded corners on the sides, but a FLAT
 // front/back with crisp (un-bevelled) edges, so face-on it reads as a rounded
 // rectangle without the front art bending over the edges.
-function tinGeometry(W: number, H: number, D: number): THREE.ExtrudeGeometry {
-  const r = Math.min(W, H) * 0.07, x = -W / 2, y = -H / 2;
+function tinGeometry(W: number, H: number, D: number, cornerR = 0.07): THREE.ExtrudeGeometry {
+  const r = Math.min(W, H) * cornerR, x = -W / 2, y = -H / 2;
   const s = new THREE.Shape();
   s.moveTo(x + r, y);
   s.lineTo(x + W - r, y); s.quadraticCurveTo(x + W, y, x + W, y + r);
@@ -68,7 +68,7 @@ export default function GameBox({ game, onClick, onPointerOver, onPointerOut, ..
   }, [urls, paper, W, H, D]);
 
   const isTin = game.box.shape === 'tin-rect';
-  const geom = useMemo(() => (isTin ? tinGeometry(W, H, D) : null), [isTin, W, H, D]);
+  const geom = useMemo(() => (isTin ? tinGeometry(W, H, D, game.box.cornerR) : null), [isTin, W, H, D, game.box.cornerR]);
   useEffect(() => () => geom?.dispose(), [geom]);
 
   const material = (

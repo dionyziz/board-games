@@ -13,6 +13,7 @@ export type Box = {
   cyl?: { diameter: number; height: number };       // cm, for round-tin / tube
   capCrop?: { cx: number; cy: number; r: number };  // isolate round lid art from the cover
   cylTex?: string;                                   // dedicated flat cap/wrap art (preferred over cover)
+  cornerR?: number;                                  // tin-rect corner radius, fraction of min(w,h)
 };
 export type Game = {
   id: string;
