@@ -9,14 +9,19 @@ export function GalleryOverlay({ game, count, query, onQuery }: {
       <div className="top">
         <div className="brand">Jason's board games</div>
         <div className="search">
-          <input
-            value={query}
-            onChange={(e) => onQuery(e.target.value)}
-            placeholder="Search title, designer, category…"
-            aria-label="Search games"
-            autoComplete="off"
-            spellCheck={false}
-          />
+          <div className="searchbox">
+            <input
+              value={query}
+              onChange={(e) => onQuery(e.target.value)}
+              placeholder="Search title, designer, category…"
+              aria-label="Search games"
+              autoComplete="off"
+              spellCheck={false}
+            />
+            {query ? (
+              <button className="clear" aria-label="Clear search" onClick={() => onQuery('')}>×</button>
+            ) : null}
+          </div>
           <span className="count">{count} {count === 1 ? 'game' : 'games'}</span>
         </div>
       </div>
@@ -37,7 +42,6 @@ export function DetailOverlay({ game, onBack }: { game?: Game; onBack: () => voi
     <>
       <button className="back" onClick={onBack}>← All games</button>
       <div className="hint">drag to rotate · scroll to zoom</div>
-      <div className="dims">{game.box.size.w} × {game.box.size.h} × {game.box.size.d} cm</div>
       <div className="panel-wrap"><DetailPanel game={game} /></div>
     </>
   );

@@ -1147,7 +1147,8 @@
         "back": {
           "src": "/textures/love-letter-277085/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/love-letter-277085/spine.webp",
@@ -3243,7 +3244,8 @@
         "back": {
           "src": "/textures/uno-2223/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/uno-2223/spine.webp",
@@ -4366,7 +4368,8 @@
         "back": {
           "src": "/textures/sequence-2375/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/sequence-2375/spine.webp",
@@ -5361,7 +5364,8 @@
         "back": {
           "src": "/textures/mindbug-345584/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/mindbug-345584/spine.webp",
@@ -7333,7 +7337,8 @@
         "back": {
           "src": "/textures/fiesta-de-los-muertos-285253/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/fiesta-de-los-muertos-285253/spine.webp",
@@ -7470,7 +7475,8 @@
         "back": {
           "src": "/textures/anazitontas-to-el-ntoranto-217372/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/anazitontas-to-el-ntoranto-217372/spine.webp",
@@ -7834,7 +7840,8 @@
         "back": {
           "src": "/textures/pagan-fate-of-roanoke-319910/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/pagan-fate-of-roanoke-319910/spine.webp",
@@ -8089,7 +8096,8 @@
         "back": {
           "src": "/textures/sky-team-373106/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/sky-team-373106/spine.webp",
@@ -8308,7 +8316,8 @@
         "back": {
           "src": "/textures/solforge-fusion-344341/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/solforge-fusion-344341/spine.webp",
@@ -9408,7 +9417,8 @@
         "back": {
           "src": "/textures/phase-10-1258/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/phase-10-1258/spine.webp",
@@ -11122,7 +11132,8 @@
         "back": {
           "src": "/textures/dice-forge-194594/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/dice-forge-194594/spine.webp",
@@ -12494,7 +12505,8 @@
         "back": {
           "src": "/textures/kingdomino-204583/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/kingdomino-204583/spine.webp",
@@ -15225,7 +15237,8 @@
         "back": {
           "src": "/textures/faraway-385761/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/faraway-385761/spine.webp",
@@ -16423,7 +16436,8 @@
         "back": {
           "src": "/textures/arkham-horror-lovecraft-letter-424784/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/arkham-horror-lovecraft-letter-424784/spine.webp",
@@ -16801,7 +16815,8 @@
         "back": {
           "src": "/textures/marvel-champions-the-card-game-285774/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/marvel-champions-the-card-game-285774/spine.webp",
@@ -17180,7 +17195,8 @@
         "back": {
           "src": "/textures/gia-to-vasileio-334590/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/gia-to-vasileio-334590/spine.webp",
@@ -17434,7 +17450,8 @@
         "back": {
           "src": "/textures/spicy-299169/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/spicy-299169/spine.webp",
@@ -17676,7 +17693,8 @@
         "back": {
           "src": "/textures/cyberion-376893/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/cyberion-376893/spine.webp",
@@ -18044,7 +18062,8 @@
         "back": {
           "src": "/textures/king-of-tokyo-duel-422484/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/king-of-tokyo-duel-422484/spine.webp",
@@ -19513,7 +19532,8 @@
         "back": {
           "src": "/textures/oceans-deluxe-edition-232414/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/oceans-deluxe-edition-232414/spine.webp",
@@ -20401,7 +20421,8 @@
         "back": {
           "src": "/textures/star-wars-the-clone-wars-370913/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/star-wars-the-clone-wars-370913/spine.webp",
@@ -22461,7 +22482,8 @@
         "back": {
           "src": "/textures/fantasy-realms-deluxe-edition-363289/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/fantasy-realms-deluxe-edition-363289/spine.webp",
@@ -22831,7 +22853,8 @@
         "back": {
           "src": "/textures/sosig-411015/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/sosig-411015/spine.webp",
@@ -23325,7 +23348,8 @@
         "back": {
           "src": "/textures/compile-main-1-406652/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/compile-main-1-406652/spine.webp",
@@ -25158,7 +25182,8 @@
         "back": {
           "src": "/textures/toy-battle-434654/back.webp",
           "source": "photo",
-          "normalized": true
+          "normalized": true,
+          "note": "deprojected from an angled BGG photo"
         },
         "spine": {
           "src": "/textures/toy-battle-434654/spine.webp",

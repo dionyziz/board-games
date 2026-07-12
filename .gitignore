@@ -13,3 +13,6 @@ dist/
 
 # raw downloaded gallery candidate images (rebuildable cache); keep gallery.json
 scripts/gallery-cache/**/*-src.*
+
+# vision deprojection working files
+scripts/gallery-cache/_deproj/
