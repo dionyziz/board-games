@@ -510,7 +510,7 @@
           "h": 20,
           "d": 5
         },
-        "orientation": "portrait"
+        "orientation": "square"
       },
       "textures": {
         "front": {
@@ -2990,7 +2990,7 @@
           "h": 29.7,
           "d": 7.1
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -4480,7 +4480,7 @@
           "h": 27.5,
           "d": 6.6
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -4859,7 +4859,7 @@
           "h": 24.1,
           "d": 7.1
         },
-        "orientation": "landscape"
+        "orientation": "square"
       },
       "textures": {
         "front": {
@@ -5882,7 +5882,7 @@
           "h": 29.7,
           "d": 7.1
         },
-        "orientation": "landscape"
+        "orientation": "square"
       },
       "textures": {
         "front": {
@@ -6872,11 +6872,11 @@
         "sideColor": "#c3dce9",
         "edgeColor": "#75848c",
         "face": {
-          "w": 23.6,
-          "h": 26.7,
+          "w": 26.7,
+          "h": 23.6,
           "d": 10.2
         },
-        "orientation": "square"
+        "orientation": "landscape"
       },
       "textures": {
         "front": {
@@ -8198,7 +8198,7 @@
           "h": 26.5,
           "d": 5.5
         },
-        "orientation": "square"
+        "orientation": "landscape"
       },
       "textures": {
         "front": {
@@ -10117,7 +10117,7 @@
           "h": 26.5,
           "d": 5.5
         },
-        "orientation": "portrait"
+        "orientation": "square"
       },
       "textures": {
         "front": {
@@ -15672,7 +15672,7 @@
           "h": 20,
           "d": 5
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -17062,7 +17062,7 @@
           "h": 24,
           "d": 7.1
         },
-        "orientation": "square"
+        "orientation": "landscape"
       },
       "textures": {
         "front": {
@@ -18514,7 +18514,7 @@
           "h": 26.5,
           "d": 5.5
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -19915,7 +19915,7 @@
           "h": 13,
           "d": 4
         },
-        "orientation": "portrait"
+        "orientation": "square"
       },
       "textures": {
         "front": {
@@ -20760,7 +20760,7 @@
           "h": 15.2,
           "d": 2.5
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -21122,7 +21122,7 @@
           "h": 12.5,
           "d": 4.5
         },
-        "orientation": "square"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {

@@ -6,7 +6,7 @@
 // re-runs never clobber upgrades with the procedural fallback. --force
 // regenerates everything. (box.face / box.orientation are always recomputed.)
 const L = require('./lib');
-const { fs, path, PX, esc, cleanPub, mix, fitFont, accentFromCover, svgToWebp, writeBump, channelStats, makePhotoFace, loadGames, saveGames, texDir, GALLERY } = L;
+const { fs, path, sharp, PX, esc, cleanPub, mix, fitFont, accentFromCover, svgToWebp, writeBump, channelStats, makePhotoFace, loadGames, saveGames, texDir, GALLERY } = L;
 
 const argv = process.argv.slice(2).filter((a) => a !== '--force');
 const force = process.argv.includes('--force');
@@ -19,14 +19,17 @@ if (!g) throw new Error('game not found: ' + gameId);
 const dir = texDir(g.id);
 fs.mkdirSync(dir, { recursive: true });
 
-// ---- 1. orientation: the front face must follow the cover art aspect --------
+// ---- 1. orientation: the front face follows the ACTUAL (corrected) cover
+// aspect, measured from cover.webp — not the stale Airtable metadata (which is
+// wrong for trimmed/deprojected covers). Computed in the runner.
 const size = g.box.size;
-const [a, b, c] = [size.w, size.h, size.d].sort((x, y) => y - x); // a>=b>=c ; c = thickness
-const coverAspect = (g.imageWidth || 1) / (g.imageHeight || 1);
-const nearSquare = Math.abs(coverAspect - 1) < 0.05;
-const landscape = coverAspect >= 1;
-const face = nearSquare ? { w: size.w, h: size.h, d: size.d } : landscape ? { w: a, h: b, d: c } : { w: b, h: a, d: c };
-const orientation = nearSquare ? 'square' : landscape ? 'landscape' : 'portrait';
+let face, orientation;
+function computeOrientation(aspect) {
+  const [a, b, c] = [size.w, size.h, size.d].sort((x, y) => y - x); // a>=b>=c ; c = thickness
+  const near = Math.abs(aspect - 1) < 0.05, land = aspect >= 1;
+  face = near ? { w: size.w, h: size.h, d: size.d } : land ? { w: a, h: b, d: c } : { w: b, h: a, d: c };
+  orientation = near ? 'square' : land ? 'landscape' : 'portrait';
+}
 
 let REF = null; // front-cover stats (reference, never modified)
 
@@ -122,6 +125,9 @@ async function makeBottom() {
 
 (async () => {
   const coverPath = path.join(dir, 'cover.webp');
+  let aspect = (g.imageWidth || 1) / (g.imageHeight || 1);
+  if (fs.existsSync(coverPath)) { const m = await sharp(coverPath).metadata(); if (m.width && m.height) aspect = m.width / m.height; }
+  computeOrientation(aspect);
   REF = fs.existsSync(coverPath) ? await channelStats(coverPath) : null;
   const accent = await accentFromCover(dir);
   await Promise.all([makeBack(), makeSpine(accent), makeTop(accent), makeBottom()]);
