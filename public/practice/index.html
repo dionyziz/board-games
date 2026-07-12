@@ -88,6 +88,10 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { SMAAPass } from 'three/addons/postprocessing/SMAAPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 // ---- game data (single record from src/data/games.json) ----
 const GAME = {
@@ -174,6 +178,12 @@ scene.add(rim);
 const under = new THREE.DirectionalLight('#aeb6c6', 0.55);
 under.position.set(-1.5, -5, 2.5);
 scene.add(under);
+// camera-following highlight: keeps a specular lobe on whatever face you're
+// looking at, so the coated sheen reads from every side (not just the front).
+const followLight = new THREE.DirectionalLight('#fff6ec', 1.15);
+followLight.target.position.set(0, 0, 0);
+scene.add(followLight);
+scene.add(followLight.target);
 
 // ---- the box, at true proportions (cm / 10 = world units) ----
 // Orientation follows the COVER ART, not the raw dims: a landscape cover must
@@ -208,6 +218,10 @@ function makePaperBump(size = 256) {
   const tex = new THREE.DataTexture(data, size, size, THREE.RGBAFormat);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
   tex.repeat.set(7, 7);
+  // trilinear mipmaps so the fine grain doesn't shimmer under minification/motion
+  tex.generateMipmaps = true;
+  tex.minFilter = THREE.LinearMipmapLinearFilter;
+  tex.magFilter = THREE.LinearFilter;
   tex.needsUpdate = true;
   return tex;
 }
@@ -232,7 +246,7 @@ const faceUniforms = {
 
 const boxMat = new THREE.MeshPhysicalMaterial({
   color: '#ffffff', roughness: 0.6, metalness: 0.0,
-  clearcoat: 0.45, clearcoatRoughness: 0.34, envMapIntensity: 0.7,
+  clearcoat: 0.45, clearcoatRoughness: 0.34, envMapIntensity: 1.0,
   bumpMap: makePaperBump(), bumpScale: 0.9,
 });
 
@@ -346,22 +360,43 @@ const _q = new URLSearchParams(location.search);
 if (_q.get('yaw') !== null) { box.rotation.y = parseFloat(_q.get('yaw')); controls.autoRotate = false; }
 if (_q.get('cam')) { const [x, y, z] = _q.get('cam').split(',').map(Number); camera.position.set(x, y, z); controls.autoRotate = false; controls.update(); }
 
+// ---- antialiasing pipeline ----
+// MSAA (multisampled HDR target) smooths the geometry silhouette; SMAA on top
+// cleans the shader/texture seams on the bevels and the fine grain — the parts
+// MSAA alone can't fix — so edges stay stable while rotating. OutputPass does
+// tone mapping + sRGB at the end of the chain.
+const rt = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
+const composer = new EffectComposer(renderer, rt);
+composer.addPass(new RenderPass(scene, camera));
+composer.addPass(new SMAAPass());
+composer.addPass(new OutputPass());
+
 // ---- resize + loop ----
 function resize() {
   const w = stage.clientWidth, h = stage.clientHeight;
+  const dpr = Math.min(window.devicePixelRatio, 2);
+  renderer.setPixelRatio(dpr);
   renderer.setSize(w, h, false);
+  composer.setPixelRatio(dpr);
+  composer.setSize(w, h);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
 window.addEventListener('resize', resize);
 resize();
 
+const _right = new THREE.Vector3(), _camDir = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
 renderer.setAnimationLoop(() => {
   controls.update();
   // hide the shadow floor once the camera drops below the box, so the bottom
   // face isn't occluded by the (dark) shadow patch when you orbit underneath.
   ground.visible = camera.position.y > -H / 2 + 0.02;
-  renderer.render(scene, camera);
+  // park the highlight light near the camera, offset up-and-to-the-side, so the
+  // face currently facing the viewer catches a glancing specular highlight.
+  camera.getWorldDirection(_camDir);
+  _right.crossVectors(_camDir, _up).normalize();
+  followLight.position.copy(camera.position).addScaledVector(_right, 2.5).addScaledVector(_up, 3.0);
+  composer.render();
 });
 </script>
 </body>
