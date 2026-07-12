@@ -10,6 +10,8 @@ let n = 0;
 for (const g of list) {
   if (!g.box.flap) continue;
   g.box.flap.cornerR = (params.cornerR && params.cornerR[g.id]) || 0.28;
+  const wf = params.wFrac && params.wFrac[g.id];
+  if (wf) g.box.flap.wFrac = wf; else delete g.box.flap.wFrac;
   const hole = params.hole && params.hole[g.id];
   if (hole) g.box.flap.hole = hole; else delete g.box.flap.hole;
   n++;

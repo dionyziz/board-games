@@ -1,10 +1,10 @@
 import { decode, type Game } from '../data';
 
 export default function DetailPanel({ game }: { game: Game }) {
-  const players = game.players
+  const players = game.players && game.players.max != null
     ? game.players.min === game.players.max ? `${game.players.max}` : `${game.players.min}–${game.players.max}`
     : '—';
-  const time = game.playtime
+  const time = game.playtime && game.playtime.max != null
     ? game.playtime.min === game.playtime.max ? `${game.playtime.max}` : `${game.playtime.min}–${game.playtime.max}`
     : null;
   return (

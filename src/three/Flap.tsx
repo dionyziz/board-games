@@ -14,8 +14,13 @@ export default function Flap({ game }: { game: Game }) {
   const hFlap = H * (flap.hFrac || 0.15);
   const thick = Math.max(D * 0.12, 0.03);
   const url = asset(flap.src);
+  // narrow the tab to just the central hang-tab band (wFrac) so the strip's side
+  // margins (white/branding) are cut off; the box-width UV scale is kept, so the
+  // narrower tab samples only that central band of the texture.
+  const wf = flap.wFrac ?? 1, Wt = W * wf, lo = 0.5 - wf / 2;
+  const hole = flap.hole ? { ...flap.hole, x1: (flap.hole.x1 - lo) / wf, x2: (flap.hole.x2 - lo) / wf } : undefined;
 
-  const geo = useMemo(() => flapGeometry(W, hFlap, thick, flap.cornerR ?? 0.28, flap.hole), [W, hFlap, thick, flap.cornerR, flap.hole]);
+  const geo = useMemo(() => flapGeometry(Wt, hFlap, thick, flap.cornerR ?? 0.28, hole), [Wt, hFlap, thick, flap.cornerR, flap.hole]);
   const mats = useMemo(() => {
     const art = new THREE.MeshPhysicalMaterial({ color: '#ffffff', roughness: 0.5, clearcoat: 0.3, clearcoatRoughness: 0.34 });
     const band = new THREE.MeshPhysicalMaterial({ color: game.box.sideColor || '#cccccc', roughness: 0.6 });
