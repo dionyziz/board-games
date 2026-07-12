@@ -6673,15 +6673,13 @@
         },
         "top": {
           "src": "/textures/oi-apoikoi-toy-katan/top.webp",
-          "source": "cover-derived",
-          "bump": "/textures/oi-apoikoi-toy-katan/top-bump.webp",
-          "note": "darkened cover-art band + title (no photo of top exists)"
+          "source": "procedural",
+          "bump": "/textures/oi-apoikoi-toy-katan/top-bump.webp"
         },
         "bottom": {
           "src": "/textures/oi-apoikoi-toy-katan/bottom.webp",
-          "source": "cover-derived",
-          "bump": "/textures/oi-apoikoi-toy-katan/bottom-bump.webp",
-          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+          "source": "procedural",
+          "bump": "/textures/oi-apoikoi-toy-katan/bottom-bump.webp"
         },
         "thumb": {
           "src": "/textures/oi-apoikoi-toy-katan/thumb.webp",
