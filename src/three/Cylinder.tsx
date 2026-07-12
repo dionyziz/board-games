@@ -24,7 +24,9 @@ export default function Cylinder({ game, onClick, onPointerOver, onPointerOut, .
   const cyl = box.cyl || { diameter: (box.size.w + box.size.h) / 2, height: box.size.d };
   const R = cyl.diameter / 2 / 10;
   const Hc = cyl.height / 10;
-  const coverUrl = asset(game.textures.front.src);
+  // prefer dedicated flat cap/wrap art (scripts/18-cyl-textures) over the cover
+  const hasCyl = !!box.cylTex;
+  const coverUrl = asset(box.cylTex || game.textures.front.src);
 
   const mats = useMemo(() => {
     const mk = () => new THREE.MeshPhysicalMaterial({ color: '#ffffff' });
@@ -49,12 +51,13 @@ export default function Cylinder({ game, onClick, onPointerOver, onPointerOut, .
       side.map = null; side.color.set(band); side.metalness = 0.85; side.roughness = 0.3; side.clearcoat = 0.2;
       attachTinSeam(side, Hc / 2); // lift-off lid seam around the rim
       bottom.map = null; bottom.color.set(edge); bottom.metalness = 0.85; bottom.roughness = 0.35;
-      // isolate the round lid art from an angled product shot (image-space cx,cy,r)
-      if (box.capCrop) {
-        const { cx, cy, r } = box.capCrop;
-        cover.center.set(0.5, 0.5);
-        // negative v scale: rotating the tin's +Y lid to face +Z maps the cap's
-        // texture up-axis to world-down, so flip v here to keep the art upright.
+      // cap orientation: rotating the tin's +Y lid to face +Z maps the cap's
+      // texture up-axis to world-down, so flip v (negative repeat.y) to stay upright.
+      cover.center.set(0.5, 0.5);
+      if (hasCyl) {
+        cover.repeat.set(1, -1); cover.offset.set(0, 0);          // clean top-down lid: use whole image
+      } else if (box.capCrop) {
+        const { cx, cy, r } = box.capCrop;                        // isolate the lid from an angled cover shot
         cover.repeat.set(2 * r, -2 * r);
         cover.offset.set(cx - 0.5, 0.5 - cy);
       }

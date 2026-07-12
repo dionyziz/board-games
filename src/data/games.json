@@ -2238,7 +2238,8 @@
         "cyl": {
           "diameter": 9,
           "height": 15
-        }
+        },
+        "cylTex": "/textures/zombie-dice-horde-edition-224035/cyl.webp"
       },
       "textures": {
         "front": {
@@ -2499,7 +2500,8 @@
           "cx": 0.5,
           "cy": 0.32,
           "r": 0.3
-        }
+        },
+        "cylTex": "/textures/dobble-63268/cyl.webp"
       },
       "textures": {
         "front": {

@@ -36,9 +36,16 @@ packaging is known (lower confidence — verify before acting).
 
 - **DONE — cylinders** (`round-tin`, `tube`): rendered by `src/three/Cylinder.tsx`
   (a `CylinderGeometry` with a [side, topCap, bottomCap] material array). Dobble =
-  glossy metal tin with the lid art on the cap (cropped from its angled product
-  shot via `box.capCrop`); Chupacabra & Zombie Dice = matte cardboard tubes with
-  the cover wrapped around the side. Dispatched in `src/three/Package.tsx`.
+  glossy metal tin with a cookie-tin lid seam; Chupacabra & Zombie Dice = matte
+  cardboard tubes, art wrapped around the side. Dispatched in `Package.tsx`.
+  Flat textures (from vetted BGG gallery art, `scripts/cyl-src/` →
+  `scripts/18-cyl-textures.js` → `public/textures/<id>/cyl.webp`, `box.cylTex`):
+    - Dobble: genuine top-down round lid (imageid 6477003). ✅
+    - Zombie Dice: flat front key art wrapped (7711840). ✅
+    - Chupacabra: NO flat front art exists in the gallery (only a curved-tube
+      photo, or the text-heavy back panel) — still on its cover; revisit if a flat
+      front label surfaces.
+  No flat Dobble side-band exists either, so the tin band stays plain metal.
 - **DONE — `tin-rect`** (Forbidden Island, Sushi Go!): still a box, but a glossier
   metal-tin material (in `GameBox.tsx`, kept non-metallic so the print survives).
 - **PENDING** — `blister`, `bag`, `other` still render as the default box.
