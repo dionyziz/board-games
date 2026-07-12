@@ -1,6 +1,9 @@
 # dependencies
 node_modules/
 
+# build output (produced by the deploy workflow)
+dist/
+
 # local Claude Code settings (per-machine permissions)
 .claude/settings.local.json
 
