@@ -139,6 +139,12 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
         e.preventDefault();
         scrollTarget.current = THREE.MathUtils.clamp(Math.ceil(scrollTarget.current - 1e-3) - 1, 0, N - 1);
         tr.current.reveal = 1; invalidate();
+      } else if (key === 'Home') {
+        e.preventDefault();
+        scrollTarget.current = 0; tr.current.reveal = 1; invalidate();
+      } else if (key === 'End') {
+        e.preventDefault();
+        scrollTarget.current = N - 1; tr.current.reveal = 1; invalidate();
       } else if (key === 'ArrowRight' || key === 'Enter') {
         e.preventDefault();
         const idx = THREE.MathUtils.clamp(Math.round(scroll.current), 0, N - 1);

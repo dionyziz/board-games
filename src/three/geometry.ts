@@ -23,7 +23,26 @@ export function tinGeometry(W: number, H: number, D: number, cornerR = 0.07): TH
   return g;
 }
 
-// Hang-tab flap: a thin tab with rounded free (top) corners + optional punched hole.
+// A retail "keyhole" hang-hole: an elongated horizontal slot with a small circle
+// bulging from its top centre. Built as ONE connected path by sampling the union
+// boundary (max of slot-ellipse and top-circle) along rays from the slot centre.
+function keyholePath(hx: number, hy: number, a: number, b: number, r: number, off: number): THREE.Path {
+  const ccx = hx, ccy = hy + off, N = 80, p = new THREE.Path();
+  for (let i = 0; i <= N; i++) {
+    const th = (i / N) * Math.PI * 2, dx = Math.cos(th), dy = Math.sin(th);
+    const tE = 1 / Math.hypot(dx / a, dy / b);            // slot ellipse
+    const ex = ccx - hx, ey = ccy - hy, edotd = ex * dx + ey * dy;
+    const disc = edotd * edotd - (ex * ex + ey * ey - r * r);
+    const tC = disc >= 0 ? edotd + Math.sqrt(disc) : 0;   // far circle hit
+    const t = Math.max(tE, tC);
+    const px = hx + dx * t, py = hy + dy * t;
+    i === 0 ? p.moveTo(px, py) : p.lineTo(px, py);
+  }
+  p.closePath();
+  return p;
+}
+
+// Hang-tab flap: a thin tab with rounded free (top) corners + optional keyhole cut-out.
 export function flapGeometry(W: number, hFlap: number, thick: number, cornerR: number, hole?: { cx: number; cy: number; rx: number; ry: number }): THREE.ExtrudeGeometry {
   const r = Math.min(W, hFlap) * cornerR, x0 = -W / 2, x1 = W / 2;
   const s = new THREE.Shape();
@@ -32,9 +51,9 @@ export function flapGeometry(W: number, hFlap: number, thick: number, cornerR: n
   s.lineTo(x0 + r, hFlap); s.quadraticCurveTo(x0, hFlap, x0, hFlap - r);
   s.lineTo(x0, 0);
   if (hole) {
-    const p = new THREE.Path();
-    p.absellipse((hole.cx - 0.5) * W, (1 - hole.cy) * hFlap, hole.rx * W, hole.ry * hFlap, 0, Math.PI * 2, true, 0);
-    s.holes.push(p);
+    const hx = (hole.cx - 0.5) * W, hy = (1 - hole.cy) * hFlap;
+    const a = hole.rx * W, b = Math.min(hole.ry * hFlap * 0.5, a * 0.4);
+    s.holes.push(keyholePath(hx, hy, a, b, b * 1.15, b * 0.85));
   }
   const g = new THREE.ExtrudeGeometry(s, { depth: thick, bevelEnabled: false, steps: 1, curveSegments: 8 });
   g.translate(0, 0, -thick / 2);
@@ -51,9 +70,12 @@ export function pillowGeometry(W: number, H: number, puff: number, creases = fal
     const nx = p.getX(i) / (W / 2), ny = p.getY(i) / (H / 2);
     let z = puff * Math.max(0, Math.cos(nx * Math.PI / 2)) * Math.max(0, Math.cos(ny * Math.PI / 2));
     if (creases) {
-      const edge = Math.max(0, (Math.abs(nx) - 0.5)) / 0.5; // 0 in the middle → 1 at the seals
-      z += puff * 0.3 * edge * Math.sin(ny * Math.PI * 6.5); // crimped side seals
-      z += puff * 0.1 * Math.sin(nx * 5.0) * Math.cos(ny * 2.5); // soft body wrinkles
+      // crimped side seals — different phase L vs R so it isn't mirror-symmetric
+      const edge = Math.max(0, (Math.abs(nx) - 0.5)) / 0.5;
+      z += puff * 0.3 * edge * Math.sin(ny * Math.PI * 6.5 + (nx < 0 ? 0 : 1.3));
+      // irregular, asymmetric body wrinkles (incommensurate sines, off-centre)
+      z += puff * 0.13 * Math.sin(nx * 7.7 + ny * 5.3 + 1.9) * Math.cos(ny * 4.1 - nx * 2.2);
+      z += puff * 0.07 * Math.sin(nx * 13.1 - ny * 3.7);
     }
     p.setZ(i, z);
   }
