@@ -83,7 +83,10 @@ a { color: inherit; }
 
 .panel-wrap {
   position: fixed; top: 0; right: 0; height: 100%; width: min(42vw, 400px); z-index: 3;
-  border-left: 1px solid #1c1c1e; background: linear-gradient(180deg, #101011, #0b0b0c);
+  border-left: 1px solid rgba(255,255,255,.08);
+  /* translucent + blurred so a box zoomed in far enough shows through behind the text */
+  background: linear-gradient(180deg, rgba(16,16,17,.66), rgba(11,11,12,.6));
+  backdrop-filter: blur(18px) saturate(1.1); -webkit-backdrop-filter: blur(18px) saturate(1.1);
   pointer-events: auto; overflow-y: auto;
   animation: panelIn .55s cubic-bezier(.2,.7,.2,1) both;
 }

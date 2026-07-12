@@ -35,7 +35,7 @@ export function attachBoxShader(mat: THREE.MeshPhysicalMaterial, tex: FaceMap, b
         float gEmboss = 0.0;          // gate: text present at this fragment
         vec3  gNormalO = vec3(0.0);   // analytic object-space normal (with emboss)
         float gSeamDark = 1.0;        // lid-seam shadow darkening (edge faces only)
-        const float EMB = 2.6;        // emboss strength
+        const float EMB = 2.0;        // emboss strength (letter protrusion)
         const float E = 0.004;        // texel step for the height gradient (uv)
         const float SEAM_FRAC = 0.7;  // lid seam depth: fraction from the front (cover) toward the back
         const float SEAM_W = 0.02;    // groove half-width (object units)
