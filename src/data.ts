@@ -14,7 +14,8 @@ export type Box = {
   capCrop?: { cx: number; cy: number; r: number };  // isolate round lid art from the cover
   cylTex?: string;                                   // dedicated flat cap/wrap art (preferred over cover)
   cornerR?: number;                                  // tin-rect corner radius, fraction of min(w,h)
-  flap?: { src: string; hFrac: number; cornerR?: number; hole?: { cx: number; cy: number; rx: number; ry: number } };
+  flap?: { src: string; hFrac: number; cornerR?: number;
+    hole?: { x1: number; y1: number; x2: number; y2: number; ccx: number; ccy: number; cr: number; rr?: number } };
   bag?: 'foil' | 'fish';                             // pouch kind (bag shape)
   bagOutline?: { aspect: number; poly: number[][] }; // fish silhouette (measured), for a closed pouch
 };

@@ -1,28 +1,13 @@
 {
-  "_comment": "Per-game hang-tab flap tuning. cornerR = rounding of the tab's free (top) corners, fraction of min(width,flapHeight). The hang-hole is auto-measured from the flap texture by measure-flaps.js.",
+  "_comment": "Per-game hang-tab flap tuning, applied by measure-flaps.js. cornerR = rounding of the tab's free (top) corners (fraction of min(width,flapHeight)). hole = the die-cut hang-hole: a rounded-rectangle (stadium) slot x1,y1,x2,y2 + a circle {ccx,ccy,cr} centred on top, all normalised to the flap texture (y measured downward). rr optional (corner-radius fraction, default 1 = full stadium).",
   "cornerR": {
     "uno-2223": 0.42,
     "nai-i-ochi": 0.46,
     "love-letter-277085": 0.28
   },
   "hole": {
-    "uno-2223": {
-      "cx": 0.46,
-      "cy": 0.55,
-      "rx": 0.13,
-      "ry": 0.14
-    },
-    "nai-i-ochi": {
-      "cx": 0.48,
-      "cy": 0.42,
-      "rx": 0.12,
-      "ry": 0.2
-    },
-    "love-letter-277085": {
-      "cx": 0.52,
-      "cy": 0.45,
-      "rx": 0.1,
-      "ry": 0.16
-    }
+    "uno-2223": { "x1": 0.28, "y1": 0.48, "x2": 0.68, "y2": 0.79, "ccx": 0.45, "ccy": 0.33, "cr": 0.15 },
+    "nai-i-ochi": { "x1": 0.29, "y1": 0.34, "x2": 0.6, "y2": 0.66, "ccx": 0.44, "ccy": 0.2, "cr": 0.14 },
+    "love-letter-277085": { "x1": 0.42, "y1": 0.34, "x2": 0.66, "y2": 0.64, "ccx": 0.54, "ccy": 0.22, "cr": 0.12 }
   }
 }

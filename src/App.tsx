@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
 import { games, bySlug, norm, searchBlob, matchesFilters, bgStops } from './data';
@@ -18,26 +18,43 @@ function Shell() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [center, setCenterIdx] = useState(0);
 
+  // the game most recently viewed/centered while browsing — hoisted to the top of
+  // search results so it stays findable when you start a new query
+  const focusId = useRef<string | null>(null);
+
   const filtered = useMemo(() => {
     const tokens = query.trim().split(/\s+/).map(norm).filter(Boolean);
     // no query + no pills = no constraint → the whole library (applied instantly)
-    return games.filter((g) => tokens.every((t) => searchBlob(g).includes(t)) && matchesFilters(g, sel));
+    const list = games.filter((g) => tokens.every((t) => searchBlob(g).includes(t)) && matchesFilters(g, sel));
+    if ((tokens.length || sel.size) && focusId.current) {
+      const i = list.findIndex((g) => g.id === focusId.current);
+      if (i > 0) list.unshift(list.splice(i, 1)[0]);
+    }
+    return list;
   }, [query, sel]);
 
   const toggle = (key: string) => setSel((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; });
+  const focusSearch = () => setTimeout(() => {
+    const input = document.querySelector('input[aria-label="Search games"]') as HTMLInputElement | null;
+    if (input) { input.focus(); input.select(); }
+  }, 0);
 
-  // "/" focuses the search box and selects its text (unless already typing)
+  // remember the open game as the focus for the next search
+  useEffect(() => { if (slug) focusId.current = slug; }, [slug]);
+
+  // "/" jumps to the library (if in a detail view) and focuses+selects the search
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== '/') return;
       const el = document.activeElement as HTMLElement | null;
       if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) return;
-      const input = document.querySelector('input[aria-label="Search games"]') as HTMLInputElement | null;
-      if (input) { e.preventDefault(); input.focus(); input.select(); }
+      e.preventDefault();
+      if (slug) navigate('/');
+      focusSearch();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, []);
+  }, [slug, navigate]);
 
   // in a detail view, Esc / ← return to the library
   useEffect(() => {
@@ -62,7 +79,7 @@ function Shell() {
         list={filtered}
         selectedIndex={selectedIndex}
         onOpen={(id) => navigate('/game/' + id)}
-        onCenter={setCenterIdx}
+        onCenter={(i) => { setCenterIdx(i); if (!query.trim() && sel.size === 0) focusId.current = filtered[i]?.id ?? focusId.current; }}
       />
       {slug
         ? <DetailOverlay key={slug} game={bySlug(slug)} onBack={() => navigate('/')} />

@@ -23,19 +23,23 @@ export function tinGeometry(W: number, H: number, D: number, cornerR = 0.07): TH
   return g;
 }
 
-// A retail "keyhole" hang-hole: an elongated horizontal slot with a small circle
-// bulging from its top centre. Built as ONE connected path by sampling the union
-// boundary (max of slot-ellipse and top-circle) along rays from the slot centre.
-function keyholePath(hx: number, hy: number, a: number, b: number, r: number, off: number): THREE.Path {
-  const ccx = hx, ccy = hy + off, N = 80, p = new THREE.Path();
-  for (let i = 0; i <= N; i++) {
+// A retail "keyhole" hang-hole = a rounded-rectangle (stadium) slot with a small
+// circle centred on top. Built as ONE connected path: march rays out from the
+// rect centre and take the farthest point still inside either shape (their union).
+export type Hole = { x1: number; y1: number; x2: number; y2: number; ccx: number; ccy: number; cr: number; rr?: number };
+function keyholePath(cx: number, cy: number, hw: number, hh: number, rr: number, ccx: number, ccy: number, cr: number): THREE.Path {
+  const insideRect = (px: number, py: number) => {
+    const qx = Math.abs(px - cx) - (hw - rr), qy = Math.abs(py - cy) - (hh - rr);
+    return Math.hypot(Math.max(qx, 0), Math.max(qy, 0)) + Math.min(Math.max(qx, qy), 0) - rr <= 0;
+  };
+  const inside = (px: number, py: number) => insideRect(px, py) || Math.hypot(px - ccx, py - ccy) <= cr;
+  const reach = Math.max(hw, hh) + 2 * cr + Math.hypot(ccx - cx, ccy - cy), step = Math.max(0.0005, Math.min(hh, cr) / 8);
+  const N = 120, p = new THREE.Path();
+  for (let i = 0; i < N; i++) {
     const th = (i / N) * Math.PI * 2, dx = Math.cos(th), dy = Math.sin(th);
-    const tE = 1 / Math.hypot(dx / a, dy / b);            // slot ellipse
-    const ex = ccx - hx, ey = ccy - hy, edotd = ex * dx + ey * dy;
-    const disc = edotd * edotd - (ex * ex + ey * ey - r * r);
-    const tC = disc >= 0 ? edotd + Math.sqrt(disc) : 0;   // far circle hit
-    const t = Math.max(tE, tC);
-    const px = hx + dx * t, py = hy + dy * t;
+    let last = 0;
+    for (let t = 0; t <= reach; t += step) if (inside(cx + dx * t, cy + dy * t)) last = t;
+    const px = cx + dx * last, py = cy + dy * last;
     i === 0 ? p.moveTo(px, py) : p.lineTo(px, py);
   }
   p.closePath();
@@ -43,7 +47,8 @@ function keyholePath(hx: number, hy: number, a: number, b: number, r: number, of
 }
 
 // Hang-tab flap: a thin tab with rounded free (top) corners + optional keyhole cut-out.
-export function flapGeometry(W: number, hFlap: number, thick: number, cornerR: number, hole?: { cx: number; cy: number; rx: number; ry: number }): THREE.ExtrudeGeometry {
+// Hole params are texture-normalised (y measured downward from the top).
+export function flapGeometry(W: number, hFlap: number, thick: number, cornerR: number, hole?: Hole): THREE.ExtrudeGeometry {
   const r = Math.min(W, hFlap) * cornerR, x0 = -W / 2, x1 = W / 2;
   const s = new THREE.Shape();
   s.moveTo(x0, 0); s.lineTo(x1, 0); s.lineTo(x1, hFlap - r);
@@ -51,9 +56,11 @@ export function flapGeometry(W: number, hFlap: number, thick: number, cornerR: n
   s.lineTo(x0 + r, hFlap); s.quadraticCurveTo(x0, hFlap, x0, hFlap - r);
   s.lineTo(x0, 0);
   if (hole) {
-    const hx = (hole.cx - 0.5) * W, hy = (1 - hole.cy) * hFlap;
-    const a = hole.rx * W, b = Math.min(hole.ry * hFlap * 0.5, a * 0.4);
-    s.holes.push(keyholePath(hx, hy, a, b, b * 1.15, b * 0.85));
+    const toX = (fx: number) => (fx - 0.5) * W, toY = (fy: number) => (1 - fy) * hFlap;
+    const rxl = toX(hole.x1), rxr = toX(hole.x2), ryt = toY(hole.y1), ryb = toY(hole.y2);
+    const cx = (rxl + rxr) / 2, cy = (ryt + ryb) / 2, hw = Math.abs(rxr - rxl) / 2, hh = Math.abs(ryt - ryb) / 2;
+    const rr = Math.min(hw, hh) * (hole.rr ?? 1); // stadium by default
+    s.holes.push(keyholePath(cx, cy, hw, hh, rr, toX(hole.ccx), toY(hole.ccy), hole.cr * hFlap));
   }
   const g = new THREE.ExtrudeGeometry(s, { depth: thick, bevelEnabled: false, steps: 1, curveSegments: 8 });
   g.translate(0, 0, -thick / 2);
