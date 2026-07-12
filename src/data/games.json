@@ -131,11 +131,42 @@
         "agreement": 1,
         "estimatedSize": false,
         "sideColor": "#66543d",
-        "edgeColor": "#3d3225"
+        "edgeColor": "#3d3225",
+        "face": {
+          "w": 9.5,
+          "h": 12.2,
+          "d": 2
+        },
+        "orientation": "portrait"
       },
       "textures": {
-        "cover": "/textures/sampoter-9220/cover.webp",
-        "thumb": "/textures/sampoter-9220/thumb.webp"
+        "front": {
+          "src": "/textures/sampoter-9220/cover.webp",
+          "source": "airtable"
+        },
+        "back": {
+          "src": "/textures/sampoter-9220/back.webp",
+          "source": "photo",
+          "normalized": true
+        },
+        "spine": {
+          "src": "/textures/sampoter-9220/spine.webp",
+          "source": "procedural"
+        },
+        "top": {
+          "src": "/textures/sampoter-9220/top.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + title (no photo of top exists)"
+        },
+        "bottom": {
+          "src": "/textures/sampoter-9220/bottom.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+        },
+        "thumb": {
+          "src": "/textures/sampoter-9220/thumb.webp",
+          "source": "derived"
+        }
       }
     },
     {
@@ -211,11 +242,42 @@
         "agreement": 0.99,
         "estimatedSize": false,
         "sideColor": "#e7d6ac",
-        "edgeColor": "#8b8067"
+        "edgeColor": "#8b8067",
+        "face": {
+          "w": 11.7,
+          "h": 18.6,
+          "d": 4.4
+        },
+        "orientation": "portrait"
       },
       "textures": {
-        "cover": "/textures/risk-strike-394144/cover.webp",
-        "thumb": "/textures/risk-strike-394144/thumb.webp"
+        "front": {
+          "src": "/textures/risk-strike-394144/cover.webp",
+          "source": "airtable"
+        },
+        "back": {
+          "src": "/textures/risk-strike-394144/back.webp",
+          "source": "photo",
+          "normalized": true
+        },
+        "spine": {
+          "src": "/textures/risk-strike-394144/spine.webp",
+          "source": "procedural"
+        },
+        "top": {
+          "src": "/textures/risk-strike-394144/top.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + title (no photo of top exists)"
+        },
+        "bottom": {
+          "src": "/textures/risk-strike-394144/bottom.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+        },
+        "thumb": {
+          "src": "/textures/risk-strike-394144/thumb.webp",
+          "source": "derived"
+        }
       }
     },
     {
@@ -306,11 +368,42 @@
         "agreement": 1,
         "estimatedSize": false,
         "sideColor": "#683858",
-        "edgeColor": "#3e2235"
+        "edgeColor": "#3e2235",
+        "face": {
+          "w": 26,
+          "h": 26,
+          "d": 6
+        },
+        "orientation": "square"
       },
       "textures": {
-        "cover": "/textures/akropolis-357563/cover.webp",
-        "thumb": "/textures/akropolis-357563/thumb.webp"
+        "front": {
+          "src": "/textures/akropolis-357563/cover.webp",
+          "source": "airtable"
+        },
+        "back": {
+          "src": "/textures/akropolis-357563/back.webp",
+          "source": "photo",
+          "normalized": true
+        },
+        "spine": {
+          "src": "/textures/akropolis-357563/spine.webp",
+          "source": "procedural"
+        },
+        "top": {
+          "src": "/textures/akropolis-357563/top.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + title (no photo of top exists)"
+        },
+        "bottom": {
+          "src": "/textures/akropolis-357563/bottom.webp",
+          "source": "cover-derived",
+          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+        },
+        "thumb": {
+          "src": "/textures/akropolis-357563/thumb.webp",
+          "source": "derived"
+        }
       }
     },
     {

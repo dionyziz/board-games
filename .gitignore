@@ -7,3 +7,6 @@ node_modules/
 # OS / editor cruft
 .DS_Store
 *.log
+
+# raw downloaded gallery candidate images (rebuildable cache); keep gallery.json
+scripts/gallery-cache/**/back-src.*

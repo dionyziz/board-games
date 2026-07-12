@@ -86,5 +86,12 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
     await sharp(band).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).webp({ quality: 88, effort: 4 }).toFile(path.join(dir, 'bottom.webp'));
   }
 
+  // update provenance so the faces are tagged cover-derived (and thus protected
+  // by 10-gen-faces.js's idempotency guard on future re-runs)
+  g.textures = g.textures || {};
+  g.textures.top = { src: `/textures/${g.id}/top.webp`, source: 'cover-derived', note: 'darkened cover-art band + title (no photo of top exists)' };
+  g.textures.bottom = { src: `/textures/${g.id}/bottom.webp`, source: 'cover-derived', note: 'darkened cover-art band + barcode + legal (no photo of bottom exists)' };
+  fs.writeFileSync(path.join(ROOT, 'src/data/games.json'), JSON.stringify(games, null, 2) + '\n');
+
   console.log('wrote top.webp + bottom.webp', W + 'x' + H, 'accent', accent);
 })();

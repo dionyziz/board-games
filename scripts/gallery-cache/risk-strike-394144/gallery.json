@@ -1,0 +1,41 @@
+{
+  "bggId": 394144,
+  "fetched": 19,
+  "done": true,
+  "frontAspect": 0.683,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7910420",
+        "caption": "Risk Strike - French edition - back",
+        "url": "https://cf.geekdo-images.com/UB1DJbDbeR50yEZxgmUMNA__large/img/q7o_Fe2sXPQSPv57vwsoDjCv4qo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7910420.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7693953",
+        "caption": "Risiko Strike (German, 2023, Back)",
+        "url": "https://cf.geekdo-images.com/sDo3kbpN-LuYXFQcqMAkSg__large/img/R5PZZ0NjGi9GxG_GnLUuO5baDHI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7693953.jpg",
+        "score": 1
+      },
+      {
+        "imageid": "9625394",
+        "caption": "Back",
+        "url": "https://cf.geekdo-images.com/mMJ00QA1alRC1aw5LggAGw__large/img/rWikC_Y8cHsTn_5MT2rZs_4S1BA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9625394.jpg",
+        "score": 1
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "7910420",
+      "url": "https://cf.geekdo-images.com/UB1DJbDbeR50yEZxgmUMNA__large/img/q7o_Fe2sXPQSPv57vwsoDjCv4qo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7910420.jpg",
+      "caption": "Risk Strike - French edition - back",
+      "score": 2,
+      "aspect": 0.623,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/risk-strike-394144/back-src.jpg"
+    }
+  }
+}

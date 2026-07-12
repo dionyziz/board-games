@@ -1,0 +1,66 @@
+{
+  "bggId": 9220,
+  "fetched": 250,
+  "done": true,
+  "frontAspect": 0.782,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "197517",
+        "caption": "Saboteur - Amigo - German box back",
+        "url": "https://cf.geekdo-images.com/gbwkKqCbA0hHu4F7y1r5hA__large/img/9Uy7nAtWCT6tLsaJsOhUtAdyXJg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic197517.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "6277030",
+        "caption": "Back - Dutch edition - 999 games -2004",
+        "url": "https://cf.geekdo-images.com/lPrYCf_GmYXTbbep84oxUQ__large/img/UGz7mmyWzJ4nkJl2KOJXfsdDeZo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6277030.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5216386",
+        "caption": "English VR edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/X--dAetV4CDd9nMEJEgLJQ__large/img/rnLAUEvAouegVAq-BV8tCgD1zwA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5216386.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "3577079",
+        "caption": "Back of 999 Games Dutch edition of 2013",
+        "url": "https://cf.geekdo-images.com/3-JqXVfqC0KBEjxKdVJzEA__large/img/4-fkGxd6UQvXZWicXlQZ2KUCECw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3577079.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "922653",
+        "caption": "Amigo 2nd edition - Box Back (HiRes scan)",
+        "url": "https://cf.geekdo-images.com/dO3EMN2yItyxwajfY1ZZqw__large/img/My9Zidg5LRPiLrHdeLBJhQ7BVxw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic922653.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "9346428",
+        "caption": "Saboteur ‐ Z-Man English edition 2005 - box back",
+        "url": "https://cf.geekdo-images.com/zECw4VXl8GD71LvZyKdsAg__large/img/s_fWDSuITRqLOrpo3sWfrTqwo8g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9346428.jpg",
+        "score": 3.5
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "301120",
+        "caption": "Side of the box",
+        "url": "https://cf.geekdo-images.com/ZxCTsuUKAsxTAQF26hY9fg__large/img/_vArOEF93Z6tt1nvjG57Z7YEnus=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic301120.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
+  "chosen": {
+    "back": {
+      "imageid": "197517",
+      "url": "https://cf.geekdo-images.com/gbwkKqCbA0hHu4F7y1r5hA__large/img/9Uy7nAtWCT6tLsaJsOhUtAdyXJg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic197517.jpg",
+      "caption": "Saboteur - Amigo - German box back",
+      "score": 3.5,
+      "aspect": 0.76,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sampoter-9220/back-src.jpg"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "bggId": 357563,
+  "fetched": 132,
+  "done": true,
+  "frontAspect": 1,
+  "candidates": {
+    "back": [
+      {
+        "imageid": "7560174",
+        "caption": "English edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/bWqjQj-97UQ8f9fsD20Peg__large/img/nHUAnMPAiNtnTH5lC-ELNAf-Nhw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7560174.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "8064930",
+        "caption": "2022 English edition back of box",
+        "url": "https://cf.geekdo-images.com/ceKgSavqRzmAsbp84DOZfA__large/img/L6IrYYhPTrf5HAaeb0PW_LgqBAA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8064930.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7217512",
+        "caption": "Akropolis ‐ English (2022) Box . Back",
+        "url": "https://cf.geekdo-images.com/wrWnExZQOB80A16B-VxlOw__large/img/0jN4WWZv7sfUbfYUMhZ9atMSXPA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7217512.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "7527522",
+        "caption": "Akropolis - Czech Edition Back (image provided by the publisher)",
+        "url": "https://cf.geekdo-images.com/L6cuaT-CbdwCT2KDVSlFjg__large/img/WSHeFmLlj1yru531Yks0cFG58bI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7527522.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7116418",
+        "caption": "Akropolis ‐ French edition - back",
+        "url": "https://cf.geekdo-images.com/Ioa8ge3x7LKyD0FSX2dFiw__large/img/XG4beOlZGkskTZiRZwUj33s3XuI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7116418.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "7747881",
+        "caption": "German edition, back cover",
+        "url": "https://cf.geekdo-images.com/QpGzZcQhJkobfF-Oe5SDzA__large/img/N21YjajVqkNa3o0wmJFf8glQhAc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7747881.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": [
+      {
+        "imageid": "6705098",
+        "caption": "Bottom box",
+        "url": "https://cf.geekdo-images.com/o0Db0KhnIWj3DDwdzxepbA__large/img/OC-yN0xAcvzTEcp8A5nfSXY8LfU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6705098.jpg",
+        "score": 2
+      }
+    ]
+  },
+  "chosen": {
+    "back": {
+      "imageid": "8064930",
+      "url": "https://cf.geekdo-images.com/ceKgSavqRzmAsbp84DOZfA__large/img/L6IrYYhPTrf5HAaeb0PW_LgqBAA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8064930.jpg",
+      "caption": "2022 English edition back of box",
+      "score": 3.5,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/akropolis-357563/back-src.jpg"
+    }
+  }
+}
