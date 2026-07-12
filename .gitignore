@@ -18,3 +18,5 @@ scripts/gallery-cache/**/*-src.*
 scripts/gallery-cache/_deproj/
 
 scripts/gallery-cache/_deproj2/
+
+scripts/gallery-cache/_fronts/

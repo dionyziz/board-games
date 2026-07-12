@@ -187,7 +187,7 @@ export default function Scene(props: { list: Game[]; selectedIndex: number; onOp
   return (
     <Canvas
       shadows
-      frameloop="demand"
+      frameloop={props.selectedIndex >= 0 ? 'always' : 'demand'}
       dpr={[1, 1.75]}
       camera={{ fov: 35, position: [0, 0, 7] }}
       gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05, antialias: false, powerPreference: 'high-performance' }}

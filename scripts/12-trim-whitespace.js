@@ -12,7 +12,7 @@ const apply = process.argv.includes('--apply');
 const only = process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
 const list = loadGames().list.filter((g) => !only || g.id === only);
 
-const PHOTO = new Set(['airtable', 'bgg-hires', 'photo']); // faces that can carry scan/photo whitespace
+const PHOTO = new Set(['photo']); // only photo back/spine; fronts are owned by 14-fix-fronts.js
 const MIN = 0.04, MAX = 0.55; // trim only a meaningful-but-not-destructive border
 
 (async () => {
