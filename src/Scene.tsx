@@ -3,7 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { TrackballControls, ContactShadows } from '@react-three/drei';
 import { EffectComposer, SMAA } from '@react-three/postprocessing';
 import * as THREE from 'three';
-import { games } from './data';
+import type { Game } from './data';
 import GameBox from './three/GameBox';
 import { Env, Lights } from './three/Lights';
 
@@ -12,12 +12,9 @@ const WINDOW = 4;
 const GAL_POS = new THREE.Vector3(0, 0, 7);
 const DET_POS = new THREE.Vector3(3.0, 2.1, 6.2);
 const smooth = (t: number) => t * t * (3 - 2 * t);
-
-// shared per-frame transition state, read by the box items
 type Tr = { p: number; selected: number };
 
-function Item({ index, tr, onOpen }: { index: number; tr: React.MutableRefObject<Tr>; onOpen: (id: string) => void }) {
-  const g = games[index];
+function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: React.MutableRefObject<Tr>; onOpen: (id: string) => void }) {
   const ref = useRef<THREE.Group>(null!);
   const [hover, setHover] = useState(false);
   const v = useMemo(() => new THREE.Vector3(), []);
@@ -26,20 +23,17 @@ function Item({ index, tr, onOpen }: { index: number; tr: React.MutableRefObject
     if (!grp) return;
     const { p, selected } = tr.current;
     const isSel = selected === index;
-    // scale: hover pop in gallery; the selected box stays full, others fade out as p→1
     let target = hover ? 1.06 : 1;
     if (selected >= 0) target = isSel ? 1 : 1 - p;
-    const k = 1 - Math.pow(0.0015, dt);
-    grp.scale.lerp(v.set(target, target, target), k);
-    // tilt eases from the gallery 3/4 to the detail angle for the focused box
+    grp.scale.lerp(v.set(target, target, target), 1 - Math.pow(0.0015, dt));
     const rot = isSel ? -0.5 : hover ? -0.35 : -0.6;
     grp.rotation.y += (rot - grp.rotation.y) * Math.min(1, dt * 6);
   });
   return (
     <group ref={ref} position={[0, -index * SPACING, 0]} rotation-y={-0.6}>
       <GameBox
-        game={g}
-        onClick={(e: any) => { e.stopPropagation(); onOpen(g.id); }}
+        game={game}
+        onClick={(e: any) => { e.stopPropagation(); onOpen(game.id); }}
         onPointerOver={(e: any) => { e.stopPropagation(); setHover(true); document.body.style.cursor = 'pointer'; }}
         onPointerOut={() => { setHover(false); document.body.style.cursor = 'auto'; }}
       />
@@ -47,8 +41,8 @@ function Item({ index, tr, onOpen }: { index: number; tr: React.MutableRefObject
   );
 }
 
-function SceneInner({ selectedIndex, onOpen, onCenter }: {
-  selectedIndex: number; onOpen: (id: string) => void; onCenter: (i: number) => void;
+function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
+  list: Game[]; selectedIndex: number; onOpen: (id: string) => void; onCenter: (i: number) => void;
 }) {
   const { camera, gl } = useThree();
   const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex });
@@ -56,36 +50,50 @@ function SceneInner({ selectedIndex, onOpen, onCenter }: {
   const ground = useRef<any>(null!);
   const scroll = useRef(selectedIndex >= 0 ? selectedIndex : 0);
   const scrollTarget = useRef(scroll.current);
-  const anchor = useRef(DET_POS.clone());     // detail-side camera pose to lerp against
+  const anchor = useRef(DET_POS.clone());
   const lastSel = useRef(selectedIndex);
   const [settled, setSettled] = useState(selectedIndex >= 0);
   const lastCenter = useRef(-1);
   const camPos = useMemo(() => new THREE.Vector3(), []);
+  const [center, setCenter] = useState(selectedIndex >= 0 ? selectedIndex : 0);
 
-  // one-time camera pose (so a deep-linked detail starts at the 3/4 pose before
-  // TrackballControls takes over, not the gallery front pose)
   useLayoutEffect(() => {
     camera.position.copy(selectedIndex >= 0 ? DET_POS : GAL_POS);
     camera.lookAt(0, 0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // wheel scroll (gallery only)
+  // wheel + touch scroll (gallery only)
   useEffect(() => {
     const el = gl.domElement;
+    const N = () => list.length;
     const onWheel = (e: WheelEvent) => {
       if (tr.current.selected >= 0) return;
-      scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + e.deltaY * 0.0022, 0, games.length - 1);
+      scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + e.deltaY * 0.0022, 0, N() - 1);
+    };
+    let lastY = 0;
+    const onTouchStart = (e: TouchEvent) => { lastY = e.touches[0].clientY; };
+    const onTouchMove = (e: TouchEvent) => {
+      if (tr.current.selected >= 0) return;
+      const y = e.touches[0].clientY;
+      scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + (lastY - y) * 0.01, 0, N() - 1);
+      lastY = y;
     };
     el.addEventListener('wheel', onWheel, { passive: true });
-    return () => el.removeEventListener('wheel', onWheel);
-  }, [gl]);
+    el.addEventListener('touchstart', onTouchStart, { passive: true });
+    el.addEventListener('touchmove', onTouchMove, { passive: true });
+    return () => { el.removeEventListener('wheel', onWheel); el.removeEventListener('touchstart', onTouchStart); el.removeEventListener('touchmove', onTouchMove); };
+  }, [gl, list]);
 
-  // react to route-driven selection changes: freeze an anchor + hand control back to the rig
+  // clamp scroll when the filtered list shrinks
+  useEffect(() => {
+    scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current, 0, Math.max(0, list.length - 1));
+  }, [list.length]);
+
   useEffect(() => {
     if (selectedIndex !== lastSel.current) {
       if (selectedIndex >= 0) { anchor.current.copy(DET_POS); scrollTarget.current = selectedIndex; }
-      else { anchor.current.copy(camera.position); }         // avoid a jump when leaving trackball
+      else { anchor.current.copy(camera.position); }
       lastSel.current = selectedIndex;
       setSettled(false);
     }
@@ -99,33 +107,32 @@ function SceneInner({ selectedIndex, onOpen, onCenter }: {
     if (Math.abs(t.p - goal) < 0.002) t.p = goal;
     const p = smooth(t.p);
 
-    // scroll easing → focused box sits at world origin
     scroll.current += (scrollTarget.current - scroll.current) * Math.min(1, dt * 6);
     if (column.current) column.current.position.y = scroll.current * SPACING;
 
-    // camera rig owns the camera except once we're fully settled in detail (trackball)
     const trackballOn = t.selected >= 0 && t.p > 0.995;
     if (trackballOn !== settled) setSettled(trackballOn);
     if (!trackballOn) { camPos.lerpVectors(GAL_POS, anchor.current, p); camera.position.copy(camPos); camera.lookAt(0, 0, 0); }
 
-    // shift the subject into the left region so the right-side panel doesn't cover it
-    const panel = Math.min(state.size.width * 0.42, 400);
-    if (t.selected >= 0 && t.p > 0.001)
-      camera.setViewOffset(state.size.width, state.size.height, (panel / 2) * p, 0, state.size.width, state.size.height);
-    else camera.clearViewOffset();
+    // reserve room for the info panel: shift subject left (landscape) or up (portrait)
+    const { width, height } = state.size;
+    const portrait = width <= 820;
+    if (t.selected >= 0 && t.p > 0.001) {
+      if (portrait) camera.setViewOffset(width, height, 0, (height * 0.46 / 2) * p, width, height);
+      else camera.setViewOffset(width, height, (Math.min(width * 0.42, 400) / 2) * p, 0, width, height);
+    } else camera.clearViewOffset();
 
     if (ground.current) ground.current.visible = t.selected >= 0 && camera.position.y > -0.2;
 
     const idx = Math.round(scroll.current);
-    if (idx !== lastCenter.current) { lastCenter.current = idx; onCenter(idx); }
+    if (idx !== lastCenter.current) { lastCenter.current = idx; setCenter(idx); onCenter(idx); }
   });
 
-  const center = Math.round(scroll.current);
-  const lo = Math.max(0, Math.min(selectedIndex >= 0 ? selectedIndex : center, center) - WINDOW);
-  const hi = Math.min(games.length - 1, Math.max(selectedIndex >= 0 ? selectedIndex : center, center) + WINDOW);
+  const focus = selectedIndex >= 0 ? selectedIndex : center;
+  const lo = Math.max(0, Math.min(focus, center) - WINDOW);
+  const hi = Math.min(list.length - 1, Math.max(focus, center) + WINDOW);
   const items: number[] = [];
   for (let i = lo; i <= hi; i++) items.push(i);
-  // always keep the selected box mounted
   if (selectedIndex >= 0 && !items.includes(selectedIndex)) items.push(selectedIndex);
 
   return (
@@ -135,8 +142,8 @@ function SceneInner({ selectedIndex, onOpen, onCenter }: {
       <Lights follow={selectedIndex >= 0} />
       <group ref={column}>
         {items.map((i) => (
-          <Suspense key={games[i].id} fallback={null}>
-            <Item index={i} tr={tr} onOpen={onOpen} />
+          <Suspense key={list[i].id} fallback={null}>
+            <Item game={list[i]} index={i} tr={tr} onOpen={onOpen} />
           </Suspense>
         ))}
       </group>
@@ -146,7 +153,7 @@ function SceneInner({ selectedIndex, onOpen, onCenter }: {
   );
 }
 
-export default function Scene(props: { selectedIndex: number; onOpen: (id: string) => void; onCenter: (i: number) => void }) {
+export default function Scene(props: { list: Game[]; selectedIndex: number; onOpen: (id: string) => void; onCenter: (i: number) => void }) {
   return (
     <Canvas
       shadows

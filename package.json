@@ -1,7 +1,6 @@
 {
   "name": "board-games",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build && rm -rf dist/covers dist/practice",

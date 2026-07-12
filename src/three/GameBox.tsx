@@ -41,8 +41,12 @@ export default function GameBox({ game, onClick, onPointerOver, onPointerOut, ..
     const m = matRef.current;
     m.bumpMap = bump;
     m.bumpScale = 0.9;
-    attachBoxShader(m, tex, new THREE.Vector3(W / 2, H / 2, D / 2));
-  }, [tex, bump, maxAniso, W, H, D]);
+    // emboss the printed text only on generated faces (their title/graphics),
+    // not on photographic faces (which already have real surface detail)
+    const embossy = (s?: string) => (s === 'procedural' || s === 'cover-derived' ? 1 : 0);
+    const proc = ['front', 'back', 'spine', 'top', 'bottom'].map((f) => embossy(t[f]?.source));
+    attachBoxShader(m, tex, new THREE.Vector3(W / 2, H / 2, D / 2), proc);
+  }, [tex, bump, maxAniso, W, H, D, t]);
 
   const radius = Math.min(W, H, D) * 0.06;
   return (

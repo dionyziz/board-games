@@ -17,6 +17,51 @@ const g = list.find((x) => x.id === gameId);
 if (!g) throw new Error('game not found: ' + gameId);
 const dir = path.join(ROOT, 'public/textures', g.id);
 const esc = (s) => String(s).replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
+// first real publisher (BGG stores "(Unknown)" for missing ones — skip those)
+const cleanPub = (arr) => (arr || []).find((p) => p && !/^\(unknown\)$/i.test(String(p).trim())) || '';
+
+// ---- a real EAN-13 barcode (correct check digit + L/G/R encoding) ----------
+const EAN = {
+  L: ['0001101', '0011001', '0010011', '0111101', '0100011', '0110001', '0101111', '0111011', '0110111', '0001011'],
+  G: ['0100111', '0110011', '0011011', '0100001', '0011101', '0111001', '0000101', '0010001', '0001001', '0010111'],
+  R: ['1110010', '1100110', '1101100', '1000010', '1011100', '1001110', '1010000', '1000100', '1001000', '1110100'],
+  P: ['LLLLLL', 'LLGLGG', 'LLGGLG', 'LLGGGL', 'LGLLGG', 'LGGLLG', 'LGGGLL', 'LGLGLG', 'LGLGGL', 'LGGLGL'],
+};
+function ean13Digits(seed) {
+  let d = ('400' + String(seed || 0).padStart(9, '0')).slice(0, 12).split('').map(Number);
+  const sum = d.reduce((s, n, i) => s + n * (i % 2 ? 3 : 1), 0);
+  d.push((10 - (sum % 10)) % 10);
+  return d; // 13 digits
+}
+function ean13Modules(d) {
+  let bits = '101'; // start guard
+  const parity = EAN.P[d[0]];
+  for (let i = 0; i < 6; i++) bits += EAN[parity[i]][d[1 + i]];
+  bits += '01010'; // center guard
+  for (let i = 0; i < 6; i++) bits += EAN.R[d[7 + i]];
+  bits += '101'; // end guard
+  return bits; // 95 modules
+}
+// SVG barcode with taller guard bars + human-readable digits below
+function barcodeSVG(x, y, w, h, seed) {
+  const d = ean13Digits(seed);
+  const bits = ean13Modules(d);
+  const quiet = 9;
+  const mod = w / (bits.length + quiet * 2);
+  const guard = new Set([0, 1, 2, 45, 46, 47, 48, 49, 92, 93, 94]); // guard/center module indices
+  let bars = '';
+  for (let i = 0; i < bits.length; i++) {
+    if (bits[i] !== '1') continue;
+    const bx = x + (quiet + i) * mod;
+    const bh = guard.has(i) ? h : h - Math.max(6, h * 0.12);
+    bars += `<rect x="${bx.toFixed(2)}" y="${y.toFixed(2)}" width="${(mod * 0.92).toFixed(2)}" height="${bh.toFixed(2)}" fill="#141414"/>`;
+  }
+  const digStr = d.join('');
+  const fs2 = Math.min(mod * 6, h * 0.3);
+  const dy = y + h + fs2 * 0.9;
+  const digits = `<text x="${(x + quiet * mod).toFixed(2)}" y="${dy.toFixed(2)}" fill="#141414" font-family="monospace" font-size="${fs2.toFixed(1)}" letter-spacing="${(mod * 0.7).toFixed(2)}">${digStr[0]}&#160;&#160;${digStr.slice(1, 7)}&#160;&#160;${digStr.slice(7)}</text>`;
+  return `<rect x="${(x - mod * quiet * 0.4).toFixed(2)}" y="${(y - h * 0.14).toFixed(2)}" width="${(w * 1.02).toFixed(2)}" height="${(h * 1.5).toFixed(2)}" rx="4" fill="#f3efe6"/>${bars}${digits}`;
+}
 
 async function accentFromCover() {
   const { data, info } = await sharp(path.join(dir, 'cover.webp')).resize(48, 48, { fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
@@ -65,24 +110,20 @@ async function coverBand(W, H, sliceCenter, brightness, blur) {
     await sharp(band).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).webp({ quality: 88, effort: 4 }).toFile(path.join(dir, 'top.webp'));
   }
 
-  // ---- BOTTOM: darker cover-art band + barcode + legal --------------------
+  // ---- BOTTOM: darker cover-art band + real barcode + legal ---------------
   if (!keepTB('bottom')) {
     const band = await coverBand(W, H, 0.72, 0.3, 5); // dimmer + softer -> reads as underside
-    const seed = g.bggId || 1;
-    let bars = '', x = W * 0.06;
-    for (let i = 0; x < W * 0.30; i++) {
-      const bw = 2 + ((seed >> (i % 12)) & 3);
-      if (i % 2 === 0) bars += `<rect x="${x.toFixed(1)}" y="${H * 0.28}" width="${bw}" height="${H * 0.44}" fill="#e9e4d8"/>`;
-      x += bw + 2;
-    }
-    const legal = esc(`© ${g.year || ''} ${(g.publishers && g.publishers[0]) || ''} · ${g.title}`);
-    const legalX = W * 0.36, legalW = W * 0.96 - legalX; // fit between barcode and right margin
-    const legalFont = Math.min(Math.round(H * 0.2), Math.floor(legalW / (0.5 * legal.length)));
+    const bar = barcodeSVG(W * 0.05, H * 0.24, W * 0.26, H * 0.4, g.bggId || 1);
+    // build the legal line from non-empty parts only (skip missing year / "(Unknown)")
+    const pub = cleanPub(g.publishers);
+    const cr = ['©', g.year || '', pub].filter(Boolean).join(' ');
+    const legal = esc([cr === '©' ? '' : cr, g.title].filter(Boolean).join('   ·   '));
+    const legalX = W * 0.37, legalW = W * 0.96 - legalX;
+    const legalFont = Math.min(Math.round(H * 0.19), Math.floor(legalW / (0.5 * legal.length)));
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${darkGrad}
       <rect width="${W}" height="${H}" fill="url(#v)"/>
       <rect x="${W * 0.04}" y="${H * 0.94}" width="${W * 0.92}" height="${H * 0.06}" fill="${accent}"/>
-      <rect x="${W * 0.045}" y="${H * 0.22}" width="${W * 0.27}" height="${H * 0.56}" rx="6" fill="#0d0b08" opacity="0.55"/>
-      ${bars}
+      ${bar}
       <text x="${legalX}" y="${H * 0.54}" fill="#d7d1c4" font-family="Georgia, serif"
         font-size="${legalFont}" dominant-baseline="middle"
         style="paint-order:stroke;stroke:#000;stroke-width:2;stroke-opacity:0.5">${legal}</text></svg>`;

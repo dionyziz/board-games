@@ -36,6 +36,8 @@ const dir = path.join(TEX, g.id);
 fs.mkdirSync(dir, { recursive: true });
 
 const esc = (s) => String(s).replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
+// first real publisher (BGG stores "(Unknown)" for missing ones — skip those)
+const cleanPub = (arr) => (arr || []).find((p) => p && !/^\(unknown\)$/i.test(String(p).trim())) || '';
 
 // ---- 1. orientation: the front face must follow the cover art aspect --------
 const size = g.box.size;
@@ -182,7 +184,7 @@ async function makeSpine(accent) {
   const photo = photoFor('spine');
   if (photo) { await makePhotoFace(photo, W, H, out); sources.spine = 'photo'; normalized.spine = true; return; }
   const title = esc(g.title);
-  const pub = esc((g.publishers && g.publishers[0]) || '');
+  const pub = esc(cleanPub(g.publishers));
   const font = fitFont(g.title, H * 0.8, W * 0.5);
   const cx = W / 2;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
@@ -243,7 +245,8 @@ async function makeBottom() {
     if (i % 2 === 0) bars += `<rect x="${x.toFixed(1)}" y="${H * 0.3}" width="${w}" height="${H * 0.4}" fill="#2b2620"/>`;
     x += w + 2;
   }
-  const legal = esc(`© ${g.year || ''} ${(g.publishers && g.publishers[0]) || ''} · ${g.title}`);
+  const _cr = ['©', g.year || '', cleanPub(g.publishers)].filter(Boolean).join(' ');
+  const legal = esc([_cr === '©' ? '' : _cr, g.title].filter(Boolean).join(' · '));
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
     <rect width="${W}" height="${H}" fill="${g.box.edgeColor}"/>
     ${bars}
