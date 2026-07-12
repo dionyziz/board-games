@@ -11,6 +11,7 @@ const SPACING = 3.4;
 const WINDOW = 4;
 const GAL_POS = new THREE.Vector3(0, 0, 7);
 const DET_POS = new THREE.Vector3(3.0, 2.1, 6.2);
+const WORLD_UP = new THREE.Vector3(0, 1, 0);
 const smooth = (t: number) => t * t * (3 - 2 * t);
 type Tr = { p: number; selected: number };
 
@@ -112,7 +113,14 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
     const trackballOn = t.selected >= 0 && t.p > 0.995;
     if (trackballOn !== settled) setSettled(trackballOn);
-    if (!trackballOn) { camPos.lerpVectors(GAL_POS, anchor.current, p); camera.position.copy(camPos); camera.lookAt(0, 0, 0); }
+    if (!trackballOn) {
+      camPos.lerpVectors(GAL_POS, anchor.current, p);
+      camera.position.copy(camPos);
+      // TrackballControls tumbles the up-vector for free rotation; restore it so
+      // the gallery (and any re-entry) isn't left rolled after a detail rotate.
+      camera.up.lerp(WORLD_UP, Math.min(1, dt * 5)).normalize();
+      camera.lookAt(0, 0, 0);
+    }
 
     // reserve room for the info panel: shift subject left (landscape) or up (portrait)
     const { width, height } = state.size;
