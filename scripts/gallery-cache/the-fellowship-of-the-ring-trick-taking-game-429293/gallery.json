@@ -52,7 +52,14 @@
     "bottom": []
   },
   "chosen": {
-    "back": null,
+    "back": {
+      "imageid": "8437789",
+      "url": "https://cf.geekdo-images.com/2yfYYojEjQh76HxTlRmMuQ__large/img/UgcJe5DAOGWPybD4h4serYoEYpc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8437789.png",
+      "caption": "The Fellowship of the Ring: Trick-Taking Game, Office Dog, 2025 — back cover (image provided by the publisher)",
+      "score": 2.5,
+      "aspect": 0.475,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-fellowship-of-the-ring-trick-taking-game-429293/back-src.png"
+    },
     "spine": {
       "imageid": "9334084",
       "url": "https://cf.geekdo-images.com/SHeQbCZAtEE9OXgVWbAqaQ__large/img/82EP_g0qFsPovt3xfUYcQH3yEo0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9334084.jpg",

@@ -46,9 +46,17 @@ packaging is known (lower confidence — verify before acting).
       photo, or the text-heavy back panel) — still on its cover; revisit if a flat
       front label surfaces.
   No flat Dobble side-band exists either, so the tin band stays plain metal.
-- **DONE — `tin-rect`** (Forbidden Island, Sushi Go!): still a box, but a glossier
-  metal-tin material (in `GameBox.tsx`, kept non-metallic so the print survives).
-- **PENDING** — `blister`, `bag`, `other` still render as the default box.
+- **DONE — `tin-rect`** (Forbidden Island, Sushi Go!): an extruded rounded-rect
+  (flat front, rounded corners only) + glossier metal-tin material. Corner radius
+  is per-game (`box.cornerR`); Sushi Go! raised to match its art.
+- **DONE — `bag`** (Bag of Chips, Happy Salmon): `src/three/Bag.tsx` — a puffed
+  "pillow" (two bulged planes meeting at a flat perimeter), cover art on the front
+  bulge, foil (glossy) vs cloth (matte sheen) material by game. An approximation;
+  a true wrinkled/fish-shaped pouch is out of scope.
+- **PENDING** — `blister`, `other` still render as the default box.
+
+Chupacabra's wrap had the gray tube-rim band showing as "white" around the top;
+its `cyl.webp` source is now cropped to just the label art.
 
 Shapes/dims live in `scripts/package-shapes.json`; `scripts/16-apply-shapes.js`
 bakes them into `games.json` (`box.shape` / `box.cyl` / `box.capCrop`).

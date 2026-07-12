@@ -1,9 +1,65 @@
 {
-  "bggId": null,
+  "bggId": "163412",
   "frontAspect": 0.795,
-  "candidates": {},
+  "candidates": {
+    "back": [
+      {
+        "imageid": "8534785",
+        "caption": "English 10 year anniversary edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/tK_OhNsWljnfi1yVnsMhJA__large/img/7kVtmmuciMUTevmzAHVy4IJTn4M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8534785.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5707804",
+        "caption": "English 2018 third edition - Back of the box",
+        "url": "https://cf.geekdo-images.com/6QZm3gzml0r2oKcu1hhDBA__large/img/_jRuGRXKDsYL9ALJmHIkYsh9ExU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5707804.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "2837165",
+        "caption": "Box back English First Edition",
+        "url": "https://cf.geekdo-images.com/3zK4XKbl-cZC6FIe7RscAA__large/img/948UL1TKv2OUoT2X4eyZqVVQCuc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2837165.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5703681",
+        "caption": "Patchwork: Folklore China, Lookout Games, 2020 — back cover",
+        "url": "https://cf.geekdo-images.com/QcClAnnCL7IkccxRfVB9zw__large/img/btTjA6OtqejRvcA4pqz24AlPFCs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5703681.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "5703683",
+        "caption": "Patchwork: Folklore Taiwan, Lookout Games, 2020 — back cover",
+        "url": "https://cf.geekdo-images.com/bBtjNy5OYVIoD9AD2ELFEw__large/img/dWJrEAi-SByFxoYx3Ucl5QO37LA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5703683.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "8545801",
+        "caption": "Печворк. Український фольклор (Patchwork), Box Back, Ukrainian edition",
+        "url": "https://cf.geekdo-images.com/yyvnxt2z4SZnFKOCCzqNzw__large/img/DyqmfOX3IjaorGIku86S4FrVFkk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8545801.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "8553497",
+        "caption": "10 year anniversary edition: back side game track",
+        "url": "https://cf.geekdo-images.com/gsA3WBMbRwy9Wls53o8RlQ__large/img/g-tPJsFRC6EfvAbv7T4Ex0c-6Xo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8553497.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
   "chosen": {
-    "back": null,
+    "back": {
+      "imageid": "8534785",
+      "url": "https://cf.geekdo-images.com/tK_OhNsWljnfi1yVnsMhJA__large/img/7kVtmmuciMUTevmzAHVy4IJTn4M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8534785.jpg",
+      "caption": "English 10 year anniversary edition - Back of the box",
+      "score": 3.5,
+      "aspect": 0.813,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/patchwork-halloween/back-src.jpg"
+    },
     "spine": null,
     "top": null,
     "bottom": null

@@ -1586,7 +1586,8 @@
         },
         "back": {
           "src": "/textures/sampoter-2/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/sampoter-2/spine.webp",
@@ -3472,7 +3473,7 @@
         },
         "orientation": "portrait",
         "shape": "tin-rect",
-        "cornerR": 0.13
+        "cornerR": 0.155
       },
       "textures": {
         "front": {
@@ -5937,12 +5938,13 @@
         },
         "back": {
           "src": "/textures/oi-apoikoi-toy-katan/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/oi-apoikoi-toy-katan/spine.webp",
-          "source": "procedural",
-          "bump": "/textures/oi-apoikoi-toy-katan/spine-bump.webp"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/oi-apoikoi-toy-katan/top.webp",
@@ -10157,7 +10159,8 @@
         "cyl": {
           "diameter": 6.5,
           "height": 12
-        }
+        },
+        "cylTex": "/textures/chupacabra-survive-the-night-120515/cyl.webp"
       },
       "textures": {
         "front": {
@@ -10344,7 +10347,8 @@
         },
         "back": {
           "src": "/textures/patchwork-halloween/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/patchwork-halloween/spine.webp",
@@ -17013,7 +17017,8 @@
         },
         "back": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/spine.webp",
@@ -18987,7 +18992,8 @@
         },
         "back": {
           "src": "/textures/mythic-valley-greek-legends/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/mythic-valley-greek-legends/spine.webp",
@@ -20154,7 +20160,8 @@
         },
         "back": {
           "src": "/textures/skull-queen-423432/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/skull-queen-423432/spine.webp",
@@ -25468,7 +25475,8 @@
         },
         "back": {
           "src": "/textures/nada-137931/back.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "spine": {
           "src": "/textures/nada-137931/spine.webp",

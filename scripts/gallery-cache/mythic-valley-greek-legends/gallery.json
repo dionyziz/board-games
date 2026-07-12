@@ -1,9 +1,28 @@
 {
-  "bggId": null,
+  "bggId": "469720",
   "frontAspect": 1,
-  "candidates": {},
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9580364",
+        "caption": "Mythic Valley Box (Back)",
+        "url": "https://cf.geekdo-images.com/k6B6C7KW18h3qtteerx-BQ__large/img/W5dHyQ9iJ0vgjwPqhsTj6Z_d9GM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9580364.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [],
+    "top": [],
+    "bottom": []
+  },
   "chosen": {
-    "back": null,
+    "back": {
+      "imageid": "9580364",
+      "url": "https://cf.geekdo-images.com/k6B6C7KW18h3qtteerx-BQ__large/img/W5dHyQ9iJ0vgjwPqhsTj6Z_d9GM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9580364.jpg",
+      "caption": "Mythic Valley Box (Back)",
+      "score": 2,
+      "aspect": 0.75,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/mythic-valley-greek-legends/back-src.jpg"
+    },
     "spine": null,
     "top": null,
     "bottom": null

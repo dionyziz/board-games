@@ -21,7 +21,14 @@
     "bottom": []
   },
   "chosen": {
-    "back": null,
+    "back": {
+      "imageid": "8397351",
+      "url": "https://cf.geekdo-images.com/9VEPtJCM13hBkQS4nzvnmg__large/img/NpTihxJG1PqqJJkOVokE7S6Yojo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8397351.jpg",
+      "caption": "Back cover (DE/EN/FR/IT edition)",
+      "score": 2,
+      "aspect": 0.711,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skull-queen-423432/back-src.jpg"
+    },
     "spine": null,
     "top": null,
     "bottom": null

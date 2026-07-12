@@ -26,6 +26,19 @@ function Shell() {
 
   const toggle = (key: string) => setSel((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; });
 
+  // "/" focuses the search box and selects its text (unless already typing)
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== '/') return;
+      const el = document.activeElement as HTMLElement | null;
+      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) return;
+      const input = document.querySelector('input[aria-label="Search games"]') as HTMLInputElement | null;
+      if (input) { e.preventDefault(); input.focus(); input.select(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
   // in a detail view, Esc / ← return to the library
   useEffect(() => {
     if (!slug) return;

@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { TrackballControls, ContactShadows } from '@react-three/drei';
+import { TrackballControls } from '@react-three/drei';
 import { EffectComposer, SMAA } from '@react-three/postprocessing';
 import * as THREE from 'three';
 import type { Game } from './data';
@@ -72,7 +72,6 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
   useEffect(() => { setMaxAniso(gl.capabilities.getMaxAnisotropy()); onLoaded(invalidate); }, [gl, invalidate]);
   const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex, focus: Math.max(0, selectedIndex), reveal: selectedIndex >= 0 ? 0 : 1 });
   const column = useRef<THREE.Group>(null!);
-  const ground = useRef<any>(null!);
   const scroll = useRef(selectedIndex >= 0 ? selectedIndex : 0);
   const scrollTarget = useRef(scroll.current);
   const anchor = useRef(DET_POS.clone());
@@ -201,14 +200,6 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       else camera.setViewOffset(width, height, (Math.min(width * 0.42, 400) / 2) * p, 0, width, height);
     } else camera.clearViewOffset();
 
-    // contact shadow: show it only from near-eye-level views. From straight above
-    // it reads as a floating dark "ground" plane (and from below you'd see its
-    // underside), so hide it there — keeps the box feeling like it's just floating.
-    if (ground.current) {
-      const camN = camera.position.y / (camera.position.length() || 1); // sin(elevation)
-      ground.current.visible = t.selected >= 0 && camN > -0.12 && camN < 0.5;
-    }
-
     const idx = Math.round(scroll.current);
     t.focus = t.selected >= 0 ? t.selected : idx; // focal box (kept visible through the arc)
     if (idx !== lastCenter.current) { lastCenter.current = idx; setCenter(idx); onCenter(idx); }
@@ -238,7 +229,6 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
           </Suspense>
         ))}
       </group>
-      <ContactShadows ref={ground} position={[0, -1.4, 0]} scale={12} blur={2.6} opacity={0.4} far={9} visible={false} />
       {/* staticMoving off → the release keeps its angular velocity and friction
           (dynamicDampingFactor) glides it to a halt: a quick, natural spin-down. */}
       <TrackballControls enabled={selectedIndex >= 0} makeDefault rotateSpeed={3} zoomSpeed={1.4} noPan dynamicDampingFactor={0.12} minDistance={2.5} maxDistance={16} />

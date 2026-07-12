@@ -1,10 +1,61 @@
 {
-  "bggId": null,
+  "bggId": "13",
   "frontAspect": 0.995,
-  "candidates": {},
+  "candidates": {
+    "back": [
+      {
+        "imageid": "268850",
+        "caption": "Back Of 4th Edition Box",
+        "url": "https://cf.geekdo-images.com/GfrT8T2CHxzdMQ7rLSnDmA__large/img/VEEjqpDS13hmGpZgjHlRI5VCu_k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic268850.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "393652",
+        "caption": "Japanese edition (Capcom, 2004); Box; Rear",
+        "url": "https://cf.geekdo-images.com/_cmtL8FZcO_Ks11gIf8MvA__large/img/-DsxZuj4Fv10wBwzYVmpdKgLKlA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic393652.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "397283",
+        "caption": "Slovenian edition, back side of the box.",
+        "url": "https://cf.geekdo-images.com/0mHVnD2JWxg3fC6SkDD1pw__large/img/39f8YYKnEM9StDZbMNGv9cTAFrQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic397283.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "397283",
+        "caption": "Slovenian edition, back side of the box.",
+        "url": "https://cf.geekdo-images.com/0mHVnD2JWxg3fC6SkDD1pw__large/img/39f8YYKnEM9StDZbMNGv9cTAFrQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic397283.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "397286",
+        "caption": "Slovenian edition, side of the box.",
+        "url": "https://cf.geekdo-images.com/gFS1RLZHsbVGGMWpoKrPuQ__large/img/U0bHO3Wq_3ZyOJ4NNkob_LTNKN0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic397286.jpg",
+        "score": 2
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
   "chosen": {
-    "back": null,
-    "spine": null,
+    "back": {
+      "imageid": "268850",
+      "url": "https://cf.geekdo-images.com/GfrT8T2CHxzdMQ7rLSnDmA__large/img/VEEjqpDS13hmGpZgjHlRI5VCu_k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic268850.jpg",
+      "caption": "Back Of 4th Edition Box",
+      "score": 2,
+      "aspect": 1.243,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/oi-apoikoi-toy-katan/back-src.jpg"
+    },
+    "spine": {
+      "imageid": "397286",
+      "url": "https://cf.geekdo-images.com/gFS1RLZHsbVGGMWpoKrPuQ__large/img/U0bHO3Wq_3ZyOJ4NNkob_LTNKN0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic397286.jpg",
+      "caption": "Slovenian edition, side of the box.",
+      "score": 2,
+      "aspect": 4.214,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/oi-apoikoi-toy-katan/spine-src.jpg"
+    },
     "top": null,
     "bottom": null
   },

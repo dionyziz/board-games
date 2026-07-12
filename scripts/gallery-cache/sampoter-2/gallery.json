@@ -1,9 +1,65 @@
 {
-  "bggId": null,
+  "bggId": "91072",
   "frontAspect": 0.75,
-  "candidates": {},
+  "candidates": {
+    "back": [
+      {
+        "imageid": "9346444",
+        "caption": "Saboteur 2 ‐ English first edition - box back",
+        "url": "https://cf.geekdo-images.com/7sba-CxDc0HCKCcbzrYpcw__large/img/zsuLUTwN-exaEgC8gTnFrMHFX2E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9346444.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "5048014",
+        "caption": "Saboteur 2 (expansion only edition) Amigo/Paradigm Infinitum English 2012 box back",
+        "url": "https://cf.geekdo-images.com/aq7eiPkPVCq8Oen4VMWh7A__large/img/e1q20VWo2mBNXL2kWW6S9Ibzby0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5048014.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "967085",
+        "caption": "Back Box - 999 Games",
+        "url": "https://cf.geekdo-images.com/b6Lxpw5yWGf_pSgEJxuJdQ__large/img/Cud5tGTjPP9kUNCRe0UeVZ9nYgM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic967085.jpg",
+        "score": 3.5
+      },
+      {
+        "imageid": "1883257",
+        "caption": "Saboteur 2, AMIGO Spiel, 2014 — back cover",
+        "url": "https://cf.geekdo-images.com/2AH_T9R-TeX3RjqJsacQhw__large/img/oUClGd9QWLNZdyPXUt8y8TzYOiY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1883257.jpg",
+        "score": 2.5
+      },
+      {
+        "imageid": "1006229",
+        "caption": "Box Back (Z-Man edition)",
+        "url": "https://cf.geekdo-images.com/dMR37tFrpm5LZueBMjXY1A__large/img/hemQ8VyAiT7QSTDt-ORvfLusvow=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1006229.jpg",
+        "score": 2
+      },
+      {
+        "imageid": "2870340",
+        "caption": "The back cover of the Greek edition",
+        "url": "https://cf.geekdo-images.com/alb3nmIDcttzlSGqJMjjXw__large/img/z9Bx4X5MqDQbg7iiif9WIEJOBiQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2870340.jpg",
+        "score": 2
+      }
+    ],
+    "spine": [
+      {
+        "imageid": "1018986",
+        "caption": "Saboteur 2 Polish version front side",
+        "url": "https://cf.geekdo-images.com/TMd2j5prqWf95SFiAsGLQA__large/img/e3sZjG-FV8QV6zB4Bhj3bpclCdk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1018986.jpg",
+        "score": 1
+      }
+    ],
+    "top": [],
+    "bottom": []
+  },
   "chosen": {
-    "back": null,
+    "back": {
+      "imageid": "9346444",
+      "url": "https://cf.geekdo-images.com/7sba-CxDc0HCKCcbzrYpcw__large/img/zsuLUTwN-exaEgC8gTnFrMHFX2E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9346444.jpg",
+      "caption": "Saboteur 2 ‐ English first edition - box back",
+      "score": 3.5,
+      "aspect": 0.803,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sampoter-2/back-src.jpg"
+    },
     "spine": null,
     "top": null,
     "bottom": null
