@@ -7780,7 +7780,8 @@
         },
         "orientation": "portrait",
         "shape": "bag",
-        "bag": "foil"
+        "bag": "foil",
+        "model": "/models/calbee_potato_chips_pizza.glb"
       },
       "textures": {
         "front": {

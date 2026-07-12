@@ -18,6 +18,7 @@ export type Box = {
     hole?: { x1: number; y1: number; x2: number; y2: number; ccx: number; ccy: number; cr: number; rr?: number } };
   bag?: 'foil' | 'fish';                             // pouch kind (bag shape)
   bagOutline?: { aspect: number; poly: number[][] }; // fish silhouette (measured), for a closed pouch
+  model?: string;                                    // ready-made glTF to render instead (label re-textured onto it)
 };
 export type Game = {
   id: string;
