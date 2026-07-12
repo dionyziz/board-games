@@ -12,27 +12,20 @@
 // Orientation (box.face) is recomputed from the CORRECTED cover's aspect.
 //   node scripts/14-fix-fronts.js [--apply] [gameId]
 const L = require('./lib');
-const { fs, path, sharp, COVERS, GALLERY, texDir, loadGames, saveGames, deproject } = L;
+const { fs, path, sharp, COVERS, texDir, loadGames, saveGames, deproject, readAudit } = L;
 
 const apply = process.argv.includes('--apply');
 const only = process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
 const { games, list } = loadGames();
 
-// load the front audit (angled + quad) if present
-const audit = {};
-const AD = path.join(GALLERY, '_fronts');
-if (fs.existsSync(AD)) for (const f of fs.readdirSync(AD)) {
-  if (f.startsWith('out-') && f.endsWith('.json')) { try { for (const e of JSON.parse(fs.readFileSync(path.join(AD, f), 'utf8'))) audit[e.id] = e; } catch (e) {} }
-}
+// front audit (angled + quad)
+const audit = readAudit('_fronts');
 
-// load the hang-tab flap set; flaps[id] = fraction to crop off the top.
-// Two sources, overrides win: the vision audit cache (_flaps/out-*.json, gitignored)
-// and the hand-verified, committed flap-overrides.json (durable across machines).
+// hang-tab flap set; flaps[id] = fraction to crop off the top. Two sources,
+// overrides win: the vision audit cache (_flaps, gitignored) and the hand-verified,
+// committed flap-overrides.json (durable across machines).
 const flaps = {};
-const FD = path.join(GALLERY, '_flaps');
-if (fs.existsSync(FD)) for (const f of fs.readdirSync(FD)) {
-  if (f.startsWith('out-') && f.endsWith('.json')) { try { for (const e of JSON.parse(fs.readFileSync(path.join(FD, f), 'utf8'))) if (e.flap && e.top > 0) flaps[e.id] = e.top; } catch (e) {} }
-}
+for (const [id, e] of Object.entries(readAudit('_flaps'))) if (e.flap && e.top > 0) flaps[id] = e.top;
 const OV = path.join(__dirname, 'flap-overrides.json');
 if (fs.existsSync(OV)) { try { for (const [id, top] of Object.entries(JSON.parse(fs.readFileSync(OV, 'utf8')))) top > 0 ? (flaps[id] = top) : delete flaps[id]; } catch (e) {} }
 

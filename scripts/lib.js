@@ -18,6 +18,18 @@ function loadGames() { const games = JSON.parse(fs.readFileSync(DATA, 'utf8')); 
 function saveGames(games) { fs.writeFileSync(DATA, JSON.stringify(games, null, 2) + '\n'); }
 const texDir = (id) => path.join(TEX, id);
 
+// Merge every out-*.json in a gallery-cache audit dir into a map keyed by id
+// (used by the sharded vision audits: _fronts, _flaps, _artcrop, …).
+function readAudit(subdir) {
+  const dir = path.join(GALLERY, subdir), out = {};
+  if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) {
+    if (f.startsWith('out-') && f.endsWith('.json')) {
+      try { for (const e of JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))) out[e.id] = e; } catch (e) {}
+    }
+  }
+  return out;
+}
+
 // ---- text / publisher ------------------------------------------------------
 const esc = (s) => String(s).replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
 // first real publisher (BGG stores "(Unknown)" for missing ones — skip those)
@@ -181,7 +193,7 @@ async function pool(items, concurrency, fn) {
 
 module.exports = {
   fs, path, sharp, ROOT, DATA, TEX, COVERS, CACHE, GALLERY, PX, UA,
-  loadGames, saveGames, texDir,
+  loadGames, saveGames, texDir, readAudit,
   esc, cleanPub, fitFont, clampHex, toHex, hexToRGB, mix, accentFromCover,
   svgToWebp, writeBump, coverBand,
   statsFromRaw, channelStats, normalizeToward, makePhotoFace,

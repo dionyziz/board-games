@@ -4,16 +4,11 @@
 // need a better source, so they're only reported here.
 //   node scripts/20-apply-artcrop.js [--apply]
 const L = require('./lib');
-const { fs, path, sharp, GALLERY, texDir, loadGames, saveGames } = L;
+const { fs, path, sharp, texDir, loadGames, saveGames, readAudit } = L;
 
 const apply = process.argv.includes('--apply');
 const { games, list } = loadGames();
-
-const audit = {};
-const AD = path.join(GALLERY, '_artcrop');
-if (fs.existsSync(AD)) for (const f of fs.readdirSync(AD)) {
-  if (f.startsWith('out-') && f.endsWith('.json')) { try { for (const e of JSON.parse(fs.readFileSync(path.join(AD, f), 'utf8'))) audit[e.id] = e; } catch (e) {} }
-}
+const audit = readAudit('_artcrop');
 
 function orient(size, aspect) {
   const [a, b, c] = [size.w, size.h, size.d].sort((x, y) => y - x);

@@ -5,30 +5,13 @@ import { asset, type Game } from '../data';
 import { makePaperBump } from './paperBump';
 import { attachBoxShader, type FaceMap } from './boxShader';
 import { acquire, release } from './textures';
+import { tinGeometry } from './geometry';
 import Flap from './Flap';
 
 // 1×1 black "no bump" texture for faces without a text bump map (photos).
 const BLACK = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1, THREE.RGBAFormat);
 BLACK.needsUpdate = true;
 const FACES = ['front', 'back', 'spine', 'top', 'bottom'] as const;
-
-// Rectangular metal tin (Sushi Go!, Forbidden Island): a rounded-rectangle
-// profile extruded along the depth — rounded corners on the sides, but a FLAT
-// front/back with crisp (un-bevelled) edges, so face-on it reads as a rounded
-// rectangle without the front art bending over the edges.
-function tinGeometry(W: number, H: number, D: number, cornerR = 0.07): THREE.ExtrudeGeometry {
-  const r = Math.min(W, H) * cornerR, x = -W / 2, y = -H / 2;
-  const s = new THREE.Shape();
-  s.moveTo(x + r, y);
-  s.lineTo(x + W - r, y); s.quadraticCurveTo(x + W, y, x + W, y + r);
-  s.lineTo(x + W, y + H - r); s.quadraticCurveTo(x + W, y + H, x + W - r, y + H);
-  s.lineTo(x + r, y + H); s.quadraticCurveTo(x, y + H, x, y + H - r);
-  s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y);
-  const g = new THREE.ExtrudeGeometry(s, { depth: D, bevelEnabled: false, curveSegments: 8, steps: 1 });
-  g.translate(0, 0, -D / 2); // centre on z: flat front at +D/2, back at −D/2
-  g.computeVertexNormals();
-  return g;
-}
 
 type Props = {
   game: Game;
