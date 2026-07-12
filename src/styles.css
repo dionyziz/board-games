@@ -11,7 +11,17 @@ a { color: inherit; }
 
 /* one persistent full-screen canvas behind all overlays */
 .app { position: fixed; inset: 0; }
-.app > canvas, .app canvas { display: block; }
+.app > canvas, .app canvas { display: block; position: relative; z-index: 1; }
+
+/* per-game background gradient. @property lets the color stops interpolate, so
+   changing the CSS vars cross-fades the whole backdrop to the focused game. */
+@property --bg-a { syntax: '<color>'; inherits: false; initial-value: #141418; }
+@property --bg-b { syntax: '<color>'; inherits: false; initial-value: #050506; }
+.bg-grad {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse 120% 92% at 50% 38%, var(--bg-a), var(--bg-b));
+  transition: --bg-a .5s ease, --bg-b .5s ease;
+}
 
 /* overlay containers don't eat pointer events; interactive children opt back in */
 .gallery-overlay {
@@ -63,7 +73,7 @@ a { color: inherit; }
 .gallery-overlay .pill.on { background: #e9e6df; color: #111; border-color: #e9e6df; }
 .gallery-overlay .clear-pills { font: inherit; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #d98b80; background: none; border: none; cursor: pointer; padding: 2px 4px; }
 .gallery-overlay .clear-pills:hover { color: #f0a99f; }
-.gallery-overlay .centered { position: absolute; left: 36px; bottom: 76px; max-width: 46vw; }
+.gallery-overlay .centered { position: absolute; left: 36px; bottom: 76px; max-width: 46vw; text-shadow: 0 1px 4px rgba(0,0,0,.55); }
 .gallery-overlay .centered h2 {
   font-family: Georgia, "Times New Roman", serif; font-weight: 500;
   font-size: clamp(22px, 3vw, 40px); line-height: 1.1; letter-spacing: -.01em; color: #f4f1ea;
@@ -84,9 +94,10 @@ a { color: inherit; }
 .panel-wrap {
   position: fixed; top: 0; right: 0; height: 100%; width: min(42vw, 400px); z-index: 3;
   border-left: 1px solid rgba(255,255,255,.08);
-  /* translucent + blurred so a box zoomed in far enough shows through behind the text */
-  background: linear-gradient(180deg, rgba(16,16,17,.66), rgba(11,11,12,.6));
-  backdrop-filter: blur(18px) saturate(1.1); -webkit-backdrop-filter: blur(18px) saturate(1.1);
+  /* translucent + blurred so a box zoomed in far enough shows through behind the
+     text, while staying dark enough (plus the text-shadow below) for legibility */
+  background: linear-gradient(180deg, rgba(14,14,16,.74), rgba(9,9,10,.68));
+  backdrop-filter: blur(20px) saturate(1.1); -webkit-backdrop-filter: blur(20px) saturate(1.1);
   pointer-events: auto; overflow-y: auto;
   animation: panelIn .55s cubic-bezier(.2,.7,.2,1) both;
 }
@@ -94,7 +105,8 @@ a { color: inherit; }
 .fade-in { animation: fadeIn .5s ease both; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-.panel { padding: 64px 56px; }
+/* guarantee legible text even where a bright box shows through the panel */
+.panel { padding: 64px 56px; text-shadow: 0 1px 3px rgba(0,0,0,.6); }
 .panel .eyebrow { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: #7a7770; margin-bottom: 22px; }
 .panel h1 { font-family: Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.12; letter-spacing: -.01em; margin-bottom: 10px; color: #f4f1ea; }
 .panel .byline { font-family: Georgia, serif; font-style: italic; font-size: 18px; color: #b7b2a8; margin-bottom: 30px; }

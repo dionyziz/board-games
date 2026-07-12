@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
-import { games, bySlug, norm, searchBlob, matchesFilters } from './data';
+import { games, bySlug, norm, searchBlob, matchesFilters, bgStops } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
 
 // One persistent Canvas across both views; the route only drives which box is
@@ -38,8 +38,13 @@ function Shell() {
 
   const selectedIndex = slug ? filtered.findIndex((g) => g.id === slug) : -1;
 
+  // background follows the focused game (open game, else the centered one)
+  const focusGame = slug ? bySlug(slug) : filtered[center];
+  const bg = bgStops(focusGame);
+
   return (
     <div className="app">
+      <div className="bg-grad" style={{ ['--bg-a' as any]: bg.a, ['--bg-b' as any]: bg.b }} />
       <Scene
         list={filtered}
         selectedIndex={selectedIndex}

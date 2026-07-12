@@ -14,7 +14,7 @@ const GAL_POS = new THREE.Vector3(0, 0, 7);
 const DET_POS = new THREE.Vector3(3.0, 2.1, 6.2);
 const WORLD_UP = new THREE.Vector3(0, 1, 0);
 const smooth = (t: number) => t * t * (3 - 2 * t);
-type Tr = { p: number; selected: number };
+type Tr = { p: number; selected: number; focus: number };
 
 function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: React.MutableRefObject<Tr>; onOpen: (id: string) => void }) {
   const ref = useRef<THREE.Group>(null!);
@@ -26,6 +26,9 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
     if (!grp) return;
     const { p, selected } = tr.current;
     const isSel = selected === index;
+    // during the open/close arc (and in detail) only the focal box is shown, so
+    // neighbours don't swing weirdly around the screen edges as the camera resets
+    grp.visible = p < 0.05 || index === tr.current.focus;
     let target = hover ? 1.06 : 1;
     if (selected >= 0) target = isSel ? 1 : 1 - p;
     grp.scale.lerp(v.set(target, target, target), 1 - Math.pow(0.0015, dt));
@@ -53,7 +56,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
   // demand rendering: repaint when a pooled texture finishes loading
   useEffect(() => { setMaxAniso(gl.capabilities.getMaxAnisotropy()); onLoaded(invalidate); }, [gl, invalidate]);
-  const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex });
+  const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex, focus: Math.max(0, selectedIndex) });
   const column = useRef<THREE.Group>(null!);
   const ground = useRef<any>(null!);
   const scroll = useRef(selectedIndex >= 0 ? selectedIndex : 0);
@@ -180,6 +183,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     if (ground.current) ground.current.visible = t.selected >= 0 && camera.position.y > -0.2;
 
     const idx = Math.round(scroll.current);
+    t.focus = t.selected >= 0 ? t.selected : idx; // focal box (kept visible through the arc)
     if (idx !== lastCenter.current) { lastCenter.current = idx; setCenter(idx); onCenter(idx); }
 
     // demand rendering: keep requesting frames only while something is moving
@@ -196,7 +200,6 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
   return (
     <>
-      <color attach="background" args={['#0b0b0c']} />
       <Env />
       <Lights follow={selectedIndex >= 0} />
       <group ref={column}>
@@ -221,7 +224,7 @@ export default function Scene(props: { list: Game[]; selectedIndex: number; onOp
       frameloop={props.selectedIndex >= 0 ? 'always' : 'demand'}
       dpr={[1, 1.75]}
       camera={{ fov: 35, position: [0, 0, 7] }}
-      gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05, antialias: false, powerPreference: 'high-performance' }}
+      gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05, antialias: false, powerPreference: 'high-performance', alpha: true }}
     >
       <Suspense fallback={null}>
         <SceneInner {...props} />

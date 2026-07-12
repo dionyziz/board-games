@@ -98,6 +98,30 @@ export function matchesFilters(g: Game, sel: Set<string>): boolean {
   return true;
 }
 
+// ---- per-game background gradient ------------------------------------------
+// A radial vignette tinted by the game's accent (box.sideColor). Kept dark for
+// contrast against the mostly-bright boxes; very dark accents are lifted a touch
+// so a dark box still separates from the backdrop.
+function hexToRgb(h: string): [number, number, number] {
+  const m = /^#?([0-9a-f]{6})$/i.exec(h || '');
+  if (!m) return [24, 24, 28];
+  const n = parseInt(m[1], 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+const clamp255 = (v: number) => Math.max(0, Math.min(255, Math.round(v)));
+const rgbCss = (r: number, g: number, b: number) => `rgb(${clamp255(r)},${clamp255(g)},${clamp255(b)})`;
+
+export function bgStops(game?: Game): { a: string; b: string } {
+  if (!game) return { a: '#141418', b: '#050506' };
+  const [r, g, b] = hexToRgb(game.box.sideColor);
+  const L = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255; // 0..1
+  const cf = L > 0.5 ? 0.26 : L > 0.25 ? 0.34 : 0.46;      // center brightness factor
+  const lift = L < 0.22 ? 24 : 0;                          // keep dark accents from crushing to black
+  const a = rgbCss(r * cf + lift, g * cf + lift, b * cf + lift);
+  const b2 = rgbCss(r * cf * 0.42 + lift * 0.5, g * cf * 0.42 + lift * 0.5, b * cf * 0.42 + lift * 0.5);
+  return { a, b: b2 };
+}
+
 // BGG text carries HTML entities (e.g. Nazg&ucirc;l); decode for display.
 export function decode(s?: string): string {
   if (!s || typeof document === 'undefined') return s || '';
