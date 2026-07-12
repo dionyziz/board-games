@@ -9,4 +9,4 @@ node_modules/
 *.log
 
 # raw downloaded gallery candidate images (rebuildable cache); keep gallery.json
-scripts/gallery-cache/**/back-src.*
+scripts/gallery-cache/**/*-src.*

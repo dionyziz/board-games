@@ -1,7 +1,5 @@
 {
   "bggId": 180020,
-  "fetched": 118,
-  "done": true,
   "frontAspect": 0.695,
   "candidates": {
     "back": [
@@ -54,6 +52,10 @@
       "score": 2,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/virus-180020/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

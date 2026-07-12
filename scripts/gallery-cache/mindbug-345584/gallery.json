@@ -1,7 +1,5 @@
 {
   "bggId": 345584,
-  "fetched": 160,
-  "done": true,
   "frontAspect": 0.708,
   "candidates": {
     "back": [
@@ -79,6 +77,17 @@
       "score": 2,
       "aspect": 0.563,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/mindbug-345584/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "8689451",
+      "url": "https://cf.geekdo-images.com/vxfJtER4W95Ab1sRy-Ha8w__large/img/kQbdNdVsm_yjdhDGfG4uO9wOj-Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8689451.jpg",
+      "caption": "Deluxe-BigBox (German) - Side",
+      "score": 1,
+      "aspect": 4.719,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/mindbug-345584/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

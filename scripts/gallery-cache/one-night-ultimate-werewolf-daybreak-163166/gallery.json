@@ -1,7 +1,5 @@
 {
   "bggId": 163166,
-  "fetched": 67,
-  "done": true,
   "frontAspect": 1.322,
   "candidates": {
     "back": [
@@ -63,6 +61,17 @@
       "score": 3.5,
       "aspect": 1.261,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/one-night-ultimate-werewolf-daybreak-163166/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "2546800",
+      "url": "https://cf.geekdo-images.com/AeW-TILP9N9yNf9PoAHfPA__large/img/036-TRHABtAzP8dCQQj9749yHrg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2546800.jpg",
+      "caption": "Box side",
+      "score": 2,
+      "aspect": 3.969,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/one-night-ultimate-werewolf-daybreak-163166/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

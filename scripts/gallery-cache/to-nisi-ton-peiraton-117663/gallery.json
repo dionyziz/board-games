@@ -1,7 +1,5 @@
 {
   "bggId": 117663,
-  "fetched": 75,
-  "done": true,
   "frontAspect": 0.818,
   "candidates": {
     "back": [
@@ -99,6 +97,10 @@
       "score": 2.5,
       "aspect": 0.999,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/to-nisi-ton-peiraton-117663/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

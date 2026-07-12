@@ -1,7 +1,5 @@
 {
   "bggId": 436217,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.181,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 3.5,
       "aspect": 1.164,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-lord-of-the-rings-fate-of-the-fellowship-436217/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

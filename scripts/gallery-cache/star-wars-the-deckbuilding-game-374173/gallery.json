@@ -1,7 +1,5 @@
 {
   "bggId": 374173,
-  "fetched": 125,
-  "done": true,
   "frontAspect": 0.763,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2.5,
       "aspect": 0.753,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/star-wars-the-deckbuilding-game-374173/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

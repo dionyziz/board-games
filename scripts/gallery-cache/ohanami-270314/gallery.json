@@ -1,7 +1,5 @@
 {
   "bggId": 270314,
-  "fetched": 83,
-  "done": true,
   "frontAspect": 0.755,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 2,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ohanami-270314/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

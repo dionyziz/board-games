@@ -1,7 +1,5 @@
 {
   "bggId": 369142,
-  "fetched": 102,
-  "done": true,
   "frontAspect": 0.715,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 2,
       "aspect": 0.71,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/savernake-forest-369142/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

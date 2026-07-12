@@ -1,7 +1,5 @@
 {
   "bggId": 406652,
-  "fetched": 97,
-  "done": true,
   "frontAspect": 0.76,
   "candidates": {
     "back": [
@@ -43,6 +41,10 @@
       "score": 1,
       "aspect": 0.834,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/compile-main-1-406652/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

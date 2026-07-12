@@ -1,7 +1,5 @@
 {
   "bggId": 376893,
-  "fetched": 74,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -54,6 +52,10 @@
       "score": 3.5,
       "aspect": 0.863,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cyberion-376893/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

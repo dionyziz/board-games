@@ -1,7 +1,5 @@
 {
   "bggId": 153065,
-  "fetched": 131,
-  "done": true,
   "frontAspect": 0.788,
   "candidates": {
     "back": [
@@ -48,6 +46,10 @@
       "score": 2.5,
       "aspect": 0.777,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-katergaris-153065/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

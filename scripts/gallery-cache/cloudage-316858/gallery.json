@@ -1,7 +1,5 @@
 {
   "bggId": 316858,
-  "fetched": 124,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 1.001,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cloudage-316858/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,6 +1,12 @@
 {
   "bggId": null,
-  "done": true,
+  "frontAspect": 0.672,
   "candidates": {},
-  "chosen": {}
+  "chosen": {
+    "back": null,
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

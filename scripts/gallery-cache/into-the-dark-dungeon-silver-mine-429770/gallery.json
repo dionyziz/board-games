@@ -1,7 +1,5 @@
 {
   "bggId": 429770,
-  "fetched": 20,
-  "done": true,
   "frontAspect": 0.75,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 1,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/into-the-dark-dungeon-silver-mine-429770/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 320,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.408,
   "candidates": {
     "back": [
@@ -110,6 +108,17 @@
       "score": 2,
       "aspect": 1.157,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/scrabble-320/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "895177",
+      "url": "https://cf.geekdo-images.com/PN8278gwcopiGt_Nr3KQ8g__large/img/qMgjkts-VVEM8U_JWnWM-KfHRe0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic895177.jpg",
+      "caption": "Box Side (Tinderbox Edition)",
+      "score": 2,
+      "aspect": 5.953,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/scrabble-320/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

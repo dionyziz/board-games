@@ -1,7 +1,5 @@
 {
   "bggId": 291453,
-  "fetched": 151,
-  "done": true,
   "frontAspect": 0.568,
   "candidates": {
     "back": [
@@ -68,6 +66,10 @@
       "score": 3.5,
       "aspect": 0.573,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/scout-291453/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

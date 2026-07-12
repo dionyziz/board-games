@@ -1,7 +1,5 @@
 {
   "bggId": 50381,
-  "fetched": 70,
-  "done": true,
   "frontAspect": 0.615,
   "candidates": {
     "back": [
@@ -42,6 +40,10 @@
       "score": 1,
       "aspect": 0.499,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/talk-to-the-hand-50381/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

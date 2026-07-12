@@ -1,7 +1,5 @@
 {
   "bggId": 344341,
-  "fetched": 17,
-  "done": true,
   "frontAspect": 1.452,
   "candidates": {
     "back": [
@@ -30,6 +28,10 @@
       "score": 2.5,
       "aspect": 1.182,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/solforge-fusion-344341/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

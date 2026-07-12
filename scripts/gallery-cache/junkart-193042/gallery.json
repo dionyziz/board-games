@@ -1,7 +1,5 @@
 {
   "bggId": 193042,
-  "fetched": 105,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2.5,
       "aspect": 0.994,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/junkart-193042/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

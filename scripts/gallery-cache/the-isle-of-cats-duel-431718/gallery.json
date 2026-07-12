@@ -1,7 +1,5 @@
 {
   "bggId": 431718,
-  "fetched": 54,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -30,6 +28,10 @@
       "score": 2,
       "aspect": 1,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-isle-of-cats-duel-431718/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

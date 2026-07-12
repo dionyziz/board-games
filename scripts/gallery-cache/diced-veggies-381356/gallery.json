@@ -1,7 +1,5 @@
 {
   "bggId": 381356,
-  "fetched": 75,
-  "done": true,
   "frontAspect": 0.667,
   "candidates": {
     "back": [
@@ -30,6 +28,10 @@
       "score": 2,
       "aspect": 0.648,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/diced-veggies-381356/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

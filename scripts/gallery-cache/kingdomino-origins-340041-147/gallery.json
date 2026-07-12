@@ -1,7 +1,5 @@
 {
   "bggId": 340041,
-  "fetched": 110,
-  "done": true,
   "frontAspect": 0.753,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 3.5,
       "aspect": 0.763,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/kingdomino-origins-340041-147/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

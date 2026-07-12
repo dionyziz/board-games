@@ -1,7 +1,5 @@
 {
   "bggId": 224035,
-  "fetched": 6,
-  "done": true,
   "frontAspect": 0.632,
   "candidates": {
     "back": [
@@ -30,6 +28,10 @@
       "score": 2.5,
       "aspect": 0.711,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/zombie-dice-horde-edition-224035/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

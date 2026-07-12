@@ -1,7 +1,5 @@
 {
   "bggId": 91534,
-  "fetched": 78,
-  "done": true,
   "frontAspect": 0.792,
   "candidates": {
     "back": [
@@ -73,6 +71,17 @@
       "score": 2,
       "aspect": 0.77,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/katan-me-kartes-91534/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1194711",
+      "url": "https://cf.geekdo-images.com/uyJx6KlL955XWrpVFnngRw__large/img/j8nlfiMWxIJ-mGzLTghxozCq2rs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1194711.jpg",
+      "caption": "Short side of the box of spanish edition (High scan res.)",
+      "score": 2,
+      "aspect": 5.657,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/katan-me-kartes-91534/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

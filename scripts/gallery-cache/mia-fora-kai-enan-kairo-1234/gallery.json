@@ -1,7 +1,5 @@
 {
   "bggId": 1234,
-  "fetched": 116,
-  "done": true,
   "frontAspect": 0.757,
   "candidates": {
     "back": [
@@ -73,6 +71,10 @@
       "score": 3.5,
       "aspect": 0.747,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/mia-fora-kai-enan-kairo-1234/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

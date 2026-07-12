@@ -1,7 +1,5 @@
 {
   "bggId": 172225,
-  "fetched": 132,
-  "done": true,
   "frontAspect": 1.46,
   "candidates": {
     "back": [
@@ -61,6 +59,17 @@
       "score": 3.5,
       "aspect": 1.52,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/exploding-kittens-172225/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "6753124",
+      "url": "https://cf.geekdo-images.com/6vwNVzK00mheKq-ps2xyYw__large/img/biYTniFsy8T1m2QfhC6Hlf420Es=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6753124.jpg",
+      "caption": "Eksplozivni mačići (Exploding Kittens) - Serbian first edition - side",
+      "score": 3.5,
+      "aspect": 4.414,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/exploding-kittens-172225/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

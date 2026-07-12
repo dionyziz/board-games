@@ -1,7 +1,5 @@
 {
   "bggId": 106,
-  "fetched": 109,
-  "done": true,
   "frontAspect": 0.752,
   "candidates": {
     "back": [
@@ -55,6 +53,17 @@
       "score": 2,
       "aspect": 0.765,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skoteines-ypotheseis-londino-1888-106/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "296428",
+      "url": "https://cf.geekdo-images.com/kcznipqR0Toq4cB6hQygNw__large/img/FdT5QcJmwx8q77P_z2ywiLO4j58=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic296428.jpg",
+      "caption": "Side of the box",
+      "score": 2,
+      "aspect": 6.024,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skoteines-ypotheseis-londino-1888-106/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

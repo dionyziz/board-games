@@ -1,7 +1,5 @@
 {
   "bggId": 217372,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.96,
   "candidates": {
     "back": [
@@ -42,6 +40,10 @@
       "score": 3.5,
       "aspect": 0.742,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/anazitontas-to-el-ntoranto-217372/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 266592,
-  "fetched": 39,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -37,6 +35,10 @@
       "score": 2.5,
       "aspect": 0.998,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/tactiki-266592/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

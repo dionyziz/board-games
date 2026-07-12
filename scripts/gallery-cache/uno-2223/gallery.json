@@ -1,7 +1,5 @@
 {
   "bggId": 2223,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.672,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 3.5,
       "aspect": 0.643,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/uno-2223/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

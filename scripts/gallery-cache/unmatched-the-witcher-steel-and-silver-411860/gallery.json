@@ -1,7 +1,5 @@
 {
   "bggId": 411860,
-  "fetched": 61,
-  "done": true,
   "frontAspect": 0.777,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 2,
       "aspect": 0.772,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/unmatched-the-witcher-steel-and-silver-411860/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

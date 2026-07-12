@@ -1,7 +1,5 @@
 {
   "bggId": 316377,
-  "fetched": 100,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 2.5,
       "aspect": 0.999,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ta-7-thaymata-toy-kosmoy-316377/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

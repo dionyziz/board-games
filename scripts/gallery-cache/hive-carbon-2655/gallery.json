@@ -1,7 +1,5 @@
 {
   "bggId": 2655,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.932,
   "candidates": {
     "back": [
@@ -81,6 +79,17 @@
       "score": 2,
       "aspect": 0.996,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hive-carbon-2655/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "303384",
+      "url": "https://cf.geekdo-images.com/nFXthxVuXpfgWbFCWII4EA__large/img/_pkor_ahNvYkCW7F4Y-x7XMlILg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic303384.jpg",
+      "caption": "Side of the box (spanish edition)",
+      "score": 2,
+      "aspect": 3.531,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hive-carbon-2655/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

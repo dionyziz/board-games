@@ -1,7 +1,5 @@
 {
   "bggId": 378848,
-  "fetched": 42,
-  "done": true,
   "frontAspect": 0.728,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 2,
       "aspect": 0.712,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/camel-up-me-kartes-378848/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 309630,
-  "fetched": 80,
-  "done": true,
   "frontAspect": 1.001,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 2,
       "aspect": 1.004,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/small-world-of-warcraft-309630/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -781,8 +781,8 @@
         },
         "bottom": {
           "src": "/textures/codenames-eikones-198773/bottom.webp",
-          "source": "cover-derived",
-          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+          "source": "photo",
+          "normalized": true
         },
         "thumb": {
           "src": "/textures/codenames-eikones-198773/thumb.webp",
@@ -887,7 +887,8 @@
         },
         "spine": {
           "src": "/textures/dixit-odyssey-92828/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/dixit-odyssey-92828/top.webp",
@@ -1357,7 +1358,8 @@
         },
         "spine": {
           "src": "/textures/keltes-40832/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/keltes-40832/top.webp",
@@ -1468,7 +1470,8 @@
         },
         "spine": {
           "src": "/textures/katan-me-kartes-91534/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/katan-me-kartes-91534/top.webp",
@@ -2369,8 +2372,8 @@
         },
         "bottom": {
           "src": "/textures/dobble-63268/bottom.webp",
-          "source": "cover-derived",
-          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+          "source": "photo",
+          "normalized": true
         },
         "thumb": {
           "src": "/textures/dobble-63268/thumb.webp",
@@ -3295,7 +3298,8 @@
         },
         "spine": {
           "src": "/textures/sushi-go-133473/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/sushi-go-133473/top.webp",
@@ -3776,7 +3780,8 @@
         },
         "spine": {
           "src": "/textures/chali-gkali-2944/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/chali-gkali-2944/top.webp",
@@ -4268,7 +4273,8 @@
         },
         "spine": {
           "src": "/textures/sequence-2375/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/sequence-2375/top.webp",
@@ -4873,7 +4879,8 @@
         },
         "spine": {
           "src": "/textures/scrabble-320/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/scrabble-320/top.webp",
@@ -5239,7 +5246,8 @@
         },
         "spine": {
           "src": "/textures/mindbug-345584/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/mindbug-345584/top.webp",
@@ -5367,7 +5375,8 @@
         },
         "spine": {
           "src": "/textures/exploding-kittens-172225/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/exploding-kittens-172225/top.webp",
@@ -5751,7 +5760,8 @@
         },
         "spine": {
           "src": "/textures/ubongo-16986/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/ubongo-16986/top.webp",
@@ -5874,7 +5884,8 @@
         },
         "spine": {
           "src": "/textures/ticket-to-ride-eyropi-14996/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/ticket-to-ride-eyropi-14996/top.webp",
@@ -6010,7 +6021,8 @@
         },
         "spine": {
           "src": "/textures/o-vasilias-toy-tokyo-70323/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/o-vasilias-toy-tokyo-70323/top.webp",
@@ -6237,7 +6249,8 @@
         },
         "spine": {
           "src": "/textures/bohnanza-11/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/bohnanza-11/top.webp",
@@ -6364,7 +6377,8 @@
         },
         "spine": {
           "src": "/textures/kastores-pontikia-3837/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/kastores-pontikia-3837/top.webp",
@@ -6483,7 +6497,8 @@
         },
         "spine": {
           "src": "/textures/skoteines-ypotheseis-londino-1888-106/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/skoteines-ypotheseis-londino-1888-106/top.webp",
@@ -9068,7 +9083,8 @@
         },
         "spine": {
           "src": "/textures/hive-carbon-2655/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/hive-carbon-2655/top.webp",
@@ -9184,7 +9200,8 @@
         },
         "spine": {
           "src": "/textures/phase-10-1258/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/phase-10-1258/top.webp",
@@ -11576,7 +11593,8 @@
         },
         "spine": {
           "src": "/textures/railroad-ink-deep-blue-edition-245654/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/railroad-ink-deep-blue-edition-245654/top.webp",
@@ -12678,7 +12696,8 @@
         },
         "spine": {
           "src": "/textures/apagoreymeni-nisos-65244/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/apagoreymeni-nisos-65244/top.webp",
@@ -14728,7 +14747,8 @@
         },
         "spine": {
           "src": "/textures/survive-the-island-425428/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/survive-the-island-425428/top.webp",
@@ -14976,7 +14996,8 @@
         },
         "spine": {
           "src": "/textures/istories-mystirioy-18803/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/istories-mystirioy-18803/top.webp",
@@ -15168,7 +15189,8 @@
         },
         "spine": {
           "src": "/textures/codenames-duet-224037/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/codenames-duet-224037/top.webp",
@@ -15177,8 +15199,8 @@
         },
         "bottom": {
           "src": "/textures/codenames-duet-224037/bottom.webp",
-          "source": "cover-derived",
-          "note": "darkened cover-art band + barcode + legal (no photo of bottom exists)"
+          "source": "photo",
+          "normalized": true
         },
         "thumb": {
           "src": "/textures/codenames-duet-224037/thumb.webp",
@@ -15415,7 +15437,8 @@
         },
         "spine": {
           "src": "/textures/one-night-ultimate-warewolf-147949/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/one-night-ultimate-warewolf-147949/top.webp",
@@ -15538,7 +15561,8 @@
         },
         "spine": {
           "src": "/textures/one-night-ultimate-werewolf-daybreak-163166/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/one-night-ultimate-werewolf-daybreak-163166/top.webp",
@@ -16144,7 +16168,8 @@
         },
         "spine": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/top.webp",
@@ -18913,7 +18938,8 @@
         },
         "spine": {
           "src": "/textures/jaipur-54043/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/jaipur-54043/top.webp",
@@ -19041,7 +19067,8 @@
         },
         "spine": {
           "src": "/textures/oceans-deluxe-edition-232414/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/oceans-deluxe-edition-232414/top.webp",
@@ -21202,7 +21229,8 @@
         },
         "spine": {
           "src": "/textures/chamenes-politeies-50/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true
         },
         "top": {
           "src": "/textures/chamenes-politeies-50/top.webp",

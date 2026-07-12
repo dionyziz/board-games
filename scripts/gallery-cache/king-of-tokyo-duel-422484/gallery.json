@@ -1,7 +1,5 @@
 {
   "bggId": 422484,
-  "fetched": 163,
-  "done": true,
   "frontAspect": 0.78,
   "candidates": {
     "back": [
@@ -74,6 +72,10 @@
       "score": 3.5,
       "aspect": 0.644,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/king-of-tokyo-duel-422484/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

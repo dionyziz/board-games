@@ -1,7 +1,5 @@
 {
   "bggId": 421006,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.762,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 2,
       "aspect": 0.936,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-lord-of-the-rings-duel-for-middle-earth-421006/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

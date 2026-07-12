@@ -1,7 +1,5 @@
 {
   "bggId": 2375,
-  "fetched": 192,
-  "done": true,
   "frontAspect": 0.703,
   "candidates": {
     "back": [
@@ -86,6 +84,17 @@
       "score": 3.5,
       "aspect": 0.747,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sequence-2375/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "8691943",
+      "url": "https://cf.geekdo-images.com/tkzXTsTgQXYAV1X7JBXpiw__large/img/Ea51ZN8p3_x7recApHGpuazIZIQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8691943.jpg",
+      "caption": "Sequence (Parker Dutch Edition) - Box Side",
+      "score": 2,
+      "aspect": 3.2,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sequence-2375/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 33088,
-  "fetched": 27,
-  "done": true,
   "frontAspect": 0.985,
   "candidates": {
     "back": [
@@ -37,6 +35,10 @@
       "score": 2.5,
       "aspect": 1,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chabyrinthe-33088/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

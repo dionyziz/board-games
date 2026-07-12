@@ -1,7 +1,5 @@
 {
   "bggId": 40832,
-  "fetched": 38,
-  "done": true,
   "frontAspect": 0.782,
   "candidates": {
     "back": [
@@ -55,6 +53,17 @@
       "score": 3.5,
       "aspect": 0.773,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/keltes-40832/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1126912",
+      "url": "https://cf.geekdo-images.com/yfOrwmcL3gEd515R8I5LCQ__large/img/LSParl7AnVMpgkCpEuUh6OdVF_c=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1126912.jpg",
+      "caption": "Side of he box\n",
+      "score": 2,
+      "aspect": 6.919,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/keltes-40832/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

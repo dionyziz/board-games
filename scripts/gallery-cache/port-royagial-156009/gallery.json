@@ -1,7 +1,5 @@
 {
   "bggId": 156009,
-  "fetched": 187,
-  "done": true,
   "frontAspect": 0.722,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 3.5,
       "aspect": 0.711,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/port-royagial-156009/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

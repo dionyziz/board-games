@@ -1,7 +1,5 @@
 {
   "bggId": 418354,
-  "fetched": 83,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -37,6 +35,10 @@
       "score": 3.5,
       "aspect": 0.995,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/babylon-418354/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

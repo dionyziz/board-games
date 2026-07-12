@@ -1,7 +1,5 @@
 {
   "bggId": 420025,
-  "fetched": 3,
-  "done": true,
   "frontAspect": 0.743,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 2.5,
       "aspect": 0.733,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/parachute-panda-420025/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 2944,
-  "fetched": 144,
-  "done": true,
   "frontAspect": 0.745,
   "candidates": {
     "back": [
@@ -73,6 +71,17 @@
       "score": 3.5,
       "aspect": 0.759,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chali-gkali-2944/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "4825536",
+      "url": "https://cf.geekdo-images.com/J8BMayY8j1Tg-lRSzmwQ4w__large/img/E9vWlD_aphSmSVQ-Mv6y6gCd9Vs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4825536.jpg",
+      "caption": "Halli Galli ‐ AMIGO multilingual edition 1992 - Box side info",
+      "score": 3.5,
+      "aspect": 3.19,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chali-gkali-2944/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

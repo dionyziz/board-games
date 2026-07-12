@@ -1,7 +1,5 @@
 {
   "bggId": 306881,
-  "fetched": 125,
-  "done": true,
   "frontAspect": 1.013,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 1.014,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/railroad-ink-challenge-lush-green-306881/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

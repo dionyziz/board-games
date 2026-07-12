@@ -1,7 +1,5 @@
 {
   "bggId": 397598,
-  "fetched": 245,
-  "done": true,
   "frontAspect": 0.998,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2,
       "aspect": 1,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dune-imperium-uprising-397598/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

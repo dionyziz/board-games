@@ -1,7 +1,5 @@
 {
   "bggId": 31506,
-  "fetched": 49,
-  "done": true,
   "frontAspect": 0.777,
   "candidates": {
     "back": [
@@ -56,6 +54,10 @@
       "score": 2,
       "aspect": 0.771,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/katsikomachies-31506/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

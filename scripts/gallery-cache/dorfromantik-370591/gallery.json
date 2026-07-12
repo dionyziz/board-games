@@ -1,7 +1,5 @@
 {
   "bggId": 370591,
-  "fetched": 221,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -67,6 +65,10 @@
       "score": 3.5,
       "aspect": 1.001,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dorfromantik-370591/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

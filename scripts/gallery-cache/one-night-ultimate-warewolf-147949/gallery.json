@@ -1,7 +1,5 @@
 {
   "bggId": 147949,
-  "fetched": 167,
-  "done": true,
   "frontAspect": 1.4,
   "candidates": {
     "back": [
@@ -73,6 +71,17 @@
       "score": 3.5,
       "aspect": 1.332,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/one-night-ultimate-warewolf-147949/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1871558",
+      "url": "https://cf.geekdo-images.com/HvA_3twybwkh0zy-4Wbwcg__large/img/UdgvqGRljWKQGk-DQ41vHM3iYxg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1871558.jpg",
+      "caption": "Box spine",
+      "score": 2,
+      "aspect": 4.08,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/one-night-ultimate-warewolf-147949/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

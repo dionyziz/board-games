@@ -1,7 +1,5 @@
 {
   "bggId": 416851,
-  "fetched": 214,
-  "done": true,
   "frontAspect": 0.723,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 2,
       "aspect": 0.716,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/castle-combo-416851/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

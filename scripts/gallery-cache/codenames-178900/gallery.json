@@ -1,7 +1,5 @@
 {
   "bggId": 178900,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.698,
   "candidates": {
     "back": [
@@ -67,6 +65,10 @@
       "score": 3.5,
       "aspect": 0.716,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-178900/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

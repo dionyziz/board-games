@@ -1,7 +1,5 @@
 {
   "bggId": 352710,
-  "fetched": 46,
-  "done": true,
   "frontAspect": 0.76,
   "candidates": {
     "back": [
@@ -62,6 +60,10 @@
       "score": 2,
       "aspect": 0.66,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ouch-352710/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

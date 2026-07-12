@@ -1,7 +1,5 @@
 {
   "bggId": 1258,
-  "fetched": 113,
-  "done": true,
   "frontAspect": 0.713,
   "candidates": {
     "back": [
@@ -61,6 +59,17 @@
       "score": 3.5,
       "aspect": 0.745,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/phase-10-1258/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "6567442",
+      "url": "https://cf.geekdo-images.com/NuvBY7gcHxjHISbr1W5p8Q__large/img/ivddL4-Kk1nA0iODLqEM_dV_94U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6567442.jpg",
+      "caption": "Side of the box",
+      "score": 2,
+      "aspect": 2.745,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/phase-10-1258/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 11,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.735,
   "candidates": {
     "back": [
@@ -79,6 +77,17 @@
       "score": 3.5,
       "aspect": 0.759,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/bohnanza-11/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1269154",
+      "url": "https://cf.geekdo-images.com/KD1EgEEct1xjfERUG07a0w__large/img/iSCtBgYXNQph8aLjjbSO1Buo5Xk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1269154.jpg",
+      "caption": "Box side. Russian edition of the game.",
+      "score": 2,
+      "aspect": 4.146,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/bohnanza-11/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

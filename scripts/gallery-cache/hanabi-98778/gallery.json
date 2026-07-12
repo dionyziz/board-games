@@ -1,7 +1,5 @@
 {
   "bggId": 98778,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.25,
   "candidates": {
     "back": [
@@ -74,6 +72,10 @@
       "score": 3.5,
       "aspect": 1.293,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/hanabi-98778/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 447707,
-  "fetched": 7,
-  "done": true,
   "frontAspect": 0.592,
   "candidates": {
     "back": [],
@@ -10,6 +8,10 @@
     "bottom": []
   },
   "chosen": {
-    "back": null
-  }
+    "back": null,
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

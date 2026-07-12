@@ -1,7 +1,5 @@
 {
   "bggId": 245654,
-  "fetched": 173,
-  "done": true,
   "frontAspect": 1.013,
   "candidates": {
     "back": [
@@ -79,6 +77,17 @@
       "score": 3.5,
       "aspect": 1.012,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/railroad-ink-deep-blue-edition-245654/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "7299561",
+      "url": "https://cf.geekdo-images.com/XVVEL3qEqR1eAqluOPTOAA__large/img/f6qZPWjMb2m4vraNsgs1GWILz_o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7299561.jpg",
+      "caption": "Box side 3",
+      "score": 2,
+      "aspect": 3.368,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/railroad-ink-deep-blue-edition-245654/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

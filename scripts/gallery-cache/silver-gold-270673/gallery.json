@@ -1,7 +1,5 @@
 {
   "bggId": 270673,
-  "fetched": 107,
-  "done": true,
   "frontAspect": 0.652,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 0.658,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/silver-gold-270673/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

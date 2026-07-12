@@ -1,7 +1,5 @@
 {
   "bggId": 1465,
-  "fetched": 214,
-  "done": true,
   "frontAspect": 0.78,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/wizard-1465/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

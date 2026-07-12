@@ -1,7 +1,5 @@
 {
   "bggId": 385437,
-  "fetched": 66,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 1,
       "aspect": 1,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/snowcrest-385437/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 86955,
-  "fetched": 63,
-  "done": true,
   "frontAspect": 0.677,
   "candidates": {
     "back": [
@@ -50,6 +48,10 @@
       "score": 3.5,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/munchkin-zombies-86955/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

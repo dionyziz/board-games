@@ -1,7 +1,5 @@
 {
   "bggId": 411015,
-  "fetched": 19,
-  "done": true,
   "frontAspect": 0.988,
   "candidates": {
     "back": [
@@ -44,6 +42,10 @@
       "score": 2,
       "aspect": 0.961,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sosig-411015/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

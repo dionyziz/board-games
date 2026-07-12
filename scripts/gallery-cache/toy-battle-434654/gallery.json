@@ -1,7 +1,5 @@
 {
   "bggId": 434654,
-  "fetched": 139,
-  "done": true,
   "frontAspect": 1.19,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 3.5,
       "aspect": 1.009,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/toy-battle-434654/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

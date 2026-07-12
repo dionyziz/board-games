@@ -1,7 +1,5 @@
 {
   "bggId": 364073,
-  "fetched": 194,
-  "done": true,
   "frontAspect": 0.73,
   "candidates": {
     "back": [
@@ -67,6 +65,10 @@
       "score": 3.5,
       "aspect": 0.716,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/splendor-monomachia-364073/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

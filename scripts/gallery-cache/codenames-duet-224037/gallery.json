@@ -1,7 +1,5 @@
 {
   "bggId": 224037,
-  "fetched": 198,
-  "done": true,
   "frontAspect": 0.697,
   "candidates": {
     "back": [
@@ -75,6 +73,24 @@
       "score": 3.5,
       "aspect": 0.692,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-duet-224037/back-src.jpg"
+    },
+    "spine": {
+      "imageid": "5899673",
+      "url": "https://cf.geekdo-images.com/Has4P6MAYFxUvBw044NU4w__large/img/5DY4veXdLo_pkxbSFuM5xNgbUnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5899673.png",
+      "caption": "English XXL edition - Bottom side of the box",
+      "score": 3.5,
+      "aspect": 3.057,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-duet-224037/spine-src.png"
+    },
+    "top": null,
+    "bottom": {
+      "imageid": "5899673",
+      "url": "https://cf.geekdo-images.com/Has4P6MAYFxUvBw044NU4w__large/img/5DY4veXdLo_pkxbSFuM5xNgbUnI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5899673.png",
+      "caption": "English XXL edition - Bottom side of the box",
+      "score": 3.5,
+      "aspect": 3.057,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/codenames-duet-224037/bottom-src.png"
     }
-  }
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 14996,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.003,
   "candidates": {
     "back": [
@@ -73,6 +71,17 @@
       "score": 2,
       "aspect": 1,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ticket-to-ride-eyropi-14996/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "665096",
+      "url": "https://cf.geekdo-images.com/x6gbD-CdVgnFYIdf55WCRA__large/img/42EpQTNcI9YYA_jwTigZKxIK4FE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic665096.jpg",
+      "caption": "TTR Europe box side 1 of 4",
+      "score": 2,
+      "aspect": 5.953,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ticket-to-ride-eyropi-14996/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 447243,
-  "fetched": 100,
-  "done": true,
   "frontAspect": 0.768,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 2,
       "aspect": 0.771,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/duel-for-cardia-447243/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

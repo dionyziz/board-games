@@ -1,7 +1,5 @@
 {
   "bggId": 272889,
-  "fetched": 34,
-  "done": true,
   "frontAspect": 0.748,
   "candidates": {
     "back": [
@@ -48,6 +46,10 @@
       "score": 2,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/pictionary-air-272889/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

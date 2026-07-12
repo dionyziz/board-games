@@ -1,7 +1,5 @@
 {
   "bggId": 359152,
-  "fetched": 71,
-  "done": true,
   "frontAspect": 0.75,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 0.725,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/marvel-remix-359152/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

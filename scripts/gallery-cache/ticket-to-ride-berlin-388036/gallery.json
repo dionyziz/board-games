@@ -1,7 +1,5 @@
 {
   "bggId": 388036,
-  "fetched": 31,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -42,6 +40,10 @@
       "score": 2,
       "aspect": 1.01,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ticket-to-ride-berlin-388036/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

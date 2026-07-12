@@ -76,9 +76,18 @@ function validGeom(face, w, h) {
   return elong >= 2.2;
 }
 
-// download candidates in score order; keep the first that passes the geom check
+// reject captions where the face keyword is semantic, not the physical box face
+const captionOK = (face, cap) => {
+  cap = cap || '';
+  if (/side by side|both sides|all sides|left side|right side|from the side|other side|flip side|either side/i.test(cap)) return false;
+  if (face === 'bottom' && /bottom of the (sea|ocean|world|deep|barrel|bag|river|lake|garden|abyss|hill|well|ninth|9th|map)/i.test(cap)) return false;
+  return true;
+};
+
+// download candidates in score order; keep the first that passes caption + geom
 async function pickFace(face, cands) {
   for (const c of cands || []) {
+    if (!captionOK(face, c.caption)) continue;
     const r = await fetchRetry(c.url, { headers: { 'User-Agent': UA } });
     if (!r) continue;
     const buf = Buffer.from(await r.arrayBuffer());

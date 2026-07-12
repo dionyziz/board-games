@@ -1,7 +1,5 @@
 {
   "bggId": 290236,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.799,
   "candidates": {
     "back": [
@@ -50,6 +48,10 @@
       "score": 2,
       "aspect": 0.817,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/canvas-290236/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

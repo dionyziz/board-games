@@ -1,7 +1,5 @@
 {
   "bggId": 434500,
-  "fetched": 3,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 2,
       "aspect": 1.001,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/slayers-and-dragons-434500/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 2083,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.69,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 1.333,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/ntama-2083/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

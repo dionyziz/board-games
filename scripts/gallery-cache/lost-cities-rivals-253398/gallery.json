@@ -1,7 +1,5 @@
 {
   "bggId": 253398,
-  "fetched": 57,
-  "done": true,
   "frontAspect": 0.723,
   "candidates": {
     "back": [
@@ -44,6 +42,10 @@
       "score": 2,
       "aspect": 0.732,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/lost-cities-rivals-253398/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

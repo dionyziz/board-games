@@ -1,7 +1,5 @@
 {
   "bggId": 422732,
-  "fetched": 213,
-  "done": true,
   "frontAspect": 0.715,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2,
       "aspect": 0.701,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/agent-avenue-422732/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

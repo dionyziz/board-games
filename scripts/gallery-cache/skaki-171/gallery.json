@@ -1,7 +1,5 @@
 {
   "bggId": 171,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.536,
   "candidates": {
     "back": [
@@ -56,6 +54,10 @@
       "score": 1,
       "aspect": 1.333,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/skaki-171/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 367220,
-  "fetched": 225,
-  "done": true,
   "frontAspect": 0.73,
   "candidates": {
     "back": [
@@ -68,6 +66,10 @@
       "score": 3.5,
       "aspect": 0.736,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/thalassa-charti-alati-367220/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

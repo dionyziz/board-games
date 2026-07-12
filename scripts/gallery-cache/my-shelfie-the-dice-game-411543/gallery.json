@@ -1,7 +1,5 @@
 {
   "bggId": 411543,
-  "fetched": 36,
-  "done": true,
   "frontAspect": 0.963,
   "candidates": {
     "back": [
@@ -42,6 +40,10 @@
       "score": 2,
       "aspect": 0.955,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/my-shelfie-the-dice-game-411543/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

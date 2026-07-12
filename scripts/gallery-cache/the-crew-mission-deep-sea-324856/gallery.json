@@ -1,7 +1,5 @@
 {
   "bggId": 324856,
-  "fetched": 101,
-  "done": true,
   "frontAspect": 0.722,
   "candidates": {
     "back": [
@@ -54,6 +52,10 @@
       "score": 3.5,
       "aspect": 0.709,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-crew-mission-deep-sea-324856/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

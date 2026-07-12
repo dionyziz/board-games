@@ -1,7 +1,5 @@
 {
   "bggId": 118410,
-  "fetched": 63,
-  "done": true,
   "frontAspect": 0.785,
   "candidates": {
     "back": [
@@ -24,6 +22,10 @@
       "score": 3.5,
       "aspect": 0.773,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/goyroynakia-sti-laspi-118410/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

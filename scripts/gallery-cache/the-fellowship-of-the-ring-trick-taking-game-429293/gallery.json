@@ -1,7 +1,5 @@
 {
   "bggId": 429293,
-  "fetched": 154,
-  "done": true,
   "frontAspect": 0.475,
   "candidates": {
     "back": [
@@ -54,6 +52,17 @@
     "bottom": []
   },
   "chosen": {
-    "back": null
-  }
+    "back": null,
+    "spine": {
+      "imageid": "9334084",
+      "url": "https://cf.geekdo-images.com/SHeQbCZAtEE9OXgVWbAqaQ__large/img/82EP_g0qFsPovt3xfUYcQH3yEo0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic9334084.jpg",
+      "caption": "Le Seigneur des Anneaux: La Communauté de l'Anneau, Le jeu de plis coopératif ‐ French edition (2025) Side Box",
+      "score": 2,
+      "aspect": 2.331,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/the-fellowship-of-the-ring-trick-taking-game-429293/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

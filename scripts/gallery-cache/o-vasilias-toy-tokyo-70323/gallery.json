@@ -1,7 +1,5 @@
 {
   "bggId": 70323,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1.003,
   "candidates": {
     "back": [
@@ -111,6 +109,17 @@
       "score": 2,
       "aspect": 0.984,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-vasilias-toy-tokyo-70323/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1176282",
+      "url": "https://cf.geekdo-images.com/tXk-AEnp_gPgk0LMSCWwYw__large/img/AWOZFuiZu8T7MYv0irxsFTRVf2I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1176282.jpg",
+      "caption": "Inner Box Side",
+      "score": 2,
+      "aspect": 3.644,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-vasilias-toy-tokyo-70323/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 298572,
-  "fetched": 54,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -30,6 +28,10 @@
       "score": 2,
       "aspect": 0.997,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cosmic-encounter-duel-298572/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

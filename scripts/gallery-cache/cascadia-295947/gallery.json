@@ -1,7 +1,5 @@
 {
   "bggId": 295947,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -50,6 +48,10 @@
       "score": 2,
       "aspect": 1.003,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/cascadia-295947/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

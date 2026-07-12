@@ -1,7 +1,5 @@
 {
   "bggId": 110327,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.788,
   "candidates": {
     "back": [
@@ -55,6 +53,10 @@
       "score": 2,
       "aspect": 0.823,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/lords-of-waterdeep-110327/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 319910,
-  "fetched": 99,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2,
       "aspect": 0.931,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/pagan-fate-of-roanoke-319910/back-src.png"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

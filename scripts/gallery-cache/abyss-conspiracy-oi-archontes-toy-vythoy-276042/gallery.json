@@ -1,7 +1,5 @@
 {
   "bggId": 276042,
-  "fetched": 81,
-  "done": true,
   "frontAspect": 0.743,
   "candidates": {
     "back": [
@@ -36,6 +34,10 @@
       "score": 1,
       "aspect": 0.73,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/abyss-conspiracy-oi-archontes-toy-vythoy-276042/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

@@ -1,7 +1,5 @@
 {
   "bggId": 54043,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.718,
   "candidates": {
     "back": [
@@ -91,6 +89,17 @@
       "score": 2,
       "aspect": 0.75,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/jaipur-54043/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "969314",
+      "url": "https://cf.geekdo-images.com/ppissj-XNplBWTknADc3-g__large/img/1EEX6553s-n1b3uBD8WrU-EqOZg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic969314.jpg",
+      "caption": "Game information on side of box",
+      "score": 2,
+      "aspect": 3.251,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/jaipur-54043/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

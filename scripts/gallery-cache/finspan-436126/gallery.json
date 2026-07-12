@@ -1,7 +1,5 @@
 {
   "bggId": 436126,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 2,
       "aspect": 0.998,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/finspan-436126/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

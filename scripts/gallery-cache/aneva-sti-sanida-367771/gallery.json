@@ -1,7 +1,5 @@
 {
   "bggId": 367771,
-  "fetched": 57,
-  "done": true,
   "frontAspect": 0.69,
   "candidates": {
     "back": [
@@ -61,6 +59,10 @@
       "score": 3.5,
       "aspect": 0.69,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/aneva-sti-sanida-367771/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

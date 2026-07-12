@@ -1,7 +1,5 @@
 {
   "bggId": 263918,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.719,
   "candidates": {
     "back": [
@@ -73,6 +71,10 @@
       "score": 2,
       "aspect": 0.657,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/o-chartografos-263918/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

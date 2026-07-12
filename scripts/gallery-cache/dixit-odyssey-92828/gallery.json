@@ -1,7 +1,5 @@
 {
   "bggId": 92828,
-  "fetched": 175,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -67,6 +65,17 @@
       "score": 2,
       "aspect": 0.996,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dixit-odyssey-92828/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "1003719",
+      "url": "https://cf.geekdo-images.com/k99ff-yPIK8bqKGU9GJI5A__large/img/TVo3LNSQnMWQ1c3BLmhBLqSUGHE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1003719.jpg",
+      "caption": "Side box",
+      "score": 2,
+      "aspect": 4.808,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dixit-odyssey-92828/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

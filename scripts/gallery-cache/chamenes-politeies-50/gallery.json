@@ -1,7 +1,5 @@
 {
   "bggId": 50,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -92,6 +90,17 @@
       "score": 3.5,
       "aspect": 0.776,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chamenes-politeies-50/back-src.jpg"
-    }
-  }
+    },
+    "spine": {
+      "imageid": "284136",
+      "url": "https://cf.geekdo-images.com/k2Be127stCzW2XOquSuy3g__large/img/6_P9ukpS-q6HmAiKC4KDHGn25Zc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic284136.jpg",
+      "caption": "Side of the box kosmos edition",
+      "score": 3.5,
+      "aspect": 7.529,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/chamenes-politeies-50/spine-src.jpg"
+    },
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

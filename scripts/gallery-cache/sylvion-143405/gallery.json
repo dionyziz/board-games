@@ -1,7 +1,5 @@
 {
   "bggId": 143405,
-  "fetched": 119,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -49,6 +47,10 @@
       "score": 2.5,
       "aspect": 0.995,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/sylvion-143405/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

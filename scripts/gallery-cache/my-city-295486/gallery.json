@@ -1,7 +1,5 @@
 {
   "bggId": 295486,
-  "fetched": 143,
-  "done": true,
   "frontAspect": 1,
   "candidates": {
     "back": [
@@ -62,6 +60,10 @@
       "score": 2,
       "aspect": 1.003,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/my-city-295486/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

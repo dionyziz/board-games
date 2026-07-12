@@ -1,7 +1,5 @@
 {
   "bggId": 285774,
-  "fetched": 220,
-  "done": true,
   "frontAspect": 0.863,
   "candidates": {
     "back": [
@@ -48,6 +46,10 @@
       "score": 3.5,
       "aspect": 0.688,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/marvel-champions-the-card-game-285774/back-src.jpg"
-    }
-  }
+    },
+    "spine": null,
+    "top": null,
+    "bottom": null
+  },
+  "done": true
 }

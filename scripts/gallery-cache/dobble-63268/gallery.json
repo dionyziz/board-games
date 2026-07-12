@@ -1,7 +1,5 @@
 {
   "bggId": 63268,
-  "fetched": 250,
-  "done": true,
   "frontAspect": 0.998,
   "candidates": {
     "back": [
@@ -123,6 +121,17 @@
       "score": 3.5,
       "aspect": 1.014,
       "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dobble-63268/back-src.jpg"
+    },
+    "spine": null,
+    "top": null,
+    "bottom": {
+      "imageid": "4458407",
+      "url": "https://cf.geekdo-images.com/Whp07jVL_-F-GvpH37s93Q__large/img/GJzl6DyvpnAVv1EMQSkNHqOoiG8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4458407.jpg",
+      "caption": "Dobble Chrono - FR - 2015 - Box bottom",
+      "score": 2,
+      "aspect": 2.226,
+      "file": "/Users/dionyziz/workspace/board-games/scripts/gallery-cache/dobble-63268/bottom-src.jpg"
     }
-  }
+  },
+  "done": true
 }
