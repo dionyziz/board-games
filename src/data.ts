@@ -26,6 +26,7 @@ export type Game = {
   categories?: string[];
   shortDescription?: string;
   description?: string;
+  altTitles?: string[];
   box: Box;
   textures: Record<string, Face>;
   cover: string;
@@ -54,7 +55,7 @@ const blobs = new Map<string, string>();
 export function searchBlob(g: Game): string {
   let b = blobs.get(g.id);
   if (b === undefined) {
-    b = [g.title, g.id, ...(g.designers || []), ...(g.categories || []), String(g.year || '')]
+    b = [g.title, ...(g.altTitles || []), g.id, ...(g.designers || []), ...(g.categories || []), String(g.year || '')]
       .map(norm).join(SEP);
     blobs.set(g.id, b);
   }

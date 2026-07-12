@@ -170,7 +170,10 @@
           "src": "/textures/sampoter-9220/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Saboteur"
+      ]
     },
     {
       "id": "risk-strike-394144",
@@ -542,7 +545,10 @@
           "src": "/textures/azul-mini-230802/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Azul"
+      ]
     },
     {
       "id": "codenames-178900",
@@ -804,7 +810,10 @@
           "src": "/textures/codenames-eikones-198773/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Codenames: Pictures"
+      ]
     },
     {
       "id": "dixit-odyssey-92828",
@@ -1288,7 +1297,10 @@
           "src": "/textures/katsikomachies-31506/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Cliffhanger"
+      ]
     },
     {
       "id": "keltes-40832",
@@ -1406,7 +1418,10 @@
           "src": "/textures/keltes-40832/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Keltis: Das Kartenspiel"
+      ]
     },
     {
       "id": "katan-me-kartes-91534",
@@ -1520,7 +1535,10 @@
           "src": "/textures/katan-me-kartes-91534/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Struggle for Catan"
+      ]
     },
     {
       "id": "sampoter-2",
@@ -1647,7 +1665,10 @@
       "bggRank": null,
       "shortDescription": "Expands the base game with partnerships, new roles, actions and map obstacles.",
       "description": "(Note: This listing covers only the expansion-only versions of Saboteur 2; for the Saboteur 2 listing that includes both the base game and the expansion, go to Saboteur Gold.)\n\nIn Saboteur, each player takes on the role of a gold-digging dwarf or a saboteur who wants to hinder exploration of the gold mines — but each player knows only his own role, so the digging may or may not go as planned!\n\nEach turn, a player either lays down a tunnel card to dig from the start card toward one of the goal cards (or potentially away, if a saboteur) or plays an action card to help or hinder someone. If the diggers manage to find the gold hidden under one of the goal cards, then the diggers share the loot found there; if the gold can't be reached before the deck runs out, the saboteurs profit instead. After three rounds, the player with the most gold wins.\n\nThe Saboteur 2 expansion adds new role cards (the boss, profiteers, geologists) to the base game, new action cards (steal gold, change your role), and new tunnel cards featuring doors, ladders and bridges. What's more, the gold seekers can now be divided into teams — blue vs. green — and only those on the team that finds the gold score anything — assuming that anyone finds the gold at all, of course...",
-      "metaSource": "bgg-backfill"
+      "metaSource": "bgg-backfill",
+      "altTitles": [
+        "Saboteur 2 (expansion-only editions)"
+      ]
     },
     {
       "id": "the-mind-244992",
@@ -2364,7 +2385,10 @@
           "src": "/textures/dose-ta-panta-141428/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Pass the Pandas"
+      ]
     },
     {
       "id": "dobble-63268",
@@ -2507,7 +2531,10 @@
           "src": "/textures/dobble-63268/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Spot it!"
+      ]
     },
     {
       "id": "dobble-connect-381429",
@@ -2867,7 +2894,10 @@
           "src": "/textures/lost-cities-rivals-253398/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Lost Cities: Rivals"
+      ]
     },
     {
       "id": "4x4-2719",
@@ -2986,7 +3016,10 @@
           "src": "/textures/4x4-2719/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Connect Four"
+      ]
     },
     {
       "id": "who-am-i-33406",
@@ -3599,7 +3632,10 @@
           "src": "/textures/railroad-ink-challenge-lush-green-306881/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Railroad Ink Challenge: Lush Green Edition"
+      ]
     },
     {
       "id": "mia-fora-kai-enan-kairo-1234",
@@ -3728,7 +3764,10 @@
           "src": "/textures/mia-fora-kai-enan-kairo-1234/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Once Upon a Time: The Storytelling Card Game"
+      ]
     },
     {
       "id": "camel-up-me-kartes-378848",
@@ -3841,7 +3880,10 @@
           "src": "/textures/camel-up-me-kartes-378848/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Camel Up: The Card Game"
+      ]
     },
     {
       "id": "chali-gkali-2944",
@@ -3962,7 +4004,10 @@
           "src": "/textures/chali-gkali-2944/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Halli Galli"
+      ]
     },
     {
       "id": "canvas-290236",
@@ -4213,7 +4258,10 @@
           "src": "/textures/ntama-2083/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Checkers"
+      ]
     },
     {
       "id": "skaki-171",
@@ -4346,7 +4394,10 @@
           "src": "/textures/skaki-171/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Chess"
+      ]
     },
     {
       "id": "sequence-2375",
@@ -4713,7 +4764,10 @@
           "src": "/textures/cash-n-guns-second-edition-155362/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Ca$h 'n Guns: Second Edition"
+      ]
     },
     {
       "id": "junkart-193042",
@@ -4839,7 +4893,10 @@
           "src": "/textures/junkart-193042/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Junk Art"
+      ]
     },
     {
       "id": "calico-283155",
@@ -5215,7 +5272,10 @@
           "src": "/textures/talk-to-the-hand-50381/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Cards Against Humanity"
+      ]
     },
     {
       "id": "virus-180020",
@@ -5464,7 +5524,10 @@
           "src": "/textures/mindbug-345584/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Mindbug: First Contact"
+      ]
     },
     {
       "id": "exploding-kittens-172225",
@@ -5822,7 +5885,10 @@
           "src": "/textures/ta-7-thaymata-toy-kosmoy-316377/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "7 Wonders (Second Edition)"
+      ]
     },
     {
       "id": "oi-apoikoi-toy-katan",
@@ -5965,7 +6031,10 @@
       "bggRank": 623,
       "shortDescription": "Collect and trade resources to build up the island of Catan in this modern classic.",
       "description": "In CATAN (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities and roads. On each turn dice are rolled to determine which resources the island produces. Players build structures by 'spending' resources (sheep, wheat, wood, brick and ore) which are represented by the relevant resource cards; each land type, with the exception of the unproductive desert, produces a specific resource: hills produce brick, forests produce wood, mountains produce ore, fields produce wheat, and pastures produce sheep.\n\nSet-up includes randomly placing large hexagonal tiles (each depicting one of the five resource-producing terrain types--or the desert) in a honeycomb shape and surrounding them with water tiles, some of which contain ports of exchange. A number disk, the value of which will correspond to the roll of two 6-sided dice, are placed on each terrain tile. Each player is given two settlements (think: houses) and roads (sticks) which are placed on intersections and borders of the terrain tiles. Players collect a hand of resource cards based on which terrain tiles their last-placed settlement is adjacent to. A robber pawn is placed on the desert tile.\n\nA turn consists of rolling the dice, collecting resource cards based on this dice roll and the position of settlements (or upgraded cities—think: hotels), turning in resource cards (if possible and desired) for improvements, trading cards at a port, possibly playing a development card, or trading resource cards with other players. If the dice roll is a 7, the active player moves the robber to a new terrain tile and steals a resource card from another player who has a settlement adjacent to that tile.\n\nPoints are accumulated by building settlements and cities, having the longest road or the largest army (from some of the development cards), and gathering certain development cards that simply award victory points. When a player has gathered 10 points (some of which may be held in secret), s/he announces this and claims the win.",
-      "metaSource": "bgg-backfill"
+      "metaSource": "bgg-backfill",
+      "altTitles": [
+        "Catan"
+      ]
     },
     {
       "id": "ubongo-16986",
@@ -6217,7 +6286,10 @@
           "src": "/textures/ticket-to-ride-eyropi-14996/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Ticket to Ride: Europe"
+      ]
     },
     {
       "id": "o-vasilias-toy-tokyo-70323",
@@ -6356,7 +6428,10 @@
           "src": "/textures/o-vasilias-toy-tokyo-70323/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "King of Tokyo"
+      ]
     },
     {
       "id": "city-blox-286141",
@@ -6719,7 +6794,10 @@
           "src": "/textures/kastores-pontikia-3837/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Rat-a-Tat Cat"
+      ]
     },
     {
       "id": "skoteines-ypotheseis-londino-1888-106",
@@ -6841,7 +6919,10 @@
           "src": "/textures/skoteines-ypotheseis-londino-1888-106/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Mystery Rummy: Jack the Ripper"
+      ]
     },
     {
       "id": "hero-realms-198994",
@@ -7186,7 +7267,10 @@
           "src": "/textures/connect-4-shots-258818/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Connect 4: Shots"
+      ]
     },
     {
       "id": "goyroynakia-sti-laspi-118410",
@@ -7299,7 +7383,10 @@
           "src": "/textures/goyroynakia-sti-laspi-118410/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Dirty Pig"
+      ]
     },
     {
       "id": "bag-of-chips-344114",
@@ -7677,7 +7764,10 @@
           "src": "/textures/anazitontas-to-el-ntoranto-217372/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "The Quest for El Dorado"
+      ]
     },
     {
       "id": "kosmogonia-2086-oracle-394193",
@@ -7791,7 +7881,10 @@
           "src": "/textures/kosmogonia-2086-oracle-394193/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Kosmogonia 2086: Kronos Epilogue – The Card Game!"
+      ]
     },
     {
       "id": "cloudage-316858",
@@ -8408,7 +8501,10 @@
           "src": "/textures/dice-masters-386766/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Marvel Dice Masters: Secret Wars"
+      ]
     },
     {
       "id": "solforge-fusion-344341",
@@ -8633,7 +8729,10 @@
           "src": "/textures/keyforge-257501/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "KeyForge: Call of the Archons"
+      ]
     },
     {
       "id": "world-of-warcraft-wrath-of-the-lich-king-342848",
@@ -9019,7 +9118,10 @@
           "src": "/textures/oi-tsarlatanoi-toy-koyentlinmpoyrgk-244521/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Quacks"
+      ]
     },
     {
       "id": "the-binding-of-isaac-four-souls-255664",
@@ -9499,7 +9601,10 @@
           "src": "/textures/hive-carbon-2655/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Hive"
+      ]
     },
     {
       "id": "phase-10-1258",
@@ -10321,7 +10426,10 @@
       "bggRank": 148,
       "shortDescription": "Piece together a quilt and leave no holes to become the button master.",
       "description": "In Patchwork, two players compete to build the most aesthetic (and high-scoring) patchwork quilt on a personal 9x9 game board. To start play, lay out all of the patches at random in a circle and place a marker directly clockwise of the 2-1 patch. Each player takes five buttons — the currency/points in the game — and someone is chosen as the start player.\n\nOn a turn, a player either purchases one of the three patches standing clockwise of the spool or passes. To purchase a patch, you pay the cost in buttons shown on the patch, move the spool to that patch's location in the circle, add the patch to your game board, then advance your time token on the time track a number of spaces equal to the time shown on the patch. You're free to place the patch anywhere on your board that doesn't overlap other patches, but you probably want to fit things together as tightly as possible. If your time token is behind or on top of the other player's time token, then you take another turn; otherwise the opponent now goes. Instead of purchasing a patch, you can choose to pass; to do this, you move your time token to the space immediately in front of the opponent's time token, then take one button from the bank for each space you moved.\n\nIn addition to a button cost and time cost, each patch also features 0-3 buttons, and when you move your time token past a button on the time track, you earn \"button income\": sum the number of buttons depicted on your personal game board, then take this many buttons from the bank.\n\nWhat's more, the time track depicts five 1x1 patches on it, and during set-up you place five actual 1x1 patches on these spaces. Whoever first passes a patch on the time track claims this patch and immediately places it on his game board.\n\nAdditionally, the first player to completely fill in a 7x7 square on his game board earns a bonus tile worth 7 extra points at the end of the game. (Of course, this doesn't happen in every game.)\n\nWhen a player takes an action that moves his time token to the central square of the time track, he takes one final button income from the bank. Once both players are in the center, the game ends and scoring takes place. Each player scores one point per button in his possession, then loses two points for each empty square on his game board. Scores can be negative. The player with the most points wins.",
-      "metaSource": "bgg-backfill"
+      "metaSource": "bgg-backfill",
+      "altTitles": [
+        "Patchwork"
+      ]
     },
     {
       "id": "skitsografies",
@@ -10420,7 +10528,10 @@
       "bggRank": null,
       "shortDescription": "Vintage 1990s Greek Pictionary-style drawing party game published by AS Company, where players sketch clues for teammates to guess.",
       "description": "\"Σκιτσογρίφοι\" (Skitsografies) is a vintage 1990s Greek drawing party game published by AS Company. It follows the classic Pictionary format: players draw clues on a pad while their team races to guess the word or phrase before time runs out. It is a team-based party/drawing game.",
-      "metaSource": "manual-backfill"
+      "metaSource": "manual-backfill",
+      "altTitles": [
+        "Σκιτσογρίφοι (Skitsografies)"
+      ]
     },
     {
       "id": "ice-team-265031",
@@ -10885,7 +10996,10 @@
           "src": "/textures/universus-ccg-258301/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Universal Fighting System"
+      ]
     },
     {
       "id": "the-crew-mission-deep-sea-324856",
@@ -11142,7 +11256,10 @@
           "src": "/textures/port-royagial-156009/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Port Royal"
+      ]
     },
     {
       "id": "lords-of-waterdeep-110327",
@@ -12547,7 +12664,10 @@
           "src": "/textures/slay-the-spire-338960/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Slay the Spire: The Board Game"
+      ]
     },
     {
       "id": "small-world-of-warcraft-309630",
@@ -13165,7 +13285,10 @@
           "src": "/textures/to-nisi-ton-peiraton-117663/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Piraten Kapern"
+      ]
     },
     {
       "id": "apagoreymeni-nisos-65244",
@@ -13299,7 +13422,10 @@
           "src": "/textures/apagoreymeni-nisos-65244/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Forbidden Island"
+      ]
     },
     {
       "id": "o-chartografos-263918",
@@ -13436,7 +13562,10 @@
           "src": "/textures/o-chartografos-263918/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Cartographers"
+      ]
     },
     {
       "id": "overboss-a-boss-monster-adventure-310192",
@@ -13704,7 +13833,10 @@
           "src": "/textures/the-lord-of-the-rings-duel-for-middle-earth-421006/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "The Lord of the Rings: Duel for Middle-earth"
+      ]
     },
     {
       "id": "reef-project-419199",
@@ -14179,7 +14311,10 @@
           "src": "/textures/dorfromantik-370591/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Dorfromantik: The Board Game"
+      ]
     },
     {
       "id": "trial-by-trolley-282171",
@@ -14657,7 +14792,10 @@
           "src": "/textures/o-katergaris-153065/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Linko"
+      ]
     },
     {
       "id": "autumn-harvest-a-tea-dragon-society-game-315138",
@@ -15136,7 +15274,10 @@
           "src": "/textures/skoteines-ypotheseis-oi-fonoi-tis-odoy-morgk-371/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Mystery Rummy: Murders in the Rue Morgue"
+      ]
     },
     {
       "id": "long-shot-the-dice-game-295374",
@@ -15655,7 +15796,10 @@
           "src": "/textures/istories-mystirioy-18803/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Black Stories"
+      ]
     },
     {
       "id": "poios-poy-pote-giati-party-edition",
@@ -15755,7 +15899,10 @@
       "bggRank": null,
       "shortDescription": "Greek trivia party game by Desyllas Games, released in themed editions (90s Memories, 80s, 00s, Television, Cinema) with hundreds of nostalgia and pop-culture questions.",
       "description": "\"Ποιος Πού Πότε Γιατί Party Edition\" is a Greek trivia party game published by Desyllas Games. It comes in several themed editions such as 90s Memories, 80s Memories, 00s Memories, Television and Cinema, each packed with questions about pop culture, history, music, film and TV. Designed for large groups and easy to start, it plays with up to 8 players (age varies by edition, roughly 5+ to 15+).",
-      "metaSource": "manual-backfill"
+      "metaSource": "manual-backfill",
+      "altTitles": [
+        "Ποιος Πού Πότε Γιατί Party Edition"
+      ]
     },
     {
       "id": "codenames-duet-224037",
@@ -15879,7 +16026,10 @@
           "src": "/textures/codenames-duet-224037/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Codenames: Duet"
+      ]
     },
     {
       "id": "the-isle-of-cats-duel-431718",
@@ -16132,7 +16282,10 @@
           "src": "/textures/one-night-ultimate-warewolf-147949/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "One Night Ultimate Werewolf"
+      ]
     },
     {
       "id": "one-night-ultimate-werewolf-daybreak-163166",
@@ -16880,7 +17033,10 @@
           "src": "/textures/the-fellowship-of-the-ring-trick-taking-game-429293/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game"
+      ]
     },
     {
       "id": "kinfire-delve-vainglory-s-grotto-391795",
@@ -17518,7 +17674,10 @@
           "src": "/textures/gia-to-vasileio-334590/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "For Northwood! A Solo Trick-Taking Game"
+      ]
     },
     {
       "id": "thalassa-charti-alati-367220",
@@ -17650,7 +17809,10 @@
           "src": "/textures/thalassa-charti-alati-367220/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Sea Salt & Paper"
+      ]
     },
     {
       "id": "spicy-299169",
@@ -19489,7 +19651,10 @@
           "src": "/textures/splendor-monomachia-364073/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Splendor Duel"
+      ]
     },
     {
       "id": "cyclades-legendary-edition-380619",
@@ -19892,7 +20057,10 @@
           "src": "/textures/oceans-deluxe-edition-232414/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Oceans"
+      ]
     },
     {
       "id": "skull-queen-423432",
@@ -20284,7 +20452,10 @@
           "src": "/textures/abyss-conspiracy-oi-archontes-toy-vythoy-276042/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Conspiracy: Abyss Universe"
+      ]
     },
     {
       "id": "parko-deinosayron-264055",
@@ -20415,7 +20586,10 @@
           "src": "/textures/parko-deinosayron-264055/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Draftosaurus"
+      ]
     },
     {
       "id": "kabuto-sumo-sakura-slam-410680",
@@ -22108,7 +22282,10 @@
           "src": "/textures/chamenes-politeies-50/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Lost Cities"
+      ]
     },
     {
       "id": "travelers-tokyo-405188",
@@ -22216,7 +22393,10 @@
           "src": "/textures/travelers-tokyo-405188/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Travelers: Tokyo"
+      ]
     },
     {
       "id": "babylon-418354",
@@ -25071,7 +25251,10 @@
           "src": "/textures/aneva-sti-sanida-367771/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Stomp the Plank"
+      ]
     },
     {
       "id": "savernake-forest-369142",
@@ -25941,7 +26124,10 @@
           "src": "/textures/dune-imperium-uprising-397598/thumb.webp",
           "source": "derived"
         }
-      }
+      },
+      "altTitles": [
+        "Dune: Imperium – Uprising"
+      ]
     }
   ],
   "enrichedAt": "2026-07-12",

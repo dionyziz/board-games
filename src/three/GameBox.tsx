@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import { RoundedBox } from '@react-three/drei';
 import { asset, type Game } from '../data';
@@ -10,6 +10,24 @@ import { acquire, release } from './textures';
 const BLACK = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1, THREE.RGBAFormat);
 BLACK.needsUpdate = true;
 const FACES = ['front', 'back', 'spine', 'top', 'bottom'] as const;
+
+// Rectangular metal tin (Sushi Go!, Forbidden Island): a rounded-rectangle
+// profile extruded along the depth — rounded corners on the sides, but a FLAT
+// front/back with crisp (un-bevelled) edges, so face-on it reads as a rounded
+// rectangle without the front art bending over the edges.
+function tinGeometry(W: number, H: number, D: number): THREE.ExtrudeGeometry {
+  const r = Math.min(W, H) * 0.07, x = -W / 2, y = -H / 2;
+  const s = new THREE.Shape();
+  s.moveTo(x + r, y);
+  s.lineTo(x + W - r, y); s.quadraticCurveTo(x + W, y, x + W, y + r);
+  s.lineTo(x + W, y + H - r); s.quadraticCurveTo(x + W, y + H, x + W - r, y + H);
+  s.lineTo(x + r, y + H); s.quadraticCurveTo(x, y + H, x, y + H - r);
+  s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y);
+  const g = new THREE.ExtrudeGeometry(s, { depth: D, bevelEnabled: false, curveSegments: 8, steps: 1 });
+  g.translate(0, 0, -D / 2); // centre on z: flat front at +D/2, back at −D/2
+  g.computeVertexNormals();
+  return g;
+}
 
 type Props = {
   game: Game;
@@ -49,13 +67,21 @@ export default function GameBox({ game, onClick, onPointerOver, onPointerOut, ..
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urls, paper, W, H, D]);
 
+  const isTin = game.box.shape === 'tin-rect';
+  const geom = useMemo(() => (isTin ? tinGeometry(W, H, D) : null), [isTin, W, H, D]);
+  useEffect(() => () => geom?.dispose(), [geom]);
+
+  const material = (
+    <meshPhysicalMaterial ref={matRef} color="#ffffff" roughness={0.6} metalness={0} clearcoat={0.45} clearcoatRoughness={0.34} envMapIntensity={1.0} />
+  );
+  const handlers = { onClick, onPointerOver, onPointerOut, ...rest };
+  if (geom) {
+    return <mesh geometry={geom} castShadow {...handlers}>{material}</mesh>;
+  }
   const radius = Math.min(W, H, D) * 0.06;
   return (
-    <RoundedBox
-      args={[W, H, D]} radius={radius} smoothness={6} castShadow
-      onClick={onClick} onPointerOver={onPointerOver} onPointerOut={onPointerOut} {...rest}
-    >
-      <meshPhysicalMaterial ref={matRef} color="#ffffff" roughness={0.6} metalness={0} clearcoat={0.45} clearcoatRoughness={0.34} envMapIntensity={1.0} />
+    <RoundedBox args={[W, H, D]} radius={radius} smoothness={6} castShadow {...handlers}>
+      {material}
     </RoundedBox>
   );
 }

@@ -141,7 +141,9 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
   useEffect(() => {
     if (selectedIndex !== lastSel.current) {
-      if (selectedIndex >= 0) { anchor.current.copy(DET_POS); scrollTarget.current = selectedIndex; }
+      // snap the column straight to the target (deep-link / pasted #-URL / jump to
+      // another game) instead of animating a long scroll through the library
+      if (selectedIndex >= 0) { anchor.current.copy(DET_POS); scrollTarget.current = selectedIndex; scroll.current = selectedIndex; }
       else { anchor.current.copy(camera.position); }        // freeze current pose so back doesn't jump
       lastSel.current = selectedIndex;
       userControl.current = false;                          // new view state: rig drives again
