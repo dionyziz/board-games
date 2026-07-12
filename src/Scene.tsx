@@ -6,9 +6,10 @@ import * as THREE from 'three';
 import type { Game } from './data';
 import GameBox from './three/GameBox';
 import { Env, Lights } from './three/Lights';
+import { onLoaded, setMaxAniso } from './three/textures';
 
 const SPACING = 3.4;
-const WINDOW = 4;
+const WINDOW = 3; // boxes mounted each side of the focused one (only ~3 are ever on-screen)
 const GAL_POS = new THREE.Vector3(0, 0, 7);
 const DET_POS = new THREE.Vector3(3.0, 2.1, 6.2);
 const WORLD_UP = new THREE.Vector3(0, 1, 0);
@@ -19,6 +20,7 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
   const ref = useRef<THREE.Group>(null!);
   const [hover, setHover] = useState(false);
   const v = useMemo(() => new THREE.Vector3(), []);
+  const invalidate = useThree((s) => s.invalidate);
   useFrame((_, dt) => {
     const grp = ref.current;
     if (!grp) return;
@@ -29,14 +31,16 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
     grp.scale.lerp(v.set(target, target, target), 1 - Math.pow(0.0015, dt));
     const rot = isSel ? -0.5 : hover ? -0.35 : -0.6;
     grp.rotation.y += (rot - grp.rotation.y) * Math.min(1, dt * 6);
+    // keep animating (demand mode) until the hover pop/tilt settles
+    if (Math.abs(grp.scale.x - target) > 0.001 || Math.abs(grp.rotation.y - rot) > 0.001) invalidate();
   });
   return (
     <group ref={ref} position={[0, -index * SPACING, 0]} rotation-y={-0.6}>
       <GameBox
         game={game}
         onClick={(e: any) => { e.stopPropagation(); onOpen(game.id); }}
-        onPointerOver={(e: any) => { e.stopPropagation(); setHover(true); document.body.style.cursor = 'pointer'; }}
-        onPointerOut={() => { setHover(false); document.body.style.cursor = 'auto'; }}
+        onPointerOver={(e: any) => { e.stopPropagation(); setHover(true); document.body.style.cursor = 'pointer'; invalidate(); }}
+        onPointerOut={() => { setHover(false); document.body.style.cursor = 'auto'; invalidate(); }}
       />
     </group>
   );
@@ -45,7 +49,10 @@ function Item({ game, index, tr, onOpen }: { game: Game; index: number; tr: Reac
 function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
   list: Game[]; selectedIndex: number; onOpen: (id: string) => void; onCenter: (i: number) => void;
 }) {
-  const { camera, gl } = useThree();
+  const { camera, gl, invalidate } = useThree();
+
+  // demand rendering: repaint when a pooled texture finishes loading
+  useEffect(() => { setMaxAniso(gl.capabilities.getMaxAnisotropy()); onLoaded(invalidate); }, [gl, invalidate]);
   const tr = useRef<Tr>({ p: selectedIndex >= 0 ? 1 : 0, selected: selectedIndex });
   const column = useRef<THREE.Group>(null!);
   const ground = useRef<any>(null!);
@@ -71,6 +78,7 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     const onWheel = (e: WheelEvent) => {
       if (tr.current.selected >= 0) return;
       scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + e.deltaY * 0.0022, 0, N() - 1);
+      invalidate();
     };
     let lastY = 0;
     const onTouchStart = (e: TouchEvent) => { lastY = e.touches[0].clientY; };
@@ -78,10 +86,10 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       if (tr.current.selected >= 0) return;
       const y = e.touches[0].clientY;
       scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current + (lastY - y) * 0.01, 0, N() - 1);
-      lastY = y;
+      lastY = y; invalidate();
     };
     // in detail, the first pointerdown/wheel means "I'm driving now" → rig yields
-    const takeover = () => { if (tr.current.selected >= 0) userControl.current = true; };
+    const takeover = () => { if (tr.current.selected >= 0) { userControl.current = true; invalidate(); } };
     el.addEventListener('wheel', onWheel, { passive: true });
     el.addEventListener('wheel', takeover, { passive: true });
     el.addEventListener('pointerdown', takeover);
@@ -105,9 +113,10 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
       else { anchor.current.copy(camera.position); }        // freeze current pose so back doesn't jump
       lastSel.current = selectedIndex;
       userControl.current = false;                          // new view state: rig drives again
+      invalidate();                                         // kick the transition arc
     }
     tr.current.selected = selectedIndex;
-  }, [selectedIndex, camera]);
+  }, [selectedIndex, camera, invalidate]);
 
   useFrame((state, dt) => {
     const t = tr.current;
@@ -143,6 +152,10 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
 
     const idx = Math.round(scroll.current);
     if (idx !== lastCenter.current) { lastCenter.current = idx; setCenter(idx); onCenter(idx); }
+
+    // demand rendering: keep requesting frames only while something is moving
+    const moving = Math.abs(scroll.current - scrollTarget.current) > 0.0005 || (t.selected >= 0 && !userControl.current && Math.abs(t.p - goal) > 0.0005);
+    if (moving) invalidate();
   });
 
   const focus = selectedIndex >= 0 ? selectedIndex : center;
@@ -174,9 +187,10 @@ export default function Scene(props: { list: Game[]; selectedIndex: number; onOp
   return (
     <Canvas
       shadows
-      dpr={[1, 2]}
+      frameloop="demand"
+      dpr={[1, 1.75]}
       camera={{ fov: 35, position: [0, 0, 7] }}
-      gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05, antialias: false }}
+      gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05, antialias: false, powerPreference: 'high-performance' }}
     >
       <Suspense fallback={null}>
         <SceneInner {...props} />
