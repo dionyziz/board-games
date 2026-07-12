@@ -18,6 +18,7 @@ export type Game = {
   players?: { min: number; max: number };
   playtime?: { min: number; max: number };
   complexity?: number;
+  minAge?: number;
   categories?: string[];
   shortDescription?: string;
   description?: string;
@@ -54,6 +55,34 @@ export function searchBlob(g: Game): string {
     blobs.set(g.id, b);
   }
   return b;
+}
+
+// ---- facet filters ---------------------------------------------------------
+export type Facet = { id: 'players' | 'age' | 'type'; label: string; values: { key: string; label: string }[] };
+
+export const facets: Facet[] = (() => {
+  const players = [1, 2, 3, 4, 5, 6].map((n) => ({ key: 'players:' + n, label: n === 6 ? '6+' : String(n) }));
+  const ages = [...new Set(games.map((g) => g.minAge).filter((a): a is number => !!a))].sort((a, b) => a - b)
+    .map((a) => ({ key: 'age:' + a, label: a + '+' }));
+  const freq: Record<string, number> = {};
+  for (const g of games) for (const c of g.categories || []) freq[c] = (freq[c] || 0) + 1;
+  const types = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([c]) => ({ key: 'type:' + c, label: c }));
+  return [
+    { id: 'players', label: 'Players', values: players },
+    { id: 'age', label: 'Age', values: ages },
+    { id: 'type', label: 'Type', values: types },
+  ];
+})();
+
+// AND across facets, OR within a facet. Empty selection = no constraint.
+export function matchesFilters(g: Game, sel: Set<string>): boolean {
+  if (sel.size === 0) return true;
+  const by: Record<string, string[]> = { players: [], age: [], type: [] };
+  for (const k of sel) { const i = k.indexOf(':'); (by[k.slice(0, i)] ||= []).push(k.slice(i + 1)); }
+  if (by.players.length && !by.players.some((v) => g.players && (v === '6' ? g.players.max >= 6 : g.players.min <= +v && +v <= g.players.max))) return false;
+  if (by.age.length && !by.age.some((v) => g.minAge === +v)) return false;
+  if (by.type.length && !by.type.some((v) => (g.categories || []).includes(v))) return false;
+  return true;
 }
 
 // BGG text carries HTML entities (e.g. Nazg&ucirc;l); decode for display.

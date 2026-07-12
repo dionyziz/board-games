@@ -1,9 +1,12 @@
-import type { Game } from '../data';
+import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
-export function GalleryOverlay({ game, count, query, onQuery }: {
+export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocus, onBlur, sel, onToggle, onClearFilters }: {
   game?: Game; count: number; query: string; onQuery: (q: string) => void;
+  filterOpen: boolean; onFocus: () => void; onBlur: () => void;
+  sel: Set<string>; onToggle: (k: string) => void; onClearFilters: () => void;
 }) {
+  const hasFilters = sel.size > 0;
   return (
     <div className="gallery-overlay fade-in">
       <div className="top">
@@ -13,20 +16,39 @@ export function GalleryOverlay({ game, count, query, onQuery }: {
             <input
               value={query}
               onChange={(e) => onQuery(e.target.value)}
+              onFocus={onFocus}
+              onBlur={onBlur}
               placeholder="Search title, designer, category…"
               aria-label="Search games"
               autoComplete="off"
               spellCheck={false}
             />
-            {query ? (
-              <button className="clear" aria-label="Clear search" onClick={() => onQuery('')}>×</button>
-            ) : null}
+            {query ? <button className="clear" aria-label="Clear search" onClick={() => onQuery('')}>×</button> : null}
           </div>
           <span className="count">{count} {count === 1 ? 'game' : 'games'}</span>
         </div>
       </div>
+
+      {filterOpen ? (
+        <div className="filters" onMouseDown={(e) => e.preventDefault()}>
+          {facets.map((f) => (
+            <div className="facet" key={f.id}>
+              <span className="facet-label">{f.label}</span>
+              {f.values.map((v) => (
+                <button
+                  key={v.key}
+                  className={'pill' + (sel.has(v.key) ? ' on' : '')}
+                  onClick={() => onToggle(v.key)}
+                >{v.label}</button>
+              ))}
+            </div>
+          ))}
+          {hasFilters ? <button className="pill clear-pills" onClick={onClearFilters}>Clear filters ×</button> : null}
+        </div>
+      ) : null}
+
       <div className="centered">
-        {game ? <h2>{game.title}</h2> : <h2 className="none">No matches</h2>}
+        {game ? <h2>{game.title}</h2> : <h2 className="none">{filterOpen ? 'Pick filters or search' : 'No matches'}</h2>}
         {game?.designers?.length ? <div className="by">{game.designers.join(', ')}</div> : null}
       </div>
       <div className="scrollhint">scroll ↓ · click a box to open</div>

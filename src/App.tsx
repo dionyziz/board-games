@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
-import { games, bySlug, norm, searchBlob } from './data';
+import { games, bySlug, norm, searchBlob, matchesFilters } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
 
 // One persistent Canvas across both views; the route only drives which box is
@@ -14,13 +14,19 @@ function Shell() {
   const slug = m ? decodeURIComponent(m[1]) : null;
 
   const [query, setQuery] = useState('');
-  // forgiving match: every normalized token must appear in the game's blob
+  const [sel, setSel] = useState<Set<string>>(new Set());
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [center, setCenterIdx] = useState(0);
+
   const filtered = useMemo(() => {
     const tokens = query.trim().split(/\s+/).map(norm).filter(Boolean);
-    if (!tokens.length) return games;
-    return games.filter((g) => { const b = searchBlob(g); return tokens.every((t) => b.includes(t)); });
-  }, [query]);
-  const [center, setCenterIdx] = useState(0);
+    const active = tokens.length > 0 || sel.size > 0;
+    // filter mode engaged (search focused) but nothing chosen → hide everything
+    if (filterOpen && !active) return [];
+    return games.filter((g) => tokens.every((t) => searchBlob(g).includes(t)) && matchesFilters(g, sel));
+  }, [query, sel, filterOpen]);
+
+  const toggle = (key: string) => setSel((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; });
 
   const selectedIndex = slug ? filtered.findIndex((g) => g.id === slug) : -1;
 
@@ -34,7 +40,15 @@ function Shell() {
       />
       {slug
         ? <DetailOverlay key={slug} game={bySlug(slug)} onBack={() => navigate('/')} />
-        : <GalleryOverlay game={filtered[center]} count={filtered.length} query={query} onQuery={setQuery} />}
+        : <GalleryOverlay
+            game={filtered[center]} count={filtered.length}
+            query={query} onQuery={setQuery}
+            filterOpen={filterOpen}
+            onFocus={() => setFilterOpen(true)}
+            onBlur={() => { if (!query.trim() && sel.size === 0) setFilterOpen(false); }}
+            sel={sel} onToggle={toggle}
+            onClearFilters={() => { setSel(new Set()); setQuery(''); }}
+          />}
     </div>
   );
 }
