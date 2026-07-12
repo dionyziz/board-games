@@ -5455,7 +5455,9 @@
           "h": 27.7,
           "d": 5.7
         },
-        "orientation": "square"
+        "orientation": "square",
+        "shape": "tin-rect",
+        "cornerR": 0.16
       },
       "textures": {
         "front": {
@@ -9198,7 +9200,7 @@
           "h": 26.5,
           "d": 5.5
         },
-        "orientation": "landscape"
+        "orientation": "portrait"
       },
       "textures": {
         "front": {
@@ -10297,7 +10299,7 @@
           "h": 21,
           "d": 6
         },
-        "orientation": "portrait"
+        "orientation": "square"
       },
       "textures": {
         "front": {
