@@ -1,0 +1,16 @@
+{
+  "_comment": "Games whose real packaging is NOT a standard rectangular cardboard box. From a vision audit of every cover (scripts/gallery-cache/_shapes) plus product-knowledge additions where the flat cover art hid the true shape. `source`: 'image' = visible in the cover, 'product-knowledge' = known real packaging not visible in art. Consumed by future rendering work — see PACKAGE-SHAPES.md. Absence of an entry ⇒ treated as a box.",
+  "shapes": {
+    "dobble-63268":                     { "shape": "round-tin", "confidence": 0.98, "source": "image", "note": "Circular metal tin, visible cylindrical body + lid rim." },
+    "happy-salmon-194626":              { "shape": "bag",       "confidence": 0.97, "source": "image", "note": "Soft fish-shaped fabric zippered pouch." },
+    "bag-of-chips-344114":              { "shape": "bag",       "confidence": 0.97, "source": "image", "note": "Foil resealable snack-style pouch (says 'RESEALABLE BAG')." },
+    "chupacabra-survive-the-night-120515": { "shape": "tube",  "confidence": 0.85, "source": "image", "note": "Cylindrical canister/dice-cup tube, curved body + rounded top." },
+    "love-letter-277085":               { "shape": "blister",   "confidence": 0.85, "source": "image", "note": "Plastic clamshell holding a red velvet drawstring bag of cards." },
+    "who-am-i-33406":                   { "shape": "blister",   "confidence": 0.7,  "source": "image", "note": "Retail hang-card backer with a wipe-clean pen attached." },
+    "ntama-2083":                       { "shape": "other",     "confidence": 0.85, "source": "image", "note": "Ντάμα — solid marble draughts board with round pieces, no cardboard box." },
+    "connect-4-shots-258818":           { "shape": "other",     "confidence": 0.8,  "source": "image", "note": "Molded blue plastic carrying case with a handle." },
+    "apagoreymeni-nisos-65244":         { "shape": "tin-rect",  "confidence": 0.6,  "source": "product-knowledge", "note": "Forbidden Island (Gamewright) ships in a rectangular METAL tin; art shows no rim." },
+    "sushi-go-133473":                  { "shape": "tin-rect",  "confidence": 0.6,  "source": "product-knowledge", "note": "Sushi Go! ships in a small rectangular metal tin; art is flat." },
+    "zombie-dice-horde-edition-224035": { "shape": "tube",      "confidence": 0.55, "source": "product-knowledge", "note": "Ships in a cardboard tube; art is flat cover only." }
+  }
+}
