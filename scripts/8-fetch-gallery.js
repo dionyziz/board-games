@@ -13,39 +13,19 @@
 // Emits: BACK=<path> SPINE=<path> TOP=<path> BOTTOM=<path>  (empty if none)
 // Writes: scripts/gallery-cache/<id>/{gallery.json, <face>-src.<ext>}
 // Incremental: reuses cached gallery candidates; only decides faces not yet decided.
-const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
-
-const ROOT = path.join(__dirname, '..');
-const CACHE = path.join(__dirname, 'gallery-cache');
-const UA = 'Mozilla/5.0 (board-games texture pipeline; contact dionyziz)';
+const L = require('./lib');
+const { fs, path, sharp, GALLERY, UA, sleep, fetchRetry, loadGames } = L;
 const PAGES = 5;
 const FACES = ['back', 'spine', 'top', 'bottom'];
 
 const refresh = process.argv.includes('--refresh');
 const gameId = process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
-const games = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/games.json'), 'utf8'));
-const list = Array.isArray(games) ? games : games.games;
-const g = list.find((x) => x.id === gameId);
+const g = loadGames().list.find((x) => x.id === gameId);
 if (!g) { console.error('game not found: ' + gameId); process.exit(1); }
 
-const dir = path.join(CACHE, g.id);
+const dir = path.join(GALLERY, g.id);
 fs.mkdirSync(dir, { recursive: true });
 const galleryFile = path.join(dir, 'gallery.json');
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function fetchRetry(url, opts, tries = 3) {
-  for (let t = 0; t < tries; t++) {
-    try {
-      const r = await fetch(url, opts);
-      if (r.ok) return r;
-      if (r.status === 429 || r.status >= 500) { await sleep(800 * (t + 1)); continue; }
-      return r;
-    } catch (e) { await sleep(800 * (t + 1)); }
-  }
-  return null;
-}
 
 const BAD = /(gameplay|game ?state|setup|\bturn\b|\bwin\b|\bplay(ed|ing|through)?\b|board\b|\bcards?\b|meeple|miniature|\bminis?\b|component|insert|\binside\b|sleeve|token|\btable\b|unbox|review|\bwip\b|paint)/i;
 const FACE_KW = {

@@ -1,6 +1,7 @@
 import raw from './data/games.json';
+import { transliterate } from 'transliteration';
 
-export type Face = { src: string; source: string; normalized?: boolean };
+export type Face = { src: string; source: string; normalized?: boolean; bump?: string };
 export type Box = {
   size: { w: number; h: number; d: number };
   face?: { w: number; h: number; d: number };
@@ -33,24 +34,16 @@ export const games: Game[] = ((raw as any).games || raw) as Game[];
 export const bySlug = (slug: string) => games.find((g) => g.id === slug);
 
 // ---- forgiving search normalization ----------------------------------------
-// Case-insensitive, accent-insensitive, Greek↔Latin interchangeable, final
-// sigma == sigma, punctuation/space-insensitive. So ΚΑΤΑΝ / Katan / κατάν all
-// normalize to the same string.
-const GR2LA: Record<string, string> = {
-  α: 'a', β: 'v', γ: 'g', δ: 'd', ε: 'e', ζ: 'z', η: 'i', θ: 'th', ι: 'i', κ: 'k',
-  λ: 'l', μ: 'm', ν: 'n', ξ: 'x', ο: 'o', π: 'p', ρ: 'r', σ: 's', ς: 's', τ: 't',
-  υ: 'y', φ: 'f', χ: 'ch', ψ: 'ps', ω: 'o',
-};
+// Romanize ANY script to ASCII (Greek, Cyrillic, CJK, accents, …) with the
+// `transliteration` library, then fold case and drop non-alphanumerics — so
+// ΚΑΤΑΝ / Katan / κατάν all normalize to "katan", café == cafe, etc.
 export function norm(s?: string): string {
   if (!s) return '';
-  return s.toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')      // strip Latin + Greek accents
-    .replace(/[α-ως]/g, (c) => GR2LA[c] || c) // transliterate Greek → Latin
-    .replace(/[^a-z0-9]+/g, '');                            // drop spaces/punctuation
+  return transliterate(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
-// cached per-game searchable blob (each field normalized, joined by a separator
-// that a normalized token can never span)
+// cached per-game searchable blob (each field normalized, joined by a control
+// char a normalized token can never span)
 const SEP = '';
 const blobs = new Map<string, string>();
 export function searchBlob(g: Game): string {

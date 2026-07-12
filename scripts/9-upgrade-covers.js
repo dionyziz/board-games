@@ -6,34 +6,18 @@
 //   node scripts/9-upgrade-covers.js [--shard i/N] [--apply] [gameId]
 // Without --apply: report only. With --apply: replace covers/<id>.jpg + regen
 // textures/<id>/{cover,thumb}.webp at hi-res.
-const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
-
-const ROOT = path.join(__dirname, '..');
-const COVERS = path.join(ROOT, 'public', 'covers');
-const TEX = path.join(ROOT, 'public', 'textures');
-const CACHE = path.join(__dirname, 'bgg-cache');
-const UA = 'Mozilla/5.0 (board-games texture pipeline; contact dionyziz)';
+const L = require('./lib');
+const { fs, path, sharp, COVERS, TEX, CACHE, sleep, grabBuffer, loadGames } = L;
 const MAX_COVER = 1024, MAX_THUMB = 320;
 
 const apply = process.argv.includes('--apply');
 const arg = (n) => { const i = process.argv.indexOf(n); return i >= 0 ? process.argv[i + 1] : null; };
 const only = process.argv.find((a, i) => i >= 2 && !a.startsWith('--') && (process.argv[i - 1] || '').indexOf('--shard') < 0);
-const games = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/games.json'), 'utf8'));
-let list = (Array.isArray(games) ? games : games.games).map((g, i) => ({ g, i }));
+let list = loadGames().list.map((g, i) => ({ g, i }));
 if (only) list = list.filter((w) => w.g.id === only);
 const shard = arg('--shard');
 if (shard) { const [ix, n] = shard.split('/').map(Number); list = list.filter((w) => w.i % n === (ix - 1)); }
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function grab(url) {
-  for (let t = 0; t < 3; t++) {
-    try { const r = await fetch(url, { headers: { 'User-Agent': UA } }); if (r.ok) return Buffer.from(await r.arrayBuffer()); } catch (e) {}
-    await sleep(600 * (t + 1));
-  }
-  return null;
-}
+const grab = grabBuffer;
 // 16x16 grayscale mean-abs-diff (0=identical .. 1=totally different)
 async function adiff(a, b) {
   const g = (buf) => sharp(buf).resize(16, 16, { fit: 'fill' }).grayscale().raw().toBuffer();

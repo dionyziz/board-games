@@ -7,15 +7,10 @@
 //
 //   node scripts/12-trim-whitespace.js [--apply] [gameId]
 // Without --apply it only reports; with --apply it rewrites the .webp in place.
-const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
-
-const ROOT = path.join(__dirname, '..');
+const { fs, path, sharp, ROOT, loadGames } = require('./lib');
 const apply = process.argv.includes('--apply');
 const only = process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
-const games = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/games.json'), 'utf8'));
-const list = (Array.isArray(games) ? games : games.games).filter((g) => !only || g.id === only);
+const list = loadGames().list.filter((g) => !only || g.id === only);
 
 const PHOTO = new Set(['airtable', 'bgg-hires', 'photo']); // faces that can carry scan/photo whitespace
 const MIN = 0.04, MAX = 0.55; // trim only a meaningful-but-not-destructive border

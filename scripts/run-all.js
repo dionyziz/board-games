@@ -10,12 +10,8 @@
 //
 // --fetch : per game -> 8-fetch-gallery.js  (parallel-safe)
 // --build : per game -> 10-gen-faces.js (+cached back) -> gen-top-band.js  (sequential)
-const fs = require('fs');
-const path = require('path');
 const { execFile } = require('child_process');
-
-const ROOT = path.join(__dirname, '..');
-const CACHE = path.join(__dirname, 'gallery-cache');
+const { path, ROOT, loadGames, pool } = require('./lib');
 const NODE = process.execPath;
 
 const arg = (name, def) => {
@@ -24,8 +20,7 @@ const arg = (name, def) => {
 };
 const has = (name) => process.argv.includes(name);
 
-const games = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/games.json'), 'utf8'));
-const list = Array.isArray(games) ? games : games.games;
+const list = loadGames().list;
 
 // worklist
 let work = list.map((g, i) => ({ g, i }));
@@ -44,14 +39,6 @@ function run(script, args, timeout = 120000) {
   });
 }
 
-async function pool(items, concurrency, fn) {
-  let idx = 0; const results = [];
-  const workers = Array.from({ length: concurrency }, async () => {
-    while (idx < items.length) { const k = idx++; results[k] = await fn(items[k], k); }
-  });
-  await Promise.all(workers);
-  return results;
-}
 
 (async () => {
   const total = work.length;
