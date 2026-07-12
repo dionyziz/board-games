@@ -30,7 +30,9 @@ export default function Bag({ game, onClick, onPointerOver, onPointerOut, ...res
     const front = new THREE.MeshPhysicalMaterial({ color: '#ffffff' });
     const back = new THREE.MeshPhysicalMaterial({ color: fish ? '#ffffff' : (box.edgeColor || '#2a2a2e') });
     if (fish) {
-      for (const m of [front, back]) { m.roughness = 0.9; m.sheen = 0.7; m.sheenRoughness = 0.85; m.transparent = true; m.alphaTest = 0.4; m.side = THREE.DoubleSide; }
+      // closed pouch is one opaque mesh; alphaTest clips any edge overshoot (no
+      // transparency sorting), DoubleSide guards against winding surprises
+      for (const m of [front, back]) { m.roughness = 0.9; m.sheen = 0.7; m.sheenRoughness = 0.85; m.alphaTest = 0.5; m.side = THREE.DoubleSide; }
     } else {
       front.roughness = back.roughness = 0.32; front.metalness = 0.25; back.metalness = 0.4;
       front.clearcoat = back.clearcoat = 0.5; front.clearcoatRoughness = 0.35;
@@ -48,10 +50,9 @@ export default function Bag({ game, onClick, onPointerOver, onPointerOut, ...res
   return (
     <group onClick={onClick} onPointerOver={onPointerOver} onPointerOut={onPointerOut} {...rest}>
       <mesh geometry={geo} material={mats.front} castShadow />
-      {/* back shares the SAME geometry mirrored in z (not rotated), so the two
-          bulged faces have the identical silhouette and meet at the seam; the
-          z-flip also mirrors the texture, so the fish reads correctly from behind */}
-      <mesh geometry={geo} material={mats.back} scale={[1, 1, -1]} castShadow />
+      {/* fish is a single watertight pouch (both caps in one geometry); the foil
+          pillow needs a mirrored back plane to close it */}
+      {fish ? null : <mesh geometry={geo} material={mats.back} scale={[1, 1, -1]} castShadow />}
     </group>
   );
 }

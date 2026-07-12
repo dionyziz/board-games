@@ -15,7 +15,7 @@ export type Box = {
   cylTex?: string;                                   // dedicated flat cap/wrap art (preferred over cover)
   cornerR?: number;                                  // tin-rect corner radius, fraction of min(w,h)
   flap?: { src: string; hFrac: number; cornerR?: number;
-    hole?: { x1: number; y1: number; x2: number; y2: number; ccx: number; ccy: number; cr: number; rr?: number } };
+    hole?: { x1: number; y1: number; x2: number; y2: number; cr: number; rr?: number } };
   bag?: 'foil' | 'fish';                             // pouch kind (bag shape)
   bagOutline?: { aspect: number; poly: number[][] }; // fish silhouette (measured), for a closed pouch
   model?: string;                                    // ready-made glTF to render instead (label re-textured onto it)
