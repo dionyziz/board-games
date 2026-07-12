@@ -102,6 +102,35 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
     };
   }, [gl, list]);
 
+  // keyboard navigation (gallery only): j/↓ next, k/↑ prev — always snapping to
+  // the EXACT adjacent game even from a fractional (mid-scroll) position;
+  // →/Enter opens the centered game.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (tr.current.selected >= 0) return;                       // gallery only
+      const el = document.activeElement;
+      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) return; // don't hijack search typing
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const N = list.length; if (!N) return;
+      const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+      if (key === 'j' || key === 'ArrowDown') {
+        e.preventDefault();
+        scrollTarget.current = THREE.MathUtils.clamp(Math.floor(scrollTarget.current + 1e-3) + 1, 0, N - 1);
+        invalidate();
+      } else if (key === 'k' || key === 'ArrowUp') {
+        e.preventDefault();
+        scrollTarget.current = THREE.MathUtils.clamp(Math.ceil(scrollTarget.current - 1e-3) - 1, 0, N - 1);
+        invalidate();
+      } else if (key === 'ArrowRight' || key === 'Enter') {
+        e.preventDefault();
+        const idx = THREE.MathUtils.clamp(Math.round(scroll.current), 0, N - 1);
+        if (list[idx]) onOpen(list[idx].id);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [list, onOpen, invalidate]);
+
   // clamp scroll when the filtered list shrinks
   useEffect(() => {
     scrollTarget.current = THREE.MathUtils.clamp(scrollTarget.current, 0, Math.max(0, list.length - 1));
@@ -178,7 +207,9 @@ function SceneInner({ list, selectedIndex, onOpen, onCenter }: {
         ))}
       </group>
       <ContactShadows ref={ground} position={[0, -1.4, 0]} scale={12} blur={2.6} opacity={0.4} far={9} visible={false} />
-      <TrackballControls enabled={selectedIndex >= 0} makeDefault rotateSpeed={3} zoomSpeed={1.4} noPan staticMoving minDistance={2.5} maxDistance={16} />
+      {/* staticMoving off → the release keeps its angular velocity and friction
+          (dynamicDampingFactor) glides it to a halt: a quick, natural spin-down. */}
+      <TrackballControls enabled={selectedIndex >= 0} makeDefault rotateSpeed={3} zoomSpeed={1.4} noPan dynamicDampingFactor={0.12} minDistance={2.5} maxDistance={16} />
     </>
   );
 }

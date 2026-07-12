@@ -49,7 +49,7 @@ export function GalleryOverlay({ game, count, query, onQuery, filterOpen, onFocu
       ) : null}
 
       <div className="centered">
-        {game ? <h2>{game.title}</h2> : <h2 className="none">{filterOpen ? 'Pick filters or search' : 'No matches'}</h2>}
+        {game ? <h2>{game.title}</h2> : <h2 className="none">No matches</h2>}
         {game?.designers?.length ? <div className="by">{game.designers.join(', ')}</div> : null}
       </div>
       <div className="scrollhint">scroll ↓ · click a box to open</div>

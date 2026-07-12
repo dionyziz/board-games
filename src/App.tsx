@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
 import { games, bySlug, norm, searchBlob, matchesFilters } from './data';
@@ -20,13 +20,21 @@ function Shell() {
 
   const filtered = useMemo(() => {
     const tokens = query.trim().split(/\s+/).map(norm).filter(Boolean);
-    const active = tokens.length > 0 || sel.size > 0;
-    // filter mode engaged (search focused) but nothing chosen → hide everything
-    if (filterOpen && !active) return [];
+    // no query + no pills = no constraint → the whole library (applied instantly)
     return games.filter((g) => tokens.every((t) => searchBlob(g).includes(t)) && matchesFilters(g, sel));
-  }, [query, sel, filterOpen]);
+  }, [query, sel]);
 
   const toggle = (key: string) => setSel((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; });
+
+  // in a detail view, Esc / ← return to the library
+  useEffect(() => {
+    if (!slug) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' || e.key === 'ArrowLeft') { e.preventDefault(); navigate('/'); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [slug, navigate]);
 
   const selectedIndex = slug ? filtered.findIndex((g) => g.id === slug) : -1;
 

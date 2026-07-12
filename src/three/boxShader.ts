@@ -34,8 +34,12 @@ export function attachBoxShader(mat: THREE.MeshPhysicalMaterial, tex: FaceMap, b
         varying vec3 vObjPos; varying vec3 vObjNormal; varying mat3 vNMat;
         float gEmboss = 0.0;          // gate: text present at this fragment
         vec3  gNormalO = vec3(0.0);   // analytic object-space normal (with emboss)
+        float gSeamDark = 1.0;        // lid-seam shadow darkening (edge faces only)
         const float EMB = 2.6;        // emboss strength
         const float E = 0.004;        // texel step for the height gradient (uv)
+        const float SEAM_FRAC = 0.7;  // lid seam depth: fraction from the front (cover) toward the back
+        const float SEAM_W = 0.02;    // groove half-width (object units)
+        const float SEAM_SLOPE = 0.7; // groove-wall normal tilt
         float hash(vec3 p){ p = fract(p*0.3183099+0.1); p *= 17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
         float vnoise(vec3 x){ vec3 i=floor(x), f=fract(x); f=f*f*(3.0-2.0*f);
           return mix(mix(mix(hash(i+vec3(0,0,0)),hash(i+vec3(1,0,0)),f.x),
@@ -50,6 +54,21 @@ export function attachBoxShader(mat: THREE.MeshPhysicalMaterial, tex: FaceMap, b
           gEmboss = max(c, max(abs(hu), abs(hv)) * 3.0);
           gNormalO = normalize(No - EMB * (hu * Tu + hv * Tv));
         }
+        // A recessed lid seam: a shallow V-groove at object depth z = zSeam. Called
+        // only on the four EDGE faces, so it forms a rectangular loop around the box
+        // (a "square around the back") — the parting line of a lid+base box. Never
+        // touches the printed cover. Front wall tilts +z, back wall -z → a crease.
+        void seam(vec3 p, vec3 No){
+          float zSeam = uHalf.z * (1.0 - 2.0 * SEAM_FRAC);
+          float sd = p.z - zSeam;
+          float g = clamp(1.0 - abs(sd) / SEAM_W, 0.0, 1.0);
+          if (g <= 0.0) return;
+          g = g * g * (3.0 - 2.0 * g);
+          vec3 base = (gEmboss > 0.0) ? gNormalO : No;
+          gNormalO = normalize(base - SEAM_SLOPE * sign(sd) * g * vec3(0.0, 0.0, 1.0));
+          gEmboss = max(gEmboss, g);
+          gSeamDark = 1.0 - 0.2 * g;
+        }
         vec4 boxAlbedo(){
           vec3 n = normalize(vObjNormal); vec3 an = abs(n); vec3 p = vObjPos; vec2 uv;
           if (an.z >= an.x && an.z >= an.y){
@@ -58,19 +77,22 @@ export function attachBoxShader(mat: THREE.MeshPhysicalMaterial, tex: FaceMap, b
             vec2 s = vec2(1.0-uv.x, uv.y); emboss(bBack, s, vec3(-1,0,0), vec3(0,1,0), vec3(0,0,-1)); return texture2D(tBack, s);
           } else if (an.x >= an.y){
             uv = vec2(p.z/uHalf.z, p.y/uHalf.y)*0.5+0.5;
-            if (n.x >= 0.0){ vec2 s = vec2(1.0-uv.x, uv.y); emboss(bSpine, s, vec3(0,0,-1), vec3(0,1,0), vec3(1,0,0)); return texture2D(tSpine, s); }
-            emboss(bSpine, uv, vec3(0,0,1), vec3(0,1,0), vec3(-1,0,0)); return texture2D(tSpine, uv);
+            if (n.x >= 0.0){ vec2 s = vec2(1.0-uv.x, uv.y); emboss(bSpine, s, vec3(0,0,-1), vec3(0,1,0), vec3(1,0,0)); seam(p, vec3(1,0,0)); return texture2D(tSpine, s); }
+            emboss(bSpine, uv, vec3(0,0,1), vec3(0,1,0), vec3(-1,0,0)); seam(p, vec3(-1,0,0)); return texture2D(tSpine, uv);
           } else {
             uv = vec2(p.x/uHalf.x, p.z/uHalf.z)*0.5+0.5;
-            if (n.y >= 0.0){ vec2 s = vec2(uv.x, 1.0-uv.y); emboss(bTop, s, vec3(1,0,0), vec3(0,0,-1), vec3(0,1,0)); return texture2D(tTop, s); }
-            emboss(bBottom, uv, vec3(1,0,0), vec3(0,0,1), vec3(0,-1,0)); return texture2D(tBottom, uv);
+            if (n.y >= 0.0){ vec2 s = vec2(uv.x, 1.0-uv.y); emboss(bTop, s, vec3(1,0,0), vec3(0,0,-1), vec3(0,1,0)); seam(p, vec3(0,1,0)); return texture2D(tTop, s); }
+            emboss(bBottom, uv, vec3(1,0,0), vec3(0,0,1), vec3(0,-1,0)); seam(p, vec3(0,-1,0)); return texture2D(tBottom, uv);
           }
         }`)
       .replace('#include <map_fragment>', `
         vec4 faceCol = boxAlbedo();
-        diffuseColor.rgb *= faceCol.rgb;`)
+        diffuseColor.rgb *= faceCol.rgb * gSeamDark;`)
+      // cardboard micro-roughness — but NOT under the letters: gate the grain by
+      // (1-gEmboss) so the box bump doesn't exist where text is, and lower the
+      // roughness there so the raised letters read as smooth printed varnish.
       .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
-        roughnessFactor = clamp(roughnessFactor + (vnoise(vObjPos*22.0)-0.5)*0.16, 0.05, 1.0);`)
+        roughnessFactor = clamp(roughnessFactor + (vnoise(vObjPos*22.0)-0.5)*0.16*(1.0-gEmboss) - gEmboss*0.2, 0.05, 1.0);`)
       // clean analytic emboss: replace the shading normal on text fragments with
       // the bump-perturbed object normal transformed to view space (no dFdx).
       .replace('#include <normal_fragment_maps>', `#include <normal_fragment_maps>
