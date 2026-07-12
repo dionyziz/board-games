@@ -16068,7 +16068,9 @@
         },
         "spine": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/spine.webp",
-          "source": "procedural"
+          "source": "photo",
+          "normalized": true,
+          "note": "perspective-unwarped from BGG Ukrainian 3D-box render"
         },
         "top": {
           "src": "/textures/the-lord-of-the-rings-fate-of-the-fellowship-436217/top.webp",

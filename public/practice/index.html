@@ -134,8 +134,9 @@ const GAME = {
     <div class="chips">${GAME.categories.map(c => `<span class="chip">${c}</span>`).join('')}</div>
     <div class="desc"><p>${GAME.description}</p></div>
     <div class="footnote">Practice render · box shown at true proportions
-      (${b.w} × ${b.h} × ${b.d} cm), oriented to the cover art. Front &amp; back are
-      photographic; spine, top &amp; bottom are generated from the cover’s palette.</div>`;
+      (${b.w} × ${b.h} × ${b.d} cm), oriented to the cover art. Front, back &amp; spine
+      are photographic (normalized to the front); top &amp; bottom are generated
+      from the cover’s palette.</div>`;
 })();
 document.getElementById('dims').textContent = `${GAME.box.size.w} × ${GAME.box.size.h} × ${GAME.box.size.d} cm`;
 
