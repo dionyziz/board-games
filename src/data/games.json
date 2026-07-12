@@ -4735,7 +4735,7 @@
           "h": 27.7,
           "d": 5.7
         },
-        "orientation": "portrait"
+        "orientation": "square"
       },
       "textures": {
         "front": {
