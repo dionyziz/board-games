@@ -170,6 +170,10 @@ scene.add(key);
 const rim = new THREE.DirectionalLight('#8fb4ff', 1.0);
 rim.position.set(-5, 3, -4);
 scene.add(rim);
+// soft under-fill so the bottom face is legible when you orbit beneath the box
+const under = new THREE.DirectionalLight('#aeb6c6', 0.55);
+under.position.set(-1.5, -5, 2.5);
+scene.add(under);
 
 // ---- the box, at true proportions (cm / 10 = world units) ----
 // Orientation follows the COVER ART, not the raw dims: a landscape cover must
@@ -327,16 +331,20 @@ controls.dampingFactor = 0.06;
 controls.enablePan = false;
 controls.minDistance = 3.5;
 controls.maxDistance = 11;
-controls.minPolarAngle = 0.5;
-controls.maxPolarAngle = 1.85;
+// full vertical freedom: orbit over the top and under the bottom. Tiny epsilon
+// off the exact poles avoids the up-vector degenerating at 0 / π.
+controls.minPolarAngle = 0.0001;
+controls.maxPolarAngle = Math.PI - 0.0001;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 0.9;
 controls.target.set(0, 0, 0);
 controls.addEventListener('start', () => { controls.autoRotate = false; });
 
-// dev: ?yaw=<radians> freezes the box at a fixed angle for screenshotting
-const _yaw = new URLSearchParams(location.search).get('yaw');
-if (_yaw !== null) { box.rotation.y = parseFloat(_yaw); controls.autoRotate = false; }
+// dev: ?yaw=<radians> freezes the box angle; ?cam=x,y,z moves the camera —
+// both just for screenshotting from a fixed viewpoint.
+const _q = new URLSearchParams(location.search);
+if (_q.get('yaw') !== null) { box.rotation.y = parseFloat(_q.get('yaw')); controls.autoRotate = false; }
+if (_q.get('cam')) { const [x, y, z] = _q.get('cam').split(',').map(Number); camera.position.set(x, y, z); controls.autoRotate = false; controls.update(); }
 
 // ---- resize + loop ----
 function resize() {
@@ -350,6 +358,9 @@ resize();
 
 renderer.setAnimationLoop(() => {
   controls.update();
+  // hide the shadow floor once the camera drops below the box, so the bottom
+  // face isn't occluded by the (dark) shadow patch when you orbit underneath.
+  ground.visible = camera.position.y > -H / 2 + 0.02;
   renderer.render(scene, camera);
 });
 </script>
