@@ -12,9 +12,10 @@ export default function Spinner() {
 
   useEffect(() => {
     clearTimeout(timer.current);
-    // debounce showing (quick loads never flash) and add a grace period before
-    // hiding, so brief gaps between staggered load batches don't flicker it off
-    timer.current = setTimeout(() => setShow(active), active ? 200 : 400);
+    // Wait 1s before showing so fast systems never flash it for small/quick loads
+    // (only genuinely slow loads linger past this); a grace period before hiding
+    // keeps brief gaps between staggered load batches from flickering it off.
+    timer.current = setTimeout(() => setShow(active), active ? 1000 : 400);
     return () => clearTimeout(timer.current);
   }, [active]);
 
