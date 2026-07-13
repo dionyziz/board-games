@@ -46,11 +46,15 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
               {SORT_KEYS.map((o) => {
                 const [key, dir] = sort.split('-');
                 const active = key === o.key;
-                // click sets ascending; clicking the active key again flips direction
+                // click sets ascending; clicking the active key again flips direction.
+                // .cur = the direction active now; .hov (shown on hover) = the one a
+                // click would switch to (flip if active, else ascending).
+                const cur = active ? (dir === 'asc' ? ' ↑' : ' ↓') : '';
+                const hov = active ? (dir === 'asc' ? ' ↓' : ' ↑') : ' ↑';
                 return (
                   <button key={o.key} className={'pill' + (active ? ' on' : '')}
                     onClick={() => onSort(active ? `${o.key}-${dir === 'asc' ? 'desc' : 'asc'}` : `${o.key}-asc`)}>
-                    {o.label}{active ? (dir === 'asc' ? ' ↑' : ' ↓') : ''}
+                    {o.label}<span className="dir-cur">{cur}</span><span className="dir-hov">{hov}</span>
                   </button>
                 );
               })}

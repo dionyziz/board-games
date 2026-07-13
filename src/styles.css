@@ -87,6 +87,10 @@ a { color: inherit; }
 }
 .gallery-overlay .pill:hover { border-color: #4a4a50; color: #f4f1ea; }
 .gallery-overlay .pill.on { background: #e9e6df; color: #111; border-color: #e9e6df; }
+/* sort direction arrow: show the current direction, but the would-be direction on hover */
+.gallery-overlay .pill .dir-hov { display: none; }
+.gallery-overlay .pill:hover .dir-cur { display: none; }
+.gallery-overlay .pill:hover .dir-hov { display: inline; }
 .gallery-overlay .clear-pills { font: inherit; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #d98b80; background: none; border: none; cursor: pointer; padding: 2px 4px; }
 .gallery-overlay .clear-pills:hover { color: #f0a99f; }
 .gallery-overlay .centered { position: absolute; left: 36px; bottom: 76px; max-width: 46vw; text-shadow: 0 1px 4px rgba(0,0,0,.55); }
