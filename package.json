@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build && rm -rf dist/covers dist/practice",
-    "preview": "vite preview"
+    "build": "vite build && rm -rf dist/covers dist/practice && node scripts/gen-og.js",
+    "preview": "vite preview",
+    "data": "node scripts/cli.js"
   },
   "dependencies": {
     "@react-three/drei": "^9.114.0",

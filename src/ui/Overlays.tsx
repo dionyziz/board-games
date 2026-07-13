@@ -1,10 +1,16 @@
 import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
-export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen, onFocus, onBlur, sel, onToggle, onClearFilters }: {
+const SORT_OPTS: { key: string; label: string }[] = [
+  { key: 'title', label: 'Name' },
+  { key: 'weight-asc', label: 'Weight ↑' },
+  { key: 'weight-desc', label: 'Weight ↓' },
+];
+
+export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen, onFocus, onBlur, sel, onToggle, sort, onSort, onClearFilters }: {
   game?: Game; count: number; atEnd: boolean; query: string; onQuery: (q: string) => void;
   filterOpen: boolean; onFocus: () => void; onBlur: () => void;
-  sel: Set<string>; onToggle: (k: string) => void; onClearFilters: () => void;
+  sel: Set<string>; onToggle: (k: string) => void; sort: string; onSort: (s: any) => void; onClearFilters: () => void;
 }) {
   const hasFilters = sel.size > 0;
   return (
@@ -35,6 +41,14 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
             <span>Filters</span>
             {hasFilters ? <button className="clear-pills" onClick={onClearFilters}>Clear ×</button> : null}
           </div>
+          <div className="facet">
+            <span className="facet-label">Sort by</span>
+            <div className="pills">
+              {SORT_OPTS.map((o) => (
+                <button key={o.key} className={'pill' + (sort === o.key ? ' on' : '')} onClick={() => onSort(o.key)}>{o.label}</button>
+              ))}
+            </div>
+          </div>
           {facets.map((f) => (
             <div className="facet" key={f.id}>
               <span className="facet-label">{f.label}</span>
@@ -63,9 +77,8 @@ export function DetailOverlay({ game, onBack }: { game?: Game; onBack: () => voi
   }
   return (
     <>
-      <button className="back" onClick={onBack}>← All games</button>
       <div className="hint">drag to rotate · scroll to zoom</div>
-      <div className="panel-wrap"><DetailPanel game={game} /></div>
+      <div className="panel-wrap"><DetailPanel game={game} onBack={onBack} /></div>
     </>
   );
 }

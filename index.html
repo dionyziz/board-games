@@ -6,6 +6,20 @@
   <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
   <title>Jason's Board Games</title>
   <meta name="description" content="Jason's board game collection as a gallery of photorealistic 3D boxes." />
+  <!-- Site-level social preview. Per-game previews are pre-rendered at /g/<id>/
+       (scripts/gen-og.js) since crawlers don't run the SPA's hash router. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jason's Board Games" />
+  <meta property="og:title" content="Jason's Board Games" />
+  <meta property="og:description" content="A collection of board games as a gallery of photorealistic 3D boxes." />
+  <meta property="og:url" content="https://jasongames.xyz/" />
+  <meta property="og:image" content="https://jasongames.xyz/og/_default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jason's Board Games" />
+  <meta name="twitter:description" content="A collection of board games as a gallery of photorealistic 3D boxes." />
+  <meta name="twitter:image" content="https://jasongames.xyz/og/_default.jpg" />
 </head>
 <body>
   <div id="root"></div>

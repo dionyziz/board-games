@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
-import { games, bySlug, norm, searchBlob, matchesFilters, bgStops } from './data';
+import { games, bySlug, norm, searchBlob, matchesFilters, bgStops, weightOf } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
 import Spinner from './ui/Spinner';
 
@@ -12,11 +12,15 @@ import Spinner from './ui/Spinner';
 // Search state lives in the hash query (#/?q=…&f=…&f=…) so a library view can be
 // copied/shared and restored. Reading is decode-safe: URLSearchParams handles the
 // %-encoding, and repeated `f` params avoid any separator ambiguity in filter keys.
-function readUrlState(): { q: string; sel: Set<string> } {
+const SORTS = ['title', 'weight-asc', 'weight-desc'] as const;
+type Sort = (typeof SORTS)[number];
+
+function readUrlState(): { q: string; sel: Set<string>; sort: Sort } {
   const h = typeof window !== 'undefined' ? window.location.hash : '';
   const qi = h.indexOf('?');
   const sp = new URLSearchParams(qi >= 0 ? h.slice(qi + 1) : '');
-  return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')) };
+  const s = sp.get('s') as Sort;
+  return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')), sort: SORTS.includes(s) ? s : 'title' };
 }
 
 function Shell() {
@@ -28,8 +32,17 @@ function Shell() {
   // seed search + filters from the URL so a pasted/shared link restores them
   const [query, setQuery] = useState(() => readUrlState().q);
   const [sel, setSel] = useState<Set<string>>(() => readUrlState().sel);
+  const [sort, setSort] = useState<Sort>(() => readUrlState().sort);
   const [searchFocused, setSearchFocused] = useState(false);
   const [center, setCenterIdx] = useState(0);
+  // laptop/desktop: the filter pane is always open; mobile keeps the focus-driven behaviour
+  const [isDesktop, setIsDesktop] = useState(() => typeof window !== 'undefined' && window.matchMedia('(min-width: 821px)').matches);
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 821px)');
+    const on = () => setIsDesktop(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
 
   // the game most recently viewed/centered while browsing — hoisted to the top of
   // search results so it stays findable when you start a new query
@@ -37,14 +50,24 @@ function Shell() {
 
   const filtered = useMemo(() => {
     const tokens = query.trim().split(/\s+/).map(norm).filter(Boolean);
-    // no query + no pills = no constraint → the whole library (applied instantly)
+    // no query + no pills = no constraint → the whole library (applied instantly).
+    // `games` is pre-sorted by title, so 'title' needs no re-sort.
     const list = games.filter((g) => tokens.every((t) => searchBlob(g).includes(t)) && matchesFilters(g, sel));
-    if ((tokens.length || sel.size) && focusId.current) {
+    if (sort === 'weight-asc' || sort === 'weight-desc') {
+      const dir = sort === 'weight-asc' ? 1 : -1;
+      list.sort((a, b) => {
+        const wa = weightOf(a), wb = weightOf(b);
+        if (wa == null) return wb == null ? 0 : 1;   // unknown weight always sorts last
+        if (wb == null) return -1;
+        return (wa - wb) * dir;
+      });
+    } else if ((tokens.length || sel.size) && focusId.current) {
+      // default (title) sort: hoist the last-viewed game so it stays findable
       const i = list.findIndex((g) => g.id === focusId.current);
       if (i > 0) list.unshift(list.splice(i, 1)[0]);
     }
     return list;
-  }, [query, sel]);
+  }, [query, sel, sort]);
 
   const toggle = (key: string) => setSel((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; });
   const focusSearch = () => setTimeout(() => {
@@ -67,9 +90,10 @@ function Shell() {
     const parts: string[] = [];
     if (query.trim()) parts.push('q=' + encodeURIComponent(query.trim()));
     for (const k of sel) parts.push('f=' + encodeURIComponent(k));
+    if (sort !== 'title') parts.push('s=' + sort);
     const bare = window.location.pathname + window.location.search;
     window.history.replaceState(window.history.state, '', parts.length ? bare + '#/?' + parts.join('&') : bare);
-  }, [query, sel, slug]);
+  }, [query, sel, sort, slug]);
 
   // "/" jumps to the library (if in a detail view) and focuses+selects the search
   useEffect(() => {
@@ -135,10 +159,11 @@ function Shell() {
             // the filter panel is shown while the search is engaged or filters are
             // active — derived, so clearing the query (×) or leaving the search
             // always resolves it correctly (no sticky "open" flag to get stranded)
-            filterOpen={searchFocused || sel.size > 0}
+            filterOpen={isDesktop || searchFocused || sel.size > 0}
             onFocus={() => setSearchFocused(true)}
             onBlur={() => setSearchFocused(false)}
             sel={sel} onToggle={toggle}
+            sort={sort} onSort={setSort}
             onClearFilters={() => { setSel(new Set()); setQuery(''); }}
           />}
     </div>
