@@ -103,7 +103,7 @@ npm run data -- <command> [options]        # or: node scripts/cli.js <command>
 | `refresh --since=2024` | …only games published in/after a year |
 | `refresh --last-year` | …only games published in the last ~12 months |
 | `refresh --last-month` | …only games published this calendar year (BGG data is year-granular) |
-| `refresh --force-bgg` | delete cached BGG JSON first, so data is genuinely re-fetched |
+| `refresh --force-bgg` | full refresh: clear ALL cached BGG JSON (a bounded refresh already re-pulls its targets) |
 | `add` | pull newly-added games from Airtable and process only the new ones |
 | `assets` | re-run the offline generators/overlays only — no network |
 | `help` | usage |
