@@ -91,64 +91,57 @@ export function pillowGeometry(W: number, H: number, puff: number, creases = fal
   return g;
 }
 
-// Closed pouch (Happy Salmon) from the measured silhouette (box.bagOutline): two
-// domed caps of the fish polygon that share ONE boundary ring, so they meet exactly
-// at the silhouette edge — a single watertight, closed solid (no side wall to gap,
-// no bevel to overshoot into the background). The caps are triangulated from a grid
-// clipped to the polygon and bulged toward the middle (→0 at the rim) for a soft,
-// puffy pouch. Planar UVs map the cutout straight on; the rim samples the outline,
-// which is 2px inside the fish, so no white edge is ever shown.
+// Closed pouch (Happy Salmon) from the measured silhouette (box.bagOutline). Built
+// watertight BY CONSTRUCTION: ear-clip the polygon into a full triangulation, then
+// uniformly subdivide it (every triangle → 4, sharing deduped edge midpoints) so the
+// cap has interior vertices to bulge. The front cap (z=+bulge) and back cap (z=−bulge)
+// are welded on their shared boundary ring (bulge→0 at the rim), so the whole thing is
+// one closed solid — no ad-hoc stitching, no annular gap, no missing triangles. Planar
+// UVs map the cutout straight on; the rim samples the outline (2px inside the fish).
 export function pouchGeometry(poly: number[][], W: number, H: number, puff: number): THREE.BufferGeometry {
-  const pts = poly.map(([fx, fy]) => [(fx - 0.5) * W, (0.5 - fy) * H] as [number, number]);
-  if (polyArea(pts) < 0) pts.reverse();
-  const inside = (x: number, y: number) => pointInPoly(x, y, pts);
-  // signed distance to the boundary (approx via nearest edge) → bulge profile
+  const contour = poly.map(([fx, fy]) => new THREE.Vector2((fx - 0.5) * W, (0.5 - fy) * H));
+  if (THREE.ShapeUtils.area(contour) < 0) contour.reverse(); // CCW ⇒ front faces +z
+  const edge = contour.map((v) => [v.x, v.y] as [number, number]);
   const edgeDist = (x: number, y: number) => {
     let d = Infinity;
-    for (let i = 0, n = pts.length; i < n; i++) d = Math.min(d, segDist(x, y, pts[i], pts[(i + 1) % n]));
+    for (let i = 0, n = edge.length; i < n; i++) d = Math.min(d, segDist(x, y, edge[i], edge[(i + 1) % n]));
     return d;
   };
-
-  const minX = Math.min(...pts.map((p) => p[0])), maxX = Math.max(...pts.map((p) => p[0]));
-  const minY = Math.min(...pts.map((p) => p[1])), maxY = Math.max(...pts.map((p) => p[1]));
-  const step = Math.min(maxX - minX, maxY - minY) / 26;
-  const nx = Math.ceil((maxX - minX) / step) + 1, ny = Math.ceil((maxY - minY) / step) + 1;
-  const dmax = Math.max(step, Math.min(W, H) * 0.22);
+  const dmax = Math.min(W, H) * 0.22;
   const bulge = (x: number, y: number) => puff * Math.sin(Math.min(1, edgeDist(x, y) / dmax) * Math.PI / 2);
 
-  // grid of interior points (front z=+bulge) + the exact boundary ring (z=0)
-  const gid = new Int32Array(nx * ny).fill(-1);
-  const pos: number[] = [], uv: number[] = [];
-  const add = (x: number, y: number, z: number) => { pos.push(x, y, z); uv.push(x / W + 0.5, y / H + 0.5); return pos.length / 3 - 1; };
-  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
-    const x = minX + i * step, y = minY + j * step;
-    if (inside(x, y) && edgeDist(x, y) > step * 0.5) gid[j * nx + i] = add(x, y, bulge(x, y));
-  }
-  const base = pos.length / 3;               // boundary-ring start
-  for (const [x, y] of pts) add(x, y, 0);
-  const nInterior = base, nBoundary = pts.length;
-  const idx: number[] = [];
-  // triangulate interior grid quads (both diagonals present ⇒ dense mesh)
-  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
-    const a = gid[j * nx + i], b = gid[j * nx + i + 1], c = gid[(j + 1) * nx + i], d = gid[(j + 1) * nx + i + 1];
-    if (a >= 0 && b >= 0 && c >= 0) idx.push(a, c, b);
-    if (b >= 0 && c >= 0 && d >= 0) idx.push(b, c, d);
-  }
-  // stitch the boundary ring to the nearest interior point → closes the rim
-  for (let k = 0; k < nBoundary; k++) {
-    const b0 = base + k, b1 = base + (k + 1) % nBoundary;
-    let best = 0, bd = Infinity;
-    for (let m = 0; m < nInterior; m++) { const dx = pos[m * 3] - pos[b0 * 3], dy = pos[m * 3 + 1] - pos[b0 * 3 + 1]; const dd = dx * dx + dy * dy; if (dd < bd) { bd = dd; best = m; } }
-    idx.push(b0, best, b1);
+  // full triangulation of the silhouette, then subdivide for a smooth dome
+  const verts = contour.map((v) => v.clone());
+  let faces = THREE.ShapeUtils.triangulateShape(contour, []);
+  for (let s = 0; s < 3; s++) {
+    const mid = new Map<number, number>();
+    const getMid = (i: number, j: number) => {
+      const k = i < j ? i * 1e7 + j : j * 1e7 + i;
+      let m = mid.get(k);
+      if (m === undefined) { m = verts.length; verts.push(verts[i].clone().add(verts[j]).multiplyScalar(0.5)); mid.set(k, m); }
+      return m;
+    };
+    const nf: number[][] = [];
+    for (const [a, b, c] of faces) { const ab = getMid(a, b), bc = getMid(b, c), ca = getMid(c, a); nf.push([a, ab, ca], [ab, b, bc], [ca, bc, c], [ab, bc, ca]); }
+    faces = nf;
   }
 
-  // mirror everything to the back (z→−z), reversed winding, then merge boundary rings
-  const nFront = pos.length / 3;
-  for (let m = 0; m < nFront; m++) { pos.push(pos[m * 3], pos[m * 3 + 1], -pos[m * 3 + 2]); uv.push(uv[m * 2], uv[m * 2 + 1]); }
-  const tris = idx.length;
-  for (let t = 0; t < tris; t += 3) idx.push(idx[t] + nFront, idx[t + 2] + nFront, idx[t + 1] + nFront);
-  // weld the two boundary rings (they coincide at z=0) so the seam is watertight
-  for (let k = 0; k < nBoundary; k++) idx.forEach((v, ii) => { if (v === nFront + base + k) idx[ii] = base + k; });
+  // weld both caps by rounded position: shared rim verts (z≈0) coincide → watertight
+  const pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  const eps = Math.min(W, H) * 1e-3, map = new Map<string, number>();
+  const push = (x: number, y: number, z: number) => {
+    const key = `${Math.round(x / eps)}_${Math.round(y / eps)}_${Math.round(z / eps)}`;
+    let id = map.get(key);
+    if (id === undefined) { id = pos.length / 3; pos.push(x, y, z); uv.push(x / W + 0.5, y / H + 0.5); map.set(key, id); }
+    return id;
+  };
+  for (const [a, b, c] of faces) {
+    const va = verts[a], vb = verts[b], vc = verts[c];
+    const ia = push(va.x, va.y, bulge(va.x, va.y)), ib = push(vb.x, vb.y, bulge(vb.x, vb.y)), ic = push(vc.x, vc.y, bulge(vc.x, vc.y));
+    idx.push(ia, ib, ic); // front (CCW → +z)
+    const ja = push(va.x, va.y, -bulge(va.x, va.y)), jb = push(vb.x, vb.y, -bulge(vb.x, vb.y)), jc = push(vc.x, vc.y, -bulge(vc.x, vc.y));
+    idx.push(ja, jc, jb); // back (flipped → −z)
+  }
 
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
@@ -156,15 +149,6 @@ export function pouchGeometry(poly: number[][], W: number, H: number, puff: numb
   g.setIndex(idx);
   g.computeVertexNormals();
   return g;
-}
-
-function polyArea(p: [number, number][]) { let a = 0; for (let i = 0, n = p.length; i < n; i++) { const j = (i + 1) % n; a += p[i][0] * p[j][1] - p[j][0] * p[i][1]; } return a / 2; }
-function pointInPoly(x: number, y: number, p: [number, number][]) {
-  let inside = false;
-  for (let i = 0, j = p.length - 1; i < p.length; j = i++) {
-    if (((p[i][1] > y) !== (p[j][1] > y)) && x < ((p[j][0] - p[i][0]) * (y - p[i][1])) / (p[j][1] - p[i][1]) + p[i][0]) inside = !inside;
-  }
-  return inside;
 }
 function segDist(px: number, py: number, a: [number, number], b: [number, number]) {
   const dx = b[0] - a[0], dy = b[1] - a[1], l2 = dx * dx + dy * dy;
