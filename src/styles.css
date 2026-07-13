@@ -76,6 +76,9 @@ a { color: inherit; }
 .gallery-overlay .sidebar-head { display: flex; justify-content: space-between; align-items: center; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #8a877f; }
 .gallery-overlay .facet { display: flex; flex-direction: column; gap: 7px; }
 .gallery-overlay .facet .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+/* player-count rows: a fixed 6-up grid so "6+" never wraps onto its own line */
+.gallery-overlay .facet .pills.nums { display: grid; grid-template-columns: repeat(6, 1fr); }
+.gallery-overlay .facet .pills.nums .pill { padding: 5px 4px; text-align: center; }
 .gallery-overlay .facet-label { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #6f6c65; }
 .gallery-overlay .pill {
   font: inherit; font-size: 12px; padding: 5px 11px; border: 1px solid #2a2a2c; border-radius: 999px;
@@ -95,7 +98,8 @@ a { color: inherit; }
 .gallery-overlay .scrollhint { align-self: center; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #55524c; }
 
 /* detail overlays over the canvas */
-.hint { position: fixed; left: max(30%, 300px); bottom: 20px; transform: translateX(-50%); z-index: 2; font-size: 11px; letter-spacing: .16em; color: #55524c; text-transform: uppercase; pointer-events: none; }
+/* centered under the 3D subject, which sits in the area left of the detail panel */
+.hint { position: fixed; left: calc((100vw - min(42vw, 400px)) / 2); bottom: 20px; transform: translateX(-50%); z-index: 2; font-size: 11px; letter-spacing: .16em; color: #55524c; text-transform: uppercase; pointer-events: none; }
 .dims { position: fixed; left: 24px; bottom: 20px; z-index: 2; font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: .12em; color: #55524c; text-transform: uppercase; pointer-events: none; }
 
 .panel-wrap {

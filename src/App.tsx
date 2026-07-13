@@ -15,13 +15,13 @@ import Spinner from './ui/Spinner';
 // repeated `f` params avoid separator ambiguity in filter keys, and URLSearchParams
 // handles the %-decoding.
 const BASE = import.meta.env.BASE_URL;               // "/" in prod, "/board-games/" in preview
-const SORTS = ['title', 'weight-asc', 'weight-desc'] as const;
+const SORTS = ['name-asc', 'name-desc', 'weight-asc', 'weight-desc'] as const;
 type Sort = (typeof SORTS)[number];
 
 function readUrlState(): { q: string; sel: Set<string>; sort: Sort } {
   const sp = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
   const s = sp.get('s') as Sort;
-  return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')), sort: SORTS.includes(s) ? s : 'title' };
+  return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')), sort: SORTS.includes(s) ? s : 'name-asc' };
 }
 
 function Shell() {
@@ -62,8 +62,10 @@ function Shell() {
         if (wb == null) return -1;
         return (wa - wb) * dir;
       });
+    } else if (sort === 'name-desc') {
+      list.reverse();                                // `games` is name-ascending
     } else if ((tokens.length || sel.size) && focusId.current) {
-      // default (title) sort: hoist the last-viewed game so it stays findable
+      // default (name ascending): hoist the last-viewed game so it stays findable
       const i = list.findIndex((g) => g.id === focusId.current);
       if (i > 0) list.unshift(list.splice(i, 1)[0]);
     }
@@ -91,7 +93,7 @@ function Shell() {
     const parts: string[] = [];
     if (query.trim()) parts.push('q=' + encodeURIComponent(query.trim()));
     for (const k of sel) parts.push('f=' + encodeURIComponent(k));
-    if (sort !== 'title') parts.push('s=' + sort);
+    if (sort !== 'name-asc') parts.push('s=' + sort);
     // gallery lives at the app root; empty → clean base URL, else ?q=…&f=…&s=…
     window.history.replaceState(window.history.state, '', BASE + (parts.length ? '?' + parts.join('&') : ''));
   }, [query, sel, sort, slug]);

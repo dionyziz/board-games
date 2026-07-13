@@ -1,10 +1,9 @@
 import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
-const SORT_OPTS: { key: string; label: string }[] = [
-  { key: 'title', label: 'Name' },
-  { key: 'weight-asc', label: 'Weight ↑' },
-  { key: 'weight-desc', label: 'Weight ↓' },
+const SORT_KEYS: { key: string; label: string }[] = [
+  { key: 'name', label: 'Name' },
+  { key: 'weight', label: 'Weight' },
 ];
 
 export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen, onFocus, onBlur, sel, onToggle, sort, onSort, onClearFilters }: {
@@ -44,15 +43,23 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
           <div className="facet">
             <span className="facet-label">Sort by</span>
             <div className="pills">
-              {SORT_OPTS.map((o) => (
-                <button key={o.key} className={'pill' + (sort === o.key ? ' on' : '')} onClick={() => onSort(o.key)}>{o.label}</button>
-              ))}
+              {SORT_KEYS.map((o) => {
+                const [key, dir] = sort.split('-');
+                const active = key === o.key;
+                // click sets ascending; clicking the active key again flips direction
+                return (
+                  <button key={o.key} className={'pill' + (active ? ' on' : '')}
+                    onClick={() => onSort(active ? `${o.key}-${dir === 'asc' ? 'desc' : 'asc'}` : `${o.key}-asc`)}>
+                    {o.label}{active ? (dir === 'asc' ? ' ↑' : ' ↓') : ''}
+                  </button>
+                );
+              })}
             </div>
           </div>
           {facets.map((f) => (
             <div className="facet" key={f.id}>
               <span className="facet-label">{f.label}</span>
-              <div className="pills">
+              <div className={'pills' + (f.id === 'players' || f.id === 'rec' ? ' nums' : '')}>
                 {f.values.map((v) => (
                   <button key={v.key} className={'pill' + (sel.has(v.key) ? ' on' : '')} onClick={() => onToggle(v.key)}>{v.label}</button>
                 ))}

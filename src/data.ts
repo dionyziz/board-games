@@ -93,14 +93,14 @@ export function searchBlob(g: Game): string {
 }
 
 // ---- facet filters ---------------------------------------------------------
-export type Facet = { id: 'players' | 'rec' | 'weight' | 'rating' | 'age' | 'type' | 'time'; label: string; values: { key: string; label: string }[] };
+export type Facet = { id: 'players' | 'rec' | 'weight' | 'rating' | 'type' | 'time'; label: string; values: { key: string; label: string }[] };
 
-// BGG average-rating bands (0–10) → [lo,hi).
+// BGG average-rating bands (0–10) → [lo,hi), listed low → high.
 const RATING_BUCKETS = [
-  { key: 'rating:8', label: '8+', lo: 8, hi: 99 },
-  { key: 'rating:7', label: '7–8', lo: 7, hi: 8 },
-  { key: 'rating:6', label: '6–7', lo: 6, hi: 7 },
   { key: 'rating:0', label: '<6', lo: 0, hi: 6 },
+  { key: 'rating:6', label: '6–7', lo: 6, hi: 7 },
+  { key: 'rating:7', label: '7–8', lo: 7, hi: 8 },
+  { key: 'rating:8', label: '8+', lo: 8, hi: 99 },
 ];
 const RATING_BY_KEY = Object.fromEntries(RATING_BUCKETS.map((b) => [b.key.slice(b.key.indexOf(':') + 1), b]));
 
@@ -128,15 +128,6 @@ const TIME_BUCKETS = [
   { key: 'time:121-999', label: '2 hr+', lo: 121, hi: 999 },
 ];
 
-// Age buckets (condensed from the many distinct minAge values) → [lo,hi] on minAge.
-const AGE_BUCKETS = [
-  { key: 'age:0-7', label: '≤7', lo: 0, hi: 7 },
-  { key: 'age:8-9', label: '8–9', lo: 8, hi: 9 },
-  { key: 'age:10-11', label: '10–11', lo: 10, hi: 11 },
-  { key: 'age:12-13', label: '12–13', lo: 12, hi: 13 },
-  { key: 'age:14-99', label: '14+', lo: 14, hi: 99 },
-];
-
 export const facets: Facet[] = (() => {
   // "can be played with": the box's supported player range
   const players = [1, 2, 3, 4, 5, 6].map((n) => ({ key: 'players:' + n, label: n === 6 ? '6+' : String(n) }));
@@ -145,8 +136,6 @@ export const facets: Facet[] = (() => {
   const weights = WEIGHT_BUCKETS.filter((b) => games.some((g) => { const w = weightOf(g); return w != null && w >= b.lo && w < b.hi; }))
     .map((b) => ({ key: b.key, label: b.label }));
   const ratings = RATING_BUCKETS.filter((b) => games.some((g) => g.bggRating != null && g.bggRating >= b.lo && g.bggRating < b.hi))
-    .map((b) => ({ key: b.key, label: b.label }));
-  const ages = AGE_BUCKETS.filter((b) => games.some((g) => g.minAge && g.minAge >= b.lo && g.minAge <= b.hi))
     .map((b) => ({ key: b.key, label: b.label }));
   const freq: Record<string, number> = {};
   for (const g of games) for (const c of g.categories || []) freq[c] = (freq[c] || 0) + 1;
@@ -159,7 +148,6 @@ export const facets: Facet[] = (() => {
     { id: 'weight', label: 'Weight', values: weights },
     { id: 'rating', label: 'BGG rating', values: ratings },
     { id: 'time', label: 'Play time', values: times },
-    { id: 'age', label: 'Age', values: ages },
     { id: 'type', label: 'Type', values: types },
   ];
 })();
@@ -167,13 +155,12 @@ export const facets: Facet[] = (() => {
 // AND across facets, OR within a facet. Empty selection = no constraint.
 export function matchesFilters(g: Game, sel: Set<string>): boolean {
   if (sel.size === 0) return true;
-  const by: Record<string, string[]> = { players: [], rec: [], weight: [], rating: [], age: [], type: [], time: [] };
+  const by: Record<string, string[]> = { players: [], rec: [], weight: [], rating: [], type: [], time: [] };
   for (const k of sel) { const i = k.indexOf(':'); (by[k.slice(0, i)] ||= []).push(k.slice(i + 1)); }
   if (by.players.length && !by.players.some((v) => g.players && (v === '6' ? g.players.max >= 6 : g.players.min <= +v && +v <= g.players.max))) return false;
   if (by.rec.length && !by.rec.some((v) => { const op = g.optimalPlayers || []; return v === '6' ? op.some((t) => parseInt(t, 10) >= 6) : op.includes(v); })) return false;
   if (by.weight.length && !by.weight.some((v) => { const b = WEIGHT_BY_KEY[v]; const w = weightOf(g); return b && w != null && w >= b.lo && w < b.hi; })) return false;
   if (by.rating.length && !by.rating.some((v) => { const b = RATING_BY_KEY[v]; return b && g.bggRating != null && g.bggRating >= b.lo && g.bggRating < b.hi; })) return false;
-  if (by.age.length && !by.age.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.minAge != null && g.minAge >= lo && g.minAge <= hi; })) return false;
   if (by.time.length && !by.time.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.playtime && g.playtime.max != null && g.playtime.max >= lo && g.playtime.max <= hi; })) return false;
   if (by.type.length && !by.type.some((v) => (g.categories || []).includes(v))) return false;
   return true;
