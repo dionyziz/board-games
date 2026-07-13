@@ -3,6 +3,7 @@ import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
 import { games, bySlug, norm, searchBlob, matchesFilters, bgStops } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
+import Spinner from './ui/Spinner';
 
 // One persistent Canvas across both views; the route only drives which box is
 // selected and which DOM overlay shows. Search + scroll live above the router,
@@ -77,6 +78,7 @@ function Shell() {
   return (
     <div className="app">
       <div className="bg-grad" style={{ ['--bg-a' as any]: bg.a, ['--bg-b' as any]: bg.b }} />
+      <Spinner />
       <Scene
         list={filtered}
         selectedIndex={selectedIndex}

@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b0b0c"/>
-  <rect x="10" y="10" width="44" height="44" rx="10" fill="#e9e6df"/>
-  <g fill="#0b0b0c">
-    <circle cx="21" cy="21" r="4.4"/><circle cx="43" cy="21" r="4.4"/>
-    <circle cx="32" cy="32" r="4.4"/>
-    <circle cx="21" cy="43" r="4.4"/><circle cx="43" cy="43" r="4.4"/>
+  <!-- d20 seen corner-on: a hexagon of facets. Shaded outer faces + a lit front. -->
+  <g stroke="#0b0b0c" stroke-width="1.8" stroke-linejoin="round">
+    <!-- outer (angled-away) facets — strongly shaded so the die reads even at 16px -->
+    <polygon points="32,8 52.8,20 52.8,44" fill="#a49e90"/>
+    <polygon points="32,8 11.2,20 11.2,44" fill="#a49e90"/>
+    <polygon points="11.2,44 32,56 52.8,44" fill="#88836f"/>
+    <!-- lit front (large upward face) -->
+    <polygon points="32,8 52.8,44 11.2,44" fill="#e9e6df"/>
+    <!-- central "20" face -->
+    <polygon points="42.4,26 21.6,26 32,44" fill="#f4f2ec"/>
   </g>
+  <text x="32" y="35.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#0b0b0c">20</text>
 </svg>
