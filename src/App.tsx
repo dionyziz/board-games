@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter, useLocation, useNavigate } from 'react-router-dom';
 import Scene from './Scene';
 import { games, bySlug, norm, searchBlob, matchesFilters, bgStops, weightOf } from './data';
 import { GalleryOverlay, DetailOverlay } from './ui/Overlays';
@@ -8,17 +8,18 @@ import Spinner from './ui/Spinner';
 // One persistent Canvas across both views; the route only drives which box is
 // selected and which DOM overlay shows. Search + scroll live above the router,
 // so they survive opening a game and coming back.
-
-// Search state lives in the hash query (#/?q=…&f=…&f=…) so a library view can be
-// copied/shared and restored. Reading is decode-safe: URLSearchParams handles the
-// %-encoding, and repeated `f` params avoid any separator ambiguity in filter keys.
+//
+// Games are REAL paths (/g/<id>/), not hash routes, so a shared link is a URL a
+// crawler can fetch — each is pre-rendered with its own OG card (scripts/gen-og.js).
+// Search state lives in the query string (/?q=…&f=…&f=…&s=…) for the same reason;
+// repeated `f` params avoid separator ambiguity in filter keys, and URLSearchParams
+// handles the %-decoding.
+const BASE = import.meta.env.BASE_URL;               // "/" in prod, "/board-games/" in preview
 const SORTS = ['title', 'weight-asc', 'weight-desc'] as const;
 type Sort = (typeof SORTS)[number];
 
 function readUrlState(): { q: string; sel: Set<string>; sort: Sort } {
-  const h = typeof window !== 'undefined' ? window.location.hash : '';
-  const qi = h.indexOf('?');
-  const sp = new URLSearchParams(qi >= 0 ? h.slice(qi + 1) : '');
+  const sp = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
   const s = sp.get('s') as Sort;
   return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')), sort: SORTS.includes(s) ? s : 'title' };
 }
@@ -26,7 +27,7 @@ function readUrlState(): { q: string; sel: Set<string>; sort: Sort } {
 function Shell() {
   const loc = useLocation();
   const navigate = useNavigate();
-  const m = loc.pathname.match(/^\/game\/(.+)$/);
+  const m = loc.pathname.match(/^\/g\/(.+?)\/?$/);   // /g/<id> or /g/<id>/ (basename already stripped)
   const slug = m ? decodeURIComponent(m[1]) : null;
 
   // seed search + filters from the URL so a pasted/shared link restores them
@@ -91,8 +92,8 @@ function Shell() {
     if (query.trim()) parts.push('q=' + encodeURIComponent(query.trim()));
     for (const k of sel) parts.push('f=' + encodeURIComponent(k));
     if (sort !== 'title') parts.push('s=' + sort);
-    const bare = window.location.pathname + window.location.search;
-    window.history.replaceState(window.history.state, '', parts.length ? bare + '#/?' + parts.join('&') : bare);
+    // gallery lives at the app root; empty → clean base URL, else ?q=…&f=…&s=…
+    window.history.replaceState(window.history.state, '', BASE + (parts.length ? '?' + parts.join('&') : ''));
   }, [query, sel, sort, slug]);
 
   // "/" jumps to the library (if in a detail view) and focuses+selects the search
@@ -147,7 +148,7 @@ function Shell() {
       <Scene
         list={filtered}
         selectedIndex={selectedIndex}
-        onOpen={(id) => navigate('/game/' + id)}
+        onOpen={(id) => navigate('/g/' + id + '/')}
         onCenter={(i) => { setCenterIdx(i); if (!query.trim() && sel.size === 0) focusId.current = filtered[i]?.id ?? focusId.current; }}
       />
       {slug
@@ -171,9 +172,11 @@ function Shell() {
 }
 
 export default function App() {
+  // basename lets the same build run at the domain root (prod) or under /board-games/
+  // (local preview); react-router strips it from the pathname Shell sees.
   return (
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Shell />
-    </HashRouter>
+    </BrowserRouter>
   );
 }

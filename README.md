@@ -21,7 +21,7 @@ photorealistic 3D boxes you can browse and open. Live at
 | --- | --- |
 | App | [React 18](https://react.dev), [Vite 5](https://vitejs.dev), TypeScript |
 | 3D | [three.js](https://threejs.org), [@react-three/fiber](https://github.com/pmndrs/react-three-fiber), [@react-three/drei](https://github.com/pmndrs/drei), [@react-three/postprocessing](https://github.com/pmndrs/react-postprocessing) |
-| Routing | [react-router-dom](https://reactrouter.com) (`HashRouter` — no server rewrites needed on GitHub Pages) |
+| Routing | [react-router-dom](https://reactrouter.com) (`BrowserRouter`; games are real `/g/<id>/` paths, each pre-rendered so links preview + deep-link, with a `404.html` SPA fallback) |
 | Search | [transliteration](https://www.npmjs.com/package/transliteration) (romanize any script for forgiving matching) |
 | Data / image tooling | [sharp](https://sharp.pixelplumbing.com) (raster work), [playwright-core](https://playwright.dev) (headless fetch of Cloudflare/msgpack sources), Node's built-in `fetch` |
 
@@ -124,17 +124,20 @@ and Bag of Chips model. (The vision-audit-driven cover/face fixes — steps 12/1
 
 ## Social previews
 
-The app is a hash-routed SPA, so link-preview crawlers (which don't run JS or read the
-hash) can't see per-game routes. `scripts/gen-og.js` — run automatically by
+Link-preview crawlers don't run JS, so a SPA needs static HTML per shareable URL.
+Because games are real `/g/<id>/` paths, `scripts/gen-og.js` — run automatically by
 `npm run build` — pre-renders, into `dist/`:
 
 - `og/<id>.jpg` — a 1200×630 Open Graph card (the game's cover on a tinted background),
 - `og/_default.jpg` — a site card (montage of covers), referenced from `index.html`,
-- `g/<id>/index.html` — a tiny static page carrying that game's OG/Twitter tags that
-  redirects a real browser into `#/game/<id>`.
+- `g/<id>/index.html` — a copy of the app shell with that game's OG/Twitter tags
+  injected. A crawler reads the correct card; a browser loads the same bundle and the
+  SPA routes to the game in place (no redirect — the address bar keeps the shareable URL),
+- `404.html` — a shell copy so any unknown path still boots the app (GitHub Pages
+  SPA fallback).
 
-**Share `https://jasongames.xyz/g/<id>/`** for a correct unfurl (title + cover); the
-visitor still lands on the game.
+So the game's own URL (`https://jasongames.xyz/g/<id>/`) is the shareable, previewable
+one — no separate link to hand out.
 
 ---
 

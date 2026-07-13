@@ -1,38 +1,39 @@
-// Social-media link previews (Open Graph / Twitter cards).
+// Social-media link previews (Open Graph / Twitter cards) + per-game entry pages.
 //
-// The app is a hash-routed SPA on GitHub Pages, so deep links look like
-// `…/#/game/<id>` — but link-preview crawlers don't run JS or read the hash, so
-// they'd only ever see the site-level card. To give every game a correct preview
-// (its cover as the image + its title/description), we PRE-RENDER one tiny static
-// page per game at `/g/<id>/` carrying that game's OG tags, which then redirects a
-// real browser into the SPA. Share `https://<domain>/g/<id>/` and the unfurl is
-// correct; the visitor lands on `#/game/<id>`.
+// Games are real paths (/g/<id>/), so a shared link is a URL a crawler can fetch.
+// For each game we pre-render `g/<id>/index.html`: a copy of the built app shell
+// with that game's OG/Twitter tags injected. A crawler reads the correct card;
+// a real browser loads the same bundle, and the SPA routes to /g/<id>/ in place —
+// no redirect, so the address bar keeps the shareable URL. `404.html` is a copy of
+// the shell so any unknown path still boots the app (GitHub Pages SPA fallback).
 //
-// Outputs (into the deploy dir, default dist/ — regenerated on every build, never
-// committed): `og/<id>.jpg` 1200×630 preview images, `og/_default.jpg` (site card),
-// and `g/<id>/index.html` redirect stubs.
+// Also emits `og/<id>.jpg` (1200×630 preview images) and `og/_default.jpg` (site card).
 //
-//   node scripts/gen-og.js [outDir=dist]
+//   node scripts/gen-og.js [outDir=dist]   — runs automatically from `npm run build`
 const L = require('./lib');
 const { fs, path, sharp, ROOT } = L;
 
+// set a <meta … content="…"> value (or <title>) regardless of quote/self-close style
+const setContent = (html, sel, val) => html.replace(new RegExp('(<meta ' + sel + ' content=")[^"]*"'), (_m, p1) => p1 + val + '"');
+const setTitle = (html, val) => html.replace(/<title>[^<]*<\/title>/, `<title>${val}</title>`);
+
 async function main() {
   const outDir = path.resolve(ROOT, process.argv[2] || 'dist');
-  if (!fs.existsSync(outDir)) { console.warn(`gen-og: ${outDir} missing (run vite build first) — skipping`); return; }
+  const shellPath = path.join(outDir, 'index.html');
+  if (!fs.existsSync(shellPath)) { console.warn(`gen-og: ${outDir}/index.html missing (run vite build first) — skipping`); return; }
+  const shell = fs.readFileSync(shellPath, 'utf8');
   const domain = 'https://' + fs.readFileSync(path.join(ROOT, 'public', 'CNAME'), 'utf8').trim();
   const { list } = L.loadGames();
 
   const ogDir = path.join(outDir, 'og'), gDir = path.join(outDir, 'g');
   fs.mkdirSync(ogDir, { recursive: true });
 
-  const W = 1200, H = 630;
-  const coverPath = (g) => {
-    for (const p of [path.join(L.TEX, g.id, 'cover.webp'), path.join(L.TEX, g.id, 'thumb.webp'), path.join(L.COVERS, g.id + '.jpg')])
-      if (fs.existsSync(p)) return p;
-    return null;
-  };
+  // SPA fallback for unknown paths (real game paths are pre-rendered below)
+  fs.writeFileSync(path.join(outDir, '404.html'), shell);
 
-  // strip HTML/entities and clamp for an attribute-safe, tweet-length description
+  const W = 1200, H = 630;
+  const coverPath = (g) => [path.join(L.TEX, g.id, 'cover.webp'), path.join(L.TEX, g.id, 'thumb.webp'), path.join(L.COVERS, g.id + '.jpg')].find(fs.existsSync);
+
   const summary = (g) => {
     let s = (g.shortDescription || g.description || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
     if (s.length > 180) s = s.slice(0, 177).replace(/\s+\S*$/, '') + '…';
@@ -50,28 +51,17 @@ async function main() {
       .composite([{ input: coverBuf, gravity: 'center' }]).jpeg({ quality: 80, mozjpeg: true })
       .toFile(path.join(ogDir, g.id + '.jpg'));
 
-    const title = L.esc(g.title), desc = L.esc(summary(g)), img = `${domain}/og/${g.id}.jpg`;
-    const rel = '../../#/game/' + encodeURIComponent(g.id); // base-agnostic redirect into the SPA
-    const html = `<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${title} — Jason's Board Games</title>
-<meta name="description" content="${desc}">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Jason's Board Games">
-<meta property="og:title" content="${title}">
-<meta property="og:description" content="${desc}">
-<meta property="og:image" content="${img}">
-<meta property="og:image:width" content="${W}"><meta property="og:image:height" content="${H}">
-<meta property="og:url" content="${domain}/g/${encodeURIComponent(g.id)}/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${title}">
-<meta name="twitter:description" content="${desc}">
-<meta name="twitter:image" content="${img}">
-<link rel="canonical" href="${domain}/#/game/${encodeURIComponent(g.id)}">
-<script>location.replace(${JSON.stringify(rel)})</script>
-<meta http-equiv="refresh" content="0;url=${rel}">
-</head><body style="background:#0b0b0c;color:#e9e6df;font-family:sans-serif">
-Redirecting to <a href="${rel}">${title}</a>…</body></html>`;
+    const title = L.esc(g.title), desc = L.esc(summary(g));
+    const img = `${domain}/og/${g.id}.jpg`, url = `${domain}/g/${g.id}/`;
+    let html = setTitle(shell, `${title} — Jason's Board Games`);
+    html = setContent(html, 'name="description"', desc);
+    html = setContent(html, 'property="og:title"', title);
+    html = setContent(html, 'property="og:description"', desc);
+    html = setContent(html, 'property="og:url"', url);
+    html = setContent(html, 'property="og:image"', img);
+    html = setContent(html, 'name="twitter:title"', title);
+    html = setContent(html, 'name="twitter:description"', desc);
+    html = setContent(html, 'name="twitter:image"', img);
     const dir = path.join(gDir, g.id);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), html);
@@ -88,7 +78,7 @@ Redirecting to <a href="${rel}">${title}</a>…</body></html>`;
   await sharp({ create: { width: W, height: H, channels: 3, background: { r: 11, g: 11, b: 12 } } })
     .composite(tiles).jpeg({ quality: 78, mozjpeg: true }).toFile(path.join(ogDir, '_default.jpg'));
 
-  console.log(`gen-og: ${made} game cards + site card → ${path.relative(ROOT, outDir)}/{og,g}`);
+  console.log(`gen-og: ${made} pre-rendered game pages + cards → ${path.relative(ROOT, outDir)}/{og,g}`);
 }
 
 main().catch((e) => { console.warn('gen-og: skipped —', e.message); process.exit(0); });
