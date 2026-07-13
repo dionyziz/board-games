@@ -29,7 +29,7 @@
       "confidence": 0.97,
       "source": "image",
       "note": "Foil resealable snack-style pouch (says 'RESEALABLE BAG').",
-      "model": "/models/calbee_potato_chips_pizza.glb"
+      "model": "/models/bag-of-chips.glb"
     },
     "chupacabra-survive-the-night-120515": {
       "shape": "tube",

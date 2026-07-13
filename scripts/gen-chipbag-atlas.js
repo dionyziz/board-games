@@ -7,7 +7,7 @@ const L = require('./lib');
 const { fs, path, sharp, texDir } = L;
 
 const GAME = 'bag-of-chips-344114';
-const GLB = path.join(__dirname, '..', 'public/models/calbee_potato_chips_pizza.glb');
+const GLB = path.join(__dirname, 'model-src', 'calbee_potato_chips_pizza.glb');
 
 (async () => {
   // extract baseColor (image 0) from the GLB
@@ -21,20 +21,20 @@ const GLB = path.join(__dirname, '..', 'public/models/calbee_potato_chips_pizza.
   const m = await sharp(base).metadata(); const W = m.width, H = m.height;
 
   const cover = path.join(texDir(GAME), 'cover.webp');
+  const backSrc = path.join(__dirname, 'cyl-src', 'bag-of-chips-back.jpg'); // distinct back (German edition)
   // The model's front/back UV bands are landscape while the faces are portrait, so
-  // the cover is rotated −90° to read upright; the front is additionally flopped
-  // (its UV is mirrored), the back is not (opposite-facing).
-  const region = (rx, ry, rw, rh, flop) => {
-    let img = sharp(cover).rotate(-90);
-    if (flop) img = img.flop();
-    return img.resize(Math.round(rw * W), Math.round(rh * H), { fit: 'fill' }).toBuffer()
-      .then((b) => ({ input: b, left: Math.round(rx * W), top: Math.round(ry * H) }));
+  // each source is rotated −90° to read upright and flopped (both UV bands are
+  // mirrored). Front = game cover, back = the game's back cover (white trimmed).
+  const region = async (src, rx, ry, rw, rh) => {
+    const b = await sharp(src).rotate(-90).flop().resize(Math.round(rw * W), Math.round(rh * H), { fit: 'fill' }).toBuffer();
+    return { input: b, left: Math.round(rx * W), top: Math.round(ry * H) };
   };
+  const backTrim = await sharp(backSrc).trim({ threshold: 18 }).toBuffer(); // drop the white photo backdrop
   const patches = await Promise.all([
-    region(0, 0.5, 0.77, 0.5, true),   // front band (UV mirrored → flop)
-    region(0, 0, 0.77, 0.5, false),    // back band
+    region(cover, 0, 0.5, 0.77, 0.5),
+    region(backTrim, 0, 0, 0.77, 0.5),
   ]);
-  const out = path.join(texDir(GAME), 'chipbag-atlas.png');
+  const out = path.join(__dirname, 'cyl-src', 'bag-of-chips-atlas.png');
   await sharp(base).composite(patches).png().toFile(out);
   console.log('chipbag atlas rebuilt', W + 'x' + H);
 })();
