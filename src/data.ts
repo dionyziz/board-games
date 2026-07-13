@@ -26,9 +26,11 @@ export type Game = {
   bggUrl?: string;
   designers?: string[];
   year?: number;
-  players?: { min: number; max: number };
+  players?: { min: number; max: number };      // player count the box supports ("can be played with")
+  optimalPlayers?: string[];                    // BGG community "recommended" counts, e.g. ["2","3","4","9+"]
   playtime?: { min: number; max: number };
-  complexity?: number;
+  complexity?: number;                          // BGG weight, 1–5 (the value shown in the detail panel)
+  weight?: number;                              // coarse 1–5 bucket (fallback when complexity is missing)
   minAge?: number;
   categories?: string[];
   shortDescription?: string;
@@ -89,7 +91,22 @@ export function searchBlob(g: Game): string {
 }
 
 // ---- facet filters ---------------------------------------------------------
-export type Facet = { id: 'players' | 'age' | 'type' | 'time'; label: string; values: { key: string; label: string }[] };
+export type Facet = { id: 'players' | 'rec' | 'weight' | 'age' | 'type' | 'time'; label: string; values: { key: string; label: string }[] };
+
+// Weight (BGG complexity, 1–5) buckets → [lo,hi). Bucketed on `complexity` (the
+// value shown in the detail panel); the ~handful of games with no complexity fall
+// back to their coarse integer `weight` via WEIGHT_APPROX.
+const WEIGHT_BUCKETS = [
+  { key: 'weight:light', label: 'Light', lo: 0, hi: 1.7 },
+  { key: 'weight:med-light', label: 'Medium-light', lo: 1.7, hi: 2.2 },
+  { key: 'weight:medium', label: 'Medium', lo: 2.2, hi: 2.8 },
+  { key: 'weight:heavy', label: 'Heavy', lo: 2.8, hi: 99 },
+];
+const WEIGHT_BY_KEY = Object.fromEntries(WEIGHT_BUCKETS.map((b) => [b.key.slice(b.key.indexOf(':') + 1), b]));
+const WEIGHT_APPROX: Record<number, number> = { 1: 1.3, 2: 1.8, 3: 2.3, 4: 3.0, 5: 4.0 };
+export function weightOf(g: Game): number | null {
+  return g.complexity != null ? g.complexity : g.weight != null ? WEIGHT_APPROX[g.weight] ?? null : null;
+}
 
 // Play-time buckets (on playtime.max, minutes) → [lo,hi].
 const TIME_BUCKETS = [
@@ -109,7 +126,12 @@ const AGE_BUCKETS = [
 ];
 
 export const facets: Facet[] = (() => {
+  // "can be played with": the box's supported player range
   const players = [1, 2, 3, 4, 5, 6].map((n) => ({ key: 'players:' + n, label: n === 6 ? '6+' : String(n) }));
+  // "recommended": BGG community best/recommended counts (optimalPlayers)
+  const rec = [1, 2, 3, 4, 5, 6].map((n) => ({ key: 'rec:' + n, label: n === 6 ? '6+' : String(n) }));
+  const weights = WEIGHT_BUCKETS.filter((b) => games.some((g) => { const w = weightOf(g); return w != null && w >= b.lo && w < b.hi; }))
+    .map((b) => ({ key: b.key, label: b.label }));
   const ages = AGE_BUCKETS.filter((b) => games.some((g) => g.minAge && g.minAge >= b.lo && g.minAge <= b.hi))
     .map((b) => ({ key: b.key, label: b.label }));
   const freq: Record<string, number> = {};
@@ -119,6 +141,8 @@ export const facets: Facet[] = (() => {
     .map((t) => ({ key: t.key, label: t.label }));
   return [
     { id: 'players', label: 'Players', values: players },
+    { id: 'rec', label: 'Recommended', values: rec },
+    { id: 'weight', label: 'Weight', values: weights },
     { id: 'time', label: 'Play time', values: times },
     { id: 'age', label: 'Age', values: ages },
     { id: 'type', label: 'Type', values: types },
@@ -128,9 +152,11 @@ export const facets: Facet[] = (() => {
 // AND across facets, OR within a facet. Empty selection = no constraint.
 export function matchesFilters(g: Game, sel: Set<string>): boolean {
   if (sel.size === 0) return true;
-  const by: Record<string, string[]> = { players: [], age: [], type: [], time: [] };
+  const by: Record<string, string[]> = { players: [], rec: [], weight: [], age: [], type: [], time: [] };
   for (const k of sel) { const i = k.indexOf(':'); (by[k.slice(0, i)] ||= []).push(k.slice(i + 1)); }
   if (by.players.length && !by.players.some((v) => g.players && (v === '6' ? g.players.max >= 6 : g.players.min <= +v && +v <= g.players.max))) return false;
+  if (by.rec.length && !by.rec.some((v) => { const op = g.optimalPlayers || []; return v === '6' ? op.some((t) => parseInt(t, 10) >= 6) : op.includes(v); })) return false;
+  if (by.weight.length && !by.weight.some((v) => { const b = WEIGHT_BY_KEY[v]; const w = weightOf(g); return b && w != null && w >= b.lo && w < b.hi; })) return false;
   if (by.age.length && !by.age.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.minAge != null && g.minAge >= lo && g.minAge <= hi; })) return false;
   if (by.time.length && !by.time.some((v) => { const [lo, hi] = v.split('-').map(Number); return g.playtime && g.playtime.max != null && g.playtime.max >= lo && g.playtime.max <= hi; })) return false;
   if (by.type.length && !by.type.some((v) => (g.categories || []).includes(v))) return false;

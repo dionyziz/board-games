@@ -8,14 +8,26 @@ import Spinner from './ui/Spinner';
 // One persistent Canvas across both views; the route only drives which box is
 // selected and which DOM overlay shows. Search + scroll live above the router,
 // so they survive opening a game and coming back.
+
+// Search state lives in the hash query (#/?q=…&f=…&f=…) so a library view can be
+// copied/shared and restored. Reading is decode-safe: URLSearchParams handles the
+// %-encoding, and repeated `f` params avoid any separator ambiguity in filter keys.
+function readUrlState(): { q: string; sel: Set<string> } {
+  const h = typeof window !== 'undefined' ? window.location.hash : '';
+  const qi = h.indexOf('?');
+  const sp = new URLSearchParams(qi >= 0 ? h.slice(qi + 1) : '');
+  return { q: sp.get('q') || '', sel: new Set(sp.getAll('f')) };
+}
+
 function Shell() {
   const loc = useLocation();
   const navigate = useNavigate();
   const m = loc.pathname.match(/^\/game\/(.+)$/);
   const slug = m ? decodeURIComponent(m[1]) : null;
 
-  const [query, setQuery] = useState('');
-  const [sel, setSel] = useState<Set<string>>(new Set());
+  // seed search + filters from the URL so a pasted/shared link restores them
+  const [query, setQuery] = useState(() => readUrlState().q);
+  const [sel, setSel] = useState<Set<string>>(() => readUrlState().sel);
   const [searchFocused, setSearchFocused] = useState(false);
   const [center, setCenterIdx] = useState(0);
 
@@ -44,6 +56,20 @@ function Shell() {
   // unmounts the search input (which won't fire onBlur), so drop focus explicitly so
   // the filter panel isn't left open when we return to the gallery
   useEffect(() => { if (slug) { focusId.current = slug; setSearchFocused(false); } }, [slug]);
+
+  // mirror the library's search + filters into the URL (copy/paste-able); a detail
+  // view owns its own #/game/<id>, and an empty library strips the hash entirely so
+  // the address bar shows just the clean root URL. replaceState (not push) keeps
+  // filter tweaks out of history; the existing state object is preserved so the
+  // router's own navigation bookkeeping stays intact.
+  useEffect(() => {
+    if (slug) return;
+    const parts: string[] = [];
+    if (query.trim()) parts.push('q=' + encodeURIComponent(query.trim()));
+    for (const k of sel) parts.push('f=' + encodeURIComponent(k));
+    const bare = window.location.pathname + window.location.search;
+    window.history.replaceState(window.history.state, '', parts.length ? bare + '#/?' + parts.join('&') : bare);
+  }, [query, sel, slug]);
 
   // "/" jumps to the library (if in a detail view) and focuses+selects the search
   useEffect(() => {
