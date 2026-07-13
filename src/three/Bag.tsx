@@ -30,9 +30,10 @@ export default function Bag({ game, onClick, onPointerOver, onPointerOut, ...res
     const front = new THREE.MeshPhysicalMaterial({ color: '#ffffff' });
     const back = new THREE.MeshPhysicalMaterial({ color: fish ? '#ffffff' : (box.edgeColor || '#2a2a2e') });
     if (fish) {
-      // closed pouch is one opaque mesh; alphaTest clips any edge overshoot (no
-      // transparency sorting), DoubleSide guards against winding surprises
-      for (const m of [front, back]) { m.roughness = 0.95; m.sheen = 0.2; m.sheenRoughness = 0.9; m.alphaTest = 0.5; m.side = THREE.DoubleSide; }
+      // pouchGeometry is one closed, watertight solid (two domed caps welded at the
+      // silhouette ring) whose rim samples the outline — 2px inside the fish — so the
+      // whole opaque texture renders with no alphaTest and no white edge
+      for (const m of [front, back]) { m.roughness = 0.95; m.sheen = 0.2; m.sheenRoughness = 0.9; m.side = THREE.DoubleSide; }
     } else {
       front.roughness = back.roughness = 0.32; front.metalness = 0.25; back.metalness = 0.4;
       front.clearcoat = back.clearcoat = 0.5; front.clearcoatRoughness = 0.35;

@@ -29,11 +29,19 @@ const GLB = path.join(__dirname, 'model-src', 'calbee_potato_chips_pizza.glb');
     const b = await sharp(src).rotate(-90).flop().resize(Math.round(rw * W), Math.round(rh * H), { fit: 'fill' }).toBuffer();
     return { input: b, left: Math.round(rx * W), top: Math.round(ry * H) };
   };
-  // drop the white photo backdrop, then crop off the top (the die-cut hang-hole,
-  // which the model has no geometry for and would read as a hole/white spot)
+  // drop the white photo backdrop. trim() leaves white side-bands (the top hang-hole
+  // row spans full width, pinning the bbox), so scan columns for the red bag's actual
+  // horizontal extent and crop to it; also crop off the top (the die-cut hang-hole,
+  // which the model has no geometry for and would read as a hole/white spot).
   const bt0 = await sharp(backSrc).trim({ threshold: 18 }).toBuffer();
   const bm = await sharp(bt0).metadata();
-  const backTrim = await sharp(bt0).extract({ left: 0, top: Math.round(bm.height * 0.15), width: bm.width, height: Math.round(bm.height * 0.85) }).toBuffer();
+  const { data: bd } = await sharp(bt0).raw().toBuffer({ resolveWithObject: true });
+  const bw = bm.width, bh = bm.height, bc = bd.length / (bw * bh);
+  const colWhite = (x) => { let n = 0; for (let y = 0; y < bh; y++) { const i = (y * bw + x) * bc; if (Math.min(bd[i], bd[i + 1], bd[i + 2]) > 210) n++; } return n / bh; };
+  let L = 0, R = bw - 1;
+  while (L < bw && colWhite(L) > 0.5) L++;
+  while (R > L && colWhite(R) > 0.5) R--;
+  const backTrim = await sharp(bt0).extract({ left: L, top: Math.round(bh * 0.15), width: R - L + 1, height: Math.round(bh * 0.85) }).toBuffer();
   const patches = await Promise.all([
     region(cover, 0, 0.5, 0.77, 0.5),
     region(backTrim, 0, 0, 0.77, 0.5),

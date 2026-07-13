@@ -91,22 +91,83 @@ export function pillowGeometry(W: number, H: number, puff: number, creases = fal
   return g;
 }
 
-// Closed pouch (Happy Salmon) from the measured silhouette (box.bagOutline).
-// ExtrudeGeometry gives a watertight, single-piece solid for any SIMPLE polygon —
-// front cap + back cap + a rounded bevel rim — so the pouch can't come apart or
-// leave holes. Planar UVs map the cutout onto it; the bevel gives it a soft, puffy
-// edge rather than a flat card.
-export function pouchGeometry(poly: number[][], W: number, H: number, puff: number): THREE.ExtrudeGeometry {
-  const pts = poly.map(([fx, fy]) => new THREE.Vector2((fx - 0.5) * W, (0.5 - fy) * H));
-  if (THREE.ShapeUtils.area(pts) < 0) pts.reverse(); // CCW
-  const shape = new THREE.Shape(pts);
-  const depth = puff * 0.5;
-  const g = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelThickness: puff, bevelSize: puff * 0.9, bevelSegments: 4, steps: 1 });
-  g.translate(0, 0, -(depth / 2 + puff)); // centre the solid on z
-  // planar UVs from local x,y so the cutout maps straight onto the faces
-  const p = g.attributes.position as THREE.BufferAttribute, uv = new Float32Array(p.count * 2);
-  for (let i = 0; i < p.count; i++) { uv[i * 2] = p.getX(i) / W + 0.5; uv[i * 2 + 1] = p.getY(i) / H + 0.5; }
-  g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+// Closed pouch (Happy Salmon) from the measured silhouette (box.bagOutline): two
+// domed caps of the fish polygon that share ONE boundary ring, so they meet exactly
+// at the silhouette edge — a single watertight, closed solid (no side wall to gap,
+// no bevel to overshoot into the background). The caps are triangulated from a grid
+// clipped to the polygon and bulged toward the middle (→0 at the rim) for a soft,
+// puffy pouch. Planar UVs map the cutout straight on; the rim samples the outline,
+// which is 2px inside the fish, so no white edge is ever shown.
+export function pouchGeometry(poly: number[][], W: number, H: number, puff: number): THREE.BufferGeometry {
+  const pts = poly.map(([fx, fy]) => [(fx - 0.5) * W, (0.5 - fy) * H] as [number, number]);
+  if (polyArea(pts) < 0) pts.reverse();
+  const inside = (x: number, y: number) => pointInPoly(x, y, pts);
+  // signed distance to the boundary (approx via nearest edge) → bulge profile
+  const edgeDist = (x: number, y: number) => {
+    let d = Infinity;
+    for (let i = 0, n = pts.length; i < n; i++) d = Math.min(d, segDist(x, y, pts[i], pts[(i + 1) % n]));
+    return d;
+  };
+
+  const minX = Math.min(...pts.map((p) => p[0])), maxX = Math.max(...pts.map((p) => p[0]));
+  const minY = Math.min(...pts.map((p) => p[1])), maxY = Math.max(...pts.map((p) => p[1]));
+  const step = Math.min(maxX - minX, maxY - minY) / 26;
+  const nx = Math.ceil((maxX - minX) / step) + 1, ny = Math.ceil((maxY - minY) / step) + 1;
+  const dmax = Math.max(step, Math.min(W, H) * 0.22);
+  const bulge = (x: number, y: number) => puff * Math.sin(Math.min(1, edgeDist(x, y) / dmax) * Math.PI / 2);
+
+  // grid of interior points (front z=+bulge) + the exact boundary ring (z=0)
+  const gid = new Int32Array(nx * ny).fill(-1);
+  const pos: number[] = [], uv: number[] = [];
+  const add = (x: number, y: number, z: number) => { pos.push(x, y, z); uv.push(x / W + 0.5, y / H + 0.5); return pos.length / 3 - 1; };
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const x = minX + i * step, y = minY + j * step;
+    if (inside(x, y) && edgeDist(x, y) > step * 0.5) gid[j * nx + i] = add(x, y, bulge(x, y));
+  }
+  const base = pos.length / 3;               // boundary-ring start
+  for (const [x, y] of pts) add(x, y, 0);
+  const nInterior = base, nBoundary = pts.length;
+  const idx: number[] = [];
+  // triangulate interior grid quads (both diagonals present ⇒ dense mesh)
+  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+    const a = gid[j * nx + i], b = gid[j * nx + i + 1], c = gid[(j + 1) * nx + i], d = gid[(j + 1) * nx + i + 1];
+    if (a >= 0 && b >= 0 && c >= 0) idx.push(a, c, b);
+    if (b >= 0 && c >= 0 && d >= 0) idx.push(b, c, d);
+  }
+  // stitch the boundary ring to the nearest interior point → closes the rim
+  for (let k = 0; k < nBoundary; k++) {
+    const b0 = base + k, b1 = base + (k + 1) % nBoundary;
+    let best = 0, bd = Infinity;
+    for (let m = 0; m < nInterior; m++) { const dx = pos[m * 3] - pos[b0 * 3], dy = pos[m * 3 + 1] - pos[b0 * 3 + 1]; const dd = dx * dx + dy * dy; if (dd < bd) { bd = dd; best = m; } }
+    idx.push(b0, best, b1);
+  }
+
+  // mirror everything to the back (z→−z), reversed winding, then merge boundary rings
+  const nFront = pos.length / 3;
+  for (let m = 0; m < nFront; m++) { pos.push(pos[m * 3], pos[m * 3 + 1], -pos[m * 3 + 2]); uv.push(uv[m * 2], uv[m * 2 + 1]); }
+  const tris = idx.length;
+  for (let t = 0; t < tris; t += 3) idx.push(idx[t] + nFront, idx[t + 2] + nFront, idx[t + 1] + nFront);
+  // weld the two boundary rings (they coincide at z=0) so the seam is watertight
+  for (let k = 0; k < nBoundary; k++) idx.forEach((v, ii) => { if (v === nFront + base + k) idx[ii] = base + k; });
+
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx);
   g.computeVertexNormals();
   return g;
+}
+
+function polyArea(p: [number, number][]) { let a = 0; for (let i = 0, n = p.length; i < n; i++) { const j = (i + 1) % n; a += p[i][0] * p[j][1] - p[j][0] * p[i][1]; } return a / 2; }
+function pointInPoly(x: number, y: number, p: [number, number][]) {
+  let inside = false;
+  for (let i = 0, j = p.length - 1; i < p.length; j = i++) {
+    if (((p[i][1] > y) !== (p[j][1] > y)) && x < ((p[j][0] - p[i][0]) * (y - p[i][1])) / (p[j][1] - p[i][1]) + p[i][0]) inside = !inside;
+  }
+  return inside;
+}
+function segDist(px: number, py: number, a: [number, number], b: [number, number]) {
+  const dx = b[0] - a[0], dy = b[1] - a[1], l2 = dx * dx + dy * dy;
+  let t = l2 ? ((px - a[0]) * dx + (py - a[1]) * dy) / l2 : 0; t = Math.max(0, Math.min(1, t));
+  return Math.hypot(px - (a[0] + t * dx), py - (a[1] + t * dy));
 }

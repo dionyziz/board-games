@@ -78,20 +78,16 @@ function simplify(pts, eps) {
       if (!a[y * w + Math.max(0, x - 1)] || !a[y * w + Math.min(w - 1, x + 1)] || !a[Math.max(0, y - 1) * w + x] || !a[Math.min(h - 1, y + 1) * w + x]) data[(y * w + x) * ch + 3] = 0;
     }
   }
-  // pad with a transparent margin so the pouch's bevel rim (which overshoots the
-  // silhouette) samples transparent — not clamped edge pixels — → no white halo
-  const mx = Math.round(w * 0.1), my = Math.round(h * 0.1), nw = w + 2 * mx, nh = h + 2 * my;
-  const pad = new Uint8Array(nw * nh * ch); // zero-filled = transparent
-  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
-    const s = (y * w + x) * ch, d = ((y + my) * nw + (x + mx)) * ch;
-    for (let c = 0; c < ch; c++) pad[d + c] = data[s + c];
-  }
-  await sharp(Buffer.from(pad), { raw: { width: nw, height: nh, channels: ch } }).webp({ quality: 90, alphaQuality: 100 }).toFile(path.join(dir, 'cutout.webp'));
+  // trace the silhouette contour from the eroded alpha (this drives the geometry)
+  const op = alpha();
+  const poly = simplify(traceContour(op, w, h), 2.2).map(([x, y]) => [+(x / w).toFixed(3), +(y / h).toFixed(3)]);
+  const nw = w, nh = h;
 
-  // accurate silhouette contour from the padded alpha
-  const op = new Uint8Array(nw * nh);
-  for (let i = 0; i < nw * nh; i++) op[i] = pad[i * ch + 3] > 128 ? 1 : 0;
-  const poly = simplify(traceContour(op, nw, nh), 2.2).map(([x, y]) => [+(x / nw).toFixed(3), +(y / nh).toFixed(3)]);
+  // The pouch geometry IS the fish silhouette, so its (flat-extruded) caps and side
+  // walls only ever sample inside the outline — the background is never shown. So the
+  // texture is just the opaque crop; no cutout/bleed/alpha games needed.
+  for (let i = 0; i < w * h; i++) data[i * ch + 3] = 255;
+  await sharp(Buffer.from(data), { raw: { width: w, height: h, channels: ch } }).webp({ quality: 90 }).toFile(path.join(dir, 'cutout.webp'));
   const { games, list } = loadGames();
   list.find((x) => x.id === GAME).box.bagOutline = { aspect: +(nw / nh).toFixed(3), poly };
   saveGames(games);
