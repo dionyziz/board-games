@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { facets, type Game } from '../data';
 import DetailPanel from './DetailPanel';
 
@@ -12,6 +13,9 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
   sel: Set<string>; onToggle: (k: string) => void; sort: string; onSort: (s: any) => void; onClearFilters: () => void;
 }) {
   const hasFilters = sel.size > 0;
+  // after a click the pointer is still over the button; suppress the hover preview
+  // (which would flip the arrow to the NEXT direction) until it leaves and re-enters
+  const [noPreview, setNoPreview] = useState<string | null>(null);
   return (
     <div className="gallery-overlay fade-in">
       <div className="top">
@@ -47,15 +51,16 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
                 const [key, dir] = sort.split('-');
                 const active = key === o.key;
                 // click sets ascending; clicking the active key again flips direction.
-                // .cur = the direction active now; .hov (shown on hover) = the one a
-                // click would switch to (flip if active, else ascending). Arrow points
-                // the way the list runs: ascending = ↓ (small/A at top), descending = ↑.
-                const cur = active ? (dir === 'asc' ? ' ↓' : ' ↑') : '';
-                const hov = active ? (dir === 'asc' ? ' ↑' : ' ↓') : ' ↓';
+                // .dir-cur = the direction active now; .dir-hov (shown on hover) = the
+                // one a click would switch to. Arrow points the way the list runs:
+                // ascending = ↓ (small/A at top), descending = ↑.
+                const cur = active ? (dir === 'asc' ? '↓' : '↑') : '';
+                const hov = active ? (dir === 'asc' ? '↑' : '↓') : '↓';
                 return (
-                  <button key={o.key} className={'pill' + (active ? ' on' : '')}
-                    onClick={() => onSort(active ? `${o.key}-${dir === 'asc' ? 'desc' : 'asc'}` : `${o.key}-asc`)}>
-                    {o.label}<span className="dir-cur">{cur}</span><span className="dir-hov">{hov}</span>
+                  <button key={o.key} className={'pill' + (active ? ' on' : '') + (noPreview === o.key ? ' no-preview' : '')}
+                    onClick={() => { setNoPreview(o.key); onSort(active ? `${o.key}-${dir === 'asc' ? 'desc' : 'asc'}` : `${o.key}-asc`); }}
+                    onMouseLeave={() => setNoPreview(null)}>
+                    {o.label}<span className="dir"><span className="dir-cur">{cur}</span><span className="dir-hov">{hov}</span></span>
                   </button>
                 );
               })}
