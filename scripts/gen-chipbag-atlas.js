@@ -29,7 +29,11 @@ const GLB = path.join(__dirname, 'model-src', 'calbee_potato_chips_pizza.glb');
     const b = await sharp(src).rotate(-90).flop().resize(Math.round(rw * W), Math.round(rh * H), { fit: 'fill' }).toBuffer();
     return { input: b, left: Math.round(rx * W), top: Math.round(ry * H) };
   };
-  const backTrim = await sharp(backSrc).trim({ threshold: 18 }).toBuffer(); // drop the white photo backdrop
+  // drop the white photo backdrop, then crop off the top (the die-cut hang-hole,
+  // which the model has no geometry for and would read as a hole/white spot)
+  const bt0 = await sharp(backSrc).trim({ threshold: 18 }).toBuffer();
+  const bm = await sharp(bt0).metadata();
+  const backTrim = await sharp(bt0).extract({ left: 0, top: Math.round(bm.height * 0.15), width: bm.width, height: Math.round(bm.height * 0.85) }).toBuffer();
   const patches = await Promise.all([
     region(cover, 0, 0.5, 0.77, 0.5),
     region(backTrim, 0, 0, 0.77, 0.5),
