@@ -69,6 +69,21 @@ function Shell() {
     return () => window.removeEventListener('keydown', onKey);
   }, [slug, navigate]);
 
+  // in the library, Esc clears the search query + all filter pills — even when the
+  // search box isn't focused (when it is, this also blurs it)
+  useEffect(() => {
+    if (slug) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      e.preventDefault();
+      setQuery(''); setSel(new Set()); setSearchFocused(false);
+      const el = document.activeElement as HTMLElement | null;
+      if (el && el.tagName === 'INPUT') el.blur();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [slug]);
+
   const selectedIndex = slug ? filtered.findIndex((g) => g.id === slug) : -1;
 
   // background follows the focused game (open game, else the centered one)
@@ -97,7 +112,6 @@ function Shell() {
             filterOpen={searchFocused || sel.size > 0}
             onFocus={() => setSearchFocused(true)}
             onBlur={() => setSearchFocused(false)}
-            onEscape={() => { setQuery(''); setSel(new Set()); }}
             sel={sel} onToggle={toggle}
             onClearFilters={() => { setSel(new Set()); setQuery(''); }}
           />}
