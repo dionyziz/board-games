@@ -69,7 +69,7 @@ function simplify(pts, eps) {
     if (border || (area > 0.004 && cy > 0.42)) for (const p of cells) data[p * ch + 3] = 0;
   }
 
-  // erode the alpha 2px to kill the anti-aliased white fringe
+  // erode 2px to shave the anti-aliased white edge fringe off the silhouette
   const alpha = () => { const a = new Uint8Array(w * h); for (let i = 0; i < w * h; i++) a[i] = data[i * ch + 3] > 128 ? 1 : 0; return a; };
   for (let pass = 0; pass < 2; pass++) {
     const a = alpha();
@@ -78,13 +78,22 @@ function simplify(pts, eps) {
       if (!a[y * w + Math.max(0, x - 1)] || !a[y * w + Math.min(w - 1, x + 1)] || !a[Math.max(0, y - 1) * w + x] || !a[Math.min(h - 1, y + 1) * w + x]) data[(y * w + x) * ch + 3] = 0;
     }
   }
-  await sharp(Buffer.from(data), { raw: { width: w, height: h, channels: ch } }).webp({ quality: 90, alphaQuality: 100 }).toFile(path.join(dir, 'cutout.webp'));
+  // pad with a transparent margin so the pouch's bevel rim (which overshoots the
+  // silhouette) samples transparent — not clamped edge pixels — → no white halo
+  const mx = Math.round(w * 0.1), my = Math.round(h * 0.1), nw = w + 2 * mx, nh = h + 2 * my;
+  const pad = new Uint8Array(nw * nh * ch); // zero-filled = transparent
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const s = (y * w + x) * ch, d = ((y + my) * nw + (x + mx)) * ch;
+    for (let c = 0; c < ch; c++) pad[d + c] = data[s + c];
+  }
+  await sharp(Buffer.from(pad), { raw: { width: nw, height: nh, channels: ch } }).webp({ quality: 90, alphaQuality: 100 }).toFile(path.join(dir, 'cutout.webp'));
 
-  // accurate silhouette contour from the eroded alpha
-  const op = alpha();
-  const poly = simplify(traceContour(op, w, h), 2.2).map(([x, y]) => [+(x / w).toFixed(3), +(y / h).toFixed(3)]);
+  // accurate silhouette contour from the padded alpha
+  const op = new Uint8Array(nw * nh);
+  for (let i = 0; i < nw * nh; i++) op[i] = pad[i * ch + 3] > 128 ? 1 : 0;
+  const poly = simplify(traceContour(op, nw, nh), 2.2).map(([x, y]) => [+(x / nw).toFixed(3), +(y / nh).toFixed(3)]);
   const { games, list } = loadGames();
-  list.find((x) => x.id === GAME).box.bagOutline = { aspect: +(w / h).toFixed(3), poly };
+  list.find((x) => x.id === GAME).box.bagOutline = { aspect: +(nw / nh).toFixed(3), poly };
   saveGames(games);
-  console.log(`salmon cutout ${w}x${h}, contour ${poly.length} pts, aspect ${(w / h).toFixed(3)}`);
+  console.log(`salmon cutout ${nw}x${nh} (padded), contour ${poly.length} pts, aspect ${(nw / nh).toFixed(3)}`);
 })();

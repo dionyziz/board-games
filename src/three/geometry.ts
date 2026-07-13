@@ -91,52 +91,22 @@ export function pillowGeometry(W: number, H: number, puff: number, creases = fal
   return g;
 }
 
-const segDist = (px: number, py: number, ax: number, ay: number, bx: number, by: number) => {
-  const dx = bx - ax, dy = by - ay, t = Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy || 1)));
-  return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
-};
-// split every triangle into 4 (edge midpoints, deduped) → interior vertices to bulge
-function subdivide(verts: number[][], idx: number[]) {
-  const nv = verts.map((v) => [v[0], v[1]]), mid = new Map<string, number>();
-  const gm = (a: number, b: number) => {
-    const k = a < b ? a + '_' + b : b + '_' + a; if (mid.has(k)) return mid.get(k)!;
-    const i = nv.length; nv.push([(verts[a][0] + verts[b][0]) / 2, (verts[a][1] + verts[b][1]) / 2]); mid.set(k, i); return i;
-  };
-  const ni: number[] = [];
-  for (let f = 0; f < idx.length; f += 3) {
-    const a = idx[f], b = idx[f + 1], c = idx[f + 2], ab = gm(a, b), bc = gm(b, c), ca = gm(c, a);
-    ni.push(a, ab, ca, b, bc, ab, c, ca, bc, ab, bc, ca);
-  }
-  return { verts: nv, idx: ni };
-}
-
-// Closed puffed pouch (Happy Salmon) from the measured silhouette (box.bagOutline):
-// triangulate the outline, subdivide, and bulge each vertex by its distance inside
-// (0 at the boundary). Front + back caps share the exact boundary loop → a
-// watertight fish-shaped pouch, fully covered in triangles (no holes).
-export function pouchGeometry(poly: number[][], W: number, H: number, puff: number): THREE.BufferGeometry {
-  let pts = poly.map(([fx, fy]) => [(fx - 0.5) * W, (0.5 - fy) * H]);
-  let area = 0;
-  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) area += pts[j][0] * pts[i][1] - pts[i][0] * pts[j][1];
-  if (area < 0) pts.reverse(); // CCW for triangulateShape
-  let verts = pts.map((p) => [p[0], p[1]]);
-  let idx = THREE.ShapeUtils.triangulateShape(pts.map((p) => new THREE.Vector2(p[0], p[1])), []).flat();
-  for (let s = 0; s < 2; s++) { const r = subdivide(verts, idx); verts = r.verts; idx = r.idx; }
-  const bd = (x: number, y: number) => { let m = 1e9; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) m = Math.min(m, segDist(x, y, pts[j][0], pts[j][1], pts[i][0], pts[i][1])); return m; };
-  const dists = verts.map(([x, y]) => bd(x, y)), maxD = Math.max(...dists, 1e-3);
-  const nV = verts.length, pos = new Float32Array(nV * 2 * 3), uv = new Float32Array(nV * 2 * 2), index: number[] = [];
-  for (let i = 0; i < nV; i++) {
-    const [x, y] = verts[i], b = puff * Math.sqrt(Math.min(1, dists[i] / maxD));
-    pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = b;
-    pos[(nV + i) * 3] = x; pos[(nV + i) * 3 + 1] = y; pos[(nV + i) * 3 + 2] = -b;
-    uv[i * 2] = x / W + 0.5; uv[i * 2 + 1] = 0.5 - y / H;
-    uv[(nV + i) * 2] = x / W + 0.5; uv[(nV + i) * 2 + 1] = 0.5 - y / H;
-  }
-  for (let f = 0; f < idx.length; f += 3) index.push(idx[f], idx[f + 1], idx[f + 2]);          // front cap
-  for (let f = 0; f < idx.length; f += 3) index.push(nV + idx[f + 2], nV + idx[f + 1], nV + idx[f]); // back cap (reversed)
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+// Closed pouch (Happy Salmon) from the measured silhouette (box.bagOutline).
+// ExtrudeGeometry gives a watertight, single-piece solid for any SIMPLE polygon —
+// front cap + back cap + a rounded bevel rim — so the pouch can't come apart or
+// leave holes. Planar UVs map the cutout onto it; the bevel gives it a soft, puffy
+// edge rather than a flat card.
+export function pouchGeometry(poly: number[][], W: number, H: number, puff: number): THREE.ExtrudeGeometry {
+  const pts = poly.map(([fx, fy]) => new THREE.Vector2((fx - 0.5) * W, (0.5 - fy) * H));
+  if (THREE.ShapeUtils.area(pts) < 0) pts.reverse(); // CCW
+  const shape = new THREE.Shape(pts);
+  const depth = puff * 0.5;
+  const g = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelThickness: puff, bevelSize: puff * 0.9, bevelSegments: 4, steps: 1 });
+  g.translate(0, 0, -(depth / 2 + puff)); // centre the solid on z
+  // planar UVs from local x,y so the cutout maps straight onto the faces
+  const p = g.attributes.position as THREE.BufferAttribute, uv = new Float32Array(p.count * 2);
+  for (let i = 0; i < p.count; i++) { uv[i * 2] = p.getX(i) / W + 0.5; uv[i * 2 + 1] = p.getY(i) / H + 0.5; }
   g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
-  g.setIndex(index); g.computeVertexNormals();
+  g.computeVertexNormals();
   return g;
 }
