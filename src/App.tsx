@@ -15,7 +15,7 @@ function Shell() {
 
   const [query, setQuery] = useState('');
   const [sel, setSel] = useState<Set<string>>(new Set());
-  const [filterOpen, setFilterOpen] = useState(false);
+  const [searchFocused, setSearchFocused] = useState(false);
   const [center, setCenterIdx] = useState(0);
 
   // the game most recently viewed/centered while browsing — hoisted to the top of
@@ -39,8 +39,10 @@ function Shell() {
     if (input) { input.focus(); input.select(); }
   }, 0);
 
-  // remember the open game as the focus for the next search
-  useEffect(() => { if (slug) focusId.current = slug; }, [slug]);
+  // remember the open game as the focus for the next search; entering a detail view
+  // unmounts the search input (which won't fire onBlur), so drop focus explicitly so
+  // the filter panel isn't left open when we return to the gallery
+  useEffect(() => { if (slug) { focusId.current = slug; setSearchFocused(false); } }, [slug]);
 
   // "/" jumps to the library (if in a detail view) and focuses+selects the search
   useEffect(() => {
@@ -87,10 +89,13 @@ function Shell() {
             game={filtered[center]} count={filtered.length}
             atEnd={filtered.length > 0 && center >= filtered.length - 1}
             query={query} onQuery={setQuery}
-            filterOpen={filterOpen}
-            onFocus={() => setFilterOpen(true)}
-            onBlur={() => { if (!query.trim() && sel.size === 0) setFilterOpen(false); }}
-            onEscape={() => { setQuery(''); setSel(new Set()); setFilterOpen(false); }}
+            // the filter panel is shown while the search is engaged or filters are
+            // active — derived, so clearing the query (×) or leaving the search
+            // always resolves it correctly (no sticky "open" flag to get stranded)
+            filterOpen={searchFocused || sel.size > 0}
+            onFocus={() => setSearchFocused(true)}
+            onBlur={() => setSearchFocused(false)}
+            onEscape={() => { setQuery(''); setSel(new Set()); }}
             sel={sel} onToggle={toggle}
             onClearFilters={() => { setSel(new Set()); setQuery(''); }}
           />}

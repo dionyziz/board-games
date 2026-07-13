@@ -24,7 +24,7 @@ export function GalleryOverlay({ game, count, atEnd, query, onQuery, filterOpen,
               autoComplete="off"
               spellCheck={false}
             />
-            {query ? <button className="clear" aria-label="Clear search" onClick={() => onQuery('')}>×</button> : null}
+            {query ? <button className="clear" aria-label="Clear search" onMouseDown={(e) => e.preventDefault()} onClick={() => onQuery('')}>×</button> : null}
           </div>
           <span className="count">{count} {count === 1 ? 'game' : 'games'}</span>
         </div>
