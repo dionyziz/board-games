@@ -1,5 +1,19 @@
 import { decode, type Game } from '../data';
 
+// Collapse a sorted list of player counts into ranges: ["4","5","6","7","8"] → "4–8",
+// ["2","3","5","6"] → "2–3, 5–6". Tokens like "9+" keep their label as a run end.
+function playerRanges(tokens: string[]): string {
+  const items = tokens.map((raw) => ({ raw, n: parseInt(raw, 10) })).filter((x) => !isNaN(x.n)).sort((a, b) => a.n - b.n);
+  const groups: string[] = [];
+  for (let start = 0, i = 1; i <= items.length; i++) {
+    if (i === items.length || items[i].n !== items[i - 1].n + 1) {
+      groups.push(start === i - 1 ? items[start].raw : `${items[start].raw}–${items[i - 1].raw}`);
+      start = i;
+    }
+  }
+  return groups.join(', ');
+}
+
 export default function DetailPanel({ game, onBack }: { game: Game; onBack: () => void }) {
   const players = game.players && game.players.max != null
     ? game.players.min === game.players.max ? `${game.players.max}` : `${game.players.min}–${game.players.max}`
@@ -7,7 +21,7 @@ export default function DetailPanel({ game, onBack }: { game: Game; onBack: () =
   const time = game.playtime && game.playtime.max != null
     ? game.playtime.min === game.playtime.max ? `${game.playtime.max}` : `${game.playtime.min}–${game.playtime.max}`
     : null;
-  const rec = game.optimalPlayers?.length ? game.optimalPlayers.join(', ') : null;
+  const rec = game.optimalPlayers?.length ? playerRanges(game.optimalPlayers) : null;
   return (
     <aside className="panel">
       <button className="panel-back" onClick={onBack}>← All games</button>
@@ -18,7 +32,7 @@ export default function DetailPanel({ game, onBack }: { game: Game; onBack: () =
         <div><div className="k">Players</div><div className="v">{players}</div></div>
         {rec ? <div><div className="k">Recommended</div><div className="v">{rec}</div></div> : null}
         <div><div className="k">Play time</div><div className="v">{time ? time + ' min' : '—'}</div></div>
-        <div><div className="k">Complexity</div><div className="v">{game.complexity ? game.complexity.toFixed(1) + ' / 5' : '—'}</div></div>
+        <div><div className="k">Weight</div><div className="v">{game.complexity ? game.complexity.toFixed(1) + ' / 5' : '—'}</div></div>
         <div><div className="k">BGG rating</div><div className="v">{game.bggRating != null ? game.bggRating.toFixed(1) + ' / 10' : '—'}</div></div>
         <div><div className="k">Published</div><div className="v">{game.year || '—'}</div></div>
       </div>
